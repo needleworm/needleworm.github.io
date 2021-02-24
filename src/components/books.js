@@ -138,8 +138,8 @@ class Books extends Component {
         {bookSection3}
         {bookSection2}
         {bookSection6}
-        {bookSection5}
         {bookSection4}
+        {bookSection5}
       </div>
     )
   }

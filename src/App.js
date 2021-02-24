@@ -425,14 +425,14 @@ class App extends Component {
                   <nav className="cover-navigation navigation--social">
                     <ul className="navigation">
                       {books}
-                      {codes}
-                      {blog}
                       {websites}
+                      {codes}
                       {research}
                       {lectures}
                       {designs}
                       {news}
                       {contact}
+                      {blog}
                     </ul>
                   </nav>
                 </div>

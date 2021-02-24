@@ -99,6 +99,12 @@ class Codes extends Component {
       <div className="row">
         <div className="col-lg-12 text-center">
             <h2 className="section-heading subpageHeading">Codes</h2>
+            <h3 className="qwerqwer">
+              Realtime Summary of &nbsp; 
+              <a className="tempa" href="https://github.com/needleworm" target="_blank"  rel="noreferrer">
+                My <i className="fab fa-github"></i> Github Account
+                </a>
+              </h3>
         </div>
       </div>
     )
@@ -108,7 +114,7 @@ class Codes extends Component {
     var pythonIcon = <i className="fab fa-python"></i>
     var reactIconL = <i className="fab fa-react"></i>
     var windowsIcon = <i className="fab fa-windows"></i>
-    var rubyIcon = <i className="far fa-gem"></i>
+    var jekyllIcon = <i className="fas fa-vial"></i>
     var jsIcon = <i className="fab fa-js-square"></i>
     var javaIcon = <i className="fab fa-java"></i>
     return <div className="projects">
@@ -144,7 +150,7 @@ class Codes extends Component {
       {this.drawSingleProject("bh_coefficient", science, pythonIcon)}
       {this.drawSingleProject("nutrient_solution", science, pythonIcon)}
       {this.drawSingleProject("ion_interference", science, pythonIcon)}
-      {this.drawSingleProject("moneyauto", moneyauto, rubyIcon)}
+      {this.drawSingleProject("moneyauto", moneyauto, jekyllIcon)}
       {this.drawSingleProject("CoinAutoTrader_exe", moneyauto, windowsIcon)}
       {this.drawSingleProject("eliza", scala, javaIcon)}
       {this.drawSingleProject("mozza", cheese, pythonIcon)}
