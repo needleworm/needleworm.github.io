@@ -155,8 +155,8 @@ class Codes extends Component {
     }
     var project = <div className="singleProjectContainer">
       <div className="singleProjectCard">
-        <a href={this.state.repository[name].url} target="_blank"  rel="noreferrer">
-         <img className="projectImage" src={icon}/>
+        <a className="tempa" href={this.state.repository[name].url} target="_blank"  rel="noreferrer">
+         <img className="projectImage" src={icon}  alt="projectimage"/>
         </a>
         <div className="projectText">
           <a href={this.state.repository[name].url} target="_blank"  rel="noreferrer">

@@ -1,0 +1,9 @@
+.websiteImage {
+    width: 80%;
+    display:block;
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 50px;
+}

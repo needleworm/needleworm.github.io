@@ -378,7 +378,7 @@ class App extends Component {
 
     var blog = <li className="navigation__item">
       <a href="https://brunch.co.kr/@needleworm" title="link to Blog" target="_blank"  rel="noreferrer">
-        <i className="fas fa-link fa-lg"></i>&nbsp;Blog
+        <i className="fas fa-link"></i>&nbsp;Blog
       </a>
     </li>
     
@@ -425,14 +425,14 @@ class App extends Component {
                   <nav className="cover-navigation navigation--social">
                     <ul className="navigation">
                       {books}
-                      {websites}
                       {codes}
+                      {blog}
+                      {websites}
                       {research}
                       {lectures}
                       {designs}
                       {news}
                       {contact}
-                      {blog}
                     </ul>
                   </nav>
                 </div>
