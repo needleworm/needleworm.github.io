@@ -51,14 +51,14 @@ class Codes extends Component {
             </p>
           </div>
           <div className="projectIcons">
-            <h5>{reactIconL}&nbsp;React&nbsp;&nbsp;{gitLogo}&nbsp;Github Pages</h5>
+            <h5>{reactIconL}&nbsp;React&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
             <div className="gitIcons">
               <a href="https://github.com/needleworm/needleworm.github.io" target="_blank"  rel="noreferrer">
-                <i className="fas fa-code"></i> Source Code
+                <i className="fas fa-code"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
-                <i className="fas fa-external-link-alt"></i> Visit
+                <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
           </div>
@@ -87,14 +87,14 @@ class Codes extends Component {
           </p>
         </div>
         <div className="projectIcons">
-            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Github Pages</h5>
+            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
           <div className="gitIcons">
             <a href="https://github.com/needleworm/moneyauto" target="_blank"  rel="noreferrer">
-              <i className="fas fa-code"></i> Source Code
+              <i className="fas fa-code"></i>
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
-              <i className="fas fa-external-link-alt"></i> Visit
+              <i className="fas fa-external-link-alt"></i> 
             </a>
           </div>
         </div>
@@ -124,7 +124,7 @@ class Codes extends Component {
             <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{ms}&nbsp;Azure</h5>
             <div className="gitIcons">
               <a href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
-                <i className="fas fa-external-link-alt"></i> visit
+                <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
           </div>
@@ -156,7 +156,7 @@ class Codes extends Component {
           <h5>{reactIconL}&nbsp;React&nbsp;&nbsp;{ms}&nbsp;Azure</h5>
           <div className="gitIcons">
             <a href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
-              <i className="fas fa-external-link-alt"></i> visit
+              <i className="fas fa-external-link-alt"></i>
             </a>
           </div>
         </div>

@@ -427,12 +427,14 @@ class App extends Component {
                       {books}
                       {websites}
                       {codes}
+                      {blog}
+                      {/*
                       {research}
                       {lectures}
                       {designs}
                       {news}
                       {contact}
-                      {blog}
+                      */}
                     </ul>
                   </nav>
                 </div>
