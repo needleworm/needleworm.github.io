@@ -416,7 +416,7 @@ class Papers extends Component {
                 e.preventDefault()
                 var dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
-                dummy.value = 'B. Ban, "Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis," 2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2020, pp. 1531-1536, doi: 10.1109/ICTC49870.2020.9289083.'
+                dummy.value = 'Choo, SM., Ban, B., Joo, J.I. et al. The phenotype control kernel of a biomolecular regulatory network. BMC Syst Biol 12, 49 (2018). https://doi.org/10.1186/s12918-018-0576-8'
                 dummy.select();
                 document.execCommand("copy");
                 document.body.removeChild(dummy);
@@ -427,7 +427,7 @@ class Papers extends Component {
             </a>
             </h5>
             <div className="gitIcons">
-              <a href="https://github.com/needleworm/mlproject" target="_blank"  rel="noreferrer">
+              <a href="https://github.com/needleworm/nc2" target="_blank"  rel="noreferrer">
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -435,7 +435,7 @@ class Papers extends Component {
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://doi.org/10.1109/ICTC.2017.8190958" target="_blank"  rel="noreferrer">
+              <a href="https://doi.org/10.1186/s12918-018-0576-8" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
