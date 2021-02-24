@@ -1,0 +1,8 @@
+.codeContainer{
+    display:block;
+}
+
+.separator{
+    border-top: 1px solid #ddd;
+    width: 80%;
+}

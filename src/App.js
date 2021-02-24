@@ -1,0 +1,515 @@
+import React, {Component} from 'react';
+import './App.css';
+import profilePic from "./images/profile_pic.jpg"
+import backgroundImage from "./images/background.jpg"
+import Books from "./components/books"
+import Websites from "./components/websites"
+import Codes from "./components/codes"
+import Research from "./components/research"
+import Lectures from "./components/lectures"
+import Designs from "./components/designs"
+import News from "./components/news"
+import Contact from "./components/contact"
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      latestButton:"none",
+      /* 
+        content
+          none
+          books
+          websites
+          codes
+          research
+          lectures
+          designs
+          news
+          contact
+      */
+      content:"none",
+      sns:{
+        email: "bhban@kakao.com",
+        github:  "https://github.com/needleworm",
+        linkedin:  "https://www.linkedin.com/in/bhban",
+        youtube:  "https://www.youtube.com/channel/UCpV0ZdloVwvSjxHfnYYQPQg?sub_confirmation=1",
+        researchgate: "https://www.researchgate.net/profile/Byunghyun_Ban"
+      }
+    }
+    this.closeSideMenu = this._closeSideMenu.bind(this)
+    this.openSideMenu = this._openSideMenu.bind(this)
+  }
+
+  
+  _closeSideMenu(){
+    var contentWrapper = document.querySelector('.content-wrapper')
+    var panelCover = document.querySelector('.panel-cover')
+    if (contentWrapper.classList.contains('showing')){
+      contentWrapper.classList.remove('panel-cover--collapsed')
+      panelCover.classList.remove('panel-cover--collapsed')
+      panelCover.style.maxWidth = '100%'
+      panelCover.animate(
+        [ // Keyframes
+          {'max-width': '530px', 'width': '40%'}, // from
+          {'width': '100%'}, // to
+        ], { // options
+          duration: 400,
+          easing: 'ease-in-out'
+        } 
+      )
+      contentWrapper.classList.remove('showing')
+    }
+  }
+
+  _openSideMenu(){
+    var contentWrapper = document.querySelector('.content-wrapper')
+    if (contentWrapper.classList.contains('showing')){
+      return
+    }
+
+    var panelCover = document.querySelector('.panel-cover')
+    var currentWidth = panelCover.clientWidth
+    if (currentWidth < 960){
+      panelCover.classList.add('panel-cover--collapsed')
+      contentWrapper.classList.add('animated')
+      contentWrapper.classList.add('slideInRight')
+    } else {
+      panelCover.style.maxWidth = currentWidth
+      panelCover.animate(
+        [ // Keyframes
+          {'width': '100%'}, // from
+          {'max-width': '530px', 'width': '40%'}, // to
+        ], { // options
+          duration: 400,
+          easing: 'ease-in-out'
+        } 
+      )
+      panelCover.classList.add('panel-cover--collapsed')
+    }
+    contentWrapper.classList.add('showing')
+  }
+
+  drawHeader(){
+    var github = <span className="navigation__item_sns">
+                  <a href={this.state.sns.github} title="Meet My Works on GitHub" target="_blank"  rel="noreferrer">
+                    <i className="fab fa-github-square fa-lg"></i>
+                    <span className="label">GitHub</span>
+                  </a>
+                  </span>
+
+    var linkedin = <span className="navigation__item_sns">
+                    <a href={this.state.sns.linkedin}  title="My LinkedIn Profile" target="_blank"  rel="noreferrer">
+                      <i className="fab fa-linkedin fa-lg"></i>
+                      <span className="label">LinkedIn</span>
+                    </a>
+                    </span>
+
+    var youtube = <span className="navigation__item_sns">
+      <a href={this.state.sns.youtube}  title="My Youtube Channel" target="_blank"  rel="noreferrer">
+                <i className="fab fa-youtube-square fa-lg"></i>
+                <span className="label">Youtube</span>
+              </a>
+              </span>
+
+    var researchgate = <span className="navigation__item_sns">
+      <a href={this.state.sns.researchgate}  title="Meet Me on Researchgate" target="_blank"  rel="noreferrer">
+                <i className="fab fa-researchgate fa-lg"></i>
+                <span className="label">Researchgate</span>
+              </a>
+            </span>
+
+    var profilePicButton = <a href="#home" title="Home">
+      <img src={profilePic} className="user-image" alt="My Profile"
+        onClick={
+          function(e){
+            this.setState({
+              latestButton: "none",
+              content:"none"
+            })
+            this.closeSideMenu()
+          }.bind(this)
+        }
+      />
+    </a>
+
+    var books = <li className="navigation__item">
+      <a href="#books" title="Books" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "books"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "books",
+                latestButton: "books"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }
+      >
+        <i className="fas fa-book"></i>&nbsp;Books
+      </a>
+    </li>
+
+    var websites = <li className="navigation__item">
+      <a href="#websites" title="Websites" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "websites"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "websites",
+                latestButton: "websites"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }
+      >
+        <i className="fas fa-laptop-code"></i>&nbsp;Websites
+      </a>
+    </li>
+
+    var codes = <li className="navigation__item">
+      <a href="#codes" title="Codes" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "codes"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "codes",
+                latestButton: "codes",
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }
+      >
+        <i className="fas fa-code-branch"></i>&nbsp;Codes
+      </a>
+    </li>
+
+    var research = <li className="navigation__item">
+      <a href="#research" title="Research" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "research"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "research",
+                latestButton: "research"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }>
+        <i className="fas fa-graduation-cap"></i>&nbsp;Research
+      </a>
+    </li>
+
+    var lectures = <li className="navigation__item">
+      <a href="#lecture" title="Lectures" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "lecture"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "lecture",
+                latestButton: "lecture"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }>
+        <i className="fas fa-chalkboard-teacher"></i>&nbsp;Lectures
+      </a>
+    </li>
+
+    var designs = <li className="navigation__item">
+      <a href="#designs" title="Designs" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "designs"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "designs",
+                latestButton: "designs"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }>
+        <i className="fas fa-palette"></i>&nbsp;Designs
+      </a>
+    </li>
+
+    var news = <li className="navigation__item">
+      <a href="#news" title="Me on Newses"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "news"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "news",
+                latestButton: "news"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }>
+        <i className="far fa-newspaper"></i>&nbsp;News
+      </a>
+    </li>
+
+    var contact = <li className="navigation__item">
+      <a href="#contact" title="Contact Me"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "contact"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "contact",
+                latestButton: "contact"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }>
+        <i className="far fa-envelope"></i>&nbsp;contact
+      </a>
+    </li>
+
+    var blog = <li className="navigation__item">
+      <a href="https://brunch.co.kr/@needleworm" title="link to Blog" target="_blank"  rel="noreferrer">
+        <i className="fas fa-link fa-lg"></i>&nbsp;Blog
+      </a>
+    </li>
+    
+    var mobileButtenMenu =  <span className="mobile btn-mobile-menu"
+      onClick={
+        function(e){
+          var navigationWrapper = document.querySelector('.navigation-wrapper')
+          var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+          navigationWrapper.classList.toggle('visible')
+          navigationWrapper.classList.toggle('animated')
+          navigationWrapper.classList.toggle('bounceInDown')
+          btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+          btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+          btnMobileMenuIcon.classList.toggle('animated')
+          btnMobileMenuIcon.classList.toggle('fadeIn')
+        }
+      }
+    >
+      <i className="far fa-caret-square-down btn-mobile-menu__icon"></i>
+      <i className="far fa-caret-square-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    return(
+      <div>
+        {mobileButtenMenu}
+        <header className="panel-cover" style={{background_image: backgroundImage, maxWidth:'100%'}}>
+          <div className="panel-main">
+            <div className="panel-main__inner panel-inverted">
+              <div className="panel-main__content">
+                {profilePicButton}
+                <h1 className="panel-cover__title panel-title">Byunghyun Ban</h1>
+                <nav className="cover-navigation navigation--social">
+                    {github}
+                    {linkedin}
+                    {youtube}
+                    {researchgate}
+                </nav>
+                <hr className="panel-cover__divider"/>
+                <p className="panel-cover__description">Author, Entrepreneur, Researcher, Developer, Designer and more. </p>
+                <p className="panel-cover__description">Working at <a href="https://sangsang.farm">Imagination Garden Inc.</a> as CTO.</p>
+                <hr className="panel-cover__divider panel-cover__divider--secondary"/>
+                <div className="navigation-wrapper">
+                  <br/>
+                  <nav className="cover-navigation navigation--social">
+                    <ul className="navigation">
+                      {books}
+                      {websites}
+                      {codes}
+                      {research}
+                      {lectures}
+                      {designs}
+                      {news}
+                      {contact}
+                      {blog}
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="panel-cover--overlay"></div>
+        </header>
+      </div>
+    )
+  }
+
+  drawBody(){
+    var footer = <div><footer className="footer">
+        <span className="footer__copyright">&copy; 2021. Byunghyun Ban All rights reserved.</span>
+      </footer>
+      </div>
+    
+
+    return (
+      <div className="content-wrapper">
+        <div className="content-wrapper__inner">
+          {this.drawContents()}
+        </div>
+        {footer}
+    </div>
+    )
+  }
+
+  drawContents(){
+    if (this.state.content === "none"){
+      return (
+        <div></div>
+      )
+    } else if (this.state.content === "books"){
+        return (
+          <Books/>
+        )
+    } else if (this.state.content === "websites"){
+      return (
+        <Websites/>
+      )
+    } else if (this.state.content === "codes"){
+      return (
+        <Codes/>
+      )
+    } else if (this.state.content === "research"){
+      return (
+        <Research/>
+      )
+    } else if (this.state.content === "lectures"){
+      return (
+        <Lectures/>
+      )
+    } else if (this.state.content === "designs"){
+      return (
+        <Designs/>
+      )
+    } else if (this.state.content === "news"){
+      return (
+        <News/>
+      )
+    } else if (this.state.content === "contact"){
+      return (
+        <Contact/>
+      )
+    }
+  }
+
+  render() {
+    return (
+      <div className="App">
+        {this.drawHeader()}
+        {this.drawBody()}
+      </div>
+    );
+  }
+}
+
+export default App;
