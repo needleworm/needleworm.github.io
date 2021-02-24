@@ -105,50 +105,56 @@ class Codes extends Component {
   }
 
   drawProjects(){
+    var pythonIcon = <i className="fab fa-python"></i>
+    var reactIconL = <i className="fab fa-react"></i>
+    var windowsIcon = <i className="fab fa-windows"></i>
+    var rubyIcon = <i className="far fa-gem"></i>
+    var jsIcon = <i className="fab fa-js-square"></i>
+    var javaIcon = <i className="fab fa-java"></i>
     return <div className="projects">
-      {this.drawSingleProject("bhban_RPA", edu)}
-      {this.drawSingleProject("automation_edu", edu)}
-      {this.drawSingleProject("post_crawler", python)}
-      {this.drawSingleProject("pywinmacro", exe)}
-      {this.drawSingleProject("fvs", science)}
-      {this.drawSingleProject("CoinAutoTrader", moneyauto)}
-      {this.drawSingleProject("brunch_thaad", python)}
-      {this.drawSingleProject("fmm_crawl", science)}
-      {this.drawSingleProject("pixabay_crawling", python)}
-      {this.drawSingleProject("img_crop_from_PDF", python)}
-      {this.drawSingleProject("pubmed_crawler", science)}
-      {this.drawSingleProject("chulsukbu", python)}
-      {this.drawSingleProject("CoinAutoTrader_Bithumb", moneyauto)}
-      {this.drawSingleProject("needleworm.github.io", reactIcon)}
-      {this.drawSingleProject("nc2", science)}
-      {this.drawSingleProject("greenhouse_ai", science)}
-      {this.drawSingleProject("xlsx_sorter", python)}
-      {this.drawSingleProject("wordpuzzle", python)}
-      {this.drawSingleProject("xlsx_destroyer", python)}
-      {this.drawSingleProject("twitter_news_macro", python)}
-      {this.drawSingleProject("insta_like_by_graphic_recognition", python)}
-      {this.drawSingleProject("mlproject", tf)}
-      {this.drawSingleProject("breakout", tf)}
-      {this.drawSingleProject("yolotest", tfjs)}
-      {this.drawSingleProject("base_sequence_analysis", science)}
-      {this.drawSingleProject("google_scholar_crawler", science)}
-      {this.drawSingleProject("pubmed_abstract_crawl", science)}
-      {this.drawSingleProject("bhban_ai", edu)}
-      {this.drawSingleProject("PubMed_Crawl_exe", exe)}
-      {this.drawSingleProject("bh_coefficient", science)}
-      {this.drawSingleProject("nutrient_solution", science)}
-      {this.drawSingleProject("ion_interference", science)}
-      {this.drawSingleProject("moneyauto", moneyauto)}
-      {this.drawSingleProject("CoinAutoTrader_exe", moneyauto)}
-      {this.drawSingleProject("eliza", scala)}
-      {this.drawSingleProject("mozza", cheese)}
-      {this.drawSingleProject("pizza", cheese)}
-      {this.drawSingleProject("cottoncandy", cheese)}
-      {this.drawSingleProject("coinone_Api_for_google_apps", js)}
+      {this.drawSingleProject("bhban_RPA", edu, pythonIcon)}
+      {this.drawSingleProject("automation_edu", edu, pythonIcon)}
+      {this.drawSingleProject("post_crawler", python, pythonIcon)}
+      {this.drawSingleProject("pywinmacro", exe, windowsIcon)}
+      {this.drawSingleProject("fvs", science, pythonIcon)}
+      {this.drawSingleProject("CoinAutoTrader", moneyauto, pythonIcon)}
+      {this.drawSingleProject("brunch_thaad", python, pythonIcon)}
+      {this.drawSingleProject("fmm_crawl", science, pythonIcon)}
+      {this.drawSingleProject("pixabay_crawling", python, pythonIcon)}
+      {this.drawSingleProject("img_crop_from_PDF", python, pythonIcon)}
+      {this.drawSingleProject("pubmed_crawler", science, pythonIcon)}
+      {this.drawSingleProject("chulsukbu", python, pythonIcon)}
+      {this.drawSingleProject("CoinAutoTrader_Bithumb", moneyauto, pythonIcon)}
+      {this.drawSingleProject("needleworm.github.io", reactIcon, reactIconL)}
+      {this.drawSingleProject("nc2", science, pythonIcon)}
+      {this.drawSingleProject("greenhouse_ai", science, pythonIcon)}
+      {this.drawSingleProject("xlsx_sorter", python, pythonIcon)}
+      {this.drawSingleProject("wordpuzzle", python, pythonIcon)}
+      {this.drawSingleProject("xlsx_destroyer", python, pythonIcon)}
+      {this.drawSingleProject("twitter_news_macro", python, pythonIcon)}
+      {this.drawSingleProject("insta_like_by_graphic_recognition", python, pythonIcon)}
+      {this.drawSingleProject("mlproject", tf, pythonIcon)}
+      {this.drawSingleProject("breakout", tf, pythonIcon)}
+      {this.drawSingleProject("yolotest", tfjs, jsIcon)}
+      {this.drawSingleProject("base_sequence_analysis", science, pythonIcon)}
+      {this.drawSingleProject("google_scholar_crawler", science, pythonIcon)}
+      {this.drawSingleProject("pubmed_abstract_crawl", science, pythonIcon)}
+      {this.drawSingleProject("bhban_ai", edu, pythonIcon)}
+      {this.drawSingleProject("PubMed_Crawl_exe", exe, windowsIcon)}
+      {this.drawSingleProject("bh_coefficient", science, pythonIcon)}
+      {this.drawSingleProject("nutrient_solution", science, pythonIcon)}
+      {this.drawSingleProject("ion_interference", science, pythonIcon)}
+      {this.drawSingleProject("moneyauto", moneyauto, rubyIcon)}
+      {this.drawSingleProject("CoinAutoTrader_exe", moneyauto, windowsIcon)}
+      {this.drawSingleProject("eliza", scala, javaIcon)}
+      {this.drawSingleProject("mozza", cheese, pythonIcon)}
+      {this.drawSingleProject("pizza", cheese, pythonIcon)}
+      {this.drawSingleProject("cottoncandy", cheese, pythonIcon)}
+      {this.drawSingleProject("coinone_Api_for_google_apps", js, jsIcon)}
     </div>
   }
 
-  drawSingleProject(name, icon){
+  drawSingleProject(name, icon, languageIcon){
     console.log(this.state.repository[name])
     if (!this.state.repository[name]){
       return 
@@ -170,7 +176,7 @@ class Codes extends Component {
             
           </div>
           <div className="projectIcons">
-            <h5 >{this.state.repository[name].language}</h5>
+            <h5>{languageIcon}&nbsp; {this.state.repository[name].language}</h5>
             <div className="gitIcons">
               <a href={this.state.repository[name].url + '/watchers'} target="_blank"  rel="noreferrer">
                 <i className="far fa-eye"></i> {this.state.repository[name].watch}

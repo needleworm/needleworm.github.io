@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './websites.css';
-import blog from "../images/websites/blog.gif";
+import blogGif from "../images/websites/blog.gif";
+import sangsangfarmGif from "../images/websites/sangsangfarm.gif";
+import priceGif from "../images/websites/price.gif";
 
 class Codes extends Component {
   constructor(props){
@@ -21,30 +23,67 @@ class Codes extends Component {
   }
 
   drawWebsites(){
-    var project = <div className="singleProjectContainer">
+    var reactIconL = <i className="fab fa-react"></i>
+    var rubyIcon = <i className="far fa-gem"></i>
+    var gitLogo = <i className="fab fa-github"></i>
+    var ms = <i className="fab fa-microsoft"></i>
+    var blog = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <a className="tempa" href="#" target="_blank"  rel="noreferrer">
-         <img className="websiteImage" src={blog} alt="projectimage"/>
+        <a className="tempa" href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
+         <img className="websiteImage" src={blogGif} alt="projectimage"/>
         </a>
         <div className="projectText">
-          <a href="#" target="_blank"  rel="noreferrer">
-            <h5>temp</h5>
+          <a className="text-center textMarginBottom" href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
+            <p><h5>https://needleworm.github.io</h5></p>
           </a>
           <div className="codeBody">
-            <p className="bookDescription firstCommitDate">
-              test
+            <p className="bookDescription">
+              My won webpage built with pure React. This static website is hosted on &nbsp;{gitLogo} Github Pages.
+              I was inspired by &nbsp; 
+              <a href='https://github.com/tzuehlke/jekyll-uno-timeline/' target="_blank"  rel="noreferrer">
+                Thomas Zühlke's jekyll theme
+              </a>. The original theme runs with jQuery for github API calling, and SCSS for styling. 
+              And its jQuery function supported only one content wrapper element.<br/>
+              I built a pure &nbsp;{reactIconL} React app looks similar to Thomas' work. 
+              As you can see, this page supports multiple content wrapper elements. 
+              If you are interested in using this site theme to build your own page, please visit my repository to get the source code.
             </p>
-            <p className="bookDescription">aaaa</p>
-            
           </div>
           <div className="projectIcons">
-            <h5 >language</h5>
+            <h5>{reactIconL}&nbsp;React</h5>
             <div className="gitIcons">
-              <a href="#" target="_blank"  rel="noreferrer">
-                <i className="fas fa-code"></i> view source
+              <a href="https://github.com/needleworm/needleworm.github.io" target="_blank"  rel="noreferrer">
+                <i className="fas fa-code"></i> Source Code
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="#" target="_blank"  rel="noreferrer">
+              <a href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i> Visit
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    var sangsangfarm = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
+         <img className="websiteImage" src={sangsangfarmGif} alt="projectimage"/>
+        </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
+            <p><h5>https://www.sangsang.farm</h5></p>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              This static website is built with pure &nbsp;{reactIconL} React and hosted on &nbsp;{ms} Microsoft Azure.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{rubyIcon}&nbsp;Jekyll</h5>
+            <div className="gitIcons">
+              <a href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i> visit
               </a>
             </div>
@@ -53,22 +92,45 @@ class Codes extends Component {
       </div>
     </div>
 
-    return project
-  }
+    
+    var price = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <a className="tempa" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
+      <img className="websiteImage" src={priceGif} alt="projectimage"/>
+      </a>
+      <div className="projectText">
+        <a className="text-center textMarginBottom" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
+          <p><h5>https://www.sangsang.farm/price</h5></p>
+        </a>
+        <div className="codeBody">
+          <p className="bookDescription">aaaa</p>
+        </div>
+        <div className="projectIcons">
+          <h5>{reactIconL}&nbsp;React</h5>
+          <div className="gitIcons">
+            <a href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i> visit
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
-  drawCodes(){
-    return(
-      <div className="codeContainer">
-        {this.drawWebsites()}
+    return (
+      <div className="websitesContainer">
+        {blog}
+        {price}
+        {sangsangfarm}
       </div>
     )
   }
 
   render() {
     return (
-      <section id="codes">
+      <section id="websites">
           {this.sectionTitle()}
-          {this.drawCodes()}
+          {this.drawWebsites()}
       </section>
     );
   }

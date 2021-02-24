@@ -6,4 +6,20 @@
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 50px;
+    min-width:350px;
+    max-width:1200px;
+}
+
+.websitesContainer{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.singleProjectContainer{
+    margin-bottom:150px;
+}
+
+.siteUrl{
+    text-align:left;
 }
