@@ -5,7 +5,8 @@ import backgroundImage from "./images/background.jpg"
 import Books from "./components/books"
 import Websites from "./components/websites"
 import Codes from "./components/codes"
-import Research from "./components/research"
+import Papers from "./components/papers"
+import Patents from "./components/patents"
 import Lectures from "./components/lectures"
 import Designs from "./components/designs"
 import News from "./components/news"
@@ -226,11 +227,11 @@ class App extends Component {
       </a>
     </li>
 
-    var research = <li className="navigation__item">
-      <a href="#research" title="Research" className="panel-button projects-button"
+    var patents = <li className="navigation__item">
+      <a href="#patents" title="Patents" className="panel-button projects-button"
         onClick={
           function(e){
-            if (this.state.latestButton === "research"){
+            if (this.state.latestButton === "patents"){
               this.setState({
                 content: "none",
                 latestButton: "none"
@@ -238,8 +239,8 @@ class App extends Component {
               this.closeSideMenu()
             } else{
               this.setState({
-                content: "research",
-                latestButton: "research"
+                content: "patents",
+                latestButton: "patents"
               })
               this.openSideMenu()
               var navigationWrapper = document.querySelector('.navigation-wrapper')
@@ -252,7 +253,37 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="fas fa-graduation-cap"></i>&nbsp;Research
+        <i className="far fa-registered"></i>&nbsp;Patents
+      </a>
+    </li>
+
+    var papers = <li className="navigation__item">
+      <a href="#papers" title="Papers" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "papers"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "papers",
+                latestButton: "papers"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }>
+        <i className="fas fa-graduation-cap"></i>&nbsp;Papers
       </a>
     </li>
 
@@ -427,14 +458,15 @@ class App extends Component {
                       {books}
                       {websites}
                       {codes}
-                      {blog}
+                      {papers}
                       {/*
-                      {research}
+                      {patents}
                       {lectures}
                       {designs}
                       {news}
                       {contact}
                       */}
+                      {blog}
                     </ul>
                   </nav>
                 </div>
@@ -481,9 +513,13 @@ class App extends Component {
       return (
         <Codes/>
       )
-    } else if (this.state.content === "research"){
+    } else if (this.state.content === "patents"){
       return (
-        <Research/>
+        <Patents/>
+      )
+    } else if (this.state.content === "papers"){
+      return (
+        <Papers/>
       )
     } else if (this.state.content === "lectures"){
       return (

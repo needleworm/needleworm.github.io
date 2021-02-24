@@ -5,7 +5,7 @@ import sangsangfarmGif from "../images/websites/sangsangfarm.gif";
 import priceGif from "../images/websites/price.gif";
 import moneyautoGif from "../images/websites/moneyauto.gif";
 
-class Codes extends Component {
+class Websites extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -184,4 +184,4 @@ class Codes extends Component {
   }
 }
   
-export default Codes;
+export default Websites;

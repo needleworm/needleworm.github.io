@@ -257,7 +257,7 @@ a {
     text-decoration: none;
     color:black;
 }
-a:hover, a:focus { 
+a:hover, a:focus, .citation:hover, .citation:focus { 
     animation-duration: 5s; 
     animation-name: rainbowLink; 
     animation-iteration-count: infinite; 
@@ -273,6 +273,7 @@ a:hover, a:focus {
  90% { color: #6b2aff; } 
  100% { color: #e82aff; }
 }
+
 h1{
     margin-top: 0.8em;
     margin-bottom: 0.4em;
