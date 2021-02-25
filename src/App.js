@@ -463,8 +463,8 @@ class App extends Component {
                       {/*
                       {lectures}
                       {designs}
-                      {news}
                       */}
+                      {news}
                       {contact}
                       {blog}
                     </ul>

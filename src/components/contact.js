@@ -12,7 +12,6 @@ class Contact extends Component {
   }
 
   submitForm() {
-    var submitMessage
     return (
       <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xaylgyzq" method="post">
         <fieldset id="fs-frm-inputs">
