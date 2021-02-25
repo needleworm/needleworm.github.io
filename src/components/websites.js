@@ -176,7 +176,7 @@ class Websites extends Component {
 
   render() {
     return (
-      <section id="websites">
+      <section id="websites" className="animated slideInRight">
           {this.sectionTitle()}
           {this.drawWebsites()}
       </section>

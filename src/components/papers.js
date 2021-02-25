@@ -459,7 +459,7 @@ class Papers extends Component {
 
   render() {
     return (
-      <section id="papers">
+      <section id="papers" className="animated slideInRight">
           {this.sectionTitle()}
           {this.drawWebsites()}
       </section>

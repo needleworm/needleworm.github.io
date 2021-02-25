@@ -51,7 +51,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <section id="contact">
+      <section id="contact" className="animated slideInRight">
         {this.sectionTitle()}
         {this.submitForm()}
       </section>

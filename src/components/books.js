@@ -156,7 +156,7 @@ class Books extends Component {
 
   render() {
     return (
-      <section id="books">
+      <section id="books" className="animated slideInRight">
           {this.sectionTitle()}
           {this.drawBooks()}
       </section>

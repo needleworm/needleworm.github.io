@@ -162,6 +162,7 @@
         transform: translateY(0);
    }
 }
+
 .bounceInDown {
     -webkit-animation-name: bounceInDown;
     -moz-animation-name: bounceInDown;
@@ -652,6 +653,13 @@ i {
         width: 100%;
         margin: 0 0 0.4em 0;
    }
+   
+    .slideInRight {
+        -webkit-animation-name: bounceInDown;
+        -moz-animation-name: bounceInDown;
+        -o-animation-name: bounceInDown;
+        animation-name: bounceInDown;
+    }
 }
 
 @media all and (max-width: 600px) {

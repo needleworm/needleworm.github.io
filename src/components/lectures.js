@@ -12,7 +12,7 @@ class Legtures extends Component {
 
   render() {
     return (
-      <div >
+      <div className="animated slideInRight">
         Legtures
       </div>
     );

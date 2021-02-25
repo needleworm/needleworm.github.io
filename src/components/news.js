@@ -12,7 +12,7 @@ class News extends Component {
 
   render() {
     return (
-      <div >
+      <div className="animated slideInRight">
         News
       </div>
     );
