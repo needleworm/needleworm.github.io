@@ -459,8 +459,8 @@ class App extends Component {
                       {websites}
                       {codes}
                       {papers}
-                      {/*
                       {patents}
+                      {/*
                       {lectures}
                       {designs}
                       {news}

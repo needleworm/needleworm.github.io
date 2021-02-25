@@ -35,7 +35,6 @@ class Papers extends Component {
   }
 
   drawWebsites(){
-    var researchgate = <i className="fab fa-researchgate"></i>
     var gitLogo = <i className="fab fa-github"></i>
 
     var paper1 = <div className="singleProjectContainer">
@@ -60,7 +59,7 @@ class Papers extends Component {
           </div>
           <div className="projectIcons">
             <h5>
-              <a className="citation"  onClick={
+              <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
                   var dummy = document.createElement("textarea");
@@ -73,7 +72,7 @@ class Papers extends Component {
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
-              </a>
+              </span>
             </h5>
             <div className="gitIcons">
               <a href="https://github.com/needleworm/greenhouse_ai" target="_blank"  rel="noreferrer">
@@ -122,7 +121,7 @@ class Papers extends Component {
           </div>
           <div className="projectIcons">
             <h5>
-              <a className="citation"  onClick={
+              <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
                   var dummy = document.createElement("textarea");
@@ -135,7 +134,7 @@ class Papers extends Component {
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
-              </a>
+              </span>
             </h5>
             <div className="gitIcons">
               <a href="https://github.com/needleworm/nutrient_solution" target="_blank"  rel="noreferrer">
@@ -170,7 +169,7 @@ class Papers extends Component {
           </div>
           <div className="projectIcons">
             <h5>
-              <a className="citation"  onClick={
+              <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
                   var dummy = document.createElement("textarea");
@@ -183,7 +182,7 @@ class Papers extends Component {
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
-              </a>
+              </span>
             </h5>
             <div className="gitIcons">
               <a href="https://github.com/needleworm/ion_interference" target="_blank"  rel="noreferrer">
@@ -218,7 +217,7 @@ class Papers extends Component {
           </div>
           <div className="projectIcons">
             <h5>
-              <a className="citation"  onClick={
+              <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
                   var dummy = document.createElement("textarea");
@@ -231,7 +230,7 @@ class Papers extends Component {
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
-              </a>
+              </span>
             </h5>
             <div className="gitIcons">
               <a href={Paper4} target="_blank"  rel="noreferrer" download>
@@ -262,7 +261,7 @@ class Papers extends Component {
           </div>
           <div className="projectIcons">
             <h5>
-              <a className="citation"  onClick={
+              <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
                   var dummy = document.createElement("textarea");
@@ -275,7 +274,7 @@ class Papers extends Component {
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
-              </a>
+              </span>
             </h5>
             <div className="gitIcons">
               <a href="https://github.com/needleworm/ion_interference" target="_blank"  rel="noreferrer">
@@ -310,7 +309,7 @@ class Papers extends Component {
           </div>
           <div className="projectIcons">
             <h5>
-              <a className="citation"  onClick={
+              <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
                   var dummy = document.createElement("textarea");
@@ -323,7 +322,7 @@ class Papers extends Component {
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
-              </a>
+              </span>
             </h5>
             <div className="gitIcons">
               <a href="https://github.com/needleworm/bh_coefficient" target="_blank"  rel="noreferrer">
@@ -358,7 +357,7 @@ class Papers extends Component {
           </div>
           <div className="projectIcons">
             <h5>
-              <a className="citation"  onClick={
+              <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
                   var dummy = document.createElement("textarea");
@@ -371,7 +370,7 @@ class Papers extends Component {
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
-              </a>
+              </span>
             </h5>
             <div className="gitIcons">
               <a href="https://github.com/needleworm/mlproject" target="_blank"  rel="noreferrer">
@@ -397,7 +396,7 @@ class Papers extends Component {
         <p><h5>The phenotype control kernel of a biomolecular regulatory network</h5></p>
           <p className="bookDescription">
             Sang-Mok Choo, <strong>Byunghyun Ban</strong>, Ja Il Joo, Kwnag-Hyun Cho*<br/>
-            BMC Systems Biology
+            BMC Systems Biology &nbsp;(SCI)
           </p>
         <div className="codeBody">
           <p className="bookDescription">
@@ -411,7 +410,7 @@ class Papers extends Component {
         </div>
         <div className="projectIcons">
           <h5>
-            <a className="citation"  onClick={
+            <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
                 var dummy = document.createElement("textarea");
@@ -424,7 +423,7 @@ class Papers extends Component {
               }
             }>
               <i className="far fa-clipboard"></i>&nbsp;Cite This
-            </a>
+            </span>
             </h5>
             <div className="gitIcons">
               <a href="https://github.com/needleworm/nc2" target="_blank"  rel="noreferrer">
