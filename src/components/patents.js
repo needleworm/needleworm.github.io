@@ -466,7 +466,7 @@ class Patents extends Component {
 
   render() {
     return (
-      <section id="websites">
+      <section id="patents">
           {this.sectionTitle()}
           {this.drawWebsites()}
       </section>

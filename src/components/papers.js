@@ -459,7 +459,7 @@ class Papers extends Component {
 
   render() {
     return (
-      <section id="websites">
+      <section id="papers">
           {this.sectionTitle()}
           {this.drawWebsites()}
       </section>

@@ -403,7 +403,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-envelope"></i>&nbsp;contact
+        <i className="far fa-envelope"></i>&nbsp;Contact
       </a>
     </li>
 
@@ -464,8 +464,8 @@ class App extends Component {
                       {lectures}
                       {designs}
                       {news}
-                      {contact}
                       */}
+                      {contact}
                       {blog}
                     </ul>
                   </nav>
