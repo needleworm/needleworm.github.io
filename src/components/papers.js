@@ -389,6 +389,7 @@ class Papers extends Component {
         </div>
       </div>
     </div>
+    
     var paper8 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src={Figure8} alt="projectimage"/>
