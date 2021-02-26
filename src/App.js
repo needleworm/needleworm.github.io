@@ -80,8 +80,6 @@ class App extends Component {
     var currentWidth = panelCover.clientWidth
     if (currentWidth < 960){
       panelCover.classList.add('panel-cover--collapsed')
-      contentWrapper.classList.add('animated')
-      contentWrapper.classList.add('slideInRight')
     } else {
       panelCover.style.maxWidth = currentWidth
       panelCover.animate(

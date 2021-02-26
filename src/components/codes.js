@@ -82,10 +82,9 @@ class Codes extends Component {
     }
 
     const chartStyle = {
-      width:'70%',
+      maxWidth:'800px',
       marginLeft:'auto',
       marginRight:'auto',
-      minWidth: '300px'
     }
 
     return (
@@ -103,12 +102,6 @@ class Codes extends Component {
       <div className="row">
         <div className="col-lg-12 text-center">
             <h2 className="section-heading subpageHeading">Codes</h2>
-            <h3 className="qwerqwer">
-              Realtime Summary of &nbsp; 
-              <a className="tempa" href="https://github.com/needleworm" target="_blank"  rel="noreferrer">
-                My <i className="fab fa-github"></i> Github Account
-                </a>
-              </h3>
         </div>
       </div>
     )
@@ -122,6 +115,15 @@ class Codes extends Component {
     var jsIcon = <i className="fab fa-js-square"></i>
     var javaIcon = <i className="fab fa-java"></i>
     return <div className="projects">
+        
+    <div className="col-lg-12 text-center">
+        <h3 className="qwerqwer">
+          Realtime Summary of &nbsp; 
+          <a className="tempa" href="https://github.com/needleworm" target="_blank"  rel="noreferrer">
+            My <i className="fab fa-github"></i> Github Account
+            </a>
+          </h3>
+    </div>
       {this.drawSingleProject("bhban_RPA", edu, pythonIcon)}
       {this.drawSingleProject("automation_edu", edu, pythonIcon)}
       {this.drawSingleProject("post_crawler", python, pythonIcon)}
