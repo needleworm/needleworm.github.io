@@ -125,6 +125,15 @@ class App extends Component {
               </a>
             </span>
 
+            
+
+    var blog = <span className="navigation__item_sns">
+    <a href="https://brunch.co.kr/@needleworm"  title="My Blog" target="_blank"  rel="noreferrer">
+              <i className="fas fa-pen-square fa-lg"></i>
+              <span className="label">Blog</span>
+            </a>
+          </span>
+
     var profilePicButton = <a href="#home" title="Home">
       <img src={profilePic} className="user-image" alt="My Profile"
         onClick={
@@ -411,12 +420,6 @@ class App extends Component {
         <i className="far fa-envelope"></i>&nbsp;Contact
       </a>
     </li>
-
-    var blog = <li className="navigation__item">
-      <a href="https://brunch.co.kr/@needleworm" title="link to Blog" target="_blank"  rel="noreferrer">
-      <i className="fas fa-external-link-alt"></i>&nbsp;Blog
-      </a>
-    </li>
     
     var mobileButtenMenu =  <span className="mobile btn-mobile-menu"
       onClick={
@@ -451,6 +454,7 @@ class App extends Component {
                     {linkedin}
                     {youtube}
                     {researchgate}
+                      {blog}
                 </nav>
                 <hr className="panel-cover__divider"/>
                 <p className="panel-cover__description">Author, Entrepreneur, Researcher and Developer</p>
@@ -471,7 +475,6 @@ class App extends Component {
                       */}
                       {news}
                       {contact}
-                      {blog}
                     </ul>
                   </nav>
                 </div>
