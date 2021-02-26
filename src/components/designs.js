@@ -12,7 +12,7 @@ class Designs extends Component {
 
   render() {
     return (
-      <div className="animated slideInRight">
+      <div className="animated bounceInDown">
         Designs
       </div>
     );

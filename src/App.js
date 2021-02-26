@@ -47,18 +47,25 @@ class App extends Component {
     var contentWrapper = document.querySelector('.content-wrapper')
     var panelCover = document.querySelector('.panel-cover')
     if (contentWrapper.classList.contains('showing')){
-      contentWrapper.classList.remove('panel-cover--collapsed')
-      panelCover.classList.remove('panel-cover--collapsed')
-      panelCover.style.maxWidth = '100%'
-      panelCover.animate(
-        [ // Keyframes
-          {'max-width': '530px', 'width': '40%'}, // from
-          {'width': '100%'}, // to
-        ], { // options
-          duration: 400,
-          easing: 'ease-in-out'
-        } 
-      )
+      var currentWidth = panelCover.clientWidth
+      if (currentWidth < 960){
+        contentWrapper.classList.remove('panel-cover--collapsed')
+        panelCover.classList.remove('panel-cover--collapsed')
+        panelCover.style.maxWidth = '100%'
+      } else {
+        contentWrapper.classList.remove('panel-cover--collapsed')
+        panelCover.classList.remove('panel-cover--collapsed')
+        panelCover.style.maxWidth = '100%'
+        panelCover.animate(
+          [ // Keyframes
+            {'max-width': '530px', 'width': '40%'}, // from
+            {'width': '100%'}, // to
+          ], { // options
+            duration: 400,
+            easing: 'ease-in-out'
+          } 
+        )
+      }
       contentWrapper.classList.remove('showing')
     }
   }

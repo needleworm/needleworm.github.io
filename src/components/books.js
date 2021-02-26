@@ -156,7 +156,7 @@ class Books extends Component {
 
   render() {
     return (
-      <section id="books" className="animated slideInRight">
+      <section id="books" className="animated bounceInDown">
           {this.sectionTitle()}
           {this.drawBooks()}
       </section>

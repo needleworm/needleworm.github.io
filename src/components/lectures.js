@@ -12,7 +12,7 @@ class Legtures extends Component {
 
   render() {
     return (
-      <div className="animated slideInRight">
+      <div className="animated bounceInDown">
         Legtures
       </div>
     );

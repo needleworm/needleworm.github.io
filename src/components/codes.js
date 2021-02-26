@@ -215,7 +215,7 @@ class Codes extends Component {
 
   render() {
     return (
-      <section id="codes" className="animated slideInRight">
+      <section id="codes" className="animated bounceInDown">
           {this.sectionTitle()}
           {this.drawCodes()}
       </section>
