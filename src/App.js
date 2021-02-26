@@ -455,7 +455,7 @@ class App extends Component {
                     {researchgate}
                 </nav>
                 <hr className="panel-cover__divider"/>
-                <p className="panel-cover__description">Author, Entrepreneur, Researcher, Developer, Designer and more. </p>
+                <p className="panel-cover__description">Author, Entrepreneur, Researcher and Developer</p>
                 <p className="panel-cover__description">Working at <a href="https://sangsang.farm">Imagination Garden Inc.</a> as CTO.</p>
                 <hr className="panel-cover__divider panel-cover__divider--secondary"/>
                 <div className="navigation-wrapper">

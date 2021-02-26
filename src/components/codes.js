@@ -85,7 +85,7 @@ class Codes extends Component {
       width:'70%',
       marginLeft:'auto',
       marginRight:'auto',
-      minWidth: '400px'
+      minWidth: '300px'
     }
 
     return (
