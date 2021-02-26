@@ -3,3 +3,9 @@
 #papers .singleProjectContainer{
     margin-bottom:140px;
 }
+
+
+#papers .projectIcons {
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+}

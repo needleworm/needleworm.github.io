@@ -10,6 +10,11 @@
     max-width:1200px;
 }
 
+#websites .projectIcons {
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
 
 
 .siteUrl{
