@@ -61,7 +61,11 @@ class Codes extends Component {
     }
 
     const data = {
-      labels: ['Python', 'C & C++', 'JS & HTML & CSS', 'ETC'],
+      labels: [
+        'Python', 
+        'C & C++', 
+        'JS & HTML & CSS', 
+        'ETC'],
       datasets: [
         {
           label: 'Code Bytes on Github',
@@ -88,7 +92,7 @@ class Codes extends Component {
       <div style={chartStyle}>
         <Doughnut data={data} options={options}/>
         <p className="text-center">
-          <h4>Click Python label to see other languages</h4>
+          <h4>Click &nbsp;<i className="fab fa-python"></i>&nbsp;Python label to see other languages</h4>
         </p><br/><br/><br/>
       </div>
     )
