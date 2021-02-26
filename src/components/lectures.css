@@ -1,0 +1,12 @@
+.singleLectureContainer{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:100px;
+}
+
+.gitIcons a{
+    font-family: "Raleway", sans-serif;
+    color: #666;
+    font-weight:100;
+}

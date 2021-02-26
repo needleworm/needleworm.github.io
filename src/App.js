@@ -293,10 +293,10 @@ class App extends Component {
     </li>
 
     var lectures = <li className="navigation__item">
-      <a href="#lecture" title="Lectures" className="panel-button projects-button"
+      <a href="#lectures" title="Lectures" className="panel-button projects-button"
         onClick={
           function(e){
-            if (this.state.latestButton === "lecture"){
+            if (this.state.latestButton === "lectures"){
               this.setState({
                 content: "none",
                 latestButton: "none"
@@ -304,8 +304,8 @@ class App extends Component {
               this.closeSideMenu()
             } else{
               this.setState({
-                content: "lecture",
-                latestButton: "lecture"
+                content: "lectures",
+                latestButton: "lectures"
               })
               this.openSideMenu()
               var navigationWrapper = document.querySelector('.navigation-wrapper')
@@ -465,8 +465,8 @@ class App extends Component {
                       {codes}
                       {papers}
                       {patents}
-                      {/*
                       {lectures}
+                      {/*
                       {designs}
                       */}
                       {news}
