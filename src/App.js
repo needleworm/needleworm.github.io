@@ -414,7 +414,7 @@ class App extends Component {
 
     var blog = <li className="navigation__item">
       <a href="https://brunch.co.kr/@needleworm" title="link to Blog" target="_blank"  rel="noreferrer">
-        <i className="fas fa-link"></i>&nbsp;Blog
+      <i className="fas fa-external-link-alt"></i>&nbsp;Blog
       </a>
     </li>
     
