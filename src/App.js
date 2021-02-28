@@ -125,8 +125,6 @@ class App extends Component {
               </a>
             </span>
 
-            
-
     var blog = <span className="navigation__item_sns">
     <a href="https://brunch.co.kr/@needleworm"  title="My Blog" target="_blank"  rel="noreferrer">
               <i className="fas fa-pen-square fa-lg"></i>
