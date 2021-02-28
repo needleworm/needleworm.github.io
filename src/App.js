@@ -11,6 +11,7 @@ import Lectures from "./components/lectures"
 import Designs from "./components/designs"
 import News from "./components/news"
 import Contact from "./components/contact"
+import Membership from "./components/membership"
 
 class App extends Component {
   constructor(props){
@@ -418,6 +419,36 @@ class App extends Component {
         <i className="far fa-envelope"></i>&nbsp;Contact
       </a>
     </li>
+
+  var membership = <li className="navigation__item">
+    <a href="#membership" title="My Memberships"
+      onClick={
+        function(e){
+          if (this.state.latestButton === "membership"){
+            this.setState({
+              content: "none",
+              latestButton: "none"
+            })
+            this.closeSideMenu()
+          } else{
+            this.setState({
+              content: "membership",
+              latestButton: "membership"
+            })
+            this.openSideMenu()
+            var navigationWrapper = document.querySelector('.navigation-wrapper')
+            var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+            navigationWrapper.classList.toggle('visible')
+            btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+            btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+            btnMobileMenuIcon.classList.toggle('animated')
+            btnMobileMenuIcon.classList.toggle('fadeIn')
+          }
+        }.bind(this)
+      }>
+      <i className="far fa-id-badge"></i>&nbsp;Membership
+    </a>
+  </li>
     
     var mobileButtenMenu =  <span className="mobile btn-mobile-menu"
       onClick={
@@ -472,6 +503,7 @@ class App extends Component {
                       {designs}
                       */}
                       {news}
+                      {membership}
                       {contact}
                     </ul>
                   </nav>
@@ -542,6 +574,10 @@ class App extends Component {
     } else if (this.state.content === "contact"){
       return (
         <Contact/>
+      )
+    }else if (this.state.content === "membership"){
+      return (
+        <Membership/>
       )
     }
   }

@@ -13,6 +13,10 @@ import News11 from "../images/news/11.jpg";
 import News12 from "../images/news/12.jpg";
 import News13 from "../images/news/13.jpg";
 import News14 from "../images/news/14.jpg";
+import News15 from "../images/news/15.jpg";
+import News16 from "../images/news/16.jpg";
+import News17 from "../images/news/17.jpg";
+import News18 from "../images/news/18.jpg";
 
 class News extends Component {
   constructor(props){
@@ -451,6 +455,126 @@ class News extends Component {
         </a>
     </div>
     </div>
+    
+    var news15 = <div className="singleProjectContainer">
+    <div className="singleNewsCard">
+      <a className="hideOnDesktop"  href="https://in-sightjournal.com/2020/07/15/ban/" target="_blank"  rel="noreferrer">
+        <div className="newsThumnail">
+          <img className="newsImage" src={News15}  alt="projectimage"/>
+          <h5>In-Sight Publishing</h5>
+        </div>
+        </a>
+      <div className="projectText">
+        <a href="https://in-sightjournal.com/2020/07/15/ban/" target="_blank"  rel="noreferrer">
+          <h5>An Interview with Byunghyun Ban (반병현) on Background, and Intelligence Testing & High-IQ Societies</h5>
+        </a>
+        <div className="codeBody">
+          <p className="bookDescription firstCommitDate">
+            2020.07.15.
+          </p>
+          <p className="bookDescription">
+          I hope High-IQ communities provide some intellectual contributions to the world. For example, I hope the societies to publish an open-access scientific journal which is indexed as SCIE or SCOPUS, and discount the publication fee for community members. This is the most simple way to collect geniuses and contribute intellectual works.
+          </p>
+        </div>
+      </div>
+      <a className="hideOnMobile"  href="https://in-sightjournal.com/2020/07/15/ban/" target="_blank"  rel="noreferrer">
+        <div className="newsThumnail">
+          <img className="newsImage" src={News15}  alt="projectimage"/>
+          <h5>In-Sight Publishing</h5>
+        </div>
+        </a>
+    </div>
+    </div>
+
+    var news16 = <div className="singleProjectContainer">
+    <div className="singleNewsCard">
+      <a className="hideOnDesktop"  href="https://startup.kaist.ac.kr/archives/29109" target="_blank"  rel="noreferrer">
+        <div className="newsThumnail">
+          <img className="newsImage" src={News16}  alt="projectimage"/>
+          <h5>Startup Kaist</h5>
+        </div>
+        </a>
+      <div className="projectText">
+        <a href="https://startup.kaist.ac.kr/archives/29109" target="_blank"  rel="noreferrer">
+          <h5>[Startup人터뷰] 양액제어시스템 등 기술을 개발하여 스마트팜을 이끄는 ‘상상텃밭’의 반병현 CTO</h5>
+        </a>
+        <div className="codeBody">
+          <p className="bookDescription firstCommitDate">
+            2020.11.13.
+          </p>
+          <p className="bookDescription">
+          당시 다이어트를 하고 있었어요. W8건물 1층 카페에서 샐러드를 사 먹고 있었습니다. 며칠간 밀가루와 고기를 못 먹었더니 성질이 사나워져서 괜히 샐러드에게 짜증이 나는 것 있죠. ‘이렇게 맛없고 비싼 걸 사먹는걸 보면 채식주의자들은 돈이 많은가?’ 하는 생각이 스쳐지나갔습니다.
+          </p>
+        </div>
+      </div>
+      <a className="hideOnMobile"  href="https://startup.kaist.ac.kr/archives/29109" target="_blank"  rel="noreferrer">
+        <div className="newsThumnail">
+          <img className="newsImage" src={News16}  alt="projectimage"/>
+          <h5>Startup Kaist</h5>
+        </div>
+        </a>
+    </div>
+    </div>
+
+    var news17 = <div className="singleProjectContainer">
+    <div className="singleNewsCard">
+      <a className="hideOnDesktop"  href="https://www.imaso.co.kr/archives/4296" target="_blank"  rel="noreferrer">
+        <div className="newsThumnail">
+          <img className="newsImage" src={News17}  alt="projectimage"/>
+          <h5>마이크로소프트웨어</h5>
+        </div>
+        </a>
+      <div className="projectText">
+        <a href="https://www.imaso.co.kr/archives/4296" target="_blank"  rel="noreferrer">
+          <h5>코딩하는 공익 반병현 CTO “AI 활용한 보급형 스마트팜, ‘상상텃밭’이 만든다”</h5>
+        </a>
+        <div className="codeBody">
+          <p className="bookDescription firstCommitDate">
+            2018.11.15.
+          </p>
+          <p className="bookDescription">
+          근무지에 발령받고 엑셀 파일 2개를 합쳐서 하나로 만들어 오라는 지시를 받았다. 그런데 이 파일은 주기적으로 업데이트가 필요한 내용인 것으로 보였고, 앞으로도 꾸준히 본인이 처리해야 할 것 같았다. 그래서 자동으로 처리하는 스크립트를 만들어 담당공무원에게 전달했다. 이게 국가정보자원관리원의 모니터링에 걸렸다. 비인가 소프트웨어 전송을 통한 공격행위로 오인돼 IP를 차단당했고, 우여곡절 끝에 이를 해제했다는 이야기다.
+          </p>
+        </div>
+      </div>
+      <a className="hideOnMobile"  href="https://www.imaso.co.kr/archives/4296" target="_blank"  rel="noreferrer">
+        <div className="newsThumnail">
+          <img className="newsImage" src={News17}  alt="projectimage"/>
+          <h5>마이크로소프트웨어</h5>
+        </div>
+        </a>
+    </div>
+    </div>
+
+    var news18 = <div className="singleProjectContainer">
+    <div className="singleNewsCard">
+      <a className="hideOnDesktop"  href="https://post.naver.com/viewer/postView.nhn?volumeNo=17719119&memberNo=2420267&vType=VERTICAL" target="_blank"  rel="noreferrer">
+        <div className="newsThumnail">
+          <img className="newsImage" src={News18}  alt="projectimage"/>
+          <h5>시사원정대</h5>
+        </div>
+        </a>
+      <div className="projectText">
+        <a href="https://post.naver.com/viewer/postView.nhn?volumeNo=17719119&memberNo=2420267&vType=VERTICAL" target="_blank"  rel="noreferrer">
+          <h5>세상의 모~든 문제 코딩으로 해결 할래요!</h5>
+        </a>
+        <div className="codeBody">
+          <p className="bookDescription firstCommitDate">
+            2019.02.16
+          </p>
+          <p className="bookDescription">
+          기존 방식으로는 처리하는 데 반년이나 걸릴 일을 최근 한 사회복무요원이 단 하루 만에 '뚝딱!' 해치워 사람들을 놀라게 했어요.'
+          </p>
+        </div>
+      </div>
+      <a className="hideOnMobile"  href="https://post.naver.com/viewer/postView.nhn?volumeNo=17719119&memberNo=2420267&vType=VERTICAL" target="_blank"  rel="noreferrer">
+        <div className="newsThumnail">
+          <img className="newsImage" src={News18}  alt="projectimage"/>
+          <h5>시사원정대</h5>
+        </div>
+        </a>
+    </div>
+    </div>
 
     return <div>
       {news14}
@@ -467,6 +591,10 @@ class News extends Component {
       {news9}
       {news11}
       {news13}
+      {news15}
+      {news16}
+      {news17}
+      {news18}
     </div>
   }
 

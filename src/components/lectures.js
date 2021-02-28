@@ -68,7 +68,7 @@ class Lectures extends Component {
               </a>
               &nbsp;&nbsp;&nbsp;
               <a href="https://youtu.be/5IfJ3JdNwB0" target="_blank"  rel="noreferrer">
-                {youtube} VLOG
+                {youtube} Vlog
               </a>
               &nbsp;&nbsp;&nbsp;
               <a href="https://fastcampus.co.kr/dev_online_bbh" target="_blank"  rel="noreferrer">
@@ -195,7 +195,7 @@ class Lectures extends Component {
         <div className="lectureIcons">
           <div className="gitIcons">
             <a href="https://www.youtube.com/watch?v=wKvUT208qao&t=10s" target="_blank"  rel="noreferrer">
-              {lectureLogo} LECTURE
+              {lectureLogo} Lecture
             </a>
           </div>
         </div>
@@ -226,11 +226,11 @@ class Lectures extends Component {
         <div className="lectureIcons">
           <div className="gitIcons">
             <a href="http://www.kdpress.co.kr/news/articleView.html?idxno=99797" target="_blank"  rel="noreferrer">
-              {newsIcon} NEWS
+              {newsIcon} News
             </a>
             &nbsp;&nbsp;&nbsp;
             <a href="https://youtu.be/4uSN6mEBdNo" target="_blank"  rel="noreferrer">
-              {youtube} VLOG
+              {youtube} Vlog
             </a>
           </div>
         </div>
@@ -249,11 +249,11 @@ class Lectures extends Component {
         <div className="lectureIcons">
           <div className="gitIcons">
             <a href="http://gamefocus.co.kr/detail.php?number=108335" target="_blank"  rel="noreferrer">
-              {newsIcon} NEWS
+              {newsIcon} News
             </a>
             &nbsp;&nbsp;&nbsp;
             <a href="https://youtu.be/lu4UOpEnHyY" target="_blank"  rel="noreferrer">
-              {lectureLogo} LECTURE
+              {lectureLogo} Lecture
             </a>
           </div>
         </div>
@@ -292,7 +292,7 @@ class Lectures extends Component {
               </a>
               &nbsp;&nbsp;&nbsp;
               <a href="https://brunch.co.kr/@needleworm/211" target="_blank"  rel="noreferrer">
-                {book} NOTES
+                {book} Notes
               </a>
             </div>
           </div>
@@ -323,7 +323,7 @@ class Lectures extends Component {
         <div className="lectureIcons">
           <div className="gitIcons">
             <a href="http://it.chosun.com/site/data/html_dir/2019/11/23/2019112301220.html" target="_blank"  rel="noreferrer">
-              {newsIcon} NEWS
+              {newsIcon} News
             </a>
           </div>
         </div>
