@@ -1,12 +1,1 @@
-.patentInfo{
-    display:grid; 
-    grid-template-columns: 1fr 1fr;
-}
-#patents .singleProjectContainer{
-    margin-bottom:140px;
-}
-
-#patents .projectIcons {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-}
+.patentInfo{display:grid;grid-template-columns:1fr 1fr}#patents .singleProjectContainer{margin-bottom:140px}#patents .projectIcons{display:grid;grid-template-columns:1fr 1fr}
