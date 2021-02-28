@@ -167,7 +167,6 @@ class Codes extends Component {
   }
 
   drawSingleProject(name, icon, languageIcon){
-    console.log(this.state.repository[name])
     if (!this.state.repository[name]){
       return 
     }
