@@ -2,17 +2,17 @@ import React, {Component} from 'react';
 import './news.css';
 import News1 from "../images/news/1.jpg";
 import News2 from "../images/news/2.jpg";
-import News3 from "../images/news/3.png";
-import News4 from "../images/news/4.png";
-import News5 from "../images/news/5.png";
-import News6 from "../images/news/6.png";
-import News8 from "../images/news/8.png";
-import News9 from "../images/news/9.png";
+import News3 from "../images/news/3.jpg";
+import News4 from "../images/news/4.jpg";
+import News5 from "../images/news/5.jpg";
+import News6 from "../images/news/6.jpg";
+import News8 from "../images/news/8.jpg";
+import News9 from "../images/news/9.jpg";
 import News10 from "../images/news/10.jpg";
-import News11 from "../images/news/11.png";
-import News12 from "../images/news/12.png";
-import News13 from "../images/news/13.png";
-import News14 from "../images/news/14.png";
+import News11 from "../images/news/11.jpg";
+import News12 from "../images/news/12.jpg";
+import News13 from "../images/news/13.jpg";
+import News14 from "../images/news/14.jpg";
 
 class News extends Component {
   constructor(props){

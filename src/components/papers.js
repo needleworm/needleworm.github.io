@@ -1,21 +1,21 @@
 import React, {Component} from 'react';
 import './papers.css';
 import Paper1 from "../paperPdf/ICTC2017_01.pdf";
-import Figure1 from "../images/papers/ICTC2017_01.png";
+import Figure1 from "../images/papers/ICTC2017_01.jpg";
 import Paper2 from "../paperPdf/ICTC2019_01.pdf";
 import Figure2 from "../images/papers/ICTC2019_01.jpg";
 import Paper3 from "../paperPdf/ICTC2019_02.pdf";
-import Figure3 from "../images/papers/ICTC2019_02.png";
+import Figure3 from "../images/papers/ICTC2019_02.jpg";
 import Paper4 from "../paperPdf/ICTC2020_01.pdf";
-import Figure4 from "../images/papers/ICTC2020_01.png";
+import Figure4 from "../images/papers/ICTC2020_01.jpg";
 import Paper5 from "../paperPdf/ICTC2020_02.pdf";
-import Figure5 from "../images/papers/ICTC2020_02.png";
+import Figure5 from "../images/papers/ICTC2020_02.jpg";
 import Paper6 from "../paperPdf/ICTC2020_03.pdf";
-import Figure6 from "../images/papers/ICTC2020_03.png";
+import Figure6 from "../images/papers/ICTC2020_03.jpg";
 import Paper7 from "../paperPdf/ICTC2017_02.pdf";
-import Figure7 from "../images/papers/ICTC2017_02.png";
+import Figure7 from "../images/papers/ICTC2017_02.jpg";
 import Paper8 from "../paperPdf/BMC_SB_2018.pdf";
-import Figure8 from "../images/papers/BMC_SB_2018.png";
+import Figure8 from "../images/papers/BMC_SB_2018.jpg";
 
 class Papers extends Component {
   constructor(props){
