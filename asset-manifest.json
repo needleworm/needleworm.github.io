@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.636facf1.chunk.css",
-    "main.js": "/static/js/main.80fec88b.chunk.js",
-    "main.js.map": "/static/js/main.80fec88b.chunk.js.map",
+    "main.js": "/static/js/main.7299a938.chunk.js",
+    "main.js.map": "/static/js/main.7299a938.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.42b0dc4c.js",
     "runtime-main.js.map": "/static/js/runtime-main.42b0dc4c.js.map",
     "static/js/2.24d02cc8.chunk.js": "/static/js/2.24d02cc8.chunk.js",
@@ -98,7 +98,7 @@
     "static/media/moneyauto.1e5dac16.jpg": "/static/media/moneyauto.1e5dac16.jpg",
     "static/media/moneyauto.4a077bc8.gif": "/static/media/moneyauto.4a077bc8.gif",
     "static/media/price.a4ca21c4.gif": "/static/media/price.a4ca21c4.gif",
-    "static/media/profile_pic.6f7036e1.jpg": "/static/media/profile_pic.6f7036e1.jpg",
+    "static/media/profile_pic.879e6822.jpg": "/static/media/profile_pic.879e6822.jpg",
     "static/media/python.b006f8db.jpg": "/static/media/python.b006f8db.jpg",
     "static/media/react.0f9164ca.jpg": "/static/media/react.0f9164ca.jpg",
     "static/media/sangsangfarm.1bf86aca.gif": "/static/media/sangsangfarm.1bf86aca.gif",
@@ -110,6 +110,6 @@
     "static/js/runtime-main.42b0dc4c.js",
     "static/js/2.24d02cc8.chunk.js",
     "static/css/main.636facf1.chunk.css",
-    "static/js/main.80fec88b.chunk.js"
+    "static/js/main.7299a938.chunk.js"
   ]
 }
