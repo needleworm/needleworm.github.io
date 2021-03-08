@@ -23,16 +23,19 @@ class Books extends Component {
   drawBooks(){
     var bookSection1 = <div className="singleBookContainer">
       <img src={book1} alt="book1" className="bookCoverImage"/>
-      <h5>6개월 치 업무를 하루 만에 끝내는 업무자동화</h5>
+      <h5>
+          6개월 치 업무를 하루 만에 끝내는 업무자동화<a href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer"><i className="fas fa-external-link-alt"></i> 
+        </a>
+        </h5>
       <p className="bookDescription">2020.12. 생능출판사</p>
       <ul className="list-inline">
-        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970504745&start=pnaver_02">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970504745&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src={alladin} className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkclassName=&barcode=9788970504742">
+        <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkclassName=&barcode=9788970504742" target="_blank"  rel="noreferrer">
           <img src={kyobo} className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=17665326">
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=17665326" target="_blank"  rel="noreferrer">
           <img src={naver} className="bookStoreIcon" alt="naver"/></a></li>
-        <li><a href="http://www.yes24.com/Product/Goods/96360166">
+        <li><a href="http://www.yes24.com/Product/Goods/96360166" target="_blank"  rel="noreferrer">
           <img src={yes24} className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
@@ -42,13 +45,13 @@ class Books extends Component {
       <h5>공학자의 오경묵상</h5>
       <p className="bookDescription">2020.11. BOOKK(부크크)</p>
       <ul className="list-inline">
-        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K112735243&start=pnaver_02">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K112735243&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src={alladin} className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000403693">
+        <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000403693" target="_blank"  rel="noreferrer">
           <img src={kyobo} className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=17469780">
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=17469780" target="_blank"  rel="noreferrer">
           <img src={naver} className="bookStoreIcon" alt="naver"/></a></li>
-        <li><a href="http://www.yes24.com/Product/Goods/95590656">
+        <li><a href="http://www.yes24.com/Product/Goods/95590656" target="_blank"  rel="noreferrer">
           <img src={yes24} className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
@@ -58,13 +61,13 @@ class Books extends Component {
       <h5>공학자의 지혜묵상</h5>
       <p className="bookDescription">2020.05. BOOKK(부크크)</p>
       <ul className="list-inline">
-        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K452639642&start=pnaver_02">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K452639642&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src={alladin} className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000378984">
+        <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000378984" target="_blank"  rel="noreferrer">
           <img src={kyobo} className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16369629">
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16369629" target="_blank"  rel="noreferrer">
           <img src={naver} className="bookStoreIcon" alt="naver"/></a></li>
-        <li><a href="http://www.yes24.com/Product/Goods/90392271">
+        <li><a href="http://www.yes24.com/Product/Goods/90392271" target="_blank"  rel="noreferrer">
           <img src={yes24} className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
@@ -74,13 +77,13 @@ class Books extends Component {
       <h5>실전 민사소송법</h5>
       <p className="bookDescription">2020.05. BOOKK(부크크)</p>
       <ul className="list-inline">
-        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K572639625&start=pnaver_02">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K572639625&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src={alladin} className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000377208">
+        <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000377208" target="_blank"  rel="noreferrer">
           <img src={kyobo} className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357665">
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357665" target="_blank"  rel="noreferrer">
           <img src={naver} className="bookStoreIcon" alt="naver"/></a></li>
-        <li><a href="http://www.yes24.com/Product/Goods/90250538">
+        <li><a href="http://www.yes24.com/Product/Goods/90250538" target="_blank"  rel="noreferrer">
           <img src={yes24} className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
@@ -90,11 +93,11 @@ class Books extends Component {
       <h5>법대로 합시다</h5>
       <p className="bookDescription">2016.02. 지식과감성#</p>
       <ul className="list-inline">
-        <li><a href="http://digital.kyobobook.co.kr/digital/ebook/ebookDetail.ink?LINK=NVE&category=001&barcode=4801159610081">
+        <li><a href="http://digital.kyobobook.co.kr/digital/ebook/ebookDetail.ink?LINK=NVE&category=001&barcode=4801159610081" target="_blank"  rel="noreferrer">
           <img src={kyobo} className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=10236421">
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=10236421" target="_blank"  rel="noreferrer">
           <img src={naver} className="bookStoreIcon" alt="naver"/></a></li>
-        <li><a href="http://www.yes24.com/Product/Goods/30660689">
+        <li><a href="http://www.yes24.com/Product/Goods/30660689" target="_blank"  rel="noreferrer">
           <img src={yes24} className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
@@ -104,13 +107,13 @@ class Books extends Component {
       <h5>나는 아직 잊힐 준비가 되지 않았어요</h5>
       <p className="bookDescription">2020.08. BOOKK(부크크)</p>
       <ul className="list-inline">
-        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K622632023&start=pnaver_02">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K622632023&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src={alladin} className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000388044">
+        <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000388044" target="_blank"  rel="noreferrer">
           <img src={kyobo} className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16629718">
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16629718" target="_blank"  rel="noreferrer">
           <img src={naver} className="bookStoreIcon" alt="naver"/></a></li>
-        <li><a href="http://www.yes24.com/Product/Goods/92154589">
+        <li><a href="http://www.yes24.com/Product/Goods/92154589" target="_blank"  rel="noreferrer">
           <img src={yes24} className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
@@ -120,13 +123,13 @@ class Books extends Component {
       <h5>코딩하는 공익</h5>
       <p className="bookDescription">2020.04. 세창출판사</p>
       <ul className="list-inline">
-        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8955866119&start=pnaver_02">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8955866119&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src={alladin} className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkclassName=&barcode=9788955866117">
+        <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkclassName=&barcode=9788955866117" target="_blank"  rel="noreferrer">
           <img src={kyobo} className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16340073">
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16340073" target="_blank"  rel="noreferrer">
           <img src={naver} className="bookStoreIcon" alt="naver"/></a></li>
-        <li><a href="http://www.yes24.com/Product/Goods/90081924">
+        <li><a href="http://www.yes24.com/Product/Goods/90081924" target="_blank"  rel="noreferrer">
           <img src={yes24} className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
