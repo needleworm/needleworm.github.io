@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.89bfe447.chunk.css",
-    "main.js": "/static/js/main.d63e4b78.chunk.js",
-    "main.js.map": "/static/js/main.d63e4b78.chunk.js.map",
+    "main.js": "/static/js/main.aa702538.chunk.js",
+    "main.js.map": "/static/js/main.aa702538.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.42b0dc4c.js",
     "runtime-main.js.map": "/static/js/runtime-main.42b0dc4c.js.map",
     "static/js/2.8acc83b8.chunk.js": "/static/js/2.8acc83b8.chunk.js",
@@ -111,6 +111,7 @@
     "static/media/profile_pic.879e6822.jpg": "/static/media/profile_pic.879e6822.jpg",
     "static/media/python.b006f8db.jpg": "/static/media/python.b006f8db.jpg",
     "static/media/react.0f9164ca.jpg": "/static/media/react.0f9164ca.jpg",
+    "static/media/rpa.57a32a15.gif": "/static/media/rpa.57a32a15.gif",
     "static/media/sangsangfarm.1bf86aca.gif": "/static/media/sangsangfarm.1bf86aca.gif",
     "static/media/science.68add386.jpg": "/static/media/science.68add386.jpg",
     "static/media/tf.76bd0d3d.jpg": "/static/media/tf.76bd0d3d.jpg",
@@ -120,6 +121,6 @@
     "static/js/runtime-main.42b0dc4c.js",
     "static/js/2.8acc83b8.chunk.js",
     "static/css/main.89bfe447.chunk.css",
-    "static/js/main.d63e4b78.chunk.js"
+    "static/js/main.aa702538.chunk.js"
   ]
 }
