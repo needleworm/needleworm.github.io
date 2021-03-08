@@ -24,7 +24,7 @@ class Books extends Component {
     var bookSection1 = <div className="singleBookContainer">
       <img src={book1} alt="book1" className="bookCoverImage"/>
       <h5>
-          6개월 치 업무를 하루 만에 끝내는 업무자동화<a href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer"><i className="fas fa-external-link-alt"></i> 
+          6개월 치 업무를 하루 만에 끝내는 업무자동화 &nbsp;<a href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer"><i className="fas fa-external-link-alt"></i> 
         </a>
         </h5>
       <p className="bookDescription">2020.12. 생능출판사</p>
