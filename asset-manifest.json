@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.89bfe447.chunk.css",
-    "main.js": "/static/js/main.b5a40a86.chunk.js",
-    "main.js.map": "/static/js/main.b5a40a86.chunk.js.map",
+    "main.js": "/static/js/main.6ecb36a6.chunk.js",
+    "main.js.map": "/static/js/main.6ecb36a6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.42b0dc4c.js",
     "runtime-main.js.map": "/static/js/runtime-main.42b0dc4c.js.map",
     "static/js/2.8acc83b8.chunk.js": "/static/js/2.8acc83b8.chunk.js",
@@ -102,17 +102,17 @@
     "static/media/ICTC2020_03.2a7ad71e.pdf": "/static/media/ICTC2020_03.2a7ad71e.pdf",
     "static/media/ICTC2020_03.4683395b.jpg": "/static/media/ICTC2020_03.4683395b.jpg",
     "static/media/App.css": "/static/media/background.73e263e8.jpg",
-    "static/media/blog.72547ebb.gif": "/static/media/blog.72547ebb.gif",
+    "static/media/blog.f6a19fff.gif": "/static/media/blog.f6a19fff.gif",
     "static/media/cheese.f614b85e.jpg": "/static/media/cheese.f614b85e.jpg",
     "static/media/edu.c4123615.jpg": "/static/media/edu.c4123615.jpg",
     "static/media/moneyauto.1e5dac16.jpg": "/static/media/moneyauto.1e5dac16.jpg",
-    "static/media/moneyauto.4a077bc8.gif": "/static/media/moneyauto.4a077bc8.gif",
-    "static/media/price.a4ca21c4.gif": "/static/media/price.a4ca21c4.gif",
+    "static/media/moneyauto.61bbc247.gif": "/static/media/moneyauto.61bbc247.gif",
+    "static/media/price.d2e2f575.gif": "/static/media/price.d2e2f575.gif",
     "static/media/profile_pic.879e6822.jpg": "/static/media/profile_pic.879e6822.jpg",
     "static/media/python.b006f8db.jpg": "/static/media/python.b006f8db.jpg",
     "static/media/react.0f9164ca.jpg": "/static/media/react.0f9164ca.jpg",
     "static/media/rpa.57a32a15.gif": "/static/media/rpa.57a32a15.gif",
-    "static/media/sangsangfarm.1bf86aca.gif": "/static/media/sangsangfarm.1bf86aca.gif",
+    "static/media/sangsangfarm.a37738c2.gif": "/static/media/sangsangfarm.a37738c2.gif",
     "static/media/science.68add386.jpg": "/static/media/science.68add386.jpg",
     "static/media/tf.76bd0d3d.jpg": "/static/media/tf.76bd0d3d.jpg",
     "static/media/tfjs.d2bc2281.jpg": "/static/media/tfjs.d2bc2281.jpg"
@@ -121,6 +121,6 @@
     "static/js/runtime-main.42b0dc4c.js",
     "static/js/2.8acc83b8.chunk.js",
     "static/css/main.89bfe447.chunk.css",
-    "static/js/main.b5a40a86.chunk.js"
+    "static/js/main.6ecb36a6.chunk.js"
   ]
 }
