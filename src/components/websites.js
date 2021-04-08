@@ -5,6 +5,7 @@ import sangsangfarmGif from "../images/websites/sangsangfarm.gif";
 import priceGif from "../images/websites/price.gif";
 import moneyautoGif from "../images/websites/moneyauto.gif";
 import rpaGif from "../images/websites/rpa.gif";
+import aiGif from "../images/websites/ai.gif";
 
 class Websites extends Component {
   constructor(props){
@@ -59,6 +60,39 @@ class Websites extends Component {
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    var ai = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src={aiGif} alt="projectimage"/>
+        </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
+            <p><h5>https://needleworm.github.io/bhban_ai</h5></p>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              This page provides example codes for my book, "수학, 통계를 몰라도 이해되는 쉬운 딥러닝 (생능출판사, 2021)". It was built with  &nbsp;{jekyllIcon}&nbsp;Jekyll and &nbsp;
+            <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
+              Agency theme by Ravi Riley
+            </a>.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
+            <div className="gitIcons">
+              <a href="https://github.com/needleworm/bhban_ai/tree/web" target="_blank"  rel="noreferrer">
+                <i className="fas fa-code"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -201,6 +235,7 @@ class Websites extends Component {
     return (
       <div className="websitesContainer">
         {blog}
+        {ai}
         {rpa}
         {moneyauto}
         {sangsangfarm}
