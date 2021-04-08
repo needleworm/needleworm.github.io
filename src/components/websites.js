@@ -6,6 +6,7 @@ import priceGif from "../images/websites/price.gif";
 import moneyautoGif from "../images/websites/moneyauto.gif";
 import rpaGif from "../images/websites/rpa.gif";
 import aiGif from "../images/websites/ai.gif";
+import businessGif from "../images/websites/business.gif";
 
 class Websites extends Component {
   constructor(props){
@@ -200,6 +201,35 @@ class Websites extends Component {
       </div>
     </div>
 
+    var business = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <a className="tempa" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
+      <img className="websiteImage" src={businessGif} alt="projectimage"/>
+      </a>
+      <div className="projectText">
+        <a className="text-center textMarginBottom" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
+          <p><h5>https://www.sangsang.farm/business</h5></p>
+        </a>
+        <div className="codeBody">
+          <p className="bookDescription">
+            Business proposal page of Imagination Garden Inc. This website provides embedded slide show for presentation.
+            This static website was built with &nbsp;{jekyllIcon}&nbsp;Jekyll and hosted on &nbsp;{ms} Azure. It also utilized &nbsp;
+            <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
+              Agency theme by Ravi Riley
+            </a>.
+          </p>
+        </div>
+        <div className="projectIcons">
+          <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{ms}&nbsp;Azure</h5>
+          <div className="gitIcons">
+            <a href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
     
     var price = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
@@ -240,6 +270,7 @@ class Websites extends Component {
         {moneyauto}
         {sangsangfarm}
         {price}
+        {business}
       </div>
     )
   }
