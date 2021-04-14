@@ -18,7 +18,7 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "prepare": "npm install react-scripts, chart.js, react-chartjs-2, gh-pages",
+    "prepare": "npm install react-scripts chart.js react-chartjs-2 gh-pages",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

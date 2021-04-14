@@ -7,6 +7,7 @@ import book4 from '../images/books/covers/4.jpg';
 import book5 from '../images/books/covers/5.jpg';
 import book6 from '../images/books/covers/6.jpg';
 import book7 from '../images/books/covers/7.jpg';
+import book8 from '../images/books/covers/8.jpg';
 import alladin from '../images/books/stores/aladdin.png';
 import kyobo from '../images/books/stores/kyobo.png';
 import naver from '../images/books/stores/naver.png';
@@ -133,9 +134,26 @@ class Books extends Component {
           <img src={yes24} className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
+    
+    var bookSection8 = <div className="singleBookContainer">
+      <img src={book8} alt="book1" className="bookCoverImage"/>
+      <h5>수학·통계를 몰라도 이해할 수 있는 쉬운 딥러닝</h5>
+      <p className="bookDescription">2021.04. 생능출판사 (출간예정)</p>
+      <ul className="list-inline">
+        <li>
+          <img src={alladin} className="bookStoreIcon" alt="aladin"/></li>
+        <li>
+          <img src={kyobo} className="bookStoreIcon" alt="kyobo"/></li>
+        <li>
+          <img src={naver} className="bookStoreIcon" alt="naver"/></li>
+        <li>
+          <img src={yes24} className="bookStoreIcon" alt="yes24"/></li>
+      </ul>
+    </div>
 
     return(
       <div className="bookContainer">
+        {bookSection8}
         {bookSection1}
         {bookSection7}
         {bookSection3}
