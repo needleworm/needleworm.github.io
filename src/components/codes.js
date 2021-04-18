@@ -127,7 +127,7 @@ class Codes extends Component {
       {this.drawSingleProject("pubmed_crawler", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
       {this.drawSingleProject("chulsukbu", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
       {this.drawSingleProject("CoinAutoTrader_Bithumb", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/moneyauto.jpg", pythonIcon)}
-      {this.drawSingleProject("needleworm.github.io", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/reactIcon.jpg", reactIconL)}
+      {this.drawSingleProject("needleworm.github.io", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/react.jpg", reactIconL)}
       {this.drawSingleProject("nc2", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
       {this.drawSingleProject("greenhouse_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
       {this.drawSingleProject("xlsx_sorter", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
