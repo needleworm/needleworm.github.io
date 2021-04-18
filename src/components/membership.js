@@ -1,11 +1,5 @@
 import React, {Component} from 'react';
 import './lectures.css';
-import Membership1 from "../images/membership/1.jpg";
-import Membership2 from "../images/membership/2.jpg";
-import Membership3 from "../images/membership/3.jpg";
-import Membership4 from "../images/membership/4.jpg";
-import Membership5 from "../images/membership/5.jpg";
-import Membership6 from "../images/membership/6.jpg";
 
 
 class Membership extends Component {
@@ -31,7 +25,7 @@ class Membership extends Component {
 
     var membership1 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Membership1} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/1.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>League of Perfect Scorers (LPS)</h5></p>
             <p className="bookDescription">
@@ -55,7 +49,7 @@ class Membership extends Component {
 
     var membership2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src={Membership2} alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/2.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>World Genius Directory</h5></p>
             <p className="bookDescription">
@@ -78,7 +72,7 @@ class Membership extends Component {
 
     var membership3 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src={Membership3} alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/3.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>ISI Society</h5></p>
             <p className="bookDescription">
@@ -101,7 +95,7 @@ class Membership extends Component {
 
     var membership4 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src={Membership4} alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/4.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>Intertel</h5></p>
             <p className="bookDescription">
@@ -124,7 +118,7 @@ class Membership extends Component {
 
     var membership5 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src={Membership5} alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/5.jpg" alt="projectimage"/>
       <div className="projectText">
         <p><h5>Glia Society</h5></p>
           <p className="bookDescription">
@@ -143,7 +137,7 @@ class Membership extends Component {
 
     var membership6 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src={Membership6} alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/6.jpg" alt="projectimage"/>
       <div className="projectText">
         <p><h5>CIVIQ Society</h5></p>
           <p className="bookDescription">

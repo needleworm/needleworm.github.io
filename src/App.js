@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import profilePic from "./images/profile_pic.jpg"
-import backgroundImage from "./images/background.jpg"
 import Books from "./components/books"
 import Websites from "./components/websites"
 import Codes from "./components/codes"
@@ -134,9 +132,10 @@ class App extends Component {
           </span>
 
     var profilePicButton = <a href="#home" title="Home">
-      <img src={profilePic} className="user-image" alt="My Profile"
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/profile_pic.jpg" className="user-image" alt="My Profile"
         onClick={
           function(e){
+
             this.setState({
               latestButton: "none",
               content:"none"
@@ -472,7 +471,7 @@ class App extends Component {
     return(
       <div>
         {mobileButtenMenu}
-        <header className="panel-cover" style={{background_image: backgroundImage, maxWidth:'100%'}}>
+        <header className="panel-cover" style={{background_image: "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/background.jpg", maxWidth:'100%'}}>
           <div className="panel-main">
             <div className="panel-main__inner panel-inverted">
               <div className="panel-main__content">

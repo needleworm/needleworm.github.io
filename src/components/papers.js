@@ -1,21 +1,7 @@
 import React, {Component} from 'react';
 import './papers.css';
-import Paper1 from "../paperPdf/ICTC2017_01.pdf";
-import Figure1 from "../images/papers/ICTC2017_01.jpg";
-import Paper2 from "../paperPdf/ICTC2019_01.pdf";
-import Figure2 from "../images/papers/ICTC2019_01.jpg";
-import Paper3 from "../paperPdf/ICTC2019_02.pdf";
-import Figure3 from "../images/papers/ICTC2019_02.jpg";
-import Paper4 from "../paperPdf/ICTC2020_01.pdf";
-import Figure4 from "../images/papers/ICTC2020_01.jpg";
-import Paper5 from "../paperPdf/ICTC2020_02.pdf";
-import Figure5 from "../images/papers/ICTC2020_02.jpg";
-import Paper6 from "../paperPdf/ICTC2020_03.pdf";
-import Figure6 from "../images/papers/ICTC2020_03.jpg";
-import Paper7 from "../paperPdf/ICTC2017_02.pdf";
-import Figure7 from "../images/papers/ICTC2017_02.jpg";
-import Paper8 from "../paperPdf/BMC_SB_2018.pdf";
-import Figure8 from "../images/papers/BMC_SB_2018.jpg";
+
+
 
 class Papers extends Component {
   constructor(props){
@@ -39,7 +25,7 @@ class Papers extends Component {
 
     var paper1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Figure1} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2017_01.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning</h5></p>
             <p className="bookDescription">
@@ -79,7 +65,7 @@ class Papers extends Component {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href={Paper1} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2017_01.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -94,7 +80,7 @@ class Papers extends Component {
     
     var paper2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Figure2} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2019_01.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System</h5></p>
             <p className="bookDescription">
@@ -141,7 +127,7 @@ class Papers extends Component {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href={Paper2} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2019_01.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -155,7 +141,7 @@ class Papers extends Component {
     </div>
     var paper3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Figure3} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2019_02.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient Solutions</h5></p>
             <p className="bookDescription">
@@ -189,7 +175,7 @@ class Papers extends Component {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href={Paper3} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2019_02.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -203,7 +189,7 @@ class Papers extends Component {
     </div>
     var paper4 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Figure4} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_01.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>Nutrient Solution Management System for Smart Farms and Plant Factory</h5></p>
             <p className="bookDescription">
@@ -233,7 +219,7 @@ class Papers extends Component {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href={Paper4} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2020_01.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -247,7 +233,7 @@ class Papers extends Component {
     </div>
     var paper5 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Figure5} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_02.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>Deep learning method to remove chemical, kinetic and electric artifacts on ISEs</h5></p>
             <p className="bookDescription">
@@ -281,7 +267,7 @@ class Papers extends Component {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href={Paper5} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2020_02.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -295,7 +281,7 @@ class Papers extends Component {
     </div>
     var paper6 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Figure6} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_03.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis</h5></p>
             <p className="bookDescription">
@@ -329,7 +315,7 @@ class Papers extends Component {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href={Paper6} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2020_03.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -343,7 +329,7 @@ class Papers extends Component {
     </div>
     var paper7 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src={Figure7} alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2017_02.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>GAN-D: Generative adversarial networks for image deconvolution</h5></p>
             <p className="bookDescription">
@@ -377,7 +363,7 @@ class Papers extends Component {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href={Paper7} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2017_02.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -392,7 +378,7 @@ class Papers extends Component {
     
     var paper8 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src={Figure8} alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/BMC_SB_2018.jpg" alt="projectimage"/>
       <div className="projectText">
         <p><h5>The phenotype control kernel of a biomolecular regulatory network</h5></p>
           <p className="bookDescription">
@@ -431,7 +417,7 @@ class Papers extends Component {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href={Paper8} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/BMC_SB_2018.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;

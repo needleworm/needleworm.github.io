@@ -1,23 +1,5 @@
 import React, {Component} from 'react';
 import './patents.css';
-import Patent1 from "../patentPdf/1.pdf";
-import Figure1 from "../images/patents/1.jpg";
-import Patent2 from "../patentPdf/2.pdf";
-import Figure2 from "../images/patents/2.jpg";
-import Patent3 from "../patentPdf/3.pdf";
-import Figure3 from "../images/patents/3.jpg";
-import Patent4 from "../patentPdf/4.pdf";
-import Figure4 from "../images/patents/4.jpg";
-import Patent5 from "../patentPdf/5.pdf";
-import Figure5 from "../images/patents/5.jpg";
-import Patent6 from "../patentPdf/6.pdf";
-import Figure6 from "../images/patents/6.jpg";
-import Patent7 from "../patentPdf/7.pdf";
-import Figure7 from "../images/patents/7.jpg";
-import Patent8 from "../patentPdf/8.pdf";
-import Figure8 from "../images/patents/8.jpg";
-import Patent9 from "../patentPdf/9.pdf";
-import Figure9 from "../images/patents/9.jpg";
 
 class Patents extends Component {
   constructor(props){
@@ -42,7 +24,7 @@ class Patents extends Component {
 
     var patent1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Figure1} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/1.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>센서의 자동 캘리브레이션이 가능한 양액 제어 장치 및 방법</h5></p>
             <p className="bookDescription">
@@ -76,7 +58,7 @@ class Patents extends Component {
                 {capLogo}
               </a>
               &nbsp;&nbsp;&nbsp;
-              <a href={Patent1} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/1.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -91,7 +73,7 @@ class Patents extends Component {
     
     var patent2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Figure2} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/2.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>데이터 처리 서버 및 방법</h5></p>
             <p className="bookDescription">
@@ -121,7 +103,7 @@ class Patents extends Component {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href={Patent2} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/2.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -136,7 +118,7 @@ class Patents extends Component {
     
     var patent3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src={Figure3} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/3.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>용존산소량 및 양액 농도 조절이 가능한 양액 재배 장치 및 방법</h5></p>
             <p className="bookDescription">
@@ -166,7 +148,7 @@ class Patents extends Component {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href={Patent3} target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/3.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -181,7 +163,7 @@ class Patents extends Component {
     
     var patent4 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src={Figure4} alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/4.jpg" alt="projectimage"/>
       <div className="projectText">
         <p><h5>식물 뿌리의 이온 흡수율 분석 장치 및 방법</h5></p>
           <p className="bookDescription">
@@ -219,7 +201,7 @@ class Patents extends Component {
                 {capLogo}
               </a>
             &nbsp;&nbsp;&nbsp;
-            <a href={Patent4} target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/4.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -234,7 +216,7 @@ class Patents extends Component {
 
     var patent5 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src={Figure5} alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/5.jpg" alt="projectimage"/>
       <div className="projectText">
         <p><h5>식물 뿌리의 이온 흡수율 분석 장치 및 방법</h5></p>
           <p className="bookDescription">
@@ -272,7 +254,7 @@ class Patents extends Component {
                 {capLogo}
               </a>
             &nbsp;&nbsp;&nbsp;
-            <a href={Patent5} target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/5.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -287,7 +269,7 @@ class Patents extends Component {
       
     var patent6 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src={Figure6} alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/6.jpg" alt="projectimage"/>
       <div className="projectText">
         <p><h5>상미분방적식으로 모델링된 네트워크 모델을 이용한 수경재배 양액 분석 장치 및 방법</h5></p>
           <p className="bookDescription">
@@ -325,7 +307,7 @@ class Patents extends Component {
                 {capLogo}
               </a>
             &nbsp;&nbsp;&nbsp;
-            <a href={Patent6} target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/6.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -340,7 +322,7 @@ class Patents extends Component {
 
     var patent7 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src={Figure7} alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/7.jpg" alt="projectimage"/>
       <div className="projectText">
         <p><h5>온실 시스템의 제어 모델 생성 방법</h5></p>
           <p className="bookDescription">
@@ -378,7 +360,7 @@ class Patents extends Component {
                 {capLogo}
               </a>
             &nbsp;&nbsp;&nbsp;
-            <a href={Patent7} target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/7.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -393,7 +375,7 @@ class Patents extends Component {
 
     var patent8 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src={Figure8} alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/8.jpg" alt="projectimage"/>
       <div className="projectText">
         <p><h5>수경재배용 양액 관리 자동화 시스템 및 그 방법</h5></p>
           <p className="bookDescription">
@@ -407,7 +389,7 @@ class Patents extends Component {
         <div className="projectIcons">
           <span></span>
           <div className="gitIcons">
-            <a href={Patent8} target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/8.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -422,7 +404,7 @@ class Patents extends Component {
 
     var patent9 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src={Figure9} alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/9.jpg" alt="projectimage"/>
       <div className="projectText">
         <p><h5>프리 오더 마르코프 체인과 베이즈 추론을 이용한 음악 작곡 방법</h5></p>
           <p className="bookDescription">
@@ -436,7 +418,7 @@ class Patents extends Component {
         <div className="projectIcons">
           <span></span>
           <div className="gitIcons">
-            <a href={Patent9} target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/9.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;

@@ -1,12 +1,6 @@
 import React, {Component} from 'react';
 import './websites.css';
-import blogGif from "../images/websites/blog.gif";
-import sangsangfarmGif from "../images/websites/sangsangfarm.gif";
-import priceGif from "../images/websites/price.gif";
-import moneyautoGif from "../images/websites/moneyauto.gif";
-import rpaGif from "../images/websites/rpa.gif";
-import aiGif from "../images/websites/ai.gif";
-import businessGif from "../images/websites/business.gif";
+
 
 class Websites extends Component {
   constructor(props){
@@ -34,7 +28,7 @@ class Websites extends Component {
     var blog = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
-         <img className="websiteImage" src={blogGif} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/blog.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
@@ -72,7 +66,7 @@ class Websites extends Component {
     var ai = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src={aiGif} alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/ai.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
@@ -105,7 +99,7 @@ class Websites extends Component {
     var rpa = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src={rpaGif} alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/rpa.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
@@ -138,7 +132,7 @@ class Websites extends Component {
     var moneyauto = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <a className="tempa" href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
-      <img className="websiteImage" src={moneyautoGif} alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/moneyauto.gif" alt="projectimage"/>
       </a>
       <div className="projectText">
         <a className="text-center textMarginBottom" href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
@@ -174,7 +168,7 @@ class Websites extends Component {
     var sangsangfarm = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
-         <img className="websiteImage" src={sangsangfarmGif} alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/sangsangfarm.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
@@ -204,7 +198,7 @@ class Websites extends Component {
     var business = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <a className="tempa" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
-      <img className="websiteImage" src={businessGif} alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/business.gif" alt="projectimage"/>
       </a>
       <div className="projectText">
         <a className="text-center textMarginBottom" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
@@ -234,7 +228,7 @@ class Websites extends Component {
     var price = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <a className="tempa" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
-      <img className="websiteImage" src={priceGif} alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/moneyauto.gif" alt="projectimage"/>
       </a>
       <div className="projectText">
         <a className="text-center textMarginBottom" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
