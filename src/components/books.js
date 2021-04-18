@@ -19,13 +19,13 @@ class Books extends Component {
       <p className="bookDescription">2020.12. 생능출판사</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970504745&start=pnaver_02" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.jpg" className="bookStoreIcon" alt="aladin"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.png" className="bookStoreIcon" alt="aladin"/></a></li>
         <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkclassName=&barcode=9788970504742" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="kyobo"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
         <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=17665326" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="naver"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/96360166" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="yes24"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
 
@@ -35,13 +35,13 @@ class Books extends Component {
       <p className="bookDescription">2020.11. BOOKK(부크크)</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K112735243&start=pnaver_02" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.jpg" className="bookStoreIcon" alt="aladin"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.png" className="bookStoreIcon" alt="aladin"/></a></li>
         <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000403693" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="kyobo"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
         <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=17469780" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="naver"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/95590656" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="yes24"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
     
@@ -51,13 +51,13 @@ class Books extends Component {
       <p className="bookDescription">2020.05. BOOKK(부크크)</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K452639642&start=pnaver_02" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.jpg" className="bookStoreIcon" alt="aladin"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.png" className="bookStoreIcon" alt="aladin"/></a></li>
         <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000378984" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="kyobo"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
         <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16369629" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="naver"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/90392271" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="yes24"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
     
@@ -67,13 +67,13 @@ class Books extends Component {
       <p className="bookDescription">2020.05. BOOKK(부크크)</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K572639625&start=pnaver_02" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.jpg" className="bookStoreIcon" alt="aladin"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.png" className="bookStoreIcon" alt="aladin"/></a></li>
         <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000377208" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="kyobo"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
         <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16357665" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="naver"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/90250538" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="yes24"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
     
@@ -83,11 +83,11 @@ class Books extends Component {
       <p className="bookDescription">2016.02. 지식과감성#</p>
       <ul className="list-inline">
         <li><a href="http://digital.kyobobook.co.kr/digital/ebook/ebookDetail.ink?LINK=NVE&category=001&barcode=4801159610081" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="kyobo"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
         <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=10236421" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="naver"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/30660689" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="yes24"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
     
@@ -97,13 +97,13 @@ class Books extends Component {
       <p className="bookDescription">2020.08. BOOKK(부크크)</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K622632023&start=pnaver_02" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.jpg" className="bookStoreIcon" alt="aladin"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.png" className="bookStoreIcon" alt="aladin"/></a></li>
         <li><a href="http://pod.kyobobook.co.kr/podBook/podBookDetailView.ink?ejkGb=KOR&barcode=1400000388044" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="kyobo"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
         <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16629718" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="naver"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/92154589" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="yes24"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
     
@@ -113,13 +113,13 @@ class Books extends Component {
       <p className="bookDescription">2020.04. 세창출판사</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8955866119&start=pnaver_02" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.jpg" className="bookStoreIcon" alt="aladin"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.png" className="bookStoreIcon" alt="aladin"/></a></li>
         <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkclassName=&barcode=9788955866117" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="kyobo"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
         <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=16340073" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="naver"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/90081924" target="_blank"  rel="noreferrer">
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="yes24"/></a></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
     
@@ -129,13 +129,13 @@ class Books extends Component {
       <p className="bookDescription">2021.04. 생능출판사 (출간예정)</p>
       <ul className="list-inline">
         <li>
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.jpg" className="bookStoreIcon" alt="aladin"/></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/alladin.png" className="bookStoreIcon" alt="aladin"/></li>
         <li>
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="kyobo"/></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.png" className="bookStoreIcon" alt="kyobo"/></li>
         <li>
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="naver"/></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/naver.png" className="bookStoreIcon" alt="naver"/></li>
         <li>
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/kyobo.jpg" className="bookStoreIcon" alt="yes24"/></li>
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/yes24.png" className="bookStoreIcon" alt="yes24"/></li>
       </ul>
     </div>
 
