@@ -128,12 +128,12 @@ class Books extends Component {
       <h5>수학·통계를 몰라도 이해할 수 있는 쉬운 딥러닝</h5>
       <p className="bookDescription">2021.04. 생능출판사 (출간예정)</p>
       <ul className="list-inline">
-        <li>
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></li>
-        <li>
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></li>
-        <li>
-          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></li>
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=269891239" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
+        <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788970504872&orderClick=LAG&Kc=" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=19007726" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/99552196" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
