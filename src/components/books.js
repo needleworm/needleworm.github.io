@@ -12,8 +12,8 @@ class Books extends Component {
   drawBooks(){
     var bookSection1 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="book1" className="bookCoverImage"/>
-      <h5>
-          6개월 치 업무를 하루 만에 끝내는 업무자동화 &nbsp;<a href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer"><i className="fas fa-external-link-alt"></i> 
+      <h5><a href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
+          6개월 치 업무를 하루 만에 끝내는 업무자동화 
         </a>
         </h5>
       <p className="bookDescription">2020.12. 생능출판사</p>
@@ -125,8 +125,11 @@ class Books extends Component {
     
     var bookSection8 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/8.jpg" alt="book1" className="bookCoverImage"/>
-      <h5>수학·통계를 몰라도 이해할 수 있는 쉬운 딥러닝</h5>
-      <p className="bookDescription">2021.04. 생능출판사 (출간예정)</p>
+      <h5><a href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
+        수학·통계를 몰라도 이해할 수 있는 쉬운 딥러닝
+        </a>
+        </h5>
+      <p className="bookDescription">2021.04. 생능출판사</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=269891239" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
