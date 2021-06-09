@@ -24,6 +24,41 @@ class Lectures extends Component {
     var lectureLogo = <i className="fas fa-chalkboard-teacher"></i>
     var newsIcon = <i className="far fa-newspaper"></i>
     var book = <i className="fas fa-book"></i>
+    var edulogo = <i class="fas fa-chalkboard-teacher"></i>
+    
+    var lecture29 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/29.png" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>전북 청년창업사관학교 교육 (2021)</h5></p>
+            <p className="bookDescription">
+              PMF와 그로스해킹, PDI와 스타트업의 조직구성, 공동창업계약과 자금조달 (3차시)
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.koscom.co.kr/portal/main.do" target="_blank"  rel="noreferrer">
+                {edulogo} Lecture
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    var lecture28 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/28.png" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>코스콤 임직원 대상 교육 (2021)</h5></p>
+            <p className="bookDescription">
+              비개발자를 위한 파이썬과 엑셀/한글 RPA 실습 (24차시)
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.koscom.co.kr/portal/main.do" target="_blank"  rel="noreferrer">
+                {edulogo} Lecture
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     var lecture1 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
@@ -54,13 +89,48 @@ class Lectures extends Component {
       </div>
     </div>
     
+    var lecture26 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/26.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>스마트팜 교육 프로그램 (2021)</h5></p>
+            <p className="bookDescription">
+              대구 서구 도시재생지원센터 원고개마을 조성사업, 4차산업혁명과 스마트팜 경영방법<br/>
+              5주 교육과정
+            </p>
+          <div className="lectureIcons">
+            <a href="http://seoguurc.or.kr/open_content/biz/biz_02.php" target="_blank"  rel="noreferrer">
+                {edulogo} Lecture
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    var lecture27 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/27.png" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>스마트팜 교육 (2021)</h5></p>
+            <p className="bookDescription">
+              대구한의대학교 교수진 및 시설팀 관계자들 대상 스마트팜 강의
+            </p>
+          <div className="lectureIcons">
+            <a href="http://www.dhu.ac.kr/pages/index.htm" target="_blank"  rel="noreferrer">
+                {edulogo} Lecture
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     var lecture2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/2.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>스마트팜 교육 프로그램 (2020)</h5></p>
             <p className="bookDescription">
-              대구 서구 인동촌 백년마을 도시재생뉴딜사업, 마을관리 사회적협동조합 교육과정<br/>
+              대구 서구 도시재생지원센터 인동촌 백년마을 도시재생뉴딜사업, 마을관리 사회적협동조합 교육과정<br/>
               4주 교육과정
             </p>
           <div className="lectureIcons">
@@ -476,6 +546,10 @@ class Lectures extends Component {
 
     return (
       <div className="websitesContainer">
+        {lecture29}
+        {lecture28}
+        {lecture26}
+        {lecture27}
         {lecture1}
         {lecture2}
         {lecture3}
