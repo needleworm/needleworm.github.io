@@ -28,7 +28,7 @@ class Lectures extends Component {
     
     var lecture29 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/29.png" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/29.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>전북 청년창업사관학교 교육 (2021)</h5></p>
             <p className="bookDescription">
@@ -45,7 +45,7 @@ class Lectures extends Component {
     
     var lecture28 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/28.png" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/28.jpg" alt="lectureimage"/>
         <div className="projectText">
           <p><h5>코스콤 임직원 대상 교육 (2021)</h5></p>
             <p className="bookDescription">
