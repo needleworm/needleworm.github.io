@@ -49,7 +49,8 @@ class Lectures extends Component {
         <div className="projectText">
           <p><h5>코스콤 임직원 대상 교육 (2021)</h5></p>
             <p className="bookDescription">
-              비개발자를 위한 파이썬과 엑셀/한글 RPA 실습 (24차시)
+              비개발자를 위한 파이썬과 엑셀/한글 RPA 실습 (24차시)<br></br>
+              비전공자 사무직 수강생 전원이 자신만의 업무 자동화 소프트웨어를 개발하고, 윈도우용 응용 프로그램으로 빌드하여 배포까지 달성
             </p>
           <div className="lectureIcons">
             <a href="https://www.koscom.co.kr/portal/main.do" target="_blank"  rel="noreferrer">
