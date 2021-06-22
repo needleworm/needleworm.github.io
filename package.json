@@ -45,7 +45,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.1"
+    "gh-pages": "^3.2.3"
   },
   "homepage": "https://needleworm.github.io"
 }

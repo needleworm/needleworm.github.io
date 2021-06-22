@@ -13,7 +13,7 @@ class Books extends Component {
     var bookSection1 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg" alt="book1" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
-          6개월 치 업무를 하루 만에 끝내는 업무자동화 
+          6개월 치 업무를 하루 만에 끝내는 업무자동화 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
       <p className="bookDescription">2020.12. 생능출판사</p>
@@ -125,8 +125,8 @@ class Books extends Component {
     
     var bookSection8 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/8.jpg" alt="book1" className="bookCoverImage"/>
-      <h5><a href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
-        수학·통계를 몰라도 이해할 수 있는 쉬운 딥러닝
+      <h5><a href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
+        수학·통계를 몰라도 이해할 수 있는 쉬운 딥러닝 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
       <p className="bookDescription">2021.04. 생능출판사</p>

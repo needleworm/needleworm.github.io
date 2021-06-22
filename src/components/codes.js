@@ -114,7 +114,8 @@ class Codes extends Component {
             </a>
           </h3>
     </div>
-      {this.drawSingleProject("bhban_RPA", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
+      {this.drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
+      {this.drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
       {this.drawSingleProject("automation_edu", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
       {this.drawSingleProject("post_crawler", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
       {this.drawSingleProject("pywinmacro", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/exe.jpg", windowsIcon)}
@@ -141,7 +142,6 @@ class Codes extends Component {
       {this.drawSingleProject("base_sequence_analysis", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
       {this.drawSingleProject("google_scholar_crawler", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
       {this.drawSingleProject("pubmed_abstract_crawl", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
       {this.drawSingleProject("PubMed_Crawl_exe", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/exe.jpg", windowsIcon)}
       {this.drawSingleProject("bh_coefficient", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
       {this.drawSingleProject("nutrient_solution", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
