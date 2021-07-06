@@ -148,7 +148,7 @@ class Books extends Component {
           내 자산 자동으로 관리하기 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
-      <p className="bookDescription">2021.7. 생능출판사</p>
+      <p className="bookDescription">2021.07. 생능출판사</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970504745&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
@@ -167,7 +167,7 @@ class Books extends Component {
           비전공자가 업무에서 자주 물어보는 101가지 컴퓨터 활용팁 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
-      <p className="bookDescription">2021.7. 생능출판사</p>
+      <p className="bookDescription">2021.07. 생능출판사</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970504745&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
