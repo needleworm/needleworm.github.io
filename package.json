@@ -18,13 +18,14 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "prepare": "npm install react-scripts chart.js react-chartjs-2 gh-pages",
+    "prepare": "npm install react-scripts chart.js react-chartjs-2 gh-pages; npm audit fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "commit": "git add .; git commit -m '.'; git push origin master;"
   },
   "eslintConfig": {
     "extends": [

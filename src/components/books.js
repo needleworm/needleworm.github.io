@@ -126,7 +126,7 @@ class Books extends Component {
     var bookSection8 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/8.jpg" alt="book8" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
-        수학·통계를 몰라도 이해할 수 있는 쉬운 딥러닝 <i className="fas fa-external-link-alt"></i>
+        쉬운 딥러닝 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
       <p className="bookDescription">2021.04. 생능출판사</p>
@@ -164,7 +164,7 @@ class Books extends Component {
     var bookSection10 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/10.jpg" alt="book10" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
-          비전공자가 업무에서 자주 물어보는 101가지 컴퓨터 활용팁 <i className="fas fa-external-link-alt"></i>
+          101가지 컴퓨터 활용팁 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
       <p className="bookDescription">2021.07. 생능출판사</p>
