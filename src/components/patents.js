@@ -403,32 +403,32 @@ class Patents extends Component {
     </div>
 
     var patent9 = <div className="singleProjectContainer">
-    <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/9.jpg" alt="projectimage"/>
-      <div className="projectText">
-        <p><h5>프리 오더 마르코프 체인과 베이즈 추론을 이용한 음악 작곡 방법</h5></p>
-          <p className="bookDescription">
-          <div className="patentInfo">
-            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2017.02.23.</div>
-            <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2017-0024220</div>
-          </div>
-          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 정윤의, 장민수<br/>
-          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현, 정윤의, 장민수<br/>
-          </p>
-        <div className="projectIcons">
-          <span></span>
-          <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/9.pdf" target="_blank"  rel="noreferrer" download>
-              <i className="fas fa-file-pdf"></i>
-            </a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="https://doi.org/10.8080/1020170024220" target="_blank"  rel="noreferrer">
-              <i className="fas fa-external-link-alt"></i>
-            </a>
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/9.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>프리 오더 마르코프 체인과 베이즈 추론을 이용한 음악 작곡 방법</h5></p>
+            <p className="bookDescription">
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2017.02.23.</div>
+              <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2017-0024220</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 정윤의, 장민수<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현, 정윤의, 장민수<br/>
+            </p>
+          <div className="projectIcons">
+            <span></span>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/9.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020170024220" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
 
     var patent10 = <div className="singleProjectContainer">
