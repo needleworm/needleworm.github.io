@@ -118,7 +118,8 @@ class Codes extends Component {
       {this.drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
       {this.drawSingleProject("automation_edu", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
       {this.drawSingleProject("post_crawler", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("pywinmacro", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/exe.jpg", windowsIcon)}
+      {this.drawSingleProject("pymacro", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
+      {this.drawSingleProject("pywinmacro", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/exe.jpg", pythonIcon)}
       {this.drawSingleProject("fvs", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
       {this.drawSingleProject("CoinAutoTrader", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/moneyauto.jpg", pythonIcon)}
       {this.drawSingleProject("brunch_thaad", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
