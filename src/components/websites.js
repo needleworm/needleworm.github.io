@@ -130,39 +130,39 @@ class Websites extends Component {
     </div>
     
     var moneyauto = <div className="singleProjectContainer">
-    <div className="singleWebsiteCard">
-      <a className="tempa" href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/moneyauto.gif" alt="projectimage"/>
-      </a>
-      <div className="projectText">
-        <a className="text-center textMarginBottom" href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
-          <p><h5>https://needleworm.github.io/moneyauto</h5></p>
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/moneyauto.gif" alt="projectimage"/>
         </a>
-        <div className="codeBody">
-          <p className="bookDescription">
-            A Landing page for Money AUTO project. Money AUTO is a non-commercial project to provide automated solutionis for individual investors.
-            It now provides Coin AUTO, an automated cryptocurrency trading system. Money AUTO will provide automated stock trading system, 
-            real-time asset management system, and investment portfolio design services. All services of moneyauto will be provided for free.<br/>
-            This static website was built with &nbsp;{jekyllIcon}&nbsp;Jekyll and &nbsp;
-            <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
-              Agency theme by Ravi Riley
-            </a>.
-          </p>
-        </div>
-        <div className="projectIcons">
-            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
-          <div className="gitIcons">
-            <a href="https://github.com/needleworm/moneyauto" target="_blank"  rel="noreferrer">
-              <i className="fas fa-code"></i>
-            </a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
-              <i className="fas fa-external-link-alt"></i> 
-            </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
+            <p><h5>https://needleworm.github.io/moneyauto</h5></p>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              A Landing page for Money AUTO project. Money AUTO is a non-commercial project to provide automated solutionis for individual investors.
+              It now provides Coin AUTO, an automated cryptocurrency trading system. Money AUTO will provide automated stock trading system, 
+              real-time asset management system, and investment portfolio design services. All services of moneyauto will be provided for free.<br/>
+              This static website was built with &nbsp;{jekyllIcon}&nbsp;Jekyll and &nbsp;
+              <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
+                Agency theme by Ravi Riley
+              </a>.
+            </p>
+          </div>
+          <div className="projectIcons">
+              <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
+            <div className="gitIcons">
+              <a href="https://github.com/needleworm/moneyauto" target="_blank"  rel="noreferrer">
+                <i className="fas fa-code"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i> 
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
 
     var sangsangfarm = <div className="singleProjectContainer">
@@ -196,64 +196,64 @@ class Websites extends Component {
     </div>
 
     var business = <div className="singleProjectContainer">
-    <div className="singleWebsiteCard">
-      <a className="tempa" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/business.gif" alt="projectimage"/>
-      </a>
-      <div className="projectText">
-        <a className="text-center textMarginBottom" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
-          <p><h5>https://www.sangsang.farm/business</h5></p>
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/business.gif" alt="projectimage"/>
         </a>
-        <div className="codeBody">
-          <p className="bookDescription">
-            Business proposal page of Imagination Garden Inc. This website provides embedded slide show for presentation.
-            This static website was built with &nbsp;{jekyllIcon}&nbsp;Jekyll and hosted on &nbsp;{ms} Azure. It also utilized &nbsp;
-            <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
-              Agency theme by Ravi Riley
-            </a>.
-          </p>
-        </div>
-        <div className="projectIcons">
-          <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{ms}&nbsp;Azure</h5>
-          <div className="gitIcons">
-            <a href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
-              <i className="fas fa-external-link-alt"></i>
-            </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
+            <p><h5>https://www.sangsang.farm/business</h5></p>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              Business proposal page of Imagination Garden Inc. This website provides embedded slide show for presentation.
+              This static website was built with &nbsp;{jekyllIcon}&nbsp;Jekyll and hosted on &nbsp;{ms} Azure. It also utilized &nbsp;
+              <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
+                Agency theme by Ravi Riley
+              </a>.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{ms}&nbsp;Azure</h5>
+            <div className="gitIcons">
+              <a href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     
     var price = <div className="singleProjectContainer">
-    <div className="singleWebsiteCard">
-      <a className="tempa" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/moneyauto.gif" alt="projectimage"/>
-      </a>
-      <div className="projectText">
-        <a className="text-center textMarginBottom" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
-          <p><h5>https://www.sangsang.farm/price</h5></p>
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/moneyauto.gif" alt="projectimage"/>
         </a>
-        <div className="codeBody">
-          <p className="bookDescription">
-              This webpage provides automated counceling on smart farm and plant factory facilities. 
-              As there is no standard format of smart farm facilities in Korean market, each consulting requires so much time and effort from both customers and us. 
-              So I built this automated and interactive web app to provide information and suggest appropriate options for our customers. 
-              This system also provides formed quote documents for administrative works of companies.
-              <br/>
-              This static website was built with &nbsp;{reactIconL} React and hosted on &nbsp;{ms} Azure.
-          </p>
-        </div>
-        <div className="projectIcons">
-          <h5>{reactIconL}&nbsp;React&nbsp;&nbsp;{ms}&nbsp;Azure</h5>
-          <div className="gitIcons">
-            <a href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
-              <i className="fas fa-external-link-alt"></i>
-            </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
+            <p><h5>https://www.sangsang.farm/price</h5></p>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+                This webpage provides automated counceling on smart farm and plant factory facilities. 
+                As there is no standard format of smart farm facilities in Korean market, each consulting requires so much time and effort from both customers and us. 
+                So I built this automated and interactive web app to provide information and suggest appropriate options for our customers. 
+                This system also provides formed quote documents for administrative works of companies.
+                <br/>
+                This static website was built with &nbsp;{reactIconL} React and hosted on &nbsp;{ms} Azure.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{reactIconL}&nbsp;React&nbsp;&nbsp;{ms}&nbsp;Azure</h5>
+            <div className="gitIcons">
+              <a href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
 
     return (

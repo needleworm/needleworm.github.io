@@ -20,36 +20,6 @@ class News extends Component {
   }
 
   drawNews(){
-    var news1 = <div className="singleProjectContainer">
-      <div className="singleNewsCard">
-        <a className="hideOnDesktop" href="https://news.sbs.co.kr/news/endPage.do?news_id=N1006004052" target="_blank"  rel="noreferrer">
-          <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/1.jpg"  alt="projectimage"/>
-            <h5>SBS 스브스뉴스</h5>
-          </div>
-          </a>
-        <div className="projectText">
-          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1006004052" target="_blank"  rel="noreferrer">
-            <h5>안동에서는 대마가 합법? 대마 농장 운영 중인 사람 직접 만나고 옴</h5>
-          </a>
-          <div className="codeBody">
-            <p className="bookDescription firstCommitDate">
-              2020.10.03.
-            </p>
-            <p className="bookDescription">
-            대마를 심거나 키우는 건 마약류 관리법에 의해 우리나라 전 국토에서 불법입니다. 하지만 딱 한 군데 예외가 있습니다. 바로 경상북도 안동시입니다. 
-            </p>
-          </div>
-        </div>
-        <a className="hideOnMobile"  href="https://news.sbs.co.kr/news/endPage.do?news_id=N1006004052" target="_blank"  rel="noreferrer">
-          <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/1.jpg"  alt="projectimage"/>
-            <h5>SBS 스브스뉴스</h5>
-          </div>
-          </a>
-      </div>
-    </div>
-
     var news2 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop" href="http://gamefocus.co.kr/detail.php?number=108335" target="_blank"  rel="noreferrer">
@@ -290,36 +260,6 @@ class News extends Component {
     </div>
     </div>
 
-    var news10 = <div className="singleProjectContainer">
-    <div className="singleNewsCard">
-      <a className="hideOnDesktop"  href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005058610&plink=ORI&cooper=NAVER" target="_blank"  rel="noreferrer">
-        <div className="newsThumnail">
-          <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/10.jpg"  alt="projectimage"/>
-          <h5>SBS 스브스뉴스</h5>
-        </div>
-        </a>
-      <div className="projectText">
-        <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005058610&plink=ORI&cooper=NAVER" target="_blank"  rel="noreferrer">
-          <h5>6개월치 업무 30분 만에…'그 사람 누구야?'</h5>
-        </a>
-        <div className="codeBody">
-          <p className="bookDescription firstCommitDate">
-            2018.12.15.
-          </p>
-          <p className="bookDescription">
-          하지만 그는 카이스트에서 인공지능으로 석사 학위를 받은 능력자였습니다. 그 일을 30분 만에 끝내버렸죠. 이런 이야기를 그는 블로그에 올렸습니다. 그런데 그 글 때문에 병현 씨에게 상상도 못 했던 일이 일어나는데요. 
-          </p>
-        </div>
-      </div>
-      <a className="hideOnMobile"  href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005058610&plink=ORI&cooper=NAVER" target="_blank"  rel="noreferrer">
-        <div className="newsThumnail">
-          <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/10.jpg"  alt="projectimage"/>
-          <h5>SBS 스브스뉴스</h5>
-        </div>
-        </a>
-    </div>
-    </div>
-
     var news11 = <div className="singleProjectContainer">
     <div className="singleNewsCard">
       <a className="hideOnDesktop"  href="https://www.news2day.co.kr/149400" target="_blank"  rel="noreferrer">
@@ -410,35 +350,6 @@ class News extends Component {
     </div>
     </div>
     
-    var news14 = <div className="singleProjectContainer">
-    <div className="singleNewsCard">
-      <a className="hideOnDesktop"  href="http://news.kmib.co.kr/article/view.asp?arcid=0014728145&code=61231111" target="_blank"  rel="noreferrer">
-        <div className="newsThumnail">
-          <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/14.jpg"  alt="projectimage"/>
-          <h5>국민일보</h5>
-        </div>
-        </a>
-      <div className="projectText">
-        <a href="http://news.kmib.co.kr/article/view.asp?arcid=0014728145&code=61231111" target="_blank"  rel="noreferrer">
-          <h5>[왱] 6개월 걸릴 일을 하루 만에 처리한 공익 인터뷰 해주세요.(영상)</h5>
-        </a>
-        <div className="codeBody">
-          <p className="bookDescription firstCommitDate">
-            2020.06.24.
-          </p>
-          <p className="bookDescription">
-          당시 병현씨는 ‘대한민국을 바꾼 공익’ ‘코딩하는 공익’ 등으로 불리며 화제가 됐었는데, 그 분의 근황을 취재해 달라는 의뢰가 들어와 수소문 끝에 연락이 닿았다.
-          </p>
-        </div>
-      </div>
-      <a className="hideOnMobile"  href="http://news.kmib.co.kr/article/view.asp?arcid=0014728145&code=61231111" target="_blank"  rel="noreferrer">
-        <div className="newsThumnail">
-          <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/14.jpg"  alt="projectimage"/>
-          <h5>국민일보</h5>
-        </div>
-        </a>
-    </div>
-    </div>
     
     var news15 = <div className="singleProjectContainer">
     <div className="singleNewsCard">
@@ -561,9 +472,6 @@ class News extends Component {
     </div>
 
     return <div>
-      {news14}
-      {news1}
-      {news10}
       {news2}
       {news12}
       {news3}

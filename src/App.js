@@ -8,6 +8,7 @@ import Patents from "./components/patents"
 import Lectures from "./components/lectures"
 import Designs from "./components/designs"
 import News from "./components/news"
+import Media from "./components/media"
 import Contact from "./components/contact"
 import Membership from "./components/membership"
 
@@ -27,6 +28,7 @@ class App extends Component {
           designs
           news
           contact
+          media
       */
       content:"none",
       sns:{
@@ -389,6 +391,36 @@ class App extends Component {
       </a>
     </li>
 
+    var media = <li className="navigation__item">
+      <a href="#media" title="Me on Media"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "media"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "media",
+                latestButton: "media"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }>
+        <i class="fas fa-video"></i>&nbsp;Media
+      </a>
+    </li>
+
     var contact = <li className="navigation__item">
       <a href="#contact" title="Contact Me"
         onClick={
@@ -493,6 +525,7 @@ class App extends Component {
                   <nav className="cover-navigation navigation--social">
                     <ul className="navigation">
                       {books}
+                      {media}
                       {websites}
                       {codes}
                       {papers}
@@ -569,6 +602,10 @@ class App extends Component {
     } else if (this.state.content === "news"){
       return (
         <News/>
+      )
+    } else if (this.state.content === "media"){
+      return (
+        <Media/>
       )
     } else if (this.state.content === "contact"){
       return (
