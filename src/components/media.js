@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './lectures.css';
 
 
-class Lectures extends Component {
+class Media extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -13,7 +13,7 @@ class Lectures extends Component {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
-            <h2 className="section-heading subpageHeading">Lectures</h2>
+            <h2 className="section-heading subpageHeading">Media</h2>
         </div>
       </div>
     )
@@ -90,11 +90,30 @@ class Lectures extends Component {
         </div>
       </div>
     </div>
+
+    var media5 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/5.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>6개월 걸릴 일을 하루 만에 처리한 공익 인터뷰 해주세요</h5></p>
+            <p className="bookDescription">
+            한 1년 반쯤 전에 한 공익이 놀라운 일처리 능력을 보여서 청와대까지 불려갔던 적이 있었다. 주인공은 고용노동부 안동지청에서 근무하던 반병현씨. 그는 상사로부터 “3900개가 넘는 등기우편의 13자리 등기번호를 우체국 홈페이지에 일일이 입력한 뒤 전부 인쇄하라”는 업무 지시를 받았는데, 이 단순 반복 작업을 끝내려면 최소 6개월이 필요했지만 병현씨가 이걸 끝내는데 걸린 시간은 단 하루! 카이스트에서 인공지능으로 석사 학위를 받은 공학도 병현씨는 본인이 직접 자동화 소프트웨어를 개발해 업무 시간을 획기적으로 단축시켜 버린 거다. 당시 병현씨는 ‘대한민국을 바꾼 공익’ ‘코딩하는 공익’ 등으로 불리며 화제가 됐었는데, 그 분의 근황을 취재해 달라는 의뢰가 들어와 수소문 끝에 연락이 닿았다. 최근에 소집해제가 됐다는데 요즘 어떻게 지내는지 여쭤봤더니 이 사람 진짜 혀를 내두르게 만들러어러버러러러러러럴룰ㄹㄹ럴라럴(ㄹㅇ 혀내두름)
+
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=16hsA3CyM7M&t=112s" target="_blank"  rel="noreferrer">
+                {youtube} 취재대행소 왱
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
     return (
       <div className="websitesContainer">
         {media1}
+        {media5}
         {media2}
         {media3}
         {media4}
@@ -112,4 +131,4 @@ class Lectures extends Component {
   }
 }
   
-export default Lectures;
+export default Media;
