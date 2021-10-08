@@ -476,8 +476,54 @@ class Patents extends Component {
       </div>
     </div>
 
+    var patent11 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/10.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>수경재배 베드 및 뿌리 생장 정보를 이용한 수경재배 방법</h5></p>
+            <p className="bookDescription">
+            <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2308623
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.03.31</div>
+              <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2021.09.28.</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 류동훈, 김수빈, 이민우, 권영범<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            </p>
+          <div className="projectIcons">
+            <h5>
+              <span className="citation"  onClick={
+                function(e){
+                  e.preventDefault()
+                  var dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = 'Byunghyun Ban et al. Hydroponic cultivation bed and method of hydroponic cultivation using root growth information. KR Patent 10-2308623 (2021)'
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!")
+                }
+              }>
+                <i className="far fa-clipboard"></i>&nbsp;Cite This
+              </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/11.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020210041526" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     return (
       <div className="websitesContainer">
+        {patent11}
         {patent10}
         {patent1}
         {patent2}
