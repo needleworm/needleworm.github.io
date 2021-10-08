@@ -478,7 +478,7 @@ class Patents extends Component {
 
     var patent11 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/10.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/11.jpg" alt="projectimage"/>
         <div className="projectText">
           <p><h5>수경재배 베드 및 뿌리 생장 정보를 이용한 수경재배 방법</h5></p>
             <p className="bookDescription">
