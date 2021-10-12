@@ -521,8 +521,597 @@ class Patents extends Component {
       </div>
     </div>
 
+    var patent12 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/12.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>불리언 방정식으로 모델링된 네트워크 모델을 이용한 수경재배 양액 분석 장치 및 방법</h5></p>
+            <p className="bookDescription">
+            <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2021-0118950
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.09.07</div>
+              <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.09.29.</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            </p>
+          <div className="projectIcons">
+            <h5>
+              <span className="citation"  onClick={
+                function(e){
+                  e.preventDefault()
+                  var dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = 'Byunghyun Ban. Device and method for agricultural nutrient solution analysis using network model modeled by boolean equation. KR Applied Patent 10-2021-0118950 (2021)'
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!")
+                }
+              }>
+                <i className="far fa-clipboard"></i>&nbsp;Cite This
+              </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/12.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020210118950" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  var patent13 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/13.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <p><h5>고형 원료 디스펜싱 방식의 양액 공급장치</h5></p>
+          <p className="bookDescription">
+          <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2021-0120087
+          <div className="patentInfo">
+            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.09.09</div>
+            <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.09.29.</div>
+          </div>
+          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우, 장승엽<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          </p>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byunghyun Ban. et al. Nutrient solution supply device of solid raw material dispensing method. KR Applied Patent 10-2021-0120087 (2021)'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+          </h5>
+          <div className="gitIcons">
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/13.pdf" target="_blank"  rel="noreferrer" download>
+              <i className="fas fa-file-pdf"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://doi.org/10.8080/1020210120087" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  var patent14 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/14.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <p><h5>ISE 센서 및 머신러닝을 활용한 양액 주요 영양소 공급장치 및 이를 이용한 양액 주요 영양소 공급 방법</h5></p>
+          <p className="bookDescription">
+          <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2021-0123213
+          <div className="patentInfo">
+            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.09.15</div>
+            <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.10.06.</div>
+          </div>
+          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          </p>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byunghyun Ban. An automatic controller of nutrient solution using the ISE sensor and machine learning and a method using thereof. KR Applied Patent 10-2021-0123213 (2021)'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+          </h5>
+          <div className="gitIcons">
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/14.pdf" target="_blank"  rel="noreferrer" download>
+              <i className="fas fa-file-pdf"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://doi.org/10.8080/1020210123213" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  var patent15 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/15.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <p><h5>머신러닝을 이용한 센서의 수명 분석 장치 및 방법</h5></p>
+          <p className="bookDescription">
+          <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2021-0123641
+          <div className="patentInfo">
+            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.09.16</div>
+            <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.10.07.</div>
+          </div>
+          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          </p>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byunghyun Ban. Device and method of sensor lifetime analysis using machine learning. KR Applied Patent 10-2021-0123641 (2021)'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+          </h5>
+          <div className="gitIcons">
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/15.pdf" target="_blank"  rel="noreferrer" download>
+              <i className="fas fa-file-pdf"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://doi.org/10.8080/1020210123641" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    var patent16 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/16.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>신경망을 이용한 음악 검색 방법</h5></p>
+            <p className="bookDescription">
+            <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2017-0025908
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2017.02.28</div>
+              <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2017.11.22.</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            </p>
+          <div className="projectIcons">
+            <h5>
+              <span className="citation"  onClick={
+                function(e){
+                  e.preventDefault()
+                  var dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = 'Byunghyun Ban. MUSIC SEARCH METHOD BASED ON NEURAL NETWORK. KR Applied Patent 10-2017-0025908 (2017)'
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!")
+                }
+              }>
+                <i className="far fa-clipboard"></i>&nbsp;Cite This
+              </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/16.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020170025908" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    var patent17 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/17.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>심층 강화 학습을 이용한 음악 작곡 방법</h5></p>
+            <p className="bookDescription">
+            <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2017-0024223
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2017.02.23</div>
+              <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2017.11.22.</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            </p>
+          <div className="projectIcons">
+            <h5>
+              <span className="citation"  onClick={
+                function(e){
+                  e.preventDefault()
+                  var dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = 'Byunghyun Ban. MUSIC COMPOSITION METHOD BASED ON DEEP REINFORCEMENT LEARNING. KR Applied Patent 10-2017-0024223 (2017)'
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!")
+                }
+              }>
+                <i className="far fa-clipboard"></i>&nbsp;Cite This
+              </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/17.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020170024223" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    var patent18 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/18.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>기계 학습을 이용한 음악 신호의 처리 방법</h5></p>
+            <p className="bookDescription">
+            <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2016-0167317
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2016.12.09</div>
+              <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2018.06.19.</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            </p>
+          <div className="projectIcons">
+            <h5>
+              <span className="citation"  onClick={
+                function(e){
+                  e.preventDefault()
+                  var dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = 'Byunghyun Ban. Method for processing audio signal using machine learning. KR Applied Patent 10-2016-0167317 (2016)'
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!")
+                }
+              }>
+                <i className="far fa-clipboard"></i>&nbsp;Cite This
+              </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/18.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020160167317" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    var patent19 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/19.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>재생되는 음악을 분석하여 멜로디를 추출하는 방법</h5></p>
+            <p className="bookDescription">
+            <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2016-0169802 
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2016.12.13</div>
+              <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2017.11.22.</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            </p>
+          <div className="projectIcons">
+            <h5>
+              <span className="citation"  onClick={
+                function(e){
+                  e.preventDefault()
+                  var dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = 'Byunghyun Ban. MELODY EXTRACTION METHOD FROM MUSIC SIGNAL. KR Applied Patent 10-2016-0169802 (2016)'
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!")
+                }
+              }>
+                <i className="far fa-clipboard"></i>&nbsp;Cite This
+              </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/19.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020160169802" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    var patent20 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/20.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <p><h5>순환형 신경망에 기반한 작곡 방법</h5></p>
+          <p className="bookDescription">
+          <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2017-0022493  
+          <div className="patentInfo">
+            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2017.02.20</div>
+            <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2017.11.22.</div>
+          </div>
+          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 박주희, 정윤의<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+          </p>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byunghyun Ban. CHORD COMPOSITION METHOD BASED ON RECURRENT NEURAL NETWORK. KR Applied Patent 10-2017-0022493 (2017)'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+          </h5>
+          <div className="gitIcons">
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/20.pdf" target="_blank"  rel="noreferrer" download>
+              <i className="fas fa-file-pdf"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://doi.org/10.8080/1020170022493" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    var patent21 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/21.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <p><h5>투척식 소화기</h5></p>
+          <p className="bookDescription">
+          <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2014-0008341 
+          <div className="patentInfo">
+            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2014.01.23</div>
+            <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2014.03.05.</div>
+          </div>
+          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 반병우<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;한국과학기술원<br/>
+          </p>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byunghyun Ban. THROWING TYPE FIRE EXTINGUISHER. KR Applied Patent 10-2014-0008341 (2014)'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+          </h5>
+          <div className="gitIcons">
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/21.pdf" target="_blank"  rel="noreferrer" download>
+              <i className="fas fa-file-pdf"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://doi.org/10.8080/1020140008341" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    var patent22 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/22.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <p><h5>개방형 와이파이를 탐지해 점멸하는 스마트 단말기 케이스</h5></p>
+          <p className="bookDescription">
+          <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2013-0144524 
+          <div className="patentInfo">
+            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2014.01.23</div>
+            <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2014.03.05.</div>
+          </div>
+          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 반병우<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;한국과학기술원<br/>
+          </p>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byunghyun Ban. THE FLASHING SMART DEVICE CASE TO DETECT THE OPENED WIFI ENVIRONMENT. KR Applied Patent 10-2013-0144524 (2014)'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+          </h5>
+          <div className="gitIcons">
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/22.pdf" target="_blank"  rel="noreferrer" download>
+              <i className="fas fa-file-pdf"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://doi.org/10.8080/1020130144524" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    var patent23 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/23.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <p><h5>고형물 보관용기</h5></p>
+          <p className="bookDescription">
+          <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-1465439
+          <div className="patentInfo">
+            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2013.05.13</div>
+            <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2014.11.20.</div>
+          </div>
+          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 반병우<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;한국과학기술원<br/>
+          </p>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byunghyun Ban. Storage Container For Solid State Sample. KR Patent 10-1465439 (2013)'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+          </h5>
+          <div className="gitIcons">
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/23.pdf" target="_blank"  rel="noreferrer" download>
+              <i className="fas fa-file-pdf"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://doi.org/10.8080/1020130053562" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    var patent24 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/24.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <p><h5>대뇌 발달 균형 측정 방법 및 대뇌 발달 유형 분류 방법</h5></p>
+          <p className="bookDescription">
+          <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2012-0141120 
+          <div className="patentInfo">
+            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2012.12.06</div>
+            <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2013.12.11.</div>
+          </div>
+          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+          </p>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byunghyun Ban. METHOD OF MEASUREMENT OF CEREBRAL DEVELOPMENT BALANCE AND CEREBRAL DEVELOPMENT TYPE CLASSIFICATION METHOD. KR Applied Patent 10-2012-0141120  (2012)'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+          </h5>
+          <div className="gitIcons">
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/24.pdf" target="_blank"  rel="noreferrer" download>
+              <i className="fas fa-file-pdf"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://doi.org/10.8080/1020120141120" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
     return (
       <div className="websitesContainer">
+        {patent15}
+        {patent14}
+        {patent13}
+        {patent12}
         {patent11}
         {patent10}
         {patent1}
@@ -534,6 +1123,15 @@ class Patents extends Component {
         {patent7}
         {patent8}
         {patent9}
+        {patent23}
+        {patent20}
+        {patent19}
+        {patent18}
+        {patent17}
+        {patent16}
+        {patent21}
+        {patent22}
+        {patent24}
       </div>
     )
   }
