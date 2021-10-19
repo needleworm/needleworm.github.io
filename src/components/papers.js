@@ -432,7 +432,7 @@ class Papers extends Component {
     
     var paper9 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/BMC_SB_2018.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2021_nlp.png" alt="projectimage"/>
       <div className="projectText">
         <p><h5>A Survey on Awesome Korean NLP Datasets</h5></p>
           <p className="bookDescription">
