@@ -382,7 +382,7 @@ class Papers extends Component {
       <div className="projectText">
         <p><h5>The phenotype control kernel of a biomolecular regulatory network</h5></p>
           <p className="bookDescription">
-            Sang-Mok Choo, <strong>Byunghyun Ban</strong>, Ja Il Joo, Kwnag-Hyun Cho*<br/>
+            Sang-Mok Choo, <strong>Byunghyun Ban</strong>, Ja Il Joo, Kwnag-Hyun Cho* (2018)<br/>
             BMC Systems Biology &nbsp;(SCI)
           </p>
         <div className="codeBody">
@@ -429,6 +429,51 @@ class Papers extends Component {
         </div>
       </div>
     </div>
+    
+    var paper9 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/BMC_SB_2018.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <p><h5>A Survey on Awesome Korean NLP Datasets</h5></p>
+          <p className="bookDescription">
+            <strong>Byunghyun Ban</strong>(2021)<br/>
+            Preprints
+          </p>
+        <div className="codeBody">
+          <p className="bookDescription">
+          English based datasets are commonly available from Kaggle, GitHub, or recently published papers. Although benchmark tests with English datasets are sufficient to show off the performances of new models and methods, still a researcher need to train and validate the models on Korean based datasets to produce a technology or product, suitable for Korean processing. This paper introduces 15 popular Korean based NLP datasets with summarized details such as volume, license, repositories, and other research results inspired by the datasets. Also, I provide high-resolution instructions with sample or statistics of datasets. The main characteristics of datasets are presented on a single table to provide a rapid summarization of datasets for researchers.
+          </p>
+        </div>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Ban, B. A Survey on Awesome Korean NLP Datasets. Preprints 2021, 2021100247 (doi: 10.20944/preprints202110.0247.v1).'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/2021_nlp.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.preprints.org/manuscript/202110.0247/v1" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     return (
       <div className="websitesContainer">
@@ -440,6 +485,7 @@ class Papers extends Component {
         {paper1}
         {paper7}
         {paper8}
+        {paper9}
       </div>
     )
   }
