@@ -177,9 +177,24 @@ class Books extends Component {
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
+    
+    var bookSection11 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/11.jpeg" alt="book10" className="bookCoverImage"/>
+      <h5>Cheesecake Vol.1</h5>
+      <p className="bookDescription">2021.10. BOOKK (부크크)</p>
+      <ul className="list-inline">
+        <li><a href="http://aladin.kr/p/l4o7A" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=21295784" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
+        <li><a href="http://www.yes24.com/Product/Goods/105138391" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
+      </ul>
+    </div>
 
     return(
       <div className="bookContainer">
+        {bookSection11}
         {bookSection10}
         {bookSection9}
         {bookSection8}

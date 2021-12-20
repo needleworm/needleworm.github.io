@@ -32,8 +32,16 @@ class Media extends Component {
             </p>
           <div className="lectureIcons">
             <a href="https://www.youtube.com/watch?v=fuwZmgKenqs&t=195s" target="_blank"  rel="noreferrer">
-                {youtube} 긱블
-              </a>
+              {youtube} EP 1
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.youtube.com/watch?v=fzp2fg6CekM" target="_blank"  rel="noreferrer">
+              {youtube} Cookie 1
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.youtube.com/watch?v=Ni6Q1sENdmI" target="_blank"  rel="noreferrer">
+              {youtube} Cookie 2
+            </a>
           </div>
         </div>
       </div>

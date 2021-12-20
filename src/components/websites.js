@@ -228,7 +228,7 @@ class Websites extends Component {
     var price = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/moneyauto.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/price.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">

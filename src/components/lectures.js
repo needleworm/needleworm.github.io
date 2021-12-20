@@ -191,7 +191,7 @@ class Lectures extends Component {
         <div className="projectText">
           <p><h5>농업경영체, 경작이 아닌 경영을 기획하라 (2020)</h5></p>
             <p className="bookDescription">
-              한국생명과학고등학교 영농정착 후계인력 양성과정<br/>
+              한국생명과학고등학교 고교학점제 교수<br/>
             </p>
         </div>
       </div>
@@ -545,8 +545,45 @@ class Lectures extends Component {
     </div>
     </div>
 
+    var lecture30 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/30.png" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>쉬운 딥러닝 (2021)</h5></p>
+            <p className="bookDescription">
+              <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=19007726" target="_blank" rel="noreferrer">수학 통계를 몰라도 이해할 수 있는 쉬운 딥러닝</a> 도서 저자직강<br/>
+              비전공자도 딥러닝을 배울 수 있다! <br/>
+              총 17차시, 8시간 53분 분량의 강의영상 <br/>
+              천재교육 내부 임직원교육 등 활용중
+            </p>
+        </div>
+      </div>
+    </div>
+
+    var lecture31 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/31.png" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>코꼬마를 위한 코딩유치원 (2021)</h5></p>
+            <p className="bookDescription">
+              패스트캠퍼스 온라인강좌<br/>
+              개발자가 될 건 아니지만 코딩은 배우고 싶은 코꼬마를 위한 코딩유치원
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://fastcampus.co.kr/dev_online_codingschool" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
     return (
       <div className="websitesContainer">
+        {lecture31}
+        {lecture30}
         {lecture29}
         {lecture28}
         {lecture26}

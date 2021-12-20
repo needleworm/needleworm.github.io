@@ -139,6 +139,7 @@ class Papers extends Component {
         </div>
       </div>
     </div>
+
     var paper3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2019_02.jpg" alt="projectimage"/>
@@ -187,6 +188,7 @@ class Papers extends Component {
         </div>
       </div>
     </div>
+
     var paper4 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_01.jpg" alt="projectimage"/>
@@ -231,6 +233,7 @@ class Papers extends Component {
         </div>
       </div>
     </div>
+
     var paper5 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_02.jpg" alt="projectimage"/>
@@ -279,6 +282,7 @@ class Papers extends Component {
         </div>
       </div>
     </div>
+
     var paper6 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_03.jpg" alt="projectimage"/>
@@ -327,6 +331,7 @@ class Papers extends Component {
         </div>
       </div>
     </div>
+
     var paper7 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2017_02.jpg" alt="projectimage"/>
@@ -451,7 +456,7 @@ class Papers extends Component {
                 e.preventDefault()
                 var dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
-                dummy.value = 'Ban, B. A Survey on Awesome Korean NLP Datasets. Preprints 2021, 2021100247 (doi: 10.20944/preprints202110.0247.v1).'
+                dummy.value = 'Ban, Byunghyun. "A Survey on Awesome Korean NLP Datasets." arXiv preprint arXiv:2112.01624 (2021).'
                 dummy.select();
                 document.execCommand("copy");
                 document.body.removeChild(dummy);
@@ -467,6 +472,12 @@ class Papers extends Component {
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://www.preprints.org/manuscript/202110.0247/v1" target="_blank"  rel="noreferrer">
+                Preprints.org
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://arxiv.org/abs/2112.01624" target="_blank"  rel="noreferrer">
+                arXiv
                 <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -477,6 +488,7 @@ class Papers extends Component {
 
     return (
       <div className="websitesContainer">
+        {paper9}
         {paper6}
         {paper5}
         {paper4}
@@ -485,7 +497,6 @@ class Papers extends Component {
         {paper1}
         {paper7}
         {paper8}
-        {paper9}
       </div>
     )
   }
