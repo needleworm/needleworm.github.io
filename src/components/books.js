@@ -179,7 +179,7 @@ class Books extends Component {
     </div>
     
     var bookSection11 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/11.jpeg" alt="book10" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/11.jpeg" alt="book11" className="bookCoverImage"/>
       <h5>Cheesecake Vol.1</h5>
       <p className="bookDescription">2021.10. BOOKK (부크크)</p>
       <ul className="list-inline">
@@ -191,9 +191,49 @@ class Books extends Component {
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
+    
+    var bookSection12 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg" alt="book12" className="bookCoverImage"/>
+      <h5><a href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
+          HTML, CSS, 자바스크립트 <i className="fas fa-external-link-alt"></i>
+        </a>
+        </h5>
+      <p className="bookDescription">2022.02. 생능출판사</p>
+      <ul className="list-inline">
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
+      </ul>
+    </div>
+    
+    var bookSection13 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg" alt="book12" className="bookCoverImage"/>
+      <h5><a href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
+          142가지 데이터셋 <i className="fas fa-external-link-alt"></i>
+        </a>
+        </h5>
+      <p className="bookDescription">2022.02. 생능출판사</p>
+      <ul className="list-inline">
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
+      </ul>
+    </div>
 
     return(
       <div className="bookContainer">
+        {bookSection13}
+        {bookSection12}
         {bookSection11}
         {bookSection10}
         {bookSection9}
