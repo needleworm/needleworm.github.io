@@ -558,7 +558,7 @@ class News extends Component {
 
   render() {
     return (
-      <section id="codes" className="animated bounceInDown">
+      <section id="news" className="animated bounceInDown">
           {this.sectionTitle()}
           {this.drawNews()}
       </section>

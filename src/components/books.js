@@ -198,13 +198,13 @@ class Books extends Component {
           HTML, CSS, 자바스크립트 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
-      <p className="bookDescription">2022.02. 생능출판사</p>
+      <p className="bookDescription">2022.02. 생능북스</p>
       <ul className="list-inline">
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970505369&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkClass=&barcode=9788970505367" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=21499497" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/107010853" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
@@ -217,13 +217,13 @@ class Books extends Component {
           142가지 데이터셋 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
-      <p className="bookDescription">2022.02. 생능출판사</p>
+      <p className="bookDescription">2022.02. 생능북스</p>
       <ul className="list-inline">
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970505350&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkClass=&barcode=9788970505350" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=21508184" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
         <li><a href="http://www.yes24.com/Product/Goods/107036705" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
