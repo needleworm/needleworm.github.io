@@ -194,7 +194,7 @@ class Books extends Component {
     
     var bookSection12 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg" alt="book12" className="bookCoverImage"/>
-      <h5><a href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
+      <h5><a href="https://needleworm.github.io/frontend" target="_blank"  rel="noreferrer">
           HTML, CSS, 자바스크립트 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
@@ -213,7 +213,7 @@ class Books extends Component {
     
     var bookSection13 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg" alt="book12" className="bookCoverImage"/>
-      <h5><a href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
+      <h5><a href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
           142가지 데이터셋 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
