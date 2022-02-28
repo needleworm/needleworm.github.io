@@ -194,6 +194,27 @@ class Membership extends Component {
       </div>
     </div>
 
+
+
+    var jihak = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/jihak.png" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>고교독서평설</h5></p>
+            <p className="bookDescription">
+              고교독서평설 필진. "지금이야, 4차산업혁명" 코너 연재중.
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://www.jihak.co.kr/dp/board/contents_list.asp?bid=dhv_list" target="_blank"  rel="noreferrer">
+                {link}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     return (
       <div className="websitesContainer">
         {aiff}
