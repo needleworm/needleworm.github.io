@@ -23,6 +23,26 @@ class Membership extends Component {
     var youtube = <i className="fab fa-youtube"></i>
     var link = <i className="fas fa-external-link-alt"></i>
 
+    var aiff = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/aiff.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>AI 미래포럼 (AIFF)</h5></p>
+            <p className="bookDescription">
+              <strong>AI for Social Good</strong><br/>
+              AI 미래포럼 창립멤버
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://www.hankyung.com/it/article/2021031413701" target="_blank"  rel="noreferrer">
+                {link}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     var membership1 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/1.jpg" alt="projectimage"/>
@@ -154,8 +174,30 @@ class Membership extends Component {
     </div>
     </div>
 
+
+    var cheesecake = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/cheesecake.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>Cheesecake Studio</h5></p>
+            <p className="bookDescription">
+              아트워크 그룹 "치즈케익 스튜디오"
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://cheesecake.quv.kr" target="_blank"  rel="noreferrer">
+                {link}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     return (
       <div className="websitesContainer">
+        {aiff}
+        {cheesecake}
         {membership1}
         {membership2}
         {membership3}
