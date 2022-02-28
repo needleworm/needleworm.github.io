@@ -104,56 +104,70 @@ class Codes extends Component {
     var jekyllIcon = <i className="fas fa-vial"></i>
     var jsIcon = <i className="fab fa-js-square"></i>
     var javaIcon = <i className="fab fa-java"></i>
+    var eduThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg"
+    var pythonThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg"
+    var exeThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/exe.jpg"
+    var scienceThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg"
+    var moneyautoThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/moneyauto.jpg"
+    var reactThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/react.jpg"
+    var tfThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/tf.jpg"
+    var scalaThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/scala.jpg"
+    var cheeseThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/cheese.jpg"
+    var jsThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/js.jpg"
+    var nftThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/nft.jpg"
+
+
     return <div className="projects">
-        
-    <div className="col-lg-12 text-center">
-        <h3 className="qwerqwer">
-          Realtime Summary of &nbsp; 
-          <a className="tempa" href="https://github.com/needleworm" target="_blank"  rel="noreferrer">
-            My <i className="fab fa-github"></i> Github Account
-            </a>
-          </h3>
-    </div>
-      {this.drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
-      {this.drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
-      {this.drawSingleProject("automation_edu", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
-      {this.drawSingleProject("post_crawler", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("pymacro", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg", pythonIcon)}
-      {this.drawSingleProject("pywinmacro", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/exe.jpg", pythonIcon)}
-      {this.drawSingleProject("fvs", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("CoinAutoTrader", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/moneyauto.jpg", pythonIcon)}
-      {this.drawSingleProject("brunch_thaad", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("fmm_crawl", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("pixabay_crawling", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("img_crop_from_PDF", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("pubmed_crawler", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("chulsukbu", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("CoinAutoTrader_Bithumb", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/moneyauto.jpg", pythonIcon)}
-      {this.drawSingleProject("needleworm.github.io", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/react.jpg", reactIconL)}
-      {this.drawSingleProject("nc2", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("greenhouse_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("xlsx_sorter", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("wordpuzzle", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("xlsx_destroyer", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("twitter_news_macro", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("insta_like_by_graphic_recognition", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg", pythonIcon)}
-      {this.drawSingleProject("mlproject", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/tf.jpg", pythonIcon)}
-      {this.drawSingleProject("breakout", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/tf.jpg", pythonIcon)}
-      {this.drawSingleProject("yolotest", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/tfjs.jpg", jsIcon)}
-      {this.drawSingleProject("base_sequence_analysis", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("google_scholar_crawler", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("pubmed_abstract_crawl", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("PubMed_Crawl_exe", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/exe.jpg", windowsIcon)}
-      {this.drawSingleProject("bh_coefficient", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("nutrient_solution", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("ion_interference", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg", pythonIcon)}
-      {this.drawSingleProject("moneyauto", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/moneyauto.jpg", jekyllIcon)}
-      {this.drawSingleProject("CoinAutoTrader_exe", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/moneyauto.jpg", windowsIcon)}
-      {this.drawSingleProject("eliza", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/scala.jpg", javaIcon)}
-      {this.drawSingleProject("mozza", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/cheese.jpg", pythonIcon)}
-      {this.drawSingleProject("pizza", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/cheese.jpg", pythonIcon)}
-      {this.drawSingleProject("cottoncandy", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/cheese.jpg", pythonIcon)}
-      {this.drawSingleProject("coinone_Api_for_google_apps", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/js.jpg", jsIcon)}
+      
+      {this.drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg", pythonIcon)}
+      {this.drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/8.jpg", pythonIcon)}
+      {this.drawSingleProject("financebook", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/9.jpg", jekyllIcon)}
+      {this.drawSingleProject("101", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/10.jpg", jekyllIcon)}
+      {this.drawSingleProject("frontend", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
+      {this.drawSingleProject("dataset", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg", jekyllIcon)}
+      {this.drawSingleProject("automation_edu", eduThumbnail, pythonIcon)}
+      {this.drawSingleProject("pixelRandomizer", nftThumbnail, pythonIcon)}
+      {this.drawSingleProject("post_crawler", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("pymacro", eduThumbnail, pythonIcon)}
+      {this.drawSingleProject("pywinmacro", exeThumbnail, pythonIcon)}
+      {this.drawSingleProject("fvs", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("fmm_crawl", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("pixabay_crawling", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("img_crop_from_PDF", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("gunbam", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
+      {this.drawSingleProject("instagram", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jsIcon)}
+      {this.drawSingleProject("pubmed_crawler", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("CoinAutoTrader_Bithumb", moneyautoThumbnail, pythonIcon)}
+      {this.drawSingleProject("needleworm.github.io", reactThumbnail, reactIconL)}
+      {this.drawSingleProject("nc2", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("greenhouse_ai", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("xlsx_sorter", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("wordpuzzle", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("xlsx_destroyer", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("twitter_news_macro", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("insta_like_by_graphic_recognition", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("mlproject", tfThumbnail, pythonIcon)}
+      {this.drawSingleProject("breakout", tfThumbnail, pythonIcon)}
+      {this.drawSingleProject("base_sequence_analysis", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("google_scholar_crawler", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("bluestack_macro", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("pubmed_abstract_crawl", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("PubMed_Crawl_exe", exeThumbnail, windowsIcon)}
+      {this.drawSingleProject("bh_coefficient", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("nutrient_solution", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("ion_interference", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("moneyauto", moneyautoThumbnail, jekyllIcon)}
+      {this.drawSingleProject("CoinAutoTrader_exe", moneyautoThumbnail, windowsIcon)}
+      {this.drawSingleProject("eliza", scalaThumbnail, javaIcon)}
+      {this.drawSingleProject("mozza", cheeseThumbnail, pythonIcon)}
+      {this.drawSingleProject("pizza", cheeseThumbnail, pythonIcon)}
+      {this.drawSingleProject("cottoncandy", cheeseThumbnail, pythonIcon)}
+      {this.drawSingleProject("coinone_Api_for_google_apps", jsThumbnail, jsIcon)}
+      {this.drawSingleProject("brunch_thaad", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("CoinAutoTrader", moneyautoThumbnail, pythonIcon)}
+      {this.drawSingleProject("chulsukbu", pythonThumbnail, pythonIcon)}
+
+
     </div>
   }
 
@@ -204,6 +218,14 @@ class Codes extends Component {
     return(
       <div className="codeContainer">
         {this.drawGraph()}
+        <div className="col-lg-12 text-center">
+          <h3 className="qwerqwer">
+            Realtime Summary of &nbsp; 
+            <a className="tempa" href="https://github.com/needleworm" target="_blank"  rel="noreferrer">
+              My <i className="fab fa-github"></i> Github Account
+              </a>
+          </h3>
+        </div>
         {this.drawProjects()}
       </div>
     )

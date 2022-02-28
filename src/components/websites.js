@@ -128,6 +128,138 @@ class Websites extends Component {
         </div>
       </div>
     </div>
+
+    var financebook = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://needleworm.github.io/financebook" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/financebook.gif" alt="projectimage"/>
+        </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://needleworm.github.io/financebook" target="_blank"  rel="noreferrer">
+            <p><h5>https://needleworm.github.io/financebook</h5></p>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              This page provides example codes for my book, "내 자산 자동으로 관리하기 (생능출판사, 2021.07.09)". It was built with  &nbsp;{jekyllIcon}&nbsp;Jekyll and &nbsp;
+            <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
+              Agency theme by Ravi Riley
+            </a>.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
+            <div className="gitIcons">
+              <a href="https://github.com/needleworm/financebook" target="_blank"  rel="noreferrer">
+                <i className="fas fa-code"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://needleworm.github.io/financebook" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    var dataset = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/dataset.gif" alt="projectimage"/>
+        </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
+            <p><h5>https://needleworm.github.io/dataset</h5></p>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              This page provides example codes for my book, "AI, 빅데이터 활용이 쉬워지는 142가지 데이터셋 (생능북스, 2022.02.22.)". It was built with  &nbsp;{jekyllIcon}&nbsp;Jekyll and &nbsp;
+            <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
+              Agency theme by Ravi Riley
+            </a>.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
+            <div className="gitIcons">
+              <a href="https://github.com/needleworm/dataset" target="_blank"  rel="noreferrer">
+                <i className="fas fa-code"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    var b101 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/101.gif" alt="projectimage"/>
+        </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
+            <p><h5>https://needleworm.github.io/101</h5></p>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              This page provides example codes for my book, "비전공자가 업무에서 자주 물어보는 101가지 컴퓨터 활용팁 (생능출판사, 2021.07.15.)". It was built with  &nbsp;{jekyllIcon}&nbsp;Jekyll and &nbsp;
+            <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
+              Agency theme by Ravi Riley
+            </a>.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
+            <div className="gitIcons">
+              <a href="https://github.com/needleworm/101" target="_blank"  rel="noreferrer">
+                <i className="fas fa-code"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    var frontend = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://needleworm.github.io/frontend" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/frontend.gif" alt="projectimage"/>
+        </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://needleworm.github.io/frontend" target="_blank"  rel="noreferrer">
+            <p><h5>https://needleworm.github.io/frontend</h5></p>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              This page provides example codes for my book, "코딩만 따라 해도 웹페이지가 만들어지는 HTML + CSS + 자바스크립트 (생능북스, 2022.02.15.)". It was built with  &nbsp;{jekyllIcon}&nbsp;Jekyll and &nbsp;
+            <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
+              Agency theme by Ravi Riley
+            </a>.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
+            <div className="gitIcons">
+              <a href="https://github.com/needleworm/frontend" target="_blank"  rel="noreferrer">
+                <i className="fas fa-code"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://needleworm.github.io/frontend" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     var moneyauto = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
@@ -259,6 +391,10 @@ class Websites extends Component {
     return (
       <div className="websitesContainer">
         {blog}
+        {financebook}
+        {dataset}
+        {b101}
+        {frontend}
         {ai}
         {rpa}
         {moneyauto}
