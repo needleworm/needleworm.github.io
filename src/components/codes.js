@@ -120,17 +120,18 @@ class Codes extends Component {
     return <div className="projects">
       
       {this.drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg", pythonIcon)}
+      {this.drawSingleProject("automation_edu", eduThumbnail, pythonIcon)}
+      {this.drawSingleProject("post_crawler", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("pywinmacro", exeThumbnail, pythonIcon)}
+      {this.drawSingleProject("pymacro", eduThumbnail, pythonIcon)}
+      {this.drawSingleProject("CoinAutoTrader", moneyautoThumbnail, pythonIcon)}
+      {this.drawSingleProject("fvs", scienceThumbnail, pythonIcon)}
       {this.drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/8.jpg", pythonIcon)}
       {this.drawSingleProject("financebook", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/9.jpg", jekyllIcon)}
       {this.drawSingleProject("101", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/10.jpg", jekyllIcon)}
       {this.drawSingleProject("frontend", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
       {this.drawSingleProject("dataset", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg", jekyllIcon)}
-      {this.drawSingleProject("automation_edu", eduThumbnail, pythonIcon)}
       {this.drawSingleProject("pixelRandomizer", nftThumbnail, pythonIcon)}
-      {this.drawSingleProject("post_crawler", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("pymacro", eduThumbnail, pythonIcon)}
-      {this.drawSingleProject("pywinmacro", exeThumbnail, pythonIcon)}
-      {this.drawSingleProject("fvs", scienceThumbnail, pythonIcon)}
       {this.drawSingleProject("fmm_crawl", scienceThumbnail, pythonIcon)}
       {this.drawSingleProject("pixabay_crawling", pythonThumbnail, pythonIcon)}
       {this.drawSingleProject("img_crop_from_PDF", pythonThumbnail, pythonIcon)}
@@ -164,7 +165,6 @@ class Codes extends Component {
       {this.drawSingleProject("cottoncandy", cheeseThumbnail, pythonIcon)}
       {this.drawSingleProject("coinone_Api_for_google_apps", jsThumbnail, jsIcon)}
       {this.drawSingleProject("brunch_thaad", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("CoinAutoTrader", moneyautoThumbnail, pythonIcon)}
       {this.drawSingleProject("chulsukbu", pythonThumbnail, pythonIcon)}
 
 
