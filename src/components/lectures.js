@@ -588,12 +588,12 @@ class Lectures extends Component {
             <p className="bookDescription">
               대법원 사법정책연구원<br/>
               미래 사법 Round Table<br/>
-              AI기술과 관련하여, 미래의 사법부가 추구해야 할 바람직한 모습을 연구하고 설계하기 위한 방향에 대하여.
+              AI기술과 관련하여, 미래의 사법부가 추구해야 할 바람직한 모습을 연구하고 설계하기 위한 방향에 대하여 논의.
             </p>
           <div className="lectureIcons">
             <div className="gitIcons">
-              <a href="https://fastcampus.co.kr/dev_online_codingschool" target="_blank"  rel="noreferrer">
-                {lectureLogo} Lecture
+              <a href="https://jpri.scourt.go.kr/main.do" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i> 사법정책연구원
               </a>
             </div>
           </div>
