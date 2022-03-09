@@ -580,8 +580,30 @@ class Lectures extends Component {
       </div>  
     </div>
 
+    var lecture32 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/32.png" alt="projectimage"/>
+        <div className="projectText">
+          <p><h5>미래 사법의 과제 - AI 임팩트</h5></p>
+            <p className="bookDescription">
+              대법원 사법정책연구원<br/>
+              미래 사법 Round Table<br/>
+              AI기술과 관련하여, 미래의 사법부가 추구해야 할 바람직한 모습을 연구하고 설계하기 위한 방향에 대하여.
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://fastcampus.co.kr/dev_online_codingschool" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
     return (
       <div className="websitesContainer">
+        {lecture32}
         {lecture31}
         {lecture30}
         {lecture29}
