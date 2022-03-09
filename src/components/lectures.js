@@ -584,7 +584,7 @@ class Lectures extends Component {
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/32.png" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>미래 사법의 과제 - AI 임팩트</h5></p>
+          <p><h5>미래 사법의 과제 - AI 임팩트 (2022)</h5></p>
             <p className="bookDescription">
               대법원 사법정책연구원<br/>
               미래 사법 Round Table<br/>
