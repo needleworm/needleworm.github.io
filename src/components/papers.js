@@ -472,12 +472,10 @@ class Papers extends Component {
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://www.preprints.org/manuscript/202110.0247/v1" target="_blank"  rel="noreferrer">
-                Preprints.org
                 <i className="fas fa-external-link-alt"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <a href="https://arxiv.org/abs/2112.01624" target="_blank"  rel="noreferrer">
-                arXiv
                 <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
