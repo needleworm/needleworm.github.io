@@ -69,7 +69,7 @@ class Membership extends Component {
 
     var membership2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/2.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/2.png" alt="projectimage"/>
         <div className="projectText">
           <p><h5>World Genius Directory</h5></p>
             <p className="bookDescription">
@@ -219,6 +219,7 @@ class Membership extends Component {
       <div className="websitesContainer">
         {aiff}
         {cheesecake}
+        {jihak}
         {membership1}
         {membership2}
         {membership3}
