@@ -232,7 +232,7 @@ class Membership extends Component {
 
   render() {
     return (
-      <section id="lectures" className="animated bounceInDown">
+      <section id="membership" className="animated bounceInDown">
           {this.sectionTitle()}
           {this.drawLectures()}
       </section>
