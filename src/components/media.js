@@ -131,7 +131,7 @@ class Media extends Component {
 
   render() {
     return (
-      <section id="lectures" className="animated bounceInDown">
+      <section id="media" className="animated bounceInDown">
           {this.sectionTitle()}
           {this.drawLectures()}
       </section>
