@@ -37,7 +37,7 @@ class Lectures extends Component {
           <div className="lectureIcons">
             <a href="https://www.koscom.co.kr/portal/main.do" target="_blank"  rel="noreferrer">
                 {edulogo} Lecture
-              </a>
+            </a>
           </div>
         </div>
       </div>
@@ -274,6 +274,10 @@ class Lectures extends Component {
               {newsIcon} News
             </a>
             &nbsp;&nbsp;&nbsp;
+            <a href="https://www.slideshare.net/ssuserd66df4/ai-ai-251373482" target="_blank"  rel="noreferrer">
+              {lectureLogo} Slides
+            </a>
+            &nbsp;&nbsp;&nbsp;
             <a href="https://youtu.be/4uSN6mEBdNo" target="_blank"  rel="noreferrer">
               {youtube} Vlog
             </a>
@@ -298,7 +302,11 @@ class Lectures extends Component {
             </a>
             &nbsp;&nbsp;&nbsp;
             <a href="https://youtu.be/lu4UOpEnHyY" target="_blank"  rel="noreferrer">
-              {lectureLogo} Lecture
+              {lectureLogo} YouTube
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://www.slideshare.net/ssuserd66df4/nexon-nypc-2020" target="_blank"  rel="noreferrer">
+              {lectureLogo} Slides
             </a>
           </div>
         </div>
@@ -592,6 +600,11 @@ class Lectures extends Component {
             </p>
           <div className="lectureIcons">
             <div className="gitIcons">
+
+              <a href="https://www.slideshare.net/ssuserd66df4/2022-ai" target="_blank"  rel="noreferrer">
+                {lectureLogo} Slides
+              </a>
+              &nbsp;&nbsp;&nbsp;
               <a href="https://jpri.scourt.go.kr/main.do" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i> 사법정책연구원
               </a>
