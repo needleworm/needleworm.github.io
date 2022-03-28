@@ -973,7 +973,7 @@ class Patents extends Component {
 
     var patent22 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/22.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/22.png" alt="projectimage"/>
       <div className="projectText">
         <p><h5>개방형 와이파이를 탐지해 점멸하는 스마트 단말기 케이스</h5></p>
           <p className="bookDescription">
