@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './codes.css';
+import 'chart.js/auto';
 import { Doughnut } from 'react-chartjs-2';
 import axios from 'axios';
 
@@ -72,7 +73,7 @@ class Codes extends Component {
     }
 
     const chartStyle = {
-      maxWidth:'800px',
+      maxWidth:'500px',
       marginLeft:'auto',
       marginRight:'auto',
     }
@@ -81,7 +82,7 @@ class Codes extends Component {
       <div style={chartStyle}>
         <Doughnut data={data} options={options}/>
         <p className="text-center">
-          <h4>Click &nbsp;<i className="fab fa-python"></i>&nbsp;Python label to see other languages</h4>
+          Click &nbsp;<i className="fab fa-python"></i>&nbsp;Python label to see other languages
         </p><br/><br/><br/>
       </div>
     )
@@ -118,7 +119,6 @@ class Codes extends Component {
 
 
     return <div className="projects">
-      
       {this.drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg", pythonIcon)}
       {this.drawSingleProject("automation_edu", eduThumbnail, pythonIcon)}
       {this.drawSingleProject("post_crawler", pythonThumbnail, pythonIcon)}
@@ -189,7 +189,6 @@ class Codes extends Component {
               First Commit on {this.state.repository[name].createdAt.substring(0,10)}
             </p>
             <p className="bookDescription">{this.state.repository[name].description}</p>
-            
           </div>
           <div className="projectIcons">
             <h5>{languageIcon}&nbsp; {this.state.repository[name].language}</h5>
@@ -223,7 +222,7 @@ class Codes extends Component {
             Realtime Summary of &nbsp; 
             <a className="tempa" href="https://github.com/needleworm" target="_blank"  rel="noreferrer">
               My <i className="fab fa-github"></i> Github Account
-              </a>
+            </a>
           </h3>
         </div>
         {this.drawProjects()}

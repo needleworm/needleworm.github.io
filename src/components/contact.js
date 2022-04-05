@@ -13,27 +13,27 @@ class Contact extends Component {
 
   submitForm() {
     return (
-      <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xaylgyzq" method="post">
+      <form id="fs-frm" name="complaint-form" acceptCharset="utf-8" action="https://formspree.io/f/xaylgyzq" method="post">
         <fieldset id="fs-frm-inputs">
           <p>
-            <label for="full-name">Name</label><br/>
+            <label htmlFor="full-name">Name</label><br/>
             <input type="text" name="name" id="full-name" placeholder="Your Name Please*" required data-validation-required-message="Please enter your name"/>
           </p>
           <p>
-            <label for="email-address">Email Address</label><br/>
+            <label htmlFor="email-address">Email Address</label><br/>
             <input type="email" name="_replyto" id="email-address" placeholder="email@bhban.com*" required data-validation-required-message="Please enter your email adress."/>
           </p>
           <p>
-            <label for="telephone">Phone Number (Optional)</label><br/>
+            <label htmlFor="telephone">Phone Number (Optional)</label><br/>
             <input type="telephone" name="telephone" id="telephone" placeholder="010-1234-5678"/>
           </p>
           <p>
-            <label for="Message">Message</label><br/>
+            <label htmlFor="Message">Message</label><br/>
             <textarea rows="6" name="complaint" id="complaint" placeholder="Tell me your story :)" required data-validation-required-message="Please enter a message."></textarea>
           </p>
           <input type="hidden" name="_subject" id="email-subject" value="Contact From Homepage"/>
         </fieldset>
-        <button type="submit" class="submitButton">Send Message</button>
+        <button type="submit" className="submitButton">Send Message</button>
       </form>
     )
   }

@@ -15,7 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "prepare": "npm install react-scripts chart.js react-chartjs-2 gh-pages axios",
+    "prepare": "npm install react-scripts chart.js react-chartjs-2 gh-pages",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

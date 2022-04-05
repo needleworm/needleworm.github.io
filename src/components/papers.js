@@ -27,7 +27,7 @@ class Papers extends Component {
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2017_01.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning</h5></p>
+          <h5>Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning</h5><br/>
             <p className="bookDescription">
             <strong>Byunghyun Ban</strong>*, Soobin Kim (2017)<br/>
               2017 International Conference on Information and Communication Technology Convergence (ICTC)
@@ -82,7 +82,7 @@ class Papers extends Component {
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2019_01.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System</h5></p>
+          <h5>ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System</h5><br/>
             <p className="bookDescription">
             <strong>Byunghyun Ban</strong>*, Minwoo Lee, Donghun Ryu (2019)<br/>
               2019 International Conference on Information and Communication Technology Convergence (ICTC)
@@ -144,7 +144,7 @@ class Papers extends Component {
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2019_02.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient Solutions</h5></p>
+          <h5>Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient Solutions</h5><br/>
             <p className="bookDescription">
             <strong>Byunghyun Ban</strong>*, Minwoo Lee, Donghun Ryu (2019)<br/>
               2019 International Conference on Information and Communication Technology Convergence (ICTC)
@@ -193,7 +193,7 @@ class Papers extends Component {
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_01.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>Nutrient Solution Management System for Smart Farms and Plant Factory</h5></p>
+          <h5>Nutrient Solution Management System for Smart Farms and Plant Factory</h5><br/>
             <p className="bookDescription">
             <strong>Byunghyun Ban</strong>*, Janghun Lee, Donghun Ryu, Minwoo Lee, Tae Dong Eom (2020)<br/>
               2020 International Conference on Information and Communication Technology Convergence (ICTC)
@@ -238,7 +238,7 @@ class Papers extends Component {
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_02.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>Deep learning method to remove chemical, kinetic and electric artifacts on ISEs</h5></p>
+          <h5>Deep learning method to remove chemical, kinetic and electric artifacts on ISEs</h5><br/>
             <p className="bookDescription">
             <strong>Byunghyun Ban</strong> (2020)<br/>
               2020 International Conference on Information and Communication Technology Convergence (ICTC)
@@ -287,7 +287,7 @@ class Papers extends Component {
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_03.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis</h5></p>
+          <h5>Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis</h5><br/>
             <p className="bookDescription">
             <strong>Byunghyun Ban</strong> (2020)<br/>
               2020 International Conference on Information and Communication Technology Convergence (ICTC)
@@ -336,7 +336,7 @@ class Papers extends Component {
     <div className="singleWebsiteCard">
        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2017_02.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>GAN-D: Generative adversarial networks for image deconvolution</h5></p>
+          <h5>GAN-D: Generative adversarial networks for image deconvolution</h5><br/>
             <p className="bookDescription">
               Ha Yeon Lee, Jin Myungg Kwak, <strong>Byunghyun Ban</strong>, Seon Jin Na, Se Ra Lee, Heung-Kyu Lee* (2017)<br/>
               2017 International Conference on Information and Communication Technology Convergence (ICTC)
@@ -385,7 +385,7 @@ class Papers extends Component {
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/BMC_SB_2018.jpg" alt="projectimage"/>
       <div className="projectText">
-        <p><h5>The phenotype control kernel of a biomolecular regulatory network</h5></p>
+        <h5>The phenotype control kernel of a biomolecular regulatory network</h5><br/>
           <p className="bookDescription">
             Sang-Mok Choo, <strong>Byunghyun Ban</strong>, Ja Il Joo, Kwnag-Hyun Cho* (2018)<br/>
             BMC Systems Biology &nbsp;(SCI)
@@ -439,7 +439,7 @@ class Papers extends Component {
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2021_nlp.png" alt="projectimage"/>
       <div className="projectText">
-        <p><h5>A Survey on Awesome Korean NLP Datasets</h5></p>
+        <h5>A Survey on Awesome Korean NLP Datasets</h5><br/>
           <p className="bookDescription">
             <strong>Byunghyun Ban</strong>(2021)<br/>
             Preprints

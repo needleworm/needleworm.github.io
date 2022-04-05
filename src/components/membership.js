@@ -27,7 +27,7 @@ class Membership extends Component {
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/aiff.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>AI 미래포럼 (AIFF)</h5></p>
+          <h5>AI 미래포럼 (AIFF)</h5><br/>
             <p className="bookDescription">
               <strong>AI for Social Good</strong><br/>
               AI 미래포럼 창립멤버
@@ -47,7 +47,7 @@ class Membership extends Component {
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/1.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>League of Perfect Scorers (LPS)</h5></p>
+          <h5>League of Perfect Scorers (LPS)</h5><br/>
             <p className="bookDescription">
               <strong>Rarity</strong> &nbsp;&nbsp; 0.000003% ~ 0.003%<br/>
               IQ 만점자 협회, 전 세계 19번째 멤버
@@ -71,7 +71,7 @@ class Membership extends Component {
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/2.png" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>World Genius Directory</h5></p>
+          <h5>World Genius Directory</h5><br/>
             <p className="bookDescription">
              최초이자 유일하게 한글로 이름 등재
             </p>
@@ -94,7 +94,7 @@ class Membership extends Component {
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/3.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>ISI Society</h5></p>
+          <h5>ISI Society</h5><br/>
             <p className="bookDescription">
               <strong>Rarity</strong> &nbsp;&nbsp; 0.07%
             </p>
@@ -117,7 +117,7 @@ class Membership extends Component {
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/4.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>Intertel</h5></p>
+          <h5>Intertel</h5><br/>
             <p className="bookDescription">
               <strong>Rarity</strong> &nbsp;&nbsp; 1%
             </p>
@@ -140,7 +140,7 @@ class Membership extends Component {
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/5.jpg" alt="projectimage"/>
       <div className="projectText">
-        <p><h5>Glia Society</h5></p>
+        <h5>Glia Society</h5><br/>
           <p className="bookDescription">
             <strong>Rarity</strong> &nbsp;&nbsp; 0.1%
           </p>
@@ -159,7 +159,7 @@ class Membership extends Component {
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/6.jpg" alt="projectimage"/>
       <div className="projectText">
-        <p><h5>CIVIQ Society</h5></p>
+        <h5>CIVIQ Society</h5><br/>
           <p className="bookDescription">
             <strong>Rarity</strong> &nbsp;&nbsp; 0.135%
           </p>
@@ -179,7 +179,7 @@ class Membership extends Component {
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/cheesecake.jpg" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>Cheesecake Studio</h5></p>
+          <h5>Cheesecake Studio</h5><br/>
             <p className="bookDescription">
               아트워크 그룹 "치즈케익 스튜디오"
             </p>
@@ -200,7 +200,7 @@ class Membership extends Component {
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/jihak.png" alt="projectimage"/>
         <div className="projectText">
-          <p><h5>고교독서평설</h5></p>
+          <h5>고교독서평설</h5><br/>
             <p className="bookDescription">
               고교독서평설 필진. "지금이야, 4차산업혁명" 코너 연재중.
             </p>

@@ -417,7 +417,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i class="fas fa-video"></i>&nbsp;Media
+        <i className="fas fa-video"></i>&nbsp;Media
       </a>
     </li>
 
