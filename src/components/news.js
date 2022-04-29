@@ -503,7 +503,6 @@ class News extends Component {
       </div>
     </div>
 
-
     var news20 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://press.chungbuk.ac.kr/ktimes/articles/112/20211206/20211206201200.html" target="_blank"  rel="noreferrer">
@@ -534,7 +533,39 @@ class News extends Component {
       </div>
     </div>
 
+    var news21 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://it.donga.com/102114/" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/21.jpg"  alt="projectimage"/>
+            <h5>IT동아</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://it.donga.com/102114/" target="_blank"  rel="noreferrer">
+            <h5>청년 스마트팜 기업 상상텃밭 “가장 진보한 기술로 가장 오래된 산업에 혁신을”</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2022.04.29
+            </p>
+            <p className="bookDescription">
+            “가장 진보한 기술로 가장 오래된 산업에 혁신을 이루겠습니다”<br/>
+            청년들이 모여 만든 스마트팜 기업 ‘상상텃밭’의 반병현 최고기술경영자(CTO)가 밝힌 당찬 포부다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://it.donga.com/102114/" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/21.jpg"  alt="projectimage"/>
+            <h5>IT동아</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news21}
       {news20}
       {news19}
       {news2}
