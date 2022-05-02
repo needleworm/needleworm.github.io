@@ -535,14 +535,14 @@ class News extends Component {
 
     var news21 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
-        <a className="hideOnDesktop"  href="https://it.donga.com/102114/" target="_blank"  rel="noreferrer">
+        <a className="hideOnDesktop"  href="https://www.donga.com/news/article/all/20220502/113189882/1" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
             <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/21.jpg"  alt="projectimage"/>
-            <h5>IT동아</h5>
+            <h5>동아일보</h5>
           </div>
           </a>
         <div className="projectText">
-          <a href="https://it.donga.com/102114/" target="_blank"  rel="noreferrer">
+          <a href="https://www.donga.com/news/article/all/20220502/113189882/1" target="_blank"  rel="noreferrer">
             <h5>청년 스마트팜 기업 상상텃밭 “가장 진보한 기술로 가장 오래된 산업에 혁신을”</h5>
           </a>
           <div className="codeBody">
@@ -555,10 +555,10 @@ class News extends Component {
             </p>
           </div>
         </div>
-        <a className="hideOnMobile"  href="https://it.donga.com/102114/" target="_blank"  rel="noreferrer">
+        <a className="hideOnMobile"  href="https://www.donga.com/news/article/all/20220502/113189882/1" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
             <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/21.jpg"  alt="projectimage"/>
-            <h5>IT동아</h5>
+            <h5>동아일보</h5>
           </div>
           </a>
       </div>
