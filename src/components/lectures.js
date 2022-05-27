@@ -26,6 +26,23 @@ class Lectures extends Component {
     var book = <i className="fas fa-book"></i>
     var edulogo = <i className="fas fa-chalkboard-teacher"></i>
     
+    var lecture30 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/29.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>전북 청년창업사관학교 교육 (2021)</h5><br/>
+            <p className="bookDescription">
+              PMF와 그로스해킹, PDI와 스타트업의 조직구성, 공동창업계약과 자금조달 (3차시)
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.koscom.co.kr/portal/main.do" target="_blank"  rel="noreferrer">
+                {edulogo} Lecture
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     var lecture29 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/29.jpg" alt="projectimage"/>
@@ -517,30 +534,29 @@ class Lectures extends Component {
     </div>
     
     var lecture23 = <div className="singleLectureContainer">
-    <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/23.jpg" alt="projectimage"/>
-      <div className="projectText">
-        <h5>아이디어에서 사업화까지 (2012)</h5><br/>
-          <p className="bookDescription">
-            제 2회 KAIST 전국 발명대회 시상식 워크숍 초청강연
-          </p>
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/23.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>아이디어에서 사업화까지 (2012)</h5><br/>
+            <p className="bookDescription">
+              제 2회 KAIST 전국 발명대회 시상식 워크숍 초청강연
+            </p>
+        </div>
       </div>
-    </div>
     </div>
     
     var lecture24 = <div className="singleLectureContainer">
-    <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/24.jpg" alt="projectimage"/>
-      <div className="projectText">
-        <h5>뇌과학에 발을 들이면서 (2012)</h5><br/>
-          <p className="bookDescription">
-            경안고등학교 과학동아리 초청강연
-          </p>
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/24.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>뇌과학에 발을 들이면서 (2012)</h5><br/>
+            <p className="bookDescription">
+              경안고등학교 과학동아리 초청강연
+            </p>
+        </div>
       </div>
     </div>
-    </div>
 
-    
     var lecture25 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/25.jpg" alt="projectimage"/>
@@ -613,9 +629,35 @@ class Lectures extends Component {
         </div>
       </div>  
     </div>
+    
+    var lecture33 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/33.jpeg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>뇌과학에 발을 들이면서 (2022)</h5><br/>
+            <p className="bookDescription">
+              경안고등학교 인공지능 프로젝트 자문위원
+            </p>
+        </div>
+      </div>
+    </div>
+    
+    var lecture34 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/34.jpeg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>진로특강 (2022)</h5><br/>
+            <p className="bookDescription">
+              영양여자고등학교 진로특강 특강강사 초청
+            </p>
+        </div>
+      </div>
+    </div>
 
     return (
       <div className="websitesContainer">
+        {lecture34}
+        {lecture33}
         {lecture32}
         {lecture31}
         {lecture30}
