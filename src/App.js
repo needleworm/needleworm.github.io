@@ -560,14 +560,14 @@ class App extends Component {
                     <ul className="navigation">
                       {socialContribution}
                       {books}
+                      {lectures}
                       {media}
+                      {news}
                       {websites}
+                      {membership}
                       {codes}
                       {papers}
                       {patents}
-                      {lectures}
-                      {news}
-                      {membership}
                       {contact}
                     </ul>
                   </nav>
