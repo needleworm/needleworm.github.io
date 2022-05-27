@@ -229,9 +229,29 @@ class Books extends Component {
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
+    
+    var bookSection14 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/14.jpg" alt="book12" className="bookCoverImage"/>
+      <h5><a href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
+          가상자산 수업 <i className="fas fa-external-link-alt"></i>
+        </a>
+        </h5>
+      <p className="bookDescription">2022.06. 생능북스</p>
+      <ul className="list-inline">
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
+      </ul>
+    </div>
 
     return(
       <div className="bookContainer">
+        {bookSection14}
         {bookSection13}
         {bookSection12}
         {bookSection11}

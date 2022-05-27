@@ -6,11 +6,12 @@ import Codes from "./components/codes"
 import Papers from "./components/papers"
 import Patents from "./components/patents"
 import Lectures from "./components/lectures"
-import Designs from "./components/nft"
+//import Designs from "./components/nft"
 import News from "./components/news"
 import Media from "./components/media"
 import Contact from "./components/contact"
 import Membership from "./components/membership"
+import SocialContribution from "./components/socialContribution"
 
 class App extends Component {
   constructor(props){
@@ -29,6 +30,7 @@ class App extends Component {
           news
           contact
           media
+          socialContribution
       */
       content:"none",
       sns:{
@@ -330,7 +332,7 @@ class App extends Component {
         <i className="fas fa-chalkboard-teacher"></i>&nbsp;Lectures
       </a>
     </li>
-
+    /*
     var designs = <li className="navigation__item">
       <a href="#designs" title="Designs" className="panel-button projects-button"
         onClick={
@@ -360,6 +362,7 @@ class App extends Component {
         <i className="fas fa-palette"></i>&nbsp;Designs
       </a>
     </li>
+    */
 
     var news = <li className="navigation__item">
       <a href="#news" title="Me on Newses"
@@ -451,11 +454,41 @@ class App extends Component {
       </a>
     </li>
 
-  var membership = <li className="navigation__item">
-    <a href="#membership" title="My Memberships"
+    var membership = <li className="navigation__item">
+      <a href="#membership" title="My Memberships"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "membership"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "membership",
+                latestButton: "membership"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }>
+        <i className="far fa-id-badge"></i>&nbsp;Membership
+      </a>
+    </li>
+
+    var socialContribution = <li className="navigation__item">
+    <a href="#socialContribution" title="socialContribution" className="panel-button projects-button"
       onClick={
         function(e){
-          if (this.state.latestButton === "membership"){
+          if (this.state.latestButton === "socialContribution"){
             this.setState({
               content: "none",
               latestButton: "none"
@@ -463,8 +496,8 @@ class App extends Component {
             this.closeSideMenu()
           } else{
             this.setState({
-              content: "membership",
-              latestButton: "membership"
+              content: "socialContribution",
+              latestButton: "socialContribution"
             })
             this.openSideMenu()
             var navigationWrapper = document.querySelector('.navigation-wrapper')
@@ -476,10 +509,11 @@ class App extends Component {
             btnMobileMenuIcon.classList.toggle('fadeIn')
           }
         }.bind(this)
-      }>
-      <i className="far fa-id-badge"></i>&nbsp;Membership
+      }
+    >
+      <i class="fa-solid fa-hand-holding-heart"></i>&nbsp;Social Contribution
     </a>
-  </li>
+    </li>
     
     var mobileButtenMenu =  <span className="mobile btn-mobile-menu"
       onClick={
@@ -524,6 +558,7 @@ class App extends Component {
                   <br/>
                   <nav className="cover-navigation navigation--social">
                     <ul className="navigation">
+                      {socialContribution}
                       {books}
                       {media}
                       {websites}
@@ -531,9 +566,6 @@ class App extends Component {
                       {papers}
                       {patents}
                       {lectures}
-                      {/*
-                      {designs}
-                      */}
                       {news}
                       {membership}
                       {contact}
@@ -595,10 +627,6 @@ class App extends Component {
       return (
         <Lectures/>
       )
-    } else if (this.state.content === "designs"){
-      return (
-        <Designs/>
-      )
     } else if (this.state.content === "news"){
       return (
         <News/>
@@ -615,7 +643,18 @@ class App extends Component {
       return (
         <Membership/>
       )
+    }else if (this.state.content === "socialContribution"){
+      return (
+        <SocialContribution/>
+      )
     }
+    /*
+    else if (this.state.content === "designs"){
+      return (
+        <Designs/>
+      )
+    } 
+    */
   }
 
   render() {
