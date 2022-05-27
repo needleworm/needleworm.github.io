@@ -37,7 +37,7 @@ class Websites extends Component {
           <div className="codeBody">
             <p className="bookDescription">
               My own webpage built with &nbsp;{reactIconL} React. This static website is hosted on &nbsp;{gitLogo} Github Pages.
-              I was inspired by &nbsp; 
+              It was inspired by &nbsp; 
               <a href='https://github.com/tzuehlke/jekyll-uno-timeline/' target="_blank"  rel="noreferrer">
                 Thomas Zühlke's jekyll theme
               </a>. The original theme runs with jQuery for github API calling, and SCSS for styling. 
