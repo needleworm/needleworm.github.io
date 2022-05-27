@@ -232,7 +232,7 @@ class Books extends Component {
     
     var bookSection14 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/14.jpg" alt="book12" className="bookCoverImage"/>
-      <h5><a href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
+      <h5><a href="https://needleworm.github.io/tech3" target="_blank"  rel="noreferrer">
           가상자산 수업 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
