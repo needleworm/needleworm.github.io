@@ -64,7 +64,7 @@ class App extends Component {
             {'max-width': '530px', 'width': '40%'}, // from
             {'width': '100%'}, // to
           ], { // options
-            duration: 400,
+            duration: '4000ms',
             easing: 'ease-in-out'
           } 
         )
@@ -90,7 +90,7 @@ class App extends Component {
           {'width': '100%'}, // from
           {'max-width': '530px', 'width': '40%'}, // to
         ], { // options
-          duration: 400,
+          duration: '4000ms',
           easing: 'ease-in-out'
         } 
       )
@@ -129,7 +129,7 @@ class App extends Component {
             </span>
 
     var blog = <span className="navigation__item_sns">
-    <a href="https://brunch.co.kr/@needleworm"  title="My Blog" target="_blank"  rel="noreferrer">
+      <a href="https://brunch.co.kr/@needleworm"  title="My Blog" target="_blank"  rel="noreferrer">
               <i className="fas fa-pen-square fa-lg"></i>
               <span className="label">Blog</span>
             </a>
@@ -177,7 +177,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i className="fas fa-book"></i>&nbsp;Books
+        <i className="fas fa-book"></i>&nbsp;도서
       </a>
     </li>
 
@@ -208,7 +208,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i className="fas fa-laptop-code"></i>&nbsp;Websites
+        <i className="fas fa-laptop-code"></i>&nbsp;웹개발
       </a>
     </li>
 
@@ -239,7 +239,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i className="fas fa-code-branch"></i>&nbsp;Codes
+        <i className="fas fa-code-branch"></i>&nbsp;코드
       </a>
     </li>
 
@@ -269,7 +269,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-registered"></i>&nbsp;Patents
+        <i className="far fa-registered"></i>&nbsp;특허
       </a>
     </li>
 
@@ -299,7 +299,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="fas fa-graduation-cap"></i>&nbsp;Papers
+        <i className="fas fa-graduation-cap"></i>&nbsp;논문
       </a>
     </li>
 
@@ -329,7 +329,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="fas fa-chalkboard-teacher"></i>&nbsp;Lectures
+        <i className="fas fa-chalkboard-teacher"></i>&nbsp;강연
       </a>
     </li>
     /*
@@ -390,7 +390,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-newspaper"></i>&nbsp;News
+        <i className="far fa-newspaper"></i>&nbsp;언론보도
       </a>
     </li>
 
@@ -420,7 +420,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="fas fa-video"></i>&nbsp;Media
+        <i className="fas fa-video"></i>&nbsp;미디어
       </a>
     </li>
 
@@ -450,7 +450,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-envelope"></i>&nbsp;Contact
+        <i className="far fa-envelope"></i>&nbsp;문의
       </a>
     </li>
 
@@ -480,39 +480,39 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-id-badge"></i>&nbsp;Membership
+        <i className="far fa-id-badge"></i>&nbsp;맴버십
       </a>
     </li>
 
     var socialContribution = <li className="navigation__item">
-    <a href="#socialContribution" title="socialContribution" className="panel-button projects-button"
-      onClick={
-        function(e){
-          if (this.state.latestButton === "socialContribution"){
-            this.setState({
-              content: "none",
-              latestButton: "none"
-            })
-            this.closeSideMenu()
-          } else{
-            this.setState({
-              content: "socialContribution",
-              latestButton: "socialContribution"
-            })
-            this.openSideMenu()
-            var navigationWrapper = document.querySelector('.navigation-wrapper')
-            var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-            navigationWrapper.classList.toggle('visible')
-            btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-            btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-            btnMobileMenuIcon.classList.toggle('animated')
-            btnMobileMenuIcon.classList.toggle('fadeIn')
-          }
-        }.bind(this)
-      }
-    >
-      <i class="fa-solid fa-hand-holding-heart"></i>&nbsp;Social Contribution
-    </a>
+      <a href="#socialContribution" title="socialContribution" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "socialContribution"){
+              this.setState({
+                content: "none",
+                latestButton: "none"
+              })
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "socialContribution",
+                latestButton: "socialContribution"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }
+      >
+        <i class="fa-solid fa-hand-holding-heart"></i>&nbsp;사회공헌
+      </a>
     </li>
     
     var mobileButtenMenu =  <span className="mobile btn-mobile-menu"
@@ -521,8 +521,8 @@ class App extends Component {
           var navigationWrapper = document.querySelector('.navigation-wrapper')
           var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
           navigationWrapper.classList.toggle('visible')
-          navigationWrapper.classList.toggle('animated')
           navigationWrapper.classList.toggle('bounceInDown')
+          navigationWrapper.classList.toggle('animated')
           btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
           btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
           btnMobileMenuIcon.classList.toggle('animated')
@@ -548,7 +548,7 @@ class App extends Component {
                     {linkedin}
                     {youtube}
                     {researchgate}
-                      {blog}
+                    {blog}
                 </nav>
                 <hr className="panel-cover__divider"/>
                 <p className="panel-cover__description">Author, Entrepreneur, Researcher and Developer</p>

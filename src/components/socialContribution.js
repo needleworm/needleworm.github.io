@@ -33,7 +33,7 @@ class SocialContribution extends Component {
             <p className="bookDescription">
               비수도권 지역의 청소년들을 후원하기 위하여 개최한 공모전입니다.<br/>
               처음에는 상금 120만원과 운영비용 등 사비 200여만원으로 공모전을 기획하였습니다. 
-              추후 정규민 디자이너와 <a href="https://www.booksr.co.kr" target="_blank">생능출판사</a>가 도움을 주셔서 총상금 230만 원 규모로 대회가 진행되고 있습니다.<br/>
+              추후 정규민 디자이너와 <a href="https://www.booksr.co.kr" target="_blank" rel="noreferrer">생능출판사</a>가 도움을 주셔서 총상금 230만 원 규모로 대회가 진행되고 있습니다.<br/>
               총 30명의 학생을 발굴하여 상금을 지급하고, 자신의 꿈을 책으로 실어 세상에 전달하는 소중한 경험을 제공하려 합니다.
             </p>
           </div>
