@@ -238,13 +238,13 @@ class Books extends Component {
         </h5>
       <p className="bookDescription">2022.06. 생능북스</p>
       <ul className="list-inline">
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970505504&start=pnaver_02" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkClass=&barcode=9788970505503" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="https://book.naver.com/bookdb/book_detail.naver?bid=22485863" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="http://www.yes24.com/Product/Goods/109708603" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
