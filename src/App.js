@@ -45,32 +45,25 @@ class App extends Component {
     this.openSideMenu = this._openSideMenu.bind(this)
   }
 
-  
   _closeSideMenu(){
     var contentWrapper = document.querySelector('.content-wrapper')
-    var panelCover = document.querySelector('.panel-cover')
-    if (contentWrapper.classList.contains('showing')){
-      var currentWidth = panelCover.clientWidth
-      if (currentWidth < 960){
-        contentWrapper.classList.remove('panel-cover--collapsed')
-        panelCover.classList.remove('panel-cover--collapsed')
-        panelCover.style.maxWidth = '100%'
-      } else {
-        contentWrapper.classList.remove('panel-cover--collapsed')
-        panelCover.classList.remove('panel-cover--collapsed')
-        panelCover.style.maxWidth = '100%'
-        panelCover.animate(
-          [ // Keyframes
-            {'max-width': '530px', 'width': '40%'}, // from
-            {'width': '100%'}, // to
-          ], { // options
-            duration: '4000ms',
-            easing: 'ease-in-out'
-          } 
-        )
-      }
-      contentWrapper.classList.remove('showing')
+    if (!contentWrapper.classList.contains('showing')){
+      return
     }
+
+    var panelCover = document.querySelector('.panel-cover')
+    panelCover.classList.remove('panel-cover--collapsed')
+    panelCover.style.maxWidth = '100%'
+    panelCover.animate(
+      [ // Keyframes
+        {'max-width': '530px', 'width': '40%'}, // from
+        {'width': '100%'}, // to
+      ], { // options
+        duration: 400,
+        easing: 'ease-in-out'
+      } 
+    )
+    contentWrapper.classList.remove('showing')
   }
 
   _openSideMenu(){
@@ -90,7 +83,7 @@ class App extends Component {
           {'width': '100%'}, // from
           {'max-width': '530px', 'width': '40%'}, // to
         ], { // options
-          duration: '4000ms',
+          duration: 400,
           easing: 'ease-in-out'
         } 
       )
@@ -155,10 +148,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "books"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -186,10 +175,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "websites"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -217,10 +202,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "codes"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -248,10 +229,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "patents"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -278,10 +255,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "papers"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -308,10 +281,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "lectures"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -338,10 +307,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "designs"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -369,10 +334,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "news"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -399,10 +360,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "media"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -429,10 +386,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "contact"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -459,10 +412,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "membership"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
@@ -489,10 +438,6 @@ class App extends Component {
         onClick={
           function(e){
             if (this.state.latestButton === "socialContribution"){
-              this.setState({
-                content: "none",
-                latestButton: "none"
-              })
               this.closeSideMenu()
             } else{
               this.setState({
