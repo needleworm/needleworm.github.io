@@ -54,16 +54,36 @@ class App extends Component {
     var panelCover = document.querySelector('.panel-cover')
     panelCover.classList.remove('panel-cover--collapsed')
     panelCover.style.maxWidth = '100%'
-    panelCover.animate(
-      [ // Keyframes
-        {'max-width': '530px', 'width': '40%'}, // from
-        {'width': '100%'}, // to
-      ], { // options
-        duration: 400,
-        easing: 'ease-in-out'
-      } 
-    )
+
+    var window = document.querySelector('html')
+
+    var currentWidth = window.clientWidth
+    if (currentWidth > 800){
+      panelCover.animate(
+        [ // Keyframes
+          {'max-width': '530px', 'width': '40%'}, // from
+          {'width': '100%'}, // to
+        ], { // options
+          duration: 400,
+          easing: 'ease-in-out'
+        } 
+      )
+    } else {
+      panelCover.animate(
+        [ // Keyframes
+          {'height': '40%'}, // from
+          {'height': '100%'}, // to
+        ], { // options
+          duration: 400,
+          easing: 'ease-in-out'
+        } 
+      )
+    }
     contentWrapper.classList.remove('showing')
+    this.setState({
+      latestButton: "none",
+      content: "none"
+    })
   }
 
   _openSideMenu(){
@@ -73,11 +93,12 @@ class App extends Component {
     }
 
     var panelCover = document.querySelector('.panel-cover')
-    var currentWidth = panelCover.clientWidth
-    if (currentWidth < 960){
-      panelCover.classList.add('panel-cover--collapsed')
-    } else {
-      panelCover.style.maxWidth = currentWidth
+    panelCover.classList.add('panel-cover--collapsed')
+
+    var window = document.querySelector('html')
+
+    var currentWidth = window.clientWidth
+    if (currentWidth > 800){
       panelCover.animate(
         [ // Keyframes
           {'width': '100%'}, // from
@@ -87,7 +108,17 @@ class App extends Component {
           easing: 'ease-in-out'
         } 
       )
-      panelCover.classList.add('panel-cover--collapsed')
+    } else {
+      panelCover.animate(
+        [ // Keyframes
+          {'height': '100%'}, // to
+          {'height': '40%'}, // from
+        ], { // options
+          duration: 400,
+          easing: 'ease-in-out'
+        } 
+      )
+      
     }
     contentWrapper.classList.add('showing')
   }
