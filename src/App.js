@@ -12,6 +12,7 @@ import Media from "./components/media"
 import Contact from "./components/contact"
 import Membership from "./components/membership"
 import SocialContribution from "./components/socialContribution"
+import Collections from "./components/collections"
 
 class App extends Component {
   constructor(props){
@@ -31,6 +32,7 @@ class App extends Component {
           contact
           media
           socialContribution
+          collections
       */
       content:"none",
       sns:{
@@ -197,7 +199,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i className="fas fa-book"></i>&nbsp;도서
+        <i className="fas fa-book"></i>&nbsp;Books
       </a>
     </li>
 
@@ -224,7 +226,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i className="fas fa-laptop-code"></i>&nbsp;웹개발
+        <i className="fas fa-laptop-code"></i>&nbsp;Web
       </a>
     </li>
 
@@ -251,7 +253,7 @@ class App extends Component {
           }.bind(this)
         }
       >
-        <i className="fas fa-code-branch"></i>&nbsp;코드
+        <i className="fas fa-code-branch"></i>&nbsp;Codes
       </a>
     </li>
 
@@ -277,7 +279,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-registered"></i>&nbsp;특허
+        <i className="far fa-registered"></i>&nbsp;Patents
       </a>
     </li>
 
@@ -303,7 +305,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="fas fa-graduation-cap"></i>&nbsp;논문
+        <i className="fas fa-graduation-cap"></i>&nbsp;Papers
       </a>
     </li>
 
@@ -329,7 +331,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="fas fa-chalkboard-teacher"></i>&nbsp;강연
+        <i className="fas fa-chalkboard-teacher"></i>&nbsp;Lectures
       </a>
     </li>
     /*
@@ -382,7 +384,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-newspaper"></i>&nbsp;언론보도
+        <i className="far fa-newspaper"></i>&nbsp;News
       </a>
     </li>
 
@@ -408,7 +410,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="fas fa-video"></i>&nbsp;미디어
+        <i className="fas fa-video"></i>&nbsp;Media
       </a>
     </li>
 
@@ -434,7 +436,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-envelope"></i>&nbsp;문의
+        <i className="far fa-envelope"></i>&nbsp;Contact
       </a>
     </li>
 
@@ -460,7 +462,7 @@ class App extends Component {
             }
           }.bind(this)
         }>
-        <i className="far fa-id-badge"></i>&nbsp;맴버십
+        <i className="far fa-id-badge"></i>&nbsp;Membership
       </a>
     </li>
 
@@ -488,6 +490,33 @@ class App extends Component {
         }
       >
         <i class="fa-solid fa-hand-holding-heart"></i>&nbsp;사회공헌
+      </a>
+    </li>
+
+    var collections = <li className="navigation__item">
+      <a href="#collections" title="collections" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (this.state.latestButton === "collections"){
+              this.closeSideMenu()
+            } else{
+              this.setState({
+                content: "collections",
+                latestButton: "collections"
+              })
+              this.openSideMenu()
+              var navigationWrapper = document.querySelector('.navigation-wrapper')
+              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              navigationWrapper.classList.toggle('visible')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
+              btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
+              btnMobileMenuIcon.classList.toggle('animated')
+              btnMobileMenuIcon.classList.toggle('fadeIn')
+            }
+          }.bind(this)
+        }
+      >
+        <i class="fa-solid fa-palette"></i>&nbsp;Collections
       </a>
     </li>
     
@@ -544,6 +573,7 @@ class App extends Component {
                       {codes}
                       {papers}
                       {patents}
+                      {collections}
                       {contact}
                     </ul>
                   </nav>
@@ -622,6 +652,10 @@ class App extends Component {
     }else if (this.state.content === "socialContribution"){
       return (
         <SocialContribution/>
+      )
+    }else if (this.state.content === "collections"){
+      return (
+        <Collections/>
       )
     }
     /*
