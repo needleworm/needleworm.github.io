@@ -25,13 +25,11 @@ class Collections extends Component {
 
     var collection1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <a className="tempa" href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/blog.gif" alt="projectimage"/>
-        </a>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/1.jpeg" alt="projectimage"/>
         <div className="projectText">
-          <a className="text-center textMarginBottom" href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
-            <h5>https://needleworm.github.io</h5><br/>
-          </a>
+          <h5 className="text-center textMarginBottom">
+            The Inner Sky - Orange in you
+          </h5>
           <div className="codeBody">
             <p className="bookDescription">
               My own webpage built with &nbsp;{reactIconL} React. This static website is hosted on &nbsp;{gitLogo} Github Pages.
@@ -65,8 +63,7 @@ class Collections extends Component {
     return (
       <div className="websitesContainer">
         <div className="text-center textMarginBottom" style={{marginBottom:"200px"}}>
-          June. 2022.<br/>
-          Coming Soon<br/>
+          {collection1}
         </div>
       </div>
     )
