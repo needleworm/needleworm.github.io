@@ -115,18 +115,15 @@ class Collections extends Component {
               </a><br/>
             </p>
             <div className="collectedFrom">
-              Collected from <a className="collectedFrom" href="https://mansion9.co.kr/" target="_blank" rel="noreferrer">
-                Manshion 9
-                </a>
+              Collected from <a className="collectedFrom" href="http://www.kwanhoongallery.com" target="_blank" rel="noreferrer">
+                관훈갤러리
+              </a>
             </div>
             <br/><br/>
 
             <div className="collectedFrom">
               전시 중<br/>
               In-Joy of ART (2022.06.08. ~ 2022.06.29.) <br/>
-              <a className="collectedFrom" href="http://www.kwanhoongallery.com" target="_blank" rel="noreferrer">
-                관훈갤러리
-              </a>
             </div>
           </div>
         </div>
