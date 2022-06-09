@@ -31,9 +31,9 @@ class Collections extends Component {
           </div>
           <div className="codeBody">
             <p className="bookDescription">
-              Oil on Canvas, 40.9 x 53 cm<br/>
+              Oil on Canvas, 40.9 x 53 cm, 2022<br/>
               <a href="https://nonez.creatorlink.net/" target="_blank" rel="noreferrer">
-                <strong>넌지</strong> (2022)
+                <strong>넌지</strong>
               </a><br/>
             </p>
             <div className="collectedFrom">
@@ -57,9 +57,9 @@ class Collections extends Component {
           </div>
           <div className="codeBody">
             <p className="bookDescription">
-              Oil on Canvas, 40.9 x 53 cm<br/>
+              Oil on Canvas, 40.9 x 53 cm, 2022<br/>
               <a href="https://nonez.creatorlink.net/" target="_blank" rel="noreferrer">
-                <strong>넌지</strong> (2022)
+                <strong>넌지</strong>
               </a><br/>
             </p>
             <div className="collectedFrom">
@@ -83,9 +83,9 @@ class Collections extends Component {
           </div>
           <div className="codeBody">
             <p className="bookDescription">
-              Oil on Canvas, 40.9 x 53 cm<br/>
+              Oil on Canvas, 40.9 x 53 cm, 2021<br/>
               <a href="https://nonez.creatorlink.net/" target="_blank" rel="noreferrer">
-                <strong>넌지</strong> (2021)
+                <strong>넌지</strong>
               </a><br/>
             </p>
             <div className="collectedFrom">
@@ -98,11 +98,47 @@ class Collections extends Component {
       </div>
     </div>
 
+    var collection4 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/4.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <div className="text-center textMarginBottom">
+            <strong>
+              Window of Time No.2
+            </strong>
+          </div>
+          <div className="codeBody">
+            <p className="bookDescription">
+              Oil on Canvas, 116.8 x 91 cm, 2020<br/>
+              <a href="https://nonez.creatorlink.net/" target="_blank" rel="noreferrer">
+                <strong>넌지</strong>
+              </a><br/>
+            </p>
+            <div className="collectedFrom">
+              Collected from <a className="collectedFrom" href="https://mansion9.co.kr/" target="_blank" rel="noreferrer">
+                Manshion 9
+                </a>
+            </div>
+            <br/><br/>
+
+            <div className="collectedFrom">
+              전시 중<br/>
+              In-Joy of ART (2022.06.08. ~ 2022.06.29.) <br/>
+              <a className="collectedFrom" href="http://www.kwanhoongallery.com" target="_blank" rel="noreferrer">
+                관훈갤러리
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     return (
       <div className="websitesContainer">
         <div className="text-center textMarginBottom" style={{marginBottom:"200px"}}>
+          {collection4}
           {collection3}
           {collection2}
           {collection1}
