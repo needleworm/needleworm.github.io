@@ -130,11 +130,38 @@ class Collections extends Component {
       </div>
     </div>
 
+    var collection5 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/5.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <div className="text-center textMarginBottom">
+            <strong>
+              The Inner Sky - Relax
+            </strong>
+          </div>
+          <div className="codeBody">
+            <p className="bookDescription">
+              Oil on Canvas, 40.9 x 53 cm, 2021<br/>
+              <a href="https://nonez.creatorlink.net/" target="_blank" rel="noreferrer">
+                <strong>넌지</strong>
+              </a><br/>
+            </p>
+            <div className="collectedFrom">
+              Collected from <a className="collectedFrom" href="https://www.k-auction.com/" target="_blank" rel="noreferrer">
+                K Auction
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     return (
       <div className="websitesContainer">
         <div className="text-center textMarginBottom" style={{marginBottom:"200px"}}>
+          {collection5}
           {collection4}
           {collection3}
           {collection2}
