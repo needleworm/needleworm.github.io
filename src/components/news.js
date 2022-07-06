@@ -564,7 +564,38 @@ class News extends Component {
       </div>
     </div>
 
+    var news22 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://www.artinsight.co.kr/news/view.php?no=60369" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/22.jpg"  alt="projectimage"/>
+            <h5>아트인사이트</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://www.artinsight.co.kr/news/view.php?no=60369" target="_blank"  rel="noreferrer">
+            <h5>믿음에 값을 매긴다면 - 돈이 복사되는 가상자산 수업</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2022.06.22
+            </p>
+            <p className="bookDescription">
+            NFT는 아무래도 '신세대' 기술이니까, 이왕이면 신간 도서를 골라잡고 싶었다. 그러던 중 NFT뿐 아니라 암호화폐와 메타버스까지 다루는 반병현 작가의 돈이 복사되는 가상자산 수업을 발견했다. 내가 본래 궁금했던 것은 NFT였으나, 다른 기술까지 함께 알아도 나쁠 건 없지 싶었다. 
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://www.artinsight.co.kr/news/view.php?no=60369" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/22.jpg"  alt="projectimage"/>
+            <h5>아트인사이트</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news22}
       {news21}
       {news20}
       {news19}
