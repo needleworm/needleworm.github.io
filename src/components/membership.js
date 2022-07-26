@@ -217,15 +217,16 @@ class Membership extends Component {
 
     return (
       <div className="websitesContainer">
-        {aiff}
         {cheesecake}
-        {jihak}
         {membership1}
         {membership2}
         {membership3}
         {membership4}
         {membership5}
         {membership6}
+        {aiff}
+        {jihak}
+
       </div>
     )
   }
