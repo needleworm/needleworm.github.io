@@ -1106,8 +1106,54 @@ class Patents extends Component {
     </div>
     </div>
 
+    var patent25 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/25.png" alt="projectimage"/>
+      <div className="projectText">
+        <h5>강화학습 AI를 활용한 식물공장 양액제어 시스템 최적화 방법</h5><br/>
+        <div className="bookDescription">
+          <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2423998 
+          <div className="patentInfo">
+            <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.12.23</div>
+            <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2022.07.19.</div>
+          </div>
+          <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+        </div>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byunghyun Ban. Method of optimize plant factory nutrient solution control system using reinforcement learning AI. KR Patent 10-2423998  (2022)'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+          </h5>
+          <div className="gitIcons">
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/25.pdf" target="_blank"  rel="noreferrer" download>
+              <i className="fas fa-file-pdf"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://doi.org/10.8080/1020210185604" target="_blank"  rel="noreferrer">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
     return (
       <div className="websitesContainer">
+        {patent25}
         {patent15}
         {patent14}
         {patent13}
