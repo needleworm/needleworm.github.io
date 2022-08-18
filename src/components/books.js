@@ -248,9 +248,29 @@ class Books extends Component {
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
+    
+    var bookSection15 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/15.jpg" alt="book12" className="bookCoverImage"/>
+      <h5><a href="https://www.bookk.co.kr/book/view/146587" target="_blank"  rel="noreferrer">
+          별처럼 찬란히 빛나는 꿈으로 <i className="fas fa-external-link-alt"></i>
+        </a>
+        </h5>
+      <p className="bookDescription">2022.08. BOOKK(부크크)</p>
+      <ul className="list-inline">
+        <li><a href="https://www.bookk.co.kr/book/view/146587" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
+        <li><a href="https://www.bookk.co.kr/book/view/146587" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
+        <li><a href="https://www.bookk.co.kr/book/view/146587" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
+        <li><a href="https://www.bookk.co.kr/book/view/146587" target="_blank"  rel="noreferrer">
+          <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
+      </ul>
+    </div>
 
     return(
       <div className="bookContainer">
+        {bookSection15}
         {bookSection14}
         {bookSection13}
         {bookSection12}
