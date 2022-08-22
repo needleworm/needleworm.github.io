@@ -1196,8 +1196,54 @@ class Patents extends Component {
       </div>
     </div>
 
+    var patent27 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/27.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>인공지능 능동보조 서버가 탑재된 지능형 의료용 헴프 식물공장 시스템</h5><br/>
+          <div className="bookDescription">
+            <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2022-0012112 
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2022.01.27</div>
+              <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2022.08.16.</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현 외 10인<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          </div>
+          <div className="projectIcons">
+            <h5>
+              <span className="citation"  onClick={
+                function(e){
+                  e.preventDefault()
+                  var dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = 'Byunghyun Ban, et al. Intelligent Plant factory system for medical and industrial hemp and AI assistance server. KR Patent 10-2434102 (2022)'
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!")
+                }
+              }>
+                <i className="far fa-clipboard"></i>&nbsp;Cite This
+              </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/27.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020220012112" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     return (
       <div className="websitesContainer">
+        {patent27}
         {patent25}
         {patent26}
         {patent15}
