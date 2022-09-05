@@ -156,11 +156,38 @@ class Collections extends Component {
       </div>
     </div>
 
+    var collection6 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/6.png" alt="projectimage"/>
+        <div className="projectText">
+          <div className="text-center textMarginBottom">
+            <strong>
+              Window of Time No.5
+            </strong>
+          </div>
+          <div className="codeBody">
+            <p className="bookDescription">
+              Oil on Canvas, 53 x 40.9 cm, 2022<br/>
+              <a href="https://nonez.creatorlink.net/" target="_blank" rel="noreferrer">
+                <strong>넌지</strong>
+              </a><br/>
+            </p>
+            <div className="collectedFrom">
+              Collected from <a className="collectedFrom" href="https://www.k-auction.com/" target="_blank" rel="noreferrer">
+                K Auction
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     return (
       <div className="websitesContainer">
         <div className="text-center textMarginBottom" style={{marginBottom:"200px"}}>
+          {collection6}
           {collection5}
           {collection4}
           {collection3}
