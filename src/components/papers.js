@@ -442,7 +442,7 @@ class Papers extends Component {
         <h5>A Survey on Awesome Korean NLP Datasets</h5><br/>
           <p className="bookDescription">
             <strong>Byunghyun Ban</strong>(2021)<br/>
-            Preprints
+            Preprints (Accepted to ICTC 2022)
           </p>
         <div className="codeBody">
           <p className="bookDescription">
