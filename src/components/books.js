@@ -257,7 +257,7 @@ class Books extends Component {
         </h5>
       <p className="bookDescription">2022.08. BOOKK(부크크)</p>
       <ul className="list-inline">
-        <li><a href="https://www.bookk.co.kr/book/view/146587" target="_blank"  rel="noreferrer">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K202839180" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
         <li><a href="https://www.bookk.co.kr/book/view/146587" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
