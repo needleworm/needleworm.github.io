@@ -31,7 +31,7 @@ class Lectures extends Component {
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/1.jpg" alt="projectimage"/>
         <div className="projectText">
-          <h5>6개월치 업무를 하루만에 끝내는 업무자동화 (2020)</h5><br/>
+          <h5>6개월치 업무를 하루만에 끝내는 업무자동화 (2020, 2022)</h5><br/>
             <p className="bookDescription">
               패스트캠퍼스 온라인강좌<br/>
               파이썬 기초부터 엑셀파일 활용 자동화, 디자인 자동화, 매크로 제작 및 크롤링 과정.<br/>
@@ -639,18 +639,40 @@ class Lectures extends Component {
       </div>
     </div>
 
+    var lecture35 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/35.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>비전공자를 위한 쉬운 딥러닝 (2022)</h5><br/>
+            <p className="bookDescription">
+              WiseHRD<br/>
+              파이썬 기초부터 딥러닝 기초, CNN과 LSTM까지
+              21종의 인공지능을 만들면서 배우는 쉬운 딥러닝 강의
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="http://wisehrd.com" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     return (
       <div className="websitesContainer">
+        {lecture35}
         {lecture34}
+        {lecture1}
+        {lecture31}
         {lecture33}
         {lecture32}
-        {lecture31}
         {lecture30}
         {lecture29}
         {lecture28}
         {lecture26}
         {lecture27}
-        {lecture1}
         {lecture2}
         {lecture3}
         {lecture4}

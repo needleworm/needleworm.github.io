@@ -567,13 +567,13 @@ class App extends Component {
                       {books}
                       {lectures}
                       {media}
-                      {news}
                       {websites}
-                      {membership}
                       {codes}
                       {papers}
                       {patents}
+                      {news}
                       {collections}
+                      {membership}
                       {contact}
                     </ul>
                   </nav>
