@@ -22,7 +22,7 @@
 .projectImage
 {width:40vw;max-width:250px;box-shadow:1px 1px 1px 1px gray;border-radius:10px;margin-left:auto;margin-right:auto;margin-bottom:40px}
 .projectIcons
-{display:grid;grid-template-columns:1fr 1.5fr}
+{display:grid;grid-template-columns:1fr 2fr}
 .projectText
 {margin-top:10px}
 }
@@ -32,7 +32,7 @@
 .projectImage
 {width:200px;box-shadow:1px 1px 1px 1px gray;border-radius:10px;margin-left:0;margin-right:auto}
 .projectIcons
-{display:grid;grid-template-columns:1fr 1.5fr}
+{display:grid;grid-template-columns:1fr 2fr}
 .projectText
 {margin-top:10px}
 }
