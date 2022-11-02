@@ -1202,10 +1202,10 @@ class Patents extends Component {
         <div className="projectText">
           <h5>인공지능 능동보조 서버가 탑재된 지능형 의료용 헴프 식물공장 시스템</h5><br/>
           <div className="bookDescription">
-            <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2022-0012112 
+            <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2434102
             <div className="patentInfo">
               <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2022.01.27</div>
-              <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2022.08.16.</div>
+              <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2022.08.16.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현 외 10인<br/>
             <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
