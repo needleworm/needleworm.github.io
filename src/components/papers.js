@@ -442,7 +442,7 @@ class Papers extends Component {
         <h5>A Survey on Awesome Korean NLP Datasets</h5><br/>
           <p className="bookDescription">
             <strong>Byunghyun Ban</strong>(2021)<br/>
-            Preprints (Accepted to ICTC 2022)
+              2022 International Conference on Information and Communication Technology Convergence (ICTC)
           </p>
         <div className="codeBody">
           <p className="bookDescription">
@@ -471,11 +471,52 @@ class Papers extends Component {
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://www.preprints.org/manuscript/202110.0247/v1" target="_blank"  rel="noreferrer">
+              <a href="https://arxiv.org/abs/2112.01624" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    var paper10 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2022_MR.png" alt="projectimage"/>
+      <div className="projectText">
+        <h5>Mixed Reality Interface for Digital Twin of Plant Factory</h5><br/>
+          <p className="bookDescription">
+            <strong>Byunghyun Ban</strong>(2022)<br/>
+            Preprint(arXiv)
+          </p>
+        <div className="codeBody">
+          <p className="bookDescription">
+            An easier and intuitive interface architecture is necessary for digital twin of plant factory. I suggest an immersive and interactive mixed reality interface for digital twin models of smart farming, for remote work rather than simulation of components. The environment is constructed with UI display and a streaming background scene, which is a real time scene taken from camera device located in the plant factory, processed with deformable neural radiance fields. User can monitor and control the remote plant factory facilities with HMD or 2D display based mixed reality environment. This paper also introduces detailed concept and describes the system architecture to implement suggested mixed reality interface.
+          </p>
+        </div>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Ban, Byunghyun. "Mixed Reality Interface for Digital Twin of Plant Factory." arXiv preprint arXiv:2211.00597 (2022).'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/2022_MR.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://arxiv.org/abs/2112.01624" target="_blank"  rel="noreferrer">
+              <a href="https://arxiv.org/abs/2211.00597" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -486,6 +527,7 @@ class Papers extends Component {
 
     return (
       <div className="websitesContainer">
+        {paper10}
         {paper9}
         {paper6}
         {paper5}
