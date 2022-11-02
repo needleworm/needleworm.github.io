@@ -487,7 +487,7 @@ class Papers extends Component {
         <h5>Mixed Reality Interface for Digital Twin of Plant Factory</h5><br/>
           <p className="bookDescription">
             <strong>Byunghyun Ban</strong>(2022)<br/>
-            Preprint(arXiv)
+            Preprint (arXiv)
           </p>
         <div className="codeBody">
           <p className="bookDescription">
