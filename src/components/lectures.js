@@ -660,8 +660,50 @@ class Lectures extends Component {
       </div>
     </div>
 
+    var lecture36 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/36.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>한국인이 좋아하는 속도로 때려넣는 파이썬 (2022)</h5><br/>
+            <p className="bookDescription">
+              인프런 온라인강좌<br/>
+              모두가 배워야 한다고 호들갑인 파이썬! 한국인이 좋아하는 속도로! 3시간 안에! 때려넣어 드립니다!
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://inf.run/yyKd" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    var lecture37 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/37.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>6개월 치 업무를 하루 만에 끝내는 업무자동화 Renual (2022)</h5><br/>
+            <p className="bookDescription">
+              패스트캠퍼스 온라인강좌<br/>
+              업무자동화 분야 국내 1위 강의의 리뉴얼 버젼!
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://fastcampus.co.kr/dev_online_bbh" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
     return (
       <div className="websitesContainer">
+        {lecture37}
+        {lecture36}
         {lecture35}
         {lecture34}
         {lecture1}
