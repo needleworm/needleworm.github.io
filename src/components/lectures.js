@@ -698,47 +698,71 @@ class Lectures extends Component {
           </div>
         </div>
       </div>  
+    </div>    
+
+    var lecture38 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/38.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>인공지능 시대를 준비하는 전문가의 마음가짐 (2022)</h5><br/>
+            <p className="bookDescription">
+              안동경안고등학교, 인공지능(AI) 교육선도학교 인공지능 전문가 특강
+            </p>
+        </div>
+      </div>
     </div>
 
     return (
       <div className="websitesContainer">
+        {/* 상업강의 */}
         {lecture37}
         {lecture36}
         {lecture35}
-        {lecture34}
-        {lecture1}
         {lecture31}
-        {lecture33}
-        {lecture32}
-        {lecture30}
-        {lecture29}
-        {lecture28}
-        {lecture26}
-        {lecture27}
-        {lecture2}
-        {lecture3}
-        {lecture4}
-        {lecture5}
+        {lecture1}
+
+        {/* 자랑스러운 강의 */}
         {lecture6}
-        {lecture7}
-        {lecture8}
-        {lecture9}
-        {lecture10}
-        {lecture11}
-        {lecture12}
-        {lecture13}
-        {lecture14}
-        {lecture15}
-        {lecture16}
+        {lecture32}
         {lecture17}
-        {lecture18}
-        {lecture19}
+        {lecture14}
+        {lecture10}
         {lecture20}
-        {lecture21}
-        {lecture22}
+        {lecture7}
+
+        {/* 기업 강의 */}
+        {lecture30}
+        {lecture28}
+
+        {/* 공공기관 강의 */}
+        {lecture26}
+        {lecture29}
+        {lecture19}
+        {lecture18}
+        {lecture12}
+        {lecture2}
+
+        {/* 대학 강의 */}
+        {lecture27}
         {lecture23}
-        {lecture24}
+        {lecture22}
+        {lecture21}
+        {lecture16}
+        {lecture15}
+        {lecture9}
+        {lecture8}
+
+        {/* 고교 강의 */}
+        {lecture38}
+        {lecture34}
+        {lecture33}
         {lecture25}
+        {lecture24}
+        {lecture13}
+        {lecture11}
+        {lecture5}
+        {lecture4}
+        {lecture3}
       </div>
     )
   }
