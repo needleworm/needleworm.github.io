@@ -712,9 +712,35 @@ class Lectures extends Component {
       </div>
     </div>
 
+
+    var lecture39 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/38.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>돈이 복사되는 가상자산 수업 (2022)</h5><br/>
+            <p className="bookDescription">
+              아트엑스캠퍼스 온라인강좌<br/>
+              <a href="https://needleworm.github.io/tech3/" target="_blank" rel="noreferrer">
+                돈이 복사되는 가상자산 수업
+              </a>
+              도서를 바탕으로 제작된 온라인 강의입니다. 
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://www.artxcampus.co.kr/lecture.php?action=package&uid=66" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+
     return (
       <div className="websitesContainer">
         {/* 상업강의 */}
+        {lecture39}
         {lecture37}
         {lecture36}
         {lecture35}
