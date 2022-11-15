@@ -119,53 +119,77 @@ class Codes extends Component {
 
 
     return <div className="projects">
+      {/* 교육관련 */}
       {this.drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg", pythonIcon)}
       {this.drawSingleProject("automation_edu", eduThumbnail, pythonIcon)}
-      {this.drawSingleProject("post_crawler", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("pywinmacro", exeThumbnail, pythonIcon)}
       {this.drawSingleProject("pymacro", eduThumbnail, pythonIcon)}
-      {this.drawSingleProject("CoinAutoTrader", moneyautoThumbnail, pythonIcon)}
-      {this.drawSingleProject("fvs", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("python101", eduThumbnail, pythonIcon)}
       {this.drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/8.jpg", pythonIcon)}
+      {this.drawSingleProject("pywinmacro", exeThumbnail, pythonIcon)}
+
+
+
+      {/* 재미관련 */}
+      {this.drawSingleProject("newsToday", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("post_crawler", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("brunch_thaad", pythonThumbnail, pythonIcon)}
+
+
+      {/* Git Pages */}
+      {this.drawSingleProject("needleworm.github.io", reactThumbnail, reactIconL)}
       {this.drawSingleProject("financebook", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/9.jpg", jekyllIcon)}
+      {this.drawSingleProject("instagram", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jsIcon)}
+      {this.drawSingleProject("gunbam", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
       {this.drawSingleProject("101", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/10.jpg", jekyllIcon)}
       {this.drawSingleProject("frontend", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
       {this.drawSingleProject("dataset", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg", jekyllIcon)}
-      {this.drawSingleProject("pixelRandomizer", nftThumbnail, pythonIcon)}
-      {this.drawSingleProject("fmm_crawl", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("pixabay_crawling", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("img_crop_from_PDF", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("gunbam", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
-      {this.drawSingleProject("instagram", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jsIcon)}
-      {this.drawSingleProject("pubmed_crawler", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("CoinAutoTrader_Bithumb", moneyautoThumbnail, pythonIcon)}
-      {this.drawSingleProject("needleworm.github.io", reactThumbnail, reactIconL)}
-      {this.drawSingleProject("nc2", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("greenhouse_ai", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("xlsx_sorter", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("wordpuzzle", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("xlsx_destroyer", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("twitter_news_macro", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("insta_like_by_graphic_recognition", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("mlproject", tfThumbnail, pythonIcon)}
-      {this.drawSingleProject("breakout", tfThumbnail, pythonIcon)}
+
+
+      {/* 연구관련 */}
+      {this.drawSingleProject("fvs", scienceThumbnail, pythonIcon)}
       {this.drawSingleProject("base_sequence_analysis", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("google_scholar_crawler", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("bluestack_macro", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("fmm_crawl", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("pubmed_crawler", scienceThumbnail, pythonIcon)}
       {this.drawSingleProject("pubmed_abstract_crawl", scienceThumbnail, pythonIcon)}
       {this.drawSingleProject("PubMed_Crawl_exe", exeThumbnail, windowsIcon)}
-      {this.drawSingleProject("bh_coefficient", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("nutrient_solution", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("google_scholar_crawler", scienceThumbnail, pythonIcon)}
       {this.drawSingleProject("ion_interference", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("moneyauto", moneyautoThumbnail, jekyllIcon)}
+      {this.drawSingleProject("nutrient_solution", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("nc2", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("greenhouse_ai", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("bh_coefficient", scienceThumbnail, pythonIcon)}
+      {this.drawSingleProject("mlproject", tfThumbnail, pythonIcon)}
+
+
+      {/* 자동화 */}
+      {this.drawSingleProject("pixabay_crawling", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("chulsukbu", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("get_vaccine", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("img_crop_from_PDF", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("insta_like_by_graphic_recognition", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("twitter_news_macro", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("xlsx_destroyer", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("wordpuzzle", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("xlsx_sorter", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("bluestack_macro", pythonThumbnail, pythonIcon)}
+
+
+      {/* 머니오토 */}
+      {this.drawSingleProject("CoinAutoTrader", moneyautoThumbnail, pythonIcon)}
+      {this.drawSingleProject("nftauto", nftThumbnail, pythonIcon)}
+      {this.drawSingleProject("pixelRandomizer", nftThumbnail, pythonIcon)}
+      {this.drawSingleProject("CoinAutoTrader_Bithumb", moneyautoThumbnail, pythonIcon)}
+      {this.drawSingleProject("coinone_Api_for_google_apps", jsThumbnail, jsIcon)}
       {this.drawSingleProject("CoinAutoTrader_exe", moneyautoThumbnail, windowsIcon)}
+
+      {/* 그 외 */}
       {this.drawSingleProject("eliza", scalaThumbnail, javaIcon)}
       {this.drawSingleProject("mozza", cheeseThumbnail, pythonIcon)}
       {this.drawSingleProject("pizza", cheeseThumbnail, pythonIcon)}
       {this.drawSingleProject("cottoncandy", cheeseThumbnail, pythonIcon)}
-      {this.drawSingleProject("coinone_Api_for_google_apps", jsThumbnail, jsIcon)}
-      {this.drawSingleProject("brunch_thaad", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("chulsukbu", pythonThumbnail, pythonIcon)}
+      {this.drawSingleProject("breakout", tfThumbnail, pythonIcon)}
+      {this.drawSingleProject("moneyauto", moneyautoThumbnail, jekyllIcon)}
+      
 
 
     </div>

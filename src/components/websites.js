@@ -24,6 +24,8 @@ class Websites extends Component {
     var jekyllIcon = <i className="fas fa-vial"></i>
     var gitLogo = <i className="fab fa-github"></i>
     var ms = <i className="fab fa-microsoft"></i>
+    var docker = <i class="fa-brands fa-docker"></i>
+    var wordpress = <i class="fa-brands fa-wordpress"></i>
 
     var blog = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
@@ -387,10 +389,42 @@ class Websites extends Component {
         </div>
       </div>
     </div>
+    
+    var sstb2 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/sstb2.gif" alt="projectimage"/>
+        </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
+            <h5>https://www.sangsang.farm</h5><br/>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+                Official website of Imagination Garden Inc. for 2022 4Q. It uses a backend MySQL server for data management, while previous website was a static website. 
+                <br/>
+                This website was built with {docker} Docker, MySQL, and {wordpress} Wordpress hosted on &nbsp;{ms} Azure.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{docker}&nbsp;docker&nbsp;&nbsp;{wordpress}&nbsp;Wordpress{ms}&nbsp;Azure</h5>
+            <div className="gitIcons">
+              <a href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     return (
       <div className="websitesContainer">
         {blog}
+        {sstb2}
+        {sangsangfarm}
+        {price}
+        {business}
         {financebook}
         {dataset}
         {b101}
@@ -398,9 +432,6 @@ class Websites extends Component {
         {ai}
         {rpa}
         {moneyauto}
-        {sangsangfarm}
-        {price}
-        {business}
       </div>
     )
   }
