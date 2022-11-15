@@ -407,7 +407,7 @@ class Websites extends Component {
             </p>
           </div>
           <div className="projectIcons">
-            <h5>{docker}&nbsp;docker&nbsp;&nbsp;{wordpress}&nbsp;Wordpress{ms}&nbsp;Azure</h5>
+            <h5>{docker}&nbsp;docker&nbsp;&nbsp;{wordpress}&nbsp;Wordpress&nbsp;&nbsp;{ms}&nbsp;Azure</h5>
             <div className="gitIcons">
               <a href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
