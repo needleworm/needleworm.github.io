@@ -736,10 +736,31 @@ class Lectures extends Component {
       </div>  
     </div>
 
+    var lecture40 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/40.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>한국인이 좋아하는 속도로 때려넣는 워드프레스 (2022)</h5><br/>
+            <p className="bookDescription">
+              인프런 온라인강좌<br/>
+              영상을 따라하기만 해도 나만의 웹 페이지가 뚝딱! 성능과 마케팅 최적화까지 알려드려요!
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://inf.run/Jqkj" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
         {/* 상업강의 */}
+        {lecture40}
         {lecture39}
         {lecture37}
         {lecture36}
