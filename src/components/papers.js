@@ -570,6 +570,47 @@ class Papers extends Component {
         </div>
       </div>
     </div>
+    
+    var paper_MS_Thesis = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/paper_MS_Thesis.png" alt="projectimage"/>
+      <div className="projectText">
+        <h5>대립 신경망을 이용한 심혈관 단층촬영 영상 표지 방법</h5><br/>
+          <p className="bookDescription">
+            <strong>반병현</strong>(2018)<br/>
+            한국과학기술원 (석사학위논문)
+          </p>
+        <div className="codeBody">
+          <p className="bookDescription">
+            의료영상 표지기술은 환자로부터 촬영된 엑스선 영상, 자기공명영상 또는 컴퓨터 단층촬영 영상 따위의 의료영상을 탐색하여 의미 있는 부분만 분할 표지하는 것으로 질병을 빠르고 정밀하게 진단하기 위한 보조 수단으로써 각광받고 있다. 종래 기계학습 기반의 의료영상 표지기술은 통계적 추론에 근거하여 표지 대상 구역과 그 외부 구역을 분할하도록 목적함수를 최소화하는 것을 공통적인 철학으로써 공유하는데, 심장 단층촬영 사진으로부터 관상동맥만을 특이적으로 표지하는 등 의료영상 내부의 표지 대상과 비 표지 대상의 비율이 한 쪽으로 치우친 경우 학습에 실패하여 전방위적인 오류를 도출한다. 본 논문에서는 완전연결 컨볼루션 뉴럴 네트워크의 2차원 확률분포 철학을 계승하며 영상 윈도잉 기법을 제안하여 클래스 밸런스 문제를 해결한다. 또한 생성적 대립 신경망이 비 생성적 인공지능의 성능 향상에 기여할 수 있다는 가능성을 제안하며 대립 신경망 학습을 통해 분류 대상의 비율이 극단적으로 치우친 경우에도 강건하게 작동하고, 인간이 발견하지 못 한 관상동맥을 발견한 혁신적인 성능의 의료영상 표지기술을 제안한다. 
+          </p>
+        </div>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byung-Hyun Ban. "Cardiac CT image segmentation with adversarial networks." Master\'s Thesis, Korea Advanced Institute of Science and Technology, 2018.'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://koasas.kaist.ac.kr/handle/10203/295283" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     return (
       <div className="websitesContainer">
@@ -584,6 +625,7 @@ class Papers extends Component {
         {paper1}
         {paper7}
         {paper8}
+        {paper_MS_Thesis}
       </div>
     )
   }
