@@ -441,8 +441,8 @@ class Papers extends Component {
       <div className="projectText">
         <h5>A Survey on Awesome Korean NLP Datasets</h5><br/>
           <p className="bookDescription">
-            <strong>Byunghyun Ban</strong>(2021)<br/>
-              2022 International Conference on Information and Communication Technology Convergence (ICTC)
+            <strong>Byunghyun Ban</strong>(2022)<br/>
+            2022 13th International Conference on Information and Communication Technology Convergence (ICTC)
           </p>
         <div className="codeBody">
           <p className="bookDescription">
@@ -456,7 +456,7 @@ class Papers extends Component {
                 e.preventDefault()
                 var dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
-                dummy.value = 'Ban, Byunghyun. "A Survey on Awesome Korean NLP Datasets." arXiv preprint arXiv:2112.01624 (2021).'
+                dummy.value = 'B. Ban, "A Survey on Awesome Korean NLP Datasets," 2022 13th International Conference on Information and Communication Technology Convergence (ICTC), 2022, pp. 1615-1620, doi: 10.1109/ICTC55196.2022.9952930.'
                 dummy.select();
                 document.execCommand("copy");
                 document.body.removeChild(dummy);
@@ -471,7 +471,7 @@ class Papers extends Component {
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://arxiv.org/abs/2112.01624" target="_blank"  rel="noreferrer">
+              <a href="https://ieeexplore.ieee.org/document/9952930" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
