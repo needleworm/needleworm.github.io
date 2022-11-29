@@ -547,7 +547,7 @@ class Papers extends Component {
                 e.preventDefault()
                 var dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
-                dummy.value = 'Ban, Byunghyun, et al. "Analysis on English Vocabulary Appearance Pattern in Korean CSAT." ResearchGate preprint publication/365679145 (2022).'
+                dummy.value = 'Ban, Byunghyun, et al. "Analysis on English Vocabulary Appearance Pattern in Korean CSAT." arXiv preprint arXiv:2211.15426 (2022).'
                 dummy.select();
                 document.execCommand("copy");
                 document.body.removeChild(dummy);
@@ -562,7 +562,7 @@ class Papers extends Component {
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://www.researchgate.net/publication/365679145" target="_blank"  rel="noreferrer">
+              <a href="https://arxiv.org/abs/2211.15426" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
               </a>
             </div>
