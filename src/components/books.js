@@ -271,18 +271,18 @@ class Books extends Component {
     var bookSection16 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/16.png" alt="book12" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/dev" target="_blank"  rel="noreferrer">
-        비전공자지만 개발자로 먹고삽니다 <i className="fas fa-external-link-alt"></i>
+        비전공이지만 개발자로 먹고삽니다 <i className="fas fa-external-link-alt"></i>
         </a>
         </h5>
       <p className="bookDescription">2022.12. 생능북스</p>
       <ul className="list-inline">
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=897050558X" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/aladdin.png" className="bookStoreIcon" alt="aladin"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="https://product.kyobobook.co.kr/detail/S000200326244" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/kyobo.png" className="bookStoreIcon" alt="kyobo"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="https://search.shopping.naver.com/book/catalog/36085390618" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png" className="bookStoreIcon" alt="naver"/></a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">
+        <li><a href="http://www.yes24.com/product/goods/115621142" target="_blank"  rel="noreferrer">
           <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png" className="bookStoreIcon" alt="yes24"/></a></li>
       </ul>
     </div>
