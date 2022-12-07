@@ -756,6 +756,21 @@ class Lectures extends Component {
       </div>  
     </div>
 
+    var lecture41 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/40.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>기술이 하는 일, 사람이 하는 일 (2022)</h5><br/>
+            <p className="bookDescription">
+              한림대학교 초청강연<br/>
+              디지털인문예술전공 교수, 학생대상 초청강연. 
+            </p>
+          <div className="lectureIcons">
+          </div>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
@@ -790,6 +805,7 @@ class Lectures extends Component {
         {lecture2}
 
         {/* 대학 강의 */}
+        {lecture41}
         {lecture27}
         {lecture23}
         {lecture22}
