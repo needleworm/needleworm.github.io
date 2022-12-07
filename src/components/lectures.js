@@ -758,7 +758,7 @@ class Lectures extends Component {
 
     var lecture41 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/40.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/41.png" alt="projectimage"/>
         <div className="projectText">
           <h5>기술이 하는 일, 사람이 하는 일 (2022)</h5><br/>
             <p className="bookDescription">
