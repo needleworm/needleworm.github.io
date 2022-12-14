@@ -771,10 +771,32 @@ class Lectures extends Component {
       </div>  
     </div>
 
+    var lecture42 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/42.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>딥러닝 레벨원 : 왕초보도 만들 수 있는 16가지 인공지능 (2022)</h5><br/>
+            <p className="bookDescription">
+              패스트캠퍼스 온라인강좌 (무료강의)<br/>
+              딥러닝, 도대체 뭐지? 나도 배워볼 수 있을까?<br/>
+              시작부터 수학/이론 정석대로 배우다 좌절하면 안되니까! 비전공자도 재미있는 16가지 인공지능을 만들며 '딥러닝'을 배울 수 있도록 구성했습니다.
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://fastcampus.co.kr/courses/213914" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>    
+
 
     return (
       <div className="websitesContainer">
         {/* 상업강의 */}
+        {lecture42}
         {lecture40}
         {lecture39}
         {lecture37}
