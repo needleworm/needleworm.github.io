@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './news.css';
 
 
-class News extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function News() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -19,7 +14,7 @@ class News extends Component {
     )
   }
 
-  drawNews(){
+  const drawNews = () => {
     let news2 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop" href="http://gamefocus.co.kr/detail.php?number=108335" target="_blank"  rel="noreferrer">
@@ -649,14 +644,12 @@ class News extends Component {
   }
 
 
-  render() {
-    return (
-      <section id="news" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawNews()}
-      </section>
-    );
-  }
+  return (
+    <section id="news" className="animated bounceInDown">
+        {sectionTitle()}
+        {drawNews()}
+    </section>
+  );
 }
   
 export default News;

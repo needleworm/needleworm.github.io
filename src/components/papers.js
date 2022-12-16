@@ -1,16 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './papers.css';
 
 
 
-class Papers extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function Papers () {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -20,7 +15,7 @@ class Papers extends Component {
     )
   }
 
-  drawWebsites(){
+  const drawWebsites = () => {
     let gitLogo = <i className="fab fa-github"></i>
 
     let paper1 = <div className="singleProjectContainer">
@@ -536,7 +531,7 @@ class Papers extends Component {
           </p>
         <div className="codeBody">
           <p className="bookDescription">
-            A text-mining-based word class categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple text appearance frequency analysis is first described. This method was developed as a data screening tool but showed 4.35 ~ 6.21 times higher than previous works. An LSTM deep learning method is also suggested for vocabulary appearance pattern prediction method. AI performs a regression with various size of data window of previous exams to predict the probabilities of word appearance in the next exam. Predicted values of AI over various data windows are processed into a single score as a weighted sum, which we call an "AI-Score", which represents the probability of word appearance in next year's exam. Suggested method showed 100% accuracy at the range 100-score area and showed only 1.7% error of prediction in the section where the scores were over 60 points. All source codes are freely available at the authors' 
+            A text-mining-based word function categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple text appearance frequency analysis is first described. This method was developed as a data screening tool but showed 4.35 ~ 6.21 times higher than previous works. An LSTM deep learning method is also suggested for vocabulary appearance pattern prediction method. AI performs a regression with various size of data window of previous exams to predict the probabilities of word appearance in the next exam. Predicted values of AI over various data windows are processed into a single score as a weighted sum, which we call an "AI-Score", which represents the probability of word appearance in next year's exam. Suggested method showed 100% accuracy at the range 100-score area and showed only 1.7% error of prediction in the section where the scores were over 60 points. All source codes are freely available at the authors' 
             <a href="https://github.com/needleworm/bigdata_voca" target="_blank" rel="noreferrer">Git Hub repository. </a>
           </p>
         </div>
@@ -634,14 +629,12 @@ class Papers extends Component {
     )
   }
 
-  render() {
-    return (
-      <section id="papers" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawWebsites()}
-      </section>
-    );
-  }
+  return (
+    <section id="papers" className="animated bounceInDown">
+        {sectionTitle()}
+        {drawWebsites()}
+    </section>
+  );
 }
   
 export default Papers;

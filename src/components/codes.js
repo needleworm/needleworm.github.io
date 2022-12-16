@@ -1,19 +1,14 @@
-import React, {Component} from 'react';
+import React, { useState, useEffect } from 'react';
 import './codes.css';
 import 'chart.js/auto';
 import { Doughnut } from 'react-chartjs-2';
 import axios from 'axios';
 
 
-class Codes extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      repository: {}
-    }
-  }
+function Codes() {
+  const [repository, setRepository] = useState({})
 
-  componentDidMount(){
+  useEffect(() => {
     const response = axios.get('https://api.github.com/users/needleworm/repos?per_page=100')
     response.then((res) =>{
       const data = res.data
@@ -31,13 +26,11 @@ class Codes extends Component {
           description: el.description        
         }
       }
-      this.setState({
-        repository: repo
-      })
+      setRepository(repo)
     })
-  }
+  })
 
-  drawGraph(){
+  const drawGraph = () => {
     const options = {
       legend:{
         display: true,
@@ -88,7 +81,7 @@ class Codes extends Component {
     )
   }
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -98,7 +91,7 @@ class Codes extends Component {
     )
   }
 
-  drawProjects(){
+  const drawProjects = () => {
     let pythonIcon = <i className="fab fa-python"></i>
     let reactIconL = <i className="fab fa-react"></i>
     let windowsIcon = <i className="fab fa-windows"></i>
@@ -120,113 +113,113 @@ class Codes extends Component {
 
     return <div className="projects">
       {/* 교육관련 */}
-      {this.drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg", pythonIcon)}
-      {this.drawSingleProject("automation_edu", eduThumbnail, pythonIcon)}
-      {this.drawSingleProject("pymacro", eduThumbnail, pythonIcon)}
-      {this.drawSingleProject("python101", eduThumbnail, pythonIcon)}
-      {this.drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/8.jpg", pythonIcon)}
-      {this.drawSingleProject("pywinmacro", exeThumbnail, pythonIcon)}
+      {drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg", pythonIcon)}
+      {drawSingleProject("automation_edu", eduThumbnail, pythonIcon)}
+      {drawSingleProject("pymacro", eduThumbnail, pythonIcon)}
+      {drawSingleProject("python101", eduThumbnail, pythonIcon)}
+      {drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/8.jpg", pythonIcon)}
+      {drawSingleProject("pywinmacro", exeThumbnail, pythonIcon)}
 
 
 
       {/* 재미관련 */}
-      {this.drawSingleProject("newsToday", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("post_crawler", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("brunch_thaad", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("newsToday", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("post_crawler", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("brunch_thaad", pythonThumbnail, pythonIcon)}
 
 
       {/* Git Pages */}
-      {this.drawSingleProject("needleworm.github.io", reactThumbnail, reactIconL)}
-      {this.drawSingleProject("financebook", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/9.jpg", jekyllIcon)}
-      {this.drawSingleProject("instagram", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jsIcon)}
-      {this.drawSingleProject("gunbam", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
-      {this.drawSingleProject("101", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/10.jpg", jekyllIcon)}
-      {this.drawSingleProject("frontend", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
-      {this.drawSingleProject("dataset", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg", jekyllIcon)}
+      {drawSingleProject("needleworm.github.io", reactThumbnail, reactIconL)}
+      {drawSingleProject("financebook", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/9.jpg", jekyllIcon)}
+      {drawSingleProject("instagram", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jsIcon)}
+      {drawSingleProject("gunbam", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
+      {drawSingleProject("101", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/10.jpg", jekyllIcon)}
+      {drawSingleProject("frontend", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/12.jpg", jekyllIcon)}
+      {drawSingleProject("dataset", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg", jekyllIcon)}
 
 
       {/* 연구관련 */}
-      {this.drawSingleProject("fvs", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("base_sequence_analysis", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("fmm_crawl", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("pubmed_crawler", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("pubmed_abstract_crawl", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("PubMed_Crawl_exe", exeThumbnail, windowsIcon)}
-      {this.drawSingleProject("google_scholar_crawler", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("ion_interference", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("nutrient_solution", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("nc2", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("greenhouse_ai", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("bh_coefficient", scienceThumbnail, pythonIcon)}
-      {this.drawSingleProject("mlproject", tfThumbnail, pythonIcon)}
+      {drawSingleProject("fvs", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("base_sequence_analysis", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("fmm_crawl", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("pubmed_crawler", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("pubmed_abstract_crawl", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("PubMed_Crawl_exe", exeThumbnail, windowsIcon)}
+      {drawSingleProject("google_scholar_crawler", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("ion_interference", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("nutrient_solution", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("nc2", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("greenhouse_ai", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("bh_coefficient", scienceThumbnail, pythonIcon)}
+      {drawSingleProject("mlproject", tfThumbnail, pythonIcon)}
 
 
       {/* 자동화 */}
-      {this.drawSingleProject("pixabay_crawling", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("chulsukbu", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("get_vaccine", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("img_crop_from_PDF", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("insta_like_by_graphic_recognition", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("twitter_news_macro", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("xlsx_destroyer", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("wordpuzzle", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("xlsx_sorter", pythonThumbnail, pythonIcon)}
-      {this.drawSingleProject("bluestack_macro", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("pixabay_crawling", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("chulsukbu", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("get_vaccine", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("img_crop_from_PDF", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("insta_like_by_graphic_recognition", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("twitter_news_macro", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("xlsx_destroyer", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("wordpuzzle", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("xlsx_sorter", pythonThumbnail, pythonIcon)}
+      {drawSingleProject("bluestack_macro", pythonThumbnail, pythonIcon)}
 
 
       {/* 머니오토 */}
-      {this.drawSingleProject("CoinAutoTrader", moneyautoThumbnail, pythonIcon)}
-      {this.drawSingleProject("nftauto", nftThumbnail, pythonIcon)}
-      {this.drawSingleProject("pixelRandomizer", nftThumbnail, pythonIcon)}
-      {this.drawSingleProject("CoinAutoTrader_Bithumb", moneyautoThumbnail, pythonIcon)}
-      {this.drawSingleProject("coinone_Api_for_google_apps", jsThumbnail, jsIcon)}
-      {this.drawSingleProject("CoinAutoTrader_exe", moneyautoThumbnail, windowsIcon)}
+      {drawSingleProject("CoinAutoTrader", moneyautoThumbnail, pythonIcon)}
+      {drawSingleProject("nftauto", nftThumbnail, pythonIcon)}
+      {drawSingleProject("pixelRandomizer", nftThumbnail, pythonIcon)}
+      {drawSingleProject("CoinAutoTrader_Bithumb", moneyautoThumbnail, pythonIcon)}
+      {drawSingleProject("coinone_Api_for_google_apps", jsThumbnail, jsIcon)}
+      {drawSingleProject("CoinAutoTrader_exe", moneyautoThumbnail, windowsIcon)}
 
       {/* 그 외 */}
-      {this.drawSingleProject("eliza", scalaThumbnail, javaIcon)}
-      {this.drawSingleProject("mozza", cheeseThumbnail, pythonIcon)}
-      {this.drawSingleProject("pizza", cheeseThumbnail, pythonIcon)}
-      {this.drawSingleProject("cottoncandy", cheeseThumbnail, pythonIcon)}
-      {this.drawSingleProject("breakout", tfThumbnail, pythonIcon)}
-      {this.drawSingleProject("moneyauto", moneyautoThumbnail, jekyllIcon)}
+      {drawSingleProject("eliza", scalaThumbnail, javaIcon)}
+      {drawSingleProject("mozza", cheeseThumbnail, pythonIcon)}
+      {drawSingleProject("pizza", cheeseThumbnail, pythonIcon)}
+      {drawSingleProject("cottoncandy", cheeseThumbnail, pythonIcon)}
+      {drawSingleProject("breakout", tfThumbnail, pythonIcon)}
+      {drawSingleProject("moneyauto", moneyautoThumbnail, jekyllIcon)}
       
 
 
     </div>
   }
 
-  drawSingleProject(name, icon, languageIcon){
-    if (!this.state.repository[name]){
+  const drawSingleProject = (name, icon, languageIcon) => {
+    if (!repository[name]){
       return 
     }
     let project = <div className="singleProjectContainer">
       <div className="singleProjectCard">
-        <a className="tempa" href={this.state.repository[name].url} target="_blank"  rel="noreferrer">
+        <a className="tempa" href={repository[name].url} target="_blank"  rel="noreferrer">
          <img className="projectImage" src={icon}  alt="projectimage"/>
         </a>
         <div className="projectText">
-          <a href={this.state.repository[name].url} target="_blank"  rel="noreferrer">
+          <a href={repository[name].url} target="_blank"  rel="noreferrer">
             <h5>{name}</h5>
           </a>
           <div className="codeBody">
             <p className="bookDescription firstCommitDate">
-              First Commit on {this.state.repository[name].createdAt.substring(0,10)}
+              First Commit on {repository[name].createdAt.substring(0,10)}
             </p>
-            <p className="bookDescription">{this.state.repository[name].description}</p>
+            <p className="bookDescription">{repository[name].description}</p>
           </div>
           <div className="projectIcons">
-            <h5>{languageIcon}&nbsp; {this.state.repository[name].language}</h5>
+            <h5>{languageIcon}&nbsp; {repository[name].language}</h5>
             <div className="gitIcons">
-              <a href={this.state.repository[name].url + '/watchers'} target="_blank"  rel="noreferrer">
-                <i className="far fa-eye"></i> {this.state.repository[name].watch}
+              <a href={repository[name].url + '/watchers'} target="_blank"  rel="noreferrer">
+                <i className="far fa-eye"></i> {repository[name].watch}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href={this.state.repository[name].url + '/stargazers'} target="_blank"  rel="noreferrer">
-                <i className="far fa-star"></i> {this.state.repository[name].stars}
+              <a href={repository[name].url + '/stargazers'} target="_blank"  rel="noreferrer">
+                <i className="far fa-star"></i> {repository[name].stars}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href={this.state.repository[name].url + '/network/members'} target="_blank"  rel="noreferrer">
-                <i className="fas fa-code-branch"></i> {this.state.repository[name].forks}
+              <a href={repository[name].url + '/network/members'} target="_blank"  rel="noreferrer">
+                <i className="fas fa-code-branch"></i> {repository[name].forks}
               </a>
             </div>
           </div>
@@ -237,10 +230,10 @@ class Codes extends Component {
     return project
   }
 
-  drawCodes(){
+  const drawCodes = () => {
     return(
       <div className="codeContainer">
-        {this.drawGraph()}
+        {drawGraph()}
         <div className="col-lg-12 text-center">
           <h3 className="qwerqwer">
             Realtime Summary of &nbsp; 
@@ -249,19 +242,17 @@ class Codes extends Component {
             </a>
           </h3>
         </div>
-        {this.drawProjects()}
+        {drawProjects()}
       </div>
     )
   }
 
-  render() {
-    return (
-      <section id="codes" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawCodes()}
-      </section>
-    );
-  }
+  return (
+    <section id="codes" className="animated bounceInDown">
+        {sectionTitle()}
+        {drawCodes()}
+    </section>
+  );
 }
   
 export default Codes;

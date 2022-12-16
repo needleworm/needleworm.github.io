@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './lectures.css';
 
 
-class Lectures extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function Lectures() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -19,7 +14,7 @@ class Lectures extends Component {
     )
   }
 
-  drawLectures(){
+  const drawLectures = () => {
     let youtube = <i className="fab fa-youtube"></i>
     let lectureLogo = <i className="fas fa-chalkboard-teacher"></i>
     let newsIcon = <i className="far fa-newspaper"></i>
@@ -560,7 +555,7 @@ class Lectures extends Component {
         <div className="projectText">
           <h5>쉬운 딥러닝 (2021)</h5><br/>
             <p className="bookDescription">
-              <a href="https://book.naver.com/bookdb/book_detail.nhn?bid=19007726" target="_blank" rel="noreferrer">수학 통계를 몰라도 이해할 수 있는 쉬운 딥러닝</a> 도서 저자직강<br/>
+              <a href="https://search.shopping.naver.com/book/catalog/32466710658" target="_blank" rel="noreferrer">수학 통계를 몰라도 이해할 수 있는 쉬운 딥러닝</a> 도서 저자직강<br/>
               비전공자도 딥러닝을 배울 수 있다! <br/>
               총 17차시, 8시간 53분 분량의 강의영상 <br/>
               천재교육 내부 임직원교육 등 활용중
@@ -852,14 +847,10 @@ class Lectures extends Component {
     )
   }
 
-  render() {
-    return (
-      <section id="lectures" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawLectures()}
-      </section>
-    );
-  }
+  return (
+      <section id="lectures" className="animated bounceInDown">{sectionTitle()}{drawLectures()}
+    </section>
+  );
 }
   
 export default Lectures;

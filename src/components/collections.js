@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './websites.css';
 
 
-class Collections extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function Collections() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -19,7 +14,7 @@ class Collections extends Component {
     )
   }
 
-  drawWebsites(){
+  const drawWebsites = () => {
     let collection1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/1.jpeg" alt="projectimage"/>
@@ -186,26 +181,16 @@ class Collections extends Component {
 
     return (
       <div className="websitesContainer">
-        <div className="text-center textMarginBottom" style={{marginBottom:"200px"}}>
-          {collection6}
-          {collection5}
-          {collection4}
-          {collection3}
-          {collection2}
-          {collection1}
+        <div className="text-center textMarginBottom" style={{marginBottom:"200px"}}>{collection6}{collection5}{collection4}{collection3}{collection2}{collection1}
         </div>
       </div>
     )
   }
 
-  render() {
-    return (
-      <section id="websites" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawWebsites()}
-      </section>
-    );
-  }
+  return (
+      <section id="websites" className="animated bounceInDown">{sectionTitle()}{drawWebsites()}
+    </section>
+  );
 }
   
 export default Collections;

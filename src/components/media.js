@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './lectures.css';
 
 
-class Media extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function Media() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -19,7 +14,7 @@ class Media extends Component {
     )
   }
 
-  drawLectures(){
+  const drawLectures = () => {
     let youtube = <i className="fab fa-youtube"></i>
     
     let media1 = <div className="singleLectureContainer">
@@ -158,14 +153,10 @@ class Media extends Component {
     )
   }
 
-  render() {
-    return (
-      <section id="media" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawLectures()}
-      </section>
-    );
-  }
+  return (
+      <section id="media" className="animated bounceInDown">{sectionTitle()}{drawLectures()}
+    </section>
+  );
 }
   
 export default Media;

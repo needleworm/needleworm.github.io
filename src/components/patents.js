@@ -1,14 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './patents.css';
 
-class Patents extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function Patents() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -18,7 +13,7 @@ class Patents extends Component {
     )
   }
 
-  drawWebsites(){
+  const drawWebsites = () => {
     let gitLogo = <i className="fab fa-github"></i>
     let capLogo = <i className="fas fa-graduation-cap"></i>
 
@@ -1274,14 +1269,12 @@ class Patents extends Component {
     )
   }
 
-  render() {
-    return (
-      <section id="patents" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawWebsites()}
-      </section>
-    );
-  }
+  return (
+    <section id="patents" className="animated bounceInDown">
+        {sectionTitle()}
+        {drawWebsites()}
+    </section>
+  );
 }
   
 export default Patents;

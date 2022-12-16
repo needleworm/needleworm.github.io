@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './websites.css';
 
 
-class SocialContribution extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function SocialContribution() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -19,7 +14,7 @@ class SocialContribution extends Component {
     )
   }
 
-  drawWebsites(){
+  const drawWebsites = () => {
     let socialContribution2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/dream2022" target="_blank"  rel="noreferrer">
@@ -68,14 +63,12 @@ class SocialContribution extends Component {
     )
   }
 
-  render() {
-    return (
-      <section id="socialContribution" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawWebsites()}
-      </section>
-    );
-  }
+  return (
+    <section id="socialContribution" className="animated bounceInDown">
+        {sectionTitle()}
+        {drawWebsites()}
+    </section>
+  );
 }
   
 export default SocialContribution;

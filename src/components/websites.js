@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React, {} from 'react';
 import './websites.css';
 
 
-class Websites extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function Websites() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -19,7 +14,7 @@ class Websites extends Component {
     )
   }
 
-  drawWebsites(){
+  const drawWebsites = () => {
     let reactIconL = <i className="fab fa-react"></i>
     let jekyllIcon = <i className="fas fa-vial"></i>
     let gitLogo = <i className="fab fa-github"></i>
@@ -504,14 +499,12 @@ class Websites extends Component {
     )
   }
 
-  render() {
-    return (
-      <section id="websites" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawWebsites()}
-      </section>
-    );
-  }
+  return (
+    <section id="websites" className="animated bounceInDown">
+        {sectionTitle()}
+        {drawWebsites()}
+    </section>
+  );
 }
   
 export default Websites;

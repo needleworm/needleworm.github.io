@@ -1,17 +1,16 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
 
 
-class Designs extends Component {
+function Designs() {
   constructor(props){
     super(props)
-    this.state={
+    ={
       id: "",
       ps: "",
     }
   }
 
-  render() {
-    return (
+  return (
       <div className="animated bounceInDown">
         Designs
       </div>

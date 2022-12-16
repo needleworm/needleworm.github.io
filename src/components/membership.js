@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './lectures.css';
 
 
-class Membership extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-    }
-  }
+function Membership() {
 
-  sectionTitle(){
+  const sectionTitle = () => {
     return(
       <div className="row">
         <div className="col-lg-12 text-center">
@@ -19,7 +14,7 @@ class Membership extends Component {
     )
   }
 
-  drawLectures(){
+  const drawLectures = () => {
     let youtube = <i className="fab fa-youtube"></i>
     let link = <i className="fas fa-external-link-alt"></i>
 
@@ -231,14 +226,12 @@ class Membership extends Component {
     )
   }
 
-  render() {
-    return (
-      <section id="membership" className="animated bounceInDown">
-          {this.sectionTitle()}
-          {this.drawLectures()}
-      </section>
-    );
-  }
+  return (
+    <section id="membership" className="animated bounceInDown">
+        {sectionTitle()}
+        {drawLectures()}
+    </section>
+  );
 }
   
 export default Membership;
