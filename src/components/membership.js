@@ -20,10 +20,10 @@ class Membership extends Component {
   }
 
   drawLectures(){
-    var youtube = <i className="fab fa-youtube"></i>
-    var link = <i className="fas fa-external-link-alt"></i>
+    let youtube = <i className="fab fa-youtube"></i>
+    let link = <i className="fas fa-external-link-alt"></i>
 
-    var aiff = <div className="singleLectureContainer">
+    let aiff = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/aiff.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -43,7 +43,7 @@ class Membership extends Component {
       </div>
     </div>
 
-    var membership1 = <div className="singleLectureContainer">
+    let membership1 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/1.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -67,7 +67,7 @@ class Membership extends Component {
       </div>
     </div>
 
-    var membership2 = <div className="singleLectureContainer">
+    let membership2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/2.png" alt="projectimage"/>
         <div className="projectText">
@@ -90,7 +90,7 @@ class Membership extends Component {
       </div>
     </div>
 
-    var membership3 = <div className="singleLectureContainer">
+    let membership3 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/3.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -113,7 +113,7 @@ class Membership extends Component {
       </div>
     </div>
 
-    var membership4 = <div className="singleLectureContainer">
+    let membership4 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/4.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -136,7 +136,7 @@ class Membership extends Component {
       </div>
     </div>
 
-    var membership5 = <div className="singleLectureContainer">
+    let membership5 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/5.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -155,7 +155,7 @@ class Membership extends Component {
     </div>
     </div>
 
-    var membership6 = <div className="singleLectureContainer">
+    let membership6 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/6.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -175,7 +175,7 @@ class Membership extends Component {
     </div>
 
 
-    var cheesecake = <div className="singleLectureContainer">
+    let cheesecake = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/cheesecake.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -196,7 +196,7 @@ class Membership extends Component {
 
 
 
-    var jihak = <div className="singleLectureContainer">
+    let jihak = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/jihak.png" alt="projectimage"/>
         <div className="projectText">

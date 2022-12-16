@@ -20,7 +20,7 @@ class SocialContribution extends Component {
   }
 
   drawWebsites(){
-    var socialContribution2 = <div className="singleProjectContainer">
+    let socialContribution2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/dream2022" target="_blank"  rel="noreferrer">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/socialContributions/dream2022.png" alt="projectimage"/>
@@ -43,7 +43,7 @@ class SocialContribution extends Component {
       </div>
     </div>
 
-    var socialContribution1 = <div className="singleProjectContainer">
+    let socialContribution1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/socialContributions/busking.gif" alt="projectimage"/>
         <div className="projectText">

@@ -20,9 +20,9 @@ class Media extends Component {
   }
 
   drawLectures(){
-    var youtube = <i className="fab fa-youtube"></i>
+    let youtube = <i className="fab fa-youtube"></i>
     
-    var media1 = <div className="singleLectureContainer">
+    let media1 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <a href="https://www.youtube.com/watch?v=fuwZmgKenqs&t=195s" target="_blank"  rel="noreferrer">
           <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/1.png" alt="projectimage"/>
@@ -49,7 +49,7 @@ class Media extends Component {
       </div>
     </div>
 
-    var media2 = <div className="singleLectureContainer">
+    let media2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <a href="https://www.youtube.com/watch?v=VJpjk8j6zTM&t=115s" target="_blank"  rel="noreferrer">
           <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/2.png" alt="projectimage"/>
@@ -68,7 +68,7 @@ class Media extends Component {
       </div>
     </div>
 
-    var media3 = <div className="singleLectureContainer">
+    let media3 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <a href="https://www.youtube.com/watch?v=s0skJO5TfAk&t=2s" target="_blank"  rel="noreferrer">
           <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/3.png" alt="projectimage"/>
@@ -87,7 +87,7 @@ class Media extends Component {
       </div>
     </div>
 
-    var media4 = <div className="singleLectureContainer">
+    let media4 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <a href="https://www.youtube.com/watch?v=_-ugbwhhApI&t=2s" target="_blank"  rel="noreferrer">
           <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/4.png" alt="projectimage"/>
@@ -107,7 +107,7 @@ class Media extends Component {
       </div>
     </div>
 
-    var media5 = <div className="singleLectureContainer">
+    let media5 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <a href="https://www.youtube.com/watch?v=16hsA3CyM7M&t=112s" target="_blank"  rel="noreferrer">
           <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/5.jpg" alt="projectimage"/>
@@ -126,7 +126,7 @@ class Media extends Component {
       </div>
     </div>
 
-    var media6 = <div className="singleLectureContainer">
+    let media6 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <a href="https://www.youtube.com/watch?v=km083tSB5DA" target="_blank"  rel="noreferrer">
           <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/6.jpg" alt="projectimage"/>

@@ -17,9 +17,9 @@ class Codes extends Component {
     const response = axios.get('https://api.github.com/users/needleworm/repos?per_page=100')
     response.then((res) =>{
       const data = res.data
-      var repo = {}
-      for (var i in data){
-        var el = data[i]
+      let repo = {}
+      for (let i in data){
+        let el = data[i]
         repo[el.name] = {
           name: el.name,
           url: el.html_url,
@@ -99,23 +99,23 @@ class Codes extends Component {
   }
 
   drawProjects(){
-    var pythonIcon = <i className="fab fa-python"></i>
-    var reactIconL = <i className="fab fa-react"></i>
-    var windowsIcon = <i className="fab fa-windows"></i>
-    var jekyllIcon = <i className="fas fa-vial"></i>
-    var jsIcon = <i className="fab fa-js-square"></i>
-    var javaIcon = <i className="fab fa-java"></i>
-    var eduThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg"
-    var pythonThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg"
-    var exeThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/exe.jpg"
-    var scienceThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg"
-    var moneyautoThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/moneyauto.jpg"
-    var reactThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/react.jpg"
-    var tfThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/tf.jpg"
-    var scalaThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/scala.jpg"
-    var cheeseThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/cheese.jpg"
-    var jsThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/js.jpg"
-    var nftThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/nft.jpg"
+    let pythonIcon = <i className="fab fa-python"></i>
+    let reactIconL = <i className="fab fa-react"></i>
+    let windowsIcon = <i className="fab fa-windows"></i>
+    let jekyllIcon = <i className="fas fa-vial"></i>
+    let jsIcon = <i className="fab fa-js-square"></i>
+    let javaIcon = <i className="fab fa-java"></i>
+    let eduThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/edu.jpg"
+    let pythonThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/python.jpg"
+    let exeThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/exe.jpg"
+    let scienceThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/science.jpg"
+    let moneyautoThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/moneyauto.jpg"
+    let reactThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/react.jpg"
+    let tfThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/tf.jpg"
+    let scalaThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/scala.jpg"
+    let cheeseThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/cheese.jpg"
+    let jsThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/js.jpg"
+    let nftThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/codes/nft.jpg"
 
 
     return <div className="projects">
@@ -199,7 +199,7 @@ class Codes extends Component {
     if (!this.state.repository[name]){
       return 
     }
-    var project = <div className="singleProjectContainer">
+    let project = <div className="singleProjectContainer">
       <div className="singleProjectCard">
         <a className="tempa" href={this.state.repository[name].url} target="_blank"  rel="noreferrer">
          <img className="projectImage" src={icon}  alt="projectimage"/>

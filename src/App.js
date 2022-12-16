@@ -6,7 +6,6 @@ import Codes from "./components/codes"
 import Papers from "./components/papers"
 import Patents from "./components/patents"
 import Lectures from "./components/lectures"
-//import Designs from "./components/nft"
 import News from "./components/news"
 import Media from "./components/media"
 import Contact from "./components/contact"
@@ -18,22 +17,19 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      latestButton:"none",
-      /* 
-        content
-          none
-          books
-          websites
-          codes
-          research
-          lectures
-          designs
-          news
-          contact
-          media
-          socialContribution
-          collections
-      */
+      latestButton:"none",  /*  none
+                                books
+                                websites
+                                codes
+                                research
+                                lectures
+                                designs
+                                news
+                                contact
+                                media
+                                socialContribution
+                                collections
+                            */
       content:"none",
       sns:{
         email: "bhban@kakao.com",
@@ -48,18 +44,18 @@ class App extends Component {
   }
 
   _closeSideMenu(){
-    var contentWrapper = document.querySelector('.content-wrapper')
+    let contentWrapper = document.querySelector('.content-wrapper')
     if (!contentWrapper.classList.contains('showing')){
       return
     }
 
-    var panelCover = document.querySelector('.panel-cover')
+    let panelCover = document.querySelector('.panel-cover')
     panelCover.classList.remove('panel-cover--collapsed')
     panelCover.style.maxWidth = '100%'
 
-    var window = document.querySelector('html')
+    let window = document.querySelector('html')
 
-    var currentWidth = window.clientWidth
+    let currentWidth = window.clientWidth
     if (currentWidth > 800){
       panelCover.animate(
         [ // Keyframes
@@ -89,17 +85,17 @@ class App extends Component {
   }
 
   _openSideMenu(){
-    var contentWrapper = document.querySelector('.content-wrapper')
+    let contentWrapper = document.querySelector('.content-wrapper')
     if (contentWrapper.classList.contains('showing')){
       return
     }
 
-    var panelCover = document.querySelector('.panel-cover')
+    let panelCover = document.querySelector('.panel-cover')
     panelCover.classList.add('panel-cover--collapsed')
 
-    var window = document.querySelector('html')
+    let window = document.querySelector('html')
 
-    var currentWidth = window.clientWidth
+    let currentWidth = window.clientWidth
     if (currentWidth > 800){
       panelCover.animate(
         [ // Keyframes
@@ -126,42 +122,42 @@ class App extends Component {
   }
 
   drawHeader(){
-    var github = <span className="navigation__item_sns">
+    let github = <span className="navigation__item_sns">
                   <a href={this.state.sns.github} title="Meet My Works on GitHub" target="_blank"  rel="noreferrer">
                     <i className="fab fa-github-square fa-lg"></i>
                     <span className="label">GitHub</span>
                   </a>
                   </span>
 
-    var linkedin = <span className="navigation__item_sns">
+    let linkedin = <span className="navigation__item_sns">
                     <a href={this.state.sns.linkedin}  title="My LinkedIn Profile" target="_blank"  rel="noreferrer">
                       <i className="fab fa-linkedin fa-lg"></i>
                       <span className="label">LinkedIn</span>
                     </a>
                     </span>
 
-    var youtube = <span className="navigation__item_sns">
+    let youtube = <span className="navigation__item_sns">
       <a href={this.state.sns.youtube}  title="My Youtube Channel" target="_blank"  rel="noreferrer">
                 <i className="fab fa-youtube-square fa-lg"></i>
                 <span className="label">Youtube</span>
               </a>
               </span>
 
-    var researchgate = <span className="navigation__item_sns">
+    let researchgate = <span className="navigation__item_sns">
       <a href={this.state.sns.researchgate}  title="Meet Me on Researchgate" target="_blank"  rel="noreferrer">
                 <i className="fab fa-researchgate fa-lg"></i>
                 <span className="label">Researchgate</span>
               </a>
             </span>
 
-    var blog = <span className="navigation__item_sns">
+    let blog = <span className="navigation__item_sns">
       <a href="https://brunch.co.kr/@needleworm"  title="My Blog" target="_blank"  rel="noreferrer">
               <i className="fas fa-pen-square fa-lg"></i>
               <span className="label">Blog</span>
             </a>
           </span>
 
-    var profilePicButton = <a href="#home" title="Home">
+    let profilePicButton = <a href="#home" title="Home">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/profile_pic.jpg" className="user-image" alt="My Profile"
         onClick={
           function(e){
@@ -176,7 +172,7 @@ class App extends Component {
       />
     </a>
 
-    var books = <li className="navigation__item">
+    let books = <li className="navigation__item">
       <a href="#books" title="Books" className="panel-button projects-button"
         onClick={
           function(e){
@@ -188,8 +184,8 @@ class App extends Component {
                 latestButton: "books"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -203,7 +199,7 @@ class App extends Component {
       </a>
     </li>
 
-    var websites = <li className="navigation__item">
+    let websites = <li className="navigation__item">
       <a href="#websites" title="Websites" className="panel-button projects-button"
         onClick={
           function(e){
@@ -215,8 +211,8 @@ class App extends Component {
                 latestButton: "websites"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -230,7 +226,7 @@ class App extends Component {
       </a>
     </li>
 
-    var codes = <li className="navigation__item">
+    let codes = <li className="navigation__item">
       <a href="#codes" title="Codes" className="panel-button projects-button"
         onClick={
           function(e){
@@ -242,8 +238,8 @@ class App extends Component {
                 latestButton: "codes",
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -257,7 +253,7 @@ class App extends Component {
       </a>
     </li>
 
-    var patents = <li className="navigation__item">
+    let patents = <li className="navigation__item">
       <a href="#patents" title="Patents" className="panel-button projects-button"
         onClick={
           function(e){
@@ -269,8 +265,8 @@ class App extends Component {
                 latestButton: "patents"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -283,7 +279,7 @@ class App extends Component {
       </a>
     </li>
 
-    var papers = <li className="navigation__item">
+    let papers = <li className="navigation__item">
       <a href="#papers" title="Papers" className="panel-button projects-button"
         onClick={
           function(e){
@@ -295,8 +291,8 @@ class App extends Component {
                 latestButton: "papers"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -309,7 +305,7 @@ class App extends Component {
       </a>
     </li>
 
-    var lectures = <li className="navigation__item">
+    let lectures = <li className="navigation__item">
       <a href="#lectures" title="Lectures" className="panel-button projects-button"
         onClick={
           function(e){
@@ -321,8 +317,8 @@ class App extends Component {
                 latestButton: "lectures"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -335,7 +331,7 @@ class App extends Component {
       </a>
     </li>
     /*
-    var designs = <li className="navigation__item">
+    let designs = <li className="navigation__item">
       <a href="#designs" title="Designs" className="panel-button projects-button"
         onClick={
           function(e){
@@ -347,8 +343,8 @@ class App extends Component {
                 latestButton: "designs"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -362,7 +358,7 @@ class App extends Component {
     </li>
     */
 
-    var news = <li className="navigation__item">
+    let news = <li className="navigation__item">
       <a href="#news" title="Me on Newses"
         onClick={
           function(e){
@@ -374,8 +370,8 @@ class App extends Component {
                 latestButton: "news"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -388,7 +384,7 @@ class App extends Component {
       </a>
     </li>
 
-    var media = <li className="navigation__item">
+    let media = <li className="navigation__item">
       <a href="#media" title="Me on Media"
         onClick={
           function(e){
@@ -400,8 +396,8 @@ class App extends Component {
                 latestButton: "media"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -414,7 +410,7 @@ class App extends Component {
       </a>
     </li>
 
-    var contact = <li className="navigation__item">
+    let contact = <li className="navigation__item">
       <a href="#contact" title="Contact Me"
         onClick={
           function(e){
@@ -426,8 +422,8 @@ class App extends Component {
                 latestButton: "contact"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -440,7 +436,7 @@ class App extends Component {
       </a>
     </li>
 
-    var membership = <li className="navigation__item">
+    let membership = <li className="navigation__item">
       <a href="#membership" title="My Memberships"
         onClick={
           function(e){
@@ -452,8 +448,8 @@ class App extends Component {
                 latestButton: "membership"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -466,7 +462,7 @@ class App extends Component {
       </a>
     </li>
 
-    var socialContribution = <li className="navigation__item">
+    let socialContribution = <li className="navigation__item">
       <a href="#socialContribution" title="socialContribution" className="panel-button projects-button"
         onClick={
           function(e){
@@ -478,8 +474,8 @@ class App extends Component {
                 latestButton: "socialContribution"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -493,7 +489,7 @@ class App extends Component {
       </a>
     </li>
 
-    var collections = <li className="navigation__item">
+    let collections = <li className="navigation__item">
       <a href="#collections" title="collections" className="panel-button projects-button"
         onClick={
           function(e){
@@ -505,8 +501,8 @@ class App extends Component {
                 latestButton: "collections"
               })
               this.openSideMenu()
-              var navigationWrapper = document.querySelector('.navigation-wrapper')
-              var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+              let navigationWrapper = document.querySelector('.navigation-wrapper')
+              let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
               navigationWrapper.classList.toggle('visible')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
               btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
@@ -520,11 +516,11 @@ class App extends Component {
       </a>
     </li>
     
-    var mobileButtenMenu =  <span className="mobile btn-mobile-menu"
+    let mobileButtenMenu =  <span className="mobile btn-mobile-menu"
       onClick={
         function(e){
-          var navigationWrapper = document.querySelector('.navigation-wrapper')
-          var btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
+          let navigationWrapper = document.querySelector('.navigation-wrapper')
+          let btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
           navigationWrapper.classList.toggle('visible')
           navigationWrapper.classList.toggle('bounceInDown')
           navigationWrapper.classList.toggle('animated')
@@ -540,58 +536,57 @@ class App extends Component {
     </span>
 
     return(
-      <div>
+      <header className="panel-cover" style={{background_image: "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/background.jpg", maxWidth:'100%'}}>
         {mobileButtenMenu}
-        <header className="panel-cover" style={{background_image: "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/background.jpg", maxWidth:'100%'}}>
-          <div className="panel-main">
-            <div className="panel-main__inner panel-inverted">
-              <div className="panel-main__content">
-                {profilePicButton}
-                <h1 className="panel-cover__title panel-title">Byunghyun Ban</h1>
+        <div className="panel-main">
+          <div className="panel-main__inner panel-inverted">
+            <div className="panel-main__content">
+              {profilePicButton}
+              <h1 className="panel-cover__title panel-title">Byunghyun Ban</h1>
+              <nav className="cover-navigation navigation--social">
+                  {github}
+                  {linkedin}
+                  {youtube}
+                  {researchgate}
+                  {blog}
+              </nav>
+              <hr className="panel-cover__divider"/>
+              <p className="panel-cover__description">Author, Entrepreneur, Researcher and Developer</p>
+              <p className="panel-cover__description">Working at <a href="https://sangsang.farm">Imagination Garden Inc.</a> as CTO.</p>
+              <hr className="panel-cover__divider panel-cover__divider--secondary"/>
+              <div className="navigation-wrapper">
+                <br/>
                 <nav className="cover-navigation navigation--social">
-                    {github}
-                    {linkedin}
-                    {youtube}
-                    {researchgate}
-                    {blog}
+                  <ul className="navigation">
+                    {books}
+                    {lectures}
+                    {media}
+                    {codes}
+                    {papers}
+                    {patents}
+                    {news}
+                    {collections}
+                    {websites}
+                    {membership}
+                    {socialContribution}
+                    {contact}
+                  </ul>
                 </nav>
-                <hr className="panel-cover__divider"/>
-                <p className="panel-cover__description">Author, Entrepreneur, Researcher and Developer</p>
-                <p className="panel-cover__description">Working at <a href="https://sangsang.farm">Imagination Garden Inc.</a> as CTO.</p>
-                <hr className="panel-cover__divider panel-cover__divider--secondary"/>
-                <div className="navigation-wrapper">
-                  <br/>
-                  <nav className="cover-navigation navigation--social">
-                    <ul className="navigation">
-                      {books}
-                      {lectures}
-                      {media}
-                      {codes}
-                      {papers}
-                      {patents}
-                      {news}
-                      {collections}
-                      {websites}
-                      {membership}
-                      {socialContribution}
-                      {contact}
-                    </ul>
-                  </nav>
-                </div>
               </div>
             </div>
           </div>
-          <div className="panel-cover--overlay"></div>
-        </header>
-      </div>
+        </div>
+        <div className="panel-cover--overlay"></div>
+      </header>
     )
   }
 
   drawBody(){
-    var footer = <div><footer className="footer">
+    let footer = <div>
+      <footer className="footer">
         <span className="footer__copyright">&copy; 2021. Byunghyun Ban All rights reserved.</span>
       </footer>
-      </div>
+    </div>
     
 
     return (

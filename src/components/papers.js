@@ -21,9 +21,9 @@ class Papers extends Component {
   }
 
   drawWebsites(){
-    var gitLogo = <i className="fab fa-github"></i>
+    let gitLogo = <i className="fab fa-github"></i>
 
-    var paper1 = <div className="singleProjectContainer">
+    let paper1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2017_01.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -48,7 +48,7 @@ class Papers extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'B. Ban and S. Kim, "Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning," 2017 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2017, pp. 913-918, doi: 10.1109/ICTC.2017.8190813.'
                   dummy.select();
@@ -78,7 +78,7 @@ class Papers extends Component {
       </div>
     </div>
     
-    var paper2 = <div className="singleProjectContainer">
+    let paper2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2019_01.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -110,7 +110,7 @@ class Papers extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'B. Ban, M. Lee and D. Ryu, "ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System," 2019 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2019, pp. 996-1001, doi: 10.1109/ICTC46691.2019.8939946.'
                   dummy.select();
@@ -140,7 +140,7 @@ class Papers extends Component {
       </div>
     </div>
 
-    var paper3 = <div className="singleProjectContainer">
+    let paper3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2019_02.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -159,7 +159,7 @@ class Papers extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'B. Ban, D. Ryu and M. Lee, "Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient Solutions," 2019 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2019, pp. 1156-1161, doi: 10.1109/ICTC46691.2019.8939812.'
                   dummy.select();
@@ -189,7 +189,7 @@ class Papers extends Component {
       </div>
     </div>
 
-    var paper4 = <div className="singleProjectContainer">
+    let paper4 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_01.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -208,7 +208,7 @@ class Papers extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'B. Ban, J. Lee, D. Ryu, M. Lee and T. D. Eom, "Nutrient Solution Management System for Smart Farms and Plant Factory," 2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2020, pp. 1537-1542, doi: 10.1109/ICTC49870.2020.9289192.'
                   dummy.select();
@@ -234,7 +234,7 @@ class Papers extends Component {
       </div>
     </div>
 
-    var paper5 = <div className="singleProjectContainer">
+    let paper5 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_02.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -253,7 +253,7 @@ class Papers extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'B. Ban, "Deep learning method to remove chemical, kinetic and electric artifacts on ISEs," 2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2020, pp. 1242-1246, doi: 10.1109/ICTC49870.2020.9289389.'
                   dummy.select();
@@ -283,7 +283,7 @@ class Papers extends Component {
       </div>
     </div>
 
-    var paper6 = <div className="singleProjectContainer">
+    let paper6 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_03.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -302,7 +302,7 @@ class Papers extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'B. Ban, "Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis," 2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2020, pp. 1531-1536, doi: 10.1109/ICTC49870.2020.9289083.'
                   dummy.select();
@@ -332,7 +332,7 @@ class Papers extends Component {
       </div>
     </div>
 
-    var paper7 = <div className="singleProjectContainer">
+    let paper7 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2017_02.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -351,7 +351,7 @@ class Papers extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'B. Ban, "Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis," 2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2020, pp. 1531-1536, doi: 10.1109/ICTC49870.2020.9289083.'
                   dummy.select();
@@ -381,7 +381,7 @@ class Papers extends Component {
       </div>
     </div>
     
-    var paper8 = <div className="singleProjectContainer">
+    let paper8 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/BMC_SB_2018.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -405,7 +405,7 @@ class Papers extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Choo, SM., Ban, B., Joo, J.I. et al. The phenotype control kernel of a biomolecular regulatory network. BMC Syst Biol 12, 49 (2018). https://doi.org/10.1186/s12918-018-0576-8'
                 dummy.select();
@@ -435,7 +435,7 @@ class Papers extends Component {
       </div>
     </div>
     
-    var paper9 = <div className="singleProjectContainer">
+    let paper9 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2021_nlp.png" alt="projectimage"/>
       <div className="projectText">
@@ -454,7 +454,7 @@ class Papers extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'B. Ban, "A Survey on Awesome Korean NLP Datasets," 2022 13th International Conference on Information and Communication Technology Convergence (ICTC), 2022, pp. 1615-1620, doi: 10.1109/ICTC55196.2022.9952930.'
                 dummy.select();
@@ -480,7 +480,7 @@ class Papers extends Component {
       </div>
     </div>
     
-    var paper10 = <div className="singleProjectContainer">
+    let paper10 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2022_MR.png" alt="projectimage"/>
       <div className="projectText">
@@ -499,7 +499,7 @@ class Papers extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Ban, Byunghyun. "Mixed Reality Interface for Digital Twin of Plant Factory." arXiv preprint arXiv:2211.00597 (2022).'
                 dummy.select();
@@ -525,7 +525,7 @@ class Papers extends Component {
       </div>
     </div>
     
-    var paper11 = <div className="singleProjectContainer">
+    let paper11 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2022_sunung.png" alt="projectimage"/>
       <div className="projectText">
@@ -545,7 +545,7 @@ class Papers extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Ban, Byunghyun, et al. "Analysis on English Vocabulary Appearance Pattern in Korean CSAT." arXiv preprint arXiv:2211.15426 (2022).'
                 dummy.select();
@@ -565,13 +565,17 @@ class Papers extends Component {
               <a href="https://arxiv.org/abs/2211.15426" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
               </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/needleworm/bigdata_voca" target="_blank"  rel="noreferrer">
+                {gitLogo}
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
     
-    var paper_MS_Thesis = <div className="singleProjectContainer">
+    let paper_MS_Thesis = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/paper_MS_Thesis.png" alt="projectimage"/>
       <div className="projectText">
@@ -590,7 +594,7 @@ class Papers extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byung-Hyun Ban. "Cardiac CT image segmentation with adversarial networks." Master\'s Thesis, Korea Advanced Institute of Science and Technology, 2018.'
                 dummy.select();

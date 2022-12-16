@@ -20,14 +20,14 @@ class Lectures extends Component {
   }
 
   drawLectures(){
-    var youtube = <i className="fab fa-youtube"></i>
-    var lectureLogo = <i className="fas fa-chalkboard-teacher"></i>
-    var newsIcon = <i className="far fa-newspaper"></i>
-    var book = <i className="fas fa-book"></i>
-    var edulogo = <i className="fas fa-chalkboard-teacher"></i>
+    let youtube = <i className="fab fa-youtube"></i>
+    let lectureLogo = <i className="fas fa-chalkboard-teacher"></i>
+    let newsIcon = <i className="far fa-newspaper"></i>
+    let book = <i className="fas fa-book"></i>
+    let edulogo = <i className="fas fa-chalkboard-teacher"></i>
     
 
-    var lecture1 = <div className="singleLectureContainer">
+    let lecture1 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/1.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -57,7 +57,7 @@ class Lectures extends Component {
     </div>
  
     
-    var lecture2 = <div className="singleLectureContainer">
+    let lecture2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/2.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -97,7 +97,7 @@ class Lectures extends Component {
       </div>
     </div>
     
-    var lecture3 = <div className="singleLectureContainer">
+    let lecture3 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/3.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -117,7 +117,7 @@ class Lectures extends Component {
       </div>
     </div>
     
-    var lecture4 = <div className="singleLectureContainer">
+    let lecture4 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/4.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -129,7 +129,7 @@ class Lectures extends Component {
       </div>
     </div>
 
-    var lecture5 = <div className="singleLectureContainer">
+    let lecture5 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/5.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -142,7 +142,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture6 = <div className="singleLectureContainer">
+    let lecture6 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/6.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -161,7 +161,7 @@ class Lectures extends Component {
       </div>
     </div>
 
-    var lecture7 = <div className="singleLectureContainer">
+    let lecture7 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/7.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -180,7 +180,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture8 = <div className="singleLectureContainer">
+    let lecture8 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/8.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -192,7 +192,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture9 = <div className="singleLectureContainer">
+    let lecture9 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/9.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -219,7 +219,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture10 = <div className="singleLectureContainer">
+    let lecture10 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/10.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -246,7 +246,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture11 = <div className="singleLectureContainer">
+    let lecture11 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/11.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -258,7 +258,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture12 = <div className="singleLectureContainer">
+    let lecture12 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/12.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -285,7 +285,7 @@ class Lectures extends Component {
       </div>
     </div>
 
-    var lecture13 = <div className="singleLectureContainer">
+    let lecture13 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/13.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -297,7 +297,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture14 = <div className="singleLectureContainer">
+    let lecture14 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/14.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -316,7 +316,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture15 = <div className="singleLectureContainer">
+    let lecture15 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/15.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -328,7 +328,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture16 = <div className="singleLectureContainer">
+    let lecture16 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/16.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -340,7 +340,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture17 = <div className="singleLectureContainer">
+    let lecture17 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/17.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -359,7 +359,7 @@ class Lectures extends Component {
       </div>
     </div>
     
-    var lecture18 = <div className="singleLectureContainer">
+    let lecture18 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/18.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -378,7 +378,7 @@ class Lectures extends Component {
     </div>
     </div>
     
-    var lecture19 = <div className="singleLectureContainer">
+    let lecture19 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/19.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -401,7 +401,7 @@ class Lectures extends Component {
     </div>
     </div>
     
-    var lecture20 = <div className="singleLectureContainer">
+    let lecture20 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/20.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -424,7 +424,7 @@ class Lectures extends Component {
     </div>
     </div>
     
-    var lecture21 = <div className="singleLectureContainer">
+    let lecture21 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/21.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -436,7 +436,7 @@ class Lectures extends Component {
     </div>
     </div>
     
-    var lecture22 = <div className="singleLectureContainer">
+    let lecture22 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/22.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -448,7 +448,7 @@ class Lectures extends Component {
     </div>
     </div>
     
-    var lecture23 = <div className="singleLectureContainer">
+    let lecture23 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/23.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -460,7 +460,7 @@ class Lectures extends Component {
       </div>
     </div>
     
-    var lecture24 = <div className="singleLectureContainer">
+    let lecture24 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/24.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -472,7 +472,7 @@ class Lectures extends Component {
       </div>
     </div>
 
-    var lecture25 = <div className="singleLectureContainer">
+    let lecture25 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/25.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -484,7 +484,7 @@ class Lectures extends Component {
     </div>
     </div>   
 
-    var lecture26 = <div className="singleLectureContainer">
+    let lecture26 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/26.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -502,7 +502,7 @@ class Lectures extends Component {
       </div>
     </div>
     
-    var lecture27 = <div className="singleLectureContainer">
+    let lecture27 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/27.png" alt="projectimage"/>
         <div className="projectText">
@@ -519,7 +519,7 @@ class Lectures extends Component {
       </div>
     </div>
 
-    var lecture28 = <div className="singleLectureContainer">
+    let lecture28 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/28.jpg" alt="lectureimage"/>
       <div className="projectText">
@@ -537,7 +537,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture29 = <div className="singleLectureContainer">
+    let lecture29 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/29.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -554,7 +554,7 @@ class Lectures extends Component {
     </div>
     </div>
 
-    var lecture30 = <div className="singleLectureContainer">
+    let lecture30 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/30.png" alt="projectimage"/>
         <div className="projectText">
@@ -569,7 +569,7 @@ class Lectures extends Component {
       </div>
     </div>
 
-    var lecture31 = <div className="singleLectureContainer">
+    let lecture31 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/31.png" alt="projectimage"/>
         <div className="projectText">
@@ -589,7 +589,7 @@ class Lectures extends Component {
       </div>  
     </div>
 
-    var lecture32 = <div className="singleLectureContainer">
+    let lecture32 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/32.png" alt="projectimage"/>
         <div className="projectText">
@@ -615,7 +615,7 @@ class Lectures extends Component {
       </div>  
     </div>
     
-    var lecture33 = <div className="singleLectureContainer">
+    let lecture33 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/33.jpeg" alt="projectimage"/>
         <div className="projectText">
@@ -627,7 +627,7 @@ class Lectures extends Component {
       </div>
     </div>
     
-    var lecture34 = <div className="singleLectureContainer">
+    let lecture34 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/34.jpeg" alt="projectimage"/>
         <div className="projectText">
@@ -639,7 +639,7 @@ class Lectures extends Component {
       </div>
     </div>
 
-    var lecture35 = <div className="singleLectureContainer">
+    let lecture35 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/35.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -660,7 +660,7 @@ class Lectures extends Component {
       </div>
     </div>
 
-    var lecture36 = <div className="singleLectureContainer">
+    let lecture36 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/36.png" alt="projectimage"/>
         <div className="projectText">
@@ -680,7 +680,7 @@ class Lectures extends Component {
       </div>  
     </div>
 
-    var lecture37 = <div className="singleLectureContainer">
+    let lecture37 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/37.png" alt="projectimage"/>
         <div className="projectText">
@@ -700,7 +700,7 @@ class Lectures extends Component {
       </div>  
     </div>    
 
-    var lecture38 = <div className="singleLectureContainer">
+    let lecture38 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/38.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -713,7 +713,7 @@ class Lectures extends Component {
     </div>
 
 
-    var lecture39 = <div className="singleLectureContainer">
+    let lecture39 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/39.png" alt="projectimage"/>
         <div className="projectText">
@@ -736,7 +736,7 @@ class Lectures extends Component {
       </div>  
     </div>
 
-    var lecture40 = <div className="singleLectureContainer">
+    let lecture40 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/40.png" alt="projectimage"/>
         <div className="projectText">
@@ -756,7 +756,7 @@ class Lectures extends Component {
       </div>  
     </div>
 
-    var lecture41 = <div className="singleLectureContainer">
+    let lecture41 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/41.png" alt="projectimage"/>
         <div className="projectText">
@@ -771,7 +771,7 @@ class Lectures extends Component {
       </div>  
     </div>
 
-    var lecture42 = <div className="singleLectureContainer">
+    let lecture42 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/42.png" alt="projectimage"/>
         <div className="projectText">

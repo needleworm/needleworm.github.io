@@ -20,14 +20,14 @@ class Websites extends Component {
   }
 
   drawWebsites(){
-    var reactIconL = <i className="fab fa-react"></i>
-    var jekyllIcon = <i className="fas fa-vial"></i>
-    var gitLogo = <i className="fab fa-github"></i>
-    var ms = <i className="fab fa-microsoft"></i>
-    var docker = <i class="fa-brands fa-docker"></i>
-    var wordpress = <i class="fa-brands fa-wordpress"></i>
+    let reactIconL = <i className="fab fa-react"></i>
+    let jekyllIcon = <i className="fas fa-vial"></i>
+    let gitLogo = <i className="fab fa-github"></i>
+    let ms = <i className="fab fa-microsoft"></i>
+    let docker = <i class="fa-brands fa-docker"></i>
+    let wordpress = <i class="fa-brands fa-wordpress"></i>
 
-    var blog = <div className="singleProjectContainer">
+    let blog = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/blog.gif" alt="projectimage"/>
@@ -65,7 +65,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var ai = <div className="singleProjectContainer">
+    let ai = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/ai.gif" alt="projectimage"/>
@@ -98,7 +98,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var rpa = <div className="singleProjectContainer">
+    let rpa = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/rpa.gif" alt="projectimage"/>
@@ -131,7 +131,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var financebook = <div className="singleProjectContainer">
+    let financebook = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/financebook" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/financebook.gif" alt="projectimage"/>
@@ -164,7 +164,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var dataset = <div className="singleProjectContainer">
+    let dataset = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/dataset.gif" alt="projectimage"/>
@@ -197,7 +197,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var b101 = <div className="singleProjectContainer">
+    let b101 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/101.gif" alt="projectimage"/>
@@ -230,7 +230,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var frontend = <div className="singleProjectContainer">
+    let frontend = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/frontend" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/frontend.gif" alt="projectimage"/>
@@ -263,7 +263,7 @@ class Websites extends Component {
       </div>
     </div>
     
-    var moneyauto = <div className="singleProjectContainer">
+    let moneyauto = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/moneyauto.gif" alt="projectimage"/>
@@ -299,7 +299,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var sangsangfarm = <div className="singleProjectContainer">
+    let sangsangfarm = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/sangsangfarm.gif" alt="projectimage"/>
@@ -329,7 +329,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var business = <div className="singleProjectContainer">
+    let business = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/business.gif" alt="projectimage"/>
@@ -359,7 +359,7 @@ class Websites extends Component {
       </div>
     </div>
     
-    var price = <div className="singleProjectContainer">
+    let price = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/price.gif" alt="projectimage"/>
@@ -390,7 +390,7 @@ class Websites extends Component {
       </div>
     </div>
     
-    var sstb2 = <div className="singleProjectContainer">
+    let sstb2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/sstb2.gif" alt="projectimage"/>
@@ -418,7 +418,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var tech3 = <div className="singleProjectContainer">
+    let tech3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/tech3" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/tech3.png" alt="projectimage"/>
@@ -451,7 +451,7 @@ class Websites extends Component {
       </div>
     </div>
 
-    var dev = <div className="singleProjectContainer">
+    let dev = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/dev" target="_blank"  rel="noreferrer">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/dev.png" alt="projectimage"/>

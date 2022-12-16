@@ -19,10 +19,10 @@ class Patents extends Component {
   }
 
   drawWebsites(){
-    var gitLogo = <i className="fab fa-github"></i>
-    var capLogo = <i className="fas fa-graduation-cap"></i>
+    let gitLogo = <i className="fab fa-github"></i>
+    let capLogo = <i className="fas fa-graduation-cap"></i>
 
-    var patent1 = <div className="singleProjectContainer">
+    let patent1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/1.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -41,7 +41,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban et al. Nutrient control device and method capable of automatic calibration of sensor. KR Patent 10-2162817 (2020)'
                   dummy.select();
@@ -71,7 +71,7 @@ class Patents extends Component {
       </div>
     </div>
     
-    var patent2 = <div className="singleProjectContainer">
+    let patent2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/2.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -90,7 +90,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Janghun Lee and Byunghyun Ban. Data processing server and method. KR Patent 10-2139928 (2020)'
                   dummy.select();
@@ -116,7 +116,7 @@ class Patents extends Component {
       </div>
     </div>
     
-    var patent3 = <div className="singleProjectContainer">
+    let patent3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/3.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -135,7 +135,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban. Apparatus and method for cultivating nutrient solution capable of adjusting dissolved oxygen and nutrient solution concentration. KR Patent 10-2134655 (2020)'
                   dummy.select();
@@ -161,7 +161,7 @@ class Patents extends Component {
       </div>
     </div>
     
-    var patent4 = <div className="singleProjectContainer">
+    let patent4 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/4.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -180,7 +180,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. Apparatus and method for analyzing the ion absorption rate of plant roots. KR Patent 10-2118957 (2020)'
                 dummy.select();
@@ -214,7 +214,7 @@ class Patents extends Component {
     </div>
   </div>
 
-    var patent5 = <div className="singleProjectContainer">
+    let patent5 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/5.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -233,7 +233,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban et al. Device and method for removing ion interference effect from nutrient solution using machine learning. KR Patent 10-2069202 (2020)'
                 dummy.select();
@@ -267,7 +267,7 @@ class Patents extends Component {
     </div>
   </div>
       
-    var patent6 = <div className="singleProjectContainer">
+    let patent6 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/6.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -286,7 +286,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban et al. Device and method for agricultural nutrient solution analysis using network model modeled by ordinary differential equation KR Patent 10-2053738 (2019)'
                 dummy.select();
@@ -320,7 +320,7 @@ class Patents extends Component {
     </div>
   </div>
 
-    var patent7 = <div className="singleProjectContainer">
+    let patent7 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/7.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -339,7 +339,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban et al. METHOD FOR GENERATING CONTROL MODEL OF GREENHOUSE SYSTEM. KR Patent 10-2100350 (2020)'
                 dummy.select();
@@ -373,7 +373,7 @@ class Patents extends Component {
     </div>
   </div>
 
-    var patent8 = <div className="singleProjectContainer">
+    let patent8 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/8.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -402,7 +402,7 @@ class Patents extends Component {
     </div>
     </div>
 
-    var patent9 = <div className="singleProjectContainer">
+    let patent9 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/9.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -431,7 +431,7 @@ class Patents extends Component {
       </div>
     </div>
 
-    var patent10 = <div className="singleProjectContainer">
+    let patent10 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/10.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -450,7 +450,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban et al. Apparatus and method for inferring algae concentration in hydroponic nutrient solution through dissolved oxygen concentration and dissolved carbon dioxide concentration analysis. KR Patent 10-2289069 (2021)'
                   dummy.select();
@@ -476,7 +476,7 @@ class Patents extends Component {
       </div>
     </div>
 
-    var patent11 = <div className="singleProjectContainer">
+    let patent11 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/11.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -495,7 +495,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban et al. Hydroponic cultivation bed and method of hydroponic cultivation using root growth information. KR Patent 10-2308623 (2021)'
                   dummy.select();
@@ -521,7 +521,7 @@ class Patents extends Component {
       </div>
     </div>
 
-    var patent12 = <div className="singleProjectContainer">
+    let patent12 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/12.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -540,7 +540,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban. Device and method for agricultural nutrient solution analysis using network model modeled by boolean equation. KR Applied Patent 10-2021-0118950 (2021)'
                   dummy.select();
@@ -566,7 +566,7 @@ class Patents extends Component {
       </div>
     </div>
 
-  var patent13 = <div className="singleProjectContainer">
+  let patent13 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/13.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -585,7 +585,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. et al. Nutrient solution supply device of solid raw material dispensing method. KR Applied Patent 10-2021-0120087 (2021)'
                 dummy.select();
@@ -611,7 +611,7 @@ class Patents extends Component {
     </div>
   </div>
 
-  var patent14 = <div className="singleProjectContainer">
+  let patent14 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/14.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -630,7 +630,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. An automatic controller of nutrient solution using the ISE sensor and machine learning and a method using thereof. KR Applied Patent 10-2021-0123213 (2021)'
                 dummy.select();
@@ -656,7 +656,7 @@ class Patents extends Component {
     </div>
   </div>
 
-  var patent15 = <div className="singleProjectContainer">
+  let patent15 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/15.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -675,7 +675,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. Device and method of sensor lifetime analysis using machine learning. KR Applied Patent 10-2021-0123641 (2021)'
                 dummy.select();
@@ -701,7 +701,7 @@ class Patents extends Component {
     </div>
   </div>
 
-    var patent16 = <div className="singleProjectContainer">
+    let patent16 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/16.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -720,7 +720,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban. MUSIC SEARCH METHOD BASED ON NEURAL NETWORK. KR Applied Patent 10-2017-0025908 (2017)'
                   dummy.select();
@@ -746,7 +746,7 @@ class Patents extends Component {
       </div>
     </div>
 
-    var patent17 = <div className="singleProjectContainer">
+    let patent17 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/17.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -765,7 +765,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban. MUSIC COMPOSITION METHOD BASED ON DEEP REINFORCEMENT LEARNING. KR Applied Patent 10-2017-0024223 (2017)'
                   dummy.select();
@@ -791,7 +791,7 @@ class Patents extends Component {
       </div>
     </div>
 
-    var patent18 = <div className="singleProjectContainer">
+    let patent18 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/18.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -810,7 +810,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban. Method for processing audio signal using machine learning. KR Applied Patent 10-2016-0167317 (2016)'
                   dummy.select();
@@ -836,7 +836,7 @@ class Patents extends Component {
       </div>
     </div>
 
-    var patent19 = <div className="singleProjectContainer">
+    let patent19 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/19.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -855,7 +855,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban. MELODY EXTRACTION METHOD FROM MUSIC SIGNAL. KR Applied Patent 10-2016-0169802 (2016)'
                   dummy.select();
@@ -881,7 +881,7 @@ class Patents extends Component {
       </div>
     </div>
 
-    var patent20 = <div className="singleProjectContainer">
+    let patent20 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/20.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -900,7 +900,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. CHORD COMPOSITION METHOD BASED ON RECURRENT NEURAL NETWORK. KR Applied Patent 10-2017-0022493 (2017)'
                 dummy.select();
@@ -926,7 +926,7 @@ class Patents extends Component {
     </div>
     </div>
 
-    var patent21 = <div className="singleProjectContainer">
+    let patent21 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/21.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -945,7 +945,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. THROWING TYPE FIRE EXTINGUISHER. KR Applied Patent 10-2014-0008341 (2014)'
                 dummy.select();
@@ -971,7 +971,7 @@ class Patents extends Component {
     </div>
     </div>
 
-    var patent22 = <div className="singleProjectContainer">
+    let patent22 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/22.png" alt="projectimage"/>
       <div className="projectText">
@@ -990,7 +990,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. THE FLASHING SMART DEVICE CASE TO DETECT THE OPENED WIFI ENVIRONMENT. KR Applied Patent 10-2013-0144524 (2014)'
                 dummy.select();
@@ -1016,7 +1016,7 @@ class Patents extends Component {
     </div>
     </div>
 
-    var patent23 = <div className="singleProjectContainer">
+    let patent23 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/23.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -1035,7 +1035,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. Storage Container For Solid State Sample. KR Patent 10-1465439 (2013)'
                 dummy.select();
@@ -1061,7 +1061,7 @@ class Patents extends Component {
     </div>
     </div>
 
-    var patent24 = <div className="singleProjectContainer">
+    let patent24 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/24.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -1080,7 +1080,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. METHOD OF MEASUREMENT OF CEREBRAL DEVELOPMENT BALANCE AND CEREBRAL DEVELOPMENT TYPE CLASSIFICATION METHOD. KR Applied Patent 10-2012-0141120  (2012)'
                 dummy.select();
@@ -1106,7 +1106,7 @@ class Patents extends Component {
     </div>
     </div>
 
-    var patent25 = <div className="singleProjectContainer">
+    let patent25 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/25.png" alt="projectimage"/>
       <div className="projectText">
@@ -1125,7 +1125,7 @@ class Patents extends Component {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                var dummy = document.createElement("textarea");
+                let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
                 dummy.value = 'Byunghyun Ban. Method of optimize plant factory nutrient solution control system using reinforcement learning AI. KR Patent 10-2423998  (2022)'
                 dummy.select();
@@ -1151,7 +1151,7 @@ class Patents extends Component {
     </div>
     </div>
 
-    var patent26 = <div className="singleProjectContainer">
+    let patent26 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/26.png" alt="projectimage"/>
         <div className="projectText">
@@ -1170,7 +1170,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban. Advising device and method for crop cultivation work using artificial intelligence model. KR Applied Patent 10-2022-0012245 (2022)'
                   dummy.select();
@@ -1196,7 +1196,7 @@ class Patents extends Component {
       </div>
     </div>
 
-    var patent27 = <div className="singleProjectContainer">
+    let patent27 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/27.png" alt="projectimage"/>
         <div className="projectText">
@@ -1215,7 +1215,7 @@ class Patents extends Component {
               <span className="citation"  onClick={
                 function(e){
                   e.preventDefault()
-                  var dummy = document.createElement("textarea");
+                  let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
                   dummy.value = 'Byunghyun Ban, et al. Intelligent Plant factory system for medical and industrial hemp and AI assistance server. KR Patent 10-2434102 (2022)'
                   dummy.select();

@@ -515,7 +515,8 @@ ul {
     padding:2em 0 0 0;
     border-top:2px solid #ddd;
     font-size:.7em;
-    color:#b3b3b3
+    color:#b3b3b3;
+    bottom : 0;
 }
 
 .footer__copyright {
@@ -551,7 +552,6 @@ hr {
 
 .panel-cover--collapsed {
     width:40%;
-    max-width:530px
 }
 
 .panel-cover--overlay {
@@ -759,7 +759,6 @@ i {
 
 .panel-cover--collapsed {
     width:100%;
-    max-width:none
 }
 
 .panel-main__inner {

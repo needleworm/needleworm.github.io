@@ -20,7 +20,7 @@ class Collections extends Component {
   }
 
   drawWebsites(){
-    var collection1 = <div className="singleProjectContainer">
+    let collection1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/1.jpeg" alt="projectimage"/>
         <div className="projectText">
@@ -46,7 +46,7 @@ class Collections extends Component {
       </div>
     </div>
 
-    var collection2 = <div className="singleProjectContainer">
+    let collection2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/2.jpeg" alt="projectimage"/>
         <div className="projectText">
@@ -72,7 +72,7 @@ class Collections extends Component {
       </div>
     </div>
 
-    var collection3 = <div className="singleProjectContainer">
+    let collection3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/3.jpeg" alt="projectimage"/>
         <div className="projectText">
@@ -98,7 +98,7 @@ class Collections extends Component {
       </div>
     </div>
 
-    var collection4 = <div className="singleProjectContainer">
+    let collection4 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/4.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -130,7 +130,7 @@ class Collections extends Component {
       </div>
     </div>
 
-    var collection5 = <div className="singleProjectContainer">
+    let collection5 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/5.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -156,7 +156,7 @@ class Collections extends Component {
       </div>
     </div>
 
-    var collection6 = <div className="singleProjectContainer">
+    let collection6 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/6.png" alt="projectimage"/>
         <div className="projectText">

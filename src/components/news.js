@@ -20,7 +20,7 @@ class News extends Component {
   }
 
   drawNews(){
-    var news2 = <div className="singleProjectContainer">
+    let news2 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop" href="http://gamefocus.co.kr/detail.php?number=108335" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -50,7 +50,7 @@ class News extends Component {
       </div>
     </div>
     
-    var news3 = <div className="singleProjectContainer">
+    let news3 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="http://it.chosun.com/site/data/html_dir/2019/11/23/2019112301220.html" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -80,7 +80,7 @@ class News extends Component {
       </div>
     </div>
         
-    var news4 = <div className="singleProjectContainer">
+    let news4 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="http://www.seoul.co.kr/news/newsView.php?id=20130406025027" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -110,7 +110,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news5 = <div className="singleProjectContainer">
+    let news5 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.kyongbuk.co.kr/news/articleView.html?idxno=518743" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -140,7 +140,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news6 = <div className="singleProjectContainer">
+    let news6 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.edaily.co.kr/news/read?newsId=01315286622583384&mediaCodeNo=257&OutLnkChk=Y" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -170,7 +170,7 @@ class News extends Component {
       </div>
     </div>
     
-    var news7 = <div className="singleProjectContainer">
+    let news7 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="http://weekly.khan.co.kr/khnm.html?mode=view&code=114&artid=201812101537021&pt=nv" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -200,7 +200,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news8 = <div className="singleProjectContainer">
+    let news8 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="http://www.dt.co.kr/contents.html?article_no=2016061502101176788001" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -230,7 +230,7 @@ class News extends Component {
       </div>
     </div>
     
-    var news9 = <div className="singleProjectContainer">
+    let news9 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop" href="https://newsis.com/view/?id=NISX20190401_0000605040&cID=10301&pID=10300" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -260,7 +260,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news11 = <div className="singleProjectContainer">
+    let news11 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.news2day.co.kr/149400" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -290,7 +290,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news12 = <div className="singleProjectContainer">
+    let news12 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.donga.com/news/article/all/20181218/93346855/1" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -320,7 +320,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news13 = <div className="singleProjectContainer">
+    let news13 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://news.joins.com/article/23414498" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -351,7 +351,7 @@ class News extends Component {
     </div>
     
     
-    var news15 = <div className="singleProjectContainer">
+    let news15 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://in-sightjournal.com/2020/07/15/ban/" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -381,7 +381,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news16 = <div className="singleProjectContainer">
+    let news16 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://startup.kaist.ac.kr/archives/29109" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -411,7 +411,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news17 = <div className="singleProjectContainer">
+    let news17 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.imaso.co.kr/archives/4296" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -441,7 +441,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news18 = <div className="singleProjectContainer">
+    let news18 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://post.naver.com/viewer/postView.nhn?volumeNo=17719119&memberNo=2420267&vType=VERTICAL" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -455,7 +455,7 @@ class News extends Component {
           </a>
           <div className="codeBody">
             <p className="bookDescription firstCommitDate">
-              2019.02.16
+              2019.02.16.
             </p>
             <p className="bookDescription">
             기존 방식으로는 처리하는 데 반년이나 걸릴 일을 최근 한 사회복무요원이 단 하루 만에 '뚝딱!' 해치워 사람들을 놀라게 했어요.'
@@ -473,7 +473,7 @@ class News extends Component {
 
 
 
-    var news19 = <div className="singleProjectContainer">
+    let news19 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.ekn.kr/web/view.php?key=20210814010002271" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -503,7 +503,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news20 = <div className="singleProjectContainer">
+    let news20 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://press.chungbuk.ac.kr/ktimes/articles/112/20211206/20211206201200.html" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -517,7 +517,7 @@ class News extends Component {
           </a>
           <div className="codeBody">
             <p className="bookDescription firstCommitDate">
-              2021.12.06
+              2021.12.06.
             </p>
             <p className="bookDescription">
               그런데, 그 반복적이고 지루한 업무에 매달리지 않고, 개선 방법을 고민해 직접 자동화 프로그램을 만들어 6개월 걸리던 일을 단 30분 만에 끝낸 사람이 있다.
@@ -533,7 +533,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news21 = <div className="singleProjectContainer">
+    let news21 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.donga.com/news/article/all/20220502/113189882/1" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -547,7 +547,7 @@ class News extends Component {
           </a>
           <div className="codeBody">
             <p className="bookDescription firstCommitDate">
-              2022.04.29
+              2022.04.29.
             </p>
             <p className="bookDescription">
             “가장 진보한 기술로 가장 오래된 산업에 혁신을 이루겠습니다”<br/>
@@ -564,7 +564,7 @@ class News extends Component {
       </div>
     </div>
 
-    var news22 = <div className="singleProjectContainer">
+    let news22 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.artinsight.co.kr/news/view.php?no=60369" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
@@ -578,7 +578,7 @@ class News extends Component {
           </a>
           <div className="codeBody">
             <p className="bookDescription firstCommitDate">
-              2022.06.22
+              2022.06.22.
             </p>
             <p className="bookDescription">
             NFT는 아무래도 '신세대' 기술이니까, 이왕이면 신간 도서를 골라잡고 싶었다. 그러던 중 NFT뿐 아니라 암호화폐와 메타버스까지 다루는 반병현 작가의 돈이 복사되는 가상자산 수업을 발견했다. 내가 본래 궁금했던 것은 NFT였으나, 다른 기술까지 함께 알아도 나쁠 건 없지 싶었다. 
@@ -594,7 +594,38 @@ class News extends Component {
       </div>
     </div>
 
+    let news23 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://www.lecturernews.com/news/articleView.html?idxno=114390" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/22.jpg"  alt="projectimage"/>
+            <h5>한국강사신문</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://www.lecturernews.com/news/articleView.html?idxno=114390" target="_blank"  rel="noreferrer">
+            <h5>“비전공 개발자 취업/이직 완벽 가이드” 반병현·이효석의 신간도서 『비전공이지만 개발자로 먹고삽니다』 출간</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2022.12.15.
+            </p>
+            <p className="bookDescription">
+              취업시장에 개발자 열풍이 불고 있습니다. 구직자들도 몰리고 기업도 개발자들을 다수 채용하고 있습니다. 개발자의 평균연봉이 5,700만 원이라는 기사도 있습니다. 개발자가 되고 싶은 사람들은 많지만 인터넷을 검색하거나 주위에 물어보아도 단편적인 정보만 얻을 수 있고, 스스로 방향 설정을 할 수 있도록 도움을 주는 양질의 정보는 많지 않습니다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://www.lecturernews.com/news/articleView.html?idxno=114390" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/23.png"  alt="projectimage"/>
+            <h5>한국강사신문</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news23}
       {news22}
       {news21}
       {news20}
