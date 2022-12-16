@@ -39,6 +39,7 @@ function App () {
                                                             */
   const [content, setContent] = useState("none")
 
+
   const closeSideMenu = () => {
     let contentWrapper = document.querySelector('.content-wrapper')
     if (!contentWrapper.classList.contains('showing')){
@@ -54,17 +55,22 @@ function App () {
     let currentWidth = window.clientWidth
     if (currentWidth > 800){
       panelCover.animate(
-        [ // Keyframes{'max-width': '530px', 'width': '40%'}, // from{'width': '100%'}, // to
-        ], { // options
-          duration: 400,
+        [ // Keyframes
+          {'max-width': '530px', 'width': '40%'}, // from
+          {'width': '100%'}, // to
+        ], 
+        { // options
+          duration: 300,
           easing: 'ease-in-out'
         } 
       )
     } else {
       panelCover.animate(
-        [ // Keyframes{'height': '40%'}, // from{'height': '100%'}, // to
+        [ // Keyframes
+          {'height': '40%'}, // from
+          {'height': '100%'}, // to
         ], { // options
-          duration: 400,
+          duration: 300,
           easing: 'ease-in-out'
         } 
       )
@@ -88,17 +94,21 @@ function App () {
     let currentWidth = window.clientWidth
     if (currentWidth > 800){
       panelCover.animate(
-        [ // Keyframes{'width': '100%'}, // from{'max-width': '530px', 'width': '40%'}, // to
+        [ // Keyframes
+          {'width': '100%'}, // from
+          {'max-width': '530px', 'width': '40%'}, // to
         ], { // options
-          duration: 400,
+          duration: 300,
           easing: 'ease-in-out'
         } 
       )
     } else {
       panelCover.animate(
-        [ // Keyframes{'height': '100%'}, // to{'height': '40%'}, // from
+        [ // Keyframes
+          {'height': '100%'}, // to
+          {'height': '40%'}, // from
         ], { // options
-          duration: 400,
+          duration: 300,
           easing: 'ease-in-out'
         } 
       )
