@@ -220,7 +220,6 @@ function Membership() {
         {membership5}
         {membership6}
         {aiff}
-        {jihak}
 
       </div>
     )
