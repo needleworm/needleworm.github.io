@@ -593,7 +593,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.lecturernews.com/news/articleView.html?idxno=114390" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/22.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/23.png"  alt="projectimage"/>
             <h5>한국강사신문</h5>
           </div>
           </a>
