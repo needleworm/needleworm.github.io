@@ -212,7 +212,7 @@ function Books() {
     
     let bookSection18 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/18.png" alt="book12" className="bookCoverImage"/>
-      <h5><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">짧고 깊게 배우는 ChatGPT<i className="fas fa-external-link-alt"></i></a></h5>
+      <h5><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">짧고 깊게 배우는 ChatGPT <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2023.01. BOOKK(부크크)</p>
       <ul className="list-inline">
         <li><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
