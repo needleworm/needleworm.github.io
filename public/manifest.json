@@ -1,4 +1,7 @@
 {
+  "manifest_version": 2,
+  "display": "fullscreen",
+  "start_url": "/?fullscreen=true",
   "short_name": "Ban's",
   "name": "Byunghyun Ban's Page",
   "icons": [
@@ -24,8 +27,6 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/?standalone=true",
-  "display": "standalone"
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
