@@ -151,7 +151,7 @@ function Books() {
     </div>
     
     let bookSection13 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg" alt="book12" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/13.jpg" alt="book13" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">142가지 데이터셋 <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2022.02. 생능북스</p>
       <ul className="list-inline">
@@ -163,7 +163,7 @@ function Books() {
     </div>
     
     let bookSection14 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/14.jpg" alt="book12" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/14.jpg" alt="book14" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/tech3" target="_blank"  rel="noreferrer">가상자산 수업 <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2022.06. 생능북스</p>
       <ul className="list-inline">
@@ -175,7 +175,7 @@ function Books() {
     </div>
     
     let bookSection15 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/15.jpg" alt="book12" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/15.jpg" alt="book15" className="bookCoverImage"/>
       <h5><a href="https://www.bookk.co.kr/book/view/146587" target="_blank"  rel="noreferrer">별처럼 찬란히 빛나는 꿈으로 <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2022.08. BOOKK(부크크)</p>
       <ul className="list-inline">
@@ -187,7 +187,7 @@ function Books() {
     </div>
     
     let bookSection16 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/16.png" alt="book12" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/16.png" alt="book16" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/dev" target="_blank"  rel="noreferrer">비전공이지만 개발자로 먹고삽니다 <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2022.12. 생능북스</p>
       <ul className="list-inline">
@@ -199,7 +199,7 @@ function Books() {
     </div>
     
     let bookSection17 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/17.jpg" alt="book12" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/17.jpg" alt="book17" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/psd" target="_blank"  rel="noreferrer">포토샵 마스터 클래스 <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2023.01. 생능북스</p>
       <ul className="list-inline">
@@ -211,7 +211,7 @@ function Books() {
     </div>
     
     let bookSection18 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/18.jpg" alt="book12" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/18.jpg" alt="book18" className="bookCoverImage"/>
       <h5><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">짧고 깊게 배우는 ChatGPT <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2023.01. BOOKK(부크크)</p>
       <ul className="list-inline">
@@ -221,9 +221,22 @@ function Books() {
         <li><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
       </ul>
     </div>
+    
+    let bookSection19 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/19.png" alt="book19" className="bookCoverImage"/>
+      <h5><a href="https://needleworm.github.io/ai_voca" target="_blank"  rel="noreferrer">AI족집게 수능영단어 <i className="fas fa-external-link-alt"></i></a></h5>
+      <p className="bookDescription">2023.01. 생능북스</p>
+      <ul className="list-inline">
+        <li><a href="https://needleworm.github.io/ai_voca" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="https://needleworm.github.io/ai_voca" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
+        <li><a href="https://needleworm.github.io/ai_voca" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+        <li><a href="https://needleworm.github.io/ai_voca" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+      </ul>
+    </div>
 
     return(
       <div className="bookContainer">
+        {bookSection19}
         {bookSection18}
         {bookSection17}
         {bookSection16}
