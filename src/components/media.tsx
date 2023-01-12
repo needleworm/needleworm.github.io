@@ -19,7 +19,7 @@ function Media() {
     
     let media1 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <iframe className="websiteImage" src="https://www.youtube.com/embed/fuwZmgKenqs" title="고무통으로 벼 자동 재배 농장(스마트팜) 만들기... IQ 만점 공대생이 도와주러옴" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/fuwZmgKenqs" title="고무통으로 벼 자동 재배 농장(스마트팜) 만들기... IQ 만점 공대생이 도와주러옴" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <div className="projectText">
           <h5>고무통으로 벼 자동 재배 농장(스마트팜) 만들기... IQ 만점 공대생이 도와주러옴</h5><br/>
             <p className="bookDescription">
@@ -44,7 +44,7 @@ function Media() {
 
     let media2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <iframe className="websiteImage" src="https://www.youtube.com/embed/VJpjk8j6zTM" title="안동에서는 대마가 합법? 대마 농장 운영 중인 사람 직접 만나고 옴" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/VJpjk8j6zTM" title="안동에서는 대마가 합법? 대마 농장 운영 중인 사람 직접 만나고 옴" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <div className="projectText">
           <h5>안동에서는 대마가 합법? 대마 농장 운영 중인 사람 직접 만나고 옴</h5><br/>
             <p className="bookDescription">
@@ -61,7 +61,7 @@ function Media() {
 
     let media3 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <iframe className="websiteImage" src="https://www.youtube.com/embed/s0skJO5TfAk" title="★파워 으쓱★ 여러모로 능력 넘치는 카이스트 출신의 대마 농부 [무엇이든 물어보살]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/s0skJO5TfAk" title="★파워 으쓱★ 여러모로 능력 넘치는 카이스트 출신의 대마 농부 [무엇이든 물어보살]" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <div className="projectText">
           <h5>★파워 으쓱★ 여러모로 능력 넘치는 카이스트 출신의 대마 농부 [무엇이든 물어보살]</h5><br/>
             <p className="bookDescription">
@@ -78,7 +78,7 @@ function Media() {
 
     let media4 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <iframe className="websiteImage" src="https://www.youtube.com/embed/_-ugbwhhApI" title="카이스트 출신 대학원생이 공익이 되면 일어나는 일?! (feat. 코딩) / 스브스뉴스" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/_-ugbwhhApI" title="카이스트 출신 대학원생이 공익이 되면 일어나는 일?! (feat. 코딩) / 스브스뉴스" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <div className="projectText">
           <h5>카이스트 출신 대학원생이 공익이 되면 일어나는 일?! (feat. 코딩) / 스브스뉴스</h5><br/>
             <p className="bookDescription">
@@ -95,7 +95,7 @@ function Media() {
 
     let media5 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <iframe className="websiteImage" src="https://www.youtube.com/embed/16hsA3CyM7M" title="카이스트 출신 대학원생이 공익이 되면 일어나는 일?! (feat. 코딩) / 스브스뉴스" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/16hsA3CyM7M" title="카이스트 출신 대학원생이 공익이 되면 일어나는 일?! (feat. 코딩) / 스브스뉴스" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <div className="projectText">
           <h5>6개월 걸릴 일을 하루 만에 처리한 공익 인터뷰 해주세요</h5><br/>
             <p className="bookDescription">
@@ -112,7 +112,7 @@ function Media() {
 
     let media6 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <iframe className="websiteImage" src="https://www.youtube.com/embed/km083tSB5DA" title="카이스트 출신 대학원생이 공익이 되면 일어나는 일?! (feat. 코딩) / 스브스뉴스" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/km083tSB5DA" title="카이스트 출신 대학원생이 공익이 되면 일어나는 일?! (feat. 코딩) / 스브스뉴스" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <div className="projectText">
           <h5>인공지능은 정말 인간에게 위협적인 존재일까? 인간은 인공지능을 어떻게 활용하면 좋을까?</h5><br/>
             <p className="bookDescription">

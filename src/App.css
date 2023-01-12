@@ -1,3 +1,10 @@
+.panel-cover {
+    maxWidth: 100%;
+    background-image: 'https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/background.jpg'
+}
+
+
+
 .animated {
     -webkit-animation-fill-mode:both;
     -moz-animation-fill-mode:both;

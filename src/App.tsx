@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+
 import Books from "./components/books"
 import Websites from "./components/websites"
 import Codes from "./components/codes"
@@ -41,18 +42,18 @@ function App () {
 
 
   const closeSideMenu = () => {
-    let contentWrapper = document.querySelector('.content-wrapper')
-    if (!contentWrapper.classList.contains('showing')){
+    const contentWrapper = document.querySelector('.content-wrapper')
+    if (!contentWrapper?.classList.contains('showing')){
       return
     }
 
-    let panelCover = document.querySelector('.panel-cover')
+    const panelCover = document.querySelector('.panel-cover') as HTMLElement
     panelCover.classList.remove('panel-cover--collapsed')
     panelCover.style.maxWidth = '100%'
 
-    let window = document.querySelector('html')
+    const window = document.querySelector('html') as HTMLElement
 
-    let currentWidth = window.clientWidth
+    const currentWidth : number = window.clientWidth
     if (currentWidth > 800){
       panelCover.animate(
         [ // Keyframes
@@ -75,25 +76,25 @@ function App () {
         } 
       )
     }
-    contentWrapper.classList.remove('showing')
+    contentWrapper?.classList.remove('showing')
     setLatestButton("none")
     setContent("none")
   }
 
   const openSideMenu = () => {
-    let contentWrapper = document.querySelector('.content-wrapper')
-    if (contentWrapper.classList.contains('showing')){
+    const contentWrapper = document.querySelector('.content-wrapper')
+    if (contentWrapper?.classList.contains('showing')){
       return
     }
 
-    let panelCover = document.querySelector('.panel-cover')
-    panelCover.classList.add('panel-cover--collapsed')
+    const panelCover = document.querySelector('.panel-cover')
+    panelCover?.classList.add('panel-cover--collapsed')
 
-    let window = document.querySelector('html')
+    const window: HTMLElement = document.querySelector('html') as HTMLElement
 
-    let currentWidth = window.clientWidth
+    let currentWidth: Number = window.clientWidth
     if (currentWidth > 800){
-      panelCover.animate(
+      panelCover?.animate(
         [ // Keyframes
           {'width': '100%'}, // from
           {'max-width': '530px', 'width': '40%'}, // to
@@ -103,7 +104,7 @@ function App () {
         } 
       )
     } else {
-      panelCover.animate(
+      panelCover?.animate(
         [ // Keyframes
           {'height': '100%'}, // to
           {'height': '40%'}, // from
@@ -114,29 +115,29 @@ function App () {
       )
       
     }
-    contentWrapper.classList.add('showing')
+    contentWrapper?.classList.add('showing')
   }
 
   const bouncing = () => {
     const navigationWrapper = document.querySelector('.navigation-wrapper')
     const btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-    navigationWrapper.classList.toggle('visible')
-    btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-    btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-    btnMobileMenuIcon.classList.toggle('animated')
-    btnMobileMenuIcon.classList.toggle('fadeIn')
+    navigationWrapper?.classList.toggle('visible')
+    btnMobileMenuIcon?.classList.toggle('fa-caret-square-down')
+    btnMobileMenuIcon?.classList.toggle('fa-caret-square-up')
+    btnMobileMenuIcon?.classList.toggle('animated')
+    btnMobileMenuIcon?.classList.toggle('fadeIn')
   }
 
   const bouncing_mobile = () => {
     const navigationWrapper = document.querySelector('.navigation-wrapper')
     const btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon')
-    navigationWrapper.classList.toggle('visible')
-    navigationWrapper.classList.toggle('bounceInDown')
-    navigationWrapper.classList.toggle('animated')
-    btnMobileMenuIcon.classList.toggle('fa-caret-square-down')
-    btnMobileMenuIcon.classList.toggle('fa-caret-square-up')
-    btnMobileMenuIcon.classList.toggle('animated')
-    btnMobileMenuIcon.classList.toggle('fadeIn')
+    navigationWrapper?.classList.toggle('visible')
+    navigationWrapper?.classList.toggle('bounceInDown')
+    navigationWrapper?.classList.toggle('animated')
+    btnMobileMenuIcon?.classList.toggle('fa-caret-square-down')
+    btnMobileMenuIcon?.classList.toggle('fa-caret-square-up')
+    btnMobileMenuIcon?.classList.toggle('animated')
+    btnMobileMenuIcon?.classList.toggle('fadeIn')
   }
 
   const drawHeader = () => {
@@ -385,7 +386,7 @@ function App () {
           }
         }
       >
-        <i class="fa-solid fa-hand-holding-heart"></i>&nbsp;사회공헌
+        <i className="fa-solid fa-hand-holding-heart"></i>&nbsp;사회공헌
       </a>
     </li>
 
@@ -404,7 +405,7 @@ function App () {
           }
         }
       >
-        <i class="fa-solid fa-palette"></i>&nbsp;Collections
+        <i className="fa-solid fa-palette"></i>&nbsp;Collections
       </a>
     </li>
 
@@ -416,7 +417,7 @@ function App () {
     </span>
 
     return(
-      <header className="panel-cover" style={{background_image: "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/background.jpg", maxWidth:'100%'}}>
+      <header className="panel-cover">
         {mobileButtenMenu}
         <div className="panel-main">
           <div className="panel-main__inner panel-inverted">

@@ -6,15 +6,30 @@ import axios from 'axios';
 
 
 function Codes() {
-  const [repository, setRepository] = useState({})
+  type SingleObjectType = {
+    name: string
+    url: string
+    language: string
+    stars: number | string
+    forks: number | string
+    watch: number | string
+    createdAt: string | string
+    description: string
+  }
+
+  type ObjectType = {
+    [key: string]: SingleObjectType
+  }
+  const [repository, setRepository] = useState<ObjectType>({})
+
 
   useEffect(() => {
     const response = axios.get('https://api.github.com/users/needleworm/repos?per_page=100')
     response.then((res) =>{
       const data = res.data
-      let repo = {}
+      let repo: ObjectType = {}
       for (let i in data){
-        let el = data[i]
+        const el = data[i]
         repo[el.name] = {
           name: el.name,
           url: el.html_url,
@@ -188,7 +203,7 @@ function Codes() {
     </div>
   }
 
-  const drawSingleProject = (name, icon, languageIcon) => {
+  const drawSingleProject = (name: string, icon: any, languageIcon: any) => {
     if (!repository[name]){
       return 
     }

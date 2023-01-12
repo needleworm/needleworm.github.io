@@ -19,8 +19,8 @@ function Websites() {
     let jekyllIcon = <i className="fas fa-vial"></i>
     let gitLogo = <i className="fab fa-github"></i>
     let ms = <i className="fab fa-microsoft"></i>
-    let docker = <i class="fa-brands fa-docker"></i>
-    let wordpress = <i class="fa-brands fa-wordpress"></i>
+    let docker = <i className="fa-brands fa-docker"></i>
+    let wordpress = <i className="fa-brands fa-wordpress"></i>
 
     let blog = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
