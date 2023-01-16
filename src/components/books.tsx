@@ -187,7 +187,7 @@ function Books() {
     </div>
     
     let bookSection16 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/16.png" alt="book16" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/16.jpg" alt="book16" className="bookCoverImage"/>
       <h5><a href="https://needleworm.github.io/dev" target="_blank"  rel="noreferrer">비전공이지만 개발자로 먹고삽니다 <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2022.12. 생능북스</p>
       <ul className="list-inline">
