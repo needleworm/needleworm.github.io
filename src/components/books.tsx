@@ -128,7 +128,7 @@ function Books() {
     </div>
     
     let bookSection11 = <div className="singleBookContainer">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/11.jpeg" alt="book11" className="bookCoverImage"/>
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/11.jpg" alt="book11" className="bookCoverImage"/>
       <h5>Cheesecake Vol.1</h5>
       <p className="bookDescription">2021.10. BOOKK (부크크)</p>
       <ul className="list-inline">
