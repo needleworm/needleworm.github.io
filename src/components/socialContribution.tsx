@@ -18,7 +18,7 @@ function SocialContribution() {
     let socialContribution2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/dream2022" target="_blank"  rel="noreferrer">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/socialContributions/dream2022.png" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/socialContributions/dream2022.png" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="tempa" href="https://needleworm.github.io/dream2022" target="_blank"  rel="noreferrer">
@@ -40,7 +40,7 @@ function SocialContribution() {
 
     let socialContribution1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/socialContributions/busking.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/socialContributions/busking.gif" alt="projectimage"/>
         <div className="projectText">
           <h5 className="text-center textMarginBottom">버스킹팀 교회오빠들 - 소아암 환우 후원공연</h5><br/>
           <div className="codeBody">

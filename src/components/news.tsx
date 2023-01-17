@@ -19,7 +19,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop" href="http://gamefocus.co.kr/detail.php?number=108335" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/2.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/2.jpg"  alt="projectimage"/>
             <h5>게임포커스</h5>
           </div>
           </a>
@@ -38,7 +38,7 @@ function News() {
         </div>
         <a className="hideOnMobile" href="http://gamefocus.co.kr/detail.php?number=108335" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/2.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/2.jpg"  alt="projectimage"/>
             <h5>게임포커스</h5>
           </div>
           </a>
@@ -49,7 +49,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="http://it.chosun.com/site/data/html_dir/2019/11/23/2019112301220.html" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/3.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/3.jpg"  alt="projectimage"/>
             <h5>IT조선</h5>
           </div>
           </a>
@@ -68,7 +68,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="http://it.chosun.com/site/data/html_dir/2019/11/23/2019112301220.html" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/3.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/3.jpg"  alt="projectimage"/>
             <h5>IT조선</h5>
           </div>
           </a>
@@ -79,7 +79,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="http://www.seoul.co.kr/news/newsView.php?id=20130406025027" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/4.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/4.jpg"  alt="projectimage"/>
             <h5>서울신문</h5>
           </div>
           </a>
@@ -98,7 +98,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="http://www.seoul.co.kr/news/newsView.php?id=20130406025027" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/4.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/4.jpg"  alt="projectimage"/>
             <h5>서울신문</h5>
           </div>
           </a>
@@ -109,7 +109,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.kyongbuk.co.kr/news/articleView.html?idxno=518743" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/5.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/5.jpg"  alt="projectimage"/>
             <h5>경북일보</h5>
           </div>
           </a>
@@ -128,7 +128,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://www.kyongbuk.co.kr/news/articleView.html?idxno=518743" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/5.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/5.jpg"  alt="projectimage"/>
             <h5>경북일보</h5>
           </div>
           </a>
@@ -139,7 +139,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.edaily.co.kr/news/read?newsId=01315286622583384&mediaCodeNo=257&OutLnkChk=Y" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/6.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/6.jpg"  alt="projectimage"/>
             <h5>이데일리</h5>
           </div>
           </a>
@@ -158,7 +158,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://www.edaily.co.kr/news/read?newsId=01315286622583384&mediaCodeNo=257&OutLnkChk=Y" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/6.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/6.jpg"  alt="projectimage"/>
             <h5>이데일리</h5>
           </div>
           </a>
@@ -169,7 +169,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="http://weekly.khan.co.kr/khnm.html?mode=view&code=114&artid=201812101537021&pt=nv" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/6.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/6.jpg"  alt="projectimage"/>
             <h5>경향신문</h5>
           </div>
           </a>
@@ -188,7 +188,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="http://weekly.khan.co.kr/khnm.html?mode=view&code=114&artid=201812101537021&pt=nv" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/6.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/6.jpg"  alt="projectimage"/>
             <h5>경향신문</h5>
           </div>
           </a>
@@ -199,7 +199,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="http://www.dt.co.kr/contents.html?article_no=2016061502101176788001" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/8.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/8.jpg"  alt="projectimage"/>
             <h5>디지털타임스</h5>
           </div>
           </a>
@@ -218,7 +218,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="http://www.dt.co.kr/contents.html?article_no=2016061502101176788001" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/8.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/8.jpg"  alt="projectimage"/>
             <h5>디지털타임스</h5>
           </div>
           </a>
@@ -229,7 +229,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop" href="https://newsis.com/view/?id=NISX20190401_0000605040&cID=10301&pID=10300" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/9.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/9.jpg"  alt="projectimage"/>
             <h5>뉴시스</h5>
           </div>
           </a>
@@ -248,7 +248,7 @@ function News() {
         </div>
         <a className="hideOnMobile" href="https://newsis.com/view/?id=NISX20190401_0000605040&cID=10301&pID=10300" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/9.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/9.jpg"  alt="projectimage"/>
             <h5>뉴시스</h5>
           </div>
           </a>
@@ -259,7 +259,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.news2day.co.kr/149400" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/11.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/11.jpg"  alt="projectimage"/>
             <h5>뉴스투데이</h5>
           </div>
           </a>
@@ -278,7 +278,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://www.news2day.co.kr/149400" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/11.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/11.jpg"  alt="projectimage"/>
             <h5>뉴스투데이</h5>
           </div>
           </a>
@@ -289,7 +289,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.donga.com/news/article/all/20181218/93346855/1" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/12.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/12.jpg"  alt="projectimage"/>
             <h5>동아일보</h5>
           </div>
           </a>
@@ -308,7 +308,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://www.donga.com/news/article/all/20181218/93346855/1" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/12.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/12.jpg"  alt="projectimage"/>
             <h5>동아일보</h5>
           </div>
           </a>
@@ -319,7 +319,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://news.joins.com/article/23414498" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/13.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/13.jpg"  alt="projectimage"/>
             <h5>중앙일보</h5>
           </div>
           </a>
@@ -338,7 +338,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://news.joins.com/article/23414498" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/13.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/13.jpg"  alt="projectimage"/>
             <h5>중앙일보</h5>
           </div>
           </a>
@@ -350,7 +350,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://in-sightjournal.com/2020/07/15/ban/" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/15.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/15.jpg"  alt="projectimage"/>
             <h5>In-Sight Publishing</h5>
           </div>
           </a>
@@ -369,7 +369,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://in-sightjournal.com/2020/07/15/ban/" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/15.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/15.jpg"  alt="projectimage"/>
             <h5>In-Sight Publishing</h5>
           </div>
           </a>
@@ -380,7 +380,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://startup.kaist.ac.kr/archives/29109" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/16.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/16.jpg"  alt="projectimage"/>
             <h5>Startup Kaist</h5>
           </div>
           </a>
@@ -399,7 +399,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://startup.kaist.ac.kr/archives/29109" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/16.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/16.jpg"  alt="projectimage"/>
             <h5>Startup Kaist</h5>
           </div>
           </a>
@@ -410,7 +410,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.imaso.co.kr/archives/4296" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/17.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/17.jpg"  alt="projectimage"/>
             <h5>마이크로소프트웨어</h5>
           </div>
           </a>
@@ -429,7 +429,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://www.imaso.co.kr/archives/4296" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/17.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/17.jpg"  alt="projectimage"/>
             <h5>마이크로소프트웨어</h5>
           </div>
           </a>
@@ -440,7 +440,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://post.naver.com/viewer/postView.nhn?volumeNo=17719119&memberNo=2420267&vType=VERTICAL" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/18.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/18.jpg"  alt="projectimage"/>
             <h5>시사원정대</h5>
           </div>
           </a>
@@ -459,7 +459,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://post.naver.com/viewer/postView.nhn?volumeNo=17719119&memberNo=2420267&vType=VERTICAL" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/18.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/18.jpg"  alt="projectimage"/>
             <h5>시사원정대</h5>
           </div>
           </a>
@@ -472,7 +472,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.ekn.kr/web/view.php?key=20210814010002271" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/19.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/19.jpg"  alt="projectimage"/>
             <h5>에너지경제신문</h5>
           </div>
           </a>
@@ -491,7 +491,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://www.ekn.kr/web/view.php?key=20210814010002271" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/19.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/19.jpg"  alt="projectimage"/>
             <h5>에너지경제신문</h5>
           </div>
           </a>
@@ -502,7 +502,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://press.chungbuk.ac.kr/ktimes/articles/112/20211206/20211206201200.html" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/20.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/20.jpg"  alt="projectimage"/>
             <h5>충북대신문</h5>
           </div>
           </a>
@@ -521,7 +521,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://press.chungbuk.ac.kr/ktimes/articles/112/20211206/20211206201200.html" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/20.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/20.jpg"  alt="projectimage"/>
             <h5>충북대신문</h5>
           </div>
           </a>
@@ -532,7 +532,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.donga.com/news/article/all/20220502/113189882/1" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/21.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/21.jpg"  alt="projectimage"/>
             <h5>동아일보</h5>
           </div>
           </a>
@@ -552,7 +552,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://www.donga.com/news/article/all/20220502/113189882/1" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/21.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/21.jpg"  alt="projectimage"/>
             <h5>동아일보</h5>
           </div>
           </a>
@@ -563,7 +563,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.artinsight.co.kr/news/view.php?no=60369" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/22.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/22.jpg"  alt="projectimage"/>
             <h5>아트인사이트</h5>
           </div>
           </a>
@@ -582,7 +582,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://www.artinsight.co.kr/news/view.php?no=60369" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/22.jpg"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/22.jpg"  alt="projectimage"/>
             <h5>아트인사이트</h5>
           </div>
           </a>
@@ -593,7 +593,7 @@ function News() {
       <div className="singleNewsCard">
         <a className="hideOnDesktop"  href="https://www.lecturernews.com/news/articleView.html?idxno=114390" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/23.png"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/23.png"  alt="projectimage"/>
             <h5>한국강사신문</h5>
           </div>
           </a>
@@ -612,7 +612,7 @@ function News() {
         </div>
         <a className="hideOnMobile"  href="https://www.lecturernews.com/news/articleView.html?idxno=114390" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
-            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/23.png"  alt="projectimage"/>
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/news/23.png"  alt="projectimage"/>
             <h5>한국강사신문</h5>
           </div>
           </a>
