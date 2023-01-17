@@ -224,8 +224,8 @@ function Books() {
       <ul className="list-inline">
         <li><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
         <li><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
-        <li><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
-        <li><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+        <li><a href="https://search.shopping.naver.com/book/catalog/37266116619" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+        <li><a href="http://www.yes24.com/Product/Goods/116974514" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
       </ul>
     </div>
     
