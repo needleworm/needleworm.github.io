@@ -113,26 +113,26 @@ function Codes() {
     let jekyllIcon = <i className="fas fa-vial"></i>
     let jsIcon = <i className="fab fa-js-square"></i>
     let javaIcon = <i className="fab fa-java"></i>
-    let eduThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/edu.jpg"
-    let pythonThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/python.jpg"
-    let exeThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/exe.jpg"
-    let scienceThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/science.jpg"
-    let moneyautoThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/moneyauto.jpg"
-    let reactThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/react.jpg"
-    let tfThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/tf.jpg"
-    let scalaThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/scala.jpg"
-    let cheeseThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/cheese.jpg"
-    let jsThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/js.jpg"
-    let nftThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/codes/nft.jpg"
+    let eduThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/edu.jpg"
+    let pythonThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/python.jpg"
+    let exeThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/exe.jpg"
+    let scienceThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/science.jpg"
+    let moneyautoThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/moneyauto.jpg"
+    let reactThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/react.jpg"
+    let tfThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/tf.jpg"
+    let scalaThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/scala.jpg"
+    let cheeseThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/cheese.jpg"
+    let jsThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/js.jpg"
+    let nftThumbnail = "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/codes/nft.jpg"
 
 
     return <div className="projects">
       {/* 교육관련 */}
-      {drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/books/covers/1.jpg", pythonIcon)}
+      {drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/books/covers/1.jpg", pythonIcon)}
       {drawSingleProject("automation_edu", eduThumbnail, pythonIcon)}
       {drawSingleProject("pymacro", eduThumbnail, pythonIcon)}
       {drawSingleProject("python101", eduThumbnail, pythonIcon)}
-      {drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/books/covers/8.jpg", pythonIcon)}
+      {drawSingleProject("bhban_ai", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/books/covers/8.jpg", pythonIcon)}
       {drawSingleProject("pywinmacro", exeThumbnail, pythonIcon)}
 
 
@@ -145,12 +145,12 @@ function Codes() {
 
       {/* Git Pages */}
       {drawSingleProject("needleworm.github.io", reactThumbnail, reactIconL)}
-      {drawSingleProject("financebook", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/books/covers/9.jpg", jekyllIcon)}
-      {drawSingleProject("instagram", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/books/covers/12.jpg", jsIcon)}
-      {drawSingleProject("gunbam", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/books/covers/12.jpg", jekyllIcon)}
-      {drawSingleProject("101", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/books/covers/10.jpg", jekyllIcon)}
-      {drawSingleProject("frontend", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/books/covers/12.jpg", jekyllIcon)}
-      {drawSingleProject("dataset", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/books/covers/13.jpg", jekyllIcon)}
+      {drawSingleProject("financebook", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/books/covers/9.jpg", jekyllIcon)}
+      {drawSingleProject("instagram", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/books/covers/12.jpg", jsIcon)}
+      {drawSingleProject("gunbam", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/books/covers/12.jpg", jekyllIcon)}
+      {drawSingleProject("101", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/books/covers/10.jpg", jekyllIcon)}
+      {drawSingleProject("frontend", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/books/covers/12.jpg", jekyllIcon)}
+      {drawSingleProject("dataset", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/books/covers/13.jpg", jekyllIcon)}
 
 
       {/* 연구관련 */}

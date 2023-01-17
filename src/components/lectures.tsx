@@ -24,7 +24,7 @@ function Lectures() {
 
     let lecture1 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/1.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/1.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>6개월치 업무를 하루만에 끝내는 업무자동화 (2020, 2022)</h5><br/>
             <p className="bookDescription">
@@ -54,7 +54,7 @@ function Lectures() {
     
     let lecture2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/2.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/2.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>스마트팜 교육 프로그램 (2020)</h5><br/>
             <p className="bookDescription">
@@ -94,7 +94,7 @@ function Lectures() {
     
     let lecture3 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/3.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/3.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>IoT 연수 (2020)</h5><br/>
             <p className="bookDescription">
@@ -114,7 +114,7 @@ function Lectures() {
     
     let lecture4 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/4.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/4.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>농업경영체, 경작이 아닌 경영을 기획하라 (2020)</h5><br/>
             <p className="bookDescription">
@@ -126,7 +126,7 @@ function Lectures() {
 
     let lecture5 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/5.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/5.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>선도농가 멘토링 - 스마트팜 (2020)</h5><br/>
           <p className="bookDescription">
@@ -139,7 +139,7 @@ function Lectures() {
 
     let lecture6 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/6.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/6.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>리더십3: 리스크 없는 학생창업 (2017)</h5><br/>
             <p className="bookDescription">
@@ -158,7 +158,7 @@ function Lectures() {
 
     let lecture7 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/7.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/7.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>스마트팜과 파생 직업, 잡을 수 있는 기회들 (2020)</h5><br/>
           <p className="bookDescription">
@@ -177,7 +177,7 @@ function Lectures() {
 
     let lecture8 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/8.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/8.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>스마트팜과 수경재배 (2020)</h5><br/>
           <p className="bookDescription">
@@ -189,7 +189,7 @@ function Lectures() {
 
     let lecture9 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/9.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/9.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>AI개발을 위한 프레임워크 (2020)</h5><br/>
           <p className="bookDescription">
@@ -216,7 +216,7 @@ function Lectures() {
 
     let lecture10 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/10.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/10.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>가장 오래된 산업에 첨단기술 끼얹기 (2020)</h5><br/>
           <p className="bookDescription">
@@ -243,7 +243,7 @@ function Lectures() {
 
     let lecture11 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/11.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/11.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>농촌체험상품 개발 브랜딩, 상표출원 교육 특강 (2020)</h5><br/>
           <p className="bookDescription">
@@ -255,7 +255,7 @@ function Lectures() {
 
     let lecture12 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/12.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/12.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>호프스테더 권력거리 이론 관점에서 본 고용노동부 행정혁신 성공사례 (2020)</h5><br/>
             <p className="bookDescription">
@@ -282,7 +282,7 @@ function Lectures() {
 
     let lecture13 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/13.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/13.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>잔머리로 시스템을 가지고 노는 방법 (2019)</h5><br/>
           <p className="bookDescription">
@@ -294,7 +294,7 @@ function Lectures() {
 
     let lecture14 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/14.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/14.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>혁신의 장벽을 개발자스럽게 부수기 (2019)</h5><br/>
           <p className="bookDescription">
@@ -313,7 +313,7 @@ function Lectures() {
 
     let lecture15 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/15.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/15.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>수필 두 편으로 50일만에 대한민국 움직이기 (2019)</h5><br/>
           <p className="bookDescription">
@@ -325,7 +325,7 @@ function Lectures() {
 
     let lecture16 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/16.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/16.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>실패하는 스타트업 (2019)</h5><br/>
           <p className="bookDescription">
@@ -337,7 +337,7 @@ function Lectures() {
 
     let lecture17 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/17.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/17.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>파이썬과 함께라는 마음가짐만 있으면 못 할 것은 없다는 마음가짐만 있으면 정말로 못 할 것은 없다 (2019)</h5><br/>
             <p className="bookDescription">
@@ -356,7 +356,7 @@ function Lectures() {
     
     let lecture18 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/18.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/18.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>그로스해킹을 통한 행정혁신 사례 (2019)</h5><br/>
           <p className="bookDescription">
@@ -375,7 +375,7 @@ function Lectures() {
     
     let lecture19 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/19.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/19.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>행정혁신 성공사례 강연 (2019)</h5><br/>
           <p className="bookDescription">
@@ -398,7 +398,7 @@ function Lectures() {
     
     let lecture20 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/20.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/20.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>코딩하는 공익 - 아직 세상을 바꾸고 싶은 개발자에게 (2019)</h5><br/>
           <p className="bookDescription">
@@ -421,7 +421,7 @@ function Lectures() {
     
     let lecture21 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/21.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/21.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>학생창업과 KAIST (2018)</h5><br/>
           <p className="bookDescription">
@@ -433,7 +433,7 @@ function Lectures() {
     
     let lecture22 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/22.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/22.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>학생신분으로 스타트업 세우기 (2016)</h5><br/>
           <p className="bookDescription">
@@ -445,7 +445,7 @@ function Lectures() {
     
     let lecture23 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/23.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/23.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>아이디어에서 사업화까지 (2012)</h5><br/>
             <p className="bookDescription">
@@ -457,7 +457,7 @@ function Lectures() {
     
     let lecture24 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/24.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/24.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>뇌과학에 발을 들이면서 (2012)</h5><br/>
             <p className="bookDescription">
@@ -469,7 +469,7 @@ function Lectures() {
 
     let lecture25 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/25.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/25.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>학습법 멘토링 강연 (2012)</h5><br/>
           <p className="bookDescription">
@@ -481,7 +481,7 @@ function Lectures() {
 
     let lecture26 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/26.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/26.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>스마트팜 교육 프로그램 (2021)</h5><br/>
             <p className="bookDescription">
@@ -499,7 +499,7 @@ function Lectures() {
     
     let lecture27 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/27.png" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/27.png" alt="projectimage"/>
         <div className="projectText">
           <h5>스마트팜 교육 (2021)</h5><br/>
             <p className="bookDescription">
@@ -516,7 +516,7 @@ function Lectures() {
 
     let lecture28 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/28.jpg" alt="lectureimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/28.jpg" alt="lectureimage"/>
       <div className="projectText">
         <h5>코스콤 임직원 대상 교육 (2021)</h5><br/>
           <p className="bookDescription">
@@ -534,7 +534,7 @@ function Lectures() {
 
     let lecture29 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/29.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/29.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>전북 청년창업사관학교 교육 (2021)</h5><br/>
           <p className="bookDescription">
@@ -551,7 +551,7 @@ function Lectures() {
 
     let lecture30 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/30.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/30.png" alt="projectimage"/>
         <div className="projectText">
           <h5>쉬운 딥러닝 (2021)</h5><br/>
             <p className="bookDescription">
@@ -566,7 +566,7 @@ function Lectures() {
 
     let lecture31 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/31.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/31.png" alt="projectimage"/>
         <div className="projectText">
           <h5>코꼬마를 위한 코딩유치원 (2021)</h5><br/>
             <p className="bookDescription">
@@ -586,7 +586,7 @@ function Lectures() {
 
     let lecture32 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/32.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/32.png" alt="projectimage"/>
         <div className="projectText">
           <h5>미래 사법의 과제 - AI 임팩트 (2022)</h5><br/>
             <p className="bookDescription">
@@ -612,7 +612,7 @@ function Lectures() {
     
     let lecture33 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/33.jpeg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/33.jpeg" alt="projectimage"/>
         <div className="projectText">
           <h5>뇌과학에 발을 들이면서 (2022)</h5><br/>
             <p className="bookDescription">
@@ -624,7 +624,7 @@ function Lectures() {
     
     let lecture34 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/34.jpeg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/34.jpeg" alt="projectimage"/>
         <div className="projectText">
           <h5>진로특강 (2022)</h5><br/>
             <p className="bookDescription">
@@ -636,7 +636,7 @@ function Lectures() {
 
     let lecture35 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/35.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/35.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>비전공자를 위한 쉬운 딥러닝 (2022)</h5><br/>
             <p className="bookDescription">
@@ -657,7 +657,7 @@ function Lectures() {
 
     let lecture36 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/36.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/36.png" alt="projectimage"/>
         <div className="projectText">
           <h5>한국인이 좋아하는 속도로 때려넣는 파이썬 (2022)</h5><br/>
             <p className="bookDescription">
@@ -677,7 +677,7 @@ function Lectures() {
 
     let lecture37 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/37.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/37.png" alt="projectimage"/>
         <div className="projectText">
           <h5>6개월 치 업무를 하루 만에 끝내는 업무자동화 Renual (2022)</h5><br/>
             <p className="bookDescription">
@@ -697,7 +697,7 @@ function Lectures() {
 
     let lecture38 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/38.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/38.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>인공지능 시대를 준비하는 전문가의 마음가짐 (2022)</h5><br/>
             <p className="bookDescription">
@@ -710,7 +710,7 @@ function Lectures() {
 
     let lecture39 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/39.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/39.png" alt="projectimage"/>
         <div className="projectText">
           <h5>돈이 복사되는 가상자산 수업 (2022)</h5><br/>
             <p className="bookDescription">
@@ -733,7 +733,7 @@ function Lectures() {
 
     let lecture40 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/40.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/40.png" alt="projectimage"/>
         <div className="projectText">
           <h5>한국인이 좋아하는 속도로 때려넣는 워드프레스 (2022)</h5><br/>
             <p className="bookDescription">
@@ -753,7 +753,7 @@ function Lectures() {
 
     let lecture41 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/41.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/41.png" alt="projectimage"/>
         <div className="projectText">
           <h5>기술이 하는 일, 사람이 하는 일 (2022)</h5><br/>
             <p className="bookDescription">
@@ -768,7 +768,7 @@ function Lectures() {
 
     let lecture42 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/lectures/42.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/lectures/42.png" alt="projectimage"/>
         <div className="projectText">
           <h5>딥러닝 레벨원 : 왕초보도 만들 수 있는 16가지 인공지능 (2022)</h5><br/>
             <p className="bookDescription">

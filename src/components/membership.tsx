@@ -20,7 +20,7 @@ function Membership() {
 
     let aiff = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/membership/aiff.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/membership/aiff.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>AI 미래포럼 (AIFF)</h5><br/>
             <p className="bookDescription">
@@ -40,7 +40,7 @@ function Membership() {
 
     let membership1 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/membership/1.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/membership/1.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>League of Perfect Scorers (LPS)</h5><br/>
             <p className="bookDescription">
@@ -64,7 +64,7 @@ function Membership() {
 
     let membership2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/membership/2.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/membership/2.png" alt="projectimage"/>
         <div className="projectText">
           <h5>World Genius Directory</h5><br/>
             <p className="bookDescription">
@@ -87,7 +87,7 @@ function Membership() {
 
     let membership3 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/membership/3.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/membership/3.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>ISI Society</h5><br/>
             <p className="bookDescription">
@@ -110,7 +110,7 @@ function Membership() {
 
     let membership4 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/membership/4.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/membership/4.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>Intertel</h5><br/>
             <p className="bookDescription">
@@ -133,7 +133,7 @@ function Membership() {
 
     let membership5 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/membership/5.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/membership/5.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>Glia Society</h5><br/>
           <p className="bookDescription">
@@ -152,7 +152,7 @@ function Membership() {
 
     let membership6 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/membership/6.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/membership/6.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>CIVIQ Society</h5><br/>
           <p className="bookDescription">
@@ -172,7 +172,7 @@ function Membership() {
 
     let cheesecake = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/membership/cheesecake.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/membership/cheesecake.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>Cheesecake Studio</h5><br/>
             <p className="bookDescription">

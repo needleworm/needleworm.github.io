@@ -17,7 +17,7 @@ function Collections() {
   const drawWebsites = () => {
     let collection1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/collection/1.jpeg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/collection/1.jpeg" alt="projectimage"/>
         <div className="projectText">
           <div className="text-center textMarginBottom">
             <strong>
@@ -43,7 +43,7 @@ function Collections() {
 
     let collection2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/collection/2.jpeg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/collection/2.jpeg" alt="projectimage"/>
         <div className="projectText">
           <div className="text-center textMarginBottom">
             <strong>
@@ -69,7 +69,7 @@ function Collections() {
 
     let collection3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/collection/3.jpeg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/collection/3.jpeg" alt="projectimage"/>
         <div className="projectText">
           <div className="text-center textMarginBottom">
             <strong>
@@ -95,7 +95,7 @@ function Collections() {
 
     let collection4 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/collection/4.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/collection/4.jpg" alt="projectimage"/>
         <div className="projectText">
           <div className="text-center textMarginBottom">
             <strong>
@@ -127,7 +127,7 @@ function Collections() {
 
     let collection5 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/collection/5.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/collection/5.jpg" alt="projectimage"/>
         <div className="projectText">
           <div className="text-center textMarginBottom">
             <strong>
@@ -153,7 +153,7 @@ function Collections() {
 
     let collection6 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/collection/6.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/collection/6.png" alt="projectimage"/>
         <div className="projectText">
           <div className="text-center textMarginBottom">
             <strong>

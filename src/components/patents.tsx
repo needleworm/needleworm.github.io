@@ -19,7 +19,7 @@ function Patents() {
 
     let patent1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/1.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/1.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>센서의 자동 캘리브레이션이 가능한 양액 제어 장치 및 방법</h5><br/>
           <div className="bookDescription">
@@ -53,7 +53,7 @@ function Patents() {
                 {capLogo}
               </a>
               &nbsp;&nbsp;&nbsp;
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/1.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/1.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -68,7 +68,7 @@ function Patents() {
     
     let patent2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/2.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/2.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>데이터 처리 서버 및 방법</h5><br/>
           <div className="bookDescription">
@@ -98,7 +98,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/2.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/2.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -113,7 +113,7 @@ function Patents() {
     
     let patent3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/3.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/3.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>용존산소량 및 양액 농도 조절이 가능한 양액 재배 장치 및 방법</h5><br/>
           <div className="bookDescription">
@@ -143,7 +143,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/3.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/3.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -158,7 +158,7 @@ function Patents() {
     
     let patent4 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/4.jpg" alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/4.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>식물 뿌리의 이온 흡수율 분석 장치 및 방법</h5><br/>
         <div className="bookDescription">
@@ -196,7 +196,7 @@ function Patents() {
                 {capLogo}
               </a>
             &nbsp;&nbsp;&nbsp;
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/4.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/4.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -211,7 +211,7 @@ function Patents() {
 
     let patent5 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/5.jpg" alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/5.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>머신러닝을 활용한 양액에서 이온 간섭 효과 제거 장치 및 방법</h5><br/>
         <div className="bookDescription">
@@ -249,7 +249,7 @@ function Patents() {
                 {capLogo}
               </a>
             &nbsp;&nbsp;&nbsp;
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/5.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/5.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -264,7 +264,7 @@ function Patents() {
       
     let patent6 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/6.jpg" alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/6.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>상미분방적식으로 모델링된 네트워크 모델을 이용한 수경재배 양액 분석 장치 및 방법</h5><br/>
         <div className="bookDescription">
@@ -302,7 +302,7 @@ function Patents() {
                 {capLogo}
               </a>
             &nbsp;&nbsp;&nbsp;
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/6.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/6.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -317,7 +317,7 @@ function Patents() {
 
     let patent7 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/7.jpg" alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/7.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>온실 시스템의 제어 모델 생성 방법</h5><br/>
         <div className="bookDescription">
@@ -355,7 +355,7 @@ function Patents() {
                 {capLogo}
               </a>
             &nbsp;&nbsp;&nbsp;
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/7.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/7.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -370,7 +370,7 @@ function Patents() {
 
     let patent8 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/8.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/8.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>수경재배용 양액 관리 자동화 시스템 및 그 방법</h5><br/>
         <div className="bookDescription">
@@ -384,7 +384,7 @@ function Patents() {
         <div className="projectIcons">
           <span></span>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/8.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/8.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -399,7 +399,7 @@ function Patents() {
 
     let patent9 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/9.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/9.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>프리 오더 마르코프 체인과 베이즈 추론을 이용한 음악 작곡 방법</h5><br/>
           <div className="bookDescription">
@@ -413,7 +413,7 @@ function Patents() {
           <div className="projectIcons">
             <span></span>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/9.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/9.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -428,7 +428,7 @@ function Patents() {
 
     let patent10 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/10.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/10.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>용존산소 농도 및 용존이산화탄소 농도 분석을 통한 수경재배 양액 내 조류 농도 추론 장치 및 방법</h5><br/>
           <div className="bookDescription">
@@ -458,7 +458,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/10.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/10.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -473,7 +473,7 @@ function Patents() {
 
     let patent11 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/11.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/11.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>수경재배 베드 및 뿌리 생장 정보를 이용한 수경재배 방법</h5><br/>
           <div className="bookDescription">
@@ -503,7 +503,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/11.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/11.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -518,7 +518,7 @@ function Patents() {
 
     let patent12 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/12.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/12.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>불리언 방정식으로 모델링된 네트워크 모델을 이용한 수경재배 양액 분석 장치 및 방법</h5><br/>
           <div className="bookDescription">
@@ -548,7 +548,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/12.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/12.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -563,7 +563,7 @@ function Patents() {
 
   let patent13 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/13.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/13.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>고형 원료 디스펜싱 방식의 양액 공급장치</h5><br/>
         <div className="bookDescription">
@@ -593,7 +593,7 @@ function Patents() {
             </span>
           </h5>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/13.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/13.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -608,7 +608,7 @@ function Patents() {
 
   let patent14 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/14.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/14.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>ISE 센서 및 머신러닝을 활용한 양액 주요 영양소 공급장치 및 이를 이용한 양액 주요 영양소 공급 방법</h5><br/>
         <div className="bookDescription">
@@ -638,7 +638,7 @@ function Patents() {
             </span>
           </h5>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/14.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/14.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -653,7 +653,7 @@ function Patents() {
 
   let patent15 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/15.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/15.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>머신러닝을 이용한 센서의 수명 분석 장치 및 방법</h5><br/>
           <div className="bookDescription">
@@ -683,7 +683,7 @@ function Patents() {
             </span>
           </h5>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/15.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/15.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -698,7 +698,7 @@ function Patents() {
 
     let patent16 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/16.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/16.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>신경망을 이용한 음악 검색 방법</h5><br/>
             <div className="bookDescription">
@@ -728,7 +728,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/16.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/16.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -743,7 +743,7 @@ function Patents() {
 
     let patent17 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/17.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/17.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>심층 강화 학습을 이용한 음악 작곡 방법</h5><br/>
             <div className="bookDescription">
@@ -773,7 +773,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/17.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/17.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -788,7 +788,7 @@ function Patents() {
 
     let patent18 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/18.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/18.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>기계 학습을 이용한 음악 신호의 처리 방법</h5><br/>
           <div className="bookDescription">
@@ -818,7 +818,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/18.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/18.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -833,7 +833,7 @@ function Patents() {
 
     let patent19 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/19.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/19.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>재생되는 음악을 분석하여 멜로디를 추출하는 방법</h5><br/>
             <div className="bookDescription">
@@ -863,7 +863,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/19.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/19.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -878,7 +878,7 @@ function Patents() {
 
     let patent20 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/20.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/20.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>순환형 신경망에 기반한 작곡 방법</h5><br/>
           <div className="bookDescription">
@@ -908,7 +908,7 @@ function Patents() {
             </span>
           </h5>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/20.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/20.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -923,7 +923,7 @@ function Patents() {
 
     let patent21 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/21.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/21.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>투척식 소화기</h5><br/>
           <div className="bookDescription">
@@ -953,7 +953,7 @@ function Patents() {
             </span>
           </h5>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/21.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/21.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -968,7 +968,7 @@ function Patents() {
 
     let patent22 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/22.png" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/22.png" alt="projectimage"/>
       <div className="projectText">
         <h5>개방형 와이파이를 탐지해 점멸하는 스마트 단말기 케이스</h5><br/>
         <div className="bookDescription">
@@ -998,7 +998,7 @@ function Patents() {
             </span>
           </h5>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/22.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/22.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -1013,7 +1013,7 @@ function Patents() {
 
     let patent23 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/23.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/23.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>고형물 보관용기</h5><br/>
         <div className="bookDescription">
@@ -1043,7 +1043,7 @@ function Patents() {
             </span>
           </h5>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/23.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/23.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -1058,7 +1058,7 @@ function Patents() {
 
     let patent24 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/24.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/24.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>대뇌 발달 균형 측정 방법 및 대뇌 발달 유형 분류 방법</h5><br/>
         <div className="bookDescription">
@@ -1088,7 +1088,7 @@ function Patents() {
             </span>
           </h5>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/24.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/24.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -1103,7 +1103,7 @@ function Patents() {
 
     let patent25 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/25.png" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/25.png" alt="projectimage"/>
       <div className="projectText">
         <h5>강화학습 AI를 활용한 식물공장 양액제어 시스템 최적화 방법</h5><br/>
         <div className="bookDescription">
@@ -1133,7 +1133,7 @@ function Patents() {
             </span>
           </h5>
           <div className="gitIcons">
-            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/25.pdf" target="_blank"  rel="noreferrer" download>
+            <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/25.pdf" target="_blank"  rel="noreferrer" download>
               <i className="fas fa-file-pdf"></i>
             </a>
             &nbsp;&nbsp;&nbsp;
@@ -1148,7 +1148,7 @@ function Patents() {
 
     let patent26 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/26.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/26.png" alt="projectimage"/>
         <div className="projectText">
           <h5>인공지능 모델을 활용한 작물 재배 작업 자문 장치 및 방법</h5><br/>
           <div className="bookDescription">
@@ -1178,7 +1178,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/26.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/26.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -1193,7 +1193,7 @@ function Patents() {
 
     let patent27 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/patents/27.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/patents/27.png" alt="projectimage"/>
         <div className="projectText">
           <h5>인공지능 능동보조 서버가 탑재된 지능형 의료용 헴프 식물공장 시스템</h5><br/>
           <div className="bookDescription">
@@ -1223,7 +1223,7 @@ function Patents() {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/patentPdf/27.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/patentPdf/27.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;
