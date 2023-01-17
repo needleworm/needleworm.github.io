@@ -446,10 +446,10 @@ function App () {
                     {papers}
                     {patents}
                     {news}
-                    {collections}
                     {websites}
                     {membership}
                     {socialContribution}
+                    {collections}
                     {contact}
                   </ul>
                 </nav>
