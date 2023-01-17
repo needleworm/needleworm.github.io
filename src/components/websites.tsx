@@ -25,7 +25,7 @@ function Websites() {
     let blog = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/blog.gif" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/blog.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io" target="_blank"  rel="noreferrer">
@@ -63,7 +63,7 @@ function Websites() {
     let ai = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/ai.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/ai.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/bhban_ai" target="_blank"  rel="noreferrer">
@@ -96,7 +96,7 @@ function Websites() {
     let rpa = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/rpa.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/rpa.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/bhban_rpa" target="_blank"  rel="noreferrer">
@@ -129,7 +129,7 @@ function Websites() {
     let financebook = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/financebook" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/financebook.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/financebook.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/financebook" target="_blank"  rel="noreferrer">
@@ -162,7 +162,7 @@ function Websites() {
     let dataset = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/dataset.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/dataset.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/dataset" target="_blank"  rel="noreferrer">
@@ -195,7 +195,7 @@ function Websites() {
     let b101 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/101.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/101.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/101" target="_blank"  rel="noreferrer">
@@ -228,7 +228,7 @@ function Websites() {
     let frontend = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/frontend" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/frontend.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/frontend.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/frontend" target="_blank"  rel="noreferrer">
@@ -261,7 +261,7 @@ function Websites() {
     let moneyauto = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/moneyauto.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/moneyauto.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/moneyauto" target="_blank"  rel="noreferrer">
@@ -297,7 +297,7 @@ function Websites() {
     let sangsangfarm = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/sangsangfarm.gif" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/sangsangfarm.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
@@ -327,7 +327,7 @@ function Websites() {
     let business = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/business.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/business.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://www.sangsang.farm/business" target="_blank"  rel="noreferrer">
@@ -357,7 +357,7 @@ function Websites() {
     let price = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/price.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/price.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://www.sangsang.farm/price" target="_blank"  rel="noreferrer">
@@ -388,7 +388,7 @@ function Websites() {
     let sstb2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/sstb2.gif" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/sstb2.gif" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://www.sangsang.farm" target="_blank"  rel="noreferrer">
@@ -416,7 +416,7 @@ function Websites() {
     let tech3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/tech3" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/tech3.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/tech3.png" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/tech3" target="_blank"  rel="noreferrer">
@@ -449,7 +449,7 @@ function Websites() {
     let dev = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
         <a className="tempa" href="https://needleworm.github.io/dev" target="_blank"  rel="noreferrer">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/websites/dev.png" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/dev.png" alt="projectimage"/>
         </a>
         <div className="projectText">
           <a className="text-center textMarginBottom" href="https://needleworm.github.io/dev" target="_blank"  rel="noreferrer">
