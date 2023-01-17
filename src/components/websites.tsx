@@ -479,11 +479,76 @@ function Websites() {
       </div>
     </div>
 
+    let psd = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://needleworm.github.io/psd" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/psd.jpg" alt="projectimage"/>
+        </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://needleworm.github.io/psd" target="_blank"  rel="noreferrer">
+            <h5>https://needleworm.github.io/psd</h5><br/>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              This page provides example codes for my book, "포토샵 마스터 클래스 (생능북스, 2023)". It was built with  &nbsp;{jekyllIcon}&nbsp;Jekyll and &nbsp;
+            <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"  rel="noreferrer">
+              Agency theme by Ravi Riley
+            </a>.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{jekyllIcon}&nbsp;Jekyll&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
+            <div className="gitIcons">
+              <a href="https://github.com/needleworm/psd" target="_blank"  rel="noreferrer">
+                <i className="fas fa-code"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://needleworm.github.io/psd" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    let ai_voca = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <a className="tempa" href="https://needleworm.github.io/ai_voca" target="_blank"  rel="noreferrer">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/websites/ai_voca.gif" alt="projectimage"/>
+        </a>
+        <div className="projectText">
+          <a className="text-center textMarginBottom" href="https://needleworm.github.io/ai_voca" target="_blank"  rel="noreferrer">
+            <h5>https://needleworm.github.io/ai_voca</h5><br/>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription">
+              AI족집게 수능영단어(2023, 생능북스)의 부록으로 제공되는 학습용 앱입니다.<br/>
+              매일매일 퀴즈 풀기 기능과, 교사를 위한 PDF 단어 시험지 제작 기능이 제공됩니다.
+            </p>
+          </div>
+          <div className="projectIcons">
+            <h5>{reactIconL}&nbsp;React&nbsp;&nbsp;{gitLogo}&nbsp;Pages</h5>
+            <div className="gitIcons">
+              <a href="https://github.com/needleworm/ai_voca" target="_blank"  rel="noreferrer">
+                <i className="fas fa-code"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://needleworm.github.io/ai_voca" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     return (
       <div className="websitesContainer">
         {blog}
-        {sstb2}
-        {sangsangfarm}
+        {ai_voca}
+        {dev}
+        {psd}
         {price}
         {business}
         {financebook}
@@ -494,7 +559,8 @@ function Websites() {
         {rpa}
         {moneyauto}
         {tech3}
-        {dev}
+        {sstb2}
+        {sangsangfarm}
       </div>
     )
   }
