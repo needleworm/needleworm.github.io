@@ -177,7 +177,7 @@ function App () {
           </span>
 
     const profilePicButton = <a href="#home" title="Home">
-      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest/src/images/profile_pic.jpg" className="user-image" alt="My Profile"
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@latest@latest/src/images/profile_pic.jpg" className="user-image" alt="My Profile"
         onClick={
           function(e){
             setLatestButton("none")
