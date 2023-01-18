@@ -222,7 +222,7 @@ function Books() {
       <h5><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">짧고 깊게 배우는 ChatGPT <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2023.01. BOOKK(부크크)</p>
       <ul className="list-inline">
-        <li><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K372831688" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
         <li><a href="https://www.bookk.co.kr/book/view/160649" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
         <li><a href="https://search.shopping.naver.com/book/catalog/37266116619" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
         <li><a href="http://www.yes24.com/Product/Goods/116974514" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
