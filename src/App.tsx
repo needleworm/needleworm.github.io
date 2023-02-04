@@ -9,6 +9,7 @@ import Patents from "./components/patents"
 import Lectures from "./components/lectures"
 import News from "./components/news"
 import Media from "./components/media"
+import Producing from "./components/producing"
 import Contact from "./components/contact"
 import Membership from "./components/membership"
 import SocialContribution from "./components/socialContribution"
@@ -335,6 +336,24 @@ function App () {
       </a>
     </li>
 
+    let producing = <li className="navigation__item">
+      <a href="#producing" title="producing"
+        onClick={
+          function(e){
+            if (latestButton === "producing"){
+              closeSideMenu()
+            } else{
+              setContent("producing")
+              setLatestButton("producing")
+              openSideMenu()
+              bouncing()
+            }
+          }
+        }>
+        <i className="fa-solid fa-clapperboard"></i>&nbsp;Producing
+      </a>
+    </li>
+
     let contact = <li className="navigation__item">
       <a href="#contact" title="Contact Me"
         onClick={
@@ -386,7 +405,7 @@ function App () {
           }
         }
       >
-        <i className="fa-solid fa-hand-holding-heart"></i>&nbsp;사회공헌
+        <i className="fa-solid fa-hand-holding-heart"></i>&nbsp;charity
       </a>
     </li>
 
@@ -447,9 +466,10 @@ function App () {
                     {papers}
                     {patents}
                     {news}
-                    {membership}
+                    {producing}
                     {socialContribution}
                     {collections}
+                    {membership}
                     {contact}
                   </ul>
                 </nav>
@@ -514,6 +534,10 @@ function App () {
     } else if (content === "media"){
       return (
         <Media/>
+      )
+    } else if (content === "producing"){
+      return (
+        <Producing/>
       )
     } else if (content === "contact"){
       return (
