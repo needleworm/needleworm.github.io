@@ -619,7 +619,38 @@ function News() {
       </div>
     </div>
 
+    let news24 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="http://www.kdpress.co.kr/news/articleView.html?idxno=118030" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/24.png"  alt="projectimage"/>
+            <h5>데일리경제</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="http://www.kdpress.co.kr/news/articleView.html?idxno=118030" target="_blank"  rel="noreferrer">
+            <h5>ChatGPT 시대 미래 트렌드 전망 ‘챗GPT’ 출간..생능북스</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.2.10.
+            </p>
+            <p className="bookDescription">
+            ‘ChatGPT’란 차세대 인공지능으로 오픈AI에서 공개한 인공지능 챗봇이다. 오픈AI는 테슬라의 일론 머스크, 와이 콤비네이터 창업자인 샘 알트만, 링크드인 공동창업자인 리드 호프먼 등 IT업계의 거물들이 힘을 합쳐 만든 기업이다. 세계에서 가장 큰 규모의 AI 개발을 진행 중에 있다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="http://www.kdpress.co.kr/news/articleView.html?idxno=118030" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/24.png"  alt="projectimage"/>
+            <h5>데일리경제</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news24}
       {news23}
       {news22}
       {news21}
