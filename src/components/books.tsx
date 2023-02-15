@@ -285,6 +285,14 @@ function Books() {
       <div className="row">
         <div className="col-lg-12 text-center">
             <h2 className="section-heading subpageHeading">Books</h2>
+            <p>
+              도서 후원을 희망하시는 지정기부단체께서는 [Contact] 메뉴를 통해 신청 부탁드립니다. <br/><br/>
+              <strong>기부 조건</strong><br/>
+              도서 현물 수령후 기부금영수증 발행 가능 기관<br/>
+              재판매 불가, 배부만 가능<br/>
+              필요 수량 및 이에 대한 소명 필수 (ex. 보육원의 경우 원생 수)<br/>
+              반기별 예산 소진시까지 진행
+            </p>
         </div>
       </div>
     )
