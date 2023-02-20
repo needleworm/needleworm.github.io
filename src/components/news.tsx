@@ -649,7 +649,38 @@ function News() {
       </div>
     </div>
 
+    let news25 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://news.sbs.co.kr/news/endPage.do?news_id=N1007084660" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/25.png"  alt="projectimage"/>
+            <h5>SBS 뉴스</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1007084660" target="_blank"  rel="noreferrer">
+            <h5>마약이면서 치료제?…'50조 시장' 코앞인 대마 활용법</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.2.17.
+            </p>
+            <p className="bookDescription">
+            대마라고 하면 흔히 마약을 떠올리게 되는데, 대마에 들어있는 특정 물질은 환자를 치료하는 데 쓰이기도 합니다. 그래서 일부 나라에서는 대마를 약으로 쓰기 위한 연구가 활발히 이뤄지고 있습니다. 우리는 어느 수준까지 와 있는지, 심우섭 기자가 취재했습니다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://news.sbs.co.kr/news/endPage.do?news_id=N1007084660" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/25.png"  alt="projectimage"/>
+            <h5>SBS뉴스</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news25}
       {news24}
       {news23}
       {news22}

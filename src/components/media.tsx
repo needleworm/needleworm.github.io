@@ -126,10 +126,28 @@ function Media() {
         </div>
       </div>
     </div>
+
+    let media7 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/media7.png"/>
+        <div className="projectText">
+          <h5>[뉴스토리] 마약이냐 치료제냐…두 얼굴의 대마 / SBS</h5><br/>
+            <p className="bookDescription">
+            재벌가와 고위층 자제들의 대마초 사건에 이어 배우 유아인까지 대마초 논란에 휘말렸습니다. 사실 태국과 미국의 일부 주, 캐나다까지 대마에 대한 규제를 풀었습니다. 최근에는 의약품 원료로 고부가가치 사업으로까지 부각되고 있습니다. 그래서일까요? 대마초 논란이 빈발하고 해외에서 밀반입되는 대마도 늘고 있습니다. 위험성을 간과하기 쉽지만 전문가들은 대마초가 필로폰이나 코카인 등으로 이어지는 마약 중독의 ‘관문역’을 한다고 경고합니다. 이번주 뉴스토리는 마약과 의약품의 양면성을 가진 대마를 집중 취재했습니다. 
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=ZZ-hkWyVooI" target="_blank"  rel="noreferrer">
+              {youtube} SBS 뉴스
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
     return (
       <div className="websitesContainer">
+        {media7}
         {media6}
         {media1}
         {media5}
