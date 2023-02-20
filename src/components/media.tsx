@@ -129,7 +129,7 @@ function Media() {
 
     let media7 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/media7.png"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/media/media7.png"/>
         <div className="projectText">
           <h5>[뉴스토리] 마약이냐 치료제냐…두 얼굴의 대마 / SBS</h5><br/>
             <p className="bookDescription">
