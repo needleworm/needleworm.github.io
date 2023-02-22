@@ -679,7 +679,38 @@ function News() {
       </div>
     </div>
 
+    let news26 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="http://www.hitnews.co.kr/news/articleView.html?idxno=43803" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/26.png"  alt="projectimage"/>
+            <h5>히트뉴스</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="http://www.hitnews.co.kr/news/articleView.html?idxno=43803" target="_blank"  rel="noreferrer">
+            <h5>내 증상을 챗GPT에게 물었다... 오류 많지만 잠재력엔 '현기증'</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.2.21.
+            </p>
+            <p className="bookDescription">
+            전문가의 의견을 듣기 위해 알아보던 중 휴베이스 모연화 부사장이 좋은 소스를 보내왔다. 카이스트에서 바이오 및 뇌공학을 전공한 반병현 저자가 집필한 '챗GPT-마침내 찾아온 특이점'이란 서적이었다. 이 저자는 챗봇의 의약품 관련 질문에 대해서도 다루었는데, 기자와 약사들이 느낀 것과 비슷한 의견을 내놓았다. 
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="http://www.hitnews.co.kr/news/articleView.html?idxno=43803" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/26.png"  alt="projectimage"/>
+            <h5>SBS뉴스</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news26}
       {news25}
       {news24}
       {news23}
