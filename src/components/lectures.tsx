@@ -824,61 +824,50 @@ function Lectures() {
 
     return (
       <div className="websitesContainer">
-        {/* 상업강의 */}
         {lecture44}
+        {lecture43}
         {lecture42}
+        {lecture41}
         {lecture40}
         {lecture39}
+        {lecture38}
         {lecture37}
         {lecture36}
         {lecture35}
-        {lecture31}
-        {lecture1}
-
-        {/* 공공기관 강의 */}
-        {lecture43}
-        {lecture26}
-        {lecture29}
-        {lecture19}
-        {lecture18}
-        {lecture12}
-        {lecture2}
-
-        {/* 기업 강의 */}
-        {lecture30}
-        {lecture28}
-
-        {/* 자랑스러운 강의 */}
-        {lecture6}
+        {lecture34}
+        {lecture33}
         {lecture32}
-        {lecture17}
-        {lecture14}
-        {lecture10}
-        {lecture20}
-        {lecture7}
-
-        {/* 대학 강의 */}
-        {lecture41}
+        {lecture31}
+        {lecture30}
+        {lecture29}
+        {lecture28}
         {lecture27}
+        {lecture26}
+        {lecture25}
+        {lecture24}
         {lecture23}
         {lecture22}
         {lecture21}
+        {lecture20}
+        {lecture19}
+        {lecture18}
+        {lecture17}
         {lecture16}
         {lecture15}
+        {lecture14}
+        {lecture13}
+        {lecture12}
+        {lecture11}
+        {lecture10}
         {lecture9}
         {lecture8}
-
-        {/* 고교 강의 */}
-        {lecture38}
-        {lecture34}
-        {lecture33}
-        {lecture25}
-        {lecture24}
-        {lecture13}
-        {lecture11}
+        {lecture7}
+        {lecture6}
         {lecture5}
         {lecture4}
         {lecture3}
+        {lecture2}
+        {lecture1}
       </div>
     )
   }
