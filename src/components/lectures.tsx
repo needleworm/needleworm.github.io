@@ -787,6 +787,19 @@ function Lectures() {
       </div>  
     </div>    
 
+    let lecture43 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/43.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>업무 자동화와 챗GPT (2023)</h5><br/>
+            <p className="bookDescription">
+              한국생명공학연구원<br/>
+              업무 자동화와 챗GPT에 대한 깊은 강의
+            </p>
+        </div>
+      </div>  
+    </div>    
+
 
     return (
       <div className="websitesContainer">
@@ -800,6 +813,19 @@ function Lectures() {
         {lecture31}
         {lecture1}
 
+        {/* 공공기관 강의 */}
+        {lecture43}
+        {lecture26}
+        {lecture29}
+        {lecture19}
+        {lecture18}
+        {lecture12}
+        {lecture2}
+
+        {/* 기업 강의 */}
+        {lecture30}
+        {lecture28}
+
         {/* 자랑스러운 강의 */}
         {lecture6}
         {lecture32}
@@ -808,18 +834,6 @@ function Lectures() {
         {lecture10}
         {lecture20}
         {lecture7}
-
-        {/* 기업 강의 */}
-        {lecture30}
-        {lecture28}
-
-        {/* 공공기관 강의 */}
-        {lecture26}
-        {lecture29}
-        {lecture19}
-        {lecture18}
-        {lecture12}
-        {lecture2}
 
         {/* 대학 강의 */}
         {lecture41}
