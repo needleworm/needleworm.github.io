@@ -800,10 +800,32 @@ function Lectures() {
       </div>  
     </div>    
 
+    let lecture44 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/44.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>베스트셀러 작가 반병현에게 배우는 ChatGPT 활용법 (2023)</h5><br/>
+            <p className="bookDescription">
+              패스트캠퍼스 온라인강좌<br/>
+              ChatGPT 똑똑하게 쓰는 활용법부터 업무 활용 노하우까지!<br/>
+              ChatGPT로 업무 효율을 높이고 수익까지 낼 수 있는 노하우, 이 강의에서 모두 알려드릴게요!
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://fastcampus.co.kr/data_online_autogpt" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
         {/* 상업강의 */}
+        {lecture44}
         {lecture42}
         {lecture40}
         {lecture39}
