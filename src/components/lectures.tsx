@@ -819,11 +819,32 @@ function Lectures() {
           </div>
         </div>
       </div>  
+    </div>  
+
+    let lecture45 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/45.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT의 태생적 한계가 만들어낸 새로운 산업 (2023)</h5><br/>
+            <p className="bookDescription">
+              KISTI 초청강연<br/>
+              한국 AI산업을 이끌어가는 KISTI 박사님들 앞에서 챗GPT 이야기를 해야 하다니, 막대한 부담감 속에서 진행된 강연입니다.
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://www.youtube.com/watch?v=eqoCyYRESjk" target="_blank"  rel="noreferrer">
+                {lectureLogo} Lecture
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
     </div>
 
 
     return (
       <div className="websitesContainer">
+        {lecture45}
         {lecture44}
         {lecture43}
         {lecture42}
