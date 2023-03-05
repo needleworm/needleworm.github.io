@@ -17,10 +17,51 @@ function Papers () {
 
   const drawWebsites = () => {
     let gitLogo = <i className="fab fa-github"></i>
+    
+    let paper0 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/0.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <h5>대립 신경망을 이용한 심혈관 단층촬영 영상 표지 방법</h5><br/>
+          <p className="bookDescription">
+            <strong>반병현</strong>(2018)<br/>
+            한국과학기술원 (석사학위논문)
+          </p>
+        <div className="codeBody">
+          <p className="bookDescription">
+            의료영상 표지기술은 환자로부터 촬영된 엑스선 영상, 자기공명영상 또는 컴퓨터 단층촬영 영상 따위의 의료영상을 탐색하여 의미 있는 부분만 분할 표지하는 것으로 질병을 빠르고 정밀하게 진단하기 위한 보조 수단으로써 각광받고 있다. 종래 기계학습 기반의 의료영상 표지기술은 통계적 추론에 근거하여 표지 대상 구역과 그 외부 구역을 분할하도록 목적함수를 최소화하는 것을 공통적인 철학으로써 공유하는데, 심장 단층촬영 사진으로부터 관상동맥만을 특이적으로 표지하는 등 의료영상 내부의 표지 대상과 비 표지 대상의 비율이 한 쪽으로 치우친 경우 학습에 실패하여 전방위적인 오류를 도출한다. 본 논문에서는 완전연결 컨볼루션 뉴럴 네트워크의 2차원 확률분포 철학을 계승하며 영상 윈도잉 기법을 제안하여 클래스 밸런스 문제를 해결한다. 또한 생성적 대립 신경망이 비 생성적 인공지능의 성능 향상에 기여할 수 있다는 가능성을 제안하며 대립 신경망 학습을 통해 분류 대상의 비율이 극단적으로 치우친 경우에도 강건하게 작동하고, 인간이 발견하지 못 한 관상동맥을 발견한 혁신적인 성능의 의료영상 표지기술을 제안한다. 
+          </p>
+        </div>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                let dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Byung-Hyun Ban. "Cardiac CT image segmentation with adversarial networks." Master\'s Thesis, Korea Advanced Institute of Science and Technology, 2018.'
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://koasas.kaist.ac.kr/handle/10203/295283" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     let paper1 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2017_01.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/1.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning</h5><br/>
             <p className="bookDescription">
@@ -60,7 +101,7 @@ function Papers () {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2017_01.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/1.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -75,7 +116,7 @@ function Papers () {
     
     let paper2 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2019_01.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System</h5><br/>
             <p className="bookDescription">
@@ -122,7 +163,7 @@ function Papers () {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2019_01.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/2.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -137,7 +178,7 @@ function Papers () {
 
     let paper3 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2019_02.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/3.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient Solutions</h5><br/>
             <p className="bookDescription">
@@ -171,7 +212,7 @@ function Papers () {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2019_02.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/3.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -186,7 +227,7 @@ function Papers () {
 
     let paper4 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_01.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/4.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>Nutrient Solution Management System for Smart Farms and Plant Factory</h5><br/>
             <p className="bookDescription">
@@ -216,7 +257,7 @@ function Papers () {
               </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2020_01.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/4.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -231,7 +272,7 @@ function Papers () {
 
     let paper5 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_02.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/5.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>Deep learning method to remove chemical, kinetic and electric artifacts on ISEs</h5><br/>
             <p className="bookDescription">
@@ -265,7 +306,7 @@ function Papers () {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2020_02.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/5.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -280,7 +321,7 @@ function Papers () {
 
     let paper6 = <div className="singleProjectContainer">
       <div className="singleWebsiteCard">
-         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2020_03.jpg" alt="projectimage"/>
+         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/6.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis</h5><br/>
             <p className="bookDescription">
@@ -314,7 +355,7 @@ function Papers () {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2020_03.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/6.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -329,7 +370,7 @@ function Papers () {
 
     let paper7 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/ICTC2017_02.jpg" alt="projectimage"/>
+       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/7.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>GAN-D: Generative adversarial networks for image deconvolution</h5><br/>
             <p className="bookDescription">
@@ -363,7 +404,7 @@ function Papers () {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/ICTC2017_02.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/7.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -378,7 +419,7 @@ function Papers () {
     
     let paper8 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/BMC_SB_2018.jpg" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/8.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>The phenotype control kernel of a biomolecular regulatory network</h5><br/>
           <p className="bookDescription">
@@ -417,7 +458,7 @@ function Papers () {
                 {gitLogo}
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/BMC_SB_2018.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/8.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -432,7 +473,7 @@ function Papers () {
     
     let paper9 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2021_nlp.png" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/9.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>A Survey on Awesome Korean NLP Datasets</h5><br/>
           <p className="bookDescription">
@@ -462,7 +503,7 @@ function Papers () {
             </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/2021_nlp.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/9.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -477,7 +518,7 @@ function Papers () {
     
     let paper10 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2022_MR.png" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/10.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>Mixed Reality Interface for Digital Twin of Plant Factory</h5><br/>
           <p className="bookDescription">
@@ -507,7 +548,7 @@ function Papers () {
             </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/2022_MR.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/11.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -522,7 +563,7 @@ function Papers () {
     
     let paper11 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2022_sunung.png" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/11.jpg" alt="projectimage"/>
       <div className="projectText">
         <h5>Analysis on English Vocabulary Appearance Pattern in Korean CSAT</h5><br/>
           <p className="bookDescription">
@@ -553,7 +594,7 @@ function Papers () {
             </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/2022_sunung.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/11.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -570,18 +611,18 @@ function Papers () {
       </div>
     </div>
     
-    let paper_MS_Thesis = <div className="singleProjectContainer">
+    let paper12 = <div className="singleProjectContainer">
     <div className="singleWebsiteCard">
-      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/paper_MS_Thesis.png" alt="projectimage"/>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/12.jpg" alt="projectimage"/>
       <div className="projectText">
-        <h5>대립 신경망을 이용한 심혈관 단층촬영 영상 표지 방법</h5><br/>
+        <h5>수능 영어시험의 어휘 등장 패턴 분석</h5><br/>
           <p className="bookDescription">
-            <strong>반병현</strong>(2018)<br/>
-            한국과학기술원 (석사학위논문)
+            <strong>반병현</strong>, 이제종, 황현목 (2022)<br/>
+            인공지능연구
           </p>
         <div className="codeBody">
           <p className="bookDescription">
-            의료영상 표지기술은 환자로부터 촬영된 엑스선 영상, 자기공명영상 또는 컴퓨터 단층촬영 영상 따위의 의료영상을 탐색하여 의미 있는 부분만 분할 표지하는 것으로 질병을 빠르고 정밀하게 진단하기 위한 보조 수단으로써 각광받고 있다. 종래 기계학습 기반의 의료영상 표지기술은 통계적 추론에 근거하여 표지 대상 구역과 그 외부 구역을 분할하도록 목적함수를 최소화하는 것을 공통적인 철학으로써 공유하는데, 심장 단층촬영 사진으로부터 관상동맥만을 특이적으로 표지하는 등 의료영상 내부의 표지 대상과 비 표지 대상의 비율이 한 쪽으로 치우친 경우 학습에 실패하여 전방위적인 오류를 도출한다. 본 논문에서는 완전연결 컨볼루션 뉴럴 네트워크의 2차원 확률분포 철학을 계승하며 영상 윈도잉 기법을 제안하여 클래스 밸런스 문제를 해결한다. 또한 생성적 대립 신경망이 비 생성적 인공지능의 성능 향상에 기여할 수 있다는 가능성을 제안하며 대립 신경망 학습을 통해 분류 대상의 비율이 극단적으로 치우친 경우에도 강건하게 작동하고, 인간이 발견하지 못 한 관상동맥을 발견한 혁신적인 성능의 의료영상 표지기술을 제안한다. 
+            텍스트 마이닝 기법 기반의 어휘 분류 기법과 LSTM을 활용한 어휘 출현 패턴 예측 방법을 소개한다. 단순한 텍스트의 등장 빈도를 기반으로 한 프리프로세싱 기법을 제안하며, 이 기법으로 제작된 어휘 스크리닝 기술은 시중의 베스트셀러 수능 어휘 교재인 워드 마스터 대비 2023년도 수능 시험 적중률이 4.35배 더 높았다. LSTM 딥러닝 기법을 활용한 인공지능 기술도 함께 제안하며, 이 기법 은 수능 시험에서 특정 어휘가 어떤 패턴으로 등장하는지 분석하고 이를 토대로 다음 수능에 출제될 어휘의 목록과 그 등장확률을 예측할 수 있다. AI의 예측값은 여러 크기의 데이터 윈도우를 바탕으로 학습된 추론값을 노멀라이즈한 뒤 가중합 연산하여 구한 것 이며, 저자들은 이 값을 AI-Score라고 부른다. AI-score는 특정 단어가 다음 수능 시험에서 등장할 확률을 의미하며, 논문에서 제안 하는 방법론이 100점으로 분류한 단어들은 2023수능에서 100% 출제되었다. AI-Score가 60점 이상인 영역에서는 불과 1.7%수준의 오차로 수능에 출제될 단어들의 등장 확률을 예측하는 데 성공했다.
           </p>
         </div>
         <div className="projectIcons">
@@ -591,7 +632,7 @@ function Papers () {
                 e.preventDefault()
                 let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
-                dummy.value = 'Byung-Hyun Ban. "Cardiac CT image segmentation with adversarial networks." Master\'s Thesis, Korea Advanced Institute of Science and Technology, 2018.'
+                dummy.value = 'Ban, Byunghyun, et al. (2022). "Analysis on English Vocabulary Appearance Pattern in Korean CSAT." Journal of The Korean Association of Artificial Intelligence Education, 3(3), 15-23'
                 dummy.select();
                 document.execCommand("copy");
                 document.body.removeChild(dummy);
@@ -602,8 +643,16 @@ function Papers () {
             </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://koasas.kaist.ac.kr/handle/10203/295283" target="_blank"  rel="noreferrer">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/12.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="http://aied.or.kr/sub_html/sub02_08.html?pageNm=article&journal=1&code=425485&issue=32270" target="_blank"  rel="noreferrer">
                 <i className="fas fa-external-link-alt"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/needleworm/bigdata_voca" target="_blank"  rel="noreferrer">
+                {gitLogo}
               </a>
             </div>
           </div>
@@ -613,6 +662,7 @@ function Papers () {
 
     return (
       <div className="websitesContainer">
+        {paper12}
         {paper11}
         {paper10}
         {paper9}
@@ -624,7 +674,7 @@ function Papers () {
         {paper1}
         {paper7}
         {paper8}
-        {paper_MS_Thesis}
+        {paper0}
       </div>
     )
   }
