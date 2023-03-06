@@ -709,7 +709,38 @@ function News() {
       </div>
     </div>
 
+    let news27 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://www.yna.co.kr/view/AKR20230306050200053" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/27.png"  alt="projectimage"/>
+            <h5>연합뉴스</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://www.yna.co.kr/view/AKR20230306050200053" target="_blank"  rel="noreferrer">
+            <h5>한은 대구경북본부, 4년 만에 금요강좌 다시 연다</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.3.6.
+            </p>
+            <p className="bookDescription">
+            '챗GPT의 원리와 파급효과, 산업계의 전망'을 주제로 하는 반병현 작가의 강연을 시작으로 5월까지 매달 1회 한국은행 대구경북본부 대강당에서 진행한다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://www.yna.co.kr/view/AKR20230306050200053" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/27.png"  alt="projectimage"/>
+            <h5>연합뉴스</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news27}
       {news26}
       {news25}
       {news24}
