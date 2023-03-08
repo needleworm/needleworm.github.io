@@ -739,7 +739,38 @@ function News() {
       </div>
     </div>
 
+    let news28 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://n.news.naver.com/mnews/article/056/0011441183?sid=102" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/28.png"  alt="projectimage"/>
+            <h5>KBS</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://n.news.naver.com/mnews/article/056/0011441183?sid=102" target="_blank"  rel="noreferrer">
+            <h5>출판계도 챗GPT 돌풍…신간 17종 출간, 판매량도 급증</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.3.8.
+            </p>
+            <p className="bookDescription">
+            예스24 2월 베스트셀러 순위에는 {'<'}챗GPT{'>'}, {'<'}챗GPT에게 묻는 인류의 미래\{'>'}, {'<'}삶의 목적을 찾는 45가지 방법{'>'}이 나란히 1~3위에 이름을 올렸습니다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://n.news.naver.com/mnews/article/056/0011441183?sid=102" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/28.png"  alt="projectimage"/>
+            <h5>KBS</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news28}
       {news27}
       {news26}
       {news25}
