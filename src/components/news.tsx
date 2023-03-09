@@ -741,14 +741,14 @@ function News() {
 
     let news28 = <div className="singleProjectContainer">
       <div className="singleNewsCard">
-        <a className="hideOnDesktop"  href="https://n.news.naver.com/mnews/article/056/0011441183?sid=102" target="_blank"  rel="noreferrer">
+        <a className="hideOnDesktop"  href="https://news.kbs.co.kr/news/view.do?ncd=7621552" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
             <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/28.png"  alt="projectimage"/>
             <h5>KBS</h5>
           </div>
           </a>
         <div className="projectText">
-          <a href="https://n.news.naver.com/mnews/article/056/0011441183?sid=102" target="_blank"  rel="noreferrer">
+          <a href="https://news.kbs.co.kr/news/view.do?ncd=7621552" target="_blank"  rel="noreferrer">
             <h5>출판계도 챗GPT 돌풍…신간 17종 출간, 판매량도 급증</h5>
           </a>
           <div className="codeBody">
@@ -760,7 +760,7 @@ function News() {
             </p>
           </div>
         </div>
-        <a className="hideOnMobile"  href="https://n.news.naver.com/mnews/article/056/0011441183?sid=102" target="_blank"  rel="noreferrer">
+        <a className="hideOnMobile"  href="https://news.kbs.co.kr/news/view.do?ncd=7621552" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
             <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/28.png"  alt="projectimage"/>
             <h5>KBS</h5>

@@ -839,11 +839,25 @@ function Lectures() {
           </div>
         </div>
       </div>  
+    </div>  
+
+    let lecture46 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/46.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT의 원리와 활용 방안, 미래의 파급 효과 (2023)</h5><br/>
+            <p className="bookDescription">
+              국무조정실 한국행정연구원<br/>
+              대한민국의 행정정책을 선도하는 국무조정실 한국행정연구원의 초청으로 챗GPT에 대한 강연을 제공하였습니다. 뉴스나 유튜브에서는 볼 수 없는 깊은 내용들을, 인문학 및 사회과학 박사님들께 쉽게 전달해 드리려 최선을 다했습니다.
+            </p>
+        </div>
+      </div>  
     </div>
 
 
     return (
       <div className="websitesContainer">
+        {lecture46}
         {lecture45}
         {lecture44}
         {lecture43}
