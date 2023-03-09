@@ -1281,8 +1281,54 @@ function Patents() {
       </div>
     </div>
 
+    let patent29 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/29.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>의료용 대마 삽수의 자동 배양 관리장치 및 방법</h5><br/>
+          <div className="bookDescription">
+            <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2508469
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2022.11.22</div>
+              <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2023.03.06.</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 김준산, 이민우<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          </div>
+          <div className="projectIcons">
+            <h5>
+              <span className="citation"  onClick={
+                function(e){
+                  e.preventDefault()
+                  let dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = 'Byunghyun Ban, et al. Apparatus and method for automatically managing cultivation of medical cannabis cuttings. KR Patent 10-2508469 (2023)'
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!")
+                }
+              }>
+                <i className="far fa-clipboard"></i>&nbsp;Cite This
+              </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/29.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020220157476" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     return (
       <div className="websitesContainer">
+        {patent29}
         {patent28}
         {patent27}
         {patent25}
