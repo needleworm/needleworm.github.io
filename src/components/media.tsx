@@ -160,10 +160,28 @@ function Media() {
         </div>
       </div>
     </div>
+
+    let media9 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/Z8Y6aqlq8DM" title="9" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="projectText">
+          <h5>[안될메보] Chat GPT가 가끔 소설을 쓰는 이유 (feat. 반병현 CTO)</h5><br/>
+            <p className="bookDescription">
+              반병현 CTO는 노래를 부르기 매우 좋아하는 사람으로, 본 채널과 관련 있는 사람입니다
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=Z8Y6aqlq8DM" target="_blank"  rel="noreferrer">
+              {youtube} 의학발성 메디컬보이스
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
     return (
       <div className="websitesContainer">
+        {media9}
         {media8}
         {media7}
         {media6}
