@@ -161,8 +161,45 @@ function Media() {
       </div>
     </div>
 
+    let media9 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/Z8Y6aqlq8DM" title="9" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="projectText">
+          <h5>[안될메보] Chat GPT가 가끔 소설을 쓰는 이유 (feat. 반병현 CTO)</h5><br/>
+            <p className="bookDescription">
+              반병현 CTO는 노래를 부르기 매우 좋아하는 사람으로, 본 채널과 관련 있는 사람입니다
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=Z8Y6aqlq8DM" target="_blank"  rel="noreferrer">
+              {youtube} 의학발성 메디컬보이스
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    let media10 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/kpvWDHRxtWc" title="10" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="projectText">
+          <h5>챗GPT 활용, 벌써 이만큼까지 왔다고?(반병현 작가 2부)</h5><br/>
+            <p className="bookDescription">
+              국립중앙과학관과 함께한 챗GPT 특강 시리즈의 두 번째 영상입니다.
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=kpvWDHRxtWc" target="_blank"  rel="noreferrer">
+              {youtube} 국립중앙과학관
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
     return (
       <div className="websitesContainer">
+        {media10}
+        {media9}
         {media8}
         {media7}
         {media6}
