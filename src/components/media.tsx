@@ -161,27 +161,8 @@ function Media() {
       </div>
     </div>
 
-    let media9 = <div className="singleLectureContainer">
-      <div className="singleWebsiteCard">
-        <iframe className="websiteImage" src="https://www.youtube.com/embed/kpvWDHRxtWc" title="9" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        <div className="projectText">
-          <h5>챗GPT 활용, 벌써 이만큼까지 왔다고?(반병현 작가 2부)</h5><br/>
-            <p className="bookDescription">
-              국립중앙과학관과 함께한 챗GPT 특강 시리즈의 두 번째 영상입니다.
-            </p>
-          <div className="lectureIcons">
-            <a href="https://www.youtube.com/watch?v=kpvWDHRxtWc" target="_blank"  rel="noreferrer">
-              {youtube} 국립중앙과학관
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
     return (
       <div className="websitesContainer">
-        {media9}
         {media8}
         {media7}
         {media6}
