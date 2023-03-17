@@ -466,7 +466,6 @@ function App () {
                     {papers}
                     {patents}
                     {news}
-                    {producing}
                     {socialContribution}
                     {collections}
                     {membership}

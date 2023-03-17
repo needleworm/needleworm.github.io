@@ -195,12 +195,30 @@ function Media() {
       </div>
     </div>
     
+    let producing1 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/Bc7MjNjt0FY" title="pd1" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="projectText">
+          <h5>아이돌 덕질하다가 CG 디자이너 된 사람 ㅋㅋㅋ 정규민 아티스트의 포토샵 라이브 아트워크 쇼</h5><br/>
+            <p className="bookDescription">
+            제가 프로듀싱한 영상입니다
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=Bc7MjNjt0FY" target="_blank"  rel="noreferrer">
+              {youtube}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     
     return (
       <div className="websitesContainer">
         {media10}
         {media9}
         {media8}
+        {producing1}
         {media7}
         {media6}
         {media1}
