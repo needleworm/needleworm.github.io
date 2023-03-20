@@ -852,11 +852,39 @@ function Lectures() {
             </p>
         </div>
       </div>  
+    </div>  
+
+    let lecture47 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/47.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>지금을 바라보는 새로운 지평, Chat GPT (2023)</h5><br/>
+            <p className="bookDescription">
+              선유도서관<br/>
+              선유도서관 초청 온라인 북콘서트! 111명의 주민들과 함께하는 2주간의 토요 문화 충전
+            </p>
+        </div>
+      </div>  
+    </div> 
+
+    let lecture48 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/48.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>"왜 챗GPT에 열광하는가?"" 챗GPT의 이해와 활용 교육 (2023)</h5><br/>
+            <p className="bookDescription">
+              서대문구청<br/>
+              서대문구청 초청강연. 현장에서 110여명, 이원 생중계로 200여명 가량 참석해주셨습니다. 지금껏 모든 지자체의 챗GPT 강연 요청을 거절해왔으나 유일하게 수락한 한 곳이 서대문구청입니다.
+            </p>
+        </div>
+      </div>  
     </div>
 
 
     return (
       <div className="websitesContainer">
+        {lecture48}
+        {lecture47}
         {lecture46}
         {lecture45}
         {lecture44}
