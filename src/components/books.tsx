@@ -252,9 +252,22 @@ function Books() {
         <li><a href="http://www.yes24.com/Product/Goods/117246674" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
       </ul>
     </div>
+    
+    let bookSection21 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/21.jpg" alt="book19" className="bookCoverImage"/>
+      <h5><a href="https://needleworm.github.io/chatgpt" target="_blank"  rel="noreferrer">GPT 노마드의 탄생 <i className="fas fa-external-link-alt"></i></a></h5>
+      <p className="bookDescription">2023.03. 생능북스</p>
+      <ul className="list-inline">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=313625658" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="https://product.kyobobook.co.kr/detail/S000201335898" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
+        <li><a href="https://search.shopping.naver.com/book/catalog/38808261620" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+        <li><a href="http://www.yes24.com/Product/Goods/118059497" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+      </ul>
+    </div>
 
     return(
       <div className="bookContainer">
+        {bookSection21}
         {bookSection20}
         {bookSection19}
         {bookSection18}

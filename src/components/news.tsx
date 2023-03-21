@@ -769,7 +769,38 @@ function News() {
       </div>
     </div>
 
+    let news29 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="http://www.shinailbo.co.kr/news/articleView.html?idxno=1676875" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/29.jpg"  alt="projectimage"/>
+            <h5>신아일보</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="http://www.shinailbo.co.kr/news/articleView.html?idxno=1676875" target="_blank"  rel="noreferrer">
+            <h5>서대문구, 직원 챗GPT 활용 교육으로 업무 혁신 선도</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.3.21.
+            </p>
+            <p className="bookDescription">
+            ‘왜 챗GPT에 열광하는가? 챗GPT의 이해와 활용’이란 주제로 열린 이번 강의에는 신청자가 정원을 크게 초과하는 등 직원들의 관심이 높아 온라인 생중계(기관 내 인트라넷)도 병행해 진행했다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="http://www.shinailbo.co.kr/news/articleView.html?idxno=1676875" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/29.jpg"  alt="projectimage"/>
+            <h5>신아일보</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news29}
       {news28}
       {news27}
       {news26}
