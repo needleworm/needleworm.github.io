@@ -211,10 +211,28 @@ function Media() {
         </div>
       </div>
     </div>
+
+    let media11 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/PqrInCQiHEU" title="11" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="projectText">
+          <h5>Future with ChatGPT </h5><br/>
+            <p className="bookDescription">
+              신간 "챗GPT, 마침내 찾아온 특이점" 저자 상상텃밭 CTO 반병현 님 인터뷰
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=PqrInCQiHEU" target="_blank"  rel="noreferrer">
+              {youtube} Jane Kim
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
     
     return (
       <div className="websitesContainer">
+        {media11}
         {media10}
         {media9}
         {media8}
