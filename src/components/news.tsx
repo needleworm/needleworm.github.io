@@ -703,7 +703,7 @@ function News() {
         <a className="hideOnMobile"  href="http://www.hitnews.co.kr/news/articleView.html?idxno=43803" target="_blank"  rel="noreferrer">
           <div className="newsThumnail">
             <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/26.png"  alt="projectimage"/>
-            <h5>SBS뉴스</h5>
+            <h5>히트뉴스</h5>
           </div>
           </a>
       </div>
@@ -799,7 +799,69 @@ function News() {
       </div>
     </div>
 
+    let news30 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://news.sbs.co.kr/news/endPage.do?news_id=N1007128184" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/30.jpg"  alt="projectimage"/>
+            <h5>SBS 뉴스</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1007128184" target="_blank"  rel="noreferrer">
+            <h5>"IQ, 최소 139 수준"…챗GPT로 뜨고 지는 직업은 뭘까?</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.3.24.
+            </p>
+            <p className="bookDescription">
+              반병현/챗GPT 마침내 찾아온 특이점 저자 : 미국 변호사시험 응시자들의 평균 수준을 일반인들의 10%다 이렇게 제한을 뒀을 때 GPT-4의 아이큐는 최소 139정도가 됩니다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://news.sbs.co.kr/news/endPage.do?news_id=N1007128184" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/30.jpg"  alt="projectimage"/>
+            <h5>SBS뉴스</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
+    let news31 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="http://www.lec.co.kr/news/articleView.html?idxno=742560" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/31.jpg"  alt="projectimage"/>
+            <h5>법률저널</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="http://www.lec.co.kr/news/articleView.html?idxno=742560" target="_blank"  rel="noreferrer">
+            <h5>손호영 판사의 판례 공부 112-ChatGPT 세상(2)</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.3.24.
+            </p>
+            <p className="bookDescription">
+            그래도 코딩을 잘하는 사람에 대한 깊은 선망은 항상 마음 속에 자리하고 있었습니다. ‘코딩하는 공익(반병현)’이라는 분의 일화를 들었을 때는 찬탄을 금치 못했습니다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="http://www.lec.co.kr/news/articleView.html?idxno=742560" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/31.jpg"  alt="projectimage"/>
+            <h5>법률저널</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news31}
+      {news30}
       {news29}
       {news28}
       {news27}
