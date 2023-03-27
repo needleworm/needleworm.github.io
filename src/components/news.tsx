@@ -859,6 +859,36 @@ function News() {
       </div>
     </div>
 
+    let news32 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://www.yeongnam.com/web/view.php?key=20230324010003261" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/32.jpg"  alt="projectimage"/>
+            <h5>영남일보</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://www.yeongnam.com/web/view.php?key=20230324010003261" target="_blank"  rel="noreferrer">
+            <h5>"챗GPT가 사실 모자라다? 당신이 모자란 건 아닐까요?"</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.3.26.
+            </p>
+            <p className="bookDescription">
+              "대화형 인공지능(AI)인 챗GPT 기능은 사실 사용자의 지능을 반영하는 거울입니다." 지난 24일 대구 동인동 한국은행 대구경북본부 2층 강당에서 열린 '한은금요강좌'에서 강사로 나선 반병현(30·챗GPT 저자) 작가가 화면에 띄운 문장이다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://www.yeongnam.com/web/view.php?key=20230324010003261" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/32.jpg"  alt="projectimage"/>
+            <h5>영남일보</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
       {news31}
       {news30}
