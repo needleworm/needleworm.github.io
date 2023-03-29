@@ -22,7 +22,7 @@ function Lectures() {
     let edulogo = <i className="fas fa-chalkboard-teacher"></i>
     
 
-    let lecture1 = <div className="singleLectureContainer">
+    let lecture25 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/1.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -50,9 +50,8 @@ function Lectures() {
         </div>
       </div>
     </div>
- 
     
-    let lecture2 = <div className="singleLectureContainer">
+    let lecture24 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/2.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -92,7 +91,7 @@ function Lectures() {
       </div>
     </div>
     
-    let lecture3 = <div className="singleLectureContainer">
+    let lecture23 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/3.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -112,7 +111,7 @@ function Lectures() {
       </div>
     </div>
     
-    let lecture4 = <div className="singleLectureContainer">
+    let lecture22 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
          <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/4.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -124,7 +123,7 @@ function Lectures() {
       </div>
     </div>
 
-    let lecture5 = <div className="singleLectureContainer">
+    let lecture21 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/5.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -137,7 +136,7 @@ function Lectures() {
     </div>
     </div>
 
-    let lecture6 = <div className="singleLectureContainer">
+    let lecture5 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/6.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -156,7 +155,7 @@ function Lectures() {
       </div>
     </div>
 
-    let lecture7 = <div className="singleLectureContainer">
+    let lecture20 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/7.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -175,7 +174,7 @@ function Lectures() {
     </div>
     </div>
 
-    let lecture8 = <div className="singleLectureContainer">
+    let lecture19 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/8.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -187,7 +186,7 @@ function Lectures() {
     </div>
     </div>
 
-    let lecture9 = <div className="singleLectureContainer">
+    let lecture18 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/9.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -214,7 +213,7 @@ function Lectures() {
     </div>
     </div>
 
-    let lecture10 = <div className="singleLectureContainer">
+    let lecture17 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/10.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -241,7 +240,7 @@ function Lectures() {
     </div>
     </div>
 
-    let lecture11 = <div className="singleLectureContainer">
+    let lecture16 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/11.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -253,7 +252,7 @@ function Lectures() {
     </div>
     </div>
 
-    let lecture12 = <div className="singleLectureContainer">
+    let lecture15 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/12.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -311,7 +310,7 @@ function Lectures() {
     </div>
     </div>
 
-    let lecture15 = <div className="singleLectureContainer">
+    let lecture12 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/15.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -323,7 +322,7 @@ function Lectures() {
     </div>
     </div>
 
-    let lecture16 = <div className="singleLectureContainer">
+    let lecture11 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/16.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -335,7 +334,7 @@ function Lectures() {
     </div>
     </div>
 
-    let lecture17 = <div className="singleLectureContainer">
+    let lecture10 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/17.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -354,7 +353,7 @@ function Lectures() {
       </div>
     </div>
     
-    let lecture18 = <div className="singleLectureContainer">
+    let lecture9 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/18.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -373,7 +372,7 @@ function Lectures() {
     </div>
     </div>
     
-    let lecture19 = <div className="singleLectureContainer">
+    let lecture8 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/19.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -396,7 +395,7 @@ function Lectures() {
     </div>
     </div>
     
-    let lecture20 = <div className="singleLectureContainer">
+    let lecture7 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/20.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -419,7 +418,7 @@ function Lectures() {
     </div>
     </div>
     
-    let lecture21 = <div className="singleLectureContainer">
+    let lecture6 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/21.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -431,7 +430,7 @@ function Lectures() {
     </div>
     </div>
     
-    let lecture22 = <div className="singleLectureContainer">
+    let lecture4 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/22.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -443,7 +442,7 @@ function Lectures() {
     </div>
     </div>
     
-    let lecture23 = <div className="singleLectureContainer">
+    let lecture3 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/23.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -455,7 +454,7 @@ function Lectures() {
       </div>
     </div>
     
-    let lecture24 = <div className="singleLectureContainer">
+    let lecture2 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/24.jpg" alt="projectimage"/>
         <div className="projectText">
@@ -467,7 +466,7 @@ function Lectures() {
       </div>
     </div>
 
-    let lecture25 = <div className="singleLectureContainer">
+    let lecture1 = <div className="singleLectureContainer">
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/25.jpg" alt="projectimage"/>
       <div className="projectText">
@@ -882,7 +881,7 @@ function Lectures() {
 
     let lecture49 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/48.jpg" alt="projectimage"/>
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/49.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5> 챗GPT의 원리와 파급효과, 그리고 산업계의 전망 (2023)</h5><br/>
             <p className="bookDescription">
