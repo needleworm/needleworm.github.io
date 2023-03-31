@@ -228,10 +228,28 @@ function Media() {
         </div>
       </div>
     </div>
+
+    let media12 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/iTmhi7LYtvI" title="12" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="projectText">
+          <h5>챗GPT 인공지능 시대, 앞서가기 위해 필요한 능력은?(반병현 작가 3부)</h5><br/>
+            <p className="bookDescription">
+              국립중앙과학관과 함께한 챗GPT 특강 시리즈의 세 번째 영상입니다.
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=iTmhi7LYtvI" target="_blank"  rel="noreferrer">
+              {youtube} 국립중앙과학관
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
     
     return (
       <div className="websitesContainer">
+        {media12}
         {media11}
         {media10}
         {media9}
