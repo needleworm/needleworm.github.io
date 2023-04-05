@@ -889,7 +889,70 @@ function News() {
       </div>
     </div>
 
+    let news33 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://www.lecturernews.com/news/articleView.html?idxno=122935" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/33.jpg"  alt="projectimage"/>
+            <h5>한국강사신문</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://www.lecturernews.com/news/articleView.html?idxno=122935" target="_blank"  rel="noreferrer">
+            <h5>“2023 준비된 자에게 찾아온 빅찬스” 반병현의 신간도서 『챗 GPT: GPT 노마드의 탄생』 출간</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.4.4.
+            </p>
+            <p className="bookDescription">
+            이제 IT 비전문가도 인공지능 기술을 활용하여 새로운 수익을 창출해나갈 기회가 열리고 있다. 이 책은 그런 분들에게 GPT를 활용하는 다양한 방법과 사례를 안내함으로써, 선도적인 역할을 해나갈 수 있는 지름길을 제시한다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://www.lecturernews.com/news/articleView.html?idxno=122935" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/33.jpg"  alt="projectimage"/>
+            <h5>한국강사신문</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
+    let news34 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="https://www.busan.com/view/busan/view.php?code=2023040416084230595" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/34.jpg"  alt="projectimage"/>
+            <h5>부산일보</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="https://www.busan.com/view/busan/view.php?code=2023040416084230595" target="_blank"  rel="noreferrer">
+            <h5>해운대 인문학도서관, 반병현 작가 초청 북콘서트 ‘챗GPT와 공존하는 삶’</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.4.4.
+            </p>
+            <p className="bookDescription">
+            반병현 작가는 베스트셀러로 유명한 『챗GPT 마침내 찾아온 특이점』의 저자이다. 저서로는 『챗GPT:GPT노마드의 탄생』,『비전공이지만 개발자로 먹고삽니다, 『쉬운 딥러닝』등 다수의 저작물이 있다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="https://www.busan.com/view/busan/view.php?code=2023040416084230595" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/34.jpg"  alt="projectimage"/>
+            <h5>부산일보</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news34}
+      {news33}
+      {news32}
       {news31}
       {news30}
       {news29}

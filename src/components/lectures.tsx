@@ -892,9 +892,23 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture50 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/50.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT 서비스를 완성하는 프롬프트 엔지니어링 (2023)</h5><br/>
+            <p className="bookDescription">
+              미래엔 지식발전소 명사초청특강<br/>
+              챗GPT의 원리부터 프롬프트 엔지니어링, 그리고 챗GPT 기반 챗봇 서비스 설계 기획 방법을 알려드립니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
+        {lecture50}
         {lecture49}
         {lecture48}
         {lecture47}
