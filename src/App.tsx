@@ -405,7 +405,7 @@ function App () {
           }
         }
       >
-        <i className="fa-solid fa-hand-holding-heart"></i>&nbsp;charity
+        <i className="fa-solid fa-hand-holding-heart"></i>&nbsp;Charity
       </a>
     </li>
 

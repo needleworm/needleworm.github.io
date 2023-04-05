@@ -128,7 +128,7 @@ function Codes() {
 
     return <div className="projects">
       {/* 교육관련 */}
-      {drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/1.jpg", pythonIcon)}
+      {drawSingleProject("bhban_rpa", "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/7.jpg", pythonIcon)}
       {drawSingleProject("automation_edu", eduThumbnail, pythonIcon)}
       {drawSingleProject("pymacro", eduThumbnail, pythonIcon)}
       {drawSingleProject("python101", eduThumbnail, pythonIcon)}
