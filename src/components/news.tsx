@@ -949,7 +949,38 @@ function News() {
       </div>
     </div>
 
+    let news35 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="http://www.m-economynews.com/news/article.html?no=37774" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/35.jpg"  alt="projectimage"/>
+            <h5>M이코노미</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="http://www.m-economynews.com/news/article.html?no=37774" target="_blank"  rel="noreferrer">
+            <h5>"챗GPT 도입은 거스를 수 없는 물결···받아들이고 대처해야"</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.4.13.
+            </p>
+            <p className="bookDescription">
+              반병현 상상텃밭㈜ CTO(최고기술경영자)는 13일 오후 2시 30분 서울 강남구 소재 한국과학기술정보연구원에서 열린 ‘제5차 데이터기술경제포럼’ 강연 첫 발제자로 나서 챗GPT가 이미 현실사회에 없어서는 안 될 존재로 자리매김했다며 우리나라도 챗GPT를 연구하고 활용할 수 있는 인프라를 조성해야 한다고 주장했다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="http://www.m-economynews.com/news/article.html?no=37774" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/35.jpg"  alt="projectimage"/>
+            <h5>M이코노미</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news35}
       {news34}
       {news33}
       {news32}

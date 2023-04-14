@@ -905,9 +905,23 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture51 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/51.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>ChatGPT의 영향을 피해갈 수 있을까? (2023)</h5><br/>
+            <p className="bookDescription">
+              제5초 데이터기술경제포럼<br/>
+              KISTI의 초청으로 데이터기술경제포럼에 패널로 참여하였습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
+        {lecture51}
         {lecture50}
         {lecture49}
         {lecture48}
