@@ -911,8 +911,34 @@ function Lectures() {
         <div className="projectText">
           <h5>ChatGPT의 영향을 피해갈 수 있을까? (2023)</h5><br/>
             <p className="bookDescription">
-              제5초 데이터기술경제포럼<br/>
+              제5차 데이터기술경제포럼<br/>
               KISTI의 초청으로 데이터기술경제포럼에 패널로 참여하였습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture52 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/52.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT 시대, 살아남는 1%만 알고있는 정확한 정보 (2023)</h5><br/>
+            <p className="bookDescription">
+              도로교통공단 TBN 생방송<br/>
+              한국교통방송국 양재 스튜디오 완공 기념 첫 생방송을 제가 하게 되었습니다. 초대해주셔서 감사합니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture53 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/53.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 공존하는 삶 (2023)</h5><br/>
+            <p className="bookDescription">
+              해운대인문학도서관 북콘서트<br/>
+              부산까지 다녀온 보람이 있었습니다. 한 시간 가량 강연 후 끝없는 Q&A를 거쳐 사인회까지 무사히 마치고 돌아왔습니다.
             </p>
         </div>
       </div>  
@@ -921,6 +947,8 @@ function Lectures() {
 
     return (
       <div className="websitesContainer">
+        {lecture53}
+        {lecture52}
         {lecture51}
         {lecture50}
         {lecture49}
