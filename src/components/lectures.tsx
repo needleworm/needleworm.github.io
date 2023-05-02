@@ -944,9 +944,37 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture54 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/54.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>살아남는 1%를 위한, 챗GPT에 대한 진짜 정보 (2023)</h5><br/>
+            <p className="bookDescription">
+              농협중앙회<br/>
+              농협중앙회 본부에 방문할 일은 로또 당첨 전에는 없을 줄 알았습니다. 강연도 제공하고 당첨자 기운도 받아왔습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture55 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/55.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT 바로 알기, 그리고 스마트하게 활용하기 (2023)</h5><br/>
+            <p className="bookDescription">
+              대전교육정보원<br/>
+              초중등교원 대상 강연 진행했습니다. 역시 초등교사분들이 손도 잘 들고 질문도 잘 하세요.
+            </p>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
+        
+        {lecture54}
         {lecture53}
         {lecture52}
         {lecture51}
