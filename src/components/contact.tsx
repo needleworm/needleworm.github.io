@@ -17,7 +17,7 @@ function Contact() {
           </p>
           <p>
             <label htmlFor="email-address">Email Address</label><br/>
-            <input type="email" name="replyto" id="email-address" placeholder="email@bhban.com*" required data-validation-required-message="Please enter your email adress."/>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@bhban.com*" required data-validation-required-message="Please enter your email adress."/>
           </p>
           <p>
             <label htmlFor="telephone">Phone Number (Optional)</label><br/>
