@@ -9,7 +9,7 @@ function Contact() {
         <fieldset id="fs-frm-inputs">
           <p>
             <label htmlFor="timely">문의 제목</label><br/>
-            <input type="text" name="subject" id="email-subject" placeholder="Submission Subject*" required data-validation-required-message="Please submit the subject."/>
+            <input type="text" name="_subject" id="email-subject" placeholder="Submission Subject*" required data-validation-required-message="Please submit the subject."/>
           </p>
           <p>
             <label htmlFor="full-name">Name</label><br/>
