@@ -1,10 +1,10 @@
 #fs-frm
 {width:80%;min-width:300px;max-width:600px;margin-right:auto;margin-left:auto;text-align:center;margin-bottom:100px}
-#contact input,#contact textarea
+#contact input,#contact textarea, #contact select
 {margin-left:auto;margin-right:auto;width:80%}
-#contact input,#contact label
+#contact input,#contact label, #contact select
 {margin-left:auto;margin-right:auto}
-input,textarea
+input,textarea, select
 {border:none;box-shadow:1.2px 1.2px 1px 1px #ddd}
 #fs-frm-inputs
 {margin-left:auto;margin-right:auto}

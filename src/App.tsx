@@ -336,24 +336,6 @@ function App () {
       </a>
     </li>
 
-    let producing = <li className="navigation__item">
-      <a href="#producing" title="producing"
-        onClick={
-          function(e){
-            if (latestButton === "producing"){
-              closeSideMenu()
-            } else{
-              setContent("producing")
-              setLatestButton("producing")
-              openSideMenu()
-              bouncing()
-            }
-          }
-        }>
-        <i className="fa-solid fa-clapperboard"></i>&nbsp;Producing
-      </a>
-    </li>
-
     let contact = <li className="navigation__item">
       <a href="#contact" title="Contact Me"
         onClick={
