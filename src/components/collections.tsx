@@ -177,11 +177,44 @@ function Collections() {
       </div>
     </div>
 
+    let collection7 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/collection/7.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <div className="text-center textMarginBottom">
+            <strong>
+              관계 관찰 (Relationship Observation)
+            </strong>
+          </div>
+          <div className="codeBody">
+            <p className="bookDescription">
+              Mixsed media on wood panel, 45.5 x 60.6 cm, 2023<br/>
+              <a href="https://nonez.creatorlink.net/" target="_blank" rel="noreferrer">
+                <strong>넌지</strong>
+              </a><br/>
+            </p>
+            <div className="collectedFrom">
+              Collected from <a className="collectedFrom" href="https://www.art9gallery.net/" target="_blank" rel="noreferrer">
+                아트나인갤러리
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     return (
       <div className="websitesContainer">
-        <div className="text-center textMarginBottom" style={{marginBottom:"200px"}}>{collection6}{collection5}{collection4}{collection3}{collection2}{collection1}
+        <div className="text-center textMarginBottom" style={{marginBottom:"200px"}}>
+          {collection7}
+          {collection6}
+          {collection5}
+          {collection4}
+          {collection3}
+          {collection2}
+          {collection1}
         </div>
       </div>
     )
