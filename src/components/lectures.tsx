@@ -970,9 +970,84 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture56 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/56.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 활용 방안 (2023)</h5><br/>
+            <p className="bookDescription">
+              한국남동발전<br/>
+              전 직원 대상 온라인 강의였습니다. 라이브로 200명 가량 수강해주셨고 녹화 영상이 한달 간 사내 교육자료로 사용될 예정이라고 하네요.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture57 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/57.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 함께 하는 AI 이야기 (2023)</h5><br/>
+          <p className="bookDescription">
+            서초구청<br/>
+            서초구청에서 전 직원 대상 강연 진행했습니다. 제공해 주신 음료수가 참 맛있어서 즐거웠습니다. 복도에 "기부의 벽" 이라는, 기부금 키오스크가 있길래 가장 높은 금액 버튼 누르고 기부도 하고 왔습니다.
+          </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=kXUHFJVJBw4" target="_blank"  rel="noreferrer">
+              {youtube} 생중계 녹화
+            </a>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    let lecture58 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/58.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 함께 하는 AI 이야기 (2023)</h5><br/>
+            <p className="bookDescription">
+              하얀도서관<br/>
+              광명시 하얀도서관에서 강연을 진행했습니다. 자리가 모자라 뒤쪽에 간이 의자를 깔고 앉아 수강해 주신 분들도 계셨습니다. 초청해 주셔서 무척이나 감사드립니다. 강연 후 광명 명물인 이케아에서 즐거운 시간을 보냈습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture59 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/59.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>How to Question, 챗GPT 잠재력 200% 끌어내기 (2023)</h5><br/>
+            <p className="bookDescription">
+              현대 경제연구원<br/>
+              챗GPT의 잠재력을 200% 끌어내는 방법에 대한 강의를 촬영했습니다. 10분 분량으로 부담없이 시청할 수 있는 숏폼 영상 강의를 여러 건 촬영했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture60 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/60.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT로 정복하는 영어 (2023)</h5><br/>
+            <p className="bookDescription">
+              패스트캠퍼스<br/>
+              역사상 가장 똑똑한 인공지능, 챗GPT! 챗GPT와 함께 한국인의 오랜 숙원인 영어를 정복해봐요! 균형감각의 이제종 강사님과 함께했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
+        {lecture60}
+        {lecture59}
+        {lecture58}
+        {lecture57}
+        {lecture56}
         {lecture55}
         {lecture54}
         {lecture53}
