@@ -979,7 +979,69 @@ function News() {
       </div>
     </div>
 
+    let news36 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="http://www.mediatoday.asia/780826" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/36.jpg"  alt="projectimage"/>
+            <h5>미디어투데이</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="http://www.mediatoday.asia/780826" target="_blank"  rel="noreferrer">
+            <h5>서초구, 챗GPT 교육으로 직원과 구민의 AI 친밀도 높인다</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.5.10.
+            </p>
+            <p className="bookDescription">
+            직원대상 특강은 오는 12일 KAIST 바이오 및 뇌공학과 석사 반병현 작가가 진행한다. 그는 과거 사회복무요원 시절 공공업무 자동화 프로그램을 개발한 후 청와대와 고용노동부를 비롯한 여러 공공기관을 방문해 업무자동화 기술 자문한 이력이 있으며, 현재 AI를 활용해 스마트팜 기술을 개발하는 스타트업에서 재직중이다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="http://www.mediatoday.asia/780826" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/36.jpg"  alt="projectimage"/>
+            <h5>미디어투데이</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
+    let news37 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="http://www.incheonilbo.com/news/articleView.html?idxno=1193713" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/37.jpg"  alt="projectimage"/>
+            <h5>인천일보</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="http://www.incheonilbo.com/news/articleView.html?idxno=1193713" target="_blank"  rel="noreferrer">
+            <h5>광명시 하안도서관, 챗GPT 반병현 소장 초청 강연회 성료</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.5.14.
+            </p>
+            <p className="bookDescription">
+            광명시 하안도서관은 지난 13일 챗GPT 관련 베스트셀러 작가인 반병현 연구소장을 초청해 ‘챗GPT, 인공지능의 미래’를 주제로 강연회를 성황리에 개최했다. 이번 강연회에는 청소년부터 성인까지 100여명이 넘는 시민이 참석해 챗GPT와 앞으로 인공지능 기술이 산업사회에 끼치는 영향과 미래사회를 알아보는 시간을 가졌다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="http://www.incheonilbo.com/news/articleView.html?idxno=1193713" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/37.jpg"  alt="projectimage"/>
+            <h5>인천일보</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news37}
+      {news36}
       {news35}
       {news34}
       {news33}
