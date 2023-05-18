@@ -1039,7 +1039,38 @@ function News() {
       </div>
     </div>
 
+    let news38 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="http://www.ntoday.co.kr/news/articleView.html?idxno=97539" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/38.jpg"  alt="projectimage"/>
+            <h5>투데이신문</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="http://www.ntoday.co.kr/news/articleView.html?idxno=97539" target="_blank"  rel="noreferrer">
+            <h5>상상텃밭 반병현 CTO “특이점의 시대, 자기 성장 위해 챗GPT 써보라”</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.5.17.
+            </p>
+            <p className="bookDescription">
+            이에 투데이신문은 반병현 CTO를 만나 그가 바라보는 AI 산업의 현 주소는 어디쯤인지, 우리는 어떻게 대비해야 하는지를 직접 들어보기로 했다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="http://www.ntoday.co.kr/news/articleView.html?idxno=97539" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/38.jpg"  alt="projectimage"/>
+            <h5>투데이신문</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news38}
       {news37}
       {news36}
       {news35}
