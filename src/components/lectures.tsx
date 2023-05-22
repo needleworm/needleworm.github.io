@@ -1031,11 +1031,16 @@ function Lectures() {
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/60.jpg" alt="projectimage"/>
         <div className="projectText">
-          <h5>챗GPT로 정복하는 영어 (2023)</h5><br/>
+          <h5>평생 무료로 써먹는 나만의 ChatGPT 영어 선생님 (2023)</h5><br/>
             <p className="bookDescription">
               패스트캠퍼스<br/>
               역사상 가장 똑똑한 인공지능, 챗GPT! 챗GPT와 함께 한국인의 오랜 숙원인 영어를 정복해봐요! 균형감각의 이제종 강사님과 함께했습니다.
             </p>
+            <div className="lectureIcons">
+              <a href="https://fastcampus.co.kr/data_online_chatgpte" target="_blank"  rel="noreferrer">
+                {lectureLogo} 강의 링크
+              </a>
+            </div>
         </div>
       </div>  
     </div>
