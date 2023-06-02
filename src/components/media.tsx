@@ -245,10 +245,28 @@ function Media() {
         </div>
       </div>
     </div>
+
+    let media13 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/yh6lx62yHTs" title="12" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="projectText">
+          <h5>[강의 미리보기] 최초/최신 강의! ChatGPT를 활용한 영어 학습</h5><br/>
+            <p className="bookDescription">
+            나만의 영어 선생님이 되는 ChatGPT! ChatGPT 하나로 영어 마스터 하는 법 알려드립니다. 
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=yh6lx62yHTs" target="_blank"  rel="noreferrer">
+              {youtube} 패스트캠퍼스
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
     
     return (
       <div className="websitesContainer">
+        {media13}
         {media12}
         {media11}
         {media10}
