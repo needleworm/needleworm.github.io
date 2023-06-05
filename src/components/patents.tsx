@@ -1373,6 +1373,7 @@ function Patents() {
 
     return (
       <div className="websitesContainer">
+        {patent30}
         {patent29}
         {patent28}
         {patent27}
