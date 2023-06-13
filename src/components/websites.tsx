@@ -582,7 +582,7 @@ function Websites() {
           </a>
           <div className="codeBody">
             <p className="bookDescription">
-              균형감각 팀의 공식 홈페이지입니다.
+              Official website of AI.Eng. This website was built with React.js and @material-ui.
             </p>
           </div>
           <div className="projectIcons">
@@ -603,6 +603,7 @@ function Websites() {
 
     return (
       <div className="websitesContainer">
+        {aieng}
         {blog}
         {ai_voca}
         {dev}
