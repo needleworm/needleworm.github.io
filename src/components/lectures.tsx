@@ -1045,9 +1045,23 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture61 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/61.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT, 마침내 찾아온 특이점 (2023)</h5><br/>
+            <p className="bookDescription">
+              경안고등학교<br/>
+              모교 다녀왔습니다. 졸업한 지 12년이 지났네요. 시설이 어찌나 이렇게 좋아졌는지.
+            </p>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
+        {lecture61}
         {lecture60}
         {lecture59}
         {lecture58}

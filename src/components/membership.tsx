@@ -169,7 +169,6 @@ function Membership() {
     </div>
     </div>
 
-
     let cheesecake = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/cheesecake.jpg" alt="projectimage"/>
@@ -180,7 +179,7 @@ function Membership() {
             </p>
           <div className="lectureIcons">
             <div className="gitIcons">
-              <a href="https://cheesecake.quv.kr" target="_blank"  rel="noreferrer">
+              <a href="https://cheesecake-studio.github.io/" target="_blank"  rel="noreferrer">
                 {link}
               </a>
             </div>
@@ -189,9 +188,28 @@ function Membership() {
       </div>
     </div>
 
+    let ghgg = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/ghgg.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>균형감각 (AI.Eng.)</h5><br/>
+            <p className="bookDescription">
+              AI기술로 영어학습의 혁신을 논의하는 비영리 학술단체입니다.
+            </p>
+          <div className="lectureIcons">
+            <div className="gitIcons">
+              <a href="https://aieng.kr" target="_blank"  rel="noreferrer">
+                {link}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     return (
       <div className="websitesContainer">
+        {ghgg}
         {cheesecake}
         {membership1}
         {membership2}
