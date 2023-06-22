@@ -270,10 +270,10 @@ function Books() {
       <h5><a href="https://aieng.kr" target="_blank"  rel="noreferrer">챗GPT영어교실 <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2023.06. 생능북스</p>
       <ul className="list-inline">
-        <li><a href="#" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K382833859" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="https://product.kyobobook.co.kr/detail/S000202728693" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
+        <li><a href="https://search.shopping.naver.com/book/catalog/40724311622" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+        <li><a href="https://www.yes24.com/Product/Goods/119732698" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
       </ul>
     </div>
 
