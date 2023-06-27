@@ -1069,7 +1069,38 @@ function News() {
       </div>
     </div>
 
+    let news39 = <div className="singleProjectContainer">
+      <div className="singleNewsCard">
+        <a className="hideOnDesktop"  href="http://www.casenews.co.kr/news/articleView.html?idxno=13653" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/39.jpg"  alt="projectimage"/>
+            <h5>사례뉴스</h5>
+          </div>
+          </a>
+        <div className="projectText">
+          <a href="http://www.casenews.co.kr/news/articleView.html?idxno=13653" target="_blank"  rel="noreferrer">
+            <h5>카이스트 출신 반병현 CTO, 챗GPT가 가져온 비즈니스 변화? “구조조정을 통한 수익성 개선이 용이해졌다”</h5>
+          </a>
+          <div className="codeBody">
+            <p className="bookDescription firstCommitDate">
+              2023.06.26.
+            </p>
+            <p className="bookDescription">
+              변병현 CTO와의 인터뷰를 통해 그가 살아온 인생과 챗GPT에 대한 인사이트들을 나눌 수 있었다.
+            </p>
+          </div>
+        </div>
+        <a className="hideOnMobile"  href="http://www.casenews.co.kr/news/articleView.html?idxno=13653" target="_blank"  rel="noreferrer">
+          <div className="newsThumnail">
+            <img className="newsImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/news/39.jpg"  alt="projectimage"/>
+            <h5>사례뉴스</h5>
+          </div>
+          </a>
+      </div>
+    </div>
+
     return <div>
+      {news39}
       {news38}
       {news37}
       {news36}

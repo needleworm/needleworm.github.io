@@ -1058,9 +1058,51 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture62 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/62.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 프롬프트 엔지니어링 (2023)</h5><br/>
+            <p className="bookDescription">
+              세종청사 아카데미<br/>
+              세종시 공무원 100여명을 대상으로 한 4차시 교육입니다. 국내 최초 프롬프트 엔지니어링 강의가 여기서 진행되었습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture63 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/63.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT가 불러올 미래 (2023)</h5><br/>
+            <p className="bookDescription">
+              문경점촌도서관<br/>
+              토요 인문학 특강 다녀왔습니다. 백발 어르신이 무서운 속도로 필기도 하시고 관련 애플리케이션 개발 동향 질문도 하셔서 무척 강렬한 기억으로 남았습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture64 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/64.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT 마침내 찾아온 특이점 (2023)</h5><br/>
+            <p className="bookDescription">
+              하남 미사도서관<br/>
+              하남은 무척 살기 좋아 보이는 도시 같아 보였습니다. 돈 많이 벌면 꼭 하남에 집 사야지.
+            </p>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
+        {lecture64}
+        {lecture63}
+        {lecture62}
         {lecture61}
         {lecture60}
         {lecture59}
