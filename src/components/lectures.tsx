@@ -1097,9 +1097,125 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture65 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/65.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>4차 산업혁명 시대, 우리 아이가 살아남으려면 부모가 바뀌어야 할까? (2023)</h5><br/>
+            <p className="bookDescription">
+              경남학부모아카데미<br/>
+              학부모분들 대상으로 4차산업혁명 분야에 대한 강의를 진행했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture66 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/66.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT시대 우리의 진로 (2023)</h5><br/>
+            <p className="bookDescription">
+              영양여자고등학교<br/>
+              진로특강 겸 상담 진행하고 왔습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture67 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/67.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>쉬운 딥러닝 (2023)</h5><br/>
+            <p className="bookDescription">
+              경안고등학교<br/>
+              올해도 모교 방문하여 딥러닝 시작부터 끝까지 한 번 훑어주고 왔습니다. 대학에 간 졸업생들이 앞다투어 효능을 간증하는 바로 그 강의가 올해도 돌아왔습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture68 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/68.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT에 대한 가장 재미있는 설명 (2023)</h5><br/>
+            <p className="bookDescription">
+              경상북도교육청과학원<br/>
+              포항 과학원에서 교사들 대상으로 스탠딩 코미디를 하고 왔습니다. 13년 전, 여기서 영재교육을 받던 학생이었는데 이제는 강단에 서서 마이크를 잡으니 기분이 묘했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture69 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/69.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>이젠 챗GPT 시대 (2023)</h5><br/>
+            <p className="bookDescription">
+              경북교육청 영덕도서관<br/>
+              영덕군에서 주민 대상 강연을 진행했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture70 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/70.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>부산교육청 (2023)</h5><br/>
+            <p className="bookDescription">
+              부산교육청 영재교육진흥원<br/>
+              이번에도 교사 대상 연수를 하고 왔습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture71 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/71.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>내 시간을 효율적으로 만들어주는 업무 자동화 (2023)</h5><br/>
+            <p className="bookDescription">
+              LG 인화원<br/>
+              LG 전 계열사 직원들 중, 1:7의 경쟁률을 뚫고 선발된 30명의 정예들과 8주간의 그룹스터디를 진행합니다. 저를 만나셨기에 LG는 실적이 수직상승할 것입니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture72 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/72.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>AI시대 일잘러를 위한 비현실적인 400가지 ChatGPT 활용 바이블 (2023)</h5><br/>
+            <p className="bookDescription">
+              패스트캠퍼스 초격차 패키지<br/>
+              현존 최고의 챗GPT 활용 강의에 한 손 거들게 되었습니다.
+            </p>
+            <div className="lectureIcons">
+              <a href="https://fastcampus.co.kr/biz_online_chatgpt400" target="_blank"  rel="noreferrer">
+                {lectureLogo} 강의 링크
+              </a>
+            </div>
+        </div>
+      </div>  
+    </div>
 
     return (
       <div className="websitesContainer">
+        {lecture72}
+        {lecture71}
+        {lecture70}
+        {lecture69}
+        {lecture68}
+        {lecture67}
+        {lecture66}
+        {lecture65}
         {lecture64}
         {lecture63}
         {lecture62}
