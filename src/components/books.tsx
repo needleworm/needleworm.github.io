@@ -292,13 +292,13 @@ function Books() {
     
     let bookSection24 = <div className="singleBookContainer">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/24.jpg" alt="book19" className="bookCoverImage"/>
-      <h5><a href="https://aieng.kr" target="_blank"  rel="noreferrer">챗GPT 영어교실 <i className="fas fa-external-link-alt"></i></a></h5>
+      <h5><a href="https://aieng.kr" target="_blank"  rel="noreferrer">챗GPT 영어회화 <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2023.08. 생능북스</p>
       <ul className="list-inline">
         <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=321904017" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
         <li><a href="https://product.kyobobook.co.kr/detail/S000208357873" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
         <li><a href="https://www.yes24.com/Product/Goods/121173595" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
-        <li><a href="https://www.ypbooks.co.kr/book.yp?bookcd=101249876" target="_blank"  rel="noreferrer">{ypmungo}</a></li>
+        <li><a href="https://search.shopping.naver.com/book/catalog/41736386620" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
       </ul>
     </div>
 
