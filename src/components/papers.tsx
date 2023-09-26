@@ -389,7 +389,7 @@ function Papers () {
                   e.preventDefault()
                   let dummy = document.createElement("textarea");
                   document.body.appendChild(dummy);
-                  dummy.value = 'B. Ban, "Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis," 2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2020, pp. 1531-1536, doi: 10.1109/ICTC49870.2020.9289083.'
+                  dummy.value = 'HY Lee, JM Kwak, B Ban, SJ Na, SR Lee, and HK Lee. "GAN-D: Generative adversarial networks for image deconvolution." 2017 International Conference on Information and Communication Technology Convergence (ICTC). IEEE, 2017.'
                   dummy.select();
                   document.execCommand("copy");
                   document.body.removeChild(dummy);
@@ -548,7 +548,7 @@ function Papers () {
             </span>
             </h5>
             <div className="gitIcons">
-              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/11.pdf" target="_blank"  rel="noreferrer" download>
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/10.pdf" target="_blank"  rel="noreferrer" download>
                 <i className="fas fa-file-pdf"></i>
               </a>
               &nbsp;&nbsp;&nbsp;&nbsp;
