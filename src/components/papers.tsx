@@ -565,10 +565,10 @@ function Papers () {
     <div className="singleWebsiteCard">
       <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/11.jpg" alt="projectimage"/>
       <div className="projectText">
-        <h5>Analysis on English Vocabulary Appearance Pattern in Korean CSAT</h5><br/>
+        <h5>AI Knows Which Words Will Appear in Next Year's Korean CSAT</h5><br/>
           <p className="bookDescription">
-            <strong>Byunghyun Ban</strong>, Jejong Lee, Hyeonmok Hwang (2022)<br/>
-            Preprint (Researchgate)
+            <strong>Byunghyun Ban</strong>, Jejong Lee, Hyeonmok Hwang (2023)<br/>
+            ICTC 2023 (IEEE)
           </p>
         <div className="codeBody">
           <p className="bookDescription">
@@ -583,7 +583,7 @@ function Papers () {
                 e.preventDefault()
                 let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
-                dummy.value = 'Ban, Byunghyun, et al. "Analysis on English Vocabulary Appearance Pattern in Korean CSAT." arXiv preprint arXiv:2211.15426 (2022).'
+                dummy.value = "Ban, Byunghyun, et al. 'AI Knows Which Words Will Appear in Next Year's Korean CSAT.' 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023."
                 dummy.select();
                 document.execCommand("copy");
                 document.body.removeChild(dummy);
@@ -659,11 +659,61 @@ function Papers () {
         </div>
       </div>
     </div>
+    
+    let paper13 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/13.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <h5>CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts</h5><br/>
+          <p className="bookDescription">
+            <strong>Byunghyun Ban (2023)</strong><br/>
+            ICTC 2023
+          </p>
+        <div className="codeBody">
+          <p className="bookDescription">
+            We present 'CongNaMul', a comprehensive dataset designed for various tasks in soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks such as image classification, semantic segmentation, decomposition, and measurement of length and weight. The classification task provides four classes to determine the quality of soybean sprouts: normal, broken, spotted, and broken and spotted, for the development of AI-aided automatic quality inspection technology. For semantic segmentation, images with varying complexity, from single sprout images to images with multiple sprouts, along with human-labelled mask images, are included. The label has 4 different classes: background, head, body, tail. The dataset also provides images and masks for the image decomposition task, including two separate sprout images and their combined form. Lastly, 5 physical features of sprouts (head length, body length, body thickness, tail length, weight) are provided for image-based measurement tasks. This dataset is expected to be a valuable resource for a wide range of research and applications in the advanced analysis of images of soybean sprouts. Also, we hope that this dataset can assist researchers studying classification, semantic segmentation, decomposition, and physical feature measurement in other industrial fields, in evaluating their models. The dataset is available at the authors' repository.
+          </p>
+        </div>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                let dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = 'Ban, Byunghyun. (2023). "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts." 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023."
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+                alert("Citation is copied to Clipboard!")
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://arxiv.org/ftp/arxiv/papers/2308/2308.15690.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://arxiv.org/abs/2308.15690" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="http://bhban.kr/data/" target="_blank"  rel="noreferrer">
+                {gitLogo}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     return (
       <div className="websitesContainer">
-        {paper12}
+        {paper13}
         {paper11}
+        {paper12}
         {paper10}
         {paper9}
         {paper6}

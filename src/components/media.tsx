@@ -262,10 +262,28 @@ function Media() {
         </div>
       </div>
     </div>
+
+    let media14 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <iframe className="websiteImage" src="https://www.youtube.com/embed/Ot3V2Z17EGo" title="12" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="projectText">
+          <h5>육각형게임</h5><br/>
+            <p className="bookDescription">
+              110만 유튜버 <strong>긱블</strong>에서 주최한 대규모 웹예능, <strong>육각형게임</strong>에 출연했습니다.
+            </p>
+          <div className="lectureIcons">
+            <a href="https://www.youtube.com/watch?v=Ot3V2Z17EGo" target="_blank"  rel="noreferrer">
+              {youtube} 예고편
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     
     
     return (
       <div className="websitesContainer">
+        {media14}
         {media13}
         {media12}
         {media11}

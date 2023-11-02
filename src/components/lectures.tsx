@@ -1206,8 +1206,127 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture73 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/73.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>전문가의식과 책임감이 충돌할 때 (2023)</h5><br/>
+            <p className="bookDescription">
+              한국원자력연구원<br/>
+              간만에 챗GPT 이외 토픽으로 강연요청이 들어와 무척 신났습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture74 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/74.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 인공지능의 미래 (2023)</h5><br/>
+            <p className="bookDescription">
+              안성 공도도서관<br/>
+              안성 공도도서관에서 강연을 했습니다. 제 도서를 다양하게 소장하고 있는 것으로 보아 아주 훌륭한 곳입니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture75 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/75.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 업무혁신 (2023)</h5><br/>
+            <p className="bookDescription">
+              벤처기업 신입사원 온보딩<br/>
+              벤처기업 신입사원들이 모여서 교육을 듣는 프로그램이 있나봅니다. 여기에 다녀왔습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture76 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/76.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT (2023)</h5><br/>
+            <p className="bookDescription">
+              인프런 강의<br/>
+              프롬프트 엔지니어링 온라인 강의입니다. 
+            </p>
+            <div className="lectureIcons">
+              <a href="https://inf.run/oSjE6" target="_blank"  rel="noreferrer">
+                {lectureLogo} 강의 링크
+              </a>
+            </div>
+        </div>
+      </div>  
+    </div>
+
+    let lecture77 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/77.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT에 대한 가장 재미있는 설명 (2023)</h5><br/>
+            <p className="bookDescription">
+              안동여고<br/>
+              중학교 시절 담임선생님께서 초대해 주셨습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture78 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/78.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 업무혁신 (2023)</h5><br/>
+            <p className="bookDescription">
+              벤처기업 신입사원 온보딩<br/>
+              감사하게도 다시 불러주셨습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture79 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/79.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT에 대한 가장 재미있는 설명 (2023)</h5><br/>
+            <p className="bookDescription">
+              미추홀구립도서관 문화가 있는 날 특강<br/>
+              어른을 위한 강의 진행했습니다. 어르신들에게 GPT를 이해시키는 대단한 강사가 바로 접니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture80 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/80.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 프롬프트 엔지니어링 (2023)</h5><br/>
+            <p className="bookDescription">
+              2023 하반기 세종청사 아카데미<br/>
+              생성형 AI에 대한 교육입니다. 공무원분들께서 야간에 수업을 들으시는 모습이 인상적이었습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+
+
+
     return (
       <div className="websitesContainer">
+        {lecture79}
+        {lecture78}
+        {lecture77}
+        {lecture76}
+        {lecture75}
+        {lecture74}
+        {lecture73}
         {lecture72}
         {lecture71}
         {lecture70}
