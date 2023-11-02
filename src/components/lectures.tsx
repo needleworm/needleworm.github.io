@@ -1249,7 +1249,7 @@ function Lectures() {
       <div className="singleWebsiteCard">
         <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/76.jpg" alt="projectimage"/>
         <div className="projectText">
-          <h5>챗GPT (2023)</h5><br/>
+          <h5>프롬프트 엔지니어링 (2023)</h5><br/>
             <p className="bookDescription">
               인프런 강의<br/>
               프롬프트 엔지니어링 온라인 강의입니다. 
@@ -1301,21 +1301,6 @@ function Lectures() {
         </div>
       </div>  
     </div>
-
-    let lecture80 = <div className="singleLectureContainer">
-      <div className="singleWebsiteCard">
-        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/80.png" alt="projectimage"/>
-        <div className="projectText">
-          <h5>챗GPT와 프롬프트 엔지니어링 (2023)</h5><br/>
-            <p className="bookDescription">
-              2023 하반기 세종청사 아카데미<br/>
-              생성형 AI에 대한 교육입니다. 공무원분들께서 야간에 수업을 들으시는 모습이 인상적이었습니다.
-            </p>
-        </div>
-      </div>  
-    </div>
-
-
 
 
     return (

@@ -8,7 +8,6 @@ function Books() {
   const naverIcon = <img src='https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/naver.png' className="bookStoreIcon" alt="naver"/>
   const yes24Icon = <img src='https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/yes24.png' className="bookStoreIcon" alt="yes24"/>
   const ridiIcon = <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/ridi.jpg" className="bookStoreIcon" alt="ridibooks"/>
-  const ypmungo = <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/stores/ypmungo.png" className="bookStoreIcon" alt="ridibooks"/>
 
   const drawBooks = () => {
 
@@ -307,7 +306,7 @@ function Books() {
       <h5><a href="https://aieng.kr" target="_blank"  rel="noreferrer">프롬프트 엔지니어링 <i className="fas fa-external-link-alt"></i></a></h5>
       <p className="bookDescription">2023.10. 생능북스</p>
       <ul className="list-inline">
-        <li><a href="#" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K872935139" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
         <li><a href="https://product.kyobobook.co.kr/detail/S000209512470" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
         <li><a href="https://www.yes24.com/Product/Goods/122661870" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
         <li><a href="https://search.shopping.naver.com/book/catalog/42879138623" target="_blank"  rel="noreferrer">{naverIcon}</a></li>

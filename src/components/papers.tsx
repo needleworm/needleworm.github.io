@@ -681,7 +681,7 @@ function Papers () {
                 e.preventDefault()
                 let dummy = document.createElement("textarea");
                 document.body.appendChild(dummy);
-                dummy.value = 'Ban, Byunghyun. (2023). "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts." 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023."
+                dummy.value = 'Ban, Byunghyun. (2023). "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts." 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023.'
                 dummy.select();
                 document.execCommand("copy");
                 document.body.removeChild(dummy);

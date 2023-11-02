@@ -93,7 +93,7 @@ function App () {
 
     const window: HTMLElement = document.querySelector('html') as HTMLElement
 
-    let currentWidth: Number = window.clientWidth
+    let currentWidth: number = window.clientWidth
     if (currentWidth > 800){
       panelCover?.animate(
         [ // Keyframes
@@ -426,11 +426,9 @@ function App () {
               {profilePicButton}
               <h1 className="panel-cover__title panel-title">Byunghyun Ban</h1>
               <nav className="cover-navigation navigation--social">
-                  {github}
-                  {linkedin}
-                  {youtube}
-                  {researchgate}
-                  {blog}
+                {youtube}
+                {github}
+                {linkedin}
               </nav>
               <hr className="panel-cover__divider"/>
               <p className="panel-cover__description">Author, Entrepreneur, Researcher and Developer</p>
@@ -443,10 +441,10 @@ function App () {
                     {books}
                     {lectures}
                     {media}
-                    {codes}
-                    {websites}
                     {papers}
                     {patents}
+                    {codes}
+                    {websites}
                     {news}
                     {socialContribution}
                     {collections}
