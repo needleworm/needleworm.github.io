@@ -25,7 +25,6 @@ function Membership() {
           <h5>AI 미래포럼 (AIFF)</h5><br/>
             <p className="bookDescription">
               <strong>AI for Social Good</strong><br/>
-              AI 미래포럼 창립멤버
             </p>
           <div className="lectureIcons">
             <div className="gitIcons">

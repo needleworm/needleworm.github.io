@@ -14,6 +14,7 @@ import Contact from "./components/contact"
 import Membership from "./components/membership"
 import SocialContribution from "./components/socialContribution"
 import Collections from "./components/collections"
+import Courses from "./components/courses"
 
 
 const sns = {
@@ -170,13 +171,6 @@ function App () {
               </a>
             </span>
 
-    const blog = <span className="navigation__item_sns">
-      <a href="https://brunch.co.kr/@needleworm"  title="My Blog" target="_blank"  rel="noreferrer">
-              <i className="fas fa-pen-square fa-lg"></i>
-              <span className="label">Blog</span>
-            </a>
-          </span>
-
     const profilePicButton = <a href="#home" title="Home">
       <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/profile_pic.jpg" className="user-image" alt="My Profile"
         onClick={
@@ -206,25 +200,6 @@ function App () {
         }
       >
         <i className="fas fa-book"></i>&nbsp;Books
-      </a>
-    </li>
-
-    let websites = <li className="navigation__item">
-      <a href="#websites" title="Websites" className="panel-button projects-button"
-        onClick={
-          function(e){
-            if (latestButton === "websites"){
-              closeSideMenu()
-            } else{
-              setContent("websites")
-              setLatestButton("websites")
-              openSideMenu()
-              bouncing()
-            }
-          }
-        }
-      >
-        <i className="fas fa-laptop-code"></i>&nbsp;Web
       </a>
     </li>
 
@@ -297,9 +272,28 @@ function App () {
             }
           }
         }>
-        <i className="fas fa-chalkboard-teacher"></i>&nbsp;Lectures
+        <i className="fa-solid fa-person-chalkboard"/>&nbsp;Lectures
       </a>
     </li>
+
+    let courses = <li className="navigation__item">
+      <a href="#courses" title="Courses" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (latestButton === "courses"){
+              closeSideMenu()
+            } else{
+              setContent("courses")
+              setLatestButton("courses")
+              openSideMenu()
+              bouncing()
+            }
+          }
+        }>
+        <i className="fas fa-chalkboard-teacher"></i>&nbsp;Courses
+      </a>
+    </li>
+
     let news = <li className="navigation__item">
       <a href="#news" title="Me on Newses"
         onClick={
@@ -372,6 +366,33 @@ function App () {
       </a>
     </li>
 
+    let collections = <li className="navigation__item">
+      <a href="#collections" title="collections" className="panel-button projects-button"
+        onClick={
+          function(e){
+            if (latestButton === "collections"){
+              closeSideMenu()
+            } else{
+              setContent("collections")
+              setLatestButton("collections")
+              openSideMenu()
+              bouncing()
+            }
+          }
+        }
+      >
+        <i className="fa-solid fa-palette"></i>&nbsp;Collections
+      </a>
+    </li>
+
+    /*
+    const blog = <span className="navigation__item_sns">
+      <a href="https://brunch.co.kr/@needleworm"  title="My Blog" target="_blank"  rel="noreferrer">
+              <i className="fas fa-pen-square fa-lg"></i>
+              <span className="label">Blog</span>
+            </a>
+          </span>
+
     let socialContribution = <li className="navigation__item">
       <a href="#socialContribution" title="socialContribution" className="panel-button projects-button"
         onClick={
@@ -391,24 +412,25 @@ function App () {
       </a>
     </li>
 
-    let collections = <li className="navigation__item">
-      <a href="#collections" title="collections" className="panel-button projects-button"
+    let websites = <li className="navigation__item">
+      <a href="#websites" title="Websites" className="panel-button projects-button"
         onClick={
           function(e){
-            if (latestButton === "collections"){
+            if (latestButton === "websites"){
               closeSideMenu()
             } else{
-              setContent("collections")
-              setLatestButton("collections")
+              setContent("websites")
+              setLatestButton("websites")
               openSideMenu()
               bouncing()
             }
           }
         }
       >
-        <i className="fa-solid fa-palette"></i>&nbsp;Collections
+        <i className="fas fa-laptop-code"></i>&nbsp;Web
       </a>
     </li>
+    */
 
     let mobileButtenMenu =  <span className="mobile btn-mobile-menu"
       onClick={bouncing_mobile}
@@ -429,6 +451,7 @@ function App () {
                 {youtube}
                 {github}
                 {linkedin}
+                {researchgate}
               </nav>
               <hr className="panel-cover__divider"/>
               <p className="panel-cover__description">Author, Entrepreneur, Researcher and Developer</p>
@@ -439,14 +462,13 @@ function App () {
                 <nav className="cover-navigation navigation--social">
                   <ul className="navigation">
                     {books}
+                    {courses}
                     {lectures}
                     {media}
                     {papers}
                     {patents}
                     {codes}
-                    {websites}
                     {news}
-                    {socialContribution}
                     {collections}
                     {membership}
                     {contact}
@@ -522,17 +544,21 @@ function App () {
       return (
         <Contact/>
       )
-    }else if (content === "membership"){
+    } else if (content === "membership"){
       return (
         <Membership/>
       )
-    }else if (content === "socialContribution"){
+    } else if (content === "socialContribution"){
       return (
         <SocialContribution/>
       )
-    }else if (content === "collections"){
+    } else if (content === "collections"){
       return (
         <Collections/>
+      )
+    } else if (content === "courses"){
+      return (
+        <Courses/>
       )
     }
   }

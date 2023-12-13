@@ -1,6 +1,6 @@
 .panel-cover {
     maxWidth: 100%;
-    background-image: 'https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/책표지 모음.png'
+    background-image: 'https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/bookcovers.png'
 }
 
 
@@ -553,7 +553,7 @@ hr {
     width:100%;
     max-width:100%;
     height:100%;
-    background:url('./images/background.jpg') top left no-repeat #666;
+    background:url('./images/bookcovers.png') top left no-repeat #666;
     background-size:cover
 }
 

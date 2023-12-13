@@ -312,9 +312,34 @@ function Books() {
         <li><a href="https://search.shopping.naver.com/book/catalog/42879138623" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
       </ul>
     </div>
+    
+    let bookSection26 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/26.png" alt="book19" className="bookCoverImage"/>
+      <h5>나보다 똑똑한 AI와 사는 법</h5>
+      <p className="bookDescription">2023.12. 북트리거</p>
+      <ul className="list-inline">
+        <li><a href="#" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+        <li><a href="#" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+      </ul>
+    </div>
+    
+    let bookSection27 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/27.png" alt="book19" className="bookCoverImage"/>
+      <h5>카이스트 공부벌레들</h5>
+      <p className="bookDescription">2012.12. 살림Friends</p>
+      <ul className="list-inline">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8952222210" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="https://product.kyobobook.co.kr/detail/S000000721696" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
+        <li><a href="https://www.yes24.com/Product/Goods/8127931" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+        <li><a href="https://search.shopping.naver.com/book/catalog/32503858072" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+      </ul>
+    </div>
 
     return(
       <div className="bookContainer">
+        {bookSection26}
         {bookSection25}
         {bookSection24}
         {bookSection23}
@@ -340,6 +365,7 @@ function Books() {
         {bookSection3}
         {bookSection2}
         {bookSection1}
+        {bookSection27}
         {bookSection0}
       </div>
     )

@@ -221,7 +221,9 @@ function Collections() {
   }
 
   return (
-      <section id="websites" className="animated bounceInDown">{sectionTitle()}{drawWebsites()}
+      <section id="collections" className="animated bounceInDown">
+        {sectionTitle()}
+        {drawWebsites()}
     </section>
   );
 }
