@@ -318,10 +318,10 @@ function Books() {
       <h5>나보다 똑똑한 AI와 사는 법</h5>
       <p className="bookDescription">2023.12. 북트리거</p>
       <ul className="list-inline">
-        <li><a href="#" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
-        <li><a href="#" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K302937684" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="https://product.kyobobook.co.kr/detail/S000211656067" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
+        <li><a href="https://www.yes24.com/Product/Goods/124129560" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+        <li><a href="https://search.shopping.naver.com/book/catalog/44639212631" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
       </ul>
     </div>
     
