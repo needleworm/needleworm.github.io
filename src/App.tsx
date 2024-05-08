@@ -454,8 +454,8 @@ function App () {
                 {researchgate}
               </nav>
               <hr className="panel-cover__divider"/>
-              <p className="panel-cover__description">Author, Entrepreneur, Researcher and Developer</p>
-              <p className="panel-cover__description">Working at <a href="https://sangsang.farm">Imagination Garden Inc.</a> as CTO.</p>
+              <p className="panel-cover__description">Author, Entrepreneur, Researcher and Developer,</p>
+              <p className="panel-cover__description">And <a href="https://www.youtube.com/channel/UCpV0ZdloVwvSjxHfnYYQPQg?sub_confirmation=1">YouTube Creator</a>.</p>
               <hr className="panel-cover__divider panel-cover__divider--secondary"/>
               <div className="navigation-wrapper">
                 <br/>
