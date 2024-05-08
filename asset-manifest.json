@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.2586cd74.css",
-    "main.js": "/static/js/main.3a23d6ff.js",
+    "main.js": "/static/js/main.2f7e269a.js",
     "static/js/787.b2010ada.chunk.js": "/static/js/787.b2010ada.chunk.js",
     "static/media/bookcovers.png": "/static/media/bookcovers.bcd4796fde9a62c3cbc9.png",
     "index.html": "/index.html",
     "main.2586cd74.css.map": "/static/css/main.2586cd74.css.map",
-    "main.3a23d6ff.js.map": "/static/js/main.3a23d6ff.js.map",
+    "main.2f7e269a.js.map": "/static/js/main.2f7e269a.js.map",
     "787.b2010ada.chunk.js.map": "/static/js/787.b2010ada.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2586cd74.css",
-    "static/js/main.3a23d6ff.js"
+    "static/js/main.2f7e269a.js"
   ]
 }
