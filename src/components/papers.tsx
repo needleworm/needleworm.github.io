@@ -2,9 +2,7 @@ import React from 'react';
 import './papers.css';
 
 
-
 function Papers () {
-
   const sectionTitle = () => {
     return(
       <div className="row">
@@ -37,13 +35,27 @@ function Papers () {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                let dummy = document.createElement("textarea");
-                document.body.appendChild(dummy);
-                dummy.value = 'Byung-Hyun Ban. "Cardiac CT image segmentation with adversarial networks." Master\'s Thesis, Korea Advanced Institute of Science and Technology, 2018.'
-                dummy.select();
-                document.execCommand("copy");
-                document.body.removeChild(dummy);
-                alert("Citation is copied to Clipboard!")
+                const citationText = 'Byung-Hyun Ban. "Cardiac CT image segmentation with adversarial networks." Master\'s Thesis, Korea Advanced Institute of Science and Technology, 2018.'
+
+                // Clipboard API 사용
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(citationText)
+                    .then(() => {
+                      alert("Citation is copied to Clipboard!");
+                    })
+                    .catch(err => {
+                      console.error('Failed to copy text: ', err);
+                    });
+                } else {
+                  // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                  let dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = citationText;
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!");
+                }
               }
             }>
               <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -441,13 +453,26 @@ function Papers () {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                let dummy = document.createElement("textarea");
-                document.body.appendChild(dummy);
-                dummy.value = 'Choo, SM., Ban, B., Joo, J.I. et al. The phenotype control kernel of a biomolecular regulatory network. BMC Syst Biol 12, 49 (2018). https://doi.org/10.1186/s12918-018-0576-8'
-                dummy.select();
-                document.execCommand("copy");
-                document.body.removeChild(dummy);
-                alert("Citation is copied to Clipboard!")
+                const citationText = 'Choo, SM., Ban, B., Joo, J.I. et al. The phenotype control kernel of a biomolecular regulatory network. BMC Syst Biol 12, 49 (2018). https://doi.org/10.1186/s12918-018-0576-8'
+                // Clipboard API 사용
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(citationText)
+                    .then(() => {
+                      alert("Citation is copied to Clipboard!");
+                    })
+                    .catch(err => {
+                      console.error('Failed to copy text: ', err);
+                    });
+                } else {
+                  // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                  let dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = citationText;
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!");
+                }
               }
             }>
               <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -490,13 +515,26 @@ function Papers () {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                let dummy = document.createElement("textarea");
-                document.body.appendChild(dummy);
-                dummy.value = 'B. Ban, "A Survey on Awesome Korean NLP Datasets," 2022 13th International Conference on Information and Communication Technology Convergence (ICTC), 2022, pp. 1615-1620, doi: 10.1109/ICTC55196.2022.9952930.'
-                dummy.select();
-                document.execCommand("copy");
-                document.body.removeChild(dummy);
-                alert("Citation is copied to Clipboard!")
+                const citationText = 'B. Ban, "A Survey on Awesome Korean NLP Datasets," 2022 13th International Conference on Information and Communication Technology Convergence (ICTC), 2022, pp. 1615-1620, doi: 10.1109/ICTC55196.2022.9952930.'
+                // Clipboard API 사용
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(citationText)
+                    .then(() => {
+                      alert("Citation is copied to Clipboard!");
+                    })
+                    .catch(err => {
+                      console.error('Failed to copy text: ', err);
+                    });
+                } else {
+                  // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                  let dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = citationText;
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!");
+                }
               }
             }>
               <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -535,13 +573,26 @@ function Papers () {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                let dummy = document.createElement("textarea");
-                document.body.appendChild(dummy);
-                dummy.value = 'Ban, Byunghyun. "Mixed Reality Interface for Digital Twin of Plant Factory." arXiv preprint arXiv:2211.00597 (2022).'
-                dummy.select();
-                document.execCommand("copy");
-                document.body.removeChild(dummy);
-                alert("Citation is copied to Clipboard!")
+                const citationText = 'Ban, Byunghyun. "Mixed Reality Interface for Digital Twin of Plant Factory." arXiv preprint arXiv:2211.00597 (2022).'
+                // Clipboard API 사용
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(citationText)
+                    .then(() => {
+                      alert("Citation is copied to Clipboard!");
+                    })
+                    .catch(err => {
+                      console.error('Failed to copy text: ', err);
+                    });
+                } else {
+                  // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                  let dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = citationText;
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!");
+                }
               }
             }>
               <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -581,13 +632,26 @@ function Papers () {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                let dummy = document.createElement("textarea");
-                document.body.appendChild(dummy);
-                dummy.value = "Ban, Byunghyun, et al. 'AI Knows Which Words Will Appear in Next Year's Korean CSAT.' 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023."
-                dummy.select();
-                document.execCommand("copy");
-                document.body.removeChild(dummy);
-                alert("Citation is copied to Clipboard!")
+                const citationText = "Ban, Byunghyun, et al. 'AI Knows Which Words Will Appear in Next Year's Korean CSAT.' 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023."
+                // Clipboard API 사용
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(citationText)
+                    .then(() => {
+                      alert("Citation is copied to Clipboard!");
+                    })
+                    .catch(err => {
+                      console.error('Failed to copy text: ', err);
+                    });
+                } else {
+                  // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                  let dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = citationText;
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!");
+                }
               }
             }>
               <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -630,13 +694,26 @@ function Papers () {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                let dummy = document.createElement("textarea");
-                document.body.appendChild(dummy);
-                dummy.value = 'Ban, Byunghyun, et al. (2022). "Analysis on English Vocabulary Appearance Pattern in Korean CSAT." Journal of The Korean Association of Artificial Intelligence Education, 3(3), 15-23'
-                dummy.select();
-                document.execCommand("copy");
-                document.body.removeChild(dummy);
-                alert("Citation is copied to Clipboard!")
+                const citationText = 'Ban, Byunghyun, et al. (2022). "Analysis on English Vocabulary Appearance Pattern in Korean CSAT." Journal of The Korean Association of Artificial Intelligence Education, 3(3), 15-23'
+                // Clipboard API 사용
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(citationText)
+                    .then(() => {
+                      alert("Citation is copied to Clipboard!");
+                    })
+                    .catch(err => {
+                      console.error('Failed to copy text: ', err);
+                    });
+                } else {
+                  // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                  let dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = citationText;
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!");
+                }
               }
             }>
               <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -679,13 +756,26 @@ function Papers () {
             <span className="citation"  onClick={
               function(e){
                 e.preventDefault()
-                let dummy = document.createElement("textarea");
-                document.body.appendChild(dummy);
-                dummy.value = 'Ban, Byunghyun. (2023). "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts." 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023.'
-                dummy.select();
-                document.execCommand("copy");
-                document.body.removeChild(dummy);
-                alert("Citation is copied to Clipboard!")
+                const citationText = 'Ban, Byunghyun. (2023). "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts." 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023.'
+                // Clipboard API 사용
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(citationText)
+                    .then(() => {
+                      alert("Citation is copied to Clipboard!");
+                    })
+                    .catch(err => {
+                      console.error('Failed to copy text: ', err);
+                    });
+                } else {
+                  // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                  let dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = citationText;
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!");
+                }
               }
             }>
               <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -708,9 +798,68 @@ function Papers () {
         </div>
       </div>
     </div>
+    
+    let paper14 = <div className="singleProjectContainer">
+    <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/14.jpg" alt="projectimage"/>
+      <div className="projectText">
+        <h5>FAKER: Full-body Anonymization with Human Keypoint Extraction for Real-time Video Deidentification</h5><br/>
+          <p className="bookDescription">
+            <strong>Byunghyun Ban*, Hyoseok Lee (2024)</strong><br/>
+            ArXiv Preprint
+          </p>
+        <div className="codeBody">
+          <p className="bookDescription">
+            In the contemporary digital era, protection of personal information has become a paramount issue. The exponential growth of the media industry has heightened concerns regarding the anonymization of individuals captured in video footage. Traditional methods, such as blurring or pixelation, are commonly employed, while recent advancements have introduced generative adversarial networks (GAN) to redraw faces in videos. In this study, we propose a novel approach that employs a significantly smaller model to achieve real-time full-body anonymization of individuals in videos. Unlike conventional techniques that often fail to effectively remove personal identification information such as skin color, clothing, accessories, and body shape while our method successfully eradicates all such details. Furthermore, by leveraging pose estimation algorithms, our approach accurately represents information regarding individuals' positions, movements, and postures. This algorithm can be seamlessly integrated into CCTV or IP camera systems installed in various industrial settings, functioning in real-time and thus facilitating the widespread adoption of full-body anonymization technology.
+          </p>
+        </div>
+        <div className="projectIcons">
+          <h5>
+            <span className="citation"  onClick={
+              function(e){
+                e.preventDefault()
+                const citationText = 'Byunghyun Ban and Hyoseok Lee (2024). "FAKER: Full-body Anonymization with Human Keypoint Extraction for Real-time Video Deidentification" ArXiv Preprint, arXiv:2408.11829, 2024.'
+                // Clipboard API 사용
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(citationText)
+                    .then(() => {
+                      alert("Citation is copied to Clipboard!");
+                    })
+                    .catch(err => {
+                      console.error('Failed to copy text: ', err);
+                    });
+                } else {
+                  // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                  let dummy = document.createElement("textarea");
+                  document.body.appendChild(dummy);
+                  dummy.value = citationText;
+                  dummy.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(dummy);
+                  alert("Citation is copied to Clipboard!");
+                }
+              }
+            }>
+              <i className="far fa-clipboard"></i>&nbsp;Cite This
+            </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://arxiv.org/pdf/2408.11829" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://arxiv.org/abs/2408.11829" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     return (
       <div className="websitesContainer">
+        {paper14}
         {paper13}
         {paper11}
         {paper12}

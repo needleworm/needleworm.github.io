@@ -29,20 +29,34 @@ function Patents() {
               <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.10.07.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이장훈, 류동훈, 이민우, 권영범, 엄태동<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban et al. Nutrient control device and method capable of automatic calibration of sensor. KR Patent 10-2162817 (2020)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban et al. Nutrient control device and method capable of automatic calibration of sensor. KR Patent 10-2162817 (2020)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -78,20 +92,34 @@ function Patents() {
               <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.07.27.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;이장훈, 반병현<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Janghun Lee and Byunghyun Ban. Data processing server and method. KR Patent 10-2139928 (2020)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Janghun Lee and Byunghyun Ban. Data processing server and method. KR Patent 10-2139928 (2020)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -123,20 +151,34 @@ function Patents() {
               <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.07.10.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban. Apparatus and method for cultivating nutrient solution capable of adjusting dissolved oxygen and nutrient solution concentration. KR Patent 10-2134655 (2020)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban. Apparatus and method for cultivating nutrient solution capable of adjusting dissolved oxygen and nutrient solution concentration. KR Patent 10-2134655 (2020)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -168,7 +210,7 @@ function Patents() {
             <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.05.29.</div>
           </div>
           <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
-          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
         </div>
         <div className="projectIcons">
           <h5>
@@ -221,7 +263,7 @@ function Patents() {
             <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.01.16.</div>
           </div>
           <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우, 류동훈<br/>
-          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
         </div>
         <div className="projectIcons">
           <h5>
@@ -274,7 +316,7 @@ function Patents() {
             <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2019.12.03.</div>
           </div>
           <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우, 류동훈<br/>
-          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
         </div>
         <div className="projectIcons">
           <h5>
@@ -327,7 +369,7 @@ function Patents() {
             <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.04.07.</div>
           </div>
           <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 김수빈<br/>
-          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
         </div>
         <div className="projectIcons">
           <h5>
@@ -438,20 +480,34 @@ function Patents() {
               <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2021.08.06.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban et al. Apparatus and method for inferring algae concentration in hydroponic nutrient solution through dissolved oxygen concentration and dissolved carbon dioxide concentration analysis. KR Patent 10-2289069 (2021)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban et al. Apparatus and method for inferring algae concentration in hydroponic nutrient solution through dissolved oxygen concentration and dissolved carbon dioxide concentration analysis. KR Patent 10-2289069 (2021)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -483,20 +539,34 @@ function Patents() {
               <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2021.09.28.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 류동훈, 김수빈, 이민우, 권영범<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban et al. Hydroponic cultivation bed and method of hydroponic cultivation using root growth information. KR Patent 10-2308623 (2021)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban et al. Hydroponic cultivation bed and method of hydroponic cultivation using root growth information. KR Patent 10-2308623 (2021)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -528,20 +598,34 @@ function Patents() {
               <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.09.29.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban. Device and method for agricultural nutrient solution analysis using network model modeled by boolean equation. KR Applied Patent 10-2021-0118950 (2021)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban. Device and method for agricultural nutrient solution analysis using network model modeled by boolean equation. KR Applied Patent 10-2021-0118950 (2021)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -573,7 +657,7 @@ function Patents() {
             <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.09.29.</div>
           </div>
           <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우, 장승엽<br/>
-          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
         </div>
         <div className="projectIcons">
           <h5>
@@ -618,7 +702,7 @@ function Patents() {
             <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.10.06.</div>
           </div>
           <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
-          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
         </div>
         <div className="projectIcons">
           <h5>
@@ -663,7 +747,7 @@ function Patents() {
               <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.10.07.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
         <div className="projectIcons">
           <h5>
@@ -714,14 +798,28 @@ function Patents() {
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban. MUSIC SEARCH METHOD BASED ON NEURAL NETWORK. KR Applied Patent 10-2017-0025908 (2017)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban. MUSIC SEARCH METHOD BASED ON NEURAL NETWORK. KR Applied Patent 10-2017-0025908 (2017)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -759,14 +857,28 @@ function Patents() {
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban. MUSIC COMPOSITION METHOD BASED ON DEEP REINFORCEMENT LEARNING. KR Applied Patent 10-2017-0024223 (2017)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban. MUSIC COMPOSITION METHOD BASED ON DEEP REINFORCEMENT LEARNING. KR Applied Patent 10-2017-0024223 (2017)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -804,14 +916,28 @@ function Patents() {
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban. Method for processing audio signal using machine learning. KR Applied Patent 10-2016-0167317 (2016)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban. Method for processing audio signal using machine learning. KR Applied Patent 10-2016-0167317 (2016)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -849,14 +975,28 @@ function Patents() {
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban. MELODY EXTRACTION METHOD FROM MUSIC SIGNAL. KR Applied Patent 10-2016-0169802 (2016)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban. MELODY EXTRACTION METHOD FROM MUSIC SIGNAL. KR Applied Patent 10-2016-0169802 (2016)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -1113,7 +1253,7 @@ function Patents() {
             <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2022.07.19.</div>
           </div>
           <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
-          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+          <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
         </div>
         <div className="projectIcons">
           <h5>
@@ -1158,20 +1298,34 @@ function Patents() {
               <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2022.02.15.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban. Advising device and method for crop cultivation work using artificial intelligence model. KR Applied Patent 10-2022-0012245 (2022)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban. Advising device and method for crop cultivation work using artificial intelligence model. KR Applied Patent 10-2022-0012245 (2022)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -1203,20 +1357,34 @@ function Patents() {
               <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2022.08.16.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현 외 10인<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban, et al. Intelligent Plant factory system for medical and industrial hemp and AI assistance server. KR Patent 10-2434102 (2022)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban, et al. Intelligent Plant factory system for medical and industrial hemp and AI assistance server. KR Patent 10-2434102 (2022)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -1248,20 +1416,34 @@ function Patents() {
               <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2023.02.13.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban. Automating device and method for cutting medical hemp using vision recognition. KR Patent 10-2500388 (2023)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban. Automating device and method for cutting medical hemp using vision recognition. KR Patent 10-2500388 (2023)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -1293,20 +1475,34 @@ function Patents() {
               <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2023.03.06.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 김준산, 이민우<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban, et al. Apparatus and method for automatically managing cultivation of medical cannabis cuttings. KR Patent 10-2508469 (2023)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban, et al. Apparatus and method for automatically managing cultivation of medical cannabis cuttings. KR Patent 10-2508469 (2023)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -1338,20 +1534,34 @@ function Patents() {
               <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2023.05.26.</div>
             </div>
             <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
-            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;농업회사법인 상상텃밭 (주)<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
           </div>
           <div className="projectIcons">
             <h5>
               <span className="citation"  onClick={
                 function(e){
-                  e.preventDefault()
-                  let dummy = document.createElement("textarea");
-                  document.body.appendChild(dummy);
-                  dummy.value = 'Byunghyun Ban, et al. Apparatus and method for providing plant factory digital twin interface using 3D image reconstruction algorithm. KR Patent 10-2538747 (2023)'
-                  dummy.select();
-                  document.execCommand("copy");
-                  document.body.removeChild(dummy);
-                  alert("Citation is copied to Clipboard!")
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban, et al. Apparatus and method for providing plant factory digital twin interface using 3D image reconstruction algorithm. KR Patent 10-2538747 (2023)'
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
                 }
               }>
                 <i className="far fa-clipboard"></i>&nbsp;Cite This
@@ -1371,8 +1581,67 @@ function Patents() {
       </div>
     </div>
 
+    let patent31 = <div className="singleProjectContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/31.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>층류 형성을 유도하는 인공지능 기반 사물인터넷 시스템과 이를 활용한 수경재배 삽목 및 육묘 장치</h5><br/>
+          <div className="bookDescription">
+            <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2023-0185372 
+            <div className="patentInfo">
+              <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2023.12.19</div>
+            </div>
+            <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br/>
+            <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br/>
+          </div>
+          <div className="projectIcons">
+            <h5>
+              <span className="citation" onClick={
+                function(e) {
+                  e.preventDefault();
+                  const citationText = 'Byunghyun Ban, et al. IoT assisted laminar flow generator for hydroponic cultivation. KR Applied Patent 10-2023-0185372 (2023)';
+
+                  // Clipboard API 사용
+                  if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(citationText)
+                      .then(() => {
+                        alert("Citation is copied to Clipboard!");
+                      })
+                      .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                      });
+                  } else {
+                    // Clipboard API를 지원하지 않는 경우, fallback 방법 사용
+                    let dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = citationText;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                    alert("Citation is copied to Clipboard!");
+                  }
+                }
+              }>
+                <i className="far fa-clipboard"></i>&nbsp;Cite This
+              </span>
+            </h5>
+            <div className="gitIcons">
+              <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/10-2023-0185372.pdf" target="_blank"  rel="noreferrer" download>
+                <i className="fas fa-file-pdf"></i>
+              </a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://doi.org/10.8080/1020230185372" target="_blank"  rel="noreferrer">
+                <i className="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     return (
       <div className="websitesContainer">
+        {patent31}
         {patent30}
         {patent29}
         {patent28}
