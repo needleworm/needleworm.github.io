@@ -1008,9 +1008,93 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture86 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/86.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>4차 산업 혁명 시대의 스마트팜 현황 (2024)</h5><br/>
+            <p className="bookDescription">
+              충북 직업전환 교육기관 지정 운영 시범사업 특강<br/>
+              충북 직업전환 교육기관 지정 운영 사업에 참가하는 기관 담당자들을 대상으로 특강을 제공했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture87 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/87.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 파생 기술들 (2024)</h5><br/>
+            <p className="bookDescription">
+              삼성전자 DA사업부<br/>
+              삼성전자 DA사업부 임직원 350여명을 대상으로 특강을 진행했습니다. 특히, 생성형 AI가 생산시설 자동화와 품질관리 분야에 어떻게 적용될 수 있는지에 중점을 두고 최신 연구 결과들을 요약하여 전달했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture88 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/88.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>이제는 모두가 알아야 할 프롬프트 엔지니어링 (2024)</h5><br/>
+            <p className="bookDescription">
+              용인 수지도서관 북타임<br/>
+              용인 수지도서관에서 다시 초청해 주셔서 특강을 제공하고 왔습니다. 이제는 모든 사람들이 챗GPT를 효율적으로 다루고, 스마트하게 질문을 설계하는 방법에 대하여 알아야 하지요. 이에 누구나 쉽게 활용할 수 있는 프롬프트 엔지니어링 기법을 소개했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture89 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/89.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 파생 기술들 - LLM 열풍 1년 반, 무엇이 바뀌었나? (2024)</h5><br/>
+            <p className="bookDescription">
+              1차 융합독서특강<br/>
+              동국대 사범대 부속고등학교 도서관에서 초청해주셔서 특강을 진행했습니다. 진로형성에 있어 가장 중요한 시기를 겪고 있는 고등학생들을 대상으로, AI산업이 어디까지 발전했는지, 어떤 산업의 기회가 축소되거나 신설되고 있는지에 대한 인사이트를 제공했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture90 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/90.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>인간을 대체할 수 있는 AI 소프트웨어, 어디까지 왔을까? (2024)</h5><br/>
+            <p className="bookDescription">
+              울진도서관 특화주제 과학 핵꿀잼<br/>
+              울진군의 청소년들과 어르신들을 대상으로 챗GPT 관련 특강을 진행했습니다. 흰머리 지긋하신 어르신들께서 적극적인 자세로 새로운 지식을 습득하기 위하여 노력하시는 모습이 인상깊었습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture91 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/91.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>AI시대의 기획자를 위한 코파일럿, 챗GPT 활용 노하우 (2024)</h5><br/>
+            <p className="bookDescription">
+              안랩 기획자 스쿨<br/>
+              안랩 소속 기획자들이 모두 모이는 기획자 스쿨에서 코파일럿과 챗GPT 등을 효율적으로 활용하는 방법에 대한 특강을 진행했습니다. 기획자 직무도 ENFP가 많은 것 같았습니다. 활기찬 분위기에 무척 즐거웠습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
+        {lecture91}
+        {lecture90}
+        {lecture89}
+        {lecture88}
+        {lecture87}
+        {lecture86}
         {lecture85}
         {lecture84}
         {lecture83}

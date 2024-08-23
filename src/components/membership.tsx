@@ -206,8 +206,22 @@ function Membership() {
       </div>
     </div>
 
+    let itq = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/membership/itq.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>ITQ 출제위원</h5><br/>
+            <p className="bookDescription">
+              2024년부터 국가공인 정보기술자격 ITQ 출제위원으로 참여하고 있습니다.
+            </p>
+        </div>
+      </div>
+    </div>
+
+
     return (
       <div className="websitesContainer">
+        {itq}
         {ghgg}
         {cheesecake}
         {membership1}
