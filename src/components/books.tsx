@@ -336,9 +336,35 @@ function Books() {
         <li><a href="https://search.shopping.naver.com/book/catalog/32503858072" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
       </ul>
     </div>
+    
+    let bookSection28 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/28.jpg" alt="book19" className="bookCoverImage"/>
+      <h5>챗GPT 수능독해</h5>
+      <p className="bookDescription">2024.02. 생능북스</p>
+      <ul className="list-inline">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K762938384" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="https://product.kyobobook.co.kr/detail/S000212169752" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
+        <li><a href="https://www.yes24.com/Product/Goods/124769179" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+        <li><a href="https://search.shopping.naver.com/book/catalog/45475313619" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+      </ul>
+    </div>
+    
+    let bookSection29 = <div className="singleBookContainer">
+      <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/books/covers/29.jpg" alt="book19" className="bookCoverImage"/>
+      <h5>코파일럿</h5>
+      <p className="bookDescription">2024.03. 생능북스</p>
+      <ul className="list-inline">
+        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K562939114" target="_blank"  rel="noreferrer">{alladinIcon}</a></li>
+        <li><a href="https://product.kyobobook.co.kr/detail/S000212725343" target="_blank"  rel="noreferrer">{kyoboIcon}</a></li>
+        <li><a href="https://www.yes24.com/Product/Goods/125480842" target="_blank"  rel="noreferrer">{yes24Icon}</a></li>
+        <li><a href="https://search.shopping.naver.com/book/catalog/46408580621" target="_blank"  rel="noreferrer">{naverIcon}</a></li>
+      </ul>
+    </div>
 
     return(
       <div className="bookContainer">
+        {bookSection29}
+        {bookSection28}
         {bookSection26}
         {bookSection25}
         {bookSection24}
