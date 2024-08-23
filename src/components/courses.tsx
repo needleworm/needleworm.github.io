@@ -359,8 +359,55 @@ function Courses() {
       </div>
     </div>
 
+    let course21 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/21.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>생성형 AI와 함께 업무 효율 대폭발을 준비하세요! (2024)</h5><br/>
+            <p className="bookDescription">
+              LG 인화원<br/>
+              2024 상반기에도 LG 인화원을 통해 LG 전 계열사 임직원들과의 스터디를 진행했습니다. 생성형 AI에 대한 관심도가 매우 뜨거운 시기다 보니 수강생분들의 열정이 뜨거워 무척이나 즐거운 시간이었습니다. 압도적으로 좋은 평가를 받아 하반기에도 동일한 코스가 개설됩니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let course22 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/22.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>AI시대 일잘러가 되기 위한 실무 마스터 클래스 (2024)</h5><br/>
+            <p className="bookDescription">
+              패스트캠퍼스 초격차 패키지<br/>
+              현존 최고의 실무 역량 교육 강의에 참가했습니다. 저는 주로 AI를 활용한 사무업무 부분과 Copilot을 다룹니다.
+            </p>
+            <div className="lectureIcons gitIcons">
+              <a href="https://fastcampus.co.kr/biz_online_workai" target="_blank"  rel="noreferrer">
+                {courseLogo} 강의 링크
+              </a>
+            </div>
+        </div>
+      </div>  
+    </div>
+
+    let course23 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+        <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/23.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT를 활용한 지역문화진흥 업무역량 강화 (2024)</h5><br/>
+            <p className="bookDescription">
+              문체부 지역문화진흥원 교육컨텐츠<br/>
+              공직자 교육을 위한 온라인 강의입니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
     return (
       <div className="websitesContainer">
+        {course23}
+        {course22}
+        {course21}
         {course15}
         {course14}
         {course13}
