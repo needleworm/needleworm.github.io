@@ -932,7 +932,7 @@ function Lectures() {
 
     let lecture80 = <div className="singleLectureContainer">
       <div className="singleWebsiteCard">
-        <iframe className="YoutubePreview" src="https://www.youtube.com/embed/2BpJiBQJ9-0" title="12" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/80.jpg" alt="projectimage"/>
         <div className="projectText">
           <h5>챗GPT 출시 1주년, 세상은 어떻게 바뀌었나? (2023)</h5><br/>
             <p className="bookDescription">
@@ -943,9 +943,79 @@ function Lectures() {
       </div>  
     </div>
 
+    let lecture81 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/81.png" alt="projectimage"/>
+        <div className="projectText">
+          <h5>챗GPT와 프롬프트 엔지니어링 (2023)</h5><br/>
+            <p className="bookDescription">
+              세종청사 디지털 아카데미<br/>
+              챗GPT를 업무에 활용하여 효율적으로 업무역량을 향상시키는 방법에 대한 강의를 진행했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture82 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/82.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>스마트팜 교육 (2024)</h5><br/>
+            <p className="bookDescription">
+              인천 금융고등학교<br/>
+              아두이노를 활용한 코딩교육부터 스마트팜 키트 제작 등의 교육을 진행했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture83 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/83.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>생성형 AI와 프롬프트 엔지니어링 (2024)</h5><br/>
+            <p className="bookDescription">
+              농협중앙회 신규직원 DT교육<br/>
+              농협그룹 전 계열 신입사원을 대상으로 챗GPT와 디지털 트렌드 관련 특강을 제공하였습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture84 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/84.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>마케터를 위한 프롬프트 엔지니어링 (2024)</h5><br/>
+            <p className="bookDescription">
+              한국암웨이<br/>
+              한국암웨이 본사에서 마케팅 임직원 대상 특강을 진행하였습니다. 마케팅 담당자들이라 그런지 외향적인 분들이 많이 참여해주셔서 즐거웠습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
+    let lecture85 = <div className="singleLectureContainer">
+      <div className="singleWebsiteCard">
+      <img className="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/85.jpg" alt="projectimage"/>
+        <div className="projectText">
+          <h5>GPT가 생산성에 끼치는 영향력 (2024)</h5><br/>
+            <p className="bookDescription">
+              애경그룹 신임임원과정<br/>
+              애경그룹의 각 계열사 신규 임원 승진자 대상 특강을 진행하였습니다. 챗GPT의 영향력과 프롬프트 엔지니어링, 조직 내 성과창출을 위한 쾌속한 도입 방향 등에 대하여 강의했습니다.
+            </p>
+        </div>
+      </div>  
+    </div>
+
 
     return (
       <div className="websitesContainer">
+        {lecture85}
+        {lecture84}
+        {lecture83}
+        {lecture82}
+        {lecture81}
         {lecture80}
         {lecture79}
         {lecture78}
