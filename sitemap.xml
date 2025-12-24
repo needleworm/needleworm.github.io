@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://bhban.kr/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url><loc>https://bhban.kr/psd/</loc><priority>0.8</priority></url>
+  <url><loc>https://bhban.kr/workflow_agent/</loc><priority>0.9</priority></url>
+  <url><loc>https://bhban.kr/dataset/</loc><priority>0.8</priority></url>
+  <url><loc>https://bhban.kr/bhban_rpa/</loc><priority>0.9</priority></url>
+  <url><loc>https://bhban.kr/prompt/</loc><priority>0.9</priority></url>
+  <url><loc>https://bhban.kr/data/</loc><priority>0.8</priority></url>
+  <url><loc>https://bhban.kr/ai_voca/</loc><priority>0.7</priority></url>
+  <url><loc>https://bhban.kr/moneyauto/</loc><priority>0.9</priority></url>
+  <url><loc>https://bhban.kr/financebook/</loc><priority>0.8</priority></url>
+
+  <url><loc>https://bhban.kr/101/</loc><priority>0.7</priority></url>
+  <url><loc>https://bhban.kr/tech3/</loc><priority>0.7</priority></url>
+  <url><loc>https://bhban.kr/bhban_ai/</loc><priority>0.9</priority></url>
+  <url><loc>https://bhban.kr/frontend/</loc><priority>0.8</priority></url>
+  <url><loc>https://bhban.kr/chatgpt/</loc><priority>0.9</priority></url>
+  <url><loc>https://bhban.kr/dev/</loc><priority>0.8</priority></url>
+  <url><loc>https://bhban.kr/gpt2/</loc><priority>0.7</priority></url>
+
+  <url><loc>https://bhban.kr/instagram/</loc><priority>0.6</priority></url>
+  <url><loc>https://bhban.kr/yolo/</loc><priority>0.6</priority></url>
+  <url><loc>https://bhban.kr/dream2022/</loc><priority>0.6</priority></url>
+  <url><loc>https://bhban.kr/hslee/</loc><priority>0.6</priority></url>
+  <url><loc>https://bhban.kr/gunbam/</loc><priority>0.6</priority></url>
+
+</urlset>
