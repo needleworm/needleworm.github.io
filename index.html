@@ -1,0 +1,3127 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9767176956440077"
+        crossorigin="anonymous"></script>
+
+    <!-- Naver Search Console -->
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>반병현 (Byunghyun Ban)</title>
+    <meta name="description" content="반병현의 포트폴리오 - 저서, 논문, 특허 등" />
+    <meta name="author" content="반병현(Byunghyun Ban)">
+
+    <!-- 미리보기 카드 -->
+    <!-- 트위터 -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="반병현(Byunghyun Ban)">
+    <meta name="twitter:description" content="반병현의 포트폴리오 - 저서, 논문, 특허 등">
+    <meta name="twitter:image" content="./preview.jpg" />
+
+    <!-- 일반 -->
+    <meta property="og:type" content="article">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="반병현(Byunghyun Ban)">
+    <meta property="og:description" content="반병현의 포트폴리오 - 저서, 논문, 특허 등">
+    <meta property="og:image" content="./preview.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- CDN -->
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="App">
+            <!-- Header/Sidebar -->
+            <header class="panel-cover">
+                <span class="mobile btn-mobile-menu" onclick="toggleMobileMenu()">
+                    <i class="far fa-caret-square-down btn-mobile-menu__icon"></i>
+                    <i class="far fa-caret-square-up btn-mobile-close__icon hidden"></i>
+                </span>
+                <div class="panel-main">
+                    <div class="panel-main__inner panel-inverted">
+                        <div class="panel-main__content">
+                            <a href="#home" title="Home" onclick="showContent('none')">
+                                <img src="./images/profile_pic.jpg" class="user-image" alt="My Profile" />
+                            </a>
+                            <h1 class="panel-cover__title panel-title">Byunghyun Ban</h1>
+                            <nav class="cover-navigation navigation--social">
+                                <span class="navigation__item_sns">
+                                    <a href="https://www.youtube.com/channel/UCpV0ZdloVwvSjxHfnYYQPQg?sub_confirmation=1"
+                                        title="My Youtube Channel" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-youtube-square fa-lg"></i>
+                                        <span class="label">Youtube</span>
+                                    </a>
+                                </span>
+                                <span class="navigation__item_sns">
+                                    <a href="https://github.com/needleworm" title="Meet My Works on GitHub"
+                                        target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github-square fa-lg"></i>
+                                        <span class="label">GitHub</span>
+                                    </a>
+                                </span>
+                                <span class="navigation__item_sns">
+                                    <a href="https://www.linkedin.com/in/bhban" title="My LinkedIn Profile"
+                                        target="_blank" rel="noreferrer">
+                                        <i class="fab fa-linkedin fa-lg"></i>
+                                        <span class="label">LinkedIn</span>
+                                    </a>
+                                </span>
+                                <span class="navigation__item_sns">
+                                    <a href="https://www.researchgate.net/profile/Byunghyun_Ban"
+                                        title="Meet Me on Researchgate" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-researchgate fa-lg"></i>
+                                        <span class="label">Researchgate</span>
+                                    </a>
+                                </span>
+                            </nav>
+                            <hr class="panel-cover__divider" />
+                            <p class="panel-cover__description">Author, Entrepreneur, Researcher and Developer,</p>
+                            <p class="panel-cover__description">And <a
+                                    href="https://www.youtube.com/channel/UCpV0ZdloVwvSjxHfnYYQPQg?sub_confirmation=1">YouTube
+                                    Creator</a>.</p>
+                            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                            <div class="navigation-wrapper">
+                                <br />
+                                <nav class="cover-navigation navigation--social">
+                                    <ul class="navigation">
+                                        <li class="navigation__item">
+                                            <a href="#books" title="Books" class="panel-button projects-button"
+                                                onclick="showContent('books')">
+                                                <i class="fas fa-book"></i>&nbsp;Books
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#courses" title="Courses" class="panel-button projects-button"
+                                                onclick="showContent('courses')">
+                                                <i class="fas fa-chalkboard-teacher"></i>&nbsp;Courses
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#lectures" title="Lectures" class="panel-button projects-button"
+                                                onclick="showContent('lectures')">
+                                                <i class="fa-solid fa-person-chalkboard"></i>&nbsp;Lectures
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#media" title="Me on Media" onclick="showContent('media')">
+                                                <i class="fas fa-video"></i>&nbsp;Media
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#papers" title="Papers" class="panel-button projects-button"
+                                                onclick="showContent('papers')">
+                                                <i class="fas fa-graduation-cap"></i>&nbsp;Papers
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#patents" title="Patents" class="panel-button projects-button"
+                                                onclick="showContent('patents')">
+                                                <i class="far fa-registered"></i>&nbsp;Patents
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#news" title="Me on Newses" onclick="showContent('news')">
+                                                <i class="far fa-newspaper"></i>&nbsp;News
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#membership" title="My Memberships"
+                                                onclick="showContent('membership')">
+                                                <i class="far fa-id-badge"></i>&nbsp;Membership
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#contact" title="Contact Me" onclick="showContent('contact')">
+                                                <i class="far fa-envelope"></i>&nbsp;Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-cover--overlay"></div>
+            </header>
+
+            <!-- Content Wrapper -->
+            <div class="content-wrapper">
+                <div class="content-wrapper__inner">
+                    <!-- Sections will be injected here or toggled visible -->
+                    <div id="content-container"></div>
+
+                    <footer>
+                        <footer class="footer">
+                            <span class="footer__copyright">&copy; 2021. Byunghyun Ban All rights reserved.</span>
+                        </footer>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Templates for Sections -->
+    <template id="books-template">
+        <section id="books" class="animated bounceInDown">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">Books</h2>
+                </div>
+            </div>
+            <div class="bookContainer" id="book-list">
+                <!-- Books will be populated here by script.js -->
+            </div>
+        </section>
+    </template>
+
+
+
+    <template id="contact-template">
+        <section id="contact" class="animated bounceInDown contact">
+            <div class="contact-container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading subpageHeading">Contact</h2>
+                    </div>
+                </div>
+                <!-- <p class="contact-desc" style="text-align: center;">나나랩과 함께 혁신을 준비하세요!</p> -->
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group" id="group-name">
+                        <label for="mail_name">Name</label>
+                        <input type="text" id="mail_name" name="mail_name" required placeholder="이름을 입력해주세요">
+                    </div>
+
+                    <div class="form-group form-reveal" id="div-institution">
+                        <label for="mail_institution">Institution</label>
+                        <input type="text" id="mail_institution" name="mail_institution" required
+                            placeholder="소속 기관명을 입력해주세요">
+                    </div>
+
+                    <div class="form-group form-reveal" id="div-phone">
+                        <label for="mail_phone">Phone Number</label>
+                        <div class="phone-input-group">
+                            <div class="custom-select-wrapper">
+                                <div class="custom-select">
+                                    <div class="select-selected">국가 선택</div>
+                                    <div class="select-items select-hide">
+                                        <div data-value="">국가 선택</div>
+                                        <div data-value="+82">KR (+82)</div>
+                                        <div data-value="+1">US (+1)</div>
+                                        <div data-value="+81">JP (+81)</div>
+                                        <div data-value="+86">CN (+86)</div>
+                                        <div data-value="">직접입력</div>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="country_code" name="country_code" value="">
+                            </div>
+                            <input type="tel" id="mail_phone" name="mail_phone" placeholder="010-1234-5678">
+                        </div>
+                    </div>
+
+                    <div class="form-group form-reveal" id="div-email">
+                        <label for="mail_email">Email</label>
+                        <input type="email" id="mail_email" name="mail_email" required placeholder="이메일을 입력해주세요">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mail_title">Title</label>
+                        <input id="mail_title" name="mail_title" required placeholder="제목을 입력해주세요">
+                    </div>
+                    <div class="form-group">
+                        <label for="mail_message">Message</label>
+                        <textarea id="mail_message" rows="6" name="mail_message" required
+                            placeholder="문의하실 내용을 남겨주세요"></textarea>
+                    </div>
+                    <button type="submit" class="submitButton btn-full">문의 보내기</button>
+                </form>
+            </div>
+        </section>
+    </template>
+
+    <template id="courses-template">
+        <section id="courses" class="animated bounceInDown">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">Courses</h2>
+                </div>
+            </div>
+            <div class="websitesContainer">
+                <!-- Course 23 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/23.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>챗GPT를 활용한 지역문화진흥 업무역량 강화 (2024)</h5><br />
+                            <p class="bookDescription">
+                                문체부 지역문화진흥원 교육컨텐츠<br />
+                                공직자 교육을 위한 온라인 강의입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 22 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/22.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>AI시대 일잘러가 되기 위한 실무 마스터 클래스 (2024)</h5><br />
+                            <p class="bookDescription">
+                                패스트캠퍼스 초격차 패키지<br />
+                                현존 최고의 실무 역량 교육 강의에 참가했습니다. 저는 주로 AI를 활용한 사무업무 부분과 Copilot을 다룹니다.
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://fastcampus.co.kr/biz_online_workai" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> 강의 링크
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 21 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/21.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>생성형 AI와 함께 업무 효율 대폭발을 준비하세요! (2024)</h5><br />
+                            <p class="bookDescription">
+                                LG 인화원<br />
+                                2024 상반기에도 LG 인화원을 통해 LG 전 계열사 임직원들과의 스터디를 진행했습니다. 생성형 AI에 대한 관심도가 매우 뜨거운 시기다
+                                보니 수강생분들의 열정이 뜨거워 무척이나 즐거운 시간이었습니다. 압도적으로 좋은 평가를 받아 하반기에도 동일한 코스가 개설됩니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 15 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/15.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>프롬프트 엔지니어링 (2023)</h5><br />
+                            <p class="bookDescription">
+                                인프런 강의<br />
+                                프롬프트 엔지니어링 온라인 강의입니다.
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://inf.run/oSjE6" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> 강의 링크
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 14 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/14.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>AI시대 일잘러를 위한 비현실적인 400가지 ChatGPT 활용 바이블 (2023)</h5><br />
+                            <p class="bookDescription">
+                                패스트캠퍼스 초격차 패키지<br />
+                                현존 최고의 챗GPT 활용 강의에 한 손 거들게 되었습니다.
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://fastcampus.co.kr/biz_online_chatgpt400" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> 강의 링크
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 13 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/13.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>내 시간을 효율적으로 만들어주는 업무 자동화 (2023)</h5><br />
+                            <p class="bookDescription">
+                                LG 인화원<br />
+                                LG 전 계열사 직원들 중, 1:7의 경쟁률을 뚫고 선발된 30명의 정예들과 8주간의 그룹스터디를 진행했습니다. 저를 만나셨기에
+                                LG는 실적이 수직상승할 것입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 12 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/12.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>평생 무료로 써먹는 나만의 ChatGPT 영어 선생님 (2023)</h5><br />
+                            <p class="bookDescription">
+                                패스트캠퍼스<br />
+                                역사상 가장 똑똑한 인공지능, 챗GPT! 챗GPT와 함께 한국인의 오랜 숙원인 영어를 정복해봐요! 균형감각의 이제종 강사님과 함께했습니다.
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://fastcampus.co.kr/data_online_chatgpte" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> 강의 링크
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 11 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/11.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>How to Question, 챗GPT 잠재력 200% 끌어내기 (2023)</h5><br />
+                            <p class="bookDescription">
+                                현대 경제연구원<br />
+                                챗GPT의 잠재력을 200% 끌어내는 방법에 대한 강의를 촬영했습니다. 10분 분량으로 부담없이 시청할 수 있는 숏폼 영상 강의를 여러 건
+                                촬영했습니다. 현대 임직원 및 협력사 활용 예정.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 10 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/10.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>베스트셀러 작가 반병현에게 배우는 ChatGPT 활용법 (2023)</h5><br />
+                            <p class="bookDescription">
+                                패스트캠퍼스 온라인강좌<br />
+                                ChatGPT 똑똑하게 쓰는 활용법부터 업무 활용 노하우까지!<br />
+                                ChatGPT로 업무 효율을 높이고 수익까지 낼 수 있는 노하우, 이 강의에서 모두 알려드릴게요!
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://fastcampus.co.kr/data_online_autogpt" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 9 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/9.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>딥러닝 레벨원 : 왕초보도 만들 수 있는 16가지 인공지능 (2022)</h5><br />
+                            <p class="bookDescription">
+                                패스트캠퍼스 온라인강좌 (무료강의)<br />
+                                딥러닝, 도대체 뭐지? 나도 배워볼 수 있을까?<br />
+                                시작부터 수학/이론 정석대로 배우다 좌절하면 안되니까! 비전공자도 재미있는 16가지 인공지능을 만들며 '딥러닝'을 배울 수 있도록
+                                구성했습니다.
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://fastcampus.co.kr/courses/213914" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 8 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/8.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>한국인이 좋아하는 속도로 때려넣는 워드프레스 (2022)</h5><br />
+                            <p class="bookDescription">
+                                인프런 온라인강좌<br />
+                                영상을 따라하기만 해도 나만의 웹 페이지가 뚝딱! 성능과 마케팅 최적화까지 알려드려요!
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://inf.run/Jqkj" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 7 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/7.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>돈이 복사되는 가상자산 수업 (2022)</h5><br />
+                            <p class="bookDescription">
+                                아트엑스캠퍼스 온라인강좌<br />
+                                <a href="https://needleworm.github.io/tech3/" target="_blank" rel="noreferrer">
+                                    돈이 복사되는 가상자산 수업
+                                </a>
+                                도서를 바탕으로 제작된 온라인 강의입니다.
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://www.artxcampus.co.kr/lecture.php?action=package&uid=66" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/6.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>6개월 치 업무를 하루 만에 끝내는 업무자동화 Renual (2022)</h5><br />
+                            <p class="bookDescription">
+                                패스트캠퍼스 온라인강좌<br />
+                                업무자동화 분야 국내 1위 강의의 리뉴얼 버젼!
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://fastcampus.co.kr/dev_online_bbh" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/5.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>한국인이 좋아하는 속도로 때려넣는 파이썬 (2022)</h5><br />
+                            <p class="bookDescription">
+                                인프런 온라인강좌<br />
+                                모두가 배워야 한다고 호들갑인 파이썬! 한국인이 좋아하는 속도로! 3시간 안에! 때려넣어 드립니다!
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://inf.run/yyKd" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/4.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>비전공자를 위한 쉬운 딥러닝 (2022)</h5><br />
+                            <p class="bookDescription">
+                                WiseHRD<br />
+                                파이썬 기초부터 딥러닝 기초, 수십 종의 인공지능을 만들면서 배우는 쉬운 딥러닝 강의
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="http://wisehrd.com" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/3.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>코꼬마를 위한 코딩유치원 (2021)</h5><br />
+                            <p class="bookDescription">
+                                패스트캠퍼스 온라인강좌<br />
+                                개발자가 될 건 아니지만 코딩은 배우고 싶은 코꼬마를 위한 코딩유치원
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://fastcampus.co.kr/dev_online_codingschool" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/2.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>쉬운 딥러닝 (2021)</h5><br />
+                            <p class="bookDescription">
+                                <a href="https://search.shopping.naver.com/book/catalog/32466710658" target="_blank"
+                                    rel="noreferrer">수학 통계를 몰라도 이해할 수 있는 쉬운 딥러닝</a> 도서 저자직강<br />
+                                비전공자도 딥러닝을 배울 수 있다! <br />
+                                총 17차시, 8시간 53분 분량의 강의영상 <br />
+                                천재교육 내부 임직원교육 등 활용
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 1 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/1.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>6개월치 업무를 하루만에 끝내는 업무자동화 (2020, 2022)</h5><br />
+                            <p class="bookDescription">
+                                패스트캠퍼스 온라인강좌<br />
+                                파이썬 기초부터 엑셀파일 활용 자동화, 디자인 자동화, 매크로 제작 및 크롤링 과정.<br />
+                                6개 대주제, 약 20시간 분량, 총 77여개 강의 영상
+                            </p>
+                            <div class="lectureIcons gitIcons">
+                                <a href="https://www.youtube.com/watch?v=_5JAXsYKef0&t=86s" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fab fa-youtube"></i> Intro
+                                </a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a href="https://youtu.be/5IfJ3JdNwB0" target="_blank" rel="noreferrer">
+                                    <i class="fab fa-youtube"></i> Vlog
+                                </a>
+                                &nbsp;&nbsp;&nbsp;
+                                <a href="https://fastcampus.co.kr/dev_online_bbh" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-chalkboard-teacher"></i> Lecture
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 20 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/20.jpg"
+                            alt="lectureimage" />
+                        <div class="projectText">
+                            <h5>코스콤 임직원 대상 교육 (2021)</h5><br />
+                            <p class="bookDescription">
+                                비개발자를 위한 파이썬과 엑셀/한글 RPA 실습 (24차시)<br></br>
+                                비전공자 사무직 수강생 전원이 자신만의 업무 자동화 소프트웨어를 개발하고, 윈도우용 응용 프로그램으로
+                                빌드하여 배포까지 달성
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 19 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/19.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>스마트팜 교육 프로그램 (2021)</h5><br />
+                            <p class="bookDescription">
+                                대구 서구 도시재생지원센터 원고개마을 조성사업, 4차산업혁명과 스마트팜 경영방법<br />
+                                5주 교육과정
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 18 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/18.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>선도농가 멘토링 - 스마트팜 (2020)</h5><br />
+                            <p class="bookDescription">
+                                한국생명과학고등학교 선도농가 멘토링 현장교수<br />
+                                4주 교육과정
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 17 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/17.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>농업경영체, 경작이 아닌 경영을 기획하라 (2020)</h5><br />
+                            <p class="bookDescription">
+                                한국생명과학고등학교 고교학점제 교수 (4주)<br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 16 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/courses/16.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>리더십3: 리스크 없는 학생창업 (2017)</h5><br />
+                            <p class="bookDescription">
+                                KAIST 가을학기 학부 교양필수 강사
+                            </p>
+                            <div class="lectureIcons">
+                                <div class="gitIcons">
+                                    <a href="https://brunch.co.kr/@needleworm/13" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i> 수강생 후기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </template>
+
+    <template id="lectures-template">
+        <section id="lectures" class="animated bounceInDown">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">Lectures</h2>
+                </div>
+            </div>
+            <div class="websitesContainer">
+                <!-- Lecture 91 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/91.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>AI시대의 기획자를 위한 코파일럿, 챗GPT 활용 노하우 (2024)</h5><br />
+                            <p class="bookDescription">
+                                안랩 기획자 스쿨<br />
+                                안랩 소속 기획자들이 모두 모이는 기획자 스쿨에서 코파일럿과 챗GPT 등을 효율적으로 활용하는 방법에 대한 특강을 진행했습니다. 기획자 직무도
+                                ENFP가 많은 것 같았습니다. 활기찬 분위기에 무척 즐거웠습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 90 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/90.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>인간을 대체할 수 있는 AI 소프트웨어, 어디까지 왔을까? (2024)</h5><br />
+                            <p class="bookDescription">
+                                울진도서관 특화주제 과학 핵꿀잼<br />
+                                울진군의 청소년들과 어르신들을 대상으로 챗GPT 관련 특강을 진행했습니다. 흰머리 지긋하신 어르신들께서 적극적인 자세로 새로운 지식을 습득하기
+                                위하여 노력하시는 모습이 인상깊었습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 89 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/89.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>챗GPT와 파생 기술들 - LLM 열풍 1년 반, 무엇이 바뀌었나? (2024)</h5><br />
+                            <p class="bookDescription">
+                                1차 융합독서특강<br />
+                                동국대 사범대 부속고등학교 도서관에서 초청해주셔서 특강을 진행했습니다. 진로형성에 있어 가장 중요한 시기를 겪고 있는 고등학생들을 대상으로,
+                                AI산업이 어디까지 발전했는지, 어떤 산업의 기회가 축소되거나 신설되고 있는지에 대한 인사이트를 제공했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 88 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/88.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>이제는 모두가 알아야 할 프롬프트 엔지니어링 (2024)</h5><br />
+                            <p class="bookDescription">
+                                용인 수지도서관 북타임<br />
+                                용인 수지도서관에서 다시 초청해 주셔서 특강을 제공하고 왔습니다. 이제는 모든 사람들이 챗GPT를 효율적으로 다루고, 스마트하게 질문을 설계하는
+                                방법에 대하여 알아야 하지요. 이에 누구나 쉽게 활용할 수 있는 프롬프트 엔지니어링 기법을 소개했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 87 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/87.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>챗GPT와 파생 기술들 (2024)</h5><br />
+                            <p class="bookDescription">
+                                삼성전자 DA사업부<br />
+                                삼성전자 DA사업부 임직원 350여명을 대상으로 특강을 진행했습니다. 특히, 생성형 AI가 생산시설 자동화와 품질관리 분야에 어떻게 적용될 수
+                                있는지에 중점을 두고 최신 연구 결과들을 요약하여 전달했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 86 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/86.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>4차 산업 혁명 시대의 스마트팜 현황 (2024)</h5><br />
+                            <p class="bookDescription">
+                                충북 직업전환 교육기관 지정 운영 시범사업 특강<br />
+                                충북 직업전환 교육기관 지정 운영 사업에 참가하는 기관 담당자들을 대상으로 특강을 제공했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 85 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/85.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>GPT가 생산성에 끼치는 영향력 (2024)</h5><br />
+                            <p class="bookDescription">
+                                애경그룹 신임임원과정<br />
+                                애경그룹의 각 계열사 신규 임원 승진자 대상 특강을 진행했습니다. 챗GPT의 영향력과 프롬프트 엔지니어링, 조직 내 성과창출을 위한 쾌속한
+                                도입 방향 등에 대하여 강의했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 84 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/84.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>마케터를 위한 프롬프트 엔지니어링 (2024)</h5><br />
+                            <p class="bookDescription">
+                                한국암웨이<br />
+                                한국암웨이 본사에서 마케팅 임직원 대상 특강을 진행하였습니다. 마케팅 담당자들이라 그런지 외향적인 분들이 많이 참여해주셔서 즐거웠습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 83 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/83.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>생성형 AI와 프롬프트 엔지니어링 (2024)</h5><br />
+                            <p class="bookDescription">
+                                농협중앙회 신규직원 DT교육<br />
+                                농협그룹 전 계열 신입사원을 대상으로 챗GPT와 디지털 트렌드 관련 특강을 제공하였습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 82 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/82.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>스마트팜 교육 (2024)</h5><br />
+                            <p class="bookDescription">
+                                인천 금융고등학교<br />
+                                아두이노를 활용한 코딩교육부터 스마트팜 키트 제작 등의 교육을 진행했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lecture 81 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/81.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>챗GPT와 프롬프트 엔지니어링 (2023)</h5><br />
+                            <p class="bookDescription">
+                                세종청사 디지털 아카데미<br />
+                                챗GPT를 업무에 활용하여 효율적으로 업무역량을 향상시키는 방법에 대한 강의를 진행했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lecture 80 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/lectures/80.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>챗GPT 출시 1주년, 세상은 어떻게 바뀌었나? (2023)</h5><br />
+                            <p class="bookDescription">
+                                용인수지도서관 베스트셀러 작가 초청강연<br />
+                                연말까지도 챗GPT의 열기가 뜨거우니 참 신기하네요. 재미있는 시간 보내고 왔습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="media-template">
+        <section id="media" class="animated bounceInDown">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">Media</h2>
+                </div>
+            </div>
+            <div class="websitesContainer">
+                <!-- Media 14 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <a href="https://www.youtube.com/watch?v=Ot3V2Z17EGo" target="_blank" style="display:block;">
+                            <img class="websiteImage" src="https://img.youtube.com/vi/Ot3V2Z17EGo/hqdefault.jpg"
+                                alt="육각형게임 Thumbnail" />
+                        </a>
+                        <div class="projectText">
+                            <h5>육각형게임</h5><br />
+                            <p class="bookDescription">
+                                110만 유튜버 <strong>긱블</strong>에서 주최한 대규모 웹예능, <strong>육각형게임</strong>에 출연했습니다.
+                            </p>
+                            <div class="lectureIcons">
+                                <a href="https://www.youtube.com/watch?v=Ot3V2Z17EGo" target="_blank" rel="noreferrer">
+                                    <i class="fab fa-youtube"></i> 예고편
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media 13 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <a href="https://www.youtube.com/watch?v=yh6lx62yHTs" target="_blank" style="display:block;">
+                            <img class="websiteImage" src="https://img.youtube.com/vi/yh6lx62yHTs/hqdefault.jpg"
+                                alt="강의 미리보기 Thumbnail" />
+                        </a>
+                        <div class="projectText">
+                            <h5>[강의 미리보기] 최초/최신 강의! ChatGPT를 활용한 영어 학습</h5><br />
+                            <p class="bookDescription">
+                                나만의 영어 선생님이 되는 ChatGPT! ChatGPT 하나로 영어 마스터 하는 법 알려드립니다.
+                            </p>
+                            <div class="lectureIcons">
+                                <a href="https://www.youtube.com/watch?v=yh6lx62yHTs" target="_blank" rel="noreferrer">
+                                    <i class="fab fa-youtube"></i> 패스트캠퍼스
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media 12 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <a href="https://www.youtube.com/watch?v=iTmhi7LYtvI" target="_blank" style="display:block;">
+                            <img class="websiteImage" src="https://img.youtube.com/vi/iTmhi7LYtvI/hqdefault.jpg"
+                                alt="챗GPT 특강 Thumbnail" />
+                        </a>
+                        <div class="projectText">
+                            <h5>챗GPT 인공지능 시대, 앞서가기 위해 필요한 능력은?(반병현 작가 3부)</h5><br />
+                            <p class="bookDescription">
+                                국립중앙과학관과 함께한 챗GPT 특강 시리즈의 세 번째 영상입니다.
+                            </p>
+                            <div class="lectureIcons">
+                                <a href="https://www.youtube.com/watch?v=iTmhi7LYtvI" target="_blank" rel="noreferrer">
+                                    <i class="fab fa-youtube"></i> 국립중앙과학관
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="papers-template">
+        <section id="papers" class="animated bounceInDown">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">Papers</h2>
+                </div>
+            </div>
+            <div class="websitesContainer">
+
+                <!-- Paper 14 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/14.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>FAKER: Full-body Anonymization with Human Keypoint Extraction for Real-time Video
+                                Deidentification</h5><br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban*, Hyoseok Lee (2024)</strong><br />
+                                ArXiv Preprint
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    In the contemporary digital era, protection of personal information has become a
+                                    paramount issue. The exponential growth of the media industry has heightened
+                                    concerns regarding the anonymization of individuals captured in video footage.
+                                    Traditional methods, such as blurring or pixelation, are commonly employed, while
+                                    recent advancements have introduced generative adversarial networks (GAN) to redraw
+                                    faces in videos. In this study, we propose a novel approach that employs a
+                                    significantly smaller model to achieve real-time full-body anonymization of
+                                    individuals in videos. Unlike conventional techniques that often fail to effectively
+                                    remove personal identification information such as skin color, clothing,
+                                    accessories, and body shape while our method successfully eradicates all such
+                                    details. Furthermore, by leveraging pose estimation algorithms, our approach
+                                    accurately represents information regarding individuals' positions, movements, and
+                                    postures. This algorithm can be seamlessly integrated into CCTV or IP camera systems
+                                    installed in various industrial settings, functioning in real-time and thus
+                                    facilitating the widespread adoption of full-body anonymization technology.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban and Hyoseok Lee (2024). "FAKER: Full-body Anonymization with Human Keypoint Extraction for Real-time Video Deidentification" ArXiv Preprint, arXiv:2408.11829, 2024.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://arxiv.org/pdf/2408.11829" target="_blank" rel="noreferrer"
+                                        download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://arxiv.org/abs/2408.11829" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 13 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/13.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts</h5><br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban (2023)</strong><br />
+                                ICTC 2023
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    We present 'CongNaMul', a comprehensive dataset designed for various tasks in
+                                    soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks
+                                    such as image classification, semantic segmentation, decomposition, and measurement
+                                    of length and weight. The classification task provides four classes to determine the
+                                    quality of soybean sprouts: normal, broken, spotted, and broken and spotted, for the
+                                    development of AI-aided automatic quality inspection technology. For semantic
+                                    segmentation, images with varying complexity, from single sprout images to images
+                                    with multiple sprouts, along with human-labelled mask images, are included. The
+                                    label has 4 different classes: background, head, body, tail. The dataset also
+                                    provides images and masks for the image decomposition task, including two separate
+                                    sprout images and their combined form. Lastly, 5 physical features of sprouts (head
+                                    length, body length, body thickness, tail length, weight) are provided for
+                                    image-based measurement tasks. This dataset is expected to be a valuable resource
+                                    for a wide range of research and applications in the advanced analysis of images of
+                                    soybean sprouts. Also, we hope that this dataset can assist researchers studying
+                                    classification, semantic segmentation, decomposition, and physical feature
+                                    measurement in other industrial fields, in evaluating their models. The dataset is
+                                    available at the authors' repository.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun. (2023). "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts." 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://arxiv.org/ftp/arxiv/papers/2308/2308.15690.pdf" target="_blank"
+                                        rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://arxiv.org/abs/2308.15690" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="http://bhban.kr/data/" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 11 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/11.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>AI Knows Which Words Will Appear in Next Year's Korean CSAT</h5><br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban</strong>, Jejong Lee, Hyeonmok Hwang (2023)<br />
+                                ICTC 2023 (IEEE)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    A text-mining-based word function categorization method and LSTM-based vocabulary
+                                    pattern prediction method are introduced in this paper. A preprocessing method based
+                                    on simple text appearance frequency analysis is first described. This method was
+                                    developed as a data screening tool but showed 4.35 ~ 6.21 times higher than previous
+                                    works. An LSTM deep learning method is also suggested for vocabulary appearance
+                                    pattern prediction method. AI performs a regression with various size of data window
+                                    of previous exams to predict the probabilities of word appearance in the next exam.
+                                    Predicted values of AI over various data windows are processed into a single score
+                                    as a weighted sum, which we call an "AI-Score", which represents the probability of
+                                    word appearance in next year's exam. Suggested method showed 100% accuracy at the
+                                    range 100-score area and showed only 1.7% error of prediction in the section where
+                                    the scores were over 60 points. All source codes are freely available at the
+                                    authors'
+                                    <a href="https://github.com/needleworm/bigdata_voca" target="_blank"
+                                        rel="noreferrer">Git Hub repository. </a>
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation="Ban, Byunghyun, et al. 'AI Knows Which Words Will Appear in Next Year's Korean CSAT.' 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023.">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/11.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://arxiv.org/abs/2211.15426" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://github.com/needleworm/bigdata_voca" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 12 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/12.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>수능 영어시험의 어휘 등장 패턴 분석</h5><br />
+                            <p class="bookDescription">
+                                <strong>반병현</strong>, 이제종, 황현목 (2022)<br />
+                                인공지능연구
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    텍스트 마이닝 기법 기반의 어휘 분류 기법과 LSTM을 활용한 어휘 출현 패턴 예측 방법을 소개한다. 단순한 텍스트의 등장 빈도를 기반으로 한
+                                    프리프로세싱 기법을 제안하며, 이 기법으로 제작된 어휘 스크리닝 기술은 시중의 베스트셀러 수능 어휘 교재인 워드 마스터 대비 2023년도 수능 시험
+                                    적중률이 4.35배 더 높았다. LSTM 딥러닝 기법을 활용한 인공지능 기술도 함께 제안하며, 이 기법 은 수능 시험에서 특정 어휘가 어떤 패턴으로
+                                    등장하는지 분석하고 이를 토대로 다음 수능에 출제될 어휘의 목록과 그 등장확률을 예측할 수 있다. AI의 예측값은 여러 크기의 데이터 윈도우를 바탕으로
+                                    학습된 추론값을 노멀라이즈한 뒤 가중합 연산하여 구한 것 이며, 저자들은 이 값을 AI-Score라고 부른다. AI-score는 특정 단어가 다음 수능
+                                    시험에서 등장할 확률을 의미하며, 논문에서 제안 하는 방법론이 100점으로 분류한 단어들은 2023수능에서 100% 출제되었다. AI-Score가
+                                    60점 이상인 영역에서는 불과 1.7%수준의 오차로 수능에 출제될 단어들의 등장 확률을 예측하는 데 성공했다.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun, et al. (2022). "Analysis on English Vocabulary Appearance Pattern in Korean CSAT." Journal of The Korean Association of Artificial Intelligence Education, 3(3), 15-23'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/12.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="http://aied.or.kr/sub_html/sub02_08.html?pageNm=article&journal=1&code=425485&issue=32270"
+                                        target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://github.com/needleworm/bigdata_voca" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 10 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/10.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>Mixed Reality Interface for Digital Twin of Plant Factory</h5><br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban</strong>(2022)<br />
+                                Preprint (arXiv)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    An easier and intuitive interface architecture is necessary for digital twin of
+                                    plant factory. I suggest an immersive and interactive mixed reality interface for
+                                    digital twin models of smart farming, for remote work rather than simulation of
+                                    components. The environment is constructed with UI display and a streaming
+                                    background scene, which is a real time scene taken from camera device located in the
+                                    plant factory, processed with deformable neural radiance fields. User can monitor
+                                    and control the remote plant factory facilities with HMD or 2D display based mixed
+                                    reality environment. This paper also introduces detailed concept and describes the
+                                    system architecture to implement suggested mixed reality interface.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun. "Mixed Reality Interface for Digital Twin of Plant Factory." arXiv preprint arXiv:2211.00597 (2022).'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/10.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://arxiv.org/abs/2211.00597" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 9 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/9.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>A Survey on Awesome Korean NLP Datasets</h5><br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban</strong>(2022)<br />
+                                2022 13th International Conference on Information and Communication Technology
+                                Convergence (ICTC)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    English based datasets are commonly available from Kaggle, GitHub, or recently
+                                    published papers. Although benchmark tests with English datasets are sufficient to
+                                    show off the performances of new models and methods, still a researcher need to
+                                    train and validate the models on Korean based datasets to produce a technology or
+                                    product, suitable for Korean processing. This paper introduces 15 popular Korean
+                                    based NLP datasets with summarized details such as volume, license, repositories,
+                                    and other research results inspired by the datasets. Also, I provide high-resolution
+                                    instructions with sample or statistics of datasets. The main characteristics of
+                                    datasets are presented on a single table to provide a rapid summarization of
+                                    datasets for researchers.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='B. Ban, "A Survey on Awesome Korean NLP Datasets," 2022 13th International Conference on Information and Communication Technology Convergence (ICTC), 2022, pp. 1615-1620, doi: 10.1109/ICTC55196.2022.9952930.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/9.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://ieeexplore.ieee.org/document/9952930" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 6 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/6.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis</h5><br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban</strong> (2020)<br />
+                                2020 International Conference on Information and Communication Technology Convergence
+                                (ICTC)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    Differential equation models to understand interaction between plant and nutrient
+                                    solution are presented. The root cells selectively emit H+ ions with active
+                                    transport consuming ATPs to establish electrical gradient along the cell membrane.
+                                    It establishes electrical field with Nernst potential to make positively charged
+                                    ions outside the cell membrane flow into the root cell. Anion influx is also
+                                    modulated by H+ ion concentration because plant root cell absorbs negatively charged
+                                    particles with symport. If an anion collides with H+ cell to make net charge as
+                                    neutral, at symport channel, it can flow through. In this paper, mathematical models
+                                    for cation and anion absorption are introduced. Cation absorption model was induced
+                                    from Ohm's law combined with Goldman's equation. Anion absorption model is similar
+                                    to chemical reaction rate model. Both models have physiological terms influenced by
+                                    gene expression pattern, species or phenotypes. Cation model also includes terms for
+                                    ion's kinetic and electrical properties, growth of plant and interaction between the
+                                    root and the surroundings. Simulation for 20 different sets of coefficients showed
+                                    that the physiology-related coefficient has important role on nutrition absorption
+                                    tendencies of plants.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='B. Ban, "Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis," 2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2020, pp. 1531-1536, doi: 10.1109/ICTC49870.2020.9289083.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/bh_coefficient" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/6.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.1109/ICTC49870.2020.9289083" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 5 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/5.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>Deep learning method to remove chemical, kinetic and electric artifacts on ISEs</h5>
+                            <br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban</strong> (2020)<br />
+                                2020 International Conference on Information and Communication Technology Convergence
+                                (ICTC)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    I suggest a deep learning based sensor signal processing method to remove chemical,
+                                    kinetic and electrical artifacts from ion selective electrodes' measured values. An
+                                    ISE is used to investigate the concentration of a specific ion from aqueous
+                                    solution, by measuring the Nernst potential along the glass membrane. However,
+                                    application of ISE on a mixture of multiple ion has some problem. First problem is a
+                                    chemical artifact which is called ion interference effect. Electrically charged
+                                    particles interact with each other and flows through the glass membrane of different
+                                    ISEs. Second problem is the kinetic artifact caused by the movement of the liquid.
+                                    Water molecules collide with the glass membrane causing abnormal peak values of
+                                    voltage. The last artifact is the interference of ISEs. When multiple ISEs are
+                                    dipped into same solution, one electrode's signal emission interference voltage
+                                    measurement of other electrodes. Therefore, an ISE is recommended to be applied on
+                                    single-ion solution, without any other sensors applied at the same time. Deep
+                                    learning approach can remove both 3 artifacts at the same time. The proposed method
+                                    used 5 layers of artificial neural networks to regress correct signal to remove
+                                    complex artifacts with one-shot calculation. Its MAPE was less than 1.8% and R 2 of
+                                    regression was 0.997. A randomly chosen value of AI processed data has MAPE less
+                                    than 5% (p-value 0.016).
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='B. Ban, "Deep learning method to remove chemical, kinetic and electric artifacts on ISEs," 2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2020, pp. 1242-1246, doi: 10.1109/ICTC49870.2020.9289389.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/ion_interference" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/5.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.1109/ICTC49870.2020.9289389" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 4 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/4.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>Nutrient Solution Management System for Smart Farms and Plant Factory</h5><br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban</strong>*, Janghun Lee, Donghun Ryu, Minwoo Lee, Tae Dong Eom
+                                (2020)<br />
+                                2020 International Conference on Information and Communication Technology Convergence
+                                (ICTC)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    We present an automated system for nutrient solution management. Prior arts usually
+                                    measure only pH and EC of the nutrient solutions for maintenance. When EC drops,
+                                    they just simply add concentrated nutrient to the horticulture bed. Such approach
+                                    can maintain the density of nutrient solution but cannot maintain the rates of
+                                    individual ion particles. To prevent nutrition related disorders, fertilization
+                                    methods with ion selective electrodes are widely introduced. This trend measures
+                                    individual ion concentration of nutrient solution to maintain appropriate nutrient
+                                    composition by supplying only insufficient ions. Many researchers have suggested ISE
+                                    based automated fertilization systems. However, they failed to control a chemical
+                                    artifact called ion interference effect, which becomes greater at higher density.
+                                    Our system measures individual concentration of multiple ions and add only deficient
+                                    nutrients, while handling the ion interference effect issue. To ensure the
+                                    performance of ion selective electrodes, the system also performs fully automated
+                                    3-point calibration 24 times a day. A machine learning algorithm is applied on the
+                                    sensory parts to remove ion interference effect which make measurement of complex
+                                    solution with ISE almost impossible. With automated calibration and signal
+                                    processing technology, the system robustly and continuously maintains nutrient
+                                    condition for plants. We suggest applying this system on closed hydroponic systems
+                                    such as smart farms or plant factory, to reduce water consumption and to provide
+                                    more appropriate environment for the crops.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='B. Ban, J. Lee, D. Ryu, M. Lee and T. D. Eom, "Nutrient Solution Management System for Smart Farms and Plant Factory," 2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2020, pp. 1537-1542, doi: 10.1109/ICTC49870.2020.9289192.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/4.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.1109/ICTC49870.2020.9289192" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 3 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/3.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient
+                                Solutions</h5><br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban</strong>*, Minwoo Lee, Donghun Ryu (2019)<br />
+                                2019 International Conference on Information and Communication Technology Convergence
+                                (ICTC)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    High concentration agricultural facilities such as vertical farms or plant factories
+                                    consider hydroponic techniques as optimal solutions. Although closed-system
+                                    dramatically reduces water consumption and pollution issues, it has ion-ratio
+                                    related problem. As the root absorbs individual ions with different rate, ion rate
+                                    in a nutrient solution should be adjusted periodically. But traditional method only
+                                    considers pH and electrical conductivity to adjust the nutrient solution, leading to
+                                    ion imbalance and accumulation of excessive salts. To avoid those problems, some
+                                    researchers have proposed ion-balancing methods which measure and control each ion
+                                    concentration. However, those approaches use titration-like heuristic approaches,
+                                    which repeat adding small amount of components and measuring ion density a lot of
+                                    times for a single control input. Both traditional and recent methods are not only
+                                    time-consuming, but also cannot predict chemical reactions related with control
+                                    inputs because the nutrient solution is a nonlinear complex system, including many
+                                    precipitation reactions and complicated interactions. We present a continuous
+                                    network model of the nutrient solution system, whose reactions are described as
+                                    differential equations. The model predicts molar concentration of each chemical
+                                    components and total dissolved solids with low error. This model also can calculate
+                                    the amount of chemical compounds needed to produce a desired nutrient solution, by
+                                    reverse calculation from dissolved ion concentrations.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='B. Ban, D. Ryu and M. Lee, "Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient Solutions," 2019 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2019, pp. 1156-1161, doi: 10.1109/ICTC46691.2019.8939812.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/ion_interference" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/3.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.1109/ICTC46691.2019.8939812" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 2 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/2.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System</h5>
+                            <br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban</strong>*, Minwoo Lee, Donghun Ryu (2019)<br />
+                                2019 International Conference on Information and Communication Technology Convergence
+                                (ICTC)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    In closed hydroponic systems, periodic readjustment of nutrient solution is
+                                    necessary to continuously provide stable environment to plant roots because the
+                                    interaction between plant and nutrient solution changes the rate of ions in it. The
+                                    traditional method is to repeat supplying small amount of premade concentrated
+                                    nutrient solution, measuring total electric conductivity and pH of the tank only. As
+                                    it cannot control the collapse of ion rates, recent researches try to measure the
+                                    concentration of individual components to provide insufficient ions only. However,
+                                    those approaches use titration-like heuristic approaches, which repeat adding small
+                                    amount of components and measuring ion density a lot of times for a single control
+                                    input. Both traditional and recent methods are not only time-consuming, but also
+                                    cannot predict chemical reactions related with control inputs because the nutrient
+                                    solution is a nonlinear complex system, including many precipitation reactions and
+                                    complicated interactions. We present a continuous network model of the nutrient
+                                    solution system, whose reactions are described as differential equations. The model
+                                    predicts molar concentration of each chemical components and total dissolved solids
+                                    with low error. This model also can calculate the amount of chemical compounds
+                                    needed to produce a desired nutrient solution, by reverse calculation from dissolved
+                                    ion concentrations.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='B. Ban, M. Lee and D. Ryu, "ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System," 2019 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2019, pp. 996-1001, doi: 10.1109/ICTC46691.2019.8939946.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/nutrient_solution" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/2.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.1109/ICTC46691.2019.8939946" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 1 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/1.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>Control of nonlinear, complex and black-boxed greenhouse system with reinforcement
+                                learning</h5><br />
+                            <p class="bookDescription">
+                                <strong>Byunghyun Ban</strong>*, Soobin Kim (2017)<br />
+                                2017 International Conference on Information and Communication Technology Convergence
+                                (ICTC)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    Modern control theories such as systems engineering approaches try to solve
+                                    nonlinear system problems by revelation of causal relationship or co-relationship
+                                    among the components; most of those approaches focus on control of sophisticatedly
+                                    modeled white-boxed systems. We suggest an application of actor-critic reinforcement
+                                    learning approach to control a nonlinear, complex and black-boxed system. We
+                                    demonstrated this approach on artificial green-house environment simulator all of
+                                    whose control inputs have several side effects so human cannot figure out how to
+                                    control this system easily. Our approach succeeded to maintain the circumstance at
+                                    least 20 times longer than PID and Deep Q Learning.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='B. Ban and S. Kim, "Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning," 2017 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2017, pp. 913-918, doi: 10.1109/ICTC.2017.8190813.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/greenhouse_ai" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/1.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.1109/ICTC.2017.8190813" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 7 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/7.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>GAN-D: Generative adversarial networks for image deconvolution</h5><br />
+                            <p class="bookDescription">
+                                Ha Yeon Lee, Jin Myungg Kwak, <strong>Byunghyun Ban</strong>, Seon Jin Na, Se Ra Lee,
+                                Heung-Kyu Lee* (2017)<br />
+                                2017 International Conference on Information and Communication Technology Convergence
+                                (ICTC)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    We propose new generative adversarial networks for generalized image deconvolution,
+                                    GAN-D. Most of the previous researches concentrate to specific sub-topic of image
+                                    deconvolution or generative image deconvolution models with a strong assumption.
+                                    However, our network restores visual data from distorted images applied multiple
+                                    dominant degradation problems such as noise, blur, saturation, compression without
+                                    any prior information. As a generator, we leverage convolutional neural networks
+                                    based ODCNN [12] which perform generalized image deconvolution with a decent
+                                    performance, and we use VGGNet [11] to distinguish true/fake of an input image as a
+                                    discriminator. We devise the loss function of the generator of GAN-D which combines
+                                    mean square error (MSE) of network output and ground-truth images to traditional
+                                    adversarial loss of GAN. This loss function and the presence of discriminator
+                                    reinforces the generator to produce more high-quality images than the original model
+                                    structured with a single convolutional neural network. During experiments with four
+                                    datasets, we find that our network has higher PSNR/SSIM values and qualitative
+                                    results than ODCNN.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='HY Lee, JM Kwak, B Ban, SJ Na, SR Lee, and HK Lee. "GAN-D: Generative adversarial networks for image deconvolution." 2017 International Conference on Information and Communication Technology Convergence (ICTC). IEEE, 2017.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/mlproject" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/7.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.1109/ICTC.2017.8190958" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 8 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/8.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>The phenotype control kernel of a biomolecular regulatory network</h5><br />
+                            <p class="bookDescription">
+                                Sang-Mok Choo, <strong>Byunghyun Ban</strong>, Ja Il Joo, Kwnag-Hyun Cho* (2018)<br />
+                                BMC Systems Biology &nbsp;(SCI)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    Background<br />
+                                    Controlling complex molecular regulatory networks is getting a growing attention as
+                                    it can provide a systematic way of driving any cellular state to a desired cell
+                                    phenotypic state. A number of recent studies suggested various control methods, but
+                                    there is still deficiency in finding out practically useful control targets that
+                                    ensure convergence of any initial network state to one of attractor states
+                                    corresponding to a desired cell phenotype.<br /><br />
+                                    Results<br />
+                                    To find out practically useful control targets, we introduce a new concept of
+                                    phenotype control kernel (PCK) for a Boolean network, defined as the collection of
+                                    all minimal sets of control nodes having their fixed state values that can generate
+                                    all possible control sets which eventually drive any initial state to one of
+                                    attractor states corresponding to a particular cell phenotype of interest. We also
+                                    present a detailed method with which we can identify PCK in a systematic way based
+                                    on the layered network and converging tree of a given network. We identify all
+                                    candidates for control nodes from the layered network and then hierarchically search
+                                    for all possible minimal sets by using the converging tree. We show the usefulness
+                                    of PCK by applying it to cell proliferation and apoptosis signaling networks and
+                                    comparing the results with other control methods. PCK is the unique control method
+                                    for Boolean network models that can be used to identify all possible minimal sets of
+                                    control nodes. Interestingly, many of the minimal sets have only one or two control
+                                    nodes.<br /><br />
+                                    Conclusions<br />
+                                    Based on the new concept of PCK, we can identify all possible minimal sets of
+                                    control nodes that can drive any molecular network state to one of multiple
+                                    attractor states representing a same desired cell phenotype.<br /><br />
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Choo, SM., Ban, B., Joo, J.I. et al. The phenotype control kernel of a biomolecular regulatory network. BMC Syst Biol 12, 49 (2018). https://doi.org/10.1186/s12918-018-0576-8'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/nc2" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/paperPdf/8.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.1186/s12918-018-0576-8" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paper 0 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/papers/0.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>대립 신경망을 이용한 심혈관 단층촬영 영상 표지 방법</h5><br />
+                            <p class="bookDescription">
+                                <strong>반병현</strong>(2018)<br />
+                                한국과학기술원 (석사학위논문)
+                            </p>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    의료영상 표지기술은 환자로부터 촬영된 엑스선 영상, 자기공명영상 또는 컴퓨터 단층촬영 영상 따위의 의료영상을 탐색하여 의미 있는 부분만 분할 표지하는
+                                    것으로 질병을 빠르고 정밀하게 진단하기 위한 보조 수단으로써 각광받고 있다. 종래 기계학습 기반의 의료영상 표지기술은 통계적 추론에 근거하여 표지 대상
+                                    구역과 그 외부 구역을 분할하도록 목적함수를 최소화하는 것을 공통적인 철학으로써 공유하는데, 심장 단층촬영 사진으로부터 관상동맥만을 특이적으로 표지하는
+                                    등 의료영상 내부의 표지 대상과 비 표지 대상의 비율이 한 쪽으로 치우친 경우 학습에 실패하여 전방위적인 오류를 도출한다. 본 논문에서는 완전연결
+                                    컨볼루션 뉴럴 네트워크의 2차원 확률분포 철학을 계승하며 영상 윈도잉 기법을 제안하여 클래스 밸런스 문제를 해결한다. 또한 생성적 대립 신경망이 비
+                                    생성적 인공지능의 성능 향상에 기여할 수 있다는 가능성을 제안하며 대립 신경망 학습을 통해 분류 대상의 비율이 극단적으로 치우친 경우에도 강건하게
+                                    작동하고, 인간이 발견하지 못 한 관상동맥을 발견한 혁신적인 성능의 의료영상 표지기술을 제안한다.
+                                </p>
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byung-Hyun Ban. "Cardiac CT image segmentation with adversarial networks." Master&apos;s Thesis, Korea Advanced Institute of Science and Technology, 2018.'>
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://koasas.kaist.ac.kr/handle/10203/295283" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="patents-template">
+        <section id="patents" class="animated bounceInDown">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">Patents</h2>
+                </div>
+            </div>
+            <div class="websitesContainer">
+
+                <!-- Patent 31 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/31.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>층류 형성을 유도하는 인공지능 기반 사물인터넷 시스템과 이를 활용한 수경재배 삽목 및 육묘 장치</h5><br />
+                            <div class="bookDescription">
+                                <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2023-0185372
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2023.12.19</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban, et al. IoT assisted laminar flow generator for hydroponic cultivation. KR Applied Patent 10-2023-0185372 (2023)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/10-2023-0185372.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020230185372" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 30 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/30.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>3차원 영상 재건 알고리즘을 활용한 식물공장 디지털 트윈 인터페이스 제공 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2538747
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2022.11.28</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2023.05.26.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban, et al. Apparatus and method for providing plant factory digital twin interface using 3D image reconstruction algorithm. KR Patent 10-2538747 (2023)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/30.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020220161821" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 29 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/29.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>의료용 대마 삽수의 자동 배양 관리장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2508469
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2022.11.22</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2023.03.06.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 김준산, 이민우<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban, et al. Apparatus and method for automatically managing cultivation of medical cannabis cuttings. KR Patent 10-2508469 (2023)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/29.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020220157476" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 28 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/28.png"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>비전인식을 활용한 의료용 헴프의 삽목 자동화 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2500388
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2022.09.08</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2023.02.13.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. Automating device and method for cutting medical hemp using vision recognition. KR Patent 10-2500388 (2023)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/28.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020220114177" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 27 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/27.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>메타버스를 이용한 스마트팜 제어 시스템 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2495818
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2022.08.18</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2023.01.31.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. Smart Farm Control System and Method Using Metaverse. KR Patent 10-2495818 (2023)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/27.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020220103233" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 25 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/25.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>3차원 가상공간을 제공하는 식물공장 관리 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2453696
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2022.04.18</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2022.10.06.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. Apparatus and Method for Managing Plant Factory Providing 3D Virtual Space. KR Patent 10-2453696 (2022)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/25.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020220047530" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 26 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/26.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>양액 재배 장치와 양액 재배 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2450379
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2022.04.19</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2022.09.28.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. Nutrient solution cultivation apparatus and nutrient solution cultivation method. KR Patent 10-2450379 (2022)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/26.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020220048450" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 15 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/15.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>머신러닝을 이용한 센서의 수명 분석 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2021-0123641
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.09.16</div>
+                                    <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.10.07.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. Device and method of sensor lifetime analysis using machine learning. KR Applied Patent 10-2021-0123641 (2021)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/15.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020210123641" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 14 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/14.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>ISE 센서 및 머신러닝을 활용한 양액 주요 영양소 공급장치 및 이를 이용한 양액 주요 영양소 공급 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2021-0123213
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.09.15</div>
+                                    <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.10.06.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. An automatic controller of nutrient solution using the ISE sensor and machine learning and a method using thereof. KR Applied Patent 10-2021-0123213 (2021)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/14.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020210123213" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 13 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/13.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>고형 원료 디스펜싱 방식의 양액 공급장치</h5><br />
+                            <div class="bookDescription">
+                                <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2021-0120087
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.09.09</div>
+                                    <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.09.29.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우, 장승엽<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. et al. Nutrient solution supply device of solid raw material dispensing method. KR Applied Patent 10-2021-0120087 (2021)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/13.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020210120087" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 12 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/12.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>불리언 방정식으로 모델링된 네트워크 모델을 이용한 수경재배 양액 분석 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2021-0118950
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.09.07</div>
+                                    <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2021.09.29.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. Device and method for agricultural nutrient solution analysis using network model modeled by boolean equation. KR Applied Patent 10-2021-0118950 (2021)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/12.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020210118950" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 11 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/11.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>수경재배 베드 및 뿌리 생장 정보를 이용한 수경재배 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2308623
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.03.31</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2021.09.28.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 류동훈, 김수빈, 이민우, 권영범<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban et al. Hydroponic cultivation bed and method of hydroponic cultivation using root growth information. KR Patent 10-2308623 (2021)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/11.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020210041526" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 10 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/10.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>용존산소 농도 및 용존이산화탄소 농도 분석을 통한 수경재배 양액 내 조류 농도 추론 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2289069
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.04.27</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2021.08.06.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban et al. Apparatus and method for inferring algae concentration in hydroponic nutrient solution through dissolved oxygen concentration and dissolved carbon dioxide concentration analysis. KR Patent 10-2289069 (2021)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/10.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020210054324" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 1 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/1.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>센서의 자동 캘리브레이션이 가능한 양액 제어 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2162817
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2020.06.15.</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.10.07.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이장훈, 류동훈, 이민우, 권영범, 엄태동<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban et al. Nutrient control device and method capable of automatic calibration of sensor. KR Patent 10-2162817 (2020)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://ieeexplore.ieee.org/abstract/document/9289192/" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/1.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020200072009" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 2 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/2.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>데이터 처리 서버 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2139928
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2020.05.26.</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.07.27.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;이장훈, 반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Janghun Lee and Byunghyun Ban. Data processing server and method. KR Patent 10-2139928 (2020)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/2.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020200063129" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 3 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/3.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>용존산소량 및 양액 농도 조절이 가능한 양액 재배 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2134655
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2020.04.23.</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.07.10.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. Apparatus and method for cultivating nutrient solution capable of adjusting dissolved oxygen and nutrient solution concentration. KR Patent 10-2134655 (2020)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/3.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020200049113" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 4 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/4.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>식물 뿌리의 이온 흡수율 분석 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2118957
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2020.02.06.</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.05.29.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. Apparatus and method for analyzing the ion absorption rate of plant roots. KR Patent 10-2118957 (2020)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/nutrient_solution" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://ieeexplore.ieee.org/document/9289083/" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/4.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020200014379" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 5 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/5.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>머신러닝을 활용한 양액에서 이온 간섭 효과 제거 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2069202
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2019.09.24.</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.01.16.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우, 류동훈<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban et al. Device and method for removing ion interference effect from nutrient solution using machine learning. KR Patent 10-2069202 (2020)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/ion_interference" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://ieeexplore.ieee.org/document/8939812/" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/5.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020190117156" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 6 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/6.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>상미분방적식으로 모델링된 네트워크 모델을 이용한 수경재배 양액 분석 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2053738
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2019.09.20.</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2019.12.03.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우, 류동훈<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban et al. Device and method for agricultural nutrient solution analysis using network model modeled by ordinary differential equation KR Patent 10-2053738 (2019)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/nutrient_solution" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://ieeexplore.ieee.org/document/8939946/" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/6.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020190115737" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 7 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/7.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>온실 시스템의 제어 모델 생성 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;10-2100350
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2019.04.24.</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2020.04.07.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 김수빈<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban et al. METHOD FOR GENERATING CONTROL MODEL OF GREENHOUSE SYSTEM. KR Patent 10-2100350 (2020)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://github.com/needleworm/greenhouse_ai" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://ieeexplore.ieee.org/document/8190813/" target="_blank"
+                                        rel="noreferrer">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/7.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020180011904" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 8 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/8.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>수경재배용 양액 관리 자동화 시스템 및 그 방법</h5><br />
+                            <div class="bookDescription">
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2019.04.24.</div>
+                                    <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2018-0094076</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;남윤성, 김민근, 김수림, 김현준, 이하영, 황의경, 반병현, 이민우<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;한국과학기술원<br />
+                            </div>
+                            <div class="projectIcons">
+                                <span></span>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/8.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020180094076" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 9 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/9.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>프리 오더 마르코프 체인과 베이즈 추론을 이용한 음악 작곡 방법</h5><br />
+                            <div class="bookDescription">
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2017.02.23.</div>
+                                    <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2017-0024220</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 정윤의, 장민수<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현, 정윤의, 장민수<br />
+                            </div>
+                            <div class="projectIcons">
+                                <span></span>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/9.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a href="https://doi.org/10.8080/1020170024220" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 23 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/23.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>이온 선택성 전극 기반의 양액 관리 시스템</h5><br />
+                            <div class="bookDescription">
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.11.23</div>
+                                    <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;PCT/KR2021/017300</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun, and Lee, Minwoo. "Nutrient Solution Management System Based on Ion Selective Electrode." Patent Application PCT/KR2021/017300, filed November 23, 2021.'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 20 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/20.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>수경재배 베드, 그리고 이를 이용한 수경재배 방법</h5><br />
+                            <div class="bookDescription">
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.03.30</div>
+                                    <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;PCT/KR2021/003929</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 류동훈, 김수빈, 이민우, 권영범, 서영우<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun, et al. "HYDROPONIC CULTIVATION BED, AND METHOD OF HYDROPONIC CULTIVATION USING THE SAME." Patent Application PCT/KR2021/003929, filed March 30, 2021.'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 19 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/19.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>이온 선택성 전극 기반의 양액 관리 시스템</h5><br />
+                            <div class="bookDescription">
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2020.11.19</div>
+                                    <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;PCT/KR2020/016335</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun, and Lee, Minwoo. "NUTRIENT SOLUTION MANAGEMENT SYSTEM BASED ON ION SELECTIVE ELECTRODE." Patent Application PCT/KR2020/016335, filed November 19, 2020.'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 18 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/18.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>양액 재배 장치와 양액 재배 방법</h5><br />
+                            <div class="bookDescription">
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2020.09.29</div>
+                                    <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;PCT/KR2020/013348</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun. "NUTRIENT SOLUTION CULTIVATION APPARATUS AND NUTRIENT SOLUTION CULTIVATION METHOD." Patent Application PCT/KR2020/013348, filed September 29, 2020.'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 17 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/17.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>양액 재배 장치와 양액 재배 방법</h5><br />
+                            <div class="bookDescription">
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2020.04.28</div>
+                                    <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;PCT/KR2020/005574</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun. "NUTRIENT SOLUTION CULTIVATION APPARATUS AND NUTRIENT SOLUTION CULTIVATION METHOD." Patent Application PCT/KR2020/005574, filed April 28, 2020.'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 16 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/16.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>신경망을 이용한 음악 검색 방법</h5><br />
+                            <div class="bookDescription">
+                                <strong>출원번호</strong> &nbsp;&nbsp;&nbsp;10-2017-0025908
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2017.02.28</div>
+                                    <div><strong>공개일</strong> &nbsp;&nbsp;&nbsp;2017.11.22.</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Byunghyun Ban. Method for searching music using neural network. KR Applied Patent 10-2017-0025908 (2017)'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 21 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/21.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>3차원 가상공간을 제공하는 식물공장 관리 장치 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.11.23.</div>
+                                    <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;PCT/KR2021/017302</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun. "Apparatus and Method for Managing Plant Factory Providing 3D Virtual Space." Patent Application PCT/KR2021/017302, filed November 23, 2021.'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 22 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/22.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>메타버스를 이용한 스마트팜 제어 시스템 및 방법</h5><br />
+                            <div class="bookDescription">
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.11.23.</div>
+                                    <div><strong>출원번호</strong> &nbsp;&nbsp;&nbsp;PCT/KR2021/017299</div>
+                                </div>
+                                <strong>발명자</strong> &nbsp;&nbsp;&nbsp;반병현, 이민우<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Ban, Byunghyun, and Lee, Minwoo. "Smart Farm Control System and Method Using Metaverse." Patent Application PCT/KR2021/017299, filed November 23, 2021.'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patent 24 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/patents/24.jpg"
+                            alt="projectimage" />
+                        <div class="projectText">
+                            <h5>사물인터넷 게이트웨이</h5><br />
+                            <div class="bookDescription">
+                                <strong>등록번호</strong> &nbsp;&nbsp;&nbsp;30-1111003
+                                <div class="patentInfo">
+                                    <div><strong>출원일</strong> &nbsp;&nbsp;&nbsp;2021.05.29.</div>
+                                    <div><strong>등록일</strong> &nbsp;&nbsp;&nbsp;2021.06.01.</div>
+                                </div>
+                                <strong>창작자</strong> &nbsp;&nbsp;&nbsp;이장훈, 반병현<br />
+                                <strong>출원인</strong> &nbsp;&nbsp;&nbsp;상상텃밭 (주)<br />
+                            </div>
+                            <div class="projectIcons">
+                                <h5>
+                                    <span class="citation"
+                                        data-citation='Lee, Janghun, and Ban, Byunghyun. "IoT Gateway." Design Registration 30-1111003, filed May 29, 2021.'
+                                        onclick="copyCitation(this)">
+                                        <i class="far fa-clipboard"></i>&nbsp;Cite This
+                                    </span>
+                                </h5>
+                                <div class="gitIcons">
+                                    <a href="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/patentPdf/24.pdf"
+                                        target="_blank" rel="noreferrer" download>
+                                        <i class="fas fa-file-pdf"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="news-template">
+        <section id="news" class="animated bounceInDown">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">News</h2>
+                </div>
+            </div>
+            <p style="text-align: center;">Pending Migration...</p>
+        </section>
+    </template>
+
+    <template id="membership-template">
+        <section id="membership" class="animated bounceInDown">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">Membership</h2>
+                </div>
+            </div>
+            <p style="text-align: center;">Pending Migration...</p>
+        </section>
+    </template>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
