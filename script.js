@@ -1,4 +1,6 @@
 
+
+
 const sns = {
     email: "bhban@kakao.com",
     github: "https://github.com/needleworm",
@@ -7,366 +9,130 @@ const sns = {
     researchgate: "https://www.researchgate.net/profile/Byunghyun_Ban"
 };
 
-const storeIcons = {
-    aladin: '<img src="./images/books/stores/aladdin.png" class="bookStoreIcon" alt="aladin"/>',
-    kyobo: '<img src="./images/books/stores/kyobo.png" class="bookStoreIcon" alt="kyobo"/>',
-    naver: '<img src="./images/books/stores/naver.png" class="bookStoreIcon" alt="naver"/>',
-    yes24: '<img src="./images/books/stores/yes24.png" class="bookStoreIcon" alt="yes24"/>',
-    ridi: '<img src="./images/books/stores/ridi.jpg" class="bookStoreIcon" alt="ridibooks"/>'
-};
 
-const booksData = [
+
+
+
+const membershipData = [
     {
-        cover: "./images/books/covers/29.jpg",
-        title: "코파일럿",
-        desc: "2024.03. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K562939114", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000212725343", icon: storeIcons.kyobo },
-            { url: "https://www.yes24.com/Product/Goods/125480842", icon: storeIcons.yes24 },
-            { url: "https://search.shopping.naver.com/book/catalog/46408580621", icon: storeIcons.naver }
-        ]
-    },
-    {
-        cover: "./images/books/covers/28.jpg",
-        title: "챗GPT 수능독해",
-        desc: "2024.02. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K762938384", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000212169752", icon: storeIcons.kyobo },
-            { url: "https://www.yes24.com/Product/Goods/124769179", icon: storeIcons.yes24 },
-            { url: "https://search.shopping.naver.com/book/catalog/45475313619", icon: storeIcons.naver }
-        ]
-    },
-    {
-        cover: "./images/books/covers/26.png",
-        title: "나보다 똑똑한 AI와 사는 법",
-        desc: "2023.12. 북트리거",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K302937684", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000211656067", icon: storeIcons.kyobo },
-            { url: "https://www.yes24.com/Product/Goods/124129560", icon: storeIcons.yes24 },
-            { url: "https://search.shopping.naver.com/book/catalog/44639212631", icon: storeIcons.naver }
-        ]
-    },
-    {
-        cover: "./images/books/covers/25.png",
-        title: '<a href="https://aieng.kr" target="_blank" rel="noreferrer">프롬프트 엔지니어링 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2023.10. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K872935139", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000209512470", icon: storeIcons.kyobo },
-            { url: "https://www.yes24.com/Product/Goods/122661870", icon: storeIcons.yes24 },
-            { url: "https://search.shopping.naver.com/book/catalog/42879138623", icon: storeIcons.naver }
-        ]
-    },
-    {
-        cover: "./images/books/covers/24.jpg",
-        title: '<a href="https://aieng.kr" target="_blank" rel="noreferrer">챗GPT 영어회화 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2023.08. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=321904017", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000208357873", icon: storeIcons.kyobo },
-            { url: "https://www.yes24.com/Product/Goods/121173595", icon: storeIcons.yes24 },
-            { url: "https://search.shopping.naver.com/book/catalog/41736386620", icon: storeIcons.naver }
-        ]
-    },
-    {
-        cover: "./images/books/covers/23.jpg",
-        title: '<a href="https://aieng.kr" target="_blank" rel="noreferrer">마음을 움직이는 보고서 작성법 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2023.07. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K782834570", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000202988695", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/41011824619", icon: storeIcons.naver },
-            { url: "https://www.yes24.com/Product/Goods/119982982", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/22.jpg",
-        title: '<a href="https://aieng.kr" target="_blank" rel="noreferrer">챗GPT영어교실 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2023.06. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K382833859", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000202728693", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/40724311622", icon: storeIcons.naver },
-            { url: "https://www.yes24.com/Product/Goods/119732698", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/21.jpg",
-        title: '<a href="https://needleworm.github.io/gpt2" target="_blank" rel="noreferrer">GPT 노마드의 탄생 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2023.03. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=313625658", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000201335898", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/38808261620", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/118059497", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/20.jpg",
-        title: '<a href="https://needleworm.github.io/chatgpt" target="_blank" rel="noreferrer">챗GPT <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2023.02. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K882831410", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000200861077", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/37646281618", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/117246674", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/19.jpg",
-        title: '<a href="https://needleworm.github.io/ai_voca" target="_blank" rel="noreferrer">AI족집게 수능영단어 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2023.01. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970506667", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000200661730", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/37153902621", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/116904678", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/18.jpg",
-        title: '<a href="https://www.bookk.co.kr/book/view/160649" target="_blank" rel="noreferrer">ChatGPT <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2023.01. BOOKK(부크크)",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K372831688", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000200738583", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/37266116619", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/116974514", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/17.jpg",
-        title: '<a href="https://needleworm.github.io/psd" target="_blank" rel="noreferrer">포토샵 마스터 클래스 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2023.01. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970506764", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000200616982", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/36979590620", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/116758227", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/16.jpg",
-        title: '<a href="https://needleworm.github.io/dev" target="_blank" rel="noreferrer">비전공이지만 개발자로 먹고삽니다 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2022.12. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=897050558X", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000200326244", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/36085390618", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/product/goods/115621142", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/15.jpg",
-        title: '<a href="https://www.bookk.co.kr/book/view/146587" target="_blank" rel="noreferrer">별처럼 찬란히 빛나는 꿈으로 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2022.08. BOOKK(부크크)",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K202839180", icon: storeIcons.aladin },
-            { url: "https://www.bookk.co.kr/book/view/146587", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/34370748635", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/112344499", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/14.jpg",
-        title: '<a href="https://needleworm.github.io/tech3" target="_blank" rel="noreferrer">가상자산 수업 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2022.06. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970505504", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000061351299", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32551450619", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/109708603", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/13.jpg",
-        title: '<a href="https://needleworm.github.io/dataset" target="_blank" rel="noreferrer">142가지 데이터셋 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2022.02. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970505350", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000001076024", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32466669805", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/107036705", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/12.jpg",
-        title: '<a href="https://needleworm.github.io/frontend" target="_blank" rel="noreferrer">HTML, CSS, 자바스크립트 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2022.02. 생능북스",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970505369", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000001076025", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32473630306", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/107010853", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/11.jpg",
-        title: "Cheesecake Vol.1",
-        desc: "2021.10. BOOKK (부크크)",
-        links: [
-            { url: "http://aladin.kr/p/l4o7A", icon: storeIcons.aladin },
-            { url: "https://search.shopping.naver.com/book/catalog/32492547835", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/105138391", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/10.jpg",
-        title: '<a href="https://needleworm.github.io/101" target="_blank" rel="noreferrer">101가지 컴퓨터 활용팁 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2021.07. 생능출판사",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=897050494X", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000001075989", icon: storeIcons.kyobo },
-            { url: "https://book.naver.com/bookdb/book_detail.nhn?bid=20739091", icon: storeIcons.naver },
-            { url: "https://search.shopping.naver.com/book/catalog/32441660148", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/9.jpg",
-        title: '<a href="https://needleworm.github.io/financebook" target="_blank" rel="noreferrer">내 자산 자동으로 관리하기 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2021.07. 생능출판사",
-        links: [
-            { url: "https://ebook-product.kyobobook.co.kr/dig/epd/ebook/480D210717470", icon: storeIcons.kyobo },
-            { url: "https://book.naver.com/bookdb/book_detail.nhn?bid=20764734", icon: storeIcons.naver },
-            { url: "https://ridibooks.com/books/4638000001", icon: storeIcons.ridi }
-        ]
-    },
-    {
-        cover: "./images/books/covers/8.jpg",
-        title: '<a href="https://needleworm.github.io/bhban_ai" target="_blank" rel="noreferrer">쉬운 딥러닝 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2021.04. 생능출판사",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=269891239", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000001075983", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32466710658", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/99552196", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/7.jpg",
-        title: '<a href="https://needleworm.github.io/bhban_rpa" target="_blank" rel="noreferrer">6개월 치 업무를 하루 만에 끝내는 업무자동화 <i class="fas fa-external-link-alt"></i></a>',
-        desc: "2020.12. 생능출판사",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970504745", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000001075971", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32445091399", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/96360166", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/6.jpg",
-        title: "공학자의 오경묵상",
-        desc: "2020.11. BOOKK(부크크)",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K112735243", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000060613527", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32490302839", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/95590656", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/5.jpg",
-        title: "나는 아직 잊힐 준비가 되지 않았어요",
-        desc: "2020.08. BOOKK(부크크)",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K622632023", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000060612313", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32506471953", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/92154589", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/4.jpg",
-        title: "공학자의 지혜묵상",
-        desc: "2020.05. BOOKK(부크크)",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K452639642", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000060611595", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32485690654", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/90392271", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/3.jpg",
-        title: "코딩하는 공익",
-        desc: "2020.04. 세창출판사",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8955866119", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000000810146", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32482707099", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/90081924", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/2.jpg",
-        title: "실전 민사소송법",
-        desc: "2017.05. 해피로라",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=K572639625", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000060611461", icon: storeIcons.kyobo },
-            { url: "https://search.shopping.naver.com/book/catalog/32497168624", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/90250538", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/1.jpg",
-        title: "법대로 합시다",
-        desc: "2016.02. 지식과감성#",
-        links: [
-            { url: "https://search.shopping.naver.com/book/catalog/32490276655", icon: storeIcons.naver },
-            { url: "http://www.yes24.com/Product/Goods/30660689", icon: storeIcons.yes24 }
-        ]
-    },
-    {
-        cover: "./images/books/covers/27.png",
-        title: "카이스트 공부벌레들",
-        desc: "2012.12. 살림Friends",
-        links: [
-            { url: "https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8952222210", icon: storeIcons.aladin },
-            { url: "https://product.kyobobook.co.kr/detail/S000000721696", icon: storeIcons.kyobo },
-            { url: "https://www.yes24.com/Product/Goods/8127931", icon: storeIcons.yes24 },
-            { url: "https://search.shopping.naver.com/book/catalog/32503858072", icon: storeIcons.naver }
-        ]
-    },
-    {
-        cover: "./images/books/covers/0.jpg",
-        title: "환세취호전",
-        desc: "2004.방학숙제",
+        title: "ITQ 출제위원",
+        image: "./images/membership/itq.jpg",
+        desc: "2024년부터 국가공인 정보기술자격 ITQ 출제위원으로 참여하고 있습니다.",
         links: []
+    },
+    {
+        title: "균형감각 (AI.Eng.)",
+        image: "./images/membership/ghgg.jpg",
+        desc: "AI기술로 영어학습의 혁신을 논의하는 비영리 학술단체입니다.",
+        links: [
+            { text: "균형감각", url: "https://aieng.kr", icon: '<i class="fas fa-external-link-alt"></i>' }
+        ]
+    },
+    {
+        title: "Cheesecake Studio",
+        image: "./images/membership/cheesecake.jpg",
+        desc: '아트워크 그룹 "치즈케익 스튜디오"',
+        links: [
+            { text: "Cheesecake Studio", url: "https://cheesecake-studio.github.io/", icon: '<i class="fas fa-external-link-alt"></i>' }
+        ]
+    },
+    {
+        title: "League of Perfect Scorers (LPS)",
+        image: "./images/membership/1.jpg",
+        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 0.000003% ~ 0.003%<br/>IQ 만점자 협회, 전 세계 19번째 멤버",
+        links: [
+            { text: "Youtube", url: "https://www.youtube.com/watch?v=cEGTZYeTIpg", icon: '<i class="fab fa-youtube"></i>' },
+            { text: "LPS", url: "http://www.opalquestgroup.com/societiestests.html", icon: '<i class="fas fa-external-link-alt"></i>' }
+        ]
+    },
+    {
+        title: "World Genius Directory",
+        image: "./images/membership/2.png",
+        desc: "최초이자 유일하게 한글로 이름 등재",
+        links: [
+            { text: "Youtube", url: "https://www.youtube.com/watch?v=cEGTZYeTIpg", icon: '<i class="fab fa-youtube"></i>' },
+            { text: "WGD", url: "http://www.psiq.org/home.html", icon: '<i class="fas fa-external-link-alt"></i>' }
+        ]
+    },
+    {
+        title: "ISI Society",
+        image: "./images/membership/3.jpg",
+        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 0.07%",
+        links: [
+            { text: "Youtube", url: "https://www.youtube.com/watch?v=cEGTZYeTIpg", icon: '<i class="fab fa-youtube"></i>' },
+            { text: "ISI", url: "http://isi-s.iqsociety.org/", icon: '<i class="fas fa-external-link-alt"></i>' }
+        ]
+    },
+    {
+        title: "Intertel",
+        image: "./images/membership/4.jpg",
+        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 1%",
+        links: [
+            { text: "Youtube", url: "https://www.youtube.com/watch?v=TaiEIC_xJwY", icon: '<i class="fab fa-youtube"></i>' },
+            { text: "Intertel", url: "https://www.intertel-iq.org/", icon: '<i class="fas fa-external-link-alt"></i>' }
+        ]
+    },
+    {
+        title: "Glia Society",
+        image: "./images/membership/5.jpg",
+        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 0.1%",
+        links: [
+            { text: "Glia", url: "https://gliasociety.org/", icon: '<i class="fas fa-external-link-alt"></i>' }
+        ]
+    },
+    {
+        title: "CIVIQ Society",
+        image: "./images/membership/6.jpg",
+        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 0.135%",
+        links: [
+            { text: "Glia", url: "https://gliasociety.org/", icon: '<i class="fas fa-external-link-alt"></i>' }
+        ]
+    },
+    {
+        title: "AI 미래포럼 (AIFF)",
+        image: "./images/membership/aiff.jpg",
+        desc: "<strong>AI for Social Good</strong>",
+        links: [
+            { text: "News", url: "https://www.hankyung.com/it/article/2021031413701", icon: '<i class="fas fa-external-link-alt"></i>' }
+        ]
     }
 ];
 
-function renderBooks() {
-    const container = document.getElementById('book-list');
-    if (!container) return;
 
+function renderMembership() {
+    const container = document.getElementById('membership-list');
+    if (!container) return;
     container.innerHTML = '';
 
-    booksData.forEach(book => {
-        const bookDiv = document.createElement('div');
-        bookDiv.className = 'singleBookContainer';
+    membershipData.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'singleLectureContainer'; // react uses singleLectureContainer for memberships too
 
-        let linkHtml = '';
-        if (book.links && book.links.length > 0) {
-            linkHtml = `<ul class="list-inline">`;
-            book.links.forEach(link => {
-                linkHtml += `<li><a href="${link.url}" target="_blank" rel="noreferrer">${link.icon}</a></li>`;
+        let linksHtml = '';
+        if (item.links && item.links.length > 0) {
+            linksHtml = `<div class="lectureIcons"><div class="gitIcons">`;
+            item.links.forEach((link, index) => {
+                linksHtml += `<a href="${link.url}" target="_blank" rel="noreferrer">${link.icon}</a>`;
+                if (index < item.links.length - 1) linksHtml += '&nbsp;&nbsp;&nbsp;';
             });
-            linkHtml += `</ul>`;
+            linksHtml += `</div></div>`;
         }
 
-        bookDiv.innerHTML = `
-            <img src="${book.cover}" alt="${book.title.replace(/<[^>]*>?/gm, '')}" class="bookCoverImage"/>
-            <h5>${book.title}</h5>
-            <p class="bookDescription">${book.desc}</p>
-            ${linkHtml}
+        div.innerHTML = `
+            <div class="singleWebsiteCard">
+                <img class="websiteImage" src="${item.image}" alt="projectimage"/>
+                <div class="projectText">
+                    <h5>${item.title}</h5><br/>
+                    <p class="bookDescription">${item.desc}</p>
+                    ${linksHtml}
+                </div>
+            </div>
         `;
-        container.appendChild(bookDiv);
+        container.appendChild(div);
     });
 }
+
+
 
 
 // Navigation Logic
@@ -393,8 +159,9 @@ function showContent(contentId) {
             contentContainer.appendChild(template.content.cloneNode(true));
 
             // Special initialization for specific sections
-            if (contentId === 'books') {
-                renderBooks();
+
+            if (contentId === 'membership') {
+                renderMembership();
             }
 
             openSideMenu();
@@ -693,3 +460,25 @@ function fallbackCopy(text) {
     document.body.removeChild(dummy);
     alert("Citation is copied to Clipboard!");
 }
+
+// YouTube Facade Pattern to prevent WebGL Context Limits
+document.addEventListener('click', function (e) {
+    const facade = e.target.closest('.youtube-facade');
+    if (facade) {
+        const src = facade.getAttribute('data-src');
+        const title = facade.getAttribute('data-title');
+        const iframe = document.createElement('iframe');
+        iframe.className = 'YoutubePreview';
+        iframe.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1';
+        iframe.title = title;
+        iframe.frameBorder = "0";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allowFullscreen = true;
+        iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+
+        facade.parentNode.replaceChild(iframe, facade);
+    }
+});
+
+
+

@@ -19,6 +19,19 @@ code {
     background-image: url('./images/bookcovers.png');
 }
 
+.user-image {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Optional: nice touch for profile pic */
+}
+
 .animated {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
@@ -1155,7 +1168,7 @@ section h2.section-heading {
 
 .YoutubePreview {
     width: 100%;
-    height: auto;
+    /* height: auto; removed to fix aspect ratio */
     display: block;
     box-shadow: 1px 1px 1px 1px gray;
     border-radius: 10px;
@@ -1164,6 +1177,31 @@ section h2.section-heading {
     margin-bottom: 50px;
     min-width: 200px;
     aspect-ratio: 16/9;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.youtube-facade {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: rgba(255, 0, 0, 0.8);
+    pointer-events: none;
+    transition: transform 0.2s ease;
+}
+
+.youtube-facade:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.1);
+    color: red;
 }
 
 .singleLectureContainer {
@@ -1360,3 +1398,14 @@ section h2.section-heading {
 }
 
 /* Horizontal layout removed as per user request */
+
+@media (min-width: 1100px) {
+
+    #lectures .websiteImage,
+    #papers .websiteImage,
+    #patents .websiteImage {
+        max-height: 40vh;
+        width: auto;
+        object-fit: contain;
+    }
+}
