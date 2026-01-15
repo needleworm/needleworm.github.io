@@ -879,7 +879,10 @@ i {
     /* So we don't need to hide/show them. They are just there. */
 
     .panel-main {
-        display: table;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
         position: relative
     }
 
@@ -888,8 +891,10 @@ i {
     }
 
     .panel-main__inner {
-        display: table-cell;
-        padding: 60px 10%
+        display: block !important;
+        padding: 0 10%;
+        width: 100%;
+        box-sizing: border-box !important;
     }
 
     .panel-cover__description {
@@ -920,10 +925,7 @@ i {
         background-position: center center
     }
 
-    .panel-cover.panel-cover--collapsed .panel-main__inner {
-        display: block;
-        padding: 70px 0 30px 0
-    }
+
 
     .content-wrapper {
         margin-left: 0;
