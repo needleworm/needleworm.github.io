@@ -9,92 +9,6 @@ const sns = {
 
 
 
-const membershipData = [
-    {
-        title: "ITQ 출제위원",
-        image: "./images/membership/itq.jpg",
-        desc: "2024년부터 국가공인 정보기술자격 ITQ 출제위원으로 참여하고 있습니다.",
-        links: []
-    },
-    {
-        title: "균형감각 (AI.Eng.)",
-        image: "./images/membership/ghgg.jpg",
-        desc: "AI기술로 영어학습의 혁신을 논의하는 비영리 학술단체입니다.",
-        links: [
-            { text: "균형감각", url: "https://aieng.kr", icon: '<i class="fas fa-external-link-alt"></i>' }
-        ]
-    },
-    {
-        title: "Cheesecake Studio",
-        image: "./images/membership/cheesecake.jpg",
-        desc: '아트워크 그룹 "치즈케익 스튜디오"',
-        links: [
-            { text: "Cheesecake Studio", url: "https://cheesecake-studio.github.io/", icon: '<i class="fas fa-external-link-alt"></i>' }
-        ]
-    },
-    {
-        title: "League of Perfect Scorers (LPS)",
-        image: "./images/membership/1.jpg",
-        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 0.000003% ~ 0.003%<br/>IQ 만점자 협회, 전 세계 19번째 멤버",
-        links: [
-            { text: "Youtube", url: "https://www.youtube.com/watch?v=cEGTZYeTIpg", icon: '<i class="fab fa-youtube"></i>' },
-            { text: "LPS", url: "http://www.opalquestgroup.com/societiestests.html", icon: '<i class="fas fa-external-link-alt"></i>' }
-        ]
-    },
-    {
-        title: "World Genius Directory",
-        image: "./images/membership/2.png",
-        desc: "최초이자 유일하게 한글로 이름 등재",
-        links: [
-            { text: "Youtube", url: "https://www.youtube.com/watch?v=cEGTZYeTIpg", icon: '<i class="fab fa-youtube"></i>' },
-            { text: "WGD", url: "http://www.psiq.org/home.html", icon: '<i class="fas fa-external-link-alt"></i>' }
-        ]
-    },
-    {
-        title: "ISI Society",
-        image: "./images/membership/3.jpg",
-        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 0.07%",
-        links: [
-            { text: "Youtube", url: "https://www.youtube.com/watch?v=cEGTZYeTIpg", icon: '<i class="fab fa-youtube"></i>' },
-            { text: "ISI", url: "http://isi-s.iqsociety.org/", icon: '<i class="fas fa-external-link-alt"></i>' }
-        ]
-    },
-    {
-        title: "Intertel",
-        image: "./images/membership/4.jpg",
-        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 1%",
-        links: [
-            { text: "Youtube", url: "https://www.youtube.com/watch?v=TaiEIC_xJwY", icon: '<i class="fab fa-youtube"></i>' },
-            { text: "Intertel", url: "https://www.intertel-iq.org/", icon: '<i class="fas fa-external-link-alt"></i>' }
-        ]
-    },
-    {
-        title: "Glia Society",
-        image: "./images/membership/5.jpg",
-        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 0.1%",
-        links: [
-            { text: "Glia", url: "https://gliasociety.org/", icon: '<i class="fas fa-external-link-alt"></i>' }
-        ]
-    },
-    {
-        title: "CIVIQ Society",
-        image: "./images/membership/6.jpg",
-        desc: "<strong>Rarity</strong> &nbsp;&nbsp; 0.135%",
-        links: [
-            { text: "Glia", url: "https://gliasociety.org/", icon: '<i class="fas fa-external-link-alt"></i>' }
-        ]
-    },
-    {
-        title: "AI 미래포럼 (AIFF)",
-        image: "./images/membership/aiff.jpg",
-        desc: "<strong>AI for Social Good</strong>",
-        links: [
-            { text: "News", url: "https://www.hankyung.com/it/article/2021031413701", icon: '<i class="fas fa-external-link-alt"></i>' }
-        ]
-    }
-];
-
-
 function renderMembership() {
     const container = document.getElementById('membership-list');
     if (!container) return;
@@ -315,12 +229,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Initial set up
 document.addEventListener('DOMContentLoaded', () => {
+    // Preload all images from templates
+    preloadImages();
+
+    // Preload all tab data
+    preloadCodesData();
+
     // Check hash to load specific content if needed
     const hash = window.location.hash.substring(1);
     if (hash && document.getElementById(hash + '-template')) {
         showContent(hash);
     }
 });
+
+/**
+ * Preload all images from HTML templates
+ * This improves performance by loading images before tabs are opened
+ */
+function preloadImages() {
+    console.log("Preloading images from templates...");
+
+    const imagesToPreload = new Set(); // Use Set to avoid duplicates
+
+    // Get all template elements
+    const templates = document.querySelectorAll('template');
+
+    templates.forEach(template => {
+        // Create a temporary container to parse template content
+        const tempDiv = document.createElement('div');
+        tempDiv.appendChild(template.content.cloneNode(true));
+
+        // Find all img tags in the template
+        const images = tempDiv.querySelectorAll('img');
+        images.forEach(img => {
+            const src = img.getAttribute('src');
+            if (src) {
+                imagesToPreload.add(src);
+            }
+        });
+    });
+
+    // Preload each unique image
+    imagesToPreload.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+
+    console.log(`Preloaded ${imagesToPreload.size} unique images`);
+}
 
 /**
  * NaNa Company Contact Form Handler using EmailJS
@@ -541,58 +497,6 @@ document.addEventListener('click', function (e) {
 
 
 
-// Codes Section Logic
-
-const manualProjects = [
-    "bhbhan_rpa", "automation_edu", "pymacro", "python101", "bhbhan_ai", "pywinmacro",
-    "newsToday", "post_crawler", "brunch_thaad",
-    "needleworm.github.io", "financebook", "instagram", "gunbam", "101", "frontend", "dataset",
-    "fvs", "base_sequence_analysis", "fmm_crawl", "pubmed_crawler", "pubmed_abstract_crawl", "PubMed_Crawl_exe", "google_scholar_crawler", "ion_interference", "nutrient_solution", "nc2", "greenhouse_ai", "bh_coefficient", "mlproject",
-    "pixabay_crawling", "chulsukbu", "get_vaccine", "img_crop_from_PDF", "insta_like_by_graphic_recognition", "twitter_news_macro", "xlsx_destroyer", "wordpuzzle", "xlsx_sorter", "bluestack_macro",
-    "CoinAutoTrader", "nftauto", "pixelRandomizer", "CoinAutoTrader_Bithumb", "coinone_Api_for_google_apps", "CoinAutoTrader_exe",
-    "eliza", "mozza", "pizza", "cottoncandy", "breakout", "moneyauto"
-];
-
-const thumbnailMap = {
-    // edu
-    "bhbhan_rpa": "edu.jpg", "automation_edu": "edu.jpg", "pymacro": "edu.jpg", "python101": "edu.jpg",
-    // python
-    "bhbhan_ai": "books/covers/8.jpg",
-    "newsToday": "python.jpg", "post_crawler": "python.jpg", "brunch_thaad": "python.jpg",
-    "fvs": "science.jpg", "base_sequence_analysis": "science.jpg", "fmm_crawl": "science.jpg",
-    "pubmed_crawler": "science.jpg", "pubmed_abstract_crawl": "science.jpg", "google_scholar_crawler": "science.jpg",
-    "ion_interference": "science.jpg", "nutrient_solution": "science.jpg", "nc2": "science.jpg",
-    "greenhouse_ai": "science.jpg", "bh_coefficient": "science.jpg",
-    "pixabay_crawling": "python.jpg", "chulsukbu": "python.jpg", "get_vaccine": "python.jpg",
-    "img_crop_from_PDF": "python.jpg", "insta_like_by_graphic_recognition": "python.jpg",
-    "twitter_news_macro": "python.jpg", "xlsx_destroyer": "python.jpg", "wordpuzzle": "python.jpg",
-    "xlsx_sorter": "python.jpg", "bluestack_macro": "python.jpg",
-    "mozza": "cheese.jpg", "pizza": "cheese.jpg", "cottoncandy": "cheese.jpg",
-    // exe
-    "pywinmacro": "exe.jpg", "PubMed_Crawl_exe": "exe.jpg", "CoinAutoTrader_exe": "exe.jpg",
-    // moneyauto
-    "CoinAutoTrader": "moneyauto.jpg", "CoinAutoTrader_Bithumb": "moneyauto.jpg", "moneyauto": "moneyauto.jpg",
-    // nft
-    "nftauto": "nft.jpg", "pixelRandomizer": "nft.jpg",
-    // react
-    "needleworm.github.io": "react.jpg",
-    // jekyll / web
-    "financebook": "books/covers/9.jpg",
-    "instagram": "books/covers/12.jpg",
-    "gunbam": "books/covers/12.jpg",
-    "101": "books/covers/10.jpg",
-    "frontend": "books/covers/12.jpg",
-    "dataset": "books/covers/13.jpg",
-    // js
-    "coinone_Api_for_google_apps": "js.jpg",
-    // tf
-    "mlproject": "tf.jpg", "breakout": "tf.jpg",
-    // scala
-    "eliza": "scala.jpg"
-};
-
-const defaultThumbnail = "python.jpg";
-
 function getIconForLanguage(lang) {
     if (!lang) return '<i class="fas fa-code"></i>';
     const l = lang.toLowerCase();
@@ -617,43 +521,38 @@ function resolveThumbnail(name) {
 let codesLoaded = false;
 let languageChartInstance = null;
 
-async function loadCodes() {
-    if (codesLoaded) return;
+// Preloaded data storage
+let preloadedCodesData = null;
 
-    const starsEl = document.getElementById('total-stars');
-    const forksEl = document.getElementById('total-forks');
-    const commitsEl = document.getElementById('total-commits'); // Kept for safety, though unused in HTML now
-    const canvas = document.getElementById('languageChart');
-
-    if (!canvas) return;
-
-    // Debug 1: Start
-    console.log("Starting loadCodes...");
+/**
+ * Preload GitHub repository data without requiring DOM elements
+ * This function is called on page load to fetch data early
+ */
+async function preloadCodesData() {
+    if (preloadedCodesData) return; // Already preloaded
 
     try {
-        console.log("Fetching repos from GitHub...");
-        // Fetch
+        console.log("Preloading GitHub repository data...");
+
+        // Fetch repos from both accounts
         const [userRepos, orgRepos] = await Promise.all([
             fetch('https://api.github.com/users/needleworm/repos?per_page=100').then(r => {
-                console.log("Needleworm fetch status:", r.status);
+                console.log("Preload - Needleworm fetch status:", r.status);
                 return r.json();
             }),
             fetch('https://api.github.com/users/NaNaCompany/repos?per_page=100').then(r => {
-                console.log("NaNaCompany fetch status:", r.status);
+                console.log("Preload - NaNaCompany fetch status:", r.status);
                 return r.json();
             })
         ]);
-
-        console.log("Raw userRepos:", userRepos);
-        console.log("Raw orgRepos:", orgRepos);
 
         // Safety check for arrays
         const safeUserRepos = Array.isArray(userRepos) ? userRepos : [];
         const safeOrgRepos = Array.isArray(orgRepos) ? orgRepos : [];
 
         const allRepos = [...safeUserRepos, ...safeOrgRepos];
-        console.log("Combined repos count:", allRepos.length);
 
+        // Calculate totals
         let totalStars = 0;
         let totalForks = 0;
         const languages = {};
@@ -667,16 +566,127 @@ async function loadCodes() {
             }
         });
 
-        if (starsEl) starsEl.innerText = totalStars;
-        if (forksEl) forksEl.innerText = totalForks;
-        // Total Commits logic removed
+        // Store the preloaded data
+        preloadedCodesData = {
+            totalStars,
+            totalForks,
+            languages,
+            allRepos
+        };
 
-        renderLanguageChart(languages);
+        console.log("GitHub data preloaded successfully:", preloadedCodesData);
+    } catch (e) {
+        console.error("Failed to preload GitHub data", e);
+
+        // Use default values if preloading fails
+        preloadedCodesData = {
+            totalStars: 1716,
+            totalForks: 1826,
+            languages: {
+                'Python': 43,
+                'JavaScript': 31,
+                'CSS': 16,
+                'HTML': 11,
+                'TypeScript': 1,
+                'ETC': 3
+            },
+            allRepos: []
+        };
+
+        console.log("Using default GitHub data:", preloadedCodesData);
+    }
+}
+
+async function loadCodes() {
+    if (codesLoaded) return;
+
+    const starsEl = document.getElementById('total-stars');
+    const forksEl = document.getElementById('total-forks');
+    const commitsEl = document.getElementById('total-commits'); // Kept for safety, though unused in HTML now
+    const canvas = document.getElementById('languageChart');
+
+    if (!canvas) return;
+
+    console.log("Starting loadCodes...");
+
+    // Default values
+    const defaultStars = 1716;
+    const defaultForks = 1826;
+    const defaultLanguages = {
+        'Python': 43,
+        'JavaScript': 31,
+        'CSS': 16,
+        'HTML': 11,
+        'TypeScript': 1,
+        'ETC': 3
+    };
+
+    // Show default values immediately while loading
+    if (starsEl) starsEl.innerText = defaultStars;
+    if (forksEl) forksEl.innerText = defaultForks;
+    renderLanguageChart(defaultLanguages);
+
+    try {
+        let totalStars, totalForks, languages;
+
+        // Check if we have preloaded data
+        if (preloadedCodesData) {
+            console.log("Using preloaded GitHub data");
+            totalStars = preloadedCodesData.totalStars;
+            totalForks = preloadedCodesData.totalForks;
+            languages = preloadedCodesData.languages;
+        } else {
+            // Fallback: fetch data if not preloaded
+            console.log("Fetching repos from GitHub...");
+            const [userRepos, orgRepos] = await Promise.all([
+                fetch('https://api.github.com/users/needleworm/repos?per_page=100').then(r => {
+                    console.log("Needleworm fetch status:", r.status);
+                    return r.json();
+                }),
+                fetch('https://api.github.com/users/NaNaCompany/repos?per_page=100').then(r => {
+                    console.log("NaNaCompany fetch status:", r.status);
+                    return r.json();
+                })
+            ]);
+
+            // Safety check for arrays
+            const safeUserRepos = Array.isArray(userRepos) ? userRepos : [];
+            const safeOrgRepos = Array.isArray(orgRepos) ? orgRepos : [];
+
+            const allRepos = [...safeUserRepos, ...safeOrgRepos];
+            console.log("Combined repos count:", allRepos.length);
+
+            totalStars = 0;
+            totalForks = 0;
+            languages = {};
+
+            allRepos.forEach(repo => {
+                totalStars += repo.stargazers_count;
+                totalForks += repo.forks_count;
+
+                if (repo.language) {
+                    languages[repo.language] = (languages[repo.language] || 0) + 1;
+                }
+            });
+        }
+
+        // Only update if we have actual data (not using defaults from preload error)
+        if (totalStars > 0 || totalForks > 0 || Object.keys(languages).length > 0) {
+            console.log("Updating with actual GitHub data");
+            if (starsEl) starsEl.innerText = totalStars;
+            if (forksEl) forksEl.innerText = totalForks;
+            renderLanguageChart(languages);
+        } else {
+            console.log("No valid data received, keeping default values");
+        }
 
         codesLoaded = true;
 
     } catch (e) {
         console.error("Failed to load codes", e);
+        console.log("Keeping default values due to error");
+        // Default values are already displayed, no need to update
+        codesLoaded = true;
     }
 }
 

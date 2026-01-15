@@ -20,8 +20,10 @@ code {
 }
 
 .user-image {
-    width: 120px !important;
-    height: 120px !important;
+    width: 20vh !important;
+    height: 20vh !important;
+    min-width: 120px !important;
+    min-height: 120px !important;
     border-radius: 50% !important;
     object-fit: cover !important;
     display: block;
@@ -714,8 +716,10 @@ hr {
 }
 
 .user-image {
-    width: 250px;
-    height: 250px;
+    width: 20vh;
+    height: 20vh;
+    min-width: 250px;
+    min-height: 250px;
     border-radius: 50%;
     border: 5px solid #fff;
     margin-bottom: 30px;
