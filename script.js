@@ -596,15 +596,24 @@ async function loadCodes() {
 
     if (!canvas) return;
 
+    // Default values to use if preloaded data isn't ready yet
+    const defaultLanguages = {
+        'Python': 43,
+        'JavaScript': 31,
+        'CSS': 16,
+        'HTML': 11,
+        'TypeScript': 1,
+        'ETC': 3
+    };
 
     // Use preloaded data (fetched once at page load)
     if (preloadedCodesData) {
-
         if (starsEl) starsEl.innerText = preloadedCodesData.totalStars;
         if (forksEl) forksEl.innerText = preloadedCodesData.totalForks;
         renderLanguageChart(preloadedCodesData.languages);
     } else {
-        // If preload failed, defaults are already showing from HTML
+        // If preload hasn't finished yet (e.g., direct #codes navigation), render default chart
+        renderLanguageChart(defaultLanguages);
     }
 }
 
