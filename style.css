@@ -866,8 +866,17 @@ i {
 
 @media all and (max-width:800px) {
     .btn-mobile-menu {
-        display: block
+        display: none !important;
+        /* Removed permanently as per request */
     }
+
+    .panel-cover.panel-cover--collapsed .btn-mobile-menu {
+        display: none !important;
+    }
+
+    /* Hide navigation links when collapsed - NOT needed anymore if we keep full screen and scroll */
+    /* But if the panel stays 100vh, the user sees the original buttons! */
+    /* So we don't need to hide/show them. They are just there. */
 
     .panel-main {
         display: table;
@@ -900,9 +909,13 @@ i {
     }
 
     .panel-cover.panel-cover--collapsed {
+        width: 100% !important;
+        max-width: 100% !important;
         display: block;
         position: relative;
-        height: auto;
+        height: 100vh;
+        /* Force full height */
+        min-height: 100vh;
         padding: 0;
         background-position: center center
     }
@@ -911,6 +924,34 @@ i {
         display: block;
         padding: 70px 0 30px 0
     }
+
+    .content-wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.btn-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e25440;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.btn-to-top:hover {
+    background-color: #b9301c;
 }
 
 /* src/components/books.css */

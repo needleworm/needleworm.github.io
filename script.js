@@ -191,19 +191,17 @@ function closeSideMenu() {
             fill: 'forwards'
         });
     } else {
-        panelCover.animate([
-            { height: '40%' },
-            { height: '100%' }
-        ], {
-            duration: 300,
-            easing: 'ease-in-out',
-            fill: 'forwards'
-        });
+        // Mobile: No animation for height (stays 100vh)
+        // Just let sticky/relative positioning take over if needed, 
+        // but with min-height: 100vh in CSS, it just stays full screen.
     }
 
     contentWrapper.classList.remove('showing');
     currentContent = "none";
     currentLatestButton = "none";
+
+    // Scroll to top when closing
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     setTimeout(() => {
         const contentContainer = document.getElementById('content-container');
@@ -217,6 +215,11 @@ function openSideMenu() {
     const windowWidth = window.innerWidth;
 
     if (contentWrapper.classList.contains('showing')) {
+        // Already showing, just ensure we scroll to content
+        setTimeout(() => {
+            const contentContainer = document.getElementById('content-container');
+            if (contentContainer) contentContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
         return;
     }
 
@@ -232,34 +235,83 @@ function openSideMenu() {
             fill: 'forwards'
         });
     } else {
-        panelCover.animate([
-            { height: '100%' },
-            { height: '40%' }
-        ], {
-            duration: 300,
-            easing: 'ease-in-out',
-            fill: 'forwards'
-        });
+        // Mobile: No animation. Panel stays 100vh.
+        // We just scroll down to the content.
     }
 
     contentWrapper.classList.add('showing');
+
+    // Mobile: Scroll to content
+    if (windowWidth <= 800) {
+        setTimeout(() => {
+            const contentContainer = document.getElementById('content-container');
+            if (contentContainer) {
+                contentContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 300);
+    }
 }
 
+// Mobile Menu Button Logic (Deprecated/Hidden)
 function toggleMobileMenu() {
+    // Kept for safety, but button is hidden.
     const navigationWrapper = document.querySelector('.navigation-wrapper');
     const btnMobileMenuIcon = document.querySelector('.btn-mobile-menu__icon');
     const btnMobileCloseIcon = document.querySelector('.btn-mobile-close__icon');
 
     if (navigationWrapper.classList.contains('visible')) {
         navigationWrapper.classList.remove('visible', 'bounceInDown', 'animated');
-        btnMobileMenuIcon.classList.remove('hidden'); // Show open icon
-        btnMobileCloseIcon.classList.add('hidden'); // Hide close icon
+        btnMobileMenuIcon.classList.remove('hidden');
+        btnMobileCloseIcon.classList.add('hidden');
     } else {
         navigationWrapper.classList.add('visible', 'bounceInDown', 'animated');
-        btnMobileMenuIcon.classList.add('hidden'); // Hide open icon
-        btnMobileCloseIcon.classList.remove('hidden'); // Show close icon
+        btnMobileMenuIcon.classList.add('hidden');
+        btnMobileCloseIcon.classList.remove('hidden');
     }
 }
+
+// Floating Button Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const btnToTop = document.getElementById('btn-to-top');
+    if (btnToTop) {
+        // Use capture: true to catch scroll events from any element (e.g. overflow:auto containers)
+        document.addEventListener('scroll', (e) => {
+            let scrollY = window.scrollY;
+
+            // If the event target is an element (and not the document), use its scrollTop
+            if (e.target instanceof Element) {
+                // Check if this element is actually contributing to the main view scroll
+                // or just always allow it if it's substantial
+                if (e.target.scrollTop > 0) {
+                    scrollY = e.target.scrollTop;
+                }
+            }
+
+            if (scrollY > 300) {
+                btnToTop.style.display = 'block';
+            } else {
+                btnToTop.style.display = 'none';
+            }
+        }, { capture: true });
+
+        btnToTop.addEventListener('click', () => {
+            // Scroll window
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Also try to scroll potential containers
+            document.body.scrollTo({ top: 0, behavior: 'smooth' });
+            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Try to find the panel cover content which might be scrolling
+            const panel = document.querySelector('.panel-cover');
+            if (panel) panel.scrollTo({ top: 0, behavior: 'smooth' });
+
+            const content = document.querySelector('.content-wrapper');
+            if (content) content.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+});
+
 
 // Initial set up
 document.addEventListener('DOMContentLoaded', () => {
@@ -677,7 +729,7 @@ function renderLanguageChart(languages) {
 
             ctx.beginPath();
             ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
-            ctx.fillStyle = "#cccccc"; // Gray background (revealed as cat)
+            ctx.fillStyle = "#888888"; // Darker Gray background
             ctx.fill();
 
             // Draw Icon (White Mask)
