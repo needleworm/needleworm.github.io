@@ -104,10 +104,9 @@
                                 </span>
                             </nav>
                             <hr class="panel-cover__divider" />
-                            <p class="panel-cover__description">Author, Entrepreneur, Researcher and Developer,</p>
-                            <p class="panel-cover__description">And <a
-                                    href="https://www.youtube.com/channel/UCpV0ZdloVwvSjxHfnYYQPQg?sub_confirmation=1">YouTube
-                                    Creator</a>.</p>
+                            <p class="panel-cover__description">Author, Researcher, Developer,<br /> and CEO of <a
+                                    href="https://nanalab.kr">NaNa Lab</a>.
+                            </p>
                             <hr class="panel-cover__divider panel-cover__divider--secondary" />
                             <div class="navigation-wrapper">
                                 <br />
@@ -193,7 +192,7 @@
                     <div id="content-container"></div>
 
                     <footer>
-                        <footer class="footer">
+                        <footer class="footer" style="text-align: center;">
                             <span class="footer__copyright">&copy; 2021. Byunghyun Ban All rights reserved.</span>
                         </footer>
                     </footer>
@@ -3952,40 +3951,33 @@
                 <div class="row"
                     style="margin-bottom: 50px; display: flex; align-items: center; justify-content: center;">
                     <!-- Left: Stats -->
-                    <div class="col-md-5 text-center" style="margin-bottom: 20px;">
-                        <div
-                            style="font-size: 1.5rem; font-weight: bold; margin-bottom: 20px; text-align: left; padding-left: 20%;">
-                            <div>Total Stars: <span id="total-stars">Loading...</span></div>
-                            <div style="margin: 10px 0;">Total Forks: <span id="total-forks">Loading...</span></div>
-                            <div>Total Repos: <span id="total-commits">Loading...</span></div>
+                    <div class="row justify-content-center" style="margin-top: 30px;">
+                        <div class="col-md-8 text-center">
+                            <!-- Stats Row -->
+                            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; font-size: 1.2rem; font-weight: normal; color: #555; margin-bottom: 20px;"
+                                data-version="v3">
+                                <div style="margin: 0 15px;">
+                                    <i class="far fa-star"></i> <span id="total-stars">Loading...</span>
+                                </div>
+                                <div style="margin: 0 15px;">
+                                    <i class="fas fa-code-branch"></i> <span id="total-forks">Loading...</span>
+                                </div>
+                            </div>
+
+                            <!-- Chart -->
+                            <div style="max-width: 500px; margin: 0 auto; position: relative;">
+                                <canvas id="languageChart"></canvas>
+                            </div>
+                            <p class="text-center"
+                                style="margin-top: 10px; font-size: 0.9em; color: #666; text-align: center;">
+                                Aggregated from <a href="https://github.com/needleworm" target="_blank">needleworm</a> &
+                                <a href="https://github.com/NaNaCompany" target="_blank">NaNaCompany</a>
+                            </p>
                         </div>
                     </div>
 
-                    <!-- Right: Pie Chart -->
-                    <div class="col-md-7">
-                        <div style="max-width: 500px; margin: 0 auto;">
-                            <canvas id="languageChart"></canvas>
-                        </div>
-                        <p class="text-center" style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                            Aggregated from <a href="https://github.com/needleworm" target="_blank">needleworm</a> & <a
-                                href="https://github.com/NaNaCompany" target="_blank">NaNaCompany</a>
-                        </p>
-                    </div>
-                </div>
 
-                <div class="col-lg-12 text-center">
-                    <h3 class="qwerqwer">
-                        Realtime Summary of &nbsp;
-                        <a class="tempa" href="https://github.com/needleworm" target="_blank" rel="noreferrer">
-                            My <i class="fab fa-github"></i> Github Account
-                        </a>
-                    </h3>
                 </div>
-
-                <div class="projects" id="codes-list">
-                    <!-- Projects will be injected here -->
-                </div>
-            </div>
         </section>
     </template>
 
@@ -6771,7 +6763,7 @@
         </section>
     </template>
 
-    <script src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
