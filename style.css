@@ -746,7 +746,9 @@ hr {
     letter-spacing: 1px;
     text-shadow: none;
     color: #e25440;
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    margin: 2px 0;
 }
 
 .navigation__item a:hover {
