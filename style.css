@@ -1454,3 +1454,58 @@ section h2.section-heading {
         object-fit: contain;
     }
 }
+
+/* New Styles for Websites and Social Contribution */
+#websites .projectIcons {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr
+}
+
+.siteUrl {
+    text-align: left
+}
+
+.websitesContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#websites .singleProjectContainer,
+#social .singleProjectContainer {
+    margin-bottom: 150px;
+    width: 80%;
+}
+
+.collectedFrom {
+    color: lightgray;
+}
+
+@media (max-width: 600px) {
+    section h2.section-heading {
+        font-size: 30px;
+    }
+
+    .content-wrapper__inner {
+        padding: 30px 20px;
+    }
+
+    #social p {
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .websitesContainer {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    #websites .singleProjectContainer,
+    #social .singleProjectContainer {
+        margin-bottom: 150px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
