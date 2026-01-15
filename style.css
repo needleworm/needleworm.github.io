@@ -1287,6 +1287,15 @@ section h2.section-heading {
     grid-template-columns: 1.5fr 1fr
 }
 
+#papers .gitIcons {
+    justify-self: right;
+}
+
+#papers .bookDescription p,
+#papers .bookDescription {
+    text-align: justify;
+}
+
 .patentInfo {
     display: grid;
     grid-template-columns: 1fr 1fr
@@ -1298,7 +1307,34 @@ section h2.section-heading {
 
 #patents .projectIcons {
     display: grid;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1.5fr 1fr
+}
+
+#patents .gitIcons {
+    justify-self: right;
+}
+
+#patents .websiteImage {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#patents .bookDescription p {
+    margin: 3px 0;
+    line-height: 1.6;
+}
+
+#patents .bookDescription {
+    line-height: 1.1;
+}
+
+#patents .patentInfo {
+    margin: 2px 0;
+}
+
+#patents .patentInfo div {
+    margin: 1px 0;
 }
 
 @media (min-width: 1100px) {
@@ -1388,10 +1424,7 @@ section h2.section-heading {
     margin-bottom: 140px
 }
 
-#papers .projectIcons {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr
-}
+
 
 .patentInfo {
     display: grid;
