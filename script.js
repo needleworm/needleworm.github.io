@@ -247,7 +247,6 @@ document.addEventListener('DOMContentLoaded', () => {
  * This improves performance by loading images before tabs are opened
  */
 function preloadImages() {
-    console.log("Preloading images from templates...");
 
     const imagesToPreload = new Set(); // Use Set to avoid duplicates
 
@@ -275,7 +274,6 @@ function preloadImages() {
         img.src = src;
     });
 
-    console.log(`Preloaded ${imagesToPreload.size} unique images`);
 }
 
 /**
@@ -532,16 +530,13 @@ async function preloadCodesData() {
     if (preloadedCodesData) return; // Already preloaded
 
     try {
-        console.log("Preloading GitHub repository data...");
 
         // Fetch repos from both accounts
         const [userRepos, orgRepos] = await Promise.all([
             fetch('https://api.github.com/users/needleworm/repos?per_page=100').then(r => {
-                console.log("Preload - Needleworm fetch status:", r.status);
                 return r.json();
             }),
             fetch('https://api.github.com/users/NaNaCompany/repos?per_page=100').then(r => {
-                console.log("Preload - NaNaCompany fetch status:", r.status);
                 return r.json();
             })
         ]);
@@ -574,7 +569,6 @@ async function preloadCodesData() {
             allRepos
         };
 
-        console.log("GitHub data preloaded successfully:", preloadedCodesData);
     } catch (e) {
         console.error("Failed to preload GitHub data", e);
 
@@ -592,8 +586,6 @@ async function preloadCodesData() {
             },
             allRepos: []
         };
-
-        console.log("Using default GitHub data:", preloadedCodesData);
     }
 }
 
@@ -604,17 +596,14 @@ async function loadCodes() {
 
     if (!canvas) return;
 
-    console.log("Loading codes from preloaded data...");
 
     // Use preloaded data (fetched once at page load)
     if (preloadedCodesData) {
-        console.log("Rendering preloaded GitHub data");
 
         if (starsEl) starsEl.innerText = preloadedCodesData.totalStars;
         if (forksEl) forksEl.innerText = preloadedCodesData.totalForks;
         renderLanguageChart(preloadedCodesData.languages);
     } else {
-        console.log("No preloaded data available, using defaults");
         // If preload failed, defaults are already showing from HTML
     }
 }
