@@ -608,7 +608,7 @@ function getIconForLanguage(lang) {
 function resolveThumbnail(name) {
     const mapped = thumbnailMap[name];
     if (mapped) {
-        if (mapped.startsWith("books/")) return "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io/src/images/" + mapped;
+        if (mapped.startsWith("books/")) return "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/" + mapped;
         return "./images/codes/" + mapped;
     }
     return "./images/codes/" + defaultThumbnail;
