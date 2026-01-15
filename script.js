@@ -598,95 +598,24 @@ async function preloadCodesData() {
 }
 
 async function loadCodes() {
-    if (codesLoaded) return;
-
     const starsEl = document.getElementById('total-stars');
     const forksEl = document.getElementById('total-forks');
-    const commitsEl = document.getElementById('total-commits'); // Kept for safety, though unused in HTML now
     const canvas = document.getElementById('languageChart');
 
     if (!canvas) return;
 
-    console.log("Starting loadCodes...");
+    console.log("Loading codes from preloaded data...");
 
-    // Default values
-    const defaultStars = 1716;
-    const defaultForks = 1826;
-    const defaultLanguages = {
-        'Python': 43,
-        'JavaScript': 31,
-        'CSS': 16,
-        'HTML': 11,
-        'TypeScript': 1,
-        'ETC': 3
-    };
+    // Use preloaded data (fetched once at page load)
+    if (preloadedCodesData) {
+        console.log("Rendering preloaded GitHub data");
 
-    // Show default values immediately while loading
-    if (starsEl) starsEl.innerText = defaultStars;
-    if (forksEl) forksEl.innerText = defaultForks;
-    renderLanguageChart(defaultLanguages);
-
-    try {
-        let totalStars, totalForks, languages;
-
-        // Check if we have preloaded data
-        if (preloadedCodesData) {
-            console.log("Using preloaded GitHub data");
-            totalStars = preloadedCodesData.totalStars;
-            totalForks = preloadedCodesData.totalForks;
-            languages = preloadedCodesData.languages;
-        } else {
-            // Fallback: fetch data if not preloaded
-            console.log("Fetching repos from GitHub...");
-            const [userRepos, orgRepos] = await Promise.all([
-                fetch('https://api.github.com/users/needleworm/repos?per_page=100').then(r => {
-                    console.log("Needleworm fetch status:", r.status);
-                    return r.json();
-                }),
-                fetch('https://api.github.com/users/NaNaCompany/repos?per_page=100').then(r => {
-                    console.log("NaNaCompany fetch status:", r.status);
-                    return r.json();
-                })
-            ]);
-
-            // Safety check for arrays
-            const safeUserRepos = Array.isArray(userRepos) ? userRepos : [];
-            const safeOrgRepos = Array.isArray(orgRepos) ? orgRepos : [];
-
-            const allRepos = [...safeUserRepos, ...safeOrgRepos];
-            console.log("Combined repos count:", allRepos.length);
-
-            totalStars = 0;
-            totalForks = 0;
-            languages = {};
-
-            allRepos.forEach(repo => {
-                totalStars += repo.stargazers_count;
-                totalForks += repo.forks_count;
-
-                if (repo.language) {
-                    languages[repo.language] = (languages[repo.language] || 0) + 1;
-                }
-            });
-        }
-
-        // Only update if we have actual data (not using defaults from preload error)
-        if (totalStars > 0 || totalForks > 0 || Object.keys(languages).length > 0) {
-            console.log("Updating with actual GitHub data");
-            if (starsEl) starsEl.innerText = totalStars;
-            if (forksEl) forksEl.innerText = totalForks;
-            renderLanguageChart(languages);
-        } else {
-            console.log("No valid data received, keeping default values");
-        }
-
-        codesLoaded = true;
-
-    } catch (e) {
-        console.error("Failed to load codes", e);
-        console.log("Keeping default values due to error");
-        // Default values are already displayed, no need to update
-        codesLoaded = true;
+        if (starsEl) starsEl.innerText = preloadedCodesData.totalStars;
+        if (forksEl) forksEl.innerText = preloadedCodesData.totalForks;
+        renderLanguageChart(preloadedCodesData.languages);
+    } else {
+        console.log("No preloaded data available, using defaults");
+        // If preload failed, defaults are already showing from HTML
     }
 }
 
