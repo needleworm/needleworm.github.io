@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupScrollSpy();
     setupFloatingButton();
     setupContactForm();
+    setupCustomSelect(); // Initialize custom select
 
     // 4. Run specific initializers
     loadCodes();
@@ -463,6 +464,63 @@ function setupContactForm() {
             }
         }
     });
+}
+
+function setupCustomSelect() {
+    const x = document.getElementsByClassName("custom-select");
+    if (x.length === 0) return;
+
+    for (let i = 0; i < x.length; i++) {
+        const selElmnt = x[i].getElementsByClassName("select-selected")[0];
+        const a = x[i].getElementsByClassName("select-items")[0];
+        const hiddenInput = x[i].parentElement.querySelector('#country_code');
+
+        if (selElmnt) {
+            selElmnt.addEventListener("click", function (e) {
+                e.stopPropagation();
+                closeAllSelect(this);
+                a.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+
+        if (a) {
+            const opts = a.getElementsByTagName("div");
+            for (let j = 0; j < opts.length; j++) {
+                opts[j].addEventListener("click", function (e) {
+                    e.stopPropagation();
+                    const val = this.getAttribute('data-value');
+                    const txt = this.innerText;
+
+                    selElmnt.innerText = txt;
+                    if (hiddenInput) hiddenInput.value = val;
+
+                    a.classList.add("select-hide");
+                    selElmnt.classList.remove("select-arrow-active");
+                });
+            }
+        }
+    }
+
+    document.addEventListener("click", closeAllSelect);
+}
+
+function closeAllSelect(elmnt) {
+    const x = document.getElementsByClassName("select-items");
+    const y = document.getElementsByClassName("select-selected");
+    for (let i = 0; i < y.length; i++) {
+        if (elmnt == y[i]) {
+            continue; // specific one triggered
+        } else {
+            y[i].classList.remove("select-arrow-active");
+        }
+    }
+    for (let i = 0; i < x.length; i++) {
+        if (elmnt && elmnt.parentElement && elmnt.parentElement.getElementsByClassName("select-items")[0] == x[i]) {
+            continue;
+        }
+        x[i].classList.add("select-hide");
+    }
 }
 
 // --- YouTube Facade ---
