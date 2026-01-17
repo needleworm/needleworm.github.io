@@ -1,6 +1,6 @@
 
 // Constants & Config
-const EMAILJS_PUBLIC_KEY = "user_DCLrQLd813G6O6Gf3647V";
+const EMAILJS_PUBLIC_KEY = "61GtFyVFJ4xDftkIG";
 const EMAILJS_SERVICE_ID = 'service_nicpl0u';
 const EMAILJS_TEMPLATE_ID = 'template_h4ve5sp';
 
@@ -44,16 +44,18 @@ function updateHeroStats() {
     const bookEl = document.getElementById('stat-books');
     if (bookEl && bookCount > 10) bookEl.innerText = `Books ${bookCount}+`;
 
-    // Papers & Patents
+    // R&D (Papers + Patents + Websites)
     const papers = document.querySelectorAll('#rnd-section .singleLectureContainer, #rnd-section .singleProjectContainer').length;
-    const totalResearch = papers;
+    const websites = document.querySelectorAll('#dev-section .singleWebsiteCard').length;
+    const totalRnD = papers + websites;
 
     const paperEl = document.getElementById('stat-papers');
-    if (paperEl && totalResearch > 5) paperEl.innerText = `Papers & Patents ${totalResearch}+`;
+    if (paperEl && totalRnD > 5) paperEl.innerText = `R&D ${totalRnD}+`;
 
-    // Lectures
-    const courses = document.querySelectorAll('#education-section .singleLectureContainer').length;
-    const totalLectures = courses;
+    // Lectures (Courses + Lectures)
+    const courses = document.querySelectorAll('#tab-courses .singleLectureContainer').length;
+    const lectures = document.querySelectorAll('#tab-lectures .singleLectureContainer').length;
+    const totalLectures = courses + lectures;
 
     const lectureEl = document.getElementById('stat-lectures');
     if (lectureEl && totalLectures > 10) lectureEl.innerText = `Lectures ${totalLectures}+`;
@@ -88,7 +90,7 @@ function renderAllSections(container) {
         },
         {
             id: 'rnd-section',
-            title: 'R&D',
+            title: 'Research',
             desc: '논문 및 특허',
             templates: ['papers', 'patents'] // Tabs
         },
@@ -423,68 +425,99 @@ function preloadImages() {
     });
 }
 
-// --- Contact Form ---
+// --- Toast Notification ---
+function showToast(message, type = 'success') {
+    const toast = document.createElement('div');
+    toast.className = `toast-notification ${type}`;
+    toast.textContent = message;
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove();
+    }, 3000);
+}
+
+// --- Contact Form Setup ---
 function setupContactForm() {
-    document.addEventListener('submit', function (event) {
-        if (event.target && event.target.id === 'contact-form') {
-            event.preventDefault();
-            const form = event.target;
-            const btn = form.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
+    const form = document.getElementById('contact-form');
+    if (!form) return;
 
-            btn.textContent = 'Sending...';
-            btn.disabled = true;
-
-            emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
-                .then(() => {
-                    alert('Message sent successfully!');
-                    btn.textContent = originalText;
-                    btn.disabled = false;
-                    form.reset();
-
-                    // Reset hidden fields
-                    document.getElementById('div-institution').classList.remove('visible');
-                    document.getElementById('div-phone').classList.remove('visible');
-                    document.getElementById('div-email').classList.remove('visible');
-
-                }, (error) => {
-                    alert('Failed to send message.');
-                    console.error(error);
-                    btn.textContent = originalText;
-                    btn.disabled = false;
-                });
-        }
-    });
+    // Get form elements
+    const nameInput = document.getElementById('mail_name');
+    const institutionDiv = document.getElementById('div-institution');
+    const institutionInput = document.getElementById('mail_institution');
+    const phoneDiv = document.getElementById('div-phone');
+    const phoneInput = document.getElementById('mail_phone');
+    const emailDiv = document.getElementById('div-email');
 
     // Progressive Reveal Logic
-    const revealMap = {
-        'mail_name': 'div-institution',
-        'mail_institution': 'div-phone',
-        'mail_phone': 'div-email'
-    };
-
-    document.addEventListener('input', function (e) {
-        const targetId = e.target.id;
-
-        // 1. Reveal Logic
-        if (revealMap[targetId]) {
-            const nextDiv = document.getElementById(revealMap[targetId]);
-            if (nextDiv && !nextDiv.classList.contains('visible') && e.target.value.trim().length > 0) {
-                nextDiv.classList.add('visible');
+    if (nameInput && institutionDiv) {
+        nameInput.addEventListener('input', function () {
+            if (this.value.trim().length > 0 && !institutionDiv.classList.contains('visible')) {
+                institutionDiv.classList.add('visible');
             }
-        }
+        });
+    }
 
-        // 2. Phone Formatting
-        if (['mail_name', 'mail_institution', 'mail_phone'].includes(targetId)) {
-            if (targetId === 'mail_phone') {
-                let number = e.target.value.replace(/[^0-9]/g, '');
-                let formatted = '';
-                if (number.length < 4) formatted = number;
-                else if (number.length < 8) formatted = number.slice(0, -4) + '-' + number.slice(-4);
-                else formatted = number.slice(0, -8) + '-' + number.slice(-8, -4) + '-' + number.slice(-4);
-                if (e.target.value !== formatted) e.target.value = formatted;
+    if (institutionInput && phoneDiv) {
+        institutionInput.addEventListener('input', function () {
+            if (this.value.trim().length > 0 && !phoneDiv.classList.contains('visible')) {
+                phoneDiv.classList.add('visible');
             }
-        }
+        });
+    }
+
+    if (phoneInput && emailDiv) {
+        phoneInput.addEventListener('input', function () {
+            // Format phone number
+            let number = this.value.replace(/[^0-9]/g, '');
+            let formatted = '';
+            if (number.length < 4) {
+                formatted = number;
+            } else if (number.length < 8) {
+                formatted = number.slice(0, -4) + '-' + number.slice(-4);
+            } else {
+                formatted = number.slice(0, -8) + '-' + number.slice(-8, -4) + '-' + number.slice(-4);
+            }
+            if (this.value !== formatted) {
+                this.value = formatted;
+            }
+
+            // Reveal email field
+            if (number.length > 0 && !emailDiv.classList.contains('visible')) {
+                emailDiv.classList.add('visible');
+            }
+        });
+    }
+
+    // Form submission
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const btn = form.querySelector('button[type="submit"]');
+        const originalText = btn.textContent;
+
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+
+        emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+            .then(() => {
+                showToast('메일 발송에 성공했습니다! ✉️', 'success');
+                btn.textContent = originalText;
+                btn.disabled = false;
+                form.reset();
+
+                // Reset hidden fields
+                if (institutionDiv) institutionDiv.classList.remove('visible');
+                if (phoneDiv) phoneDiv.classList.remove('visible');
+                if (emailDiv) emailDiv.classList.remove('visible');
+
+            }, (error) => {
+                showToast('메일 발송에 실패했습니다. 다시 시도해주세요.', 'error');
+                console.error('EmailJS Error:', error);
+                btn.textContent = originalText;
+                btn.disabled = false;
+            });
     });
 }
 

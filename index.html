@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko-kr">
 
 <head>
@@ -52,7 +52,11 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="navbar-brand">Byunghyun Ban</div>
+        <div class="navbar-brand">
+            <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                <img src="./src/images/logo.png" alt="Byunghyun Ban" class="logo-img">
+            </a>
+        </div>
         <div class="menu-toggle" id="mobile-menu-btn">
             <i class="fas fa-bars"></i>
         </div>
@@ -61,7 +65,7 @@
             <li><a href="#books" class="nav-link">Books</a></li>
             <li><a href="#media-section" class="nav-link">Media</a></li>
             <li><a href="#education-section" class="nav-link">Education</a></li>
-            <li><a href="#rnd-section" class="nav-link">R&D</a></li>
+            <li><a href="#rnd-section" class="nav-link">Research</a></li>
             <li><a href="#dev-section" class="nav-link">Dev</a></li>
             <li><a href="#etc-section" class="nav-link">ETC</a></li>
             <li><a href="#contact" class="btn-contact">Contact</a></li>
@@ -74,7 +78,7 @@
             <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/profile.png"
                 alt="Profile" class="profile-img">
             <h1 class="hero-title">Byunghyun Ban</h1>
-            <p class="hero-subtitle">Researcher · Developer · Writer</p>
+            <p class="hero-subtitle">Researcher · Developer · Author</p>
             <div class="hero-socials">
                 <a href="https://github.com/needleworm" target="_blank" class="social-icon" title="GitHub"><i
                         class="fab fa-github"></i></a>
@@ -87,7 +91,6 @@
             </div>
             <div class="hero-buttons">
                 <a href="#contact" class="btn-hero btn-primary">강의/강연 문의</a>
-                <a href="#about" target="_blank" class="btn-hero btn-secondary">약력 보기</a>
             </div>
 
             <div class="hero-stats">
@@ -95,14 +98,14 @@
                     <i class="fas fa-book"></i> <span id="stat-books">Books 32+</span>
                 </div>
                 <div class="stat-badge">
-                    <i class="fas fa-graduation-cap"></i> <span id="stat-papers">Papers & Patents 40+</span>
+                    <i class="fas fa-flask"></i> <span id="stat-papers">R&D 40+</span>
                 </div>
                 <div class="stat-badge">
                     <i class="fas fa-chalkboard-teacher"></i> <span id="stat-lectures">Lectures 154+</span>
                 </div>
             </div>
             <div class="scroll-down-arrow">
-                <a href="#about" target="_blank" class="btn-hero btn-secondary">
+                <a href="#about" class="btn-hero btn-secondary">
                     <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
@@ -118,6 +121,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2026 Byunghyun Ban. All rights reserved.</p>
+            <p>치즈케익스튜디오 (사업자등록번호:269-08-02374) 대표자 반 병 현</p>
         </div>
     </footer>
 
@@ -900,55 +904,61 @@
                     </div>
                 </div>
 
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group form-reveal" id="group-name">
-                        <label for="mail_name">Name</label>
-                        <input type="text" id="mail_name" name="mail_name" required placeholder="이름을 입력해주세요">
-                    </div>
-
-                    <div class="form-group form-reveal hidden-field" id="div-institution">
-                        <label for="mail_institution">Institution</label>
-                        <input type="text" id="mail_institution" name="mail_institution" required
-                            placeholder="소속 기관명을 입력해주세요">
-                    </div>
-
-                    <div class="form-group form-reveal hidden-field" id="div-phone">
-                        <label for="mail_phone">Phone Number</label>
-                        <div class="phone-input-group">
-                            <div class="custom-select-wrapper">
-                                <div class="custom-select">
-                                    <div class="select-selected">국가 선택</div>
-                                    <div class="select-items select-hide">
-                                        <div data-value="">국가 선택</div>
-                                        <div data-value="+82">KR (+82)</div>
-                                        <div data-value="+1">US (+1)</div>
-                                        <div data-value="+81">JP (+81)</div>
-                                        <div data-value="+86">CN (+86)</div>
-                                        <div data-value="">직접입력</div>
-                                    </div>
-                                </div>
-                                <input type="hidden" id="country_code" name="country_code" value="">
-                            </div>
-                            <input type="tel" id="mail_phone" name="mail_phone" placeholder="010-1234-5678">
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group form-reveal" id="group-name">
+                            <label for="mail_name">Name</label>
+                            <input type="text" id="mail_name" name="mail_name" class="form-control" required
+                                placeholder="이름을 입력해주세요">
                         </div>
-                    </div>
 
-                    <div class="form-group form-reveal hidden-field" id="div-email">
-                        <label for="mail_email">Email</label>
-                        <input type="email" id="mail_email" name="mail_email" required placeholder="이메일을 입력해주세요">
-                    </div>
+                        <div class="form-group form-reveal hidden-field" id="div-institution">
+                            <label for="mail_institution">Institution</label>
+                            <input type="text" id="mail_institution" name="mail_institution" class="form-control"
+                                required placeholder="소속 기관명을 입력해주세요">
+                        </div>
 
-                    <div class="form-group form-reveal">
-                        <label for="mail_title">Title</label>
-                        <input id="mail_title" name="mail_title" required placeholder="제목을 입력해주세요">
-                    </div>
-                    <div class="form-group form-reveal">
-                        <label for="mail_message">Message</label>
-                        <textarea id="mail_message" rows="6" name="mail_message" required
-                            placeholder="문의하실 내용을 남겨주세요"></textarea>
-                    </div>
-                    <button type="submit" class="submitButton btn-full form-reveal">문의 보내기</button>
-                </form>
+                        <div class="form-group form-reveal hidden-field" id="div-phone">
+                            <label for="mail_phone">Phone Number</label>
+                            <div class="phone-input-group">
+                                <div class="custom-select-wrapper">
+                                    <div class="custom-select">
+                                        <div class="select-selected">국가 선택</div>
+                                        <div class="select-items select-hide">
+                                            <div data-value="">국가 선택</div>
+                                            <div data-value="+82">KR (+82)</div>
+                                            <div data-value="+1">US (+1)</div>
+                                            <div data-value="+81">JP (+81)</div>
+                                            <div data-value="+86">CN (+86)</div>
+                                            <div data-value="">직접입력</div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="country_code" name="country_code" value="">
+                                </div>
+                                <input type="tel" id="mail_phone" name="mail_phone" class="form-control"
+                                    placeholder="010-1234-5678">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-reveal hidden-field" id="div-email">
+                            <label for="mail_email">Email</label>
+                            <input type="email" id="mail_email" name="mail_email" class="form-control" required
+                                placeholder="이메일을 입력해주세요">
+                        </div>
+
+                        <div class="form-group form-reveal">
+                            <label for="mail_title">Title</label>
+                            <input id="mail_title" name="mail_title" class="form-control" required
+                                placeholder="제목을 입력해주세요">
+                        </div>
+                        <div class="form-group form-reveal">
+                            <label for="mail_message">Message</label>
+                            <textarea id="mail_message" rows="6" name="mail_message" class="form-control" required
+                                placeholder="문의하실 내용을 남겨주세요"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">문의 보내기</button>
+                    </form>
+                </div>
             </div>
         </section>
     </template>
