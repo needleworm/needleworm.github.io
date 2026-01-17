@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const main = document.getElementById('main-content');
     if (main) {
         renderAllSections(main);
+        initPaperTruncation(); // Initialize paper text truncation
     }
 
     // 3. Setup Navigation & UI
@@ -40,21 +41,21 @@ function updateHeroStats() {
     // Books
     const bookCount = document.querySelectorAll('#books .singleBookContainer').length;
     const bookEl = document.getElementById('stat-books');
-    if (bookEl && bookCount > 10) bookEl.innerText = `Books ${bookCount}`;
+    if (bookEl && bookCount > 10) bookEl.innerText = `Books ${bookCount}+`;
 
     // Papers & Patents
     const papers = document.querySelectorAll('#rnd-section .singleLectureContainer, #rnd-section .singleProjectContainer').length;
     const totalResearch = papers;
 
     const paperEl = document.getElementById('stat-papers');
-    if (paperEl && totalResearch > 5) paperEl.innerText = `Papers ${totalResearch}+`;
+    if (paperEl && totalResearch > 5) paperEl.innerText = `Papers & Patents ${totalResearch}+`;
 
     // Lectures
     const courses = document.querySelectorAll('#education-section .singleLectureContainer').length;
     const totalLectures = courses;
 
     const lectureEl = document.getElementById('stat-lectures');
-    if (lectureEl && totalLectures > 10) lectureEl.innerText = `Lectures ${totalLectures}`;
+    if (lectureEl && totalLectures > 10) lectureEl.innerText = `Lectures ${totalLectures}+`;
 }
 
 function renderAllSections(container) {
@@ -167,7 +168,7 @@ function renderAllSections(container) {
                 }
 
                 // Add Load More Logic (per tab)
-                const innerContainer = clone.querySelector('.bookContainer, .websitesContainer, .lecturesContainer, .codesContainer, .contact-container');
+                const innerContainer = clone.querySelector('.bookContainer, .websitesContainer, .lecturesContainer, .codesContainer, .projectContainer, .contact-container');
                 if (innerContainer && tempId !== 'contact') {
                     const items = innerContainer.children;
                     const isMobile = window.innerWidth <= 768;
@@ -185,6 +186,12 @@ function renderAllSections(container) {
                             const hidden = innerContainer.querySelectorAll('.hidden-item');
                             hidden.forEach(el => el.classList.remove('hidden-item'));
                             this.style.display = 'none';
+
+                            // Re-initialize truncation for newly revealed items (specifically for Papers)
+                            if (tempId === 'papers') {
+                                // Small timeout to ensure rendering is complete
+                                setTimeout(() => initPaperTruncation(), 50);
+                            }
                         };
 
                         // Append to the internal section or tabContentDiv
@@ -469,3 +476,24 @@ document.addEventListener('click', function (e) {
         facade.parentNode.replaceChild(iframe, facade);
     }
 });
+
+function initPaperTruncation() {
+    const descriptions = document.querySelectorAll('#tab-papers .codeBody .bookDescription');
+    descriptions.forEach(desc => {
+        desc.classList.add('paper-description-truncated');
+
+        // Check if truncation is actually needed
+        // Also check if button already exists to avoid duplication
+        if (desc.scrollHeight > desc.clientHeight && !desc.parentElement.querySelector('.paper-show-more-btn')) {
+            const btn = document.createElement('button');
+            btn.className = 'paper-show-more-btn';
+            btn.innerText = 'Show More';
+            btn.onclick = function () {
+                const isTruncated = desc.classList.toggle('paper-description-truncated');
+                this.innerText = isTruncated ? 'Show More' : 'Show Less';
+            };
+            // Append button after the paragraph
+            desc.parentElement.appendChild(btn);
+        }
+    });
+}

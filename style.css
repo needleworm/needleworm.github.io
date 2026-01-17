@@ -158,12 +158,13 @@ h6 {
 }
 
 .profile-img {
-    width: 180px;
-    height: 180px;
+    width: 30vh;
+    height: 30vh;
     border-radius: 50%;
     border: 4px solid white;
     margin-bottom: 2rem;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    object-fit: cover;
 }
 
 .hero-title {
@@ -615,7 +616,8 @@ footer {
 .bookContainer,
 .websitesContainer,
 .lecturesContainer,
-.codesContainer {
+.codesContainer,
+.projectContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
@@ -819,13 +821,21 @@ section .row {
     background: var(--secondary-color);
     color: white;
 }
+
 /* ----------------------------------------------------- */
 /* Tab Switching Animations */
 /* ----------------------------------------------------- */
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .active-tab-content {
@@ -858,7 +868,8 @@ section .row {
     margin: 1.2rem 1rem 0.5rem 1rem;
     color: var(--primary-color);
     line-height: 1.4;
-    min-height: 3rem; /* Align titles */
+    min-height: 3rem;
+    /* Align titles */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -868,9 +879,11 @@ section .row {
 
 .bookDescription {
     font-size: 0.9rem;
-    color: #95a5a6; /* Softer text for publisher/date */
+    color: #95a5a6;
+    /* Softer text for publisher/date */
     margin: 0 1rem 1rem 1rem;
-    padding: 0; /* Remove old padding if any */
+    padding: 0;
+    /* Remove old padding if any */
     font-weight: 500;
 }
 
@@ -890,8 +903,10 @@ section .row {
 
 .list-inline {
     padding: 1rem;
-    justify-content: center; /* Center icons */
-    gap: 15px; /* Better spacing */
+    justify-content: center;
+    /* Center icons */
+    gap: 15px;
+    /* Better spacing */
 }
 
 .list-inline li {
@@ -904,7 +919,8 @@ section .row {
 /* ----------------------------------------------------- */
 
 .bookCoverImage {
-    height: auto !important; /* Override fixed height */
+    height: auto !important;
+    /* Override fixed height */
     aspect-ratio: 1 / 1 !important;
 }
 
@@ -920,8 +936,215 @@ section .row {
 
 .bookStoreIcon {
     border-radius: 8px !important;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) !important;
     /* Optional: Ensure they show as tiles if transparent */
     background-color: #fff;
 }
 
+/* ----------------------------------------------------- */
+/* Papers Section Refinement */
+/* ----------------------------------------------------- */
+
+/* 1. Image Aspect Ratio (1:1.4) */
+#tab-papers .singleWebsiteCard .websiteImage {
+    aspect-ratio: 1 / 1.4 !important;
+    object-fit: cover;
+    object-position: top center;
+    height: auto !important;
+    /* Override potential fixed heights */
+}
+
+/* Patent Image Aspect Ratio (4:3) */
+#tab-patents .singleWebsiteCard .websiteImage {
+    aspect-ratio: 4 / 3 !important;
+    object-fit: cover;
+    object-position: top center;
+    height: auto !important;
+}
+
+/* Collections Image Aspect Ratio (1:1) */
+#tab-collections .singleWebsiteCard .websiteImage {
+    aspect-ratio: 1 / 1 !important;
+}
+
+#tab-papers .projectIcons,
+#tab-patents .projectIcons {
+    border-top: none !important;
+    align-items: center;
+    /* Vertically align items */
+}
+
+#tab-papers .projectIcons .gitIcons,
+#tab-patents .projectIcons .gitIcons {
+    padding-top: 1rem;
+    /* Space for border */
+    border-top: 1px solid #eee !important;
+    /* Restore border */
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* Right align */
+    gap: 15px;
+}
+
+/* 2. Text Truncation */
+.paper-description-truncated {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 3. Show More Button */
+.paper-show-more-btn {
+    display: block;
+    margin: 0.5rem auto 0;
+    /* Center block */
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 400;
+    /* Remove bold */
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    text-align: right;
+    /* Text aligns to right */
+    width: 90%;
+    /* Match abstract width */
+}
+
+.paper-show-more-btn:hover {
+    text-decoration: underline;
+}
+
+/* 5. Title Width Refinement */
+#tab-papers .projectText h5 {
+    width: 90% !important;
+    margin: 0 auto 0.5rem auto !important;
+}
+
+/* 4. Abstract Layout Refinement */
+#tab-papers .projectText,
+#tab-papers .codeBody {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
+
+#tab-papers .bookDescription {
+    margin: 0 auto !important;
+    /* Center with auto margins */
+    text-align: justify !important;
+    width: 90% !important;
+    /* Set to 90% width as requested */
+}
+
+/* ----------------------------------------------------- */
+/* Media Section Aspect Ratio (16:9) */
+/* ----------------------------------------------------- */
+#media-section .singleWebsiteCard .YoutubePreview,
+#media-section .singleWebsiteCard .websiteImage {
+    aspect-ratio: 16 / 9 !important;
+    width: 100%;
+    object-fit: cover;
+    height: auto !important;
+}
+
+/* ----------------------------------------------------- */
+/* News Section Refinement */
+/* ----------------------------------------------------- */
+
+/* News Card Style */
+.singleNewsCard {
+    background: var(--card-bg);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.singleNewsCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Force Hidden Thumbnail to Show */
+.singleNewsCard .hideOnDesktop {
+    display: block !important;
+}
+
+/* Thumbnail Area */
+.singleNewsCard .newsThumnail {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Image Style */
+.singleNewsCard .newsImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block !important;
+}
+
+/* Hide the small text label inside thumbnail (e.g. '사례뉴스') as it's often redundant or overlays poorly */
+.singleNewsCard .newsThumnail h5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white !important;
+    font-size: 0.8rem !important;
+    padding: 4px 10px;
+    margin: 0;
+    border-top-left-radius: 8px;
+}
+
+/* Text Area */
+.singleNewsCard .projectText {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title Link */
+.singleNewsCard .projectText a {
+    text-decoration: none;
+}
+
+.singleNewsCard .projectText h5 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    transition: color 0.3s;
+}
+
+.singleNewsCard .projectText a:hover h5 {
+    color: var(--secondary-color);
+}
+
+/* Meta/Date */
+.singleNewsCard .codeBody {
+    margin-top: auto;
+}
+
+.singleNewsCard .firstCommitDate {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
