@@ -1,4 +1,4 @@
-/* Global Variables */
+ï»¿/* Global Variables */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #e74c3c;
@@ -378,9 +378,15 @@ section {
 }
 
 /* Grid Layouts */
-.grid-container {
+/* Grid Layouts - Desktop Default (3 Columns) */
+.grid-container,
+.bookContainer,
+.websitesContainer,
+.lecturesContainer,
+.codesContainer,
+.projectContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -648,12 +654,15 @@ footer {
     }
 
     /* 2-column grid for mobile */
+    /* 2-column grid for mobile */
+    /* 2-column grid for mobile - Enforced */
+    .grid-container,
     .bookContainer,
     .websitesContainer,
     .lecturesContainer,
     .codesContainer,
     .projectContainer {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 1rem;
     }
 }
@@ -681,15 +690,7 @@ footer {
 /* ----------------------------------------------------- */
 
 /* Legacy Class Mappings */
-.bookContainer,
-.websitesContainer,
-.lecturesContainer,
-.codesContainer,
-.projectContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2rem;
-}
+/* Legacy Class Mappings - Removed to prevent conflicts */
 
 /* Ensure images don't overflow */
 img {
@@ -1192,7 +1193,7 @@ section .row {
     display: block !important;
 }
 
-/* Hide the small text label inside thumbnail (e.g. '??????½º') as it's often redundant or overlays poorly */
+/* Hide the small text label inside thumbnail (e.g. '??????ìŠ¤') as it's often redundant or overlays poorly */
 .singleNewsCard .newsThumnail h5 {
     position: absolute;
     bottom: 0;
@@ -1443,18 +1444,30 @@ footer p {
     margin: 0.5rem 0;
     text-align: center;
 }
-/* Ultra-narrow screens */
+
+/* Force overflow hidden to prevent horizontal scroll issues */
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Ultra-narrow screens adjustments */
 @media (max-width: 350px) {
     .hero {
         padding: 0 0.5rem;
     }
 
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem !important;
     }
 
     .hero-subtitle {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .btn-hero {
@@ -1470,4 +1483,27 @@ footer p {
     .social-icon {
         font-size: 1.4rem;
     }
+
+    /* Ensure profile image stays circular and small enough */
+    .profile-img {
+        width: 50vw !important;
+        height: auto !important;
+        max-width: 150px !important;
+    }
+}
+
+/* Consolidate overrides */
+.hero-content {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 800px !important;
+    padding: 0 1rem;
+}
+
+.profile-img {
+    width: 30vh;
+    max-width: 60vw;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover;
 }
