@@ -942,6 +942,17 @@ section .row {
 }
 
 /* ----------------------------------------------------- */
+/* Global Icon Alignment */
+/* ----------------------------------------------------- */
+
+.gitIcons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ----------------------------------------------------- */
 /* Papers Section Refinement */
 /* ----------------------------------------------------- */
 
@@ -965,6 +976,18 @@ section .row {
 /* Collections Image Aspect Ratio (1:1) */
 #tab-collections .singleWebsiteCard .websiteImage {
     aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    height: 100% !important;
+    /* Ensure it fills the container */
+    width: 100% !important;
+}
+
+/* Social Image Aspect Ratio (1:1.4) */
+#tab-social .singleWebsiteCard .websiteImage {
+    aspect-ratio: 1 / 1.4 !important;
+    object-fit: cover !important;
+    height: auto !important;
+    object-position: top center;
 }
 
 #tab-papers .projectIcons,
@@ -989,16 +1012,19 @@ section .row {
 }
 
 /* 2. Text Truncation */
-.paper-description-truncated {
+.paper-description-truncated,
+.description-truncated {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
+    /* Changed to 4 lines as requested */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 /* 3. Show More Button */
-.paper-show-more-btn {
+.paper-show-more-btn,
+.show-more-btn {
     display: block;
     margin: 0.5rem auto 0;
     /* Center block */
@@ -1016,7 +1042,8 @@ section .row {
     /* Match abstract width */
 }
 
-.paper-show-more-btn:hover {
+.paper-show-more-btn:hover,
+.show-more-btn:hover {
     text-decoration: underline;
 }
 

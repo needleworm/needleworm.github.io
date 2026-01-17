@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const main = document.getElementById('main-content');
     if (main) {
         renderAllSections(main);
-        initPaperTruncation(); // Initialize paper text truncation
+        renderAllSections(main);
+        initTextTruncation(); // Initialize text truncation for all sections
     }
 
     // 3. Setup Navigation & UI
@@ -61,6 +62,12 @@ function updateHeroStats() {
 function renderAllSections(container) {
     // Re-defined Groups Matching User Request
     const groups = [
+        {
+            id: 'about',
+            title: 'About',
+            desc: '',
+            templates: ['about']
+        },
         {
             id: 'books',
             title: 'Books',
@@ -187,11 +194,9 @@ function renderAllSections(container) {
                             hidden.forEach(el => el.classList.remove('hidden-item'));
                             this.style.display = 'none';
 
-                            // Re-initialize truncation for newly revealed items (specifically for Papers)
-                            if (tempId === 'papers') {
-                                // Small timeout to ensure rendering is complete
-                                setTimeout(() => initPaperTruncation(), 50);
-                            }
+                            // Re-initialize truncation for newly revealed items
+                            // Small timeout to ensure rendering is complete
+                            setTimeout(() => initTextTruncation(), 50);
                         };
 
                         // Append to the internal section or tabContentDiv
@@ -477,23 +482,49 @@ document.addEventListener('click', function (e) {
     }
 });
 
-function initPaperTruncation() {
-    const descriptions = document.querySelectorAll('#tab-papers .codeBody .bookDescription');
-    descriptions.forEach(desc => {
-        desc.classList.add('paper-description-truncated');
+function initTextTruncation() {
+    // Target descriptions in all content sections
+    const selector = '.bookDescription, .projectText p';
+    // Note: .projectText p covers descriptions in Patents, Websites, etc.
+    // However, we want to be careful not to target small one-liners if not desired.
+    // The request says "like papers, show more button for other sections too".
 
-        // Check if truncation is actually needed
-        // Also check if button already exists to avoid duplication
-        if (desc.scrollHeight > desc.clientHeight && !desc.parentElement.querySelector('.paper-show-more-btn')) {
-            const btn = document.createElement('button');
-            btn.className = 'paper-show-more-btn';
-            btn.innerText = 'Show More';
-            btn.onclick = function () {
-                const isTruncated = desc.classList.toggle('paper-description-truncated');
-                this.innerText = isTruncated ? 'Show More' : 'Show Less';
-            };
-            // Append button after the paragraph
-            desc.parentElement.appendChild(btn);
-        }
+    // Let's target specific containers to be safe/consistent
+    const containers = [
+        '#books',
+        '#media-section',
+        '#education-section',
+        '#rnd-section',
+        '#dev-section',
+        '#etc-section',
+        '#about'
+    ];
+
+    containers.forEach(id => {
+        const container = document.querySelector(id);
+        if (!container) return;
+
+        // Find descriptions within this container
+        // We look for .bookDescription primarily, as that seems to be the class used for long text
+        const descriptions = container.querySelectorAll('.bookDescription');
+
+        descriptions.forEach(desc => {
+            // Add the truncated class (style logic handles the line clamping)
+            desc.classList.add('description-truncated');
+
+            // Check if truncation is actually needed
+            // Also check if button already exists to avoid duplication
+            if (desc.scrollHeight > desc.clientHeight && !desc.parentElement.querySelector('.show-more-btn')) {
+                const btn = document.createElement('button');
+                btn.className = 'show-more-btn';
+                btn.innerText = 'Show More';
+                btn.onclick = function () {
+                    const isTruncated = desc.classList.toggle('description-truncated');
+                    this.innerText = isTruncated ? 'Show More' : 'Show Less';
+                };
+                // Append button after the paragraph
+                desc.parentElement.appendChild(btn);
+            }
+        });
     });
 }

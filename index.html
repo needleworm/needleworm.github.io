@@ -57,6 +57,7 @@
             <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#books" class="nav-link">Books</a></li>
             <li><a href="#media-section" class="nav-link">Media</a></li>
             <li><a href="#education-section" class="nav-link">Education</a></li>
@@ -101,7 +102,9 @@
                 </div>
             </div>
             <div class="scroll-down-arrow">
-                <i class="fas fa-chevron-down"></i>
+                <a href="#about" target="_blank" class="btn-hero btn-secondary">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -122,6 +125,24 @@
     <div class="btn-to-top" id="btn-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
         <i class="fas fa-arrow-up"></i>
     </div>
+
+    <template id="about-template">
+        <section id="about" class="animated bounceInDown">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">About</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-content text-center">
+                        <p><!-- Placeholder for About content --></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
     <template id="books-template">
         <section id="books" class="animated bounceInDown">
             <div class="row" style="display:none;">
@@ -985,9 +1006,7 @@
                             <div class="gitIcons">
                                 <a href="https://www.youtube.com/watch?v=cEGTZYeTIpg" target="_blank" rel="noreferrer">
                                     <i class="fab fa-youtube"></i>
-                                </a>
-                                &nbsp;&nbsp;&nbsp;
-                                <a href="http://www.opalquestgroup.com/societiestests.html" target="_blank"
+                                </a><a href="http://www.opalquestgroup.com/societiestests.html" target="_blank"
                                     rel="noreferrer">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
@@ -1008,9 +1027,7 @@
                             <div class="gitIcons">
                                 <a href="https://www.youtube.com/watch?v=cEGTZYeTIpg" target="_blank" rel="noreferrer">
                                     <i class="fab fa-youtube"></i>
-                                </a>
-                                &nbsp;&nbsp;&nbsp;
-                                <a href="http://www.psiq.org/home.html" target="_blank" rel="noreferrer">
+                                </a><a href="http://www.psiq.org/home.html" target="_blank" rel="noreferrer">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -1030,9 +1047,7 @@
                             <div class="gitIcons">
                                 <a href="https://www.youtube.com/watch?v=cEGTZYeTIpg" target="_blank" rel="noreferrer">
                                     <i class="fab fa-youtube"></i>
-                                </a>
-                                &nbsp;&nbsp;&nbsp;
-                                <a href="http://isi-s.iqsociety.org/" target="_blank" rel="noreferrer">
+                                </a><a href="http://isi-s.iqsociety.org/" target="_blank" rel="noreferrer">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -1052,9 +1067,7 @@
                             <div class="gitIcons">
                                 <a href="https://www.youtube.com/watch?v=TaiEIC_xJwY" target="_blank" rel="noreferrer">
                                     <i class="fab fa-youtube"></i>
-                                </a>
-                                &nbsp;&nbsp;&nbsp;
-                                <a href="https://www.intertel-iq.org/" target="_blank" rel="noreferrer">
+                                </a><a href="https://www.intertel-iq.org/" target="_blank" rel="noreferrer">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -1792,13 +1805,9 @@
                                 <a href="https://www.youtube.com/watch?v=_5JAXsYKef0&t=86s" target="_blank"
                                     rel="noreferrer">
                                     <i class="fab fa-youtube"></i> Intro
-                                </a>
-                                &nbsp;&nbsp;&nbsp;
-                                <a href="https://youtu.be/5IfJ3JdNwB0" target="_blank" rel="noreferrer">
+                                </a><a href="https://youtu.be/5IfJ3JdNwB0" target="_blank" rel="noreferrer">
                                     <i class="fab fa-youtube"></i> Vlog
-                                </a>
-                                &nbsp;&nbsp;&nbsp;
-                                <a href="https://fastcampus.co.kr/dev_online_bbh" target="_blank" rel="noreferrer">
+                                </a><a href="https://fastcampus.co.kr/dev_online_bbh" target="_blank" rel="noreferrer">
                                     <i class="fas fa-chalkboard-teacher"></i> Lecture
                                 </a>
                             </div>
@@ -7295,14 +7304,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading subpageHeading">Social Contribution</h2>
-                    <p>
-                        도서 후원을 희망하시는 지정기부단체께서는 [Contact] 메뉴를 통해 신청 부탁드립니다. <br /><br />
-                        <strong>기부 조건</strong><br />
-                        도서 현물 수령후 기부금영수증 발행 가능 기관<br />
-                        재판매 불가, 배부만 가능<br />
-                        필요 수량 및 이에 대한 소명 필수 (ex. 보육원의 경우 원생 수)<br />
-                        반기별 예산 소진시까지 진행
-                    </p>
+
                 </div>
             </div>
             <div class="websitesContainer">
@@ -7372,11 +7374,9 @@
             <div class="websitesContainer">
                 <div class="singleProjectContainer">
                     <div class="singleWebsiteCard">
-                        <a class="tempa" href="https://aieng.kr" target="_blank" rel="noreferrer">
-                            <img class="websiteImage"
-                                src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/websites/aieng.gif"
-                                alt="projectimage" />
-                        </a>
+                        <img class="websiteImage"
+                            src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/websites/aieng.gif"
+                            alt="projectimage" />
                         <div class="projectText">
                             <a class="text-center textMarginBottom" href="https://aieng.kr" target="_blank"
                                 rel="noreferrer">
@@ -7387,17 +7387,13 @@
                                     Official website of AI.Eng. This website was built with React.js and @material-ui.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fab fa-react"></i>&nbsp;React&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://github.com/needleworm/aieng" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://aieng.kr" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/aieng" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://aieng.kr" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7434,22 +7430,14 @@
                                     repository to get the source code.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fab fa-react"></i>&nbsp;React&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://play.google.com/store/apps/details?id=com.webview.bhban"
-                                        target="_blank" rel="noreferrer">
-                                        <i class="fa-brands fa-google-play"></i>
-                                    </a>
-                                    <a href="https://github.com/needleworm/needleworm.github.io" target="_blank"
-                                        rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/needleworm.github.io" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7473,21 +7461,13 @@
                                     매일매일 퀴즈 풀기 기능과, 교사를 위한 PDF 단어 시험지 제작 기능이 제공됩니다.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fab fa-react"></i>&nbsp;React&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://play.google.com/store/apps/details?id=com.webview.ai_voca"
-                                        target="_blank" rel="noreferrer">
-                                        <i class="fa-brands fa-google-play"></i>
-                                    </a>
-                                    <a href="https://github.com/needleworm/ai_voca" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/ai_voca" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/ai_voca" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/ai_voca" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7515,17 +7495,13 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://github.com/needleworm/dev" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/dev" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/dev" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/dev" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7554,21 +7530,13 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://play.google.com/store/apps/details?id=com.psd.webview"
-                                        target="_blank" rel="noreferrer">
-                                        <i class="fa-brands fa-google-play"></i>
-                                    </a>
-                                    <a href="https://github.com/needleworm/psd" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/psd" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/psd" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/psd" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7602,14 +7570,10 @@
                                     hosted on &nbsp;<i class="fab fa-microsoft"></i> Azure.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fab fa-react"></i>&nbsp;React&nbsp;&nbsp;<i
-                                        class="fab fa-microsoft"></i>&nbsp;Azure</h5>
-                                <div class="gitIcons">
-                                    <a href="https://www.sangsang.farm/price" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://www.sangsang.farm/price" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7640,14 +7604,10 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-microsoft"></i>&nbsp;Azure</h5>
-                                <div class="gitIcons">
-                                    <a href="https://www.sangsang.farm/business" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://www.sangsang.farm/business" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7678,22 +7638,13 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://play.google.com/store/apps/details?id=com.webview.financebook"
-                                        target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/needleworm/financebook" target="_blank"
-                                        rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/financebook" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/financebook" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/financebook" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7723,17 +7674,13 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://github.com/needleworm/dataset" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/dataset" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/dataset" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/dataset" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7764,17 +7711,13 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://github.com/needleworm/101" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/101" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/101" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/101" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7804,21 +7747,13 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://play.google.com/store/apps/details?id=com.webview.frontend"
-                                        target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/needleworm/frontend" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/frontend" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/frontend" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/frontend" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7847,22 +7782,14 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://play.google.com/store/apps/details?id=com.webview.ai"
-                                        target="_blank" rel="noreferrer">
-                                        <i class="fa-brands fa-google-play"></i>
-                                    </a>
-                                    <a href="https://github.com/needleworm/bhban_ai/tree/web" target="_blank"
-                                        rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/bhban_ai" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/bhban_ai/tree/web" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/bhban_ai" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7891,22 +7818,14 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://play.google.com/store/apps/details?id=com.webview.rpa"
-                                        target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/needleworm/bhban_rpa/tree/web" target="_blank"
-                                        rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/bhban_rpa" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/bhban_rpa/tree/web" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/bhban_rpa" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7942,17 +7861,13 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://github.com/needleworm/moneyauto" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/moneyauto" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/moneyauto" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/moneyauto" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -7981,17 +7896,13 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-github"></i>&nbsp;Pages</h5>
-                                <div class="gitIcons">
-                                    <a href="https://github.com/needleworm/tech3" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-code"></i>
-                                    </a>
-                                    <a href="https://needleworm.github.io/tech3" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/tech3" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://needleworm.github.io/tech3" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8020,15 +7931,10 @@
                                         class="fab fa-microsoft"></i> Azure.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fa-brands fa-docker"></i>&nbsp;docker&nbsp;&nbsp;<i
-                                        class="fa-brands fa-wordpress"></i>&nbsp;Wordpress&nbsp;&nbsp;<i
-                                        class="fab fa-microsoft"></i>&nbsp;Azure</h5>
-                                <div class="gitIcons">
-                                    <a href="https://www.sangsang.farm" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://www.sangsang.farm" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8058,14 +7964,10 @@
                                     </a>.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <h5><i class="fas fa-vial"></i>&nbsp;Jekyll&nbsp;&nbsp;<i
-                                        class="fab fa-microsoft"></i>&nbsp;Azure</h5>
-                                <div class="gitIcons">
-                                    <a href="https://www.sangsang.farm" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://www.sangsang.farm" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8105,12 +8007,10 @@
                                     within the user's own account.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/invest" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/invest" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8137,12 +8037,10 @@
                                     single click.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/qr" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/qr" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8172,12 +8070,10 @@
                                     accounting and financial tasks.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/smart_calculator" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/smart_calculator" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8208,12 +8104,10 @@
                                     busy schedule.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/fortune" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/fortune" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8240,12 +8134,10 @@
                                     seamless status display experience.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/afd" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/afd" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8274,12 +8166,10 @@
                                     and track realistic fitness targets.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/bmi" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/bmi" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8312,12 +8202,10 @@
                                     fun!
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/luck" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/luck" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8346,12 +8234,10 @@
                                     Customize the amount of text generated to perfectly fit your design constraints.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/lipsum/" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/lipsum/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8384,12 +8270,10 @@
                                     making it suitable for handling sensitive media with confidence.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/gif_studio" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/gif_studio" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8424,12 +8308,10 @@
                                     while maintaining both efficiency and data privacy.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/video_2_gif/" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/video_2_gif/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8465,12 +8347,10 @@
                                     helping you save time by avoiding unnecessary uploads and downloads.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/image_resize/" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/image_resize/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8500,12 +8380,10 @@
                                     while improving efficiency, productivity, and security at the same time.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/doc_compress/" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/doc_compress/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8535,12 +8413,10 @@
                                     your content remains private.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/count_words" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/count_words" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8571,12 +8447,10 @@
                                     documents never leave your device.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/doc_stat" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/doc_stat" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8604,12 +8478,10 @@
                                     private and secure.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/merge_pdf" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/merge_pdf" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8650,12 +8522,10 @@
                                     pricing model.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/chatbot_v5" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/chatbot_v5" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -8683,12 +8553,10 @@
                                     UI.
                                 </p>
                             </div>
-                            <div class="projectIcons">
-                                <div class="gitIcons">
-                                    <a href="https://nanalab.kr/chatTemplate" target="_blank" rel="noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/chatTemplate" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
