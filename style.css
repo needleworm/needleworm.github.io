@@ -665,6 +665,24 @@ footer {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 1rem;
     }
+
+    /* Reduce font size for mobile cards */
+    .singleBookContainer h5,
+    .singleWebsiteCard h5,
+    .singleNewsCard h5,
+    .projectText h5 {
+        font-size: 0.95rem !important;
+        min-height: 2.5rem;
+        /* Adjust per font size */
+    }
+
+    .bookDescription,
+    .projectText,
+    .codeBody {
+        font-size: 0.8rem !important;
+        padding: 1rem !important;
+        /* Reduce padding slightly */
+    }
 }
 
 /* Animations */

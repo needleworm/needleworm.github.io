@@ -32,11 +32,64 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupFloatingButton();
     setupContactForm();
     setupCustomSelect(); // Initialize custom select
+    setupResponsiveLimiter(); // Dynamic resize handling
 
     // 4. Run specific initializers
     loadCodes();
     updateHeroStats();
 });
+
+function setupResponsiveLimiter() {
+    window.addEventListener('resize', () => {
+        // Debounce if needed, but simple is fine for now
+        const containers = document.querySelectorAll('.bookContainer, .websitesContainer, .lecturesContainer, .codesContainer, .projectContainer');
+        containers.forEach(container => manageItemVisibility(container));
+    });
+}
+
+function manageItemVisibility(container) {
+    if (container.dataset.expanded === 'true') return;
+
+    const isMobile = window.innerWidth <= 768;
+    const limit = isMobile ? 4 : 6;
+    const items = container.children;
+    const total = items.length;
+
+    // Toggle Visibility
+    for (let i = 0; i < total; i++) {
+        if (i < limit) {
+            items[i].classList.remove('hidden-item');
+        } else {
+            items[i].classList.add('hidden-item');
+        }
+    }
+
+    // Handle Load More Button
+    // Button should be in the parent of the container
+    const parent = container.parentNode;
+    let btn = parent.querySelector('.btn-load-more');
+
+    if (total > limit) {
+        if (!btn) {
+            btn = document.createElement('button');
+            btn.className = 'btn-load-more';
+            btn.innerText = '더 보기 (Show More)';
+            btn.onclick = function () {
+                const hidden = container.querySelectorAll('.hidden-item');
+                hidden.forEach(el => el.classList.remove('hidden-item'));
+                this.style.display = 'none';
+                container.dataset.expanded = 'true';
+
+                // Re-initialize truncation for newly revealed items
+                setTimeout(() => initTextTruncation(), 50);
+            };
+            parent.appendChild(btn);
+        }
+        btn.style.display = 'block';
+    } else {
+        if (btn) btn.style.display = 'none';
+    }
+}
 
 function updateHeroStats() {
     // Books
@@ -179,32 +232,8 @@ function renderAllSections(container) {
                 // Add Load More Logic (per tab)
                 const innerContainer = clone.querySelector('.bookContainer, .websitesContainer, .lecturesContainer, .codesContainer, .projectContainer, .contact-container');
                 if (innerContainer && tempId !== 'contact') {
-                    const items = innerContainer.children;
-                    const isMobile = window.innerWidth <= 768;
-                    const limit = isMobile ? 3 : 6;
-
-                    if (items.length > limit) {
-                        for (let i = limit; i < items.length; i++) {
-                            items[i].classList.add('hidden-item');
-                        }
-
-                        const loadMoreBtn = document.createElement('button');
-                        loadMoreBtn.className = 'btn-load-more';
-                        loadMoreBtn.innerText = '더 보기 (Show More)';
-                        loadMoreBtn.onclick = function () {
-                            const hidden = innerContainer.querySelectorAll('.hidden-item');
-                            hidden.forEach(el => el.classList.remove('hidden-item'));
-                            this.style.display = 'none';
-
-                            // Re-initialize truncation for newly revealed items
-                            // Small timeout to ensure rendering is complete
-                            setTimeout(() => initTextTruncation(), 50);
-                        };
-
-                        // Append to the internal section or tabContentDiv
-                        if (internalSection) internalSection.appendChild(loadMoreBtn);
-                        else tabContentDiv.appendChild(loadMoreBtn);
-                    }
+                    // Initial Setup
+                    manageItemVisibility(innerContainer);
                 }
 
                 tabContentDiv.appendChild(clone);
