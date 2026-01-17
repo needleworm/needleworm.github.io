@@ -1,4 +1,4 @@
-ï»¿/* Global Variables */
+/* Global Variables */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #e74c3c;
@@ -151,6 +151,7 @@ h6 {
 
 .hero-content {
     max-width: 800px;
+    width: 100%;
     animation: fadeInUp 1s ease-out;
     display: flex;
     flex-direction: column;
@@ -160,6 +161,9 @@ h6 {
 .profile-img {
     width: 30vh;
     height: 30vh;
+    max-width: 60vw;
+    max-height: 60vw;
+    aspect-ratio: 1;
     border-radius: 50%;
     border: 4px solid white;
     margin-bottom: 2rem;
@@ -376,7 +380,7 @@ section {
 /* Grid Layouts */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -642,6 +646,16 @@ footer {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
     }
+
+    /* 2-column grid for mobile */
+    .bookContainer,
+    .websitesContainer,
+    .lecturesContainer,
+    .codesContainer,
+    .projectContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 }
 
 /* Animations */
@@ -673,7 +687,7 @@ footer {
 .codesContainer,
 .projectContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -1178,7 +1192,7 @@ section .row {
     display: block !important;
 }
 
-/* Hide the small text label inside thumbnail (e.g. '?ï¿½ï¿½??ï¿½ìŠ¤') as it's often redundant or overlays poorly */
+/* Hide the small text label inside thumbnail (e.g. '??????½º') as it's often redundant or overlays poorly */
 .singleNewsCard .newsThumnail h5 {
     position: absolute;
     bottom: 0;
@@ -1390,6 +1404,7 @@ section .row {
         max-width: 90vw;
     }
 }
+
 /* ----------------------------------------------------- */
 /* Logo Styling */
 /* ----------------------------------------------------- */
@@ -1427,4 +1442,32 @@ footer .container {
 footer p {
     margin: 0.5rem 0;
     text-align: center;
+}
+/* Ultra-narrow screens */
+@media (max-width: 350px) {
+    .hero {
+        padding: 0 0.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .btn-hero {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .stat-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .social-icon {
+        font-size: 1.4rem;
+    }
 }
