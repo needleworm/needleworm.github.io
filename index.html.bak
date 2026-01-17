@@ -2,14 +2,12 @@
 <html lang="ko-kr">
 
 <head>
-    <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9767176956440077"
         crossorigin="anonymous"></script>
 
     <!-- Naver Search Console -->
     <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b" />
-
-    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -18,113 +16,212 @@
         gtag('config', 'G-N1GJ70ELXP');
     </script>
 
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#2c3e50" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000000" />
 
     <title>반병현 (Byunghyun Ban)</title>
     <meta name="description" content="반병현의 포트폴리오 - 저서, 논문, 특허 등" />
     <meta name="author" content="반병현(Byunghyun Ban)">
 
-    <!-- Social Meta -->
+    <!-- 미리보기 카드 -->
+    <!-- 트위터 -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="반병현(Byunghyun Ban)">
+    <meta name="twitter:description" content="반병현의 포트폴리오 - 저서, 논문, 특허 등">
+    <meta name="twitter:image"
+        content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/images/bookcovers.jpg" />
+
+    <!-- 일반 -->
+    <meta property="og:type" content="article">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="반병현(Byunghyun Ban)">
     <meta property="og:description" content="반병현의 포트폴리오 - 저서, 논문, 특허 등">
     <meta property="og:image"
         content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/images/bookcovers.jpg" />
 
-    <!-- Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap"
-        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+    <link rel="manifest" href="./manifest.json" />
 
-    <!-- Icons -->
+    <!-- CDN -->
     <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous"></script>
-
-    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-brand">Needleworm</div>
-        <div class="menu-toggle" id="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#books" class="nav-link">Books</a></li>
-            <li><a href="#media-section" class="nav-link">Media</a></li>
-            <li><a href="#education-section" class="nav-link">Education</a></li>
-            <li><a href="#rnd-section" class="nav-link">R&D</a></li>
-            <li><a href="#dev-section" class="nav-link">Dev</a></li>
-            <li><a href="#etc-section" class="nav-link">ETC</a></li>
-            <li><a href="#contact" class="btn-contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/profile.png"
-                alt="Profile" class="profile-img">
-            <h1 class="hero-title">Byunghyun Ban</h1>
-            <p class="hero-subtitle">Researcher · Developer · Writer</p>
-            <div class="hero-socials">
-                <a href="https://github.com/needleworm" target="_blank" class="social-icon" title="GitHub"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCpV0ZdloVwvSjxHfnYYQPQg?sub_confirmation=1" target="_blank"
-                    class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://brunch.co.kr/@needleworm" target="_blank" class="social-icon" title="Brunch"><i
-                        class="fas fa-pen-nib"></i></a>
-                <a href="https://www.linkedin.com/in/bhban" target="_blank" class="social-icon" title="LinkedIn"><i
-                        class="fab fa-linkedin"></i></a>
-            </div>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-hero btn-primary">강의/강연 문의</a>
-                <a href="https://www.linkedin.com/in/bhban" target="_blank" class="btn-hero btn-secondary">약력 보기</a>
-            </div>
-
-            <div class="hero-stats">
-                <div class="stat-badge">
-                    <i class="fas fa-book"></i> <span id="stat-books">Books 31+</span>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="App">
+            <!-- Header/Sidebar -->
+            <header class="panel-cover">
+                <span class="mobile btn-mobile-menu" onclick="toggleMobileMenu()">
+                    <i class="far fa-caret-square-down btn-mobile-menu__icon"></i>
+                    <i class="far fa-caret-square-up btn-mobile-close__icon hidden"></i>
+                </span>
+                <div class="panel-main">
+                    <div class="panel-main__inner panel-inverted">
+                        <div class="panel-main__content">
+                            <a href="#home" title="Home" onclick="showContent('none')">
+                                <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/profile.png"
+                                    class="user-image" alt="My Profile" />
+                            </a>
+                            <h1 class="panel-cover__title panel-title">Byunghyun Ban</h1>
+                            <nav class="cover-navigation navigation--social">
+                                <span class="navigation__item_sns">
+                                    <a href="https://www.youtube.com/channel/UCpV0ZdloVwvSjxHfnYYQPQg?sub_confirmation=1"
+                                        title="My Youtube Channel" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-youtube-square fa-lg"></i>
+                                        <span class="label">Youtube</span>
+                                    </a>
+                                </span>
+                                <span class="navigation__item_sns">
+                                    <a href="https://github.com/needleworm" title="Meet My Works on GitHub"
+                                        target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github-square fa-lg"></i>
+                                        <span class="label">GitHub</span>
+                                    </a>
+                                </span>
+                                <span class="navigation__item_sns">
+                                    <a href="https://www.linkedin.com/in/bhban" title="My LinkedIn Profile"
+                                        target="_blank" rel="noreferrer">
+                                        <i class="fab fa-linkedin fa-lg"></i>
+                                        <span class="label">LinkedIn</span>
+                                    </a>
+                                </span>
+                                <span class="navigation__item_sns">
+                                    <a href="https://www.researchgate.net/profile/Byunghyun_Ban"
+                                        title="Meet Me on Researchgate" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-researchgate fa-lg"></i>
+                                        <span class="label">Researchgate</span>
+                                    </a>
+                                </span>
+                            </nav>
+                            <hr class="panel-cover__divider" />
+                            <p class="panel-cover__description">Author, Researcher, Developer,<br /> and CEO of <a
+                                    href="https://nanalab.kr">NaNa Lab</a>.
+                            </p>
+                            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                            <div class="navigation-wrapper">
+                                <br />
+                                <nav class="cover-navigation navigation--social">
+                                    <ul class="navigation">
+                                        <li class="navigation__item">
+                                            <a href="#books" title="Books" class="panel-button projects-button"
+                                                onclick="showContent('books')">
+                                                <i class="fas fa-book"></i>&nbsp;Books
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#courses" title="Courses" class="panel-button projects-button"
+                                                onclick="showContent('courses')">
+                                                <i class="fas fa-chalkboard-teacher"></i>&nbsp;Courses
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#lectures" title="Lectures" class="panel-button projects-button"
+                                                onclick="showContent('lectures')">
+                                                <i class="fa-solid fa-person-chalkboard"></i>&nbsp;Lectures
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#media" title="Me on Media" onclick="showContent('media')">
+                                                <i class="fas fa-video"></i>&nbsp;Media
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#papers" title="Papers" class="panel-button projects-button"
+                                                onclick="showContent('papers')">
+                                                <i class="fas fa-graduation-cap"></i>&nbsp;Papers
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#patents" title="Patents" class="panel-button projects-button"
+                                                onclick="showContent('patents')">
+                                                <i class="far fa-registered"></i>&nbsp;Patents
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#codes" title="Codes" class="panel-button projects-button"
+                                                onclick="showContent('codes')">
+                                                <i class="fas fa-code-branch"></i>&nbsp;Codes
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#news" title="Me on Newses" onclick="showContent('news')">
+                                                <i class="far fa-newspaper"></i>&nbsp;News
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#collections" title="Collections"
+                                                class="panel-button projects-button"
+                                                onclick="showContent('collections')">
+                                                <i class="fa-solid fa-palette"></i>&nbsp;Collections
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#membership" title="My Memberships"
+                                                onclick="showContent('membership')">
+                                                <i class="far fa-id-badge"></i>&nbsp;Membership
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#social" title="Social" class="panel-button projects-button"
+                                                onclick="showContent('social')">
+                                                <i class="fas fa-hand-holding-heart"></i>&nbsp;Social
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#websites" title="Websites" class="panel-button projects-button"
+                                                onclick="showContent('websites')">
+                                                <i class="fas fa-globe"></i>&nbsp;Websites
+                                            </a>
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="#contact" title="Contact Me" onclick="showContent('contact')">
+                                                <i class="far fa-envelope"></i>&nbsp;Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-badge">
-                    <i class="fas fa-graduation-cap"></i> <span id="stat-papers">Papers 12+</span>
-                </div>
-                <div class="stat-badge">
-                    <i class="fas fa-chalkboard-teacher"></i> <span id="stat-lectures">Lectures 100+</span>
+                <div class="panel-cover--overlay"></div>
+            </header>
+
+            <!-- Content Wrapper -->
+            <div class="content-wrapper">
+                <div class="content-wrapper__inner">
+                    <!-- Sections will be injected here or toggled visible -->
+                    <div id="content-container"></div>
+
+                    <footer>
+                        <footer class="footer" style="text-align: center;">
+                            <span class="footer__copyright">&copy; 2021. Byunghyun Ban All rights reserved.</span>
+                        </footer>
+                        <a href="javascript:void(0)" id="btn-to-top" class="btn-to-top">
+                            <i class="fas fa-arrow-up"></i>
+                        </a>
+                    </footer>
                 </div>
             </div>
-            <div class="scroll-down-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
         </div>
-    </header>
-
-    <!-- Main Content -->
-    <main id="main-content" class="container">
-        <!-- Content injected by script.js -->
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Byunghyun Ban. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top -->
-    <div class="btn-to-top" id="btn-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-        <i class="fas fa-arrow-up"></i>
     </div>
+
+    <!-- Templates for Sections -->
     <template id="books-template">
         <section id="books" class="animated bounceInDown">
-            <div class="row" style="display:none;">
+            <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading subpageHeading">Books</h2>
                 </div>
@@ -824,23 +921,24 @@
 
                 <div class="singleBookContainer">
                     <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/covers/2.jpg"
-                        alt="실전 민사소송법" class="bookCoverImage" />
-                    <h5>실전 민사소송법</h5>
-                    <p class="bookDescription">2020.05. 부크크</p>
+                        alt="6개월 치 업무를 하루 만에 끝내는 파이썬 " class="bookCoverImage" />
+                    <h5><a href="https://needleworm.github.io/python" target="_blank" rel="noreferrer">6개월 치 업무를 하루 만에
+                            끝내는 파이썬 <i class="fas fa-external-link-alt"></i></a></h5>
+                    <p class="bookDescription">2020.06. 생능출판사</p>
                     <ul class="list-inline">
-                        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=240508341" target="_blank"
+                        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8970504281" target="_blank"
                                 rel="noreferrer"><img
                                     src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/stores/aladdin.png"
                                     class="bookStoreIcon" alt="aladin" /></a></li>
-                        <li><a href="https://product.kyobobook.co.kr/detail/S000060611461" target="_blank"
+                        <li><a href="https://product.kyobobook.co.kr/detail/S000001075936" target="_blank"
                                 rel="noreferrer"><img
                                     src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/stores/kyobo.png"
                                     class="bookStoreIcon" alt="kyobo" /></a></li>
-                        <li><a href="https://search.shopping.naver.com/book/catalog/32497168624" target="_blank"
+                        <li><a href="https://search.shopping.naver.com/book/catalog/32436159230" target="_blank"
                                 rel="noreferrer"><img
                                     src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/stores/naver.png"
                                     class="bookStoreIcon" alt="naver" /></a></li>
-                        <li><a href="https://www.yes24.com/Product/Goods/90250538" target="_blank" rel="noreferrer"><img
+                        <li><a href="http://www.yes24.com/Product/Goods/90637375" target="_blank" rel="noreferrer"><img
                                     src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/stores/yes24.png"
                                     class="bookStoreIcon" alt="yes24" /></a></li>
                     </ul>
@@ -848,22 +946,26 @@
 
                 <div class="singleBookContainer">
                     <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/covers/1.jpg"
-                        alt="법대로 합시다" class="bookCoverImage" />
-                    <h5>법대로 합시다</h5>
-                    <p class="bookDescription">2016.22. 지식과감성#</p>
+                        alt="AI에듀케이션" class="bookCoverImage" />
+                    <h5>AI에듀케이션</h5>
+                    <p class="bookDescription">2020.06. 교육과학사</p>
                     <ul class="list-inline">
-                        <li><a href="https://search.shopping.naver.com/book/catalog/32490276655" target="_blank"
+                        <li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8925414605" target="_blank"
+                                rel="noreferrer"><img
+                                    src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/stores/aladdin.png"
+                                    class="bookStoreIcon" alt="aladin" /></a></li>
+                        <li><a href="https://product.kyobobook.co.kr/detail/S000001095945" target="_blank"
+                                rel="noreferrer"><img
+                                    src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/stores/kyobo.png"
+                                    class="bookStoreIcon" alt="kyobo" /></a></li>
+                        <li><a href="https://search.shopping.naver.com/book/catalog/32438361732" target="_blank"
                                 rel="noreferrer"><img
                                     src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/stores/naver.png"
                                     class="bookStoreIcon" alt="naver" /></a></li>
+                        <li><a href="http://www.yes24.com/Product/Goods/90610362" target="_blank" rel="noreferrer"><img
+                                    src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/stores/yes24.png"
+                                    class="bookStoreIcon" alt="yes24" /></a></li>
                     </ul>
-                </div>
-
-                <div class="singleBookContainer">
-                    <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/covers/0.jpg"
-                        alt="환세취호전" class="bookCoverImage" />
-                    <h5>환세취호전</h5>
-                    <p class="bookDescription">2005. 방학숙제</p>
                 </div>
             </div>
         </section>
