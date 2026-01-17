@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const main = document.getElementById('main-content');
     if (main) {
         renderAllSections(main);
-        renderAllSections(main);
         initTextTruncation(); // Initialize text truncation for all sections
     }
 
@@ -442,6 +441,12 @@ function setupContactForm() {
                     btn.textContent = originalText;
                     btn.disabled = false;
                     form.reset();
+
+                    // Reset hidden fields
+                    document.getElementById('div-institution').classList.remove('visible');
+                    document.getElementById('div-phone').classList.remove('visible');
+                    document.getElementById('div-email').classList.remove('visible');
+
                 }, (error) => {
                     alert('Failed to send message.');
                     console.error(error);
@@ -451,16 +456,33 @@ function setupContactForm() {
         }
     });
 
+    // Progressive Reveal Logic
+    const revealMap = {
+        'mail_name': 'div-institution',
+        'mail_institution': 'div-phone',
+        'mail_phone': 'div-email'
+    };
+
     document.addEventListener('input', function (e) {
-        if (['mail_name', 'mail_institution', 'mail_phone'].includes(e.target.id)) {
-            const target = e.target;
-            if (target.id === 'mail_phone') {
-                let number = target.value.replace(/[^0-9]/g, '');
+        const targetId = e.target.id;
+
+        // 1. Reveal Logic
+        if (revealMap[targetId]) {
+            const nextDiv = document.getElementById(revealMap[targetId]);
+            if (nextDiv && !nextDiv.classList.contains('visible') && e.target.value.trim().length > 0) {
+                nextDiv.classList.add('visible');
+            }
+        }
+
+        // 2. Phone Formatting
+        if (['mail_name', 'mail_institution', 'mail_phone'].includes(targetId)) {
+            if (targetId === 'mail_phone') {
+                let number = e.target.value.replace(/[^0-9]/g, '');
                 let formatted = '';
                 if (number.length < 4) formatted = number;
                 else if (number.length < 8) formatted = number.slice(0, -4) + '-' + number.slice(-4);
                 else formatted = number.slice(0, -8) + '-' + number.slice(-8, -4) + '-' + number.slice(-4);
-                if (target.value !== formatted) target.value = formatted;
+                if (e.target.value !== formatted) e.target.value = formatted;
             }
         }
     });
