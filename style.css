@@ -1387,9 +1387,9 @@ section .row {
     margin-top: auto;
 }
 
-.singleNewsCard .firstCommitDate {
+.firstCommitDate {
     display: block;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -1853,4 +1853,8 @@ body {
         color: var(--text-muted);
         text-align: center;
     }
+}
+
+.firstCommitDate {
+    color: var(--secondary-color);
 }
