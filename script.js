@@ -654,18 +654,31 @@ function initTextTruncation() {
             // Add the truncated class (style logic handles the line clamping)
             desc.classList.add('description-truncated');
 
-            // Check if truncation is actually needed
-            // Also check if button already exists to avoid duplication
-            if (desc.scrollHeight > desc.clientHeight && !desc.parentElement.querySelector('.show-more-btn')) {
+            // Robust parent check
+            const parent = desc.closest('.projectText') || desc.parentElement;
+
+            // Check if truncation is actually needed AND button doesn't exist yet
+            if (desc.scrollHeight > desc.clientHeight && !parent.querySelector('.show-more-btn')) {
                 const btn = document.createElement('button');
                 btn.className = 'show-more-btn';
                 btn.innerText = 'Show More';
+
                 btn.onclick = function () {
-                    const isTruncated = desc.classList.toggle('description-truncated');
-                    this.innerText = isTruncated ? 'Show More' : 'Show Less';
+                    const isShowingMore = this.innerText === 'Show More';
+
+                    // Toggle ALL relevant descriptions in this container
+                    const targets = parent.querySelectorAll('.bookDescription');
+
+                    targets.forEach(t => {
+                        if (isShowingMore) t.classList.remove('description-truncated');
+                        else t.classList.add('description-truncated');
+                    });
+
+                    this.innerText = isShowingMore ? 'Show Less' : 'Show More';
                 };
-                // Append button after the paragraph
-                desc.parentElement.appendChild(btn);
+
+                // Append button immediately after the checked paragraph
+                desc.after(btn);
             }
         });
     });
