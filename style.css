@@ -1587,7 +1587,7 @@ body {
     }
 }
 
-/* Extra small devices (phones, less than 450px) */
+/* Mobile Small Screens (< 450px) */
 @media (max-width: 450px) {
 
     .grid-container,
@@ -1597,5 +1597,15 @@ body {
     .codesContainer,
     .projectContainer {
         grid-template-columns: 1fr !important;
+    }
+
+    /* Hide items beyond the first 2 */
+    .grid-container>*:nth-child(n+3),
+    .bookContainer>*:nth-child(n+3),
+    .websitesContainer>*:nth-child(n+3),
+    .lecturesContainer>*:nth-child(n+3),
+    .codesContainer>*:nth-child(n+3),
+    .projectContainer>*:nth-child(n+3) {
+        display: none !important;
     }
 }
