@@ -1,5 +1,5 @@
 총 .singleLectureContainer 개수: 178
-lec_inst 클래스가 없는 항목 개수: 123
+lec_inst 클래스가 없는 항목 개수: 108
 ================================================================================
 
 번호: 1
@@ -526,200 +526,6 @@ HTML 미리보기: <div class="singleLectureContainer">
                                 보건복지부에서 진행했던 "
 --------------------------------------------------------------------------------
 
-번호: 89
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/96.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">공무원 AI교육 관련 전문가 간담회 (2024.05.31.)</h5>
-<p class="abstract">
-                                인사혁신처의 초청으로 공직자의 AI교육과 관련된 자문을 제공하고 왔습니다.
-                            </p>
-</div>
-</div>
-</div>
---------------------------------------------------------------------------------
-
-번호: 94
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/90.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">인간을 대체할 수 있는 AI 소프트웨어, 어디까지 왔을까? (2024.04.13.)</h5>
-<p class="abstract">
-                                울진도서관 특화주제 과학 핵꿀잼<br/>
-                                울진군의 청소년들과 어르신들을 대상으로 챗GPT 관련 특강을 진행했습니다. 흰머리 지긋하신 어르신들께서 적극적인 자세로 새로운 지식을
---------------------------------------------------------------------------------
-
-번호: 95
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/89.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">챗GPT와 파생 기술들 - LLM 열풍 1년 반, 무엇이 바뀌었나? (2024.04.01.)</h5>
-<p class="abstract">
-                                1차 융합독서특강<br/>
-                                동국대 사범대 부속고등학교 도서관에서 초청해주셔서 특강을 진행했습니다. 진로형성에 있어 가장 중요한 시기를 겪고 있는 고등학생들을 대상으로
---------------------------------------------------------------------------------
-
-번호: 96
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/88.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">이제는 모두가 알아야 할 프롬프트 엔지니어링 (2024.04.30.)</h5>
-<p class="abstract">
-                                용인 수지도서관 북타임<br/>
-                                용인 수지도서관에서 다시 초청해 주셔서 특강을 제공하고 왔습니다. 이제는 모든 사람들이 챗GPT를 효율적으로 다루고, 스마트하게 질문을 설계하는 방법에
-  
---------------------------------------------------------------------------------
-
-번호: 97
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/87.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">챗GPT와 파생 기술들 (2024.03.28.)</h5>
-<p class="abstract">
-                                삼성전자 DA사업부<br/>
-                                삼성전자 DA사업부 임직원 350여명을 대상으로 특강을 진행했습니다. 특히, 생성형 AI가 생산시설 자동화와 품질관리 분야에 어떻게 적용될 수 있는지에
-                
---------------------------------------------------------------------------------
-
-번호: 98
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/86.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">4차 산업 혁명 시대의 스마트팜 현황 (2024.02.13.)</h5>
-<p class="abstract">
-                                충북 직업전환 교육기관 지정 운영 시범사업 특강<br/>
-                                충북 직업전환 교육기관 지정 운영 사업에 참가하는 기관 담당자들을 대상으로 특강을 제공했습니다.
-                       
---------------------------------------------------------------------------------
-
-번호: 99
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/85.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">GPT가 생산성에 끼치는 영향력 (2024.01.30.)</h5>
-<p class="abstract">
-                                애경그룹 신임임원과정<br/>
-                                애경그룹의 각 계열사 신규 임원 승진자 대상 특강을 진행하였습니다. 챗GPT의 영향력과 프롬프트 엔지니어링, 조직 내 성과창출을 위한 쾌속한 도입 방향
-          
---------------------------------------------------------------------------------
-
-번호: 100
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/84.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">마케터를 위한 프롬프트 엔지니어링 (2024.01.19.)</h5>
-<p class="abstract">
-                                한국암웨이<br/>
-                                한국암웨이 본사에서 마케팅 임직원 대상 특강을 진행하였습니다. 마케팅 담당자들이라 그런지 외향적인 분들이 많이 참여해주셔서 즐거웠습니다.
-                       
---------------------------------------------------------------------------------
-
-번호: 101
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/83.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">생성형 AI와 프롬프트 엔지니어링 (2024.01.16.)</h5>
-<p class="abstract">
-                                농협중앙회 신규직원 DT교육<br/>
-                                농협그룹 전 계열 신입사원을 대상으로 챗GPT와 디지털 트렌드 관련 특강을 제공하였습니다.
-                            </p>
-</div>
---------------------------------------------------------------------------------
-
-번호: 102
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/82.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">스마트팜 교육 (2024)</h5>
-<p class="abstract">
-                                인천 금융고등학교<br/>
-                                아두이노를 활용한 코딩교육부터 스마트팜 키트 제작 등의 교육을 진행했습니다.
-                            </p>
-</div>
-</div>
-</div>
---------------------------------------------------------------------------------
-
-번호: 103
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/81.png"/>
-<div class="projectText">
-<h5 class="lecture_title">챗GPT와 프롬프트 엔지니어링 (2023)</h5>
-<p class="abstract">
-                                세종청사 디지털 아카데미<br/>
-                                챗GPT를 업무에 활용하여 효율적으로 업무역량을 향상시키는 방법에 대한 강의를 진행했습니다.
-                            </p>
-</div>
-</div>
-</
---------------------------------------------------------------------------------
-
-번호: 104
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/80.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">챗GPT 출시 1주년, 세상은 어떻게 바뀌었나? (2023)</h5>
-<p class="abstract">
-                                용인수지도서관 베스트셀러 작가 초정강연<br/>
-                                연말까지도 챗GPT의 열기가 뜨거우니 참 신기하네요. 재미있는 시간 보내고 왔습니다.
-                            </p>
-</
---------------------------------------------------------------------------------
-
-번호: 105
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/79.png"/>
-<div class="projectText">
-<h5 class="lecture_title">챗GPT에 대한 가장 재미있는 설명 (2023)</h5>
-<p class="abstract">
-                                미추홀구립도서관 문화가 있는 날 특강<br/>
-                                성인을 위한 강의 진행했습니다. 어르신들에게 GPT를 이해시키는 대단한 강사가 바로 접니다.
-                            </p>
-</div>
---------------------------------------------------------------------------------
-
-번호: 106
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/78.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">챗GPT와 업무혁신 (2023)</h5>
-<p class="abstract">
-                                벤처기업 신입사원 온보딩<br/>
-                                감사하게도 다시 불러주셨습니다. 총 4회 진행하였습니다.
-                            </p>
-</div>
-</div>
-</div>
---------------------------------------------------------------------------------
-
 번호: 107
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
@@ -727,29 +533,9 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/77.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT에 대한 가장 재미있는 설명 (2023)</h5>
+<a href="https://school.gyo6.net/andong-gh/main.do?sysId=andong-gh">안동여자고등학교</a>
 <p class="abstract">
-                                안동여고<br/>
-                                중학교 시절 담임선생님께서 초대해 주셨습니다.
-                            </p>
-</div>
-</div>
-</div>
---------------------------------------------------------------------------------
-
-번호: 108
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/75.jpg"/>
-<div class="projectText">
-<h5 class="lecture_title">챗GPT와 업무혁신 (2023)</h5>
-<p class="abstract">
-                                벤처기업 신입사원 온보딩<br/>
-                                벤처기업 신입사원들이 모여서 교육을 듣는 프로그램이 있나봅니다. 여기에 다녀왔습니다.
-                            </p>
-</div>
-</div>
-</div>
+                                중학교 시절 담임선생님께서 초대해 주셨습니다. 안동여고 학생들과 함께 생성형 AI의 발전이 세상에 끼칠 영향과, 우리가 지
 --------------------------------------------------------------------------------
 
 번호: 109
@@ -759,13 +545,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/74.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT와 인공지능의 미래 (2023)</h5>
+<a href="https://www.anseong.go.kr/library/sub/main.do?library=2&amp;mId=0602020800">안성
+                                공도도서관</a>
 <p class="abstract">
-                                안성 공도도서관<br/>
-                                안성 공도도서관에서 강연을 했습니다. 제 도서를 다양하게 소장하고 있는 것으로 보아 아주 훌륭한 곳입니다.
-                            </p>
-</div>
-</div>
-<
+                                안성 공도도서관에서 강연을 했습니다. 제 도
 --------------------------------------------------------------------------------
 
 번호: 110
@@ -775,13 +558,12 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/73.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">전문가의식과 책임감이 충돌할 때 (2023)</h5>
+<a href="https://www.kaeri.re.kr/">한국원자력연구원</a>
 <p class="abstract">
-                                한국원자력연구원<br/>
-                                간만에 챗GPT 이외 토픽으로 강연요청이 들어와 무척 신났습니다.
+                                간만에 챗GPT 이외 토픽으로 강연요청이 들어와 무척 신났습니다. "코딩하는 공익"시절 이야기를 들려드렸습니다.
                             </p>
 </div>
-</div>
-</div>
+
 --------------------------------------------------------------------------------
 
 번호: 111
@@ -790,9 +572,9 @@ HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/70.png"/>
 <div class="projectText">
-<h5 class="lecture_title">부산교육청 (2023)</h5>
+<h5 class="lecture_title">챗GPT의 업무 활용 (2023)</h5>
+<a href="https://home.pen.go.kr/giftedu/main.do">부산교육청 영재교육진흥원</a>
 <p class="abstract">
-                                부산교육청 영재교육진흥원<br/>
                                 이번에도 교사 대상 연수를 하고 왔습니다.
                             </p>
 </div>
@@ -807,8 +589,8 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/69.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">이젠 챗GPT 시대 (2023)</h5>
+<a href="https://www.gbelib.kr/yd/index.do">경북교육청 영덕도서관</a>
 <p class="abstract">
-                                경북교육청 영덕도서관<br/>
                                 영덕군에서 주민 대상 강연을 진행했습니다.
                             </p>
 </div>
@@ -823,10 +605,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/68.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT에 대한 가장 재미있는 설명 (2023)</h5>
+<a href="https://www.gbe.kr/gsei">경상북도교육청과학원</a>
 <p class="abstract">
-                                경상북도교육청과학원<br/>
-                                포항 과학원에서 교사들 대상으로 스탠딩 코미디를 하고 왔습니다. 13년 전, 여기서 영재교육을 받던 학생이었는데 이제는 강단에 서서 마이크를 잡으니
-                  
+                                포항 과학원에서 교사들 대상으로 연수라는 명목하에 스탠딩 코미디를 하고 왔습니다. 13년 전, 여기서 영재교육을 받던 학생이었는데 이제는 강단에 서서 마이크를
+           
 --------------------------------------------------------------------------------
 
 번호: 114
@@ -836,10 +618,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/67.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">쉬운 딥러닝 (2023)</h5>
+<a href="https://school.gyo6.net/ka/main.do">경안고등학교</a>
 <p class="abstract">
-                                경안고등학교<br/>
                                 올해도 모교 방문하여 딥러닝 시작부터 끝까지 한 번 훑어주고 왔습니다. 대학에 간 졸업생들이 앞다투어 효능을 간증하는 바로 그 강의가 올해도
-                                돌아왔습니다.
+                           
 --------------------------------------------------------------------------------
 
 번호: 115
@@ -849,8 +631,8 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/66.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT시대 우리의 진로 (2023)</h5>
+<a href="https://school.gyo6.net/yyg/main.do?sysId=yyg">영양여자고등학교</a>
 <p class="abstract">
-                                영양여자고등학교<br/>
                                 진로특강 겸 상담 진행하고 왔습니다.
                             </p>
 </div>
@@ -865,12 +647,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/65.png"/>
 <div class="projectText">
 <h5 class="lecture_title">4차 산업혁명 시대, 우리 아이가 살아남으려면 부모가 바뀌어야 할까? (2023)</h5>
+<a href="https://www.gne.go.kr/parents/index.do">경남학부모아카데미</a>
 <p class="abstract">
-                                경남학부모아카데미<br/>
                                 학부모분들 대상으로 4차산업혁명 분야에 대한 강의를 진행했습니다.
-                            </p>
-</div>
-</div>
+                            </
 --------------------------------------------------------------------------------
 
 번호: 117
@@ -880,13 +660,11 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/64.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT 마침내 찾아온 특이점 (2023)</h5>
+<a href="https://www.hanamlib.go.kr/mslib/index.do">하남 미사도서관</a>
 <p class="abstract">
-                                하남 미사도서관<br/>
                                 하남은 무척 살기 좋아 보이는 도시 같아 보였습니다. 돈 많이 벌면 꼭 하남에 집 사야지.
                             </p>
-</div>
-</div>
-</div>
+</d
 --------------------------------------------------------------------------------
 
 번호: 118
@@ -896,10 +674,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/63.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT가 불러올 미래 (2023)</h5>
+<a href="https://www.gbelib.kr/jc/index.do">문경점촌도서관</a>
 <p class="abstract">
-                                문경점촌도서관<br/>
                                 토요 인문학 특강 다녀왔습니다. 백발 어르신이 무서운 속도로 필기도 하시고 관련 애플리케이션 개발 동향 질문도 하셔서 무척 강렬한 기억으로 남았습니다.
-                          
+               
 --------------------------------------------------------------------------------
 
 번호: 119
@@ -909,11 +687,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/62.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT와 프롬프트 엔지니어링 (2023)</h5>
+<a href="https://www.mpm.go.kr/mpm/info/infoEdu/eduDomestic/eduDomestic05/eduDomestic0503/">세종청사
+                                아카데미</a>
 <p class="abstract">
-                                세종청사 아카데미<br/>
-                                세종시 공무원 100여명을 대상으로 한 4차시 교육입니다. 국내 최초 프롬프트 엔지니어링 강의가 여기서 진행되었습니다.
-                            </p>
-</div
+                                세종시 공무원 100여명을
 --------------------------------------------------------------------------------
 
 번호: 120
@@ -923,12 +700,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/61.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT, 마침내 찾아온 특이점 (2023)</h5>
+<a href="https://school.gyo6.net/ka/main.do?sysId=ka">경안고등학교</a>
 <p class="abstract">
-                                경안고등학교<br/>
                                 모교 다녀왔습니다. 졸업한 지 12년이 지났네요. 시설이 어찌나 이렇게 좋아졌는지.
                             </p>
-</div>
-</div>
 </div>
 --------------------------------------------------------------------------------
 
@@ -939,10 +714,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/58.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT와 함께 하는 AI 이야기 (2023)</h5>
+<a href="https://gmlib.gm.go.kr/">하얀도서관</a>
 <p class="abstract">
-                                하얀도서관<br/>
                                 광명시 하얀도서관에서 강연을 진행했습니다. 자리가 모자라 뒤쪽에 간이 의자를 깔고 앉아 수강해 주신 분들도 계셨습니다. 초청해 주셔서 무척이나
-                           
+                          
 --------------------------------------------------------------------------------
 
 번호: 122
@@ -952,10 +727,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/57.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT와 함께 하는 AI 이야기 (2023)</h5>
+<a href="https://www.seocho.go.kr">서초구청</a>
 <p class="abstract">
-                                서초구청<br/>
                                 서초구청에서 전 직원 대상 강연 진행했습니다. 제공해 주신 음료수가 참 맛있어서 즐거웠습니다. 복도에 "기부의 벽" 이라는, 기부금 키오스크가 있길래
-                        
+                      
 --------------------------------------------------------------------------------
 
 번호: 123
@@ -965,11 +740,10 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/56.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT와 활용 방안 (2023)</h5>
+<a href="https://www.koenergy.kr/kosep/fr/main.do">한국남동발전</a>
 <p class="abstract">
-                                한국남동발전<br/>
                                 전 직원 대상 온라인 강의였습니다. 라이브로 200명 가량 수강해주셨고 녹화 영상이 한달 간 사내 교육자료로 사용될 예정이라고 하네요.
-                            </p>
-</di
+                   
 --------------------------------------------------------------------------------
 
 번호: 124
@@ -979,13 +753,13 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/55.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT 바로 알기, 그리고 스마트하게 활용하기 (2023)</h5>
+<a href="https://dei.djsch.kr">대전교육정보원</a>
 <p class="abstract">
-                                대전교육정보원<br/>
                                 초중등교원 대상 강연 진행했습니다. 역시 초등교사분들이 손도 잘 들고 질문도 잘 하세요.
                             </p>
 </div>
 </div>
-
+</
 --------------------------------------------------------------------------------
 
 번호: 125
@@ -995,11 +769,11 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/54.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">살아남는 1%를 위한, 챗GPT에 대한 진짜 정보 (2023)</h5>
+<a href="http://nonghyup.com/">농협중앙회</a>
 <p class="abstract">
-                                농협중앙회<br/>
                                 농협중앙회 본부에 방문할 일은 로또 당첨 전에는 없을 줄 알았습니다. 강연도 제공하고 당첨자 기운도 받아왔습니다.
                             </p>
-<
+</d
 --------------------------------------------------------------------------------
 
 번호: 126
@@ -1009,26 +783,13 @@ HTML 미리보기: <div class="singleLectureContainer">
 <img alt="projectimage" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/lectures/53.jpg"/>
 <div class="projectText">
 <h5 class="lecture_title">챗GPT와 공존하는 삶 (2023)</h5>
+<a href="https://home.pen.go.kr/haeundaelib/main.do">해운대인문학도서관 북콘서트</a>
 <p class="abstract">
-                                해운대인문학도서관 북콘서트<br/>
                                 부산까지 다녀온 보람이 있었습니다. 한 시간 가량 강연 후 끝없는 Q&amp;A를 거쳐 사인회까지 무사히 마치고 돌아왔습니다.
-                            </p>
-
+             
 --------------------------------------------------------------------------------
 
 번호: 127
-제목: 
-HTML 미리보기: <div class="singleLectureContainer">
-<div class="singleWebsiteCard">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="YoutubePreview" frameborder="0" src="https://www.youtube.com/embed/qbxmD616erM" title="12"></iframe>
-<div class="projectText">
-<h5 class="lecture_title">챗GPT 시대, 살아남는 1%만 알고있는 정확한 정보 (2023)</h5>
-<p class="abstract">
-                                도로교통공단 TBN 생방송<br/>
-                                
---------------------------------------------------------------------------------
-
-번호: 128
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1044,7 +805,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 129
+번호: 128
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1057,7 +818,7 @@ HTML 미리보기: <div class="singleLectureContainer">
                             <
 --------------------------------------------------------------------------------
 
-번호: 130
+번호: 129
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1073,7 +834,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 
 --------------------------------------------------------------------------------
 
-번호: 131
+번호: 130
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1085,7 +846,7 @@ HTML 미리보기: <div class="singleLectureContainer">
                                 서대문구청
 --------------------------------------------------------------------------------
 
-번호: 132
+번호: 131
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1101,7 +862,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </di
 --------------------------------------------------------------------------------
 
-번호: 133
+번호: 132
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1114,7 +875,7 @@ HTML 미리보기: <div class="singleLectureContainer">
            
 --------------------------------------------------------------------------------
 
-번호: 134
+번호: 133
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1127,7 +888,7 @@ HTML 미리보기: <div class="singleLectureContainer">
                         
 --------------------------------------------------------------------------------
 
-번호: 135
+번호: 134
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1143,7 +904,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 136
+번호: 135
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1160,7 +921,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </d
 --------------------------------------------------------------------------------
 
-번호: 137
+번호: 136
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1175,7 +936,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 138
+번호: 137
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1190,7 +951,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 139
+번호: 138
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1205,7 +966,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 140
+번호: 139
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1218,7 +979,7 @@ HTML 미리보기: <div class="singleLectureContainer">
                                 AI기술과 관련하여, 미래의 사법부가 추구해야 할 바람직한 모습을 연구하고 설계하기
 --------------------------------------------------------------------------------
 
-번호: 141
+번호: 140
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1232,7 +993,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="https://www.koscom.co.kr/portal/main.
 --------------------------------------------------------------------------------
 
-번호: 142
+번호: 141
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1246,7 +1007,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="http://www.dhu.ac.kr/pages/index.htm" rel="noreferrer" tar
 --------------------------------------------------------------------------------
 
-번호: 143
+번호: 142
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1261,7 +1022,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 
 --------------------------------------------------------------------------------
 
-번호: 144
+번호: 143
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1277,7 +1038,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="htt
 --------------------------------------------------------------------------------
 
-번호: 145
+번호: 144
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1292,7 +1053,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="https://www.youtube.com/watch?v=w
 --------------------------------------------------------------------------------
 
-번호: 146
+번호: 145
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1307,7 +1068,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 147
+번호: 146
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1322,7 +1083,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="http://www.kdpress.co.kr/news/articleView.
 --------------------------------------------------------------------------------
 
-번호: 148
+번호: 147
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1337,7 +1098,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="http://gamefocus.co.kr/detail.php?number=10
 --------------------------------------------------------------------------------
 
-번호: 149
+번호: 148
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1352,7 +1113,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 150
+번호: 149
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1367,7 +1128,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="https://brunch.co.kr/@needleworm/209" rel="nore
 --------------------------------------------------------------------------------
 
-번호: 151
+번호: 150
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1382,7 +1143,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="http://it.chosun.com/site/data/html_dir/2019
 --------------------------------------------------------------------------------
 
-번호: 152
+번호: 151
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1397,7 +1158,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 153
+번호: 152
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1412,7 +1173,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 154
+번호: 153
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1427,7 +1188,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 155
+번호: 154
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1443,7 +1204,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href
 --------------------------------------------------------------------------------
 
-번호: 156
+번호: 155
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1458,7 +1219,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="https://
 --------------------------------------------------------------------------------
 
-번호: 157
+번호: 156
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1473,7 +1234,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="https://blog.naver.com/mopaspr/2215
 --------------------------------------------------------------------------------
 
-번호: 158
+번호: 157
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1488,7 +1249,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 <a href="https://brunch.co.kr/@
 --------------------------------------------------------------------------------
 
-번호: 159
+번호: 158
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1503,7 +1264,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 160
+번호: 159
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1518,7 +1279,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 161
+번호: 160
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1533,7 +1294,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 162
+번호: 161
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1548,7 +1309,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 163
+번호: 162
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1563,7 +1324,7 @@ HTML 미리보기: <div class="singleLectureContainer">
 </div>
 --------------------------------------------------------------------------------
 
-번호: 164
+번호: 163
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1576,7 +1337,7 @@ HTML 미리보기: <div class="singleLectureContainer">
                                 온토리TV의 초대로 A
 --------------------------------------------------------------------------------
 
-번호: 165
+번호: 164
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1588,7 +1349,7 @@ HTML 미리보기: <div class="singleLectureContainer">
                                 110만 유튜버 <strong>긱블</strong>에서 주최한 대규모 웹예능, <strong>육각형게임</strong>에 출
 --------------------------------------------------------------------------------
 
-번호: 166
+번호: 165
 제목: 
 HTML 미리보기: <div class="singleLectureContainer">
 <div class="singleWebsiteCard">
@@ -1598,6 +1359,18 @@ HTML 미리보기: <div class="singleLectureContainer">
 <h5 class="lecture_title">[강의 미리보기] 최초/최신 강의! ChatGPT를 활용한 영어 학습</h5>
 <p class="abstract">
                                 나만의 영어 선생님이 되는 ChatGPT!
+--------------------------------------------------------------------------------
+
+번호: 166
+제목: 
+HTML 미리보기: <div class="singleLectureContainer">
+<div class="singleWebsiteCard">
+<iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="YoutubePreview" frameborder="0" src="https://www.youtube.com/embed/qbxmD616erM" title="챗GPT 시대, 살아남는 1%만 알고있는 정확한 정보">
+</iframe>
+<div class="projectText">
+<h5 class="lecture_title">챗GPT 시대, 살아남는 1%만 알고있는 정확한 정보</h5>
+<p class="abstract">
+                                한국교통방송국 양재 스튜디오 완공 기념 첫 생방송을 제가 하게 되었습니다.
 --------------------------------------------------------------------------------
 
 번호: 167
