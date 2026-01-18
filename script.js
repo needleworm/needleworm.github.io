@@ -149,16 +149,11 @@ function renderAllSections(container) {
         },
         {
             id: 'rnd-section',
-            title: 'Research',
+            title: 'R&D',
             desc: 'Papers and Patents',
-            templates: ['papers', 'patents'] // Tabs
+            templates: ['papers', 'patents', 'codes', 'websites']
         },
-        {
-            id: 'dev-section',
-            title: 'Dev',
-            desc: 'Codes and Webapps',
-            templates: ['codes', 'websites'] // Tabs
-        },
+
         {
             id: 'etc-section',
             title: 'ETC',
