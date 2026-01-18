@@ -927,7 +927,7 @@ img {
 /* Icons/Links */
 .list-inline,
 .lectureIcons,
-.projectIcons,
+
 .gitIcons {
     padding: 1rem;
     border-top: 1px solid #eee;
@@ -1209,15 +1209,10 @@ section .row {
     object-position: top center;
 }
 
-#tab-papers .projectIcons,
-#tab-patents .projectIcons {
-    border-top: none !important;
-    align-items: center;
-    /* Vertically align items */
-}
 
-#tab-papers .projectIcons .gitIcons,
-#tab-patents .projectIcons .gitIcons {
+
+#tab-papers .gitIcons,
+#tab-patents .gitIcons {
     padding-top: 1rem;
     /* Space for border */
     border-top: 1px solid #eee !important;
