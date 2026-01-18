@@ -625,19 +625,34 @@ footer {
 
     .nav-links {
         display: none;
-        /* Hide for now, implement js toggle */
-        position: absolute;
+        position: fixed;
         top: var(--nav-height);
         left: 0;
         width: 100%;
+        height: calc(100vh - var(--nav-height));
         background: white;
         flex-direction: column;
         padding: 1rem;
         box-shadow: var(--shadow-md);
+        overflow-y: auto;
     }
 
     .nav-links.active {
         display: flex;
+        align-items: center;
+        /* Center children horizontally */
+        text-align: center;
+    }
+
+    .nav-links li {
+        width: 100%;
+        /* Ensure li takes full width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        /* Spacing between items */
     }
 
     .menu-toggle {
@@ -1708,7 +1723,7 @@ body {
 @media (max-width: 768px) {
     .nav-item {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         height: auto;
         width: 100%;
     }
@@ -1718,15 +1733,17 @@ body {
         position: static;
         box-shadow: none;
         transform: none;
-        padding-left: 1.5rem;
+        padding-left: 0;
         background: transparent;
         width: 100%;
         border-radius: 0;
+        text-align: center;
     }
 
     .dropdown-menu a {
         padding: 0.5rem 0;
         font-size: 0.85rem;
         color: var(--text-muted);
+        text-align: center;
     }
 }
