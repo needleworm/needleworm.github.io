@@ -675,6 +675,11 @@ footer {
         gap: 1rem;
     }
 
+    /* Override for Websites: 1 Column on Mobile */
+    #tab-websites .websitesContainer {
+        grid-template-columns: 1fr !important;
+    }
+
     /* Reduce font size for mobile cards */
     .singleBookContainer h5,
     .singleWebsiteCard h5,
