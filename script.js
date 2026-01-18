@@ -132,37 +132,37 @@ function renderAllSections(container) {
         {
             id: 'books',
             title: 'Books',
-            desc: '저서',
+            desc: 'Recent Publications',
             templates: ['books'] // Single item, no tabs needed
         },
         {
             id: 'media-section',
             title: 'Media',
-            desc: '언론 보도 및 뉴스',
+            desc: 'Me on Media',
             templates: ['media', 'news'] // Tabs
         },
         {
             id: 'education-section',
             title: 'Education',
-            desc: '강의 및 교육',
+            desc: 'Courses and Lectures',
             templates: ['courses', 'lectures'] // Tabs
         },
         {
             id: 'rnd-section',
             title: 'Research',
-            desc: '논문 및 특허',
+            desc: 'Papers and Patents',
             templates: ['papers', 'patents'] // Tabs
         },
         {
             id: 'dev-section',
             title: 'Dev',
-            desc: '개발 프로젝트',
+            desc: 'Codes and Webapps',
             templates: ['codes', 'websites'] // Tabs
         },
         {
             id: 'etc-section',
             title: 'ETC',
-            desc: '기타 활동',
+            desc: '',
             templates: ['social', 'membership', 'collections'] // Tabs
         },
         {
@@ -284,6 +284,7 @@ function switchTab(groupId, templateId) {
 
         // Restore fade in animation
         target.style.animation = 'fadeIn 0.5s ease-out';
+        setTimeout(initTextTruncation, 100);
     }
 }
 
@@ -537,7 +538,7 @@ function setupContactForm() {
 
         emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
             .then(() => {
-                showToast('메일 발송에 성공했습니다! ✉️', 'success');
+                showToast('문의가 접수되었습니다.', 'success');
                 btn.textContent = originalText;
                 btn.disabled = false;
                 form.reset();
@@ -548,7 +549,7 @@ function setupContactForm() {
                 if (emailDiv) emailDiv.classList.remove('visible');
 
             }, (error) => {
-                showToast('메일 발송에 실패했습니다. 다시 시도해주세요.', 'error');
+                showToast('오류가 발생했습니다. 다시 시도해주세요.', 'error');
                 console.error('EmailJS Error:', error);
                 btn.textContent = originalText;
                 btn.disabled = false;
@@ -689,3 +690,7 @@ function initTextTruncation() {
         });
     });
 }
+// Re-check truncation after full page load (fonts/images)
+window.addEventListener('load', () => {
+    setTimeout(initTextTruncation, 100);
+});
