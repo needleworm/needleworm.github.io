@@ -280,6 +280,11 @@ function switchTab(groupId, templateId) {
         // Restore fade in animation
         target.style.animation = 'fadeIn 0.5s ease-out';
         setTimeout(initTextTruncation, 100);
+
+        // Specific re-render for Charts if hidden initially
+        if (templateId === 'codes') {
+            loadCodes();
+        }
     }
 }
 

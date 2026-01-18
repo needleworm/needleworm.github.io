@@ -743,6 +743,7 @@ img {
     transition: transform 0.3s;
     display: flex;
     flex-direction: column;
+    min-width: 0;
 }
 
 .singleBookContainer:hover {
@@ -755,6 +756,7 @@ img {
 .singleProjectContainer {
     display: flex;
     flex-direction: column;
+    min-width: 0;
 }
 
 /* The General Card (used inside wrappers) */
@@ -1235,7 +1237,7 @@ section .row {
     display: block !important;
 }
 
-/* Hide the small text label inside thumbnail (e.g. '??????½º') as it's often redundant or overlays poorly */
+/* Hide the small text label inside thumbnail (e.g. '??????ï¿½ï¿½') as it's often redundant or overlays poorly */
 .singleNewsCard .newsThumnail h5 {
     position: absolute;
     bottom: 0;
