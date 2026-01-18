@@ -1,4 +1,4 @@
-ï»¿/* Global Variables */
+/* Global Variables */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #e74c3c;
@@ -1231,7 +1231,7 @@ section .row {
     display: block !important;
 }
 
-/* Hide the small text label inside thumbnail (e.g. '??????ìŠ¤') as it's often redundant or overlays poorly */
+/* Hide the small text label inside thumbnail (e.g. '??????½º') as it's often redundant or overlays poorly */
 .singleNewsCard .newsThumnail h5 {
     position: absolute;
     bottom: 0;
@@ -1599,13 +1599,40 @@ body {
         grid-template-columns: 1fr !important;
     }
 
-    /* Hide items beyond the first 2 */
-    .grid-container>*:nth-child(n+3),
-    .bookContainer>*:nth-child(n+3),
-    .websitesContainer>*:nth-child(n+3),
-    .lecturesContainer>*:nth-child(n+3),
-    .codesContainer>*:nth-child(n+3),
-    .projectContainer>*:nth-child(n+3) {
-        display: none !important;
+
+}
+
+
+.language-chart-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-chart-container canvas {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    max-width: 100%;
+}
+
+@media (max-width: 550px) {
+    .language-chart-container {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .bookDescription.description-truncated {
+        height: auto !important;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important;
+        margin-bottom: 1rem !important;
+        overflow: hidden !important;
     }
 }

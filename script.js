@@ -53,9 +53,9 @@ function manageItemVisibility(container) {
     const isMobile = window.innerWidth <= 768;
     let limit = isMobile ? 4 : 6;
 
-    // Website section (specifically the tab): 1 column -> show only 2 items on mobile
-    // We check if the container is inside #tab-websites to avoid affecting Social/Membership etc.
-    if (isMobile && container.closest('#tab-websites') && container.classList.contains('websitesContainer')) {
+    if (window.innerWidth < 450) {
+        limit = 2;
+    } else if (isMobile && container.closest('#tab-websites') && container.classList.contains('websitesContainer')) {
         limit = 2;
     }
     const items = container.children;
