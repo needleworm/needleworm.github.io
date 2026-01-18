@@ -63,10 +63,49 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#books" class="nav-link">Books</a></li>
-            <li><a href="#media-section" class="nav-link">Media</a></li>
-            <li><a href="#education-section" class="nav-link">Education</a></li>
-            <li><a href="#rnd-section" class="nav-link">R&D</a></li>
-            <li><a href="#etc-section" class="nav-link">ETC</a></li>
+            <!-- Media Submenu -->
+            <li class="nav-item">
+                <a href="#media-section" class="nav-link">Media</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="clickSubmenu('media-section', 'media'); return false;">Media</a></li>
+                    <li><a href="#" onclick="clickSubmenu('media-section', 'news'); return false;">News</a></li>
+                </ul>
+            </li>
+
+            <!-- Education Submenu -->
+            <li class="nav-item">
+                <a href="#education-section" class="nav-link">Education</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="clickSubmenu('education-section', 'courses'); return false;">Courses</a>
+                    </li>
+                    <li><a href="#" onclick="clickSubmenu('education-section', 'lectures'); return false;">Lectures</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- R&D Submenu -->
+            <li class="nav-item">
+                <a href="#rnd-section" class="nav-link">R&D</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="clickSubmenu('rnd-section', 'papers'); return false;">Papers</a></li>
+                    <li><a href="#" onclick="clickSubmenu('rnd-section', 'patents'); return false;">Patents</a></li>
+                    <li><a href="#" onclick="clickSubmenu('rnd-section', 'codes'); return false;">Codes</a></li>
+                    <li><a href="#" onclick="clickSubmenu('rnd-section', 'websites'); return false;">Websites</a></li>
+                </ul>
+            </li>
+
+            <!-- ETC Submenu -->
+            <li class="nav-item">
+                <a href="#etc-section" class="nav-link">ETC</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="clickSubmenu('etc-section', 'social'); return false;">Social</a></li>
+                    <li><a href="#" onclick="clickSubmenu('etc-section', 'membership'); return false;">Membership</a>
+                    </li>
+                    <li><a href="#" onclick="clickSubmenu('etc-section', 'collections'); return false;">Collections</a>
+                    </li>
+                </ul>
+            </li>
+
             <li><a href="#contact" class="btn-contact">Contact</a></li>
         </ul>
     </nav>
@@ -277,7 +316,7 @@
                 <div class="singleBookContainer">
                     <img src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@main/src/images/books/covers/25.png"
                         alt="프롬프트 엔지니어링 " class="bookCoverImage" />
-                    <h5><a href="https://aieng.kr" target="_blank" rel="noreferrer">프롬프트 엔지니어링 <i
+                    <h5><a href="https://bhban.kr/prompt" target="_blank" rel="noreferrer">프롬프트 엔지니어링 <i
                                 class="fas fa-external-link-alt"></i></a></h5>
                     <p class="bookDescription">2023.10. 생능북스</p>
                     <ul class="list-inline">

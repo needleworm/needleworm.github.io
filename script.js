@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // 3. Setup Navigation & UI
+    // setupMobileMenu(); // Replaced by setupSubmenuHover logic potentially or simple toggle
     setupMobileMenu();
     setupScrollSpy();
     setupFloatingButton();
@@ -37,6 +38,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 4. Run specific initializers
     loadCodes();
     updateHeroStats();
+
+    // 5. Setup Submenu Hover
+    setupSubmenuHover();
+
+    // Safety check for mobile menu button
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    if (menuBtn) {
+        menuBtn.style.zIndex = '1100'; // Ensure it's above everything
+    }
 });
 
 function setupResponsiveLimiter() {
@@ -215,14 +225,6 @@ function renderAllSections(container) {
                 if (index !== 0) tabContentDiv.style.display = 'none'; // Hide all except first by default
                 else tabContentDiv.classList.add('active-tab-content');
 
-                // Cleanup clone (remove internal section tags to avoid nesting issues or duplicate IDs)
-                // Actually, the template contains a <section>. We should probably strip that <section> tag 
-                // and just take its innerHTML, OR just simple append.
-                // If we append the <section>, it might have ID conflict if we are not careful.
-                // The templates have IDs like id="books", id="media". 
-                // We should probably remove those IDs or allow them but ensure uniqueness.
-                // Best to strip the outer <section> tag from the template if possible.
-
                 const internalSection = clone.querySelector('section');
                 if (internalSection) {
                     internalSection.removeAttribute('id'); // Remove duplicate ID
@@ -297,10 +299,18 @@ function setupMobileMenu() {
     const navLinks = document.getElementById('nav-links');
 
     if (menuBtn && navLinks) {
-        menuBtn.addEventListener('click', () => {
+        // Clone and replace to remove old listeners if any
+        const newBtn = menuBtn.cloneNode(true);
+        menuBtn.parentNode.replaceChild(newBtn, menuBtn);
+
+        newBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
             navLinks.classList.toggle('active');
         });
-        navLinks.querySelectorAll('a').forEach(link => {
+
+        // Close menu on link click
+        navLinks.querySelectorAll('a:not([onclick])').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });
@@ -350,8 +360,8 @@ async function preloadCodesData() {
     if (preloadedCodesData) return;
     try {
         const [userRepos, orgRepos] = await Promise.all([
-            fetch('https://api.github.com/users/needleworm/repos?per_page=100').then(r => r.json()),
-            fetch('https://api.github.com/users/NaNaCompany/repos?per_page=100').then(r => r.json())
+            fetch('https://api.github.com/users/needleworm/repos?per_page=200').then(r => r.json()),
+            fetch('https://api.github.com/users/NaNaCompany/repos?per_page=200').then(r => r.json())
         ]);
         const safeUserRepos = Array.isArray(userRepos) ? userRepos : [];
         const safeOrgRepos = Array.isArray(orgRepos) ? orgRepos : [];
@@ -405,7 +415,7 @@ function renderLanguageChart(languages) {
     const canvas = document.getElementById('languageChart');
     if (!canvas) return;
     // Check visibility
-    if (canvas.offsetParent === null) return; // Hidden, don't render yet? Or render anyway.
+    // if (canvas.offsetParent === null) return; // Removed to force render even if hidden initially
 
     const ctx = canvas.getContext('2d');
 
@@ -599,98 +609,93 @@ function setupCustomSelect() {
 function closeAllSelect(elmnt) {
     const x = document.getElementsByClassName("select-items");
     const y = document.getElementsByClassName("select-selected");
-    for (let i = 0; i < y.length; i++) {
+    const xl = x.length;
+    const yl = y.length;
+    const arrNo = [];
+    for (let i = 0; i < yl; i++) {
         if (elmnt == y[i]) {
-            continue; // specific one triggered
+            arrNo.push(i)
         } else {
             y[i].classList.remove("select-arrow-active");
         }
     }
-    for (let i = 0; i < x.length; i++) {
-        if (elmnt && elmnt.parentElement && elmnt.parentElement.getElementsByClassName("select-items")[0] == x[i]) {
-            continue;
+    for (let i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+            x[i].classList.add("select-hide");
         }
-        x[i].classList.add("select-hide");
     }
 }
 
-// --- YouTube Facade ---
-document.addEventListener('click', function (e) {
-    const facade = e.target.closest('.youtube-facade');
-    if (facade) {
-        const src = facade.getAttribute('data-src');
-        const title = facade.getAttribute('data-title');
-        const iframe = document.createElement('iframe');
-        iframe.className = 'YoutubePreview';
-        iframe.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1';
-        iframe.title = title;
-        iframe.frameBorder = "0";
-        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-        iframe.allowFullscreen = true;
-        facade.parentNode.replaceChild(iframe, facade);
-    }
-});
-
+// --- Text Truncation ---
 function initTextTruncation() {
-    // Target descriptions in all content sections
-    const selector = '.bookDescription, .projectText p';
-    // Note: .projectText p covers descriptions in Patents, Websites, etc.
-    // However, we want to be careful not to target small one-liners if not desired.
-    // The request says "like papers, show more button for other sections too".
+    // Books
+    const descriptions = document.querySelectorAll('.bookDescription');
+    descriptions.forEach(desc => {
+        // Toggle truncation logic
+        const parent = desc.parentNode;
+        if (!parent.querySelector('.show-more-btn') && desc.scrollHeight > desc.clientHeight) {
+            const btn = document.createElement('button');
+            btn.className = 'show-more-btn';
+            btn.innerText = 'Show More';
+            btn.onclick = function () {
+                if (desc.classList.contains('description-truncated')) {
+                    desc.classList.remove('description-truncated');
+                    this.innerText = 'Show Less';
+                } else {
+                    desc.classList.add('description-truncated');
+                    this.innerText = 'Show More';
+                }
+            };
+            parent.appendChild(btn);
+        }
+    });
+}
 
-    // Let's target specific containers to be safe/consistent
-    const containers = [
-        '#books',
-        '#media-section',
-        '#education-section',
-        '#rnd-section',
-        '#dev-section',
-        '#etc-section',
-        '#about'
-    ];
 
-    containers.forEach(id => {
-        const container = document.querySelector(id);
-        if (!container) return;
+/* Submenu Navigation Handler */
+function clickSubmenu(groupId, templateId) {
+    // 1. Switch Tab
+    switchTab(groupId, templateId);
 
-        // Find descriptions within this container
-        // We look for .bookDescription primarily, as that seems to be the class used for long text
-        const descriptions = container.querySelectorAll('.bookDescription');
+    // 2. Scroll to Section
+    const section = document.getElementById(groupId);
+    if (section) {
+        const yOffset = -80; // Offset for fixed navbar
+        const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    }
 
-        descriptions.forEach(desc => {
-            // Add the truncated class (style logic handles the line clamping)
-            desc.classList.add('description-truncated');
+    // 3. Close Mobile Menu if open
+    const navLinks = document.getElementById('nav-links');
+    if (navLinks && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+    }
+}
 
-            // Robust parent check
-            const parent = desc.closest('.projectText') || desc.parentElement;
+// Submenu Hover Logic (3 seconds delay)
+function setupSubmenuHover() {
+    if (window.innerWidth <= 768) return; // Mobile handled by CSS default visibility
 
-            // Check if truncation is actually needed AND button doesn't exist yet
-            if (desc.scrollHeight > desc.clientHeight && !parent.querySelector('.show-more-btn')) {
-                const btn = document.createElement('button');
-                btn.className = 'show-more-btn';
-                btn.innerText = 'Show More';
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        const dropdown = item.querySelector('.dropdown-menu');
+        if (!dropdown) return;
 
-                btn.onclick = function () {
-                    const isShowingMore = this.innerText === 'Show More';
+        let enterTimeout;
+        let leaveTimeout;
 
-                    // Toggle ALL relevant descriptions in this container
-                    const targets = parent.querySelectorAll('.bookDescription');
+        item.addEventListener('mouseenter', () => {
+            clearTimeout(leaveTimeout); // If re-entering quickly, cancel hide
+            enterTimeout = setTimeout(() => {
+                dropdown.classList.add('show-dropdown');
+            }, 3000); // 3 seconds delay
+        });
 
-                    targets.forEach(t => {
-                        if (isShowingMore) t.classList.remove('description-truncated');
-                        else t.classList.add('description-truncated');
-                    });
-
-                    this.innerText = isShowingMore ? 'Show Less' : 'Show More';
-                };
-
-                // Append button immediately after the checked paragraph
-                desc.after(btn);
-            }
+        item.addEventListener('mouseleave', () => {
+            clearTimeout(enterTimeout); // Cancel show if leaving before 3s
+            leaveTimeout = setTimeout(() => {
+                dropdown.classList.remove('show-dropdown');
+            }, 300); // Short delay before hiding to prevent flicker
         });
     });
 }
-// Re-check truncation after full page load (fonts/images)
-window.addEventListener('load', () => {
-    setTimeout(initTextTruncation, 100);
-});
