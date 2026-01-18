@@ -1586,3 +1586,16 @@ body {
         overflow: hidden !important;
     }
 }
+
+/* Extra small devices (phones, less than 450px) */
+@media (max-width: 450px) {
+
+    .grid-container,
+    .bookContainer,
+    .websitesContainer,
+    .lecturesContainer,
+    .codesContainer,
+    .projectContainer {
+        grid-template-columns: 1fr !important;
+    }
+}
