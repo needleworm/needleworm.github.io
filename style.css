@@ -620,7 +620,32 @@ footer {
     .hero {
         height: auto !important;
         min-height: calc(100vh + var(--nav-height));
-        padding-top: calc(17.5vh + var(--nav-height)) !important;
+        padding-top: calc(10vh + var(--nav-height)) !important;
+        padding-bottom: 2rem;
+    }
+
+    @media (max-height: 800px) {
+        .hero {
+            padding-top: calc(15vh + var(--nav-height)) !important;
+        }
+
+        .profile-img {
+            width: 20vh;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title {
+            font-size: 2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .hero-subtitle {
+            margin-bottom: 1rem;
+        }
+
+        .hero-socials {
+            margin-bottom: 1rem;
+        }
     }
 
     .nav-links {
