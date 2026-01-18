@@ -110,7 +110,7 @@ function updateHeroStats() {
     // Books
     const bookCount = document.querySelectorAll('#books .singleBookContainer').length;
     const bookEl = document.getElementById('stat-books');
-    if (bookEl && bookCount > 10) bookEl.innerText = `Books ${bookCount}+`;
+    if (bookEl && bookCount > 10) bookEl.innerText = `${bookCount}+`;
 
     // R&D (Papers + Patents + Websites)
     const papers = document.querySelectorAll('#rnd-section .singleLectureContainer, #rnd-section .singleProjectContainer').length;
@@ -118,7 +118,7 @@ function updateHeroStats() {
     const totalRnD = papers + websites;
 
     const paperEl = document.getElementById('stat-papers');
-    if (paperEl && totalRnD > 5) paperEl.innerText = `R&D ${totalRnD}+`;
+    if (paperEl && totalRnD > 5) paperEl.innerText = `${totalRnD}+`;
 
     // Lectures (Courses + Lectures)
     const courses = document.querySelectorAll('#tab-courses .singleLectureContainer').length;
@@ -126,7 +126,7 @@ function updateHeroStats() {
     const totalLectures = courses + lectures;
 
     const lectureEl = document.getElementById('stat-lectures');
-    if (lectureEl && totalLectures > 10) lectureEl.innerText = `Lectures ${totalLectures}+`;
+    if (lectureEl && totalLectures > 10) lectureEl.innerText = `${totalLectures}+`;
 }
 
 function renderAllSections(container) {
@@ -635,25 +635,71 @@ function closeAllSelect(elmnt) {
 
 // --- Text Truncation ---
 function initTextTruncation() {
-    // Books
-    const descriptions = document.querySelectorAll('.bookDescription');
-    descriptions.forEach(desc => {
-        // Toggle truncation logic
-        const parent = desc.parentNode;
-        if (!parent.querySelector('.show-more-btn') && desc.scrollHeight > desc.clientHeight) {
+    // 1. Handle Papers section - hide abstracts completely
+    const abstracts = document.querySelectorAll('.abstract');
+    abstracts.forEach(abstract => {
+        // Skip if already processed
+        if (abstract.dataset.truncationProcessed) return;
+        abstract.dataset.truncationProcessed = 'true';
+
+        const parent = abstract.closest('.codeBody') || abstract.parentNode;
+
+        const btn = document.createElement('button');
+        btn.className = 'show-more-btn';
+        btn.innerText = 'More';
+        btn.onclick = function () {
+            if (abstract.classList.contains('expanded')) {
+                abstract.classList.remove('expanded');
+                this.innerText = 'More';
+            } else {
+                abstract.classList.add('expanded');
+                this.innerText = 'Less';
+            }
+        };
+        parent.appendChild(btn);
+    });
+
+    // 2. Handle other sections (not Books) - 3 line truncation
+    const contentItems = document.querySelectorAll('.projectText, .codeBody');
+    contentItems.forEach(item => {
+        // Skip if already processed
+        if (item.dataset.truncationProcessed) return;
+
+        // Skip if this is in Books section
+        if (item.closest('#books')) return;
+
+        // Skip if it contains an abstract (Papers section handled above)
+        if (item.querySelector('.abstract')) return;
+
+        // Mark as processed
+        item.dataset.truncationProcessed = 'true';
+
+        // Apply truncation class
+        item.classList.add('description-truncated');
+
+        // Check if content actually needs truncation
+        const tempExpand = item.cloneNode(true);
+        tempExpand.classList.remove('description-truncated');
+        tempExpand.style.position = 'absolute';
+        tempExpand.style.visibility = 'hidden';
+        document.body.appendChild(tempExpand);
+        const needsTruncation = tempExpand.scrollHeight > item.clientHeight + 10; // 10px tolerance
+        document.body.removeChild(tempExpand);
+
+        if (needsTruncation) {
             const btn = document.createElement('button');
             btn.className = 'show-more-btn';
-            btn.innerText = 'Show More';
+            btn.innerText = 'More';
             btn.onclick = function () {
-                if (desc.classList.contains('description-truncated')) {
-                    desc.classList.remove('description-truncated');
-                    this.innerText = 'Show Less';
+                if (item.classList.contains('description-truncated')) {
+                    item.classList.remove('description-truncated');
+                    this.innerText = 'Less';
                 } else {
-                    desc.classList.add('description-truncated');
-                    this.innerText = 'Show More';
+                    item.classList.add('description-truncated');
+                    this.innerText = 'More';
                 }
             };
-            parent.appendChild(btn);
+            item.parentNode.appendChild(btn);
         }
     });
 }

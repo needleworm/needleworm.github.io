@@ -250,37 +250,104 @@ h1 {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Hero Stats */
-.hero-stats {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-}
-
-.stat-badge {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 0.5rem 1.2rem;
-    border-radius: 50px;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+/* Hero Stats Banner (Glassmorphism) */
+.hero-stats-banner {
     display: flex;
     align-items: center;
-    gap: 8px;
-    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 12px 10px;
+    margin-top: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
-.stat-badge:hover {
-    background: rgba(255, 255, 255, 0.3);
+.stat-item {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    border-radius: 8px;
+}
+
+.stat-item:hover {
+    background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
+    color: white;
+    /* Ensure text stays white */
 }
 
-.stat-badge i {
-    color: rgba(255, 255, 255, 0.9);
+.stat-icon {
+    font-size: 1.8rem;
+    margin-right: 14px;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive adjustments for banner */
+@media (max-width: 576px) {
+    .hero-stats-banner {
+        padding: 10px 5px;
+        width: 100%;
+        justify-content: space-around;
+        border-radius: 12px;
+    }
+
+    .stat-item {
+        padding: 0 8px;
+        /* Reduce padding */
+        border-radius: 6px;
+    }
+
+    .stat-icon {
+        font-size: 1.2rem;
+        /* Smaller icon */
+        margin-right: 8px;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+    }
+
+    .stat-value {
+        font-size: 1rem;
+        /* Smaller number */
+    }
+
+    .stat-divider {
+        height: 24px;
+    }
 }
 
 /* Scroll Arrow */
@@ -1594,7 +1661,22 @@ body {
 /* ----------------------------------------------------- */
 /* Text Truncation Logic */
 /* ----------------------------------------------------- */
-.description-truncated {
+/* Hide abstracts completely by default in Papers section */
+.abstract {
+    display: none;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.abstract.expanded {
+    display: block !important;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/* Truncate other content to 3 lines */
+.projectText.description-truncated,
+.codeBody.description-truncated {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -1605,7 +1687,7 @@ body {
 .show-more-btn {
     background: none;
     border: none;
-    color: var(--primary-color, #e74c3c);
+    color: var(--secondary-color, #e74c3c);
     padding: 0;
     font-size: 0.9rem;
     cursor: pointer;
