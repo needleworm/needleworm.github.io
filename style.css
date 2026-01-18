@@ -1668,7 +1668,19 @@ body {
 
 .dropdown-menu.show-dropdown {
     display: flex;
-    animation: fadeInUp 0.3s ease-out;
+    animation: fadeInUpDropdown 0.3s ease-out;
+}
+
+@keyframes fadeInUpDropdown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }
 
 .dropdown-menu li {

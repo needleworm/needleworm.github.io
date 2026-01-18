@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // 3. Setup Navigation & UI
-    // setupMobileMenu(); // Replaced by setupSubmenuHover logic potentially or simple toggle
     setupMobileMenu();
     setupScrollSpy();
     setupFloatingButton();
