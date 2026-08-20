@@ -1,0 +1,14 @@
+<div class="navbar-brand">             <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">                 <img src=".
+<div class="row">                 <div class="col-lg-12">                     <div class="about-content text-center">                         <p><!-- 
+<div class="bookContainer" id="book-list">                   <!-- Book34 -->                 <div class="singleBookContainer">                     <im
+<div class="websitesContainer">                 <div class="singleLectureContainer">                     <div class="singleWebsiteCard">              
+<div class="websitesContainer">                 <div class="singleProjectContainer">                     <div class="singleWebsiteCard">              
+<div class="websitesContainer">                   <!-- Course 32 -->                 <div class="singleLectureContainer">                     <div cla
+<div class="lecturesContainer" id="lecture-list">                   <!-- Lecture 159-->                 <div class="singleLectureContainer">          
+<div class="websitesContainer">                  <!-- Paper 14 -->                 <div class="singleProjectContainer">                     <div class
+<div class="codeContainer">                 <div class="row"                     style="margin-bottom: 50px; display: flex; align-items: center; justi
+<div class="websitesContainer">                  <!-- Patent 31 -->                 <div class="singleProjectContainer">                     <div clas
+<div class="row">                 <div class="col-lg-12 text-center">                     <h2 class="section-heading subpageHeading">Media</h2>       
+<div class="websitesContainer" id="media-list">                  <!-- media 21 -->                 <div class="singleLectureContainer">               
+<div class="projectContainer" id="news-list">                  <div class="singleProjectContainer">                     <div class="singleNewsCard">  
+<div class="websitesContainer">                 <div class="singleProjectContainer">                     <div class="singleWebsiteCard">              

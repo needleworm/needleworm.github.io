@@ -1,0 +1,10 @@
+<ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#books" class="nav-link">Books</a></li>
+            <!-- Media Submenu -->
+            <li class="nav-item">
+                <a href="#media-section" class="nav-link">Media</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="clickSubmenu('media-section', 'media'); return false;">Media</a></li>
+                    <li><a href="#" onclick="clickSubmenu('media-section', 'news'); return false;">News</a></li>
+                </ul>

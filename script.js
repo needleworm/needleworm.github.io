@@ -148,13 +148,15 @@ function renderAllSections(container) {
             id: 'media-section',
             title: 'Media',
             desc: 'Me on Media',
-            templates: ['media', 'news'] // Tabs
+            templates: ['media', 'news'],
+            noTabs: true
         },
         {
             id: 'education-section',
             title: 'Education',
             desc: 'Courses and Lectures',
-            templates: ['courses', 'lectures'] // Tabs
+            templates: ['courses', 'lectures'],
+            noTabs: true
         },
         {
             id: 'rnd-section',
@@ -189,8 +191,8 @@ function renderAllSections(container) {
                 <p class="group-desc">${group.desc}</p>
         `;
 
-        // Add Sub-nav Pills ONLY if more than 1 template
-        if (group.templates.length > 1) {
+        // Add Sub-nav Pills ONLY if more than 1 template AND not noTabs
+        if (group.templates.length > 1 && !group.noTabs) {
             headerHtml += `<div class="sub-nav-pills">`;
             group.templates.forEach((t, index) => {
                 const activeClass = index === 0 ? 'active' : '';
@@ -221,8 +223,13 @@ function renderAllSections(container) {
                 const tabContentDiv = document.createElement('div');
                 tabContentDiv.id = `tab-${tempId}`;
                 tabContentDiv.className = 'tab-content-item';
-                if (index !== 0) tabContentDiv.style.display = 'none'; // Hide all except first by default
-                else tabContentDiv.classList.add('active-tab-content');
+                
+                if (group.noTabs) {
+                    tabContentDiv.classList.add('active-tab-content');
+                } else {
+                    if (index !== 0) tabContentDiv.style.display = 'none'; // Hide all except first by default
+                    else tabContentDiv.classList.add('active-tab-content');
+                }
 
                 const internalSection = clone.querySelector('section');
                 if (internalSection) {
@@ -254,6 +261,7 @@ function switchTab(groupId, templateId) {
 
     // 1. Update Pills
     const pills = group.querySelectorAll('.pill-btn');
+    if (pills.length === 0) return;
     pills.forEach(btn => {
         if (btn.innerText.toLowerCase() === templateId.toLowerCase() ||
             (templateId === 'news' && btn.innerText === 'News') ||
@@ -713,10 +721,10 @@ function clickSubmenu(groupId, templateId) {
     switchTab(groupId, templateId);
 
     // 2. Scroll to Section
-    const section = document.getElementById(groupId);
-    if (section) {
+    const target = document.getElementById(`tab-${templateId}`) || document.getElementById(groupId);
+    if (target) {
         const yOffset = -80; // Offset for fixed navbar
-        const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
 
@@ -728,7 +736,7 @@ function clickSubmenu(groupId, templateId) {
     }
 }
 
-// Submenu Hover Logic (3 seconds delay)
+// Submenu Hover Logic (Immediate show, short delay on hide)
 function setupSubmenuHover() {
     if (window.innerWidth <= 768) return; // Mobile handled by CSS default visibility
 
@@ -737,18 +745,14 @@ function setupSubmenuHover() {
         const dropdown = item.querySelector('.dropdown-menu');
         if (!dropdown) return;
 
-        let enterTimeout;
         let leaveTimeout;
 
         item.addEventListener('mouseenter', () => {
             clearTimeout(leaveTimeout); // If re-entering quickly, cancel hide
-            enterTimeout = setTimeout(() => {
-                dropdown.classList.add('show-dropdown');
-            }, 3000); // 3 seconds delay
+            dropdown.classList.add('show-dropdown');
         });
 
         item.addEventListener('mouseleave', () => {
-            clearTimeout(enterTimeout); // Cancel show if leaving before 3s
             leaveTimeout = setTimeout(() => {
                 dropdown.classList.remove('show-dropdown');
             }, 300); // Short delay before hiding to prevent flicker
