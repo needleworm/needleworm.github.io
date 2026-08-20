@@ -162,14 +162,16 @@ function renderAllSections(container) {
             id: 'rnd-section',
             title: 'R&D',
             desc: 'Papers and Patents',
-            templates: ['papers', 'patents', 'codes', 'websites']
+            templates: ['papers', 'patents', 'codes', 'websites'],
+            noTabs: true
         },
 
         {
             id: 'etc-section',
             title: 'ETC',
             desc: '',
-            templates: ['social', 'membership', 'collections'] // Tabs
+            templates: ['social', 'membership', 'collections'],
+            noTabs: true
         },
         {
             id: 'contact',
@@ -677,6 +679,9 @@ function initTextTruncation() {
 
         // Skip if this is in Books section
         if (item.closest('#books')) return;
+
+        // Skip if this is in Patents section (patents have short structured metadata and no abstract)
+        if (item.closest('#tab-patents') || item.closest('#patents')) return;
 
         // Skip if it contains an abstract (Papers section handled above)
         if (item.querySelector('.abstract')) return;
