@@ -26,11 +26,19 @@
             --editor-input-bg: #0f172a;
         }
 
+        html, body {
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
         #editor-app {
             background-color: var(--editor-bg);
             color: var(--editor-text);
             font-family: 'Inter', sans-serif;
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden;
             margin: 0;
             padding: 0;
             display: flex;
@@ -153,7 +161,8 @@
         .editor-workspace {
             display: flex;
             flex: 1;
-            height: calc(100vh - 65px);
+            height: calc(100vh - 78px);
+            min-height: 0;
             overflow: hidden;
         }
 
@@ -299,21 +308,23 @@
             color: var(--editor-text-muted);
         }
 
-        .form-control {
+        #editor-app .form-control {
             width: 100%;
             padding: 0.7rem 1rem;
-            background-color: var(--editor-card-bg);
-            border: 1px solid var(--editor-border);
+            background-color: var(--editor-card-bg) !important;
+            border: 1px solid var(--editor-border) !important;
             border-radius: 6px;
-            color: var(--editor-text);
+            color: var(--editor-text) !important;
             font-size: 0.9rem;
             outline: none;
             transition: all 0.2s;
         }
 
-        .form-control:focus {
-            border-color: var(--editor-primary);
-            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        #editor-app .form-control:focus {
+            background-color: var(--editor-input-bg) !important;
+            color: var(--editor-text) !important;
+            border-color: var(--editor-primary) !important;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
         }
 
         textarea.form-control {
@@ -872,7 +883,7 @@
         }
 
         // Live Preview Renderer
-        function updatePreview() {
+        async function updatePreview() {
             const id = document.getElementById('form-id').value;
             const date = document.getElementById('form-date').value;
             const title = document.getElementById('form-title').value || 'Lecture Title Preview';
@@ -890,32 +901,91 @@
             const previewImg = document.getElementById('preview-img');
             if (uploadedImageBlob) {
                 previewImg.src = URL.createObjectURL(uploadedImageBlob);
-            } else if (originalImageSrc) {
-                previewImg.src = originalImageSrc;
             } else {
-                previewImg.src = `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100%' height='100%' fill='%231e293b'/><text x='50%' y='50%' font-size='8' fill='%2394a3b8' dominant-baseline='middle' text-anchor='middle'>No Image</text></svg>`;
+                let localImageFound = false;
+                if (dirHandle && id) {
+                    try {
+                        const srcHandle = await dirHandle.getDirectoryHandle('src');
+                        const imagesHandle = await srcHandle.getDirectoryHandle('images');
+                        const lecturesImageDirHandle = await imagesHandle.getDirectoryHandle('lectures');
+                        
+                        // Check common formats
+                        const extensions = ['.jpg', '.png', '.jpeg', '.gif'];
+                        for (let ext of extensions) {
+                            try {
+                                const fileHandle = await lecturesImageDirHandle.getFileHandle(`${id}${ext}`);
+                                const file = await fileHandle.getFile();
+                                previewImg.src = URL.createObjectURL(file);
+                                localImageFound = true;
+                                break;
+                            } catch (e) {
+                                // Ignore and try next extension
+                            }
+                        }
+                    } catch (err) {
+                        // Directory not opened or not accessible yet
+                    }
+                }
+
+                if (!localImageFound) {
+                    if (originalImageSrc) {
+                        previewImg.src = originalImageSrc;
+                    } else {
+                        previewImg.src = `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100%' height='100%' fill='%231e293b'/><text x='50%' y='50%' font-size='8' fill='%2394a3b8' dominant-baseline='middle' text-anchor='middle'>No Image</text></svg>`;
+                    }
+                }
             }
         }
 
-        // Handle Image Selector
+        // Handle Image Selector & Resize if width > 600px
         function handleImageUpload(e) {
             const file = e.target.files[0];
             if (!file) return;
 
-            uploadedImageBlob = file;
-            document.getElementById('file-name').innerText = `Selected: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
-            
-            // Grab extension
-            const lastDot = file.name.lastIndexOf('.');
-            uploadedImageExtension = file.name.substring(lastDot).toLowerCase();
-
-            updatePreview();
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const img = new Image();
+                img.onload = function() {
+                    const MAX_WIDTH = 600;
+                    let width = img.width;
+                    let height = img.height;
+                    
+                    if (width > MAX_WIDTH) {
+                        const canvas = document.createElement('canvas');
+                        const ctx = canvas.getContext('2d');
+                        
+                        height = Math.round((height * MAX_WIDTH) / width);
+                        width = MAX_WIDTH;
+                        
+                        canvas.width = width;
+                        canvas.height = height;
+                        ctx.drawImage(img, 0, 0, width, height);
+                        
+                        // Export as JPEG
+                        canvas.toBlob(function(blob) {
+                            uploadedImageBlob = blob;
+                            uploadedImageExtension = '.jpg'; // Resize standardizes on .jpg
+                            document.getElementById('file-name').innerText = `Selected: ${file.name} (Resized to 600px, ${(blob.size / 1024).toFixed(1)} KB)`;
+                            updatePreview();
+                        }, 'image/jpeg', 0.9);
+                    } else {
+                        // Keep original size
+                        uploadedImageBlob = file;
+                        const lastDot = file.name.lastIndexOf('.');
+                        uploadedImageExtension = file.name.substring(lastDot).toLowerCase();
+                        document.getElementById('file-name').innerText = `Selected: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+                        updatePreview();
+                    }
+                };
+                img.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
         }
 
         // Form Commit (Applies Form details to the active/new array item)
         function commitFormChange() {
             const id = parseInt(document.getElementById('form-id').value);
-            const date = document.getElementById('form-date').value.trim();
+            let date = document.getElementById('form-date').value.trim();
             const title = document.getElementById('form-title').value.trim();
             const inst = document.getElementById('form-inst').value.trim();
             const url = document.getElementById('form-url').value.trim();
@@ -925,6 +995,23 @@
                 showToast("Please fill out ID, Title, Institution, and Abstract fields!", "danger");
                 return;
             }
+
+            // Unify date formatting to YYYY.MM.DD.
+            const match3 = date.match(/^(\d{4})[.-](\d{1,2})[.-](\d{1,2})\.?$/);
+            if (match3) {
+                const y = match3[1];
+                const m = match3[2].padStart(2, '0');
+                const d = match3[3].padStart(2, '0');
+                date = `${y}.${m}.${d}.`;
+            } else {
+                const match2 = date.match(/^(\d{4})[.-](\d{1,2})\.?$/);
+                if (match2) {
+                    const y = match2[1];
+                    const m = match2[2].padStart(2, '0');
+                    date = `${y}.${m}.`;
+                }
+            }
+            document.getElementById('form-date').value = date;
 
             // Determine image path
             let imagePath = originalImageSrc;
