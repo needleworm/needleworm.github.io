@@ -468,13 +468,15 @@ function renderLanguageChart(languages) {
 function preloadImages() {
     const templates = document.querySelectorAll('template');
     templates.forEach(template => {
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = template.innerHTML;
-        const images = tempDiv.querySelectorAll('img');
-        images.forEach(img => {
-            const src = img.getAttribute('src');
-            if (src) new Image().src = src;
-        });
+        const html = template.innerHTML;
+        const regex = /<img\b[^>]*\bsrc=["']([^"']+)["']/gi;
+        let match;
+        while ((match = regex.exec(html)) !== null) {
+            const src = match[1];
+            if (src) {
+                new Image().src = src;
+            }
+        }
     });
 }
 
