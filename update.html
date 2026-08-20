@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Needleworm lectures uploader</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous"></script>
+    
+    <!-- Link main style.css for exact card preview match -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Editor App Styling (Isolated from main website styles) */
+        :root {
+            --editor-bg: #0f172a;
+            --editor-card-bg: #1e293b;
+            --editor-text: #f8fafc;
+            --editor-text-muted: #94a3b8;
+            --editor-primary: #3b82f6;
+            --editor-success: #10b981;
+            --editor-danger: #ef4444;
+            --editor-border: #334155;
+            --editor-input-bg: #0f172a;
+        }
+
+        #editor-app {
+            background-color: var(--editor-bg);
+            color: var(--editor-text);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        #editor-app *, #editor-app *::before, #editor-app *::after {
+            box-sizing: border-box;
+        }
+
+        .editor-header {
+            background-color: var(--editor-card-bg);
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--editor-border);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        .editor-header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .editor-header h1 span {
+            color: var(--editor-primary);
+        }
+
+        .workspace-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-editor {
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-editor-primary {
+            background-color: var(--editor-primary);
+            color: white;
+        }
+
+        .btn-editor-primary:hover {
+            background-color: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        .btn-editor-success {
+            background-color: var(--editor-success);
+            color: white;
+        }
+
+        .btn-editor-success:hover {
+            background-color: #059669;
+            transform: translateY(-1px);
+        }
+
+        .btn-editor-danger {
+            background-color: var(--editor-danger);
+            color: white;
+        }
+
+        .btn-editor-danger:hover {
+            background-color: #dc2626;
+            transform: translateY(-1px);
+        }
+
+        .btn-editor-secondary {
+            background-color: var(--editor-border);
+            color: var(--editor-text);
+        }
+
+        .btn-editor-secondary:hover {
+            background-color: #475569;
+        }
+
+        .btn-editor:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        .workspace-status {
+            font-size: 0.85rem;
+            color: var(--editor-text-muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--editor-danger);
+        }
+
+        .status-dot.active {
+            background-color: var(--editor-success);
+            box-shadow: 0 0 8px var(--editor-success);
+        }
+
+        .editor-workspace {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 65px);
+            overflow: hidden;
+        }
+
+        /* Sidebar Styling */
+        .editor-sidebar {
+            width: 320px;
+            background-color: var(--editor-card-bg);
+            border-right: 1px solid var(--editor-border);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        .search-container {
+            padding: 1rem;
+            border-bottom: 1px solid var(--editor-border);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.6rem 1rem;
+            background-color: var(--editor-input-bg);
+            border: 1px solid var(--editor-border);
+            border-radius: 6px;
+            color: var(--editor-text);
+            outline: none;
+            font-size: 0.9rem;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: var(--editor-primary);
+        }
+
+        .list-header {
+            padding: 0.75rem 1rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--editor-text-muted);
+            border-bottom: 1px solid var(--editor-border);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lectures-list {
+            flex: 1;
+            overflow-y: auto;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lecture-item {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid var(--editor-border);
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .lecture-item:hover {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        .lecture-item.active {
+            background-color: rgba(59, 130, 246, 0.15);
+            border-left: 4px solid var(--editor-primary);
+            padding-left: calc(1rem - 4px);
+        }
+
+        .lecture-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lecture-item-id {
+            background-color: var(--editor-border);
+            color: var(--editor-text);
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .lecture-item-date {
+            font-size: 0.75rem;
+            color: var(--editor-text-muted);
+        }
+
+        .lecture-item-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .lecture-item-inst {
+            font-size: 0.75rem;
+            color: var(--editor-text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Editor Area */
+        .editor-main {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+            background-color: var(--editor-bg);
+        }
+
+        .editor-form-panel {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+            border-right: 1px solid var(--editor-border);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--editor-text-muted);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            background-color: var(--editor-card-bg);
+            border: 1px solid var(--editor-border);
+            border-radius: 6px;
+            color: var(--editor-text);
+            font-size: 0.9rem;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .form-control:focus {
+            border-color: var(--editor-primary);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+            font-family: inherit;
+        }
+
+        .file-upload-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .file-upload-btn {
+            padding: 0.7rem 1rem;
+            background-color: var(--editor-border);
+            color: var(--editor-text);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s;
+        }
+
+        .file-upload-btn:hover {
+            background-color: #475569;
+        }
+
+        .file-upload-wrapper input[type="file"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            display: none;
+        }
+
+        .file-upload-name {
+            font-size: 0.85rem;
+            color: var(--editor-text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Preview Panel */
+        .editor-preview-panel {
+            width: 420px;
+            background-color: #111827;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        .preview-header {
+            padding: 1rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--editor-text-muted);
+            border-bottom: 1px solid var(--editor-border);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .preview-content {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+            background-image: radial-gradient(var(--editor-border) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        /* Toast Styling */
+        .toast-container {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 9999;
+        }
+
+        .editor-toast {
+            background-color: var(--editor-card-bg);
+            border-left: 4px solid var(--editor-primary);
+            color: var(--editor-text);
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            min-width: 300px;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: toastIn 0.3s forwards;
+        }
+
+        .editor-toast.toast-success {
+            border-left-color: var(--editor-success);
+        }
+
+        .editor-toast.toast-danger {
+            border-left-color: var(--editor-danger);
+        }
+
+        @keyframes toastIn {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Main website override to make preview display perfectly in dark app background */
+        .editor-preview-panel .singleLectureContainer {
+            width: 320px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Prompt Overlay styling */
+        .overlay-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .overlay-card {
+            background-color: var(--editor-card-bg);
+            border: 1px solid var(--editor-border);
+            padding: 2.5rem;
+            border-radius: 12px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .overlay-card i {
+            font-size: 4rem;
+            color: var(--editor-primary);
+        }
+
+        .overlay-card h2 {
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .overlay-card p {
+            color: var(--editor-text-muted);
+            line-height: 1.6;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body id="editor-app">
+
+    <!-- Startup Folder Select Screen Overlay -->
+    <div id="startup-overlay" class="overlay-screen">
+        <div class="overlay-card">
+            <i class="fas fa-folder-open"></i>
+            <h2>Select Project Directory</h2>
+            <p>
+                To load and update lectures automatically, select the root folder of this project (<strong>needleworm.github.io</strong>).
+            </p>
+            <div>
+                <button class="btn-editor btn-editor-primary" style="padding: 0.8rem 2rem; font-size: 1rem; width: 100%; justify-content: center;" onclick="selectWorkspace()">
+                    <i class="fas fa-folder-open"></i> Open Workspace Folder
+                </button>
+            </div>
+            <div style="font-size: 0.8rem; color: var(--editor-text-muted); display: flex; align-items: center; gap: 6px; justify-content: center;">
+                <i class="fas fa-info-circle"></i> Requires Chrome, Edge, or Opera
+            </div>
+        </div>
+    </div>
+
+    <!-- Header bar -->
+    <header class="editor-header">
+        <h1><i class="fas fa-chalkboard-teacher"></i> Needleworm <span>Lectures Editor</span></h1>
+        <div class="workspace-controls">
+            <div class="workspace-status">
+                <div id="status-dot" class="status-dot"></div>
+                <span id="status-text">Workspace Closed</span>
+            </div>
+            <button class="btn-editor btn-editor-secondary" onclick="selectWorkspace()">
+                <i class="fas fa-folder-open"></i> Change Directory
+            </button>
+            <button id="save-btn" class="btn-editor btn-editor-success" onclick="saveIndexFile()" disabled>
+                <i class="fas fa-save"></i> Save Changes to index.html
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <div class="editor-workspace">
+        
+        <!-- Sidebar: List of Lectures -->
+        <aside class="editor-sidebar">
+            <div class="search-container">
+                <input type="text" id="search-bar" class="search-input" placeholder="Search title or school..." oninput="filterLectures()">
+            </div>
+            <div class="list-header">
+                <span>Lectures</span>
+                <span id="list-count">Count: 0</span>
+            </div>
+            <ul id="lectures-list-ul" class="lectures-list">
+                <!-- Javascript populates items here -->
+                <li style="padding: 2rem; text-align: center; color: var(--editor-text-muted);">
+                    Please open workspace folder.
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Editor and Live Preview Panel -->
+        <main class="editor-main">
+            
+            <!-- Editor Form Panel -->
+            <section class="editor-form-panel">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="margin: 0; font-family: 'Outfit', sans-serif; font-size: 1.2rem;">Lecture Details</h3>
+                    <button id="add-new-btn" class="btn-editor btn-editor-primary" onclick="initNewForm()" disabled>
+                        <i class="fas fa-plus"></i> Add New Lecture
+                    </button>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="form-id">Lecture ID (Number)</label>
+                        <input type="number" id="form-id" class="form-control" oninput="updatePreview()" placeholder="Auto-calculated">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-date">Date (YYYY.MM.DD or YYYY.MM.)</label>
+                        <input type="text" id="form-date" class="form-control" oninput="updatePreview()" placeholder="e.g., 2025.7.15.">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="form-title">Lecture Title</label>
+                    <input type="text" id="form-title" class="form-control" oninput="updatePreview()" placeholder="Title of the lecture">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="form-inst">Institution Name</label>
+                        <input type="text" id="form-inst" class="form-control" oninput="updatePreview()" placeholder="e.g., 성주여자고등학교">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-url">Institution/News Link URL (Optional)</label>
+                        <input type="url" id="form-url" class="form-control" oninput="updatePreview()" placeholder="e.g., https://school.gyo6.net/... or #">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="form-abstract">Abstract / Description</label>
+                    <textarea id="form-abstract" class="form-control" oninput="updatePreview()" placeholder="Description of the lecture / event details..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Cover Image (Required)</label>
+                    <div class="file-upload-wrapper">
+                        <label class="file-upload-btn" for="form-image-file">
+                            <i class="fas fa-image"></i> Select Image
+                        </label>
+                        <input type="file" id="form-image-file" accept="image/*" onchange="handleImageUpload(event)">
+                        <span id="file-name" class="file-upload-name">No file selected (defaults to ./src/images/lectures/{id}.jpg)</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--editor-border); display: flex; justify-content: space-between;">
+                    <button id="delete-btn" class="btn-editor btn-editor-danger" onclick="deleteCurrentLecture()" disabled>
+                        <i class="fas fa-trash-alt"></i> Delete Lecture
+                    </button>
+                    <button id="commit-btn" class="btn-editor btn-editor-success" onclick="commitFormChange()" disabled>
+                        <i class="fas fa-check"></i> Apply to List
+                    </button>
+                </div>
+            </section>
+
+            <!-- Live Card Preview Panel -->
+            <section class="editor-preview-panel">
+                <div class="preview-header">
+                    <i class="fas fa-eye"></i> Live Card Preview
+                </div>
+                <div class="preview-content">
+                    <div id="preview-card-container">
+                        <!-- Dynamic preview matches site markup -->
+                        <div class="singleLectureContainer">
+                            <div class="singleWebsiteCard">
+                                <img id="preview-img" class="websiteImage" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100%' height='100%' fill='%231e293b'/><text x='50%' y='50%' font-size='8' fill='%2394a3b8' dominant-baseline='middle' text-anchor='middle'>No Image</text></svg>" alt="Preview Title">
+                                <div class="projectText">
+                                    <h5 id="preview-title" class="lecture_title">Lecture Title Preview</h5>
+                                    <div id="preview-date" class="firstCommitDate">YYYY.MM.DD</div>
+                                    <a id="preview-inst" class="lec_inst" href="#" target="_blank">Institution Name</a>
+                                    <p id="preview-abstract" class="abstract">
+                                        This is a live preview of the lecture abstract. Fill out the form fields on the left to see the changes update in real-time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Notification Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script>
+        let dirHandle = null;
+        let indexFileHandle = null;
+        let indexHtmlContent = "";
+        let lectures = [];
+        let selectedLectureId = null;
+        let uploadedImageBlob = null;
+        let uploadedImageExtension = '.jpg';
+        let originalImageSrc = ''; // To preserve existing images if not re-uploaded
+
+        // Regex to parse lectures container
+        const lecturesBlockRegex = /(<div\s+class=["']lecturesContainer["']\s+id=["']lecture-list["']>)([\s\S]*?)(<\/div>\s*<\/section>\s*<\/template>)/i;
+        // Regex to match individual card items
+        const cardRegex = /<!--\s*Lecture\s+(\d+)\s*-->[\s\S]*?<div\s+class=["']singleLectureContainer["']>([\s\S]*?)<\/div>\s*<\/div>\s*<\/div>/gi;
+
+        // Startup: Check API support
+        if (!window.showDirectoryPicker) {
+            alert("This browser does not support the File System Access API. Please use Chrome, Edge, or Opera to run this tool local-host!");
+        }
+
+        // Notification Helper
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `editor-toast toast-${type}`;
+            toast.innerHTML = `<i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i> ${message}`;
+            container.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.animation = 'toastIn 0.3s reverse forwards';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Select Project root directory
+        async function selectWorkspace() {
+            try {
+                dirHandle = await window.showDirectoryPicker();
+                
+                // Read index.html
+                indexFileHandle = await dirHandle.getFileHandle('index.html');
+                const file = await indexFileHandle.getFile();
+                indexHtmlContent = await file.text();
+
+                // UI adjustments
+                document.getElementById('status-dot').classList.add('active');
+                document.getElementById('status-text').innerText = 'Connected: ' + dirHandle.name;
+                document.getElementById('save-btn').removeAttribute('disabled');
+                document.getElementById('add-new-btn').removeAttribute('disabled');
+                document.getElementById('commit-btn').removeAttribute('disabled');
+                document.getElementById('startup-overlay').style.display = 'none';
+
+                // Parse lectures
+                parseIndexHtmlLectures();
+                showToast("Project directory successfully connected!", "success");
+            } catch (err) {
+                console.error(err);
+                showToast("Failed to open folder: " + err.message, "danger");
+            }
+        }
+
+        // Parse lectures from index.html
+        function parseIndexHtmlLectures() {
+            lectures = [];
+            const blockMatch = indexHtmlContent.match(lecturesBlockRegex);
+            if (!blockMatch) {
+                showToast("Could not find the lecturesContainer in index.html!", "danger");
+                return;
+            }
+
+            const rawList = blockMatch[2];
+            let match;
+            
+            // Loop through each card
+            cardRegex.lastIndex = 0; // Reset regex matching position
+            while ((match = cardRegex.exec(rawList)) !== null) {
+                const id = parseInt(match[1]);
+                const body = match[2];
+
+                // Parse inner components
+                const imgMatch = body.match(/<img\b[^>]*\bsrc=["']([^"']+)["']/i);
+                const image = imgMatch ? imgMatch[1] : '';
+
+                const titleMatch = body.match(/<h5\s+class=["']lecture_title["']>([\s\S]*?)<\/h5>/i);
+                const title = titleMatch ? titleMatch[1].trim() : '';
+
+                const dateMatch = body.match(/<div\s+class=["']firstCommitDate["']>([\s\S]*?)<\/div>/i);
+                const date = dateMatch ? dateMatch[1].trim() : '';
+
+                const urlMatch = body.match(/<a\s+class=["']lec_inst["']\s+href=["']([^"']+)["']/i);
+                const url = urlMatch ? urlMatch[1] : '';
+
+                const instMatch = body.match(/<a\s+class=["']lec_inst["']\s*[^>]*>([\s\S]*?)<\/a>/i);
+                const institution = instMatch ? instMatch[1].trim() : '';
+
+                const abstractMatch = body.match(/<p\s+class=["']abstract["']>([\s\S]*?)<\/p>/i);
+                const abstract = abstractMatch ? abstractMatch[1].trim() : '';
+
+                lectures.push({
+                    id, title, date, institution, url, abstract, image
+                });
+            }
+
+            // Sort descending by ID
+            lectures.sort((a, b) => b.id - a.id);
+            renderLecturesList();
+            
+            if (lectures.length > 0) {
+                selectLecture(lectures[0].id);
+            }
+        }
+
+        // Render Sidebar List
+        function renderLecturesList(filteredList = null) {
+            const list = filteredList || lectures;
+            const listUl = document.getElementById('lectures-list-ul');
+            document.getElementById('list-count').innerText = `Count: ${list.length}`;
+            listUl.innerHTML = '';
+
+            if (list.length === 0) {
+                listUl.innerHTML = `<li style="padding: 2rem; text-align: center; color: var(--editor-text-muted);">No items found.</li>`;
+                return;
+            }
+
+            list.forEach(lec => {
+                const li = document.createElement('li');
+                li.className = `lecture-item ${selectedLectureId === lec.id ? 'active' : ''}`;
+                li.onclick = () => selectLecture(lec.id);
+
+                li.innerHTML = `
+                    <div class="lecture-item-header">
+                        <span class="lecture-item-id">#${lec.id}</span>
+                        <span class="lecture-item-date">${lec.date}</span>
+                    </div>
+                    <div class="lecture-item-title">${lec.title}</div>
+                    <div class="lecture-item-inst">${lec.institution}</div>
+                `;
+                listUl.appendChild(li);
+            });
+        }
+
+        // Filter Sidebar List (Search)
+        function filterLectures() {
+            const query = document.getElementById('search-bar').value.toLowerCase().trim();
+            if (!query) {
+                renderLecturesList();
+                return;
+            }
+
+            const filtered = lectures.filter(lec => 
+                lec.title.toLowerCase().includes(query) || 
+                lec.institution.toLowerCase().includes(query) || 
+                lec.id.toString().includes(query)
+            );
+            renderLecturesList(filtered);
+        }
+
+        // Select and load lecture details to form
+        function selectLecture(id) {
+            selectedLectureId = id;
+            const lec = lectures.find(l => l.id === id);
+            if (!lec) return;
+
+            // Update active state in list
+            document.querySelectorAll('.lecture-item').forEach(item => {
+                const itemId = parseInt(item.querySelector('.lecture-item-id').innerText.slice(1));
+                if (itemId === id) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Populate inputs
+            document.getElementById('form-id').value = lec.id;
+            document.getElementById('form-date').value = lec.date;
+            document.getElementById('form-title').value = lec.title;
+            document.getElementById('form-inst').value = lec.institution;
+            document.getElementById('form-url').value = lec.url || '';
+            document.getElementById('form-abstract').value = lec.abstract;
+
+            // Image reset
+            uploadedImageBlob = null;
+            originalImageSrc = lec.image;
+            document.getElementById('form-image-file').value = '';
+            document.getElementById('file-name').innerText = lec.image ? `Using existing: ${lec.image}` : 'No file selected (defaults to ./src/images/lectures/{id}.jpg)';
+            document.getElementById('delete-btn').removeAttribute('disabled');
+
+            updatePreview();
+        }
+
+        // Load More/Add New Lecture Form Initialization
+        function initNewForm() {
+            selectedLectureId = null;
+            
+            // Auto increment ID (max + 1)
+            const nextId = lectures.length > 0 ? Math.max(...lectures.map(l => l.id)) + 1 : 1;
+
+            document.getElementById('form-id').value = nextId;
+            document.getElementById('form-date').value = new Date().toLocaleDateString('ko-KR').replace(/\s/g, ''); // default to today
+            document.getElementById('form-title').value = '';
+            document.getElementById('form-inst').value = '';
+            document.getElementById('form-url').value = '';
+            document.getElementById('form-abstract').value = '';
+
+            uploadedImageBlob = null;
+            originalImageSrc = '';
+            document.getElementById('form-image-file').value = '';
+            document.getElementById('file-name').innerText = 'No file selected (defaults to ./src/images/lectures/{id}.jpg)';
+            document.getElementById('delete-btn').setAttribute('disabled', 'true');
+
+            // De-select list items
+            document.querySelectorAll('.lecture-item').forEach(item => item.classList.remove('active'));
+
+            updatePreview();
+            showToast(`Form prepared for new Lecture #${nextId}`, "success");
+        }
+
+        // Live Preview Renderer
+        function updatePreview() {
+            const id = document.getElementById('form-id').value;
+            const date = document.getElementById('form-date').value;
+            const title = document.getElementById('form-title').value || 'Lecture Title Preview';
+            const inst = document.getElementById('form-inst').value || 'Institution Name';
+            const url = document.getElementById('form-url').value || '#';
+            const abstract = document.getElementById('form-abstract').value || 'Lecture description text...';
+
+            document.getElementById('preview-title').innerText = title;
+            document.getElementById('preview-date').innerText = date;
+            document.getElementById('preview-inst').innerText = inst;
+            document.getElementById('preview-inst').href = url;
+            document.getElementById('preview-abstract').innerText = abstract;
+
+            // Handle Image preview
+            const previewImg = document.getElementById('preview-img');
+            if (uploadedImageBlob) {
+                previewImg.src = URL.createObjectURL(uploadedImageBlob);
+            } else if (originalImageSrc) {
+                previewImg.src = originalImageSrc;
+            } else {
+                previewImg.src = `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><rect width='100%' height='100%' fill='%231e293b'/><text x='50%' y='50%' font-size='8' fill='%2394a3b8' dominant-baseline='middle' text-anchor='middle'>No Image</text></svg>`;
+            }
+        }
+
+        // Handle Image Selector
+        function handleImageUpload(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            uploadedImageBlob = file;
+            document.getElementById('file-name').innerText = `Selected: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+            
+            // Grab extension
+            const lastDot = file.name.lastIndexOf('.');
+            uploadedImageExtension = file.name.substring(lastDot).toLowerCase();
+
+            updatePreview();
+        }
+
+        // Form Commit (Applies Form details to the active/new array item)
+        function commitFormChange() {
+            const id = parseInt(document.getElementById('form-id').value);
+            const date = document.getElementById('form-date').value.trim();
+            const title = document.getElementById('form-title').value.trim();
+            const inst = document.getElementById('form-inst').value.trim();
+            const url = document.getElementById('form-url').value.trim();
+            const abstract = document.getElementById('form-abstract').value.trim();
+
+            if (!id || !title || !inst || !abstract) {
+                showToast("Please fill out ID, Title, Institution, and Abstract fields!", "danger");
+                return;
+            }
+
+            // Determine image path
+            let imagePath = originalImageSrc;
+            if (uploadedImageBlob) {
+                imagePath = `./src/images/lectures/${id}${uploadedImageExtension}`;
+            } else if (!imagePath) {
+                imagePath = `./src/images/lectures/${id}.jpg`; // Default fallback
+            }
+
+            const lectureData = {
+                id, date, title, institution: inst, url, abstract, image: imagePath,
+                imageBlob: uploadedImageBlob, // Keep reference to save later
+                imageExt: uploadedImageExtension
+            };
+
+            const existingIndex = lectures.findIndex(l => l.id === id);
+            
+            if (existingIndex > -1) {
+                // Edit existing
+                // Preserve imageBlob if not re-selected
+                if (!uploadedImageBlob && lectures[existingIndex].imageBlob) {
+                    lectureData.imageBlob = lectures[existingIndex].imageBlob;
+                    lectureData.imageExt = lectures[existingIndex].imageExt;
+                }
+                lectures[existingIndex] = lectureData;
+                showToast(`Applied changes for Lecture #${id} to current working list`, "success");
+            } else {
+                // Add new
+                lectures.push(lectureData);
+                showToast(`Added new Lecture #${id} to current working list`, "success");
+            }
+
+            // Sort descending
+            lectures.sort((a, b) => b.id - a.id);
+            renderLecturesList();
+            selectLecture(id);
+        }
+
+        // Delete Current Lecture Item from Array
+        function deleteCurrentLecture() {
+            if (!selectedLectureId) return;
+
+            if (confirm(`Are you sure you want to delete Lecture #${selectedLectureId}?`)) {
+                lectures = lectures.filter(l => l.id !== selectedLectureId);
+                showToast(`Deleted Lecture #${selectedLectureId} from list`, "success");
+                selectedLectureId = null;
+                renderLecturesList();
+
+                if (lectures.length > 0) {
+                    selectLecture(lectures[0].id);
+                } else {
+                    initNewForm();
+                }
+            }
+        }
+
+        // HTML escaping helper
+        function escapeHtml(text) {
+            if (!text) return '';
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        // Generate Lectures List HTML string to insert into index.html
+        function generateLecturesHtml() {
+            return lectures.map(lec => {
+                // Build link tag if URL exists
+                const linkTag = lec.url ? 
+                    `                            <a class="lec_inst" href="${escapeHtml(lec.url)}" target="_blank" rel="noreferrer">${escapeHtml(lec.institution)}</a>` :
+                    `                            <span class="lec_inst">${escapeHtml(lec.institution)}</span>`;
+
+                return `
+                <!-- Lecture ${lec.id}-->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img loading="lazy" class="websiteImage" src="${lec.image}"
+                            alt="${escapeHtml(lec.title)}" />
+                        <div class="projectText">
+                            <h5 class="lecture_title">${escapeHtml(lec.title)}</h5>
+                            <div class="firstCommitDate">${escapeHtml(lec.date)}</div>
+${linkTag}
+                            <p class="abstract">
+                                ${escapeHtml(lec.abstract)}
+                            </p>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('\n');
+        }
+
+        // Save index.html and all uploaded images to disk
+        async function saveIndexFile() {
+            if (!dirHandle) {
+                showToast("Workspace not opened!", "danger");
+                return;
+            }
+
+            try {
+                // 1. Save uploaded images
+                showToast("Saving images to local directory...", "info");
+                
+                // Get handle to images/lectures/ directory
+                const srcHandle = await dirHandle.getDirectoryHandle('src');
+                const imagesHandle = await srcHandle.getDirectoryHandle('images');
+                const lecturesImageDirHandle = await imagesHandle.getDirectoryHandle('lectures');
+
+                for (let lec of lectures) {
+                    if (lec.imageBlob) {
+                        const filename = `${lec.id}${lec.imageExt}`;
+                        const fileHandle = await lecturesImageDirHandle.getFileHandle(filename, { create: true });
+                        const writableImage = await fileHandle.createWritable();
+                        await writableImage.write(lec.imageBlob);
+                        await writableImage.close();
+                        
+                        // Clean reference so we don't re-save next time
+                        lec.imageBlob = null;
+                    }
+                }
+
+                // 2. Save index.html file
+                showToast("Updating index.html...", "info");
+                
+                const listHtml = generateLecturesHtml();
+                const updatedHtml = indexHtmlContent.replace(lecturesBlockRegex, (match, p1, p2, p3) => {
+                    return p1 + '\n' + listHtml + '\n                ' + p3;
+                });
+
+                // Write text
+                const writable = await indexFileHandle.createWritable();
+                await writable.write(updatedHtml);
+                await writable.close();
+
+                // Update loaded baseline
+                indexHtmlContent = updatedHtml;
+
+                showToast("index.html and all images saved successfully!", "success");
+            } catch (err) {
+                console.error(err);
+                showToast("Save failed: " + err.message, "danger");
+            }
+        }
+    </script>
+</body>
+
+</html>
