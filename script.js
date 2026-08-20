@@ -683,6 +683,12 @@ function initTextTruncation() {
         // Skip if this is in Patents section (patents have short structured metadata and no abstract)
         if (item.closest('#tab-patents') || item.closest('#patents')) return;
 
+        // Skip if this is in Collections section (collections have short structured metadata and no abstract)
+        if (item.closest('#tab-collections') || item.closest('#collections')) return;
+
+        // Skip if this is in Membership section (membership has short info and no abstract collapse is needed)
+        if (item.closest('#tab-membership') || item.closest('#membership')) return;
+
         // Skip if it contains an abstract (Papers section handled above)
         if (item.querySelector('.abstract')) return;
 
