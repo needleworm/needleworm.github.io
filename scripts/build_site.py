@@ -15,6 +15,10 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 VOID = set('area base br col embed hr img input link meta param source track wbr'.split())
 CARD_CLASSES = {'singleBookContainer', 'singleLectureContainer', 'singleProjectContainer'}
+LECTURE_CATEGORIES = [
+    ('companies', '기업'), ('public', '공공기관'), ('education', '교육기관'),
+    ('research', '연구기관'), ('conferences', '컨퍼런스'),
+]
 GROUPS = [
     ('about', 'About', ['home']), ('books', 'Books', ['books']),
     ('media', 'Media', ['media', 'news']), ('lectures', 'Lectures', ['lectures']),
@@ -136,15 +140,52 @@ def source_views(sources):
     return result
 
 
+def card_latest_date(card):
+    match = re.search(r'class="firstCommitDate"[^>]*>(.*?)</', card, re.S)
+    return latest_date(match[1].strip()) if match else 0
+
+
+def lecture_sections(source):
+    """Render every institution group in one continuous, fully built document."""
+    spans = sorted(Blocks(source).cards)
+    opening = re.search(r'<div\b[^>]*\bid=["\']lecture-list["\'][^>]*>', source)
+    if not spans or not opening or spans[0][0] < opening.end():
+        raise ValueError('Lectures must have a lecture-list wrapper containing all cards')
+    closing = re.match(r'\s*</div\s*>', source[spans[-1][1]:])
+    if not closing:
+        raise ValueError('Lectures list must close immediately after its cards')
+    groups = {name: [] for _, name in LECTURE_CATEGORIES}
+    for start, end in spans:
+        card = source[start:end]
+        category = re.search(r'\bdata-category="([^"]+)"', card[:card.index('>') + 1])
+        if not category or category[1] not in groups:
+            raise ValueError(f'Unknown institution category for lecture {card_id(card, "lectures")}')
+        groups[category[1]].append(card)
+    links = [f'<a class="lecture-filter" href="#lecture-list" data-category="전체">전체<span class="lecture-filter-count">{len(spans)}</span></a>']
+    sections = []
+    for slug, name in LECTURE_CATEGORIES:
+        cards = sorted(groups[name], key=card_latest_date, reverse=True)
+        target = 'lectures-' + slug
+        links.append(f'<a class="lecture-filter" href="#{target}" data-category="{name}">{name}<span class="lecture-filter-count">{len(cards)}</span></a>')
+        sections.append(
+            f'<section class="lecture-category" id="{target}" data-category="{name}" aria-labelledby="{target}-title">'
+            f'<header class="lecture-category-heading"><h2 id="{target}-title">{name}<span class="lecture-category-count">{len(cards)}건</span></h2></header>'
+            '<div class="lecturesContainer">\n' + '\n\n'.join(cards) + '\n</div></section>')
+    navigation = '<nav class="lecture-filters" id="lecture-category-nav" aria-label="강의 기관 바로가기">' + ''.join(links) + '</nav>'
+    result = f'<p class="lecture-results" id="lecture-results">전체 {len(spans)}건 · 기관별 목록이 아래로 이어집니다.</p>'
+    listing = '<div id="lecture-list" class="lecture-sections">\n' + '\n'.join(sections) + '\n</div>'
+    end = spans[-1][1] + closing.end()
+    return source[:opening.start()] + navigation + '\n' + result + '\n' + listing + source[end:]
+
+
 def section_html(key, source):
-    if key == 'lectures' or key.startswith('courses-'):
+    if key == 'lectures':
+        source = lecture_sections(source)
+    elif key.startswith('courses-'):
         spans = sorted(Blocks(source).cards)
         cards = [source[a:b] for a, b in spans]
-        def key_date(card):
-            match = re.search(r'class="firstCommitDate"[^>]*>(.*?)</', card, re.S)
-            return latest_date(match[1].strip()) if match else 0
-        if key in {'lectures', 'courses-offline'}:
-            ordered = sorted(cards, key=key_date, reverse=True)
+        if key == 'courses-offline':
+            ordered = sorted(cards, key=card_latest_date, reverse=True)
         else:
             # Stable partition: Inflearn courses first, then other providers.
             inflearn_link = re.compile(r'\bhref\s*=\s*["\']https?://(?:www\.)?(?:inflearn\.com|inf\.run)(?:[/#?]|["\'])', re.I)

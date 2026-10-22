@@ -50,6 +50,23 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     .home-books-mobile .content-section > .row:first-child:has(h2.section-heading) { display: none; }
 }
 .lecture-results { margin: -1rem 0 1.5rem; color: var(--text-muted); font-size: .85rem; text-align: center; }
+body[data-page="lectures"] { overflow-x: clip !important; overflow-y: visible; }
+.lecture-sections, .lecture-category { scroll-margin-top: var(--lecture-anchor-offset, 180px); }
+.lecture-category { padding: 0; }
+.lecture-category + .lecture-category { margin-top: 4.5rem; padding-top: 2.5rem; border-top: 1px solid #e4e9ed; }
+.lecture-category-heading { margin-bottom: 1.5rem; }
+.lecture-category-heading h2 { display: flex; align-items: center; gap: .75rem; font-size: 1.55rem; margin: 0; }
+.lecture-category-count { color: var(--text-muted); font-family: sans-serif; font-size: .85rem; font-weight: 400; }
+#lecture-category-nav { position: sticky; top: calc(var(--nav-height) + .5rem); z-index: 40; padding: .75rem .5rem; margin-bottom: 1.75rem; background: rgba(248, 249, 250, .97); border-radius: 12px; box-shadow: 0 2px 8px rgba(44, 62, 80, .06); }
+#lecture-category-nav a.lecture-filter { text-decoration: none; }
+#lecture-category-nav a[aria-current="location"] { background: var(--primary-color); color: #fff; border-color: var(--primary-color); }
+#lecture-category-nav a[aria-current="location"] .lecture-filter-count { background: rgba(255, 255, 255, .2); color: #fff; }
+@media (max-width: 768px) {
+    .lecture-category + .lecture-category { margin-top: 3rem; padding-top: 2rem; }
+    .lecture-category-heading h2 { font-size: 1.3rem; }
+    #lecture-category-nav { gap: .4rem; padding: .6rem .35rem; }
+    #lecture-category-nav .lecture-filter { padding: .5rem .65rem; font-size: .78rem; }
+}
 body[data-page="contact"] #div-institution, body[data-page="contact"] #div-phone, body[data-page="contact"] #div-email { display: block; opacity: 1; visibility: visible; max-height: none; height: auto; transform: none; margin-bottom: 1.4rem; }
 /* Donation ledger: compact rows, with the existing palette and card treatment. */
 .donation-records { max-width: 1000px; margin: 0 auto 4rem; }

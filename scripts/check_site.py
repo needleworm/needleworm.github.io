@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Check generated content preservation, real routes, metadata and local assets."""
 from collections import Counter
+from html import unescape
 from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
 import sys
 from urllib.parse import unquote, urlsplit
-from build_site import ROOT, Blocks, VOID, GROUPS, latest_date, source_views
+from build_site import ROOT, Blocks, VOID, GROUPS, LECTURE_CATEGORIES, latest_date, source_views
 
 
 class Document(HTMLParser):
@@ -41,6 +42,123 @@ class Document(HTMLParser):
 
 def normalize_asset(url):
     return '/' + url.removeprefix('./') if url.startswith(('./src/', 'src/')) else url
+
+
+class ElementSpans(HTMLParser):
+    """Locate complete elements so section and navigation checks stay scoped."""
+    def __init__(self, source):
+        super().__init__(convert_charrefs=False)
+        self.source = source
+        self.lines = [0] + [m.end() for m in re.finditer('\n', source)]
+        self.stack, self.elements = [], []
+        self.feed(source)
+
+    def source_offset(self):
+        row, col = self.getpos()
+        return self.lines[row - 1] + col
+
+    def handle_starttag(self, tag, attrs):
+        element = {'tag': tag, 'attrs': dict(attrs), 'start': self.source_offset(),
+                   'end': self.source_offset() + len(self.get_starttag_text())}
+        self.elements.append(element)
+        if tag not in VOID:
+            self.stack.append(element)
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in VOID:
+            self.stack.pop()
+
+    def handle_endtag(self, tag):
+        for i in range(len(self.stack) - 1, -1, -1):
+            if self.stack[i]['tag'] == tag:
+                self.stack[i]['end'] = self.source.index('>', self.source_offset()) + 1
+                del self.stack[i:]
+                break
+
+
+def check_lecture_sections(source, expected_source, require):
+    """All categories remain visible, with newest records first in each group."""
+    elements = ElementSpans(source).elements
+    def fragment(element):
+        return source[element['start']:element['end']]
+    def has_class(element, name):
+        return name in element['attrs'].get('class', '').split()
+    def text(html):
+        return ' '.join(unescape(re.sub(r'<[^>]+>', '', html)).split())
+    def visible(attrs):
+        style = attrs.get('style', '')
+        return ('hidden' not in attrs and 'inert' not in attrs
+                and attrs.get('aria-hidden', '').lower() != 'true'
+                and not re.search(r'(?:^|;)\s*(?:display\s*:\s*none|visibility\s*:\s*hidden)\b', style, re.I))
+
+    expected_counts = Counter()
+    for a, b in sorted(Blocks(expected_source).cards):
+        expected_counts[Document(expected_source[a:b]).tags[0][1].get('data-category')] += 1
+    names = [name for _, name in LECTURE_CATEGORIES]
+    require(set(expected_counts).issubset(names), 'Lectures: source has an unknown category')
+    expected_total = sum(expected_counts.values())
+    containers = [e for e in elements if e['attrs'].get('id') == 'lecture-list']
+    require(len(containers) == 1, 'Lectures: expected one complete lecture-list wrapper')
+    if containers:
+        require(has_class(containers[0], 'lecture-sections'), 'Lectures: lecture-list must use lecture-sections')
+        require(not has_class(containers[0], 'lecturesContainer'), 'Lectures: category wrapper must not be a card grid')
+        require(visible(containers[0]['attrs']), 'Lectures: complete category list is hidden')
+
+    sections = [e for e in elements if has_class(e, 'lecture-category')]
+    require([e['attrs'].get('id') for e in sections] == ['lectures-' + key for key, _ in LECTURE_CATEGORIES],
+            'Lectures: category sections are missing, duplicated, or out of order')
+    require(all(e['tag'] == 'section' for e in sections), 'Lectures: each category must be a section')
+    actual_counts = Counter()
+    for element, (key, name) in zip(sections, LECTURE_CATEGORIES):
+        attrs = element['attrs']
+        require(attrs.get('data-category') == name, f'Lectures: {key} section category mismatch')
+        require(visible(attrs), f'Lectures: {name} section is hidden')
+        if containers:
+            require(containers[0]['start'] < element['start'] < element['end'] < containers[0]['end'],
+                    f'Lectures: {name} section is outside lecture-list')
+        html = fragment(element)
+        section_doc = Document(html)
+        require(sum(tag == 'h2' for tag, _ in section_doc.tags) == 1, f'Lectures: {name} needs one h2')
+        heading = re.search(r'<h2\b[^>]*>(.*?)</h2\s*>', html, re.S)
+        require(bool(heading) and bool(re.fullmatch(re.escape(name) + r'\s*' + str(expected_counts[name]) + r'\s*건', text(heading[1]))),
+                f'Lectures: {name} heading/count mismatch')
+        grids = [a for tag, a in section_doc.tags if 'lecturesContainer' in a.get('class', '').split()]
+        require(len(grids) == 1, f'Lectures: {name} needs one card grid')
+        require(all(visible(a) for a in grids), f'Lectures: {name} card grid is hidden')
+        cards = [html[a:b] for a, b in sorted(Blocks(html).cards)]
+        actual_counts[name] += len(cards)
+        require(len(cards) == expected_counts[name], f'Lectures: {name} card count mismatch')
+        dates = []
+        for card in cards:
+            card_doc = Document(card)
+            require(card_doc.tags[0][1].get('data-category') == name, f'Lectures: card in wrong {name} section')
+            require(all(visible(a) for _, a in card_doc.tags), f'Lectures: hidden card/content in {name}')
+            field = re.search(r'class="firstCommitDate"[^>]*>(.*?)</', card, re.S)
+            require(bool(field), f'Lectures: missing date in {name}')
+            if field:
+                dates.append(latest_date(text(field[1])))
+        require(dates == sorted(dates, reverse=True), f'Lectures: {name} is not sorted by latest date')
+    require(actual_counts == expected_counts, 'Lectures: visible category counts do not match source records')
+    require(sum(actual_counts.values()) == len(Blocks(source).cards) == expected_total,
+            'Lectures: cards are outside categories, duplicated, or missing')
+
+    navs = [e for e in elements if e['attrs'].get('id') == 'lecture-category-nav']
+    require(len(navs) == 1, 'Lectures: expected one static category navigation')
+    if navs:
+        nav = navs[0]
+        require(visible(nav['attrs']), 'Lectures: category navigation is hidden')
+        links = [e for e in elements if e['tag'] == 'a' and nav['start'] < e['start'] < e['end'] < nav['end']]
+        expected_links = [('#lecture-list', '전체', expected_total)] + [
+            ('#lectures-' + key, name, expected_counts[name]) for key, name in LECTURE_CATEGORIES]
+        require([e['attrs'].get('href') for e in links] == [href for href, _, _ in expected_links],
+                'Lectures: category anchor order/targets mismatch')
+        for link, (href, name, count) in zip(links, expected_links):
+            require(link['attrs'].get('data-category') == name, f'Lectures: {name} navigation category mismatch')
+            require(has_class(link, 'lecture-filter'), f'Lectures: {name} navigation class missing')
+            require('aria-pressed' not in link['attrs'], f'Lectures: {name} navigation must be an anchor, not a filter toggle')
+            require(bool(re.fullmatch(re.escape(name) + r'\s*' + str(count), text(fragment(link)))),
+                    f'Lectures: {name} navigation label/count mismatch')
 
 
 def main():
@@ -115,8 +233,7 @@ def main():
         ids = [a['id'] for t,a in doc.tags if 'id' in a]
         require(len(ids)==len(set(ids)),f'{page["key"]}: duplicate IDs {list(k for k,v in Counter(ids).items() if v>1)}')
         if page['key']=='lectures':
-            dates = [re.search(r'class="firstCommitDate"[^>]*>(.*?)</',source[a:b],re.S)[1].strip() for a,b in sorted(Blocks(source).cards)]
-            require([latest_date(x) for x in dates]==sorted((latest_date(x) for x in dates),reverse=True),'Lectures are not sorted by latest date')
+            check_lecture_sections(source, views['lectures'], require)
         report.append({'page':expected_url,'file':str(target.relative_to(ROOT)),'cards':actual_cards,'bytes':target.stat().st_size})
     for redirect in config.get('redirects', []):
         target = ROOT/redirect['from']/'index.html'
