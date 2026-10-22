@@ -35,16 +35,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .65rem 1.4rem; max-width: 900px; margin: 0 auto 1.6rem; }
 .footer-links a { font-size: .83rem; }
 .btn-to-top { border: 0; font-size: 1.5rem; cursor: pointer; }
-.mobile-next-page { display: none; }
+.home-books-mobile { display: none; }
+.mobile-next-page { padding: 1.75rem 1.5rem; background: var(--bg-color, #f8f9fa); text-align: center; }
+.mobile-next-link { display: flex; flex-direction: column; gap: .4rem; max-width: 440px; margin: 0 auto; padding: 1.25rem 1.5rem; color: var(--primary-color); background: #fff; border: 1px solid #e5e9ed; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+.mobile-next-eyebrow { color: var(--text-muted); font-size: .75rem; }
+.mobile-next-link strong { display: flex; align-items: center; justify-content: center; gap: .8rem; font-size: 1.2rem; }
+.mobile-next-link strong [aria-hidden] { color: var(--secondary-color); }
+.mobile-next-description, .mobile-next-hint { color: var(--text-muted); font-size: .8rem; }
+.mobile-next-hint { margin: .85rem 0 0; }
+.mobile-next-page.is-ready .mobile-next-link { border-color: var(--secondary-color); }
 @media (max-width: 768px) {
-    .mobile-next-page { display: block; padding: 1.75rem 1.5rem; background: var(--bg-color, #f8f9fa); text-align: center; }
-    .mobile-next-link { display: flex; flex-direction: column; gap: .4rem; max-width: 440px; margin: 0 auto; padding: 1.25rem 1.5rem; color: var(--primary-color); background: #fff; border: 1px solid #e5e9ed; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
-    .mobile-next-eyebrow { color: var(--text-muted); font-size: .75rem; }
-    .mobile-next-link strong { display: flex; align-items: center; justify-content: center; gap: .8rem; font-size: 1.2rem; }
-    .mobile-next-link strong span { color: var(--secondary-color); }
-    .mobile-next-description, .mobile-next-hint { color: var(--text-muted); font-size: .8rem; }
-    .mobile-next-hint { margin: .85rem 0 0; }
-    .mobile-next-page.is-ready .mobile-next-link { border-color: var(--secondary-color); }
+    .home-page .home-directory { display: none; }
+    .home-books-mobile { display: block; }
+    .home-books-mobile .content-section > .row:first-child:has(h2.section-heading) { display: none; }
 }
 .lecture-results { margin: -1rem 0 1.5rem; color: var(--text-muted); font-size: .85rem; text-align: center; }
 body[data-page="contact"] #div-institution, body[data-page="contact"] #div-phone, body[data-page="contact"] #div-email { display: block; opacity: 1; visibility: visible; max-height: none; height: auto; transform: none; margin-bottom: 1.4rem; }

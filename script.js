@@ -69,10 +69,16 @@ function setupMobilePageNavigation() {
     if (!link) return;
     const panel = link.closest('.mobile-next-page');
     const hint = panel.querySelector('.mobile-next-hint');
+    const label = link.querySelector('.next-page-label');
+    const description = panel.querySelector('.mobile-next-description');
+    const defaultRoute = { href: link.href, label: label?.textContent, heading: description?.textContent };
     const mobile = window.matchMedia('(max-width: 768px)');
     const interactive = 'a, button, input, textarea, select, iframe, [contenteditable]:not([contenteditable="false"])';
     let gesture = null;
     let navigating = false;
+    let lastWheelAt = -Infinity;
+    let wheelFromBottom = false;
+    let wheelDistance = 0;
     const atBottom = () => window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 12;
     const blocked = () => document.visibilityState !== 'visible'
         || document.getElementById('nav-links')?.classList.contains('active')
@@ -83,9 +89,25 @@ function setupMobilePageNavigation() {
         gesture = null;
         panel.classList.remove('is-ready');
     };
-    const updateHint = () => {
+    const resetAll = () => {
         reset();
-        hint.textContent = mobile.matches ? '끝까지 내려온 뒤 한 번 더 위로 밀면 이동합니다.' : '위 버튼을 누르면 이동합니다.';
+        lastWheelAt = -Infinity;
+        wheelFromBottom = false;
+        wheelDistance = 0;
+    };
+    const navigate = () => {
+        if (navigating) return;
+        navigating = true;
+        resetAll();
+        window.location.assign(link.href);
+    };
+    const updateHint = () => {
+        resetAll();
+        const alternate = mobile.matches && link.dataset.mobileHref;
+        link.href = alternate ? link.dataset.mobileHref : defaultRoute.href;
+        if (label) label.textContent = alternate ? link.dataset.mobileLabel : defaultRoute.label;
+        if (description) description.textContent = alternate ? link.dataset.mobileHeading : defaultRoute.heading;
+        hint.textContent = mobile.matches ? '끝까지 내려온 뒤 한 번 더 위로 밀면 이동합니다.' : '끝까지 내려온 뒤 한 번 더 아래로 스크롤하면 이동합니다.';
     };
     document.addEventListener('touchstart', event => {
         reset();
@@ -112,13 +134,34 @@ function setupMobilePageNavigation() {
         if (!touch || event.touches.length || !mobile.matches || navigating || !atBottom() || blocked()) return;
         const upward = start.y - touch.clientY;
         if (upward < 90 || Math.abs(touch.clientX - start.x) >= upward / 2) return;
-        navigating = true;
-        window.location.assign(link.href);
+        navigate();
+    }, { passive: true });
+    document.addEventListener('wheel', event => {
+        const now = performance.now();
+        const newGesture = now - lastWheelAt > 300;
+        lastWheelAt = now;
+        if (newGesture) { wheelFromBottom = atBottom(); wheelDistance = 0; }
+        const control = event.target.closest(interactive);
+        if (mobile.matches || navigating || event.defaultPrevented || event.ctrlKey || event.shiftKey
+            || event.deltaY <= 0 || Math.abs(event.deltaX) >= Math.abs(event.deltaY)
+            || blocked() || (control && control !== link) || !atBottom()) {
+            wheelFromBottom = false;
+            wheelDistance = 0;
+            panel.classList.remove('is-ready');
+            return;
+        }
+        // A wheel/trackpad burst that reaches the footer must settle before it
+        // can turn the page. Momentum from that burst cannot trigger a turn.
+        if (!wheelFromBottom) return;
+        const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? window.innerHeight : 1;
+        wheelDistance += event.deltaY * unit;
+        panel.classList.toggle('is-ready', wheelDistance >= 50);
+        if (wheelDistance >= 100) navigate();
     }, { passive: true });
     document.addEventListener('touchcancel', reset, { passive: true });
-    document.addEventListener('visibilitychange', reset);
-    window.addEventListener('pageshow', () => { navigating = false; reset(); });
-    window.addEventListener('resize', reset);
+    document.addEventListener('visibilitychange', resetAll);
+    window.addEventListener('pageshow', () => { navigating = false; resetAll(); });
+    window.addEventListener('resize', resetAll);
     mobile.addEventListener('change', updateHint);
     updateHint();
 }

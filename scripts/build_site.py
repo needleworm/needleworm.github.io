@@ -198,10 +198,14 @@ def mobile_next_page(page, pages):
     label = destination['label']
     if destination['group'] == 'courses':
         label = 'Courses · ' + label
+    mobile_destination = pages['media'] if page['key'] == 'home' else None
+    mobile_attrs = (f' data-mobile-href="{path(mobile_destination)}"'
+        f' data-mobile-label="{escape(mobile_destination["label"], quote=True)}"'
+        f' data-mobile-heading="{escape(mobile_destination["heading"], quote=True)}"') if mobile_destination else ''
     return ('<nav class="mobile-next-page" aria-label="다음 페이지">'
-        f'<a class="mobile-next-link" id="mobile-next-link" rel="next" href="{path(destination)}">'
+        f'<a class="mobile-next-link" id="mobile-next-link" rel="next" href="{path(destination)}"{mobile_attrs}>'
         '<span class="mobile-next-eyebrow">다음 페이지</span>'
-        f'<strong>{escape(label)} <span aria-hidden="true">↑</span></strong>'
+        f'<strong><span class="next-page-label">{escape(label)}</span><span aria-hidden="true">↑</span></strong>'
         '<span class="mobile-next-description">' + escape(destination['heading']) + '</span>'
         '</a><p class="mobile-next-hint">위 버튼을 누르면 이동합니다.</p></nav>')
 
@@ -221,6 +225,15 @@ def home_hero(counts):
 def home_directory(pages, counts):
     items = [('books','저서','AI부터 업무 자동화까지, 책으로 만나는 이야기',counts['books']), ('lectures','강의·교육','기업·공공기관·교육기관의 강의와 출강 이력',counts['lectures']), ('media','방송·인터뷰','영상으로 만나는 AI와 기술 이야기',counts['media']), ('news','언론 보도','언론에 소개된 연구, 저서와 활동',counts['news']), ('papers','논문·연구','인공지능과 데이터, 기술을 탐구한 기록',counts['papers']), ('projects','개발 프로젝트','공개 소프트웨어와 직접 만든 웹 도구',counts['websites'])]
     return '<section class="section-group home-directory" aria-labelledby="directory-title"><div class="group-header"><h2 id="directory-title" class="group-title">Explore</h2><p class="group-desc">책과 강의, 연구와 개발</p></div><div class="grid-container">' + ''.join(f'<a class="singleWebsiteCard directory-card" href="{path(pages[key])}"><h3>{title}</h3><p>{desc}</p><span class="directory-link">전체 {count}건 보기 <span aria-hidden="true">→</span></span></a>' for key, title, desc, count in items) + '</div></section>'
+
+
+def home_books(page, source):
+    """Use the canonical Books cards in the mobile home flow, with no copy to sync."""
+    subtitle = page.get('subtitle', page['heading'])
+    return ('<section class="section-group home-books-mobile" aria-labelledby="home-books-title">'
+        '<header class="group-header"><h2 id="home-books-title" class="group-title">Books</h2>'
+        f'<p class="group-desc">{escape(subtitle)}</p></header>'
+        + section_html('books', source) + '</section>')
 
 
 def build(check=False):
@@ -254,7 +267,8 @@ def build(check=False):
         if wrapper:
             body = f'<div id="{wrapper}">{body}</div>'
         if page['key'] == 'home':
-            body = '<div class="section-group"><header class="group-header"><h2 class="group-title">About</h2></header>' + body + '</div>' + home_directory(pages, view_counts)
+            body = ('<div class="section-group"><header class="group-header"><h2 class="group-title">About</h2></header>'
+                + body + '</div>' + home_directory(pages, view_counts) + home_books(pages['books'], views['books']))
             hero = home_hero(counts)
             page_header = ''
         else:
@@ -297,7 +311,8 @@ def build(check=False):
         outputs[target] = output
         digest = sha256(output.encode('utf8')).hexdigest()
         lastmod = previous.get(target,{}).get('lastmod',date.today().isoformat()) if previous.get(target,{}).get('sha256') == digest else date.today().isoformat()
-        manifest[target] = {'sha256':digest,'lastmod':lastmod,'sections':page['sections'],'cards':sum(view_counts[k] for k in page['sections'])}
+        display_sections = page['sections'] + (['books'] if page['key'] == 'home' else [])
+        manifest[target] = {'sha256':digest,'lastmod':lastmod,'sections':display_sections,'cards':sum(view_counts[k] for k in display_sections)}
     for entry in redirects:
         destination = next(p for p in pages.values() if p['slug'] == entry['to'])
         destination_path = path(destination)

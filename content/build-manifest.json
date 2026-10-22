@@ -1,14 +1,15 @@
 {
   "index.html": {
-    "sha256": "1b0e0d1ffa19bc0b2f67215dec52e05d772d2473b096370037be0499d225e588",
+    "sha256": "69f0928f948c3f56d8c2214899d04e92b06cc676731ea4fa1c58a51116d5fb0e",
     "lastmod": "2026-10-23",
     "sections": [
-      "about"
+      "about",
+      "books"
     ],
-    "cards": 0
+    "cards": 36
   },
   "books/index.html": {
-    "sha256": "77235b0c178e545e899215c5639c884cd028f042be0b805f486f2ebab71ea36a",
+    "sha256": "16de14987cf4de1891b37cf22e2c63635d1396699a619bd4682853899fe60c94",
     "lastmod": "2026-10-23",
     "sections": [
       "books"
@@ -16,7 +17,7 @@
     "cards": 36
   },
   "media/index.html": {
-    "sha256": "15e49a115c88b1f46882c008c36dff118887b3f89ef71df36d6c4b78ce1a3880",
+    "sha256": "43645451e79659ffd00d752fb2712f80b404c6451f2ce9e1085b14273c97e4ec",
     "lastmod": "2026-10-23",
     "sections": [
       "media"
@@ -24,7 +25,7 @@
     "cards": 21
   },
   "news/index.html": {
-    "sha256": "fa412e128510b5c6ee3c8e8f685c9dbe734fb0cbf48c1c3aa6d6d4c21bc996dd",
+    "sha256": "6a77c6f4b77064c31a4352ecbf37763f08f8a45791817b5545a47ebc0ad9b1a9",
     "lastmod": "2026-10-23",
     "sections": [
       "news"
@@ -32,7 +33,7 @@
     "cards": 52
   },
   "courses/online/index.html": {
-    "sha256": "4278d91d6d8cc656b53227b3be9ce0d5e170bb7bff35c6c7bc124e770cdc0a45",
+    "sha256": "64193439603db233ca8936371a3bb6a442f8940da3b0e89b90294549b5be5e94",
     "lastmod": "2026-10-23",
     "sections": [
       "courses-online"
@@ -40,7 +41,7 @@
     "cards": 27
   },
   "courses/offline/index.html": {
-    "sha256": "f917d089c0d4da7bde9dd7f4b1c93d36f9f2afa24a216cbc64ee17842e2144d1",
+    "sha256": "fb6a53a2d8e498ea72bc89438f06b654b1b7d2b2e0998ec4d072c2d5c75b2425",
     "lastmod": "2026-10-23",
     "sections": [
       "courses-offline"
@@ -48,7 +49,7 @@
     "cards": 14
   },
   "lectures/index.html": {
-    "sha256": "79452388cd7eeda8e94c516d5b11da11914bd20a4a32e3a2ab750a60c285ed23",
+    "sha256": "4caae28a6bcff6cd077a948c95a64b99d8b749904a82cd93e98095f59ae5317f",
     "lastmod": "2026-10-23",
     "sections": [
       "lectures"
@@ -56,7 +57,7 @@
     "cards": 212
   },
   "papers/index.html": {
-    "sha256": "b09b33fb065d35a54e9a9d58deff139ca4fdac81802d4080da7fac185f5e683b",
+    "sha256": "7ec34cf151c3937cad03ea2b8a3483c138706948ac164eade0d654fcfc7b153c",
     "lastmod": "2026-10-23",
     "sections": [
       "papers"
@@ -64,7 +65,7 @@
     "cards": 15
   },
   "patents/index.html": {
-    "sha256": "bc0a406498a9296fff0d569adaa933449fcf8cd935b7e11af8e7a3385a77c9c6",
+    "sha256": "aab25898714ec34194be4fc4fc9781bf71c7e1be4fd066fb4a013a562d7eea17",
     "lastmod": "2026-10-23",
     "sections": [
       "patents"
@@ -72,7 +73,7 @@
     "cards": 31
   },
   "projects/index.html": {
-    "sha256": "3d8cb30c0ba27ddd76ff9237857988dc800abff5b2dbb8720bb685185fb8f327",
+    "sha256": "33ca70bbccd12c9834c28824bf8ec3ace6aed0771e41ec7ace368bd7f02149ff",
     "lastmod": "2026-10-23",
     "sections": [
       "codes",
@@ -81,7 +82,7 @@
     "cards": 34
   },
   "activities/index.html": {
-    "sha256": "da84d46d0f5f5572464f8e8549c04b7e37ef143ba679fa8ab16cb0439a3f2ce7",
+    "sha256": "1434feae7232a820f2401c23aaea2b78ce6c53994927b10742c351a061f62419",
     "lastmod": "2026-10-23",
     "sections": [
       "social"
@@ -89,7 +90,7 @@
     "cards": 2
   },
   "memberships/index.html": {
-    "sha256": "fadcabad658986fdf6c0e5d52e12e26a366abc2ad40dff086b116790bcd350dd",
+    "sha256": "b0abb76c64cea4e6155bbb6b967915eefb7099166dbc799af16cc7dbb4270cc4",
     "lastmod": "2026-10-23",
     "sections": [
       "membership"
@@ -97,7 +98,7 @@
     "cards": 9
   },
   "collections/index.html": {
-    "sha256": "80c38991dbcb78c1a06e028a59c81529c614e6bac3041e88093dc94c8fa60b10",
+    "sha256": "9deb17b00cac3caf3c85550eb2e957a7af2967a1186c7d2a64f8d2d0a345a64f",
     "lastmod": "2026-10-23",
     "sections": [
       "collections"

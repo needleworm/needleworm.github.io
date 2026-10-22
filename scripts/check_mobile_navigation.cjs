@@ -34,11 +34,23 @@ function classList() {
     };
 }
 
-function fixture({ mobile = true, nextLink = true } = {}) {
+function fixture({ mobile = true, nextLink = true, mobileAlternate = false } = {}) {
     const assigned = [];
+    let now = 1000;
     const hint = { textContent: '' };
-    const panel = { classList: classList(), querySelector: () => hint };
-    const link = { href: 'https://example.test/courses/online/', closest: () => panel };
+    const label = { textContent: 'Next page' };
+    const description = { textContent: 'Continue to the next page' };
+    const panel = {
+        classList: classList(),
+        querySelector: selector => selector === '.mobile-next-hint' ? hint : description,
+    };
+    const link = {
+        href: 'https://example.test/courses/online/', closest: () => panel,
+        querySelector: () => label,
+        dataset: mobileAlternate ? {
+            mobileHref: 'https://example.test/books/', mobileLabel: 'Books', mobileHeading: 'Book details',
+        } : {},
+    };
     const menu = { classList: classList() };
     const media = Object.assign(eventSurface(), { matches: mobile });
     const document = Object.assign(eventSurface(), {
@@ -61,7 +73,7 @@ function fixture({ mobile = true, nextLink = true } = {}) {
         getSelection: () => ({ toString: () => selection }),
         location: { assign: url => assigned.push(url) },
     });
-    const context = vm.createContext({ document, window, URL });
+    const context = vm.createContext({ document, window, URL, performance: { now: () => now } });
     vm.runInContext(source, context, { filename: 'script.js' });
     vm.runInContext('setupMobilePageNavigation();', context);
     const touch = (x = 100, y = 500, identifier = 1) => ({ clientX: x, clientY: y, identifier });
@@ -75,8 +87,15 @@ function fixture({ mobile = true, nextLink = true } = {}) {
     const end = (point = touch(100, 400), touches = []) => {
         document.emit('touchend', { changedTouches: [point], touches });
     };
+    const wheel = (deltaY = 100, options = {}) => {
+        document.emit('wheel', {
+            deltaY, deltaX: 0, deltaMode: 0, ctrlKey: false, shiftKey: false,
+            defaultPrevented: false, target: plainTarget, ...options,
+        });
+    };
     return {
-        assigned, panel, hint, menu, document, window, media, link, touch, start, move, end,
+        assigned, panel, hint, label, description, menu, document, window, media, link, touch, start, move, end, wheel,
+        tick: milliseconds => { now += milliseconds; },
         select: value => { selection = value; },
         swipe() { start(); move(); end(); },
     };
@@ -141,7 +160,7 @@ test('desktop or a media-query change cannot trigger navigation', () => {
     const g = fixture();
     g.start(); g.move(); g.media.matches = false; g.end();
     noNavigation(g);
-    assert.match(f.hint.textContent, /버튼/);
+    assert.ok(f.hint.textContent.length > 0);
 });
 
 test('an open menu blocks gestures at start and during a swipe', () => {
@@ -216,4 +235,148 @@ test('a page without a next link installs no swipe navigation', () => {
     noNavigation(f);
 });
 
-console.log(`\n${passed} mobile navigation checks passed.`);
+test('desktop downward wheel input at the bottom navigates once', () => {
+    const f = fixture({ mobile: false });
+    f.wheel();
+    assert.deepEqual(f.assigned, [f.link.href]);
+    f.wheel(); f.tick(400); f.wheel();
+    assert.equal(f.assigned.length, 1);
+});
+
+test('small trackpad deltas accumulate within a deliberate bottom gesture', () => {
+    const f = fixture({ mobile: false });
+    for (let i = 0; i < 9; i++) { f.wheel(10); f.tick(20); }
+    noNavigation(f);
+    f.wheel(10);
+    assert.deepEqual(f.assigned, [f.link.href]);
+});
+
+test('a wheel burst and its momentum cannot navigate merely by reaching the bottom', () => {
+    const f = fixture({ mobile: false });
+    f.window.scrollY = 1100;
+    f.wheel(60);
+    f.window.scrollY = 1200;
+    for (let i = 0; i < 5; i++) { f.tick(100); f.wheel(60); }
+    noNavigation(f);
+    f.tick(301); f.wheel(100);
+    assert.deepEqual(f.assigned, [f.link.href]);
+});
+
+test('idle gaps separate trackpad gestures instead of accumulating forever', () => {
+    const f = fixture({ mobile: false });
+    f.wheel(60); f.tick(301); f.wheel(60);
+    noNavigation(f);
+    f.tick(30); f.wheel(40);
+    assert.equal(f.assigned.length, 1);
+});
+
+test('line and page wheel modes normalize to a usable pixel threshold', () => {
+    const f = fixture({ mobile: false });
+    f.wheel(3, { deltaMode: 1 }); f.tick(10); f.wheel(3, { deltaMode: 1 });
+    noNavigation(f);
+    f.wheel(1, { deltaMode: 1 });
+    assert.equal(f.assigned.length, 1);
+    const g = fixture({ mobile: false });
+    g.wheel(1, { deltaMode: 2 });
+    assert.equal(g.assigned.length, 1);
+});
+
+test('horizontal, upward, zero and modified wheel input cannot navigate', () => {
+    const inputs = [
+        [-100, {}], [0, {}], [100, { deltaX: 100 }], [100, { deltaX: 150 }],
+        [100, { ctrlKey: true }], [100, { shiftKey: true }],
+        [100, { defaultPrevented: true }],
+    ];
+    for (const [deltaY, options] of inputs) {
+        const f = fixture({ mobile: false });
+        f.wheel(deltaY, options);
+        noNavigation(f);
+    }
+});
+
+test('a blocked wheel event breaks an otherwise eligible accumulation', () => {
+    for (const options of [{ deltaX: 120 }, { ctrlKey: true }, { shiftKey: true }, { defaultPrevented: true }]) {
+        const f = fixture({ mobile: false });
+        f.wheel(60);
+        assert.equal(f.panel.classList.contains('is-ready'), true);
+        f.tick(10); f.wheel(60, options);
+        assert.equal(f.panel.classList.contains('is-ready'), false);
+        f.tick(10); f.wheel(60);
+        noNavigation(f);
+        f.tick(301); f.wheel(100);
+        assert.equal(f.assigned.length, 1);
+    }
+});
+
+test('desktop menu, focus, selection, zoom and hidden state block the entire wheel burst', () => {
+    for (const [block, clear] of [
+        [f => f.menu.classList.add('active'), f => f.menu.classList.remove('active')],
+        [f => { f.document.activeElement = { matches: () => true }; }, f => { f.document.activeElement = { matches: () => false }; }],
+        [f => f.select('text'), f => f.select('')],
+        [f => { f.window.visualViewport.scale = 1.2; }, f => { f.window.visualViewport.scale = 1; }],
+        [f => { f.document.visibilityState = 'hidden'; }, f => { f.document.visibilityState = 'visible'; }],
+    ]) {
+        const f = fixture({ mobile: false });
+        block(f); f.wheel(); noNavigation(f);
+        clear(f); f.tick(301); f.wheel(100); assert.equal(f.assigned.length, 1);
+        const g = fixture({ mobile: false });
+        g.wheel(60); block(g); g.tick(10); g.wheel(60); clear(g); g.tick(10); g.wheel(60);
+        noNavigation(g);
+    }
+});
+
+test('interactive wheel origins are excluded, while the next link is allowed', () => {
+    const f = fixture({ mobile: false });
+    f.wheel(100, { target: { closest: () => ({}) } });
+    noNavigation(f);
+    const g = fixture({ mobile: false });
+    g.wheel(100, { target: { closest: () => g.link } });
+    assert.deepEqual(g.assigned, [g.link.href]);
+});
+
+test('mobile screens do not respond to desktop wheel navigation', () => {
+    const f = fixture(); f.wheel(1000); noNavigation(f);
+});
+
+test('desktop pageshow resets its guard without advancing until new input', () => {
+    const f = fixture({ mobile: false });
+    f.wheel(); f.window.emit('pageshow', { persisted: true });
+    assert.equal(f.assigned.length, 1);
+    f.tick(400); f.wheel();
+    assert.equal(f.assigned.length, 2);
+});
+
+test('a page without a next link also ignores wheel input', () => {
+    const f = fixture({ mobile: false, nextLink: false });
+    f.wheel(); noNavigation(f);
+});
+
+test('resize and visibility changes discard incomplete desktop wheel accumulation', () => {
+    for (const surface of ['resize', 'visibilitychange']) {
+        const f = fixture({ mobile: false });
+        f.wheel(60);
+        (surface === 'resize' ? f.window : f.document).emit(surface);
+        f.tick(10); f.wheel(60);
+        noNavigation(f);
+        f.tick(10); f.wheel(40);
+        assert.equal(f.assigned.length, 1);
+    }
+});
+
+test('responsive route variants restore the original desktop route and reset gestures', () => {
+    const f = fixture({ mobile: false, mobileAlternate: true });
+    const defaultHref = f.link.href;
+    f.wheel(60);
+    f.media.matches = true; f.media.emit('change');
+    assert.equal(f.link.href, 'https://example.test/books/');
+    assert.equal(f.label.textContent, 'Books');
+    assert.equal(f.description.textContent, 'Book details');
+    f.media.matches = false; f.media.emit('change');
+    assert.equal(f.link.href, defaultHref);
+    assert.equal(f.label.textContent, 'Next page');
+    assert.equal(f.description.textContent, 'Continue to the next page');
+    f.wheel(60); noNavigation(f);
+    f.tick(10); f.wheel(40); assert.deepEqual(f.assigned, [defaultHref]);
+});
+
+console.log(`\n${passed} page navigation checks passed.`);
