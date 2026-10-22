@@ -739,6 +739,9 @@ function initTextTruncation() {
     // 1. Handle Papers section - hide abstracts completely
     const abstracts = document.querySelectorAll('.abstract');
     abstracts.forEach(abstract => {
+        // Education cards show their descriptions without an extra click.
+        if (abstract.closest('#tab-lectures, #tab-courses')) return;
+
         // Skip if already processed
         if (abstract.dataset.truncationProcessed) return;
         abstract.dataset.truncationProcessed = 'true';
@@ -765,6 +768,8 @@ function initTextTruncation() {
     contentItems.forEach(item => {
         // Skip if already processed
         if (item.dataset.truncationProcessed) return;
+
+        if (item.closest('#tab-lectures, #tab-courses')) return;
 
         // Skip if this is in Books section
         if (item.closest('#books')) return;

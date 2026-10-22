@@ -1729,6 +1729,11 @@ body {
     text-align: justify;
 }
 
+#tab-lectures .abstract,
+#tab-courses .abstract {
+    display: block;
+}
+
 /* Truncate other content to 3 lines */
 .projectText.description-truncated,
 .codeBody.description-truncated {
