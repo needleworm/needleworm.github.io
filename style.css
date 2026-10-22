@@ -1338,6 +1338,11 @@ section .row {
     display: block !important;
 }
 
+.singleNewsCard .newsThumnail--contain .newsImage {
+    object-fit: contain;
+    background: #f3f5f7;
+}
+
 /* Hide the small text label inside thumbnail (e.g. '??????') as it's often redundant or overlays poorly */
 .singleNewsCard .newsThumnail h5 {
     position: absolute;

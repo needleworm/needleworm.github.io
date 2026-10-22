@@ -7,6 +7,18 @@ const EMAILJS_TEMPLATE_ID = 'template_h4ve5sp';
 let preloadedCodesData = null;
 let languageChartInstance = null;
 
+// Shared fallback for missing or unavailable images, including rendered templates.
+const IMAGE_FALLBACK_SRC = new URL('./src/images/fallback.webp', document.baseURI).href;
+
+function useImageFallback(image) {
+    if (!(image instanceof HTMLImageElement) || image.src === IMAGE_FALLBACK_SRC) return;
+    image.removeAttribute('srcset');
+    image.removeAttribute('sizes');
+    image.src = IMAGE_FALLBACK_SRC;
+}
+
+document.addEventListener('error', event => useImageFallback(event.target), true);
+
 // Initialize EmailJS
 (function () {
     if (typeof emailjs !== 'undefined') {
@@ -25,6 +37,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderAllSections(main);
         initTextTruncation(); // Initialize text truncation for all sections
     }
+
+    // Catch images that failed before the error listener was registered.
+    document.querySelectorAll('img').forEach(image => {
+        const hasSource = image.getAttribute('src') || image.getAttribute('srcset');
+        if (!hasSource || (image.complete && image.naturalWidth === 0)) {
+            useImageFallback(image);
+        }
+    });
 
     // 3. Setup Navigation & UI
     setupMobileMenu();
