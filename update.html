@@ -910,7 +910,7 @@
                         const lecturesImageDirHandle = await imagesHandle.getDirectoryHandle('lectures');
                         
                         // Check common formats
-                        const extensions = ['.jpg', '.png', '.jpeg', '.gif'];
+                        const extensions = ['.webp', '.jpg', '.png', '.jpeg', '.gif'];
                         for (let ext of extensions) {
                             try {
                                 const fileHandle = await lecturesImageDirHandle.getFileHandle(`${id}${ext}`);
