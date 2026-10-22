@@ -1,0 +1,84 @@
+/* Preserve style.css's single-page design; only adapt navigation and full content. */
+body.content-page { padding-top: var(--nav-height); }
+.static-site .active-tab-content, .home-page .hero-content { animation: none; }
+.skip-link { position: fixed; left: 1rem; top: -6rem; z-index: 2000; padding: .75rem 1rem; background: #fff; color: #243444; border: 2px solid #e74c3c; border-radius: 8px; }
+.skip-link:focus { top: .5rem; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #3498db; outline-offset: 4px; }
+.menu-toggle { background: transparent; border: 0; color: var(--primary-color); cursor: pointer; }
+.nav-item:focus-within .dropdown-menu, .nav-item:hover .dropdown-menu { display: flex; }
+.navbar a[aria-current="page"] { color: var(--secondary-color); }
+.navbar .btn-contact[aria-current="page"] { color: #fff; }
+@media (min-width: 769px) and (max-width: 1100px) {
+    .static-site .navbar { padding-left: 1rem; padding-right: 1rem; }
+    .static-site .nav-links { gap: 1rem; }
+    .static-site .nav-link { font-size: .88rem; }
+}
+/* Reuse the original group heading, spacing, pills and card rules. */
+.page-main > .group-header .group-desc { max-width: 800px; margin-left: auto; margin-right: auto; }
+.sub-nav-pills .pill-btn[aria-current="page"] { background: var(--primary-color); color: #fff; border-color: var(--primary-color); }
+.content-section, .content-page #contact { padding: 0; }
+.content-page .tab-content-item:not(#tab-codes):not(#tab-websites) .content-section > .row:first-child:has(h2.section-heading) { display: none; }
+.full-content .contact-form-container, .full-content .form-reveal { animation: none !important; }
+.full-content .abstract { display: block !important; }
+.full-content .description-truncated, .full-content .paper-description-truncated { display: block; -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; text-overflow: clip; }
+.full-content .hidden-item { display: flex !important; }
+.full-content .filtered-out { display: none !important; }
+.full-content .projectText, .full-content .codeBody { overflow-wrap: anywhere; }
+.full-content .projectText p, .full-content .abstract { max-height: none; }
+.full-content .show-more-btn, .full-content .paper-show-more-btn, .full-content .btn-load-more { display: none !important; }
+/* The new home directory uses the existing card/grid design. */
+.directory-card { padding: 1.5rem; }
+.directory-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }
+.directory-card p { font-size: .9rem; color: var(--text-muted); }
+.directory-link { margin-top: auto; padding-top: 1.5rem; color: var(--secondary-color); font-size: .85rem; }
+.directory-link span { float: right; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .65rem 1.4rem; max-width: 900px; margin: 0 auto 1.6rem; }
+.footer-links a { font-size: .83rem; }
+.btn-to-top { border: 0; font-size: 1.5rem; cursor: pointer; }
+.mobile-next-page { display: none; }
+@media (max-width: 768px) {
+    .mobile-next-page { display: block; padding: 1.75rem 1.5rem; background: var(--bg-color, #f8f9fa); text-align: center; }
+    .mobile-next-link { display: flex; flex-direction: column; gap: .4rem; max-width: 440px; margin: 0 auto; padding: 1.25rem 1.5rem; color: var(--primary-color); background: #fff; border: 1px solid #e5e9ed; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+    .mobile-next-eyebrow { color: var(--text-muted); font-size: .75rem; }
+    .mobile-next-link strong { display: flex; align-items: center; justify-content: center; gap: .8rem; font-size: 1.2rem; }
+    .mobile-next-link strong span { color: var(--secondary-color); }
+    .mobile-next-description, .mobile-next-hint { color: var(--text-muted); font-size: .8rem; }
+    .mobile-next-hint { margin: .85rem 0 0; }
+    .mobile-next-page.is-ready .mobile-next-link { border-color: var(--secondary-color); }
+}
+.lecture-results { margin: -1rem 0 1.5rem; color: var(--text-muted); font-size: .85rem; text-align: center; }
+body[data-page="contact"] #div-institution, body[data-page="contact"] #div-phone, body[data-page="contact"] #div-email { display: block; opacity: 1; visibility: visible; max-height: none; height: auto; transform: none; margin-bottom: 1.4rem; }
+/* Donation ledger: compact rows, with the existing palette and card treatment. */
+.donation-records { max-width: 1000px; margin: 0 auto 4rem; }
+.donation-heading, .donation-project-heading { font-size: 1.5rem; margin-bottom: 1.5rem; }
+.donation-table-wrap { background: var(--card-bg); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); overflow: hidden; }
+.donation-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.donation-table th, .donation-table td { padding: 1rem 1.5rem; text-align: left; border-bottom: 1px solid #edf0f2; vertical-align: middle; }
+.donation-table thead th { color: var(--text-muted); font-size: .85rem; font-weight: 600; background: #f0f3f5; }
+.donation-table tbody tr:last-child > * { border-bottom: 0; }
+.donation-date { width: 160px; color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.donation-organization { font-weight: 600; overflow-wrap: anywhere; }
+.donation-theme, .donation-amount-note { display: block; color: var(--text-muted); font-size: .8rem; font-weight: 400; margin-top: .25rem; }
+.donation-table .donation-amount { width: 180px; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.donation-amount strong { color: var(--primary-color); font-weight: 600; }
+.donation-undisclosed { color: var(--text-muted); font-size: .88rem; }
+@media (max-width: 600px) {
+    .donation-heading, .donation-project-heading { font-size: 1.25rem; }
+    .donation-table { font-size: .82rem; }
+    .donation-table th, .donation-table td { padding: .9rem .6rem; }
+    .donation-table thead th { font-size: .76rem; }
+    .donation-date { width: 78px; font-size: .76rem; }
+    .donation-table .donation-amount { width: 102px; }
+    .donation-theme, .donation-amount-note, .donation-undisclosed { font-size: .72rem; }
+}
+/* Full HD and wider: add a fourth card without shrinking the original card width. */
+@media (min-width: 1920px) {
+    .content-page:not([data-page="contact"]) .page-main { max-width: 1600px; }
+    .content-page :is(.grid-container, .bookContainer, .websitesContainer, .lecturesContainer, .codesContainer, .projectContainer) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

@@ -1,0 +1,67 @@
+<section id="contact" class="animated bounceInDown contact">
+            <div class="contact-container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-heading subpageHeading">
+                            문의 답변은 2일 이내 이메일로 받아보실 수 있습니다. 답변이 수신되지 않은 경우 스팸메일함을
+                            확인해 주시기 바랍니다.</div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group form-reveal" id="group-name">
+                            <label for="mail_name">Name</label>
+                            <input type="text" id="mail_name" name="mail_name" class="form-control" required
+                                placeholder="이름을 입력해주세요">
+                        </div>
+
+                        <div class="form-group form-reveal hidden-field" id="div-institution">
+                            <label for="mail_institution">Institution</label>
+                            <input type="text" id="mail_institution" name="mail_institution" class="form-control"
+                                required placeholder="소속 기관명을 입력해주세요">
+                        </div>
+
+                        <div class="form-group form-reveal hidden-field" id="div-phone">
+                            <label for="mail_phone">Phone Number</label>
+                            <div class="phone-input-group">
+                                <div class="custom-select-wrapper">
+                                    <div class="custom-select">
+                                        <div class="select-selected">국가 선택</div>
+                                        <div class="select-items select-hide">
+                                            <div data-value="">국가 선택</div>
+                                            <div data-value="+82">KR (+82)</div>
+                                            <div data-value="+1">US (+1)</div>
+                                            <div data-value="+81">JP (+81)</div>
+                                            <div data-value="+86">CN (+86)</div>
+                                            <div data-value="">직접입력</div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="country_code" name="country_code" value="">
+                                </div>
+                                <input type="tel" id="mail_phone" name="mail_phone" class="form-control"
+                                    placeholder="010-1234-5678">
+                            </div>
+                        </div>
+
+                        <div class="form-group form-reveal hidden-field" id="div-email">
+                            <label for="mail_email">Email</label>
+                            <input type="email" id="mail_email" name="mail_email" class="form-control" required
+                                placeholder="이메일을 입력해주세요">
+                        </div>
+
+                        <div class="form-group form-reveal">
+                            <label for="mail_title">Title</label>
+                            <input id="mail_title" name="mail_title" class="form-control" required
+                                placeholder="제목을 입력해주세요">
+                        </div>
+                        <div class="form-group form-reveal">
+                            <label for="mail_message">Message</label>
+                            <textarea id="mail_message" rows="6" name="mail_message" class="form-control" required
+                                placeholder="문의하실 내용을 남겨주세요"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">문의 보내기</button>
+                    </form>
+                </div>
+            </div>
+        </section>

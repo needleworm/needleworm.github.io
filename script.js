@@ -1,4 +1,194 @@
 
+// Static pages already contain all content. JavaScript only enhances interactions.
+document.addEventListener('DOMContentLoaded', () => {
+    restoreLegacyNavigation();
+    setupPageMenu();
+    setupMobilePageNavigation();
+    setupLectureFilters();
+    setupCitationButtons();
+    setupContactForm();
+    setupCustomSelect();
+    setupSubmenuHover();
+    if (document.getElementById('languageChart')) preloadCodesData();
+    const topButton = document.getElementById('btn-to-top');
+    if (topButton) {
+        const update = () => { topButton.style.display = window.scrollY > 300 ? 'flex' : 'none'; };
+        window.addEventListener('scroll', update, { passive: true });
+        topButton.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        update();
+    }
+    document.querySelectorAll('img').forEach(image => {
+        if (image.getAttribute('src') && image.complete && image.naturalWidth === 0) useImageFallback(image);
+    });
+});
+
+function restoreLegacyNavigation() {
+    if (!['/', '/index.html'].includes(window.location.pathname)) return;
+    const routes = {
+        '#books': '/books/', '#books-section': '/books/', '#tab-books': '/books/',
+        '#media-section': '/media/', '#media': '/media/', '#tab-media': '/media/',
+        '#news': '/news/', '#tab-news': '/news/',
+        '#education-section': '/lectures/', '#lectures': '/lectures/', '#tab-lectures': '/lectures/',
+        '#courses': '/courses/online/', '#tab-courses': '/courses/online/',
+        '#rnd-section': '/papers/', '#papers': '/papers/', '#tab-papers': '/papers/',
+        '#patents': '/patents/', '#tab-patents': '/patents/',
+        '#codes': '/projects/', '#tab-codes': '/projects/', '#websites': '/projects/', '#tab-websites': '/projects/',
+        '#etc-section': '/activities/', '#social': '/activities/', '#tab-social': '/activities/',
+        '#membership': '/memberships/', '#tab-membership': '/memberships/',
+        '#collections': '/collections/', '#tab-collections': '/collections/', '#contact': '/contact/'
+    };
+    const destination = routes[window.location.hash];
+    if (destination) window.location.replace(destination);
+}
+
+function setupPageMenu() {
+    const button = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('nav-links');
+    if (!button || !menu) return;
+    const close = () => {
+        menu.classList.remove('active');
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-label', '메뉴 열기');
+        document.body.style.overflow = '';
+    };
+    button.addEventListener('click', () => {
+        const open = menu.classList.toggle('active');
+        button.setAttribute('aria-expanded', String(open));
+        button.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+        document.body.style.overflow = open ? 'hidden' : '';
+    });
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && menu.classList.contains('active')) { close(); button.focus(); }
+    });
+    window.addEventListener('resize', () => { if (window.innerWidth > 768) close(); });
+}
+
+function setupMobilePageNavigation() {
+    const link = document.getElementById('mobile-next-link');
+    if (!link) return;
+    const panel = link.closest('.mobile-next-page');
+    const hint = panel.querySelector('.mobile-next-hint');
+    const mobile = window.matchMedia('(max-width: 768px)');
+    const interactive = 'a, button, input, textarea, select, iframe, [contenteditable]:not([contenteditable="false"])';
+    let gesture = null;
+    let navigating = false;
+    const atBottom = () => window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 12;
+    const blocked = () => document.visibilityState !== 'visible'
+        || document.getElementById('nav-links')?.classList.contains('active')
+        || !!document.activeElement?.matches('input, textarea, select, [contenteditable]:not([contenteditable="false"])')
+        || !!window.getSelection()?.toString().trim()
+        || (window.visualViewport && window.visualViewport.scale > 1.05);
+    const reset = () => {
+        gesture = null;
+        panel.classList.remove('is-ready');
+    };
+    const updateHint = () => {
+        reset();
+        hint.textContent = mobile.matches ? '끝까지 내려온 뒤 한 번 더 위로 밀면 이동합니다.' : '위 버튼을 누르면 이동합니다.';
+    };
+    document.addEventListener('touchstart', event => {
+        reset();
+        const control = event.target.closest(interactive);
+        if (!mobile.matches || navigating || event.touches.length !== 1 || !atBottom() || blocked()
+            || (control && control !== link)) return;
+        const touch = event.touches[0];
+        gesture = { id: touch.identifier, x: touch.clientX, y: touch.clientY };
+    }, { passive: true });
+    document.addEventListener('touchmove', event => {
+        if (!gesture) return;
+        if (event.touches.length !== 1 || blocked()) { reset(); return; }
+        const touch = event.touches[0];
+        if (touch.identifier !== gesture.id) { reset(); return; }
+        const upward = gesture.y - touch.clientY;
+        const sideways = Math.abs(touch.clientX - gesture.x);
+        panel.classList.toggle('is-ready', upward >= 90 && sideways < upward / 2);
+    }, { passive: true });
+    document.addEventListener('touchend', event => {
+        if (!gesture) return;
+        const start = gesture;
+        reset();
+        const touch = Array.from(event.changedTouches).find(item => item.identifier === start.id);
+        if (!touch || event.touches.length || !mobile.matches || navigating || !atBottom() || blocked()) return;
+        const upward = start.y - touch.clientY;
+        if (upward < 90 || Math.abs(touch.clientX - start.x) >= upward / 2) return;
+        navigating = true;
+        window.location.assign(link.href);
+    }, { passive: true });
+    document.addEventListener('touchcancel', reset, { passive: true });
+    document.addEventListener('visibilitychange', reset);
+    window.addEventListener('pageshow', () => { navigating = false; reset(); });
+    window.addEventListener('resize', reset);
+    mobile.addEventListener('change', updateHint);
+    updateHint();
+}
+
+function setupLectureFilters() {
+    const list = document.getElementById('lecture-list');
+    if (!list) return;
+    const categories = ['전체', '기업', '공공기관', '교육기관', '연구기관', '컨퍼런스'];
+    const cards = Array.from(list.children).filter(card => card.classList.contains('singleLectureContainer'));
+    const filters = document.createElement('div');
+    filters.className = 'lecture-filters';
+    filters.setAttribute('role', 'group');
+    filters.setAttribute('aria-label', '강의 기관 분류');
+    const result = document.createElement('p');
+    result.className = 'lecture-results';
+    result.setAttribute('role', 'status');
+    result.textContent = `전체 ${cards.length}건`;
+    categories.forEach(category => {
+        const count = cards.filter(card => category === '전체' || card.dataset.category === category).length;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'lecture-filter';
+        button.dataset.category = category;
+        button.setAttribute('aria-pressed', String(category === '전체'));
+        button.setAttribute('aria-controls', 'lecture-list');
+        button.append(document.createTextNode(category));
+        const badge = document.createElement('span');
+        badge.className = 'lecture-filter-count';
+        badge.textContent = count;
+        button.append(badge);
+        button.addEventListener('click', () => {
+            filters.querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+            cards.forEach(card => {
+                const hide = category !== '전체' && card.dataset.category !== category;
+                card.classList.toggle('filtered-out', hide);
+                card.hidden = hide;
+            });
+            result.textContent = `${category} ${count}건`;
+        });
+        filters.append(button);
+    });
+    list.before(filters, result);
+}
+
+function setupCitationButtons() {
+    document.querySelectorAll('.citation[data-citation]').forEach(item => {
+        item.setAttribute('role', 'button');
+        item.setAttribute('tabindex', '0');
+        item.setAttribute('aria-label', '인용 정보 복사');
+        if (!item.hasAttribute('onclick')) item.addEventListener('click', () => copyCitation(item));
+        item.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                copyCitation(item);
+            }
+        });
+    });
+}
+
+async function copyCitation(item) {
+    const citation = item.dataset.citation;
+    if (!citation) return;
+    try {
+        await navigator.clipboard.writeText(citation);
+        showToast('인용 정보를 복사했습니다.');
+    } catch {
+        showToast('인용 정보를 복사하지 못했습니다. 브라우저의 클립보드 설정을 확인해 주세요.', 'error');
+    }
+}
+
 // Constants & Config
 const EMAILJS_PUBLIC_KEY = "61GtFyVFJ4xDftkIG";
 const EMAILJS_SERVICE_ID = 'service_nicpl0u';
@@ -8,7 +198,7 @@ let preloadedCodesData = null;
 let languageChartInstance = null;
 
 // Shared fallback for missing or unavailable images, including rendered templates.
-const IMAGE_FALLBACK_SRC = new URL('./src/images/fallback.webp', document.baseURI).href;
+const IMAGE_FALLBACK_SRC = new URL('/src/images/fallback.webp', document.baseURI).href;
 
 function useImageFallback(image) {
     if (!(image instanceof HTMLImageElement) || image.src === IMAGE_FALLBACK_SRC) return;
@@ -26,442 +216,7 @@ document.addEventListener('error', event => useImageFallback(event.target), true
     }
 })();
 
-document.addEventListener('DOMContentLoaded', async () => {
-    // 1. Preload Data
-    preloadImages();
-    preloadCodesData();
 
-    // 2. Render Single Page Content
-    const main = document.getElementById('main-content');
-    if (main) {
-        renderAllSections(main);
-        initTextTruncation(); // Initialize text truncation for all sections
-    }
-
-    // Catch images that failed before the error listener was registered.
-    document.querySelectorAll('img').forEach(image => {
-        const hasSource = image.getAttribute('src') || image.getAttribute('srcset');
-        if (!hasSource || (image.complete && image.naturalWidth === 0)) {
-            useImageFallback(image);
-        }
-    });
-
-    // 3. Setup Navigation & UI
-    setupMobileMenu();
-    setupScrollSpy();
-    setupFloatingButton();
-    setupContactForm();
-    setupCustomSelect(); // Initialize custom select
-    setupResponsiveLimiter(); // Dynamic resize handling
-
-    // 4. Run specific initializers
-    loadCodes();
-    updateHeroStats();
-
-    // 5. Setup Submenu Hover
-    setupSubmenuHover();
-
-    // Safety check for mobile menu button
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    if (menuBtn) {
-        menuBtn.style.zIndex = '1100'; // Ensure it's above everything
-    }
-});
-
-function setupResponsiveLimiter() {
-    window.addEventListener('resize', () => {
-        // Debounce if needed, but simple is fine for now
-        const containers = document.querySelectorAll('.bookContainer, .websitesContainer, .lecturesContainer, .codesContainer, .projectContainer');
-        containers.forEach(container => manageItemVisibility(container));
-    });
-}
-
-function manageItemVisibility(container) {
-    if (container.dataset.expanded === 'true') return;
-
-    const isMobile = window.innerWidth <= 768;
-    let limit = isMobile ? 4 : 6;
-
-    if (window.innerWidth < 450) {
-        limit = 2;
-    } else if (isMobile && container.closest('#tab-websites') && container.classList.contains('websitesContainer')) {
-        limit = 2;
-    }
-    const items = Array.from(container.children).filter(item => !item.classList.contains('filtered-out'));
-    const total = items.length;
-
-    // Toggle Visibility
-    for (let i = 0; i < total; i++) {
-        if (i < limit) {
-            items[i].classList.remove('hidden-item');
-        } else {
-            items[i].classList.add('hidden-item');
-        }
-    }
-
-    // Handle Load More Button
-    // Button should be in the parent of the container
-    const parent = container.parentNode;
-    let btn = parent.querySelector('.btn-load-more');
-
-    if (total > limit) {
-        if (!btn) {
-            btn = document.createElement('button');
-            btn.className = 'btn-load-more';
-            btn.innerText = '더 보기 (Show More)';
-            btn.onclick = function () {
-                const hidden = container.querySelectorAll('.hidden-item');
-                hidden.forEach(el => el.classList.remove('hidden-item'));
-                this.style.display = 'none';
-                container.dataset.expanded = 'true';
-
-                // Re-initialize truncation for newly revealed items
-                setTimeout(() => initTextTruncation(), 50);
-            };
-            parent.appendChild(btn);
-        }
-        btn.style.display = 'block';
-    } else {
-        if (btn) btn.style.display = 'none';
-    }
-}
-
-function updateHeroStats() {
-    // Books
-    const bookCount = document.querySelectorAll('#books .singleBookContainer').length;
-    const bookEl = document.getElementById('stat-books');
-    if (bookEl && bookCount > 10) bookEl.innerText = `${bookCount}+`;
-
-    // R&D (Papers + Patents + Websites)
-    const papers = document.querySelectorAll('#rnd-section .singleLectureContainer, #rnd-section .singleProjectContainer').length;
-    const websites = document.querySelectorAll('#dev-section .singleWebsiteCard').length;
-    const totalRnD = papers + websites;
-
-    const paperEl = document.getElementById('stat-papers');
-    if (paperEl && totalRnD > 5) paperEl.innerText = `${totalRnD}+`;
-
-    // Lectures (Courses + Lectures)
-    const courses = document.querySelectorAll('#tab-courses .singleLectureContainer').length;
-    const lectures = document.querySelectorAll('#tab-lectures .singleLectureContainer').length;
-    const totalLectures = courses + lectures;
-
-    const lectureEl = document.getElementById('stat-lectures');
-    if (lectureEl && totalLectures > 10) lectureEl.innerText = `${totalLectures}+`;
-}
-
-// Later dates in the same year can omit the year: 2026.09.10. 09.24.
-function getLatestLectureDate(text) {
-    const yearOnly = text.trim().match(/^(\d{4})(?:년)?$/);
-    if (yearOnly) return Number(yearOnly[1]) * 10000;
-    let year = 0;
-    let latest = 0;
-    const dates = text.matchAll(/(?:(\d{4})\s*\.\s*)?(\d{1,2})\s*\.\s*(\d{1,2})\.?/g);
-    for (const [, explicitYear, monthText, dayText] of dates) {
-        if (explicitYear) year = Number(explicitYear);
-        if (!year) continue;
-        const month = Number(monthText);
-        const day = Number(dayText);
-        const date = new Date(Date.UTC(year, month - 1, day));
-        if (date.getUTCFullYear() !== year || date.getUTCMonth() + 1 !== month || date.getUTCDate() !== day) continue;
-        latest = Math.max(latest, year * 10000 + month * 100 + day);
-    }
-    return latest;
-}
-
-function sortLectureCards(list) {
-    if (!list) return;
-    const cards = Array.from(list.children).map((card, index) => ({
-        card,
-        index,
-        date: getLatestLectureDate(card.querySelector('.firstCommitDate')?.textContent || '')
-    }));
-    cards.sort((a, b) => b.date - a.date || a.index - b.index);
-    list.append(...cards.map(entry => entry.card));
-}
-
-function setupLectureFilters(list) {
-    if (!list) return;
-    const categories = ['전체', '기업', '공공기관', '교육기관', '연구기관', '컨퍼런스'];
-    const cards = Array.from(list.children);
-    const filters = document.createElement('div');
-    filters.className = 'lecture-filters';
-    filters.setAttribute('role', 'group');
-    filters.setAttribute('aria-label', '강의 기관 분류');
-
-    categories.forEach(category => {
-        const count = cards.filter(card => category === '전체' || (card.dataset.category || '컨퍼런스') === category).length;
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.className = 'lecture-filter';
-        button.dataset.category = category;
-        button.setAttribute('aria-pressed', String(category === '전체'));
-        button.setAttribute('aria-controls', 'lecture-list');
-        button.append(document.createTextNode(category));
-        const badge = document.createElement('span');
-        badge.className = 'lecture-filter-count';
-        badge.textContent = count;
-        button.append(badge);
-        button.addEventListener('click', () => {
-            filters.querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-            cards.forEach(card => card.classList.toggle('filtered-out', category !== '전체' && (card.dataset.category || '컨퍼런스') !== category));
-            list.dataset.expanded = 'false';
-            manageItemVisibility(list);
-            initTextTruncation();
-        });
-        filters.append(button);
-    });
-    list.before(filters);
-}
-
-function renderAllSections(container) {
-    // Re-defined Groups Matching User Request
-    const groups = [
-        {
-            id: 'about',
-            title: 'About',
-            desc: '',
-            templates: ['about']
-        },
-        {
-            id: 'books',
-            title: 'Books',
-            desc: 'Recent Publications',
-            templates: ['books'] // Single item, no tabs needed
-        },
-        {
-            id: 'media-section',
-            title: 'Media',
-            desc: 'Me on Media',
-            templates: ['media', 'news'],
-            noTabs: true
-        },
-        {
-            id: 'education-section',
-            title: 'Education',
-            desc: 'Courses and Lectures',
-            templates: ['courses', 'lectures'],
-            noTabs: true
-        },
-        {
-            id: 'rnd-section',
-            title: 'R&D',
-            desc: 'Papers and Patents',
-            templates: ['papers', 'patents', 'codes', 'websites'],
-            noTabs: true
-        },
-
-        {
-            id: 'etc-section',
-            title: 'ETC',
-            desc: '',
-            templates: ['social', 'membership', 'collections'],
-            noTabs: true
-        },
-        {
-            id: 'contact',
-            title: 'Contact',
-            desc: '',
-            templates: ['contact']
-        }
-    ];
-
-    groups.forEach(group => {
-        // Create Wrapper
-        const wrapper = document.createElement('section');
-        wrapper.id = group.id;
-        wrapper.className = 'section-group';
-
-        let headerHtml = `
-            <div class="group-header text-center">
-                <h2 class="group-title">${group.title}</h2>
-                <p class="group-desc">${group.desc}</p>
-        `;
-
-        // Add Sub-nav Pills ONLY if more than 1 template AND not noTabs
-        if (group.templates.length > 1 && !group.noTabs) {
-            headerHtml += `<div class="sub-nav-pills">`;
-            group.templates.forEach((t, index) => {
-                const activeClass = index === 0 ? 'active' : '';
-                headerHtml += `<button class="pill-btn ${activeClass}" onclick="switchTab('${group.id}', '${t}')">${capitalize(t)}</button>`;
-            });
-            headerHtml += `</div>`;
-        }
-
-        headerHtml += `</div>`; // Close group-header
-
-        // Don't show header for Contact if not desired, but consistency is good.
-        if (group.id === 'contact') {
-            // Maybe simplify header for contact or keep it
-        }
-
-        wrapper.innerHTML = headerHtml;
-
-        // Content Container
-        const contentContainer = document.createElement('div');
-        contentContainer.className = 'group-content-body';
-
-        group.templates.forEach((tempId, index) => {
-            const template = document.getElementById(tempId + '-template');
-            if (template) {
-                const clone = template.content.cloneNode(true);
-                if (tempId === 'lectures') {
-                    const lectureList = clone.querySelector('#lecture-list');
-                    sortLectureCards(lectureList);
-                    setupLectureFilters(lectureList);
-                }
-
-                // We need to wrap each template content in a div that we can toggle
-                const tabContentDiv = document.createElement('div');
-                tabContentDiv.id = `tab-${tempId}`;
-                tabContentDiv.className = 'tab-content-item';
-                
-                if (group.noTabs) {
-                    tabContentDiv.classList.add('active-tab-content');
-                } else {
-                    if (index !== 0) tabContentDiv.style.display = 'none'; // Hide all except first by default
-                    else tabContentDiv.classList.add('active-tab-content');
-                }
-
-                const internalSection = clone.querySelector('section');
-                if (internalSection) {
-                    internalSection.removeAttribute('id'); // Remove duplicate ID
-                    internalSection.classList.remove('animated', 'bounceInDown');
-                    internalSection.style.padding = '0'; // Reset padding as wrapper has it
-                }
-
-                // Add Load More Logic (per tab)
-                const innerContainer = clone.querySelector('.bookContainer, .websitesContainer, .lecturesContainer, .codesContainer, .projectContainer, .contact-container');
-                if (innerContainer && tempId !== 'contact') {
-                    // Initial Setup
-                    manageItemVisibility(innerContainer);
-                }
-
-                tabContentDiv.appendChild(clone);
-                contentContainer.appendChild(tabContentDiv);
-            }
-        });
-
-        wrapper.appendChild(contentContainer);
-        container.appendChild(wrapper);
-    });
-}
-
-function switchTab(groupId, templateId) {
-    const group = document.getElementById(groupId);
-    if (!group) return;
-
-    // 1. Update Pills
-    const pills = group.querySelectorAll('.pill-btn');
-    if (pills.length === 0) return;
-    pills.forEach(btn => {
-        if (btn.innerText.toLowerCase() === templateId.toLowerCase() ||
-            (templateId === 'news' && btn.innerText === 'News') ||
-            (templateId === 'social' && btn.innerText === 'Social')) { // Simple matching
-            btn.classList.add('active');
-        } else {
-            // Check capitalisation text match
-            if (btn.innerText.toLowerCase() === templateId.toLowerCase()) btn.classList.add('active');
-            else btn.classList.remove('active');
-        }
-    });
-
-    // 2. toggle Content
-    const contents = group.querySelectorAll('.tab-content-item');
-    contents.forEach(content => {
-        content.style.display = 'none';
-        content.classList.remove('active-tab-content');
-    });
-
-    const target = group.querySelector(`#tab-${templateId}`);
-    if (target) {
-        target.style.display = 'block';
-        target.classList.add('active-tab-content');
-
-        // Restore fade in animation
-        target.style.animation = 'fadeIn 0.5s ease-out';
-        setTimeout(initTextTruncation, 100);
-
-        // Specific re-render for Charts if hidden initially
-        if (templateId === 'codes') {
-            loadCodes();
-        }
-    }
-}
-
-function capitalize(s) {
-    return s.charAt(0).toUpperCase() + s.slice(1);
-}
-
-function setupMobileMenu() {
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const navLinks = document.getElementById('nav-links');
-
-    if (menuBtn && navLinks) {
-        // Clone and replace to remove old listeners if any
-        const newBtn = menuBtn.cloneNode(true);
-        menuBtn.parentNode.replaceChild(newBtn, menuBtn);
-
-        newBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            navLinks.classList.toggle('active');
-
-            // Toggle body scroll
-            if (navLinks.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Close menu on link click
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
-    }
-}
-
-function setupScrollSpy() {
-    const sectionGroups = document.querySelectorAll('.section-group');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sectionGroups.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (pageYOffset >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
-        });
-    });
-}
-
-function setupFloatingButton() {
-    const btnToTop = document.getElementById('btn-to-top');
-    if (btnToTop) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                btnToTop.style.display = 'flex';
-            } else {
-                btnToTop.style.display = 'none';
-            }
-        });
-    }
-}
-
-/**
- * Preload GitHub repository data
- */
 async function preloadCodesData() {
     if (preloadedCodesData) return;
     try {
@@ -499,6 +254,7 @@ async function preloadCodesData() {
     }
 }
 
+
 function loadCodes() {
     const starsEl = document.getElementById('total-stars');
     const forksEl = document.getElementById('total-forks');
@@ -517,9 +273,10 @@ function loadCodes() {
     renderLanguageChart(data.languages);
 }
 
+
 function renderLanguageChart(languages) {
     const canvas = document.getElementById('languageChart');
-    if (!canvas) return;
+    if (!canvas || typeof Chart === 'undefined') return;
     // Check visibility
     // if (canvas.offsetParent === null) return; // Removed to force render even if hidden initially
 
@@ -564,22 +321,7 @@ function renderLanguageChart(languages) {
     });
 }
 
-function preloadImages() {
-    const templates = document.querySelectorAll('template');
-    templates.forEach(template => {
-        const html = template.innerHTML;
-        const regex = /<img\b[^>]*\bsrc=["']([^"']+)["']/gi;
-        let match;
-        while ((match = regex.exec(html)) !== null) {
-            const src = match[1];
-            if (src) {
-                new Image().src = src;
-            }
-        }
-    });
-}
 
-// --- Toast Notification ---
 function showToast(message, type = 'success') {
     const toast = document.createElement('div');
     toast.className = `toast-notification ${type}`;
@@ -592,6 +334,7 @@ function showToast(message, type = 'success') {
 }
 
 // --- Contact Form Setup ---
+
 function setupContactForm() {
     const form = document.getElementById('contact-form');
     if (!form) return;
@@ -647,6 +390,10 @@ function setupContactForm() {
     // Form submission
     form.addEventListener('submit', function (event) {
         event.preventDefault();
+        if (typeof emailjs === 'undefined') {
+            showToast('문의 전송 기능을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.', 'error');
+            return;
+        }
 
         const btn = form.querySelector('button[type="submit"]');
         const originalText = btn.textContent;
@@ -674,6 +421,7 @@ function setupContactForm() {
             });
     });
 }
+
 
 function setupCustomSelect() {
     const x = document.getElementsByClassName("custom-select");
@@ -714,6 +462,7 @@ function setupCustomSelect() {
     document.addEventListener("click", closeAllSelect);
 }
 
+
 function closeAllSelect(elmnt) {
     const x = document.getElementsByClassName("select-items");
     const y = document.getElementsByClassName("select-selected");
@@ -735,113 +484,7 @@ function closeAllSelect(elmnt) {
 }
 
 // --- Text Truncation ---
-function initTextTruncation() {
-    // 1. Handle Papers section - hide abstracts completely
-    const abstracts = document.querySelectorAll('.abstract');
-    abstracts.forEach(abstract => {
-        // Education cards show their descriptions without an extra click.
-        if (abstract.closest('#tab-lectures, #tab-courses')) return;
 
-        // Skip if already processed
-        if (abstract.dataset.truncationProcessed) return;
-        abstract.dataset.truncationProcessed = 'true';
-
-        const parent = abstract.closest('.codeBody') || abstract.parentNode;
-
-        const btn = document.createElement('button');
-        btn.className = 'show-more-btn';
-        btn.innerText = 'More';
-        btn.onclick = function () {
-            if (abstract.classList.contains('expanded')) {
-                abstract.classList.remove('expanded');
-                this.innerText = 'More';
-            } else {
-                abstract.classList.add('expanded');
-                this.innerText = 'Less';
-            }
-        };
-        parent.appendChild(btn);
-    });
-
-    // 2. Handle other sections (not Books) - 3 line truncation
-    const contentItems = document.querySelectorAll('.projectText, .codeBody');
-    contentItems.forEach(item => {
-        // Skip if already processed
-        if (item.dataset.truncationProcessed) return;
-
-        if (item.closest('#tab-lectures, #tab-courses')) return;
-
-        // Skip if this is in Books section
-        if (item.closest('#books')) return;
-
-        // Skip if this is in Patents section (patents have short structured metadata and no abstract)
-        if (item.closest('#tab-patents') || item.closest('#patents')) return;
-
-        // Skip if this is in Collections section (collections have short structured metadata and no abstract)
-        if (item.closest('#tab-collections') || item.closest('#collections')) return;
-
-        // Skip if this is in Membership section (membership has short info and no abstract collapse is needed)
-        if (item.closest('#tab-membership') || item.closest('#membership')) return;
-
-        // Skip if it contains an abstract (Papers section handled above)
-        if (item.querySelector('.abstract')) return;
-
-        // Mark as processed
-        item.dataset.truncationProcessed = 'true';
-
-        // Apply truncation class
-        item.classList.add('description-truncated');
-
-        // Check if content actually needs truncation
-        const tempExpand = item.cloneNode(true);
-        tempExpand.classList.remove('description-truncated');
-        tempExpand.style.position = 'absolute';
-        tempExpand.style.visibility = 'hidden';
-        document.body.appendChild(tempExpand);
-        const needsTruncation = tempExpand.scrollHeight > item.clientHeight + 10; // 10px tolerance
-        document.body.removeChild(tempExpand);
-
-        if (needsTruncation) {
-            const btn = document.createElement('button');
-            btn.className = 'show-more-btn';
-            btn.innerText = 'More';
-            btn.onclick = function () {
-                if (item.classList.contains('description-truncated')) {
-                    item.classList.remove('description-truncated');
-                    this.innerText = 'Less';
-                } else {
-                    item.classList.add('description-truncated');
-                    this.innerText = 'More';
-                }
-            };
-            item.parentNode.appendChild(btn);
-        }
-    });
-}
-
-
-/* Submenu Navigation Handler */
-function clickSubmenu(groupId, templateId) {
-    // 1. Switch Tab
-    switchTab(groupId, templateId);
-
-    // 2. Scroll to Section
-    const target = document.getElementById(`tab-${templateId}`) || document.getElementById(groupId);
-    if (target) {
-        const yOffset = -80; // Offset for fixed navbar
-        const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-
-    // 3. Close Mobile Menu if open
-    const navLinks = document.getElementById('nav-links');
-    if (navLinks && navLinks.classList.contains('active')) {
-        navLinks.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-}
-
-// Submenu Hover Logic (Immediate show, short delay on hide)
 function setupSubmenuHover() {
     if (window.innerWidth <= 768) return; // Mobile handled by CSS default visibility
 

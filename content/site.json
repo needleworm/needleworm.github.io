@@ -1,0 +1,184 @@
+{
+  "url": "https://bhban.kr",
+  "pages": [
+    {
+      "slug": "",
+      "key": "home",
+      "title": "반병현 | AI 강의·생성형 AI 교육·업무 자동화",
+      "heading": "반병현",
+      "label": "About",
+      "description": "AI 엔지니어이자 작가 반병현의 공식 홈페이지입니다. 생성형 AI 교육과 업무 자동화 강의, 저서, 논문, 특허와 프로젝트를 소개합니다.",
+      "sections": [
+        "about"
+      ],
+      "group": "about"
+    },
+    {
+      "slug": "books",
+      "key": "books",
+      "title": "저서 | 반병현",
+      "heading": "저서",
+      "label": "Books",
+      "description": "반병현의 AI·생성형 AI·업무 자동화·프로그래밍 도서를 소개합니다. 책 소개와 서점 구매 링크를 확인하세요.",
+      "sections": [
+        "books"
+      ],
+      "group": "books",
+      "subtitle": "Recent Publications"
+    },
+    {
+      "slug": "media",
+      "key": "media",
+      "title": "방송·영상 | 반병현",
+      "heading": "방송·영상",
+      "label": "Media",
+      "description": "반병현이 출연한 방송과 인터뷰, AI·생성형 AI 관련 강연 영상을 모았습니다.",
+      "sections": [
+        "media"
+      ],
+      "group": "media",
+      "subtitle": "Me on Media"
+    },
+    {
+      "slug": "news",
+      "key": "news",
+      "title": "언론 보도 | 반병현",
+      "heading": "언론 보도",
+      "label": "News",
+      "description": "반병현의 AI 강의, 저서, 연구와 활동을 다룬 언론 보도 및 원문 기사 링크를 확인하세요.",
+      "sections": [
+        "news"
+      ],
+      "group": "media"
+    },
+    {
+      "slug": "courses/online",
+      "key": "courses-online",
+      "title": "온라인 강좌 | 반병현",
+      "heading": "온라인 강좌",
+      "label": "Online",
+      "page_label": "Courses",
+      "description": "반병현의 인프런·패스트캠퍼스 온라인 강좌, 영상 강의와 온라인 라이브 교육과정을 소개합니다.",
+      "sections": [
+        "courses-online"
+      ],
+      "group": "courses"
+    },
+    {
+      "slug": "courses/offline",
+      "key": "courses-offline",
+      "title": "오프라인 교육과정 | 반병현",
+      "heading": "오프라인 교육과정",
+      "label": "Offline",
+      "page_label": "Courses",
+      "description": "기업·공공기관·학교에서 대면으로 진행한 반병현의 실습 교육과 연수, 대학 강좌를 소개합니다.",
+      "sections": [
+        "courses-offline"
+      ],
+      "group": "courses"
+    },
+    {
+      "slug": "lectures",
+      "key": "lectures",
+      "title": "AI 강의·출강 이력 | 반병현",
+      "heading": "강의·출강 이력",
+      "label": "Lectures",
+      "description": "기업·공공기관·교육기관·연구기관의 AI 교육과 업무 자동화 강의 이력을 확인하세요. 기관별 분류와 최근 강의 날짜를 제공합니다.",
+      "sections": [
+        "lectures"
+      ],
+      "group": "lectures"
+    },
+    {
+      "slug": "papers",
+      "key": "papers",
+      "title": "논문·연구 | 반병현",
+      "heading": "논문·연구",
+      "label": "Papers",
+      "description": "반병현의 인공지능, 데이터셋, 디지털 트윈 등 연구 논문과 초록, 원문 및 관련 코드 링크를 소개합니다.",
+      "sections": [
+        "papers"
+      ],
+      "group": "research"
+    },
+    {
+      "slug": "patents",
+      "key": "patents",
+      "title": "특허 | 반병현",
+      "heading": "특허",
+      "label": "Patents",
+      "description": "반병현의 인공지능, 사물인터넷, 스마트팜 관련 특허와 출원·등록 정보를 확인하세요.",
+      "sections": [
+        "patents"
+      ],
+      "group": "research"
+    },
+    {
+      "slug": "projects",
+      "key": "projects",
+      "title": "개발 프로젝트 | 반병현",
+      "heading": "개발 프로젝트",
+      "label": "Projects",
+      "description": "반병현의 공개 소프트웨어, 웹사이트, 도서 예제와 실생활 도구를 소개합니다. 프로젝트와 소스 코드 링크를 확인하세요.",
+      "sections": [
+        "codes",
+        "websites"
+      ],
+      "group": "research"
+    },
+    {
+      "slug": "activities",
+      "key": "activities",
+      "title": "사회공헌 | 반병현",
+      "heading": "사회공헌",
+      "label": "Social Contribution",
+      "description": "반병현의 기부 내역과 청소년 공모전, 후원 공연 등 사회공헌 활동을 소개합니다.",
+      "sections": [
+        "social"
+      ],
+      "group": "activities"
+    },
+    {
+      "slug": "memberships",
+      "key": "memberships",
+      "title": "회원·전문 활동 | 반병현",
+      "heading": "회원·전문 활동",
+      "label": "Memberships",
+      "description": "반병현의 단체 회원 활동, 전문위원 및 관련 활동을 소개합니다.",
+      "sections": [
+        "membership"
+      ],
+      "group": "activities"
+    },
+    {
+      "slug": "collections",
+      "key": "collections",
+      "title": "소장품 | 반병현",
+      "heading": "소장품",
+      "label": "Collections",
+      "description": "반병현이 소장한 작품과 작가, 작품 정보를 소개합니다.",
+      "sections": [
+        "collections"
+      ],
+      "group": "activities"
+    },
+    {
+      "slug": "contact",
+      "key": "contact",
+      "title": "AI 강의·협업 문의 | 반병현",
+      "heading": "강의·협업 문의",
+      "label": "Contact",
+      "description": "생성형 AI 교육, 업무 자동화 강의와 협업을 문의하세요. 이름, 소속, 연락처와 문의 내용을 남길 수 있습니다.",
+      "sections": [
+        "contact"
+      ],
+      "group": "contact"
+    }
+  ],
+  "redirects": [
+    {
+      "from": "courses",
+      "to": "courses/online"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+name: Check generated static pages
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify all generated pages are current
+        run: python scripts/build_site.py --check
+      - name: Verify content, routes, links, and metadata
+        run: python scripts/check_site.py

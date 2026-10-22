@@ -1,0 +1,6 @@
+# Source content and build tools stay in Git, but are not published as duplicate pages.
+exclude:
+  - content/
+  - scripts/
+  - README.md
+  - .github/

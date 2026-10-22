@@ -1,0 +1,17 @@
+{
+  "minimum_visits": {
+    "lecture-150": 3,
+    "lecture-78": 4,
+    "lecture-62": 3,
+    "lecture-2": 3
+  },
+  "delivery": {
+    "lecture-221": "offline",
+    "lecture-208": "offline",
+    "lecture-186": "offline",
+    "lecture-150": "offline",
+    "lecture-78": "offline",
+    "lecture-62": "offline",
+    "lecture-2": "offline"
+  }
+}

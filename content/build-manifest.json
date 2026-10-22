@@ -1,0 +1,115 @@
+{
+  "index.html": {
+    "sha256": "1b0e0d1ffa19bc0b2f67215dec52e05d772d2473b096370037be0499d225e588",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "about"
+    ],
+    "cards": 0
+  },
+  "books/index.html": {
+    "sha256": "77235b0c178e545e899215c5639c884cd028f042be0b805f486f2ebab71ea36a",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "books"
+    ],
+    "cards": 36
+  },
+  "media/index.html": {
+    "sha256": "15e49a115c88b1f46882c008c36dff118887b3f89ef71df36d6c4b78ce1a3880",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "media"
+    ],
+    "cards": 21
+  },
+  "news/index.html": {
+    "sha256": "fa412e128510b5c6ee3c8e8f685c9dbe734fb0cbf48c1c3aa6d6d4c21bc996dd",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "news"
+    ],
+    "cards": 52
+  },
+  "courses/online/index.html": {
+    "sha256": "4278d91d6d8cc656b53227b3be9ce0d5e170bb7bff35c6c7bc124e770cdc0a45",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "courses-online"
+    ],
+    "cards": 27
+  },
+  "courses/offline/index.html": {
+    "sha256": "f917d089c0d4da7bde9dd7f4b1c93d36f9f2afa24a216cbc64ee17842e2144d1",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "courses-offline"
+    ],
+    "cards": 14
+  },
+  "lectures/index.html": {
+    "sha256": "79452388cd7eeda8e94c516d5b11da11914bd20a4a32e3a2ab750a60c285ed23",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "lectures"
+    ],
+    "cards": 212
+  },
+  "papers/index.html": {
+    "sha256": "b09b33fb065d35a54e9a9d58deff139ca4fdac81802d4080da7fac185f5e683b",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "papers"
+    ],
+    "cards": 15
+  },
+  "patents/index.html": {
+    "sha256": "bc0a406498a9296fff0d569adaa933449fcf8cd935b7e11af8e7a3385a77c9c6",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "patents"
+    ],
+    "cards": 31
+  },
+  "projects/index.html": {
+    "sha256": "3d8cb30c0ba27ddd76ff9237857988dc800abff5b2dbb8720bb685185fb8f327",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "codes",
+      "websites"
+    ],
+    "cards": 34
+  },
+  "activities/index.html": {
+    "sha256": "da84d46d0f5f5572464f8e8549c04b7e37ef143ba679fa8ab16cb0439a3f2ce7",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "social"
+    ],
+    "cards": 2
+  },
+  "memberships/index.html": {
+    "sha256": "fadcabad658986fdf6c0e5d52e12e26a366abc2ad40dff086b116790bcd350dd",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "membership"
+    ],
+    "cards": 9
+  },
+  "collections/index.html": {
+    "sha256": "80c38991dbcb78c1a06e028a59c81529c614e6bac3041e88093dc94c8fa60b10",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "collections"
+    ],
+    "cards": 7
+  },
+  "contact/index.html": {
+    "sha256": "3fed317f49335c1c4e7f7b356779c4d9c585b5633c776a062e371de97d89c914",
+    "lastmod": "2026-10-23",
+    "sections": [
+      "contact"
+    ],
+    "cards": 0
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <link rel="canonical" href="{{URL}}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="{{TITLE}}">
+    <meta property="og:description" content="{{DESCRIPTION}}">
+    <meta property="og:url" content="{{URL}}">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@9a7f553312705d9178fbdb73676d681727aa85ac/src/images/bookcovers.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/page.css">
+    <script type="application/ld+json">{{STRUCTURED_DATA}}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    {{LIBRARIES}}
+    <script src="/script.js" defer></script>
+</head>
+<body class="static-site full-content {{BODY_CLASS}}" data-page="{{PAGE_KEY}}">
+    <a class="skip-link" href="#main-content">본문 바로가기</a>
+    {{NAVIGATION}}
+    {{HERO}}
+    <main id="main-content" class="container page-main {{MAIN_CLASS}}">
+        {{PAGE_HEADER}}
+        {{MAIN}}
+    </main>
+    {{MOBILE_NEXT_PAGE}}
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="전체 페이지">{{FOOTER_LINKS}}</nav>
+            <p>&copy; 2026 Byunghyun Ban. All rights reserved.</p>
+            <p>나나랩(NaNa Lab) (사업자등록번호:269-08-02374) 대표자 반 병 현</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="맨 위로 이동">↑</button>
+</body>
+</html>
