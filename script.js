@@ -87,7 +87,7 @@ function manageItemVisibility(container) {
     } else if (isMobile && container.closest('#tab-websites') && container.classList.contains('websitesContainer')) {
         limit = 2;
     }
-    const items = container.children;
+    const items = Array.from(container.children).filter(item => !item.classList.contains('filtered-out'));
     const total = items.length;
 
     // Toggle Visibility
@@ -147,6 +147,70 @@ function updateHeroStats() {
 
     const lectureEl = document.getElementById('stat-lectures');
     if (lectureEl && totalLectures > 10) lectureEl.innerText = `${totalLectures}+`;
+}
+
+// Later dates in the same year can omit the year: 2026.09.10. 09.24.
+function getLatestLectureDate(text) {
+    const yearOnly = text.trim().match(/^(\d{4})(?:년)?$/);
+    if (yearOnly) return Number(yearOnly[1]) * 10000;
+    let year = 0;
+    let latest = 0;
+    const dates = text.matchAll(/(?:(\d{4})\s*\.\s*)?(\d{1,2})\s*\.\s*(\d{1,2})\.?/g);
+    for (const [, explicitYear, monthText, dayText] of dates) {
+        if (explicitYear) year = Number(explicitYear);
+        if (!year) continue;
+        const month = Number(monthText);
+        const day = Number(dayText);
+        const date = new Date(Date.UTC(year, month - 1, day));
+        if (date.getUTCFullYear() !== year || date.getUTCMonth() + 1 !== month || date.getUTCDate() !== day) continue;
+        latest = Math.max(latest, year * 10000 + month * 100 + day);
+    }
+    return latest;
+}
+
+function sortLectureCards(list) {
+    if (!list) return;
+    const cards = Array.from(list.children).map((card, index) => ({
+        card,
+        index,
+        date: getLatestLectureDate(card.querySelector('.firstCommitDate')?.textContent || '')
+    }));
+    cards.sort((a, b) => b.date - a.date || a.index - b.index);
+    list.append(...cards.map(entry => entry.card));
+}
+
+function setupLectureFilters(list) {
+    if (!list) return;
+    const categories = ['전체', '기업', '공공기관', '교육기관', '연구기관', '컨퍼런스'];
+    const cards = Array.from(list.children);
+    const filters = document.createElement('div');
+    filters.className = 'lecture-filters';
+    filters.setAttribute('role', 'group');
+    filters.setAttribute('aria-label', '강의 기관 분류');
+
+    categories.forEach(category => {
+        const count = cards.filter(card => category === '전체' || (card.dataset.category || '컨퍼런스') === category).length;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'lecture-filter';
+        button.dataset.category = category;
+        button.setAttribute('aria-pressed', String(category === '전체'));
+        button.setAttribute('aria-controls', 'lecture-list');
+        button.append(document.createTextNode(category));
+        const badge = document.createElement('span');
+        badge.className = 'lecture-filter-count';
+        badge.textContent = count;
+        button.append(badge);
+        button.addEventListener('click', () => {
+            filters.querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+            cards.forEach(card => card.classList.toggle('filtered-out', category !== '전체' && (card.dataset.category || '컨퍼런스') !== category));
+            list.dataset.expanded = 'false';
+            manageItemVisibility(list);
+            initTextTruncation();
+        });
+        filters.append(button);
+    });
+    list.before(filters);
 }
 
 function renderAllSections(container) {
@@ -240,6 +304,11 @@ function renderAllSections(container) {
             const template = document.getElementById(tempId + '-template');
             if (template) {
                 const clone = template.content.cloneNode(true);
+                if (tempId === 'lectures') {
+                    const lectureList = clone.querySelector('#lecture-list');
+                    sortLectureCards(lectureList);
+                    setupLectureFilters(lectureList);
+                }
 
                 // We need to wrap each template content in a div that we can toggle
                 const tabContentDiv = document.createElement('div');

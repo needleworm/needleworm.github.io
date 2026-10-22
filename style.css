@@ -1019,7 +1019,62 @@ section .row {
 }
 
 /* Hidden Items & Load More */
-.hidden-item {
+.lecture-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 0 30px;
+}
+
+.lecture-filter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 17px;
+    border: 1px solid #dfe4e8;
+    border-radius: 999px;
+    background: #fff;
+    color: #44515d;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .15s, color .15s, border-color .15s;
+}
+
+.lecture-filter:hover {
+    border-color: #e95b4c;
+    color: #d94c3e;
+}
+
+.lecture-filter[aria-pressed="true"] {
+    border-color: #e95b4c;
+    background: #e95b4c;
+    color: #fff;
+}
+
+.lecture-filter:focus-visible {
+    outline: 3px solid #ef9b92;
+    outline-offset: 3px;
+}
+
+.lecture-filter-count {
+    border-radius: 999px;
+    padding: 1px 6px;
+    background: #f0f2f4;
+    color: #64717c;
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+}
+
+.lecture-filter[aria-pressed="true"] .lecture-filter-count {
+    background: rgba(255, 255, 255, .22);
+    color: #fff;
+}
+
+.hidden-item,
+.filtered-out {
     display: none !important;
 }
 
