@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "sha256": "082dab1465a13d4e81d0217bf175ef0172c3d6147545a438e4941de07a5e2259",
+    "sha256": "70cb84b2cec190954f9d0a8843ce46627aeef44a7b8c08e0637ef98c7ec080ac",
     "lastmod": "2026-10-23",
     "sections": [
       "about",
@@ -33,12 +33,12 @@
     "cards": 52
   },
   "courses/online/index.html": {
-    "sha256": "64193439603db233ca8936371a3bb6a442f8940da3b0e89b90294549b5be5e94",
+    "sha256": "5239bfa9f1fcfe7c6e5e0f16cdacdf8a555b0df26ee2e9911f46fc78cc261d2b",
     "lastmod": "2026-10-23",
     "sections": [
       "courses-online"
     ],
-    "cards": 27
+    "cards": 29
   },
   "courses/offline/index.html": {
     "sha256": "fb6a53a2d8e498ea72bc89438f06b654b1b7d2b2e0998ec4d072c2d5c75b2425",
@@ -49,12 +49,12 @@
     "cards": 14
   },
   "lectures/index.html": {
-    "sha256": "cdb34ba78383058ad22eb7d321ff706014793001f253052192b3fdf996e94926",
+    "sha256": "202b6300ac6e37f227558e70456b06715e555342b2fcf7969feace3f6530752c",
     "lastmod": "2026-10-23",
     "sections": [
       "lectures"
     ],
-    "cards": 220
+    "cards": 222
   },
   "papers/index.html": {
     "sha256": "7ec34cf151c3937cad03ea2b8a3483c138706948ac164eade0d654fcfc7b153c",
