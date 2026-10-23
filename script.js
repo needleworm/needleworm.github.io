@@ -209,6 +209,7 @@ function setupLectureFilters() {
     nav.dataset.filtersReady = 'true';
     const cards = Array.from(list.querySelectorAll('.singleLectureContainer'));
     const buttons = Array.from(nav.querySelectorAll('.lecture-filter'));
+    const menuLinks = Array.from(document.querySelectorAll('#nav-links a[data-lecture-category]'));
     const apply = (category, scroll = false) => {
         let count = 0;
         cards.forEach(card => {
@@ -217,6 +218,10 @@ function setupLectureFilters() {
         });
         buttons.forEach(button => {
             button.setAttribute('aria-pressed', String(button.dataset.category === category));
+        });
+        menuLinks.forEach(link => {
+            if (link.dataset.lectureCategory === category) link.setAttribute('aria-current', 'true');
+            else link.removeAttribute('aria-current');
         });
         results.textContent = `${category} ${count}건 · 최신 강의순`;
         if (scroll) results.scrollIntoView({ block: 'start', behavior: 'instant' });
@@ -228,6 +233,17 @@ function setupLectureFilters() {
         results.style.setProperty('--lecture-anchor-offset', offset);
     };
     buttons.forEach(button => button.addEventListener('click', () => apply(button.dataset.category, true)));
+    menuLinks.forEach(link => link.addEventListener('click', event => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        apply(link.dataset.lectureCategory, true);
+    }));
+    window.addEventListener('hashchange', () => {
+        const category = buttons.find(button => button.dataset.categoryId === window.location.hash.slice(1));
+        if (category || ['', '#lecture-list'].includes(window.location.hash)) {
+            apply(category?.dataset.category || '전체', true);
+        }
+    });
     window.addEventListener('resize', updateOffset);
     window.addEventListener('pageshow', updateOffset);
     updateOffset();

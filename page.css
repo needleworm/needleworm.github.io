@@ -6,7 +6,7 @@ body.content-page { padding-top: var(--nav-height); }
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #3498db; outline-offset: 4px; }
 .menu-toggle { background: transparent; border: 0; color: var(--primary-color); cursor: pointer; }
 .nav-item:focus-within .dropdown-menu, .nav-item:hover .dropdown-menu { display: flex; }
-.navbar a[aria-current="page"] { color: var(--secondary-color); }
+.navbar a[aria-current="page"], .navbar a[aria-current="true"] { color: var(--secondary-color); }
 .navbar .btn-contact[aria-current="page"] { color: #fff; }
 @media (min-width: 769px) and (max-width: 1100px) {
     .static-site .navbar { padding-left: 1rem; padding-right: 1rem; }

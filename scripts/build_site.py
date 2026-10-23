@@ -208,7 +208,14 @@ def navigation(page, pages):
         css = 'btn-contact' if group == 'contact' else 'nav-link' + (' active' if page['group'] == group else '')
         aria = ' aria-current="page"' if page['key'] == first['key'] else ''
         link = f'<a href="{path(first)}" class="{css}"{aria}>{escape(label)}</a>'
-        if len(keys) > 1:
+        if group == 'lectures':
+            categories = [('lecture-list', '전체')] + [('lectures-' + slug, name) for slug, name in LECTURE_CATEGORIES]
+            children = ''.join(
+                f'<li><a href="{path(first)}#{target}" data-lecture-category="{name}"'
+                + (' aria-current="true"' if page['key'] == 'lectures' and name == '전체' else '')
+                + f'>{name}</a></li>' for target, name in categories)
+            items.append(f'<li class="nav-item">{link}<ul class="dropdown-menu" aria-label="강의 분류">{children}</ul></li>')
+        elif len(keys) > 1:
             children = ''.join(f'<li><a href="{path(pages[k])}"' + (' aria-current="page"' if page['key'] == k else '') + f'>{escape(pages[k]["label"])}</a></li>' for k in keys)
             items.append(f'<li class="nav-item">{link}<ul class="dropdown-menu">{children}</ul></li>')
         else:
