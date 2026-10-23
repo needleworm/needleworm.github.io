@@ -34,7 +34,7 @@ function classList() {
     };
 }
 
-function fixture({ mobile = true, nextLink = true, mobileAlternate = false } = {}) {
+function fixture({ mobile = true, nextLink = true, mobileAlternate = false, continuous = false } = {}) {
     const assigned = [];
     let now = 1000;
     const hint = { textContent: '' };
@@ -73,7 +73,9 @@ function fixture({ mobile = true, nextLink = true, mobileAlternate = false } = {
         getSelection: () => ({ toString: () => selection }),
         location: { assign: url => assigned.push(url) },
     });
-    const context = vm.createContext({ document, window, URL, performance: { now: () => now } });
+    const context = vm.createContext({ document, window, URL, performance: { now: () => now },
+        ...(continuous ? { setupMobileContinuousScroll: () => ({ isEnabled: () => true, hasAppended: () => true, refresh() {} }) } : {}),
+    });
     vm.runInContext(source, context, { filename: 'script.js' });
     vm.runInContext('setupMobilePageNavigation();', context);
     const touch = (x = 100, y = 500, identifier = 1) => ({ clientX: x, clientY: y, identifier });
@@ -108,6 +110,14 @@ function test(name, run) {
     console.log(`PASS ${name}`);
 }
 function noNavigation(f) { assert.deepEqual(f.assigned, []); }
+
+test('continuous mobile scrolling never invokes the old swipe navigation', () => {
+    const f = fixture({ continuous: true }); f.swipe(); noNavigation(f);
+});
+
+test('a continuous document remains in place after resizing to desktop', () => {
+    const f = fixture({ mobile: false, continuous: true }); f.wheel(1000); noNavigation(f);
+});
 
 test('a new upward gesture at the bottom navigates once', () => {
     const f = fixture();

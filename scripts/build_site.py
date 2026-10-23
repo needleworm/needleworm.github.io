@@ -297,6 +297,9 @@ def build(check=False):
     views = source_views(sources)
     view_counts = {key: len(Blocks(source).cards) for key, source in views.items()}
     layout = (ROOT / 'content/layout.html').read_text(encoding='utf8')
+    asset_versions = {key: sha256((ROOT / name).read_text(encoding='utf8').encode('utf8')).hexdigest()[:12] for key, name in {
+        'PAGE_CSS_VERSION': 'page.css', 'SCROLL_VERSION': 'continuous-scroll.js', 'SCRIPT_VERSION': 'script.js'
+    }.items()}
     manifest_path = ROOT / 'content/build-manifest.json'
     previous = json.loads(manifest_path.read_text(encoding='utf8')) if manifest_path.exists() else {}
     manifest, outputs = {}, {}
@@ -328,6 +331,7 @@ def build(check=False):
             schemas.append({'@type':'BreadcrumbList','itemListElement':crumbs})
         libraries = '<script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>' if page['key']=='projects' else '<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>' if page['key']=='contact' else ''
         values = {
+            **asset_versions,
             'TITLE': escape(page['title']),
             'DESCRIPTION': escape(page['description'], quote=True),
             'URL': url,

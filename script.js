@@ -73,6 +73,7 @@ function setupMobilePageNavigation() {
     const description = panel.querySelector('.mobile-next-description');
     const defaultRoute = { href: link.href, label: label?.textContent, heading: description?.textContent };
     const mobile = window.matchMedia('(max-width: 768px)');
+    let stream = null;
     const interactive = 'a, button, input, textarea, select, iframe, [contenteditable]:not([contenteditable="false"])';
     let gesture = null;
     let navigating = false;
@@ -103,16 +104,18 @@ function setupMobilePageNavigation() {
     };
     const updateHint = () => {
         resetAll();
+        if (stream?.hasAppended()) { stream.refresh(); return; }
         const alternate = mobile.matches && link.dataset.mobileHref;
         link.href = alternate ? link.dataset.mobileHref : defaultRoute.href;
         if (label) label.textContent = alternate ? link.dataset.mobileLabel : defaultRoute.label;
         if (description) description.textContent = alternate ? link.dataset.mobileHeading : defaultRoute.heading;
         hint.textContent = mobile.matches ? '끝까지 내려온 뒤 한 번 더 위로 밀면 이동합니다.' : '끝까지 내려온 뒤 한 번 더 아래로 스크롤하면 이동합니다.';
+        stream?.refresh();
     };
     document.addEventListener('touchstart', event => {
         reset();
         const control = event.target.closest(interactive);
-        if (!mobile.matches || navigating || event.touches.length !== 1 || !atBottom() || blocked()
+        if (stream?.isEnabled() || !mobile.matches || navigating || event.touches.length !== 1 || !atBottom() || blocked()
             || (control && control !== link)) return;
         const touch = event.touches[0];
         gesture = { id: touch.identifier, x: touch.clientX, y: touch.clientY };
@@ -142,7 +145,7 @@ function setupMobilePageNavigation() {
         lastWheelAt = now;
         if (newGesture) { wheelFromBottom = atBottom(); wheelDistance = 0; }
         const control = event.target.closest(interactive);
-        if (mobile.matches || navigating || event.defaultPrevented || event.ctrlKey || event.shiftKey
+        if (stream?.isEnabled() || mobile.matches || navigating || event.defaultPrevented || event.ctrlKey || event.shiftKey
             || event.deltaY <= 0 || Math.abs(event.deltaX) >= Math.abs(event.deltaY)
             || blocked() || (control && control !== link) || !atBottom()) {
             wheelFromBottom = false;
@@ -164,6 +167,38 @@ function setupMobilePageNavigation() {
     window.addEventListener('resize', resetAll);
     mobile.addEventListener('change', updateHint);
     updateHint();
+    if (typeof setupMobileContinuousScroll === 'function') {
+        stream = setupMobileContinuousScroll({ link, panel, mobile, enhance: enhanceStreamSection });
+    }
+}
+
+function loadStreamLibrary(src) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.append(script);
+    });
+}
+
+function enhanceStreamSection(section) {
+    if (section.querySelector('#lecture-list')) setupLectureFilters();
+    setupCitationButtons(section);
+    if (section.querySelector('#contact-form')) {
+        setupContactForm();
+        setupCustomSelect();
+        if (typeof emailjs === 'undefined') {
+            loadStreamLibrary('https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js')
+                .then(() => emailjs.init(EMAILJS_PUBLIC_KEY))
+                .catch(() => console.warn('Contact library could not be loaded.'));
+        }
+    }
+    if (section.querySelector('#languageChart')) {
+        const ready = typeof Chart === 'undefined'
+            ? loadStreamLibrary('https://cdn.jsdelivr.net/npm/chart.js') : Promise.resolve();
+        ready.then(preloadCodesData).catch(() => console.warn('Project chart could not be loaded.'));
+    }
 }
 
 function setupLectureFilters() {
@@ -200,8 +235,8 @@ function setupLectureFilters() {
     updateOffset();
 }
 
-function setupCitationButtons() {
-    document.querySelectorAll('.citation[data-citation]').forEach(item => {
+function setupCitationButtons(root = document) {
+    root.querySelectorAll('.citation[data-citation]').forEach(item => {
         item.setAttribute('role', 'button');
         item.setAttribute('tabindex', '0');
         item.setAttribute('aria-label', '인용 정보 복사');

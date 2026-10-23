@@ -18,3 +18,7 @@ jobs:
         run: python scripts/build_site.py --check
       - name: Verify content, routes, links, and metadata
         run: python scripts/check_site.py
+      - name: Verify desktop navigation and mobile continuous scrolling
+        run: |
+          node scripts/check_mobile_navigation.cjs
+          node scripts/check_continuous_scroll.cjs

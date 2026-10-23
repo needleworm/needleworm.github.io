@@ -44,6 +44,26 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .mobile-next-description, .mobile-next-hint { color: var(--text-muted); font-size: .8rem; }
 .mobile-next-hint { margin: .85rem 0 0; }
 .mobile-next-page.is-ready .mobile-next-link { border-color: var(--secondary-color); }
+/* Mobile reads on through the next static page without a page turn or URL change. */
+body.continuous-scroll { overflow-x: clip !important; overflow-y: visible; }
+.stream-page { margin-top: 3rem; padding-top: 3rem; border-top: 1px solid #e4e9ed; }
+.stream-page .stream-permalink { color: inherit; text-decoration: none; }
+.stream-page .stream-permalink:hover { color: var(--secondary-color); }
+.stream-page .tab-content-item:not(#tab-codes):not(#tab-websites) .content-section > .row:first-child:has(h2.section-heading) { display: none; }
+.continuous-scroll .home-directory { display: none; }
+.continuous-scroll .home-books-mobile { display: block; padding-bottom: 2rem; }
+.home-books-mobile + .stream-page { margin-top: 0; padding-top: 2.5rem; border-top: 0; }
+.stream-page #contact { padding: 0; }
+.stream-page[data-page="contact"] :is(#div-institution, #div-phone, #div-email) { display: block; opacity: 1; visibility: visible; max-height: none; height: auto; transform: none; margin-bottom: 1.4rem; }
+.continuous-scroll.stream-pending .site-footer { display: none; }
+.mobile-next-page[hidden], .stream-retry[hidden] { display: none; }
+.mobile-next-page.is-stream { padding: 0; min-height: 1px; }
+.is-stream:not(.is-stream-error) .mobile-next-link { display: none; }
+.is-stream .mobile-next-hint { margin: 0; }
+.is-stream-loading .mobile-next-hint { padding: 1.25rem; }
+.mobile-next-page.is-stream-error { padding: 1.75rem 1.5rem; }
+.is-stream-error .mobile-next-hint { margin-top: 1rem; }
+.stream-retry { margin-top: 1rem; padding: .7rem 1.2rem; background: #fff; border: 1px solid #cbd4dc; border-radius: 10px; color: var(--primary-color); font: inherit; cursor: pointer; }
 @media (max-width: 768px) {
     .home-page .home-directory { display: none; }
     .home-books-mobile { display: block; }
