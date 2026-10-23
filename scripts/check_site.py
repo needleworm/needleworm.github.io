@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check generated content preservation, real routes, metadata and local assets."""
 from collections import Counter
+from datetime import date
 from html import unescape
 from html.parser import HTMLParser
 import json
@@ -8,6 +9,7 @@ from pathlib import Path
 import re
 import sys
 from urllib.parse import unquote, urlsplit
+import xml.etree.ElementTree as ET
 from build_site import ROOT, Blocks, VOID, GROUPS, LECTURE_CATEGORIES, latest_date, source_views
 
 
@@ -141,6 +143,63 @@ def check_lecture_sections(source, expected_source, require):
                     f'Lectures: {name} navigation label/count mismatch')
 
 
+def check_sitemap(config, require):
+    """Keep the index in sync with canonical pages, without indexing UI states."""
+    ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+    try:
+        sitemap = ET.parse(ROOT/'sitemap.xml').getroot()
+        projects = ET.parse(ROOT/'content/project-sitemap.xml').getroot()
+        manifest = json.loads((ROOT/'content/build-manifest.json').read_text(encoding='utf8'))
+    except (OSError, ET.ParseError, json.JSONDecodeError) as error:
+        require(False, f'Sitemap: cannot read index or source metadata: {error}')
+        return {}
+
+    require(sitemap.tag == '{'+ns['sm']+'}urlset', 'Sitemap: invalid urlset namespace')
+    page_urls = {
+        config['url'] + ('/'+p['slug']+'/' if p['slug'] else '/'):
+        (p['slug']+'/index.html' if p['slug'] else 'index.html')
+        for p in config['pages']
+    }
+    project_urls = {node.text for node in projects.findall('sm:url/sm:loc', ns)} - set(page_urls)
+    expected_urls = set(page_urls) | project_urls
+    urls = []
+    for entry in sitemap:
+        require(entry.tag == '{'+ns['sm']+'}url', 'Sitemap: unexpected entry element')
+        locations = entry.findall('sm:loc', ns)
+        require(len(locations) == 1 and bool(locations[0].text), 'Sitemap: each entry needs one nonempty loc')
+        if len(locations) != 1 or not locations[0].text:
+            continue
+        url = locations[0].text
+        urls.append(url)
+        parsed = urlsplit(url)
+        require(parsed.scheme == 'https' and parsed.netloc == urlsplit(config['url']).netloc,
+                f'Sitemap: URL must use the canonical HTTPS host: {url}')
+        require(not parsed.query and not parsed.fragment, f'Sitemap: query or fragment view must not be indexed: {url}')
+        if url in page_urls:
+            dates = entry.findall('sm:lastmod', ns)
+            expected_date = manifest.get(page_urls[url], {}).get('lastmod')
+            require(len(dates) == 1 and bool(expected_date) and dates[0].text == expected_date,
+                    f'Sitemap: lastmod does not match the generated page: {url}')
+            if len(dates) == 1:
+                try:
+                    modified = date.fromisoformat(dates[0].text or '')
+                    require(modified <= date.today(), f'Sitemap: lastmod is in the future: {url}')
+                except ValueError:
+                    require(False, f'Sitemap: invalid lastmod date: {url}')
+
+    require(len(urls) == len(set(urls)), 'Sitemap: duplicate URLs')
+    require(set(urls) == expected_urls,
+            f'Sitemap: URL mismatch; missing={sorted(expected_urls-set(urls))}, extra={sorted(set(urls)-expected_urls)}')
+    for redirect in config.get('redirects', []):
+        require(config['url']+'/'+redirect['from']+'/' not in urls,
+                f'Sitemap: redirect page must not be indexed: {redirect["from"]}')
+    robots = (ROOT/'robots.txt').read_text(encoding='utf8')
+    robots_maps = re.findall(r'^\s*Sitemap:\s*(\S+)\s*$', robots, re.I | re.M)
+    require(robots_maps == [config['url']+'/sitemap.xml'], 'robots.txt: sitemap declaration mismatch')
+    return {'urls': len(urls), 'canonical_pages': len(page_urls), 'project_pages': len(project_urls),
+            'robots_sitemap': robots_maps}
+
+
 def main():
     config = json.loads((ROOT/'content/site.json').read_text(encoding='utf8'))
     runtime = (ROOT/'script.js').read_text(encoding='utf8')
@@ -175,6 +234,9 @@ def main():
         require(not doc.unclosed_layout,f'{page["key"]}: layout div is not closed before {doc.unclosed_layout}')
         expected_url = config['url'] + ('/'+page['slug']+'/' if page['slug'] else '/')
         require([a.get('href') for t,a in doc.tags if t=='link' and a.get('rel')=='canonical']==[expected_url],f'{page["key"]}: canonical mismatch')
+        require(not any(t=='meta' and a.get('name', '').lower()=='robots' and
+                        re.search(r'\bnoindex\b', a.get('content', ''), re.I) for t,a in doc.tags),
+                f'{page["key"]}: canonical content page must not be noindex')
         require(any(t=='meta' and a.get('name')=='description' and a.get('content')==page['description'] for t,a in doc.tags),f'{page["key"]}: description missing')
         schema = re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)
         require(len(schema)==1 and bool(json.loads(schema[0])['@graph']),f'{page["key"]}: invalid structured data')
@@ -228,7 +290,8 @@ def main():
         for t,a in doc.tags:
             if t=='a' and a.get('href','').startswith('/'):
                 require((ROOT/a['href'].strip('/')/'index.html').is_file(), f'{redirect["from"]}: missing fallback link {a["href"]}')
-    print(json.dumps({'pages':report,'redirects':config.get('redirects', []),'failures':failures},ensure_ascii=False,indent=2))
+    sitemap_report = check_sitemap(config, require)
+    print(json.dumps({'pages':report,'redirects':config.get('redirects', []),'sitemap':sitemap_report,'failures':failures},ensure_ascii=False,indent=2))
     return bool(failures)
 
 

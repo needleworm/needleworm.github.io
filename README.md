@@ -9,6 +9,7 @@
 - `python scripts/build_site.py --check`로 생성 결과가 최신인지 확인하고, `python scripts/check_site.py`로 원문·카드 수·내부 경로·검색 메타데이터 보존 여부를 검사합니다. Python 표준 라이브러리만 사용합니다.
 - GitHub Pages에는 생성된 파일을 함께 배포합니다. 별도 애플리케이션 서버는 필요하지 않습니다. GitHub Actions는 푸시와 PR에서 생성 결과와 콘텐츠를 검사합니다.
 - 사이트맵은 기존 도서 예제 사이트 주소를 보존하면서 각 페이지 주소를 추가합니다. 실제 HTML 내용이 바뀐 페이지의 수정일만 갱신합니다.
+- `scripts/check_site.py`는 사이트맵의 페이지 누락·중복, 대표 주소와 호스트, 수정일, `robots.txt` 연결도 검사합니다. 강의 분류의 해시 주소와 모바일 연속 스크롤 상태, 이전 주소의 리다이렉트는 별도 페이지로 등록하지 않습니다. 별도 저장소에서 제공하는 예제 사이트 주소는 `content/project-sitemap.xml`에서 관리합니다.
 - 홈 `/`와 `/books/`, `/media/`, `/news/`, `/courses/online/`, `/courses/offline/`, `/lectures/`, `/papers/`, `/patents/`, `/projects/`, `/activities/`, `/memberships/`, `/collections/`, `/contact/`는 모두 실제 `index.html` 파일이 있는 주소입니다. 이전 `/courses/` 주소도 물리적인 `index.html`을 유지하며 Online으로 연결합니다.
 - 모든 카드와 본문은 처음부터 펼쳐집니다. Lectures의 전체 목록과 기관 필터·건수도 정적 HTML에 포함됩니다. JavaScript는 기관 필터, 모바일 메뉴, 문의 폼, GitHub 통계 등의 상호작용만 처리합니다.
 - 화면 디자인은 기존 `style.css`를 공통으로 사용합니다. 페이지 제목은 `group-header`·`group-title`·`group-desc`, 본문은 `section-group`을 유지하며, `page.css`에는 정적 페이지 전환에 필요한 보완만 둡니다. 홈 히어로와 기존 카드 크기·색상·간격을 별도로 덮어쓰지 않습니다.
