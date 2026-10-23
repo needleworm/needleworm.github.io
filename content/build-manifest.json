@@ -41,7 +41,7 @@
     "cards": 29
   },
   "courses/offline/index.html": {
-    "sha256": "8669711a2ffde588bc909805b26fdfe51f94572288452eedc5bffcc180f225c1",
+    "sha256": "94419fab502d68338959bcd193d4ffd9cd52309a9e0593742ca8c2738b63e4ee",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-offline"
@@ -49,7 +49,7 @@
     "cards": 14
   },
   "lectures/index.html": {
-    "sha256": "749813a29b57f01ca056e5d7ac94146367800ef65756a5d6330e4825712d21e6",
+    "sha256": "a015cc21831c9499fb1f50326fca19033f550b531f6ac289063df6da19a85508",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
