@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "sha256": "69f0928f948c3f56d8c2214899d04e92b06cc676731ea4fa1c58a51116d5fb0e",
+    "sha256": "a4e344c4dec4cedc8fd4435350b5fad0323b009c5a121cba55934bb35a1c2c58",
     "lastmod": "2026-10-23",
     "sections": [
       "about",
@@ -49,12 +49,12 @@
     "cards": 14
   },
   "lectures/index.html": {
-    "sha256": "fb577ac0a2cbcc29bb1074e03aae52617c3f89f4c57b6f57e693e36d7a739b47",
+    "sha256": "cf5a630d60927152f9eb250581cd1b693e7e95e6382a3708f45470718aa3d4a9",
     "lastmod": "2026-10-23",
     "sections": [
       "lectures"
     ],
-    "cards": 212
+    "cards": 218
   },
   "papers/index.html": {
     "sha256": "7ec34cf151c3937cad03ea2b8a3483c138706948ac164eade0d654fcfc7b153c",
