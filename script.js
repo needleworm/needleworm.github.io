@@ -204,35 +204,35 @@ function enhanceStreamSection(section) {
 function setupLectureFilters() {
     const list = document.getElementById('lecture-list');
     const nav = document.getElementById('lecture-category-nav');
-    if (!list || !nav) return;
-    const sections = Array.from(list.querySelectorAll('.lecture-category'));
-    const links = Array.from(nav.querySelectorAll('.lecture-filter'));
-    let scheduled = false;
-    const updateCurrent = () => {
-        scheduled = false;
-        const marker = nav.getBoundingClientRect().bottom + 36;
-        let activeId = list.id;
-        sections.forEach(section => {
-            if (section.getBoundingClientRect().top <= marker) activeId = section.id;
+    const results = document.getElementById('lecture-results');
+    if (!list || !nav || !results || nav.dataset.filtersReady) return;
+    nav.dataset.filtersReady = 'true';
+    const cards = Array.from(list.querySelectorAll('.singleLectureContainer'));
+    const buttons = Array.from(nav.querySelectorAll('.lecture-filter'));
+    const apply = (category, scroll = false) => {
+        let count = 0;
+        cards.forEach(card => {
+            card.hidden = category !== '전체' && card.dataset.category !== category;
+            if (!card.hidden) count++;
         });
-        links.forEach(link => {
-            if (link.getAttribute('href') === '#' + activeId) link.setAttribute('aria-current', 'location');
-            else link.removeAttribute('aria-current');
+        buttons.forEach(button => {
+            button.setAttribute('aria-pressed', String(button.dataset.category === category));
         });
+        results.textContent = `${category} ${count}건 · 최신 강의순`;
+        if (scroll) results.scrollIntoView({ block: 'start', behavior: 'instant' });
     };
     const updateOffset = () => {
         const headerHeight = document.querySelector('.navbar')?.getBoundingClientRect().height || 70;
-        list.style.setProperty('--lecture-anchor-offset', `${headerHeight + nav.getBoundingClientRect().height + 40}px`);
-        updateCurrent();
+        const offset = `${headerHeight + nav.getBoundingClientRect().height + 28}px`;
+        list.style.setProperty('--lecture-anchor-offset', offset);
+        results.style.setProperty('--lecture-anchor-offset', offset);
     };
-    window.addEventListener('scroll', () => {
-        if (scheduled) return;
-        scheduled = true;
-        window.requestAnimationFrame(updateCurrent);
-    }, { passive: true });
+    buttons.forEach(button => button.addEventListener('click', () => apply(button.dataset.category, true)));
     window.addEventListener('resize', updateOffset);
     window.addEventListener('pageshow', updateOffset);
     updateOffset();
+    const legacyCategory = buttons.find(button => button.dataset.categoryId === window.location.hash.slice(1));
+    apply(legacyCategory?.dataset.category || '전체');
 }
 
 function setupCitationButtons(root = document) {

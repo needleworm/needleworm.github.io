@@ -78,7 +78,7 @@ class ElementSpans(HTMLParser):
 
 
 def check_lecture_sections(source, expected_source, require):
-    """All categories remain visible, with newest records first in each group."""
+    """All records start in one chronological grid with institution filters."""
     elements = ElementSpans(source).elements
     def fragment(element):
         return source[element['start']:element['end']]
@@ -101,63 +101,43 @@ def check_lecture_sections(source, expected_source, require):
     containers = [e for e in elements if e['attrs'].get('id') == 'lecture-list']
     require(len(containers) == 1, 'Lectures: expected one complete lecture-list wrapper')
     if containers:
-        require(has_class(containers[0], 'lecture-sections'), 'Lectures: lecture-list must use lecture-sections')
-        require(not has_class(containers[0], 'lecturesContainer'), 'Lectures: category wrapper must not be a card grid')
-        require(visible(containers[0]['attrs']), 'Lectures: complete category list is hidden')
+        require(has_class(containers[0], 'lecturesContainer'), 'Lectures: lecture-list must be one card grid')
+        require(visible(containers[0]['attrs']), 'Lectures: complete list is hidden')
+    require(not any(has_class(e, 'lecture-category') or has_class(e, 'lecture-category-heading') for e in elements),
+            'Lectures: all view must not have institution sections or headings')
 
-    sections = [e for e in elements if has_class(e, 'lecture-category')]
-    require([e['attrs'].get('id') for e in sections] == ['lectures-' + key for key, _ in LECTURE_CATEGORIES],
-            'Lectures: category sections are missing, duplicated, or out of order')
-    require(all(e['tag'] == 'section' for e in sections), 'Lectures: each category must be a section')
+    listing = fragment(containers[0]) if containers else ''
+    cards = [listing[a:b] for a, b in sorted(Blocks(listing).cards)]
     actual_counts = Counter()
-    for element, (key, name) in zip(sections, LECTURE_CATEGORIES):
-        attrs = element['attrs']
-        require(attrs.get('data-category') == name, f'Lectures: {key} section category mismatch')
-        require(visible(attrs), f'Lectures: {name} section is hidden')
-        if containers:
-            require(containers[0]['start'] < element['start'] < element['end'] < containers[0]['end'],
-                    f'Lectures: {name} section is outside lecture-list')
-        html = fragment(element)
-        section_doc = Document(html)
-        require(sum(tag == 'h2' for tag, _ in section_doc.tags) == 1, f'Lectures: {name} needs one h2')
-        heading = re.search(r'<h2\b[^>]*>(.*?)</h2\s*>', html, re.S)
-        require(bool(heading) and bool(re.fullmatch(re.escape(name) + r'\s*' + str(expected_counts[name]) + r'\s*건', text(heading[1]))),
-                f'Lectures: {name} heading/count mismatch')
-        grids = [a for tag, a in section_doc.tags if 'lecturesContainer' in a.get('class', '').split()]
-        require(len(grids) == 1, f'Lectures: {name} needs one card grid')
-        require(all(visible(a) for a in grids), f'Lectures: {name} card grid is hidden')
-        cards = [html[a:b] for a, b in sorted(Blocks(html).cards)]
-        actual_counts[name] += len(cards)
-        require(len(cards) == expected_counts[name], f'Lectures: {name} card count mismatch')
-        dates = []
-        for card in cards:
-            card_doc = Document(card)
-            require(card_doc.tags[0][1].get('data-category') == name, f'Lectures: card in wrong {name} section')
-            require(all(visible(a) for _, a in card_doc.tags), f'Lectures: hidden card/content in {name}')
-            field = re.search(r'class="firstCommitDate"[^>]*>(.*?)</', card, re.S)
-            require(bool(field), f'Lectures: missing date in {name}')
-            if field:
-                dates.append(latest_date(text(field[1])))
-        require(dates == sorted(dates, reverse=True), f'Lectures: {name} is not sorted by latest date')
+    dates = []
+    for card in cards:
+        card_doc = Document(card)
+        name = card_doc.tags[0][1].get('data-category')
+        actual_counts[name] += 1
+        require(all(visible(a) for _, a in card_doc.tags), f'Lectures: hidden card/content in {name}')
+        field = re.search(r'class="firstCommitDate"[^>]*>(.*?)</', card, re.S)
+        require(bool(field), f'Lectures: missing date in {name}')
+        if field:
+            dates.append(latest_date(text(field[1])))
+    require(dates == sorted(dates, reverse=True), 'Lectures: all view is not globally sorted by latest date')
     require(actual_counts == expected_counts, 'Lectures: visible category counts do not match source records')
     require(sum(actual_counts.values()) == len(Blocks(source).cards) == expected_total,
-            'Lectures: cards are outside categories, duplicated, or missing')
+            'Lectures: cards are outside the grid, duplicated, or missing')
 
     navs = [e for e in elements if e['attrs'].get('id') == 'lecture-category-nav']
     require(len(navs) == 1, 'Lectures: expected one static category navigation')
     if navs:
         nav = navs[0]
         require(visible(nav['attrs']), 'Lectures: category navigation is hidden')
-        links = [e for e in elements if e['tag'] == 'a' and nav['start'] < e['start'] < e['end'] < nav['end']]
-        expected_links = [('#lecture-list', '전체', expected_total)] + [
-            ('#lectures-' + key, name, expected_counts[name]) for key, name in LECTURE_CATEGORIES]
-        require([e['attrs'].get('href') for e in links] == [href for href, _, _ in expected_links],
-                'Lectures: category anchor order/targets mismatch')
-        for link, (href, name, count) in zip(links, expected_links):
-            require(link['attrs'].get('data-category') == name, f'Lectures: {name} navigation category mismatch')
-            require(has_class(link, 'lecture-filter'), f'Lectures: {name} navigation class missing')
-            require('aria-pressed' not in link['attrs'], f'Lectures: {name} navigation must be an anchor, not a filter toggle')
-            require(bool(re.fullmatch(re.escape(name) + r'\s*' + str(count), text(fragment(link)))),
+        buttons = [e for e in elements if e['tag'] == 'button' and nav['start'] < e['start'] < e['end'] < nav['end']]
+        expected_buttons = [('전체', expected_total)] + [(name, expected_counts[name]) for _, name in LECTURE_CATEGORIES]
+        require([e['attrs'].get('data-category') for e in buttons] == [name for name, _ in expected_buttons],
+                'Lectures: category filter order/targets mismatch')
+        for button, (name, count) in zip(buttons, expected_buttons):
+            require(has_class(button, 'lecture-filter'), f'Lectures: {name} navigation class missing')
+            require(button['attrs'].get('aria-controls') == 'lecture-list', f'Lectures: {name} filter target mismatch')
+            require(button['attrs'].get('aria-pressed') == str(name == '전체').lower(), f'Lectures: {name} initial filter state mismatch')
+            require(bool(re.fullmatch(re.escape(name) + r'\s*' + str(count), text(fragment(button)))),
                     f'Lectures: {name} navigation label/count mismatch')
 
 

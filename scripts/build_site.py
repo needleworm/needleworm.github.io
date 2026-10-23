@@ -146,7 +146,7 @@ def card_latest_date(card):
 
 
 def lecture_sections(source):
-    """Render every institution group in one continuous, fully built document."""
+    """Render one chronological list, with optional institution filters."""
     spans = sorted(Blocks(source).cards)
     opening = re.search(r'<div\b[^>]*\bid=["\']lecture-list["\'][^>]*>', source)
     if not spans or not opening or spans[0][0] < opening.end():
@@ -161,19 +161,13 @@ def lecture_sections(source):
         if not category or category[1] not in groups:
             raise ValueError(f'Unknown institution category for lecture {card_id(card, "lectures")}')
         groups[category[1]].append(card)
-    links = [f'<a class="lecture-filter" href="#lecture-list" data-category="전체">전체<span class="lecture-filter-count">{len(spans)}</span></a>']
-    sections = []
+    buttons = [f'<button type="button" class="lecture-filter" aria-controls="lecture-list" aria-pressed="true" data-category="전체">전체<span class="lecture-filter-count">{len(spans)}</span></button>']
     for slug, name in LECTURE_CATEGORIES:
-        cards = sorted(groups[name], key=card_latest_date, reverse=True)
-        target = 'lectures-' + slug
-        links.append(f'<a class="lecture-filter" href="#{target}" data-category="{name}">{name}<span class="lecture-filter-count">{len(cards)}</span></a>')
-        sections.append(
-            f'<section class="lecture-category" id="{target}" data-category="{name}" aria-labelledby="{target}-title">'
-            f'<header class="lecture-category-heading"><h2 id="{target}-title">{name}<span class="lecture-category-count">{len(cards)}건</span></h2></header>'
-            '<div class="lecturesContainer">\n' + '\n\n'.join(cards) + '\n</div></section>')
-    navigation = '<nav class="lecture-filters" id="lecture-category-nav" aria-label="강의 기관 바로가기">' + ''.join(links) + '</nav>'
-    result = f'<p class="lecture-results" id="lecture-results">전체 {len(spans)}건 · 기관별 목록이 아래로 이어집니다.</p>'
-    listing = '<div id="lecture-list" class="lecture-sections">\n' + '\n'.join(sections) + '\n</div>'
+        buttons.append(f'<button type="button" class="lecture-filter" aria-controls="lecture-list" aria-pressed="false" data-category="{name}" data-category-id="lectures-{slug}">{name}<span class="lecture-filter-count">{len(groups[name])}</span></button>')
+    cards = sorted((source[a:b] for a, b in spans), key=card_latest_date, reverse=True)
+    navigation = '<nav class="lecture-filters" id="lecture-category-nav" aria-label="강의 기관 분류">' + ''.join(buttons) + '</nav>'
+    result = f'<p class="lecture-results" id="lecture-results" role="status" aria-live="polite">전체 {len(spans)}건 · 최신 강의순</p>'
+    listing = '<div id="lecture-list" class="lecturesContainer">\n' + '\n\n'.join(cards) + '\n</div>'
     end = spans[-1][1] + closing.end()
     return source[:opening.start()] + navigation + '\n' + result + '\n' + listing + source[end:]
 
