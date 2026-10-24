@@ -13,6 +13,7 @@ function surface() {
     return {
         addEventListener(type, fn) { handlers.set(type, [...(handlers.get(type) || []), fn]); },
         emit(type, event = {}) { for (const fn of handlers.get(type) || []) fn(event); },
+        dispatchEvent(event) { for (const fn of handlers.get(event.type) || []) fn(event); return true; },
     };
 }
 function element() {
@@ -69,6 +70,7 @@ function fixture({ mobile = true, home = false } = {}) {
     let timerId = 0;
     const context = vm.createContext({
         window, document, URL, fetch, DOMParser, IntersectionObserver, AbortController,
+        CustomEvent: class { constructor(type, options = {}) { this.type = type; this.detail = options.detail; } },
         setTimeout(fn) { timers.set(++timerId, fn); return timerId; },
         clearTimeout(id) { timers.delete(id); },
         link, panel, mobile: media, enhance: section => enhanced.push(section),
@@ -108,6 +110,20 @@ test('repeated scroll events coalesce; append once without changing the address'
     assert.equal(f.link.href, 'https://example.test/news/');
     assert.equal(f.window.location.href, 'https://example.test/books/');
     assert.equal(f.requests.length, 1, 'do not download all remaining pages at once');
+});
+
+test('new sections notify navigation after controls have been enhanced', async () => {
+    const f = fixture();
+    const announced = [];
+    f.document.addEventListener('site:section-added', event => {
+        assert.ok(f.enhanced.includes(event.detail.section), 'enhance controls before announcing the section');
+        assert.ok(f.main.children.includes(event.detail.section), 'announce only attached content');
+        announced.push(event.detail.section);
+    });
+    await f.near();
+    await f.respond();
+    assert.equal(announced.length, 1);
+    assert.equal(announced[0].dataset.page, 'media');
 });
 test('home starts after its existing Books, then follows each page next link', async () => {
     const f = fixture({ home: true }); await f.near(); await f.respond();
