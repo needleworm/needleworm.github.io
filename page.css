@@ -57,8 +57,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .full-content .projectText, .full-content .codeBody { overflow-wrap: anywhere; }
 .full-content .projectText p, .full-content .abstract { max-height: none; }
 .full-content .show-more-btn, .full-content .paper-show-more-btn, .full-content .btn-load-more { display: none !important; }
+#tab-papers .paper-action-label { margin-left: .3rem; }
+#tab-papers .paper-action-icon { display: none; }
 .mobile-list-controls, .mobile-list-controls[hidden] { display: none; }
 @media (max-width: 768px) {
+    #tab-papers .gitIcons { flex-wrap: wrap; gap: .625rem; padding-left: 0; padding-right: 0; }
+    #tab-papers .gitIcons > a, #tab-papers .gitIcons > .citation { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; min-width: 24px; min-height: 44px; }
+    #tab-papers .paper-action-label { display: none; }
+    #tab-papers .gitIcons > a > i, #tab-papers .gitIcons > .citation > i { display: none; }
+    #tab-papers .paper-action-icon { display: block; width: 18px; height: 18px; flex: none; }
     .static-site.full-content .mobile-list-folded { display: none !important; }
     .mobile-list-controls:not([hidden]) { display: flex; flex-direction: column; align-items: center; gap: .65rem; margin: 1.5rem auto 2rem; }
     .mobile-list-status { margin: 0; color: var(--text-muted); font-size: .8rem; }
