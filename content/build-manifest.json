@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "sha256": "0f785278d4c7ea4f6177dcbc0264e0acfb49e3af0c8d60afa86556190eae23ee",
+    "sha256": "307eb67e04dd96d120b67ded6ab60ad3348facd7eaae36b56158e82f588cd309",
     "lastmod": "2026-10-24",
     "sections": [
       "about",
@@ -9,39 +9,39 @@
     "cards": 36
   },
   "books/index.html": {
-    "sha256": "9abce1fc0d6577b1024bd9b0152f3ec76da584fbbe801fad00f4ccb5e581b84e",
-    "lastmod": "2026-10-23",
+    "sha256": "775701637d0256d4d9e27fc610ddd9609d1cfa6664891802c4f7d3c4be3313b1",
+    "lastmod": "2026-10-24",
     "sections": [
       "books"
     ],
     "cards": 36
   },
   "media/index.html": {
-    "sha256": "5d45c2d14830c37dcf1bc97466ec8eab16626c89bcfe211f458018e346c57b34",
-    "lastmod": "2026-10-23",
+    "sha256": "d6da45842a593032391e5cd57546db93cc119b7e958b7dccf49e8c562f407b69",
+    "lastmod": "2026-10-24",
     "sections": [
       "media"
     ],
     "cards": 21
   },
   "news/index.html": {
-    "sha256": "a5827b4a29f7c1c1b4b3a4ead7f5934c051d1174b7d0e05adb3d51931d5ecc92",
-    "lastmod": "2026-10-23",
+    "sha256": "ab44745efec1de48d6fcf55e92aee6459bda9284b957856b08185eaa4f4f6209",
+    "lastmod": "2026-10-24",
     "sections": [
       "news"
     ],
     "cards": 52
   },
   "courses/online/index.html": {
-    "sha256": "bd011a233fe29b517738fb096fcdd085f1fe67aba90ecbd2eaaacefb499c4ec2",
-    "lastmod": "2026-10-23",
+    "sha256": "edfa9558a1ead19c11c167a6f5f750d03ffeefe23b607fb8963d8b89242bc461",
+    "lastmod": "2026-10-24",
     "sections": [
       "courses-online"
     ],
     "cards": 29
   },
   "courses/offline/index.html": {
-    "sha256": "94419fab502d68338959bcd193d4ffd9cd52309a9e0593742ca8c2738b63e4ee",
+    "sha256": "45213cd3d747d27e180e7482537d66de70562f6817205e72740c02abaeb86e02",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-offline"
@@ -49,32 +49,32 @@
     "cards": 14
   },
   "lectures/index.html": {
-    "sha256": "a015cc21831c9499fb1f50326fca19033f550b531f6ac289063df6da19a85508",
+    "sha256": "50d96a330598266f9dadb43e7858aabad2b7b7ee31f1d3e5161a4d8c95e91755",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
     ],
-    "cards": 230
+    "cards": 231
   },
   "papers/index.html": {
-    "sha256": "9f78562c3c5b76ccd41ec9950e1f8993b878ff0a9a1b2bfb961be81d64685b4d",
-    "lastmod": "2026-10-23",
+    "sha256": "f022a60b26bf28583ac610f09c7b8d8057f5016d7cbef1ff9c08b16a462bf0a9",
+    "lastmod": "2026-10-24",
     "sections": [
       "papers"
     ],
     "cards": 15
   },
   "patents/index.html": {
-    "sha256": "9f8ab19be4aab8e13ab3e1830f742805050ad1e0bf858b35399080f3ed707eea",
-    "lastmod": "2026-10-23",
+    "sha256": "2056d47263e6f14ff72e3b573c79d4c6f3406fafd0b20d90d547755b04d50755",
+    "lastmod": "2026-10-24",
     "sections": [
       "patents"
     ],
     "cards": 31
   },
   "projects/index.html": {
-    "sha256": "6a61556e2037255fdd53cbd0b61abddab001a90e34c404ec692466463fb7daf6",
-    "lastmod": "2026-10-23",
+    "sha256": "d41a6c46f45f4fd7230cd51485f17fb9c338293ea1f2490ee6037537f6fbb287",
+    "lastmod": "2026-10-24",
     "sections": [
       "codes",
       "websites"
@@ -82,32 +82,32 @@
     "cards": 34
   },
   "activities/index.html": {
-    "sha256": "d83c226920c60715b61094134a35e5cd3f69e7e60279a84a0e9a24b3810763f8",
-    "lastmod": "2026-10-23",
+    "sha256": "5f7c29d788f740b4fa50062556c9a7b9f25e4bdc65ae3eb63784189bb2668be8",
+    "lastmod": "2026-10-24",
     "sections": [
       "social"
     ],
     "cards": 2
   },
   "memberships/index.html": {
-    "sha256": "1c3c2cdac86df2e28413bb3e79ad65dae0d376fe063a9b49c95b9af1dd99dfc9",
-    "lastmod": "2026-10-23",
+    "sha256": "ca53380dd47ef9f72a5df7d1665358609db3332d26a2fe6df1650cb721f0beba",
+    "lastmod": "2026-10-24",
     "sections": [
       "membership"
     ],
     "cards": 9
   },
   "collections/index.html": {
-    "sha256": "ac99af2096b6564873367bbd620147a62e855dbe166bf41603e138d34eeddb63",
-    "lastmod": "2026-10-23",
+    "sha256": "2fcbd4564091a946c1d50d5a8fa399b22f6bed5da572f01b234f93d91d5b0c1f",
+    "lastmod": "2026-10-24",
     "sections": [
       "collections"
     ],
     "cards": 7
   },
   "contact/index.html": {
-    "sha256": "4b44b98e3c1e04e0595a389f2cb4404b4cec604f9a85589cf44daa2d7520da85",
-    "lastmod": "2026-10-23",
+    "sha256": "d05e71852e4b196aadef87086e1e38bda9ca07d5ea99cb463460c96bbb049d1e",
+    "lastmod": "2026-10-24",
     "sections": [
       "contact"
     ],

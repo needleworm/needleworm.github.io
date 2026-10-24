@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupPageMenu();
     setupMobilePageNavigation();
     setupLectureFilters();
+    setupNearbyImages();
     setupCitationButtons();
     setupContactForm();
     setupCustomSelect();
@@ -184,6 +185,7 @@ function loadStreamLibrary(src) {
 
 function enhanceStreamSection(section) {
     if (section.querySelector('#lecture-list')) setupLectureFilters();
+    setupNearbyImages(section);
     setupCitationButtons(section);
     if (section.querySelector('#contact-form')) {
         setupContactForm();
@@ -287,12 +289,41 @@ let languageChartInstance = null;
 
 // Shared fallback for missing or unavailable images, including rendered templates.
 const IMAGE_FALLBACK_SRC = new URL('/src/images/fallback.webp', document.baseURI).href;
+const sameSiteImageAttempts = new WeakSet();
+let nearbyImageObserver;
+
+function setupNearbyImages(root = document) {
+    if (!window.IntersectionObserver) return;
+    nearbyImageObserver ||= new IntersectionObserver(entries => {
+        entries.forEach(({ target: image, isIntersecting }) => {
+            if (!isIntersecting || !image.getClientRects().length) return;
+            // Start before a card enters view, including after category filtering.
+            image.loading = 'eager';
+            nearbyImageObserver.unobserve(image);
+        });
+    }, { rootMargin: '1200px 0px' });
+    root.querySelectorAll('img[loading="lazy"]').forEach(image => nearbyImageObserver.observe(image));
+}
+
+function sameSiteImageSource(image) {
+    try {
+        const source = new URL(image.currentSrc || image.src, document.baseURI);
+        if (source.origin !== 'https://cdn.jsdelivr.net') return null;
+        const match = source.pathname.match(/^\/gh\/needleworm\/needleworm\.github\.io@[^/]+(\/src\/images\/.+)$/);
+        return match ? new URL(match[1], document.baseURI).href : null;
+    } catch {
+        return null;
+    }
+}
 
 function useImageFallback(image) {
     if (!(image instanceof HTMLImageElement) || image.src === IMAGE_FALLBACK_SRC) return;
+    const sameSiteSource = !sameSiteImageAttempts.has(image) && sameSiteImageSource(image);
     image.removeAttribute('srcset');
     image.removeAttribute('sizes');
-    image.src = IMAGE_FALLBACK_SRC;
+    // A CDN failure should not hide a copy already available on this website.
+    if (sameSiteSource) sameSiteImageAttempts.add(image);
+    image.src = sameSiteSource || IMAGE_FALLBACK_SRC;
 }
 
 document.addEventListener('error', event => useImageFallback(event.target), true);

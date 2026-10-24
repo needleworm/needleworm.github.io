@@ -15,6 +15,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 VOID = set('area base br col embed hr img input link meta param source track wbr'.split())
 CARD_CLASSES = {'singleBookContainer', 'singleLectureContainer', 'singleProjectContainer'}
+NESTED_HTML_ENTITY = re.compile(r'&amp;(?:amp|quot|apos|lt|gt|nbsp);|&amp;#(?:[0-9]+|[xX][0-9A-Fa-f]+);')
 LECTURE_CATEGORIES = [
     ('companies', '기업'), ('public', '공공기관'), ('education', '교육기관'),
     ('research', '연구기관'), ('conferences', '컨퍼런스'),
@@ -201,6 +202,15 @@ def path(page):
     return f"/{page['slug']}/" if page['slug'] else '/'
 
 
+def validate_source_entities(sources):
+    """Catch accidentally re-escaped content before publishing visible entity names."""
+    for key, source in sources.items():
+        match = NESTED_HTML_ENTITY.search(source)
+        if match:
+            line = source.count('\n', 0, match.start()) + 1
+            raise ValueError(f'Nested HTML entity in content/sections/{key}.html:{line}: {match[0]}')
+
+
 def navigation(page, pages):
     items = []
     for group, label, keys in GROUPS:
@@ -291,6 +301,7 @@ def build(check=False):
     if any(entry['to'] not in slugs for entry in redirects):
         raise ValueError('Redirect destinations must be real content pages')
     sources = {p.stem: p.read_text(encoding='utf8') for p in (ROOT / 'content/sections').glob('*.html')}
+    validate_source_entities(sources)
     references = [key for p in pages.values() for key in p['sections']]
     if set(references) != set(sources) or len(references) != len(set(references)):
         raise ValueError('Every source section must appear on exactly one page')
