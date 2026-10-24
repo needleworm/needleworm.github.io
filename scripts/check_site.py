@@ -13,6 +13,7 @@ import xml.etree.ElementTree as ET
 from build_site import ROOT, Blocks, VOID, GROUPS, LECTURE_CATEGORIES, latest_date, source_views
 from paper_pages import load_records, plain
 from paper_citations import citation_formats
+from lecture_pages import load_lecture_records, link_lecture_cards
 
 
 class Document(HTMLParser):
@@ -164,6 +165,11 @@ def check_sitemap(config, require):
     }
     for record in json.loads((ROOT/'content/papers.json').read_text(encoding='utf8')):
         page_urls[config['url']+'/papers/'+record['slug']+'/'] = 'papers/'+record['slug']+'/index.html'
+    lecture_sources = {p.stem: p.read_text(encoding='utf8') for p in (ROOT/'content/sections').glob('*.html')}
+    lecture_source = source_views(lecture_sources)['lectures']
+    lecture_records = load_lecture_records([lecture_source[a:b] for a, b in sorted(Blocks(lecture_source).cards)])
+    for record in lecture_records.values():
+        page_urls[config['url']+record['path']] = record['path'].lstrip('/')+'index.html'
     project_urls = {node.text for node in projects.findall('sm:url/sm:loc', ns)} - set(page_urls)
     expected_urls = set(page_urls) | project_urls
     urls = []
@@ -292,12 +298,56 @@ def check_paper_pages(config, source, require):
     return report
 
 
+def check_lecture_pages(config, original_source, require):
+    records = load_lecture_records([original_source[a:b] for a, b in sorted(Blocks(original_source).cards)])
+    listing_source = (ROOT/'lectures/index.html').read_text(encoding='utf8')
+    listing_elements = ElementSpans(listing_source).elements
+    listing_cards = {element['attrs'].get('data-record-id'): listing_source[element['start']:element['end']]
+                     for element in listing_elements if 'singleLectureContainer' in element['attrs'].get('class', '').split()}
+    report = []
+    for key, record in records.items():
+        target = ROOT/record['path'].lstrip('/')/'index.html'
+        require(target.is_file(), f'{key}: missing lecture detail route')
+        if not target.is_file():
+            continue
+        html = target.read_text(encoding='utf8')
+        doc = Document(html)
+        articles = [e for e in ElementSpans(html).elements if e['tag']=='article' and e['attrs'].get('data-lecture-id')==key]
+        require(len(articles)==1, f'{key}: expected one lecture article')
+        if not articles:
+            continue
+        article = articles[0]
+        content = html[article['start']:article['end']]
+        detail, original = Document(content), Document(record['card'])
+        require(detail.text==original.text, f'{key}: detail must contain only the original card text')
+        require(sum(tag=='h1' for tag,_ in doc.tags)==1, f'{key}: expected one lecture title')
+        for tag, attr in [('img','src'),('a','href')]:
+            before = Counter(normalize_asset(a[attr]) for t,a in original.tags if t==tag and attr in a)
+            after = Counter(normalize_asset(a[attr]) for t,a in detail.tags if t==tag and attr in a)
+            require(before==after, f'{key}: original lecture {tag} destinations changed or disappeared')
+        require([a.get('alt') for t,a in original.tags if t=='img']==[a.get('alt') for t,a in detail.tags if t=='img'], f'{key}: original lecture image label changed')
+        require([a.get('href') for t,a in doc.tags if t=='link' and a.get('rel')=='canonical']==[config['url']+record['path']], f'{key}: lecture canonical mismatch')
+        require(not doc.unclosed_layout, f'{key}: unclosed lecture layout')
+        require(not any(a.get('id') in {'mobile-next-link','lecture-list'} for _,a in doc.tags), f'{key}: detail must not append or filter other lectures')
+        card = listing_cards.get(key, '')
+        require(bool(card), f'{key}: missing lecture listing card')
+        links = Document(card).tags
+        require(any(t=='a' and 'lecture-detail-link' in a.get('class','').split() and a.get('href')==record['path'] for t,a in links), f'{key}: missing lecture title permalink')
+        require(all(a.get('href')==record['path'] and a.get('target')!='_blank' for t,a in links if t=='a' and 'lec_inst' in a.get('class','').split()), f'{key}: institution link must open its lecture detail')
+        report.append({'lecture': key, 'url': config['url']+record['path']})
+    return report
+
+
 def main():
     config = json.loads((ROOT/'content/site.json').read_text(encoding='utf8'))
     runtime = (ROOT/'script.js').read_text(encoding='utf8')
     runtime_functions = set(re.findall(r'function\s+(\w+)\s*\(',runtime))
     sources = {p.stem:p.read_text(encoding='utf8') for p in (ROOT/'content/sections').glob('*.html')}
     views = source_views(sources)
+    original_lectures = views['lectures']
+    lecture_records = load_lecture_records([original_lectures[a:b] for a, b in sorted(Blocks(original_lectures).cards)])
+    for key in ['lectures','courses-online','courses-offline']:
+        views[key] = link_lecture_cards(views[key], lecture_records)
     pages = {p['key']: p for p in config['pages']}
     sequence = [pages[key] for _, _, keys in GROUPS for key in keys]
     failures, report = [], []
@@ -394,8 +444,9 @@ def main():
             if t=='a' and a.get('href','').startswith('/'):
                 require((ROOT/a['href'].strip('/')/'index.html').is_file(), f'{redirect["from"]}: missing fallback link {a["href"]}')
     paper_report = check_paper_pages(config, sources['papers'], require)
+    lecture_report = check_lecture_pages(config, original_lectures, require)
     sitemap_report = check_sitemap(config, require)
-    print(json.dumps({'pages':report,'paper_pages':paper_report,'redirects':config.get('redirects', []),'sitemap':sitemap_report,'failures':failures},ensure_ascii=False,indent=2))
+    print(json.dumps({'pages':report,'paper_pages':paper_report,'lecture_pages':lecture_report,'redirects':config.get('redirects', []),'sitemap':sitemap_report,'failures':failures},ensure_ascii=False,indent=2))
     return bool(failures)
 
 

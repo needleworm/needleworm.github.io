@@ -61,6 +61,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 #tab-papers .paper-action-icon { display: none; }
 .singleWebsiteCard .paper-detail-link { color: inherit; }
 .singleWebsiteCard .paper-detail-link:hover, .singleWebsiteCard .paper-detail-link:focus-visible { text-decoration: underline; }
+.singleWebsiteCard .lecture-detail-link { color: inherit; }
+.singleWebsiteCard .lecture-detail-link:hover, .singleWebsiteCard .lecture-detail-link:focus-visible { text-decoration: underline; }
+.static-site.content-page.lecture-detail-page .page-main { max-width: 880px; padding-top: 2rem; padding-bottom: 3rem; }
+.lecture-breadcrumbs { margin-bottom: 1.5rem; font-size: .85rem; }
+.lecture-detail .singleWebsiteCard:hover { transform: none; }
+.lecture-detail .websiteImage { width: 100%; height: auto; max-height: 560px; object-fit: contain; background: #fff; }
+.lecture-detail .projectText { padding: clamp(1.25rem, 4vw, 2rem); }
+.lecture-detail .lecture_title { font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1.5; margin: 0 0 1.25rem; overflow-wrap: anywhere; }
+.lecture-detail .abstract { text-align: left; line-height: 1.85; overflow-wrap: anywhere; }
+.lecture-detail .gitIcons { flex-wrap: wrap; gap: .75rem; }
 .static-site.content-page.paper-detail-page .page-main { max-width: 1220px; padding-top: 2rem; padding-bottom: 3rem; }
 .paper-breadcrumbs { display: flex; gap: .75rem; margin-bottom: 1.5rem; font-size: .85rem; }
 .paper-detail { padding: clamp(1.25rem, 4vw, 3rem); background: #fff; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }

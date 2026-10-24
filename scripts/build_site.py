@@ -12,6 +12,7 @@ import re
 import sys
 import xml.etree.ElementTree as ET
 from paper_pages import load_records, link_card_titles, scholar_meta, article_schema, render_article, pdf_outputs, citation_outputs
+from lecture_pages import load_lecture_records, link_lecture_cards, render_lecture
 
 ROOT = Path(__file__).resolve().parents[1]
 VOID = set('area base br col embed hr img input link meta param source track wbr'.split())
@@ -329,6 +330,9 @@ def build(check=False):
         raise ValueError('Every source section must appear on exactly one page')
     counts = {key: len(Blocks(source).cards) for key, source in sources.items()}
     views = source_views(sources)
+    lecture_records = load_lecture_records([views['lectures'][a:b] for a, b in sorted(Blocks(views['lectures']).cards)])
+    for key in ['lectures', 'courses-online', 'courses-offline']:
+        views[key] = link_lecture_cards(views[key], lecture_records)
     paper_records = load_records([sources['papers'][a:b] for a, b in sorted(Blocks(sources['papers']).cards)])
     views['papers'] = link_card_titles(views['papers'], paper_records)
     view_counts = {key: len(Blocks(source).cards) for key, source in views.items()}
@@ -439,6 +443,39 @@ def build(check=False):
         manifest[target] = {'sha256': digest, 'lastmod': lastmod, 'sections': ['papers'], 'cards': 0, 'paper_id': record['record_id']}
     outputs.update(pdf_outputs(paper_records))
     outputs.update(citation_outputs(paper_records))
+    for record in lecture_records.values():
+        url = config['url'] + record['path']
+        description = record['abstract'] or record['title']
+        page = {'key': 'lecture-detail', 'group': 'lectures'}
+        schema = {'@type': 'WebPage', '@id': url + '#page', 'url': url, 'name': record['title'],
+                  'description': description, 'inLanguage': 'ko-KR',
+                  'about': {'@id': person['@id']}, 'isPartOf': {'@id': config['url'] + '/#website'}}
+        schemas = [person, {'@type': 'WebSite', '@id': config['url'] + '/#website', 'url': config['url'] + '/', 'name': '반병현'},
+                   schema, {'@type': 'BreadcrumbList', 'itemListElement': [
+                       {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': config['url'] + '/'},
+                       {'@type': 'ListItem', 'position': 2, 'name': 'Lectures', 'item': config['url'] + '/lectures/'},
+                       {'@type': 'ListItem', 'position': 3, 'name': record['title'], 'item': url}]}]
+        image = record['image']
+        image = config['url'] + '/' + image.removeprefix('./') if image.startswith(('./', 'src/')) else image
+        values = {**asset_versions, 'TITLE': escape(record['title'] + ' | 반병현'),
+                  'DESCRIPTION': escape(description, quote=True), 'URL': url, 'LANG': 'ko',
+                  'EXTRA_HEAD': '', 'OG_TYPE': 'article', 'OG_LOCALE': 'ko_KR', 'OG_IMAGE': image,
+                  'STRUCTURED_DATA': json.dumps({'@context': 'https://schema.org', '@graph': schemas}, ensure_ascii=False).replace('<', '\\u003c'),
+                  'LIBRARIES': '', 'BODY_CLASS': 'content-page lecture-detail-page', 'PAGE_KEY': 'lecture-detail',
+                  'NAVIGATION': navigation(page, pages), 'HERO': '', 'PAGE_HEADER': '',
+                  'MAIN_CLASS': '', 'MAIN': render_lecture(record), 'MOBILE_NEXT_PAGE': '',
+                  'FOOTER_LINKS': ''.join(f'<a href="{path(p)}">{escape(p["heading"])}</a>' for p in pages.values())}
+        output = layout
+        for key, value in values.items():
+            output = output.replace('{{' + key + '}}', value)
+        if re.search(r'\{\{[A-Z_]+\}\}', output):
+            raise ValueError('Unresolved lecture layout variable')
+        output = '\n'.join(line.rstrip() for line in output.splitlines()) + '\n'
+        target = record['path'].strip('/') + '/index.html'
+        outputs[target] = output
+        digest = sha256(output.encode('utf8')).hexdigest()
+        lastmod = previous.get(target, {}).get('lastmod', date.today().isoformat()) if previous.get(target, {}).get('sha256') == digest else date.today().isoformat()
+        manifest[target] = {'sha256': digest, 'lastmod': lastmod, 'sections': ['lectures'], 'cards': 0, 'lecture_id': record['record_id']}
     for entry in redirects:
         destination = next(p for p in pages.values() if p['slug'] == entry['to'])
         destination_path = path(destination)
@@ -470,6 +507,12 @@ def build(check=False):
         node = ET.SubElement(sitemap, '{' + ns + '}url')
         ET.SubElement(node, '{' + ns + '}loc').text = url
         ET.SubElement(node, '{' + ns + '}lastmod').text = manifest[record['path'].strip('/') + '/index.html']['lastmod']
+    for record in lecture_records.values():
+        url = config['url'] + record['path']
+        current_urls.add(url)
+        node = ET.SubElement(sitemap, '{' + ns + '}url')
+        ET.SubElement(node, '{' + ns + '}loc').text = url
+        ET.SubElement(node, '{' + ns + '}lastmod').text = manifest[record['path'].strip('/') + '/index.html']['lastmod']
     for node in ET.parse(ROOT/'content/project-sitemap.xml').getroot():
         loc = node.find('{'+ns+'}loc')
         if loc is not None and loc.text not in current_urls:
@@ -489,7 +532,7 @@ def build(check=False):
                     target.write_bytes(output)
                 else:
                     target.write_text(output,encoding='utf8',newline='\n')
-    print(json.dumps({'pages':len(pages),'paper_pages':len(paper_records),'source_cards':counts,'display_cards':view_counts,'changed':stale,'check':check},ensure_ascii=False))
+    print(json.dumps({'pages':len(pages),'paper_pages':len(paper_records),'lecture_pages':len(lecture_records),'source_cards':counts,'display_cards':view_counts,'changed':stale,'check':check},ensure_ascii=False))
     return bool(check and stale)
 
 
