@@ -31,6 +31,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     .static-site .singleBookContainer .list-inline { display: flex; flex-wrap: wrap; gap: .5rem; padding: .65rem .5rem; margin-top: auto; }
     .static-site .singleBookContainer .list-inline li { margin: 0; }
 }
+@media (max-width: 450px) {
+    .static-site .singleBookContainer .bookStoreIcon { max-width: 24px !important; max-height: 24px !important; }
+    .static-site .singleBookContainer .list-inline { gap: 6px; }
+}
+@media (max-width: 360px) {
+    .static-site .singleBookContainer .bookStoreIcon { max-width: 22px !important; max-height: 22px !important; }
+    .static-site .singleBookContainer .list-inline { gap: 4px; }
+}
 @media (min-width: 769px) and (max-width: 1100px) {
     .static-site .navbar { padding-left: 1rem; padding-right: 1rem; }
     .static-site .nav-links { gap: 1rem; }

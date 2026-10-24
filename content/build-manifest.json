@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "sha256": "8235814f44d604d7ac741b4b65d632ca84fab199cc9ea7efc63cc92fe2c55692",
+    "sha256": "78b3e11286a838ea5f85cc67290033f7e906fe21ae314b0a50d8b1365c84150f",
     "lastmod": "2026-10-24",
     "sections": [
       "about",
@@ -9,7 +9,7 @@
     "cards": 36
   },
   "books/index.html": {
-    "sha256": "5b997afd615dedbb7bc4cfdd1b4f90fd21ec4a8cd1da2acb2fe58c089a946187",
+    "sha256": "c9a1a493a652d598a7da24e4ae2cb2a4affef9f7d8054b0e3db6069d8a0cb0ad",
     "lastmod": "2026-10-24",
     "sections": [
       "books"
@@ -17,7 +17,7 @@
     "cards": 36
   },
   "media/index.html": {
-    "sha256": "1bf55a4e58752cd9b2371c8392bda7b1b56957cb4caa23a4c92e69f8b1c2675e",
+    "sha256": "08eeb173cdb85f8dab7760801333180253b7df6ef681eb47b664aed5cdd6dab9",
     "lastmod": "2026-10-24",
     "sections": [
       "media"
@@ -25,7 +25,7 @@
     "cards": 21
   },
   "news/index.html": {
-    "sha256": "f6021209c489bcc04cb2f9cb5cdf51f878ce9af6d50ca7a9db8c8184e4667c98",
+    "sha256": "4438f2d4478f073b6d84c1a111491e8767a2481714cb64d38511e7573263d3bb",
     "lastmod": "2026-10-24",
     "sections": [
       "news"
@@ -33,7 +33,7 @@
     "cards": 52
   },
   "courses/online/index.html": {
-    "sha256": "64267fc106d588f74a92d073f162323d758435cd93de2fccdd20cfdb2422c7a1",
+    "sha256": "4797239395af8241a1073e13d1359edb2242c97802f7c643dcee204cf71e6fb4",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-online"
@@ -41,7 +41,7 @@
     "cards": 29
   },
   "courses/offline/index.html": {
-    "sha256": "08ebf8ef2d09b27b8b259a39d7092a9b756f0739c58f9de3b6f4375cb71f16e6",
+    "sha256": "5931583b68857d85424df044c183f6e2e04213a51c6d06c8bfc10ab105553231",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-offline"
@@ -49,7 +49,7 @@
     "cards": 14
   },
   "lectures/index.html": {
-    "sha256": "78a84d1624f38e1a779e8c247508d7779eea73a2e8b6dd1ecbb27a1c63dd2b64",
+    "sha256": "2c7a0f33cec14a01c8cabd00acba0c58c2f2d785bc51eccf0ff463705da677da",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -57,7 +57,7 @@
     "cards": 231
   },
   "papers/index.html": {
-    "sha256": "a6297df390a161e163c496b30524dfa889feef03dbe0822171d44c10feec7452",
+    "sha256": "92c47d5ed80ae64ad9fd742839e4850191fac671607588dabd8cf44466ec9bfc",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -65,7 +65,7 @@
     "cards": 15
   },
   "patents/index.html": {
-    "sha256": "fdad5b16dc2e2d901a0df834baf4b086a5c5510ffa083491280615b0d95d992a",
+    "sha256": "cfc9b54d90f39f9e86f240605a3f8d45081d93d59f7966d6707d1e022f9e5cc2",
     "lastmod": "2026-10-24",
     "sections": [
       "patents"
@@ -73,7 +73,7 @@
     "cards": 31
   },
   "projects/index.html": {
-    "sha256": "15e487d262373543eeff145c080c6d5e00c8564432b27a05836601d09d152732",
+    "sha256": "700dee5b7caac24bac3bd32cfb5568ec2b09d9d034d4aec61f626bda0014d45d",
     "lastmod": "2026-10-24",
     "sections": [
       "codes",
@@ -82,7 +82,7 @@
     "cards": 34
   },
   "activities/index.html": {
-    "sha256": "9e4d62fd66019df32422c2e01d783cb9dcd2ea839b3ddcb2c3c62f94a0bc3d0c",
+    "sha256": "cd19473460ddf3d9c4e3e1b0bced3c3bb678446b0ac20cfa4e49f10a1be8f46c",
     "lastmod": "2026-10-24",
     "sections": [
       "social"
@@ -90,7 +90,7 @@
     "cards": 2
   },
   "memberships/index.html": {
-    "sha256": "6983f0305937d647dc375dbf4a0782020778f006f17e1275a770c615524ae970",
+    "sha256": "9522c7b28fe242c278e577a6ca76c320d4a34780f452d8cb1415e3f9c8f2963e",
     "lastmod": "2026-10-24",
     "sections": [
       "membership"
@@ -98,7 +98,7 @@
     "cards": 9
   },
   "collections/index.html": {
-    "sha256": "69b707b9b5ebab6b1a261bd79d0c3f68d94ec6d35f22f6209a5f01bb1b3fbdf7",
+    "sha256": "e06474455659c9761c2739fc044488b344b641c3bdf0ff97a572e0622951c40a",
     "lastmod": "2026-10-24",
     "sections": [
       "collections"
@@ -106,7 +106,7 @@
     "cards": 7
   },
   "contact/index.html": {
-    "sha256": "b1d252cf8f37e7c1ad60af221f6782ac55e1461a5c4770d4e7672f71c6b2ea9a",
+    "sha256": "3e0f59ae628e658609c4f3431f0ec7c0bd559ca24595225e4ccf8e499cf730f0",
     "lastmod": "2026-10-24",
     "sections": [
       "contact"
