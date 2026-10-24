@@ -1,0 +1,1849 @@
+<p class="paper-keywords"><strong>Keywords:</strong> Model Context Protocol, MCP, AI agents,
+chemical engineering, process engineering, industrial AI, operator
+knowledge, field validation, process simulation, safety, human-AI
+collaboration</p><h2 id="paper-2026-p06-introduction">1. Introduction</h2>
+<p>Can AI agents understand chemical engineering processes? In
+industrial settings, the answer depends less on the agent framework
+itself than on whether expert know-how is encoded into executable,
+auditable, and field-validated tools.</p>
+<p>Recent work in chemistry and chemical engineering has shown that
+LLM-based agents can perform increasingly complex scientific and
+engineering tasks when connected to external tools. ChemCrow integrated
+GPT-4 with eighteen expert-designed chemistry tools and demonstrated
+applications in organic synthesis, drug discovery, and materials design
+[1]. Coscientist showed that LLM agents can design, plan, and perform
+chemical experiments by using tools such as internet search,
+documentation search, code execution, and experimental automation [2].
+These studies demonstrate that the practical capability of scientific
+agents comes not from language generation alone, but from reliable tool
+use.</p>
+<p>A similar transition is now occurring in chemical engineering. Recent
+work has integrated LLM agents with process simulators, allowing
+natural-language interaction with rigorous simulation software through
+tool interfaces. For example, one process-simulation agent connects an
+LLM to AVEVA Process Simulation through a Model Context Protocol (MCP)
+server, where the agent interprets user requests and the MCP server
+executes deterministic simulator operations [3]. Other recent studies
+propose multi-agent workflows that transform textual process
+specifications into executable simulation configurations, or reasoning
+agents that automate process simulation, optimization, carbon
+accounting, and decarbonization analysis [4,5]. These works show that
+LLM agents can support chemical process design, simulation, and
+optimization when provided with domain-specific tools.</p>
+<p>However, these studies also reveal a missing layer. Existing
+chemistry and chemical-engineering agent studies primarily demonstrate
+what agents can do when connected to tools, simulators, databases, or
+robotic systems. They do not generally provide a field-oriented design
+strategy for constructing MCP tools in industrial chemical engineering
+environments. Even when MCP is used, the scope is often limited to a
+specific technical interface, such as a process simulator server, rather
+than a broader methodology for designing plant-data MCPs, SOP MCPs,
+safety MCPs, maintenance MCPs, quality MCPs, carbon-accounting MCPs, and
+operator-knowledge MCPs.</p>
+<p>This gap is important because industrial chemical engineering agents
+cannot be deployed by agent frameworks alone. A chemical plant does not
+need an agent that can merely discuss distillation, reaction
+engineering, maintenance, safety, or quality control in natural
+language. It needs an agent that can retrieve live process data, check
+approved operating procedures, compare current values against operating
+limits, run validated simulators, identify unsafe recommendations,
+search maintenance history, summarize quality deviations, and escalate
+uncertain cases to human experts.</p>
+<p>The Model Context Protocol provides a useful foundation for this
+transition. MCP is an open protocol for connecting LLM applications with
+external data sources and tools [6,7]. MCP servers can expose executable
+tools, contextual resources, and reusable prompts, allowing agents to
+invoke external functions, retrieve relevant information, and operate
+within structured interaction templates [8-10]. In chemical engineering,
+this means MCP can serve as the boundary between natural-language
+reasoning and executable industrial action.</p>
+<p>Yet the value of MCP depends on its design. A generic MCP server that
+exposes arbitrary APIs is not enough for chemical engineering.
+Industrial MCP tools must encode process constraints, safety limits,
+SOPs, equipment hierarchies, data schemas, validation rules, and the
+tacit knowledge of experienced operators, technicians, and engineers.
+Without such field-specific design, chemical engineering experts may
+know that agents are promising, but still lack guidance on which MCP
+servers to build, what data and protocols are required, how field
+workers should participate, and how these tools should be evaluated.</p>
+<p>This paper addresses that gap by proposing MCP design strategies for
+AI agents in the chemical engineering industry. The central claim
+is:</p>
+<blockquote>
+<p>The bottleneck of industrial chemical engineering agents is not the
+absence of another agent framework, but the absence of field-validated
+MCP tools that encode plant data, safety constraints, operating
+procedures, and tacit worker expertise into executable and auditable
+interfaces.</p>
+</blockquote>
+<p>The paper makes four contributions.</p>
+<p>1. It reframes MCP as the executable boundary between LLM agents and
+chemical engineering operations.</p>
+<p>2. It proposes a taxonomy of MCP servers required for chemical
+engineering industrial agents.</p>
+<p>3. It describes the data, protocols, worker collaboration methods,
+and evaluation criteria required for each MCP type.</p>
+<p>4. It proposes a field-validation framework for developing MCP tools
+with plant workers, engineers, safety officers, quality personnel, and
+maintenance technicians.</p>
+<h2 id="paper-2026-p06-background-from-tool-augmented-agents-to-field-validated-mcps">2.
+Background: From Tool-Augmented Agents to Field-Validated MCPs</h2>
+<h3 id="paper-2026-p06-tool-augmented-agents-in-chemistry">2.1 Tool-augmented agents in
+chemistry</h3>
+<p>Tool-augmented agents have become a major direction in
+chemistry-oriented LLM research. ChemCrow showed that integrating
+expert-designed tools into an LLM can produce capabilities beyond
+text-only generation. The system used GPT-4 as the language model and
+connected it to eighteen chemistry tools, enabling tasks in synthesis
+planning, materials discovery, and chemical reasoning [1].</p>
+<p>Coscientist similarly demonstrated that LLM agents can go beyond
+literature summarization when they are connected to tools for search,
+code execution, documentation retrieval, and experimental automation.
+Its value lies not only in language generation, but in the orchestration
+of external tools for experimental design and execution [2].</p>
+<blockquote>
+<p>Scientific agents become useful when they can act through verified
+tools.</p>
+</blockquote>
+<p>For chemistry, this may mean querying molecule databases, planning
+reactions, checking safety, controlling robotic equipment, or executing
+code. For chemical engineering, it means something more industrial:
+reading process historians, running simulators, checking operating
+constraints, retrieving SOPs, supporting maintenance decisions, and
+producing auditable recommendations under safety and reliability
+constraints.</p>
+<figure class="paper-figure"><img alt="Figure 1. MCP-based AI agent architecture for chemical engineering. The LLM agent does not directly control plant systems; bounded, auditable MCP tools mediate all actions" decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p06/figure-1.webp"/><figcaption>Figure 1. MCP-based AI agent architecture for chemical engineering.
+The LLM agent does not directly control plant systems; bounded,
+auditable MCP tools mediate all actions</figcaption></figure>
+
+<h3 id="paper-2026-p06-chemical-engineering-agents-and-process-simulation">2.2 Chemical
+engineering agents and process simulation</h3>
+<p>Chemical process simulators are central to process design,
+optimization, and troubleshooting. However, constructing and
+interpreting simulations requires expert knowledge. Recent work has
+integrated an LLM agent with AVEVA Process Simulation through MCP. In
+that architecture, the LLM interprets natural-language requests and
+invokes a curated toolset exposed by a dedicated MCP server. The MCP
+server wraps the simulator's Python API into high-level tools with
+defined inputs, outputs, and usage descriptions, while deterministic
+engineering operations are executed by the simulator through the server
+[3].</p>
+<p>This architecture is important because it separates natural-language
+reasoning from deterministic engineering execution. The LLM plans and
+selects tools; the MCP server performs structured operations; the
+simulator executes engineering calculations.</p>
+<p>Other work on automated chemical process design has explored
+multi-agent LLM workflows that transform textual process specifications
+into executable simulation configurations [4]. Another recent study on
+reasoning-agent-driven distillation decarbonization combined LLM-based
+reasoning with toolsets for process simulation, optimization, carbon
+accounting, and decarbonization intervention evaluation [5]. These
+studies demonstrate the feasibility of tool-augmented chemical
+engineering agents, but they do not fully answer the field-design
+question: which MCP tools should industrial chemical engineers build,
+how should those tools encode plant know-how, and how should they be
+validated with field workers?</p>
+<h3 id="paper-2026-p06-mcp-as-an-executable-boundary">2.3 MCP as an executable
+boundary</h3>
+<p>MCP should not be treated as just another API connector. In
+industrial AI, MCP can function as the boundary between:</p>
+<ul>
+<li><p>natural language and typed action,</p></li>
+<li><p>reasoning and execution,</p></li>
+<li><p>generic models and domain systems,</p></li>
+<li><p>agent autonomy and industrial control,</p></li>
+<li><p>plant data and auditable recommendations.</p></li>
+</ul>
+<p>MCP tools allow language models to invoke external functions such as
+database queries, API calls, and computations [8]. MCP resources allow
+servers to expose contextual data such as files, database schemas, or
+application-specific information [9]. MCP prompts allow servers to
+provide structured interaction templates to clients [10]. These three
+primitives—tools, resources, and prompts—are well suited to chemical
+engineering environments, where agents must combine plant data,
+documents, computation, and task-specific instructions.</p>
+<p>However, MCP introduces design and security challenges. Industrial
+MCP tools must be permissioned, logged, typed, validated, and
+constrained. MCP security guidance emphasizes risks and best practices
+for MCP implementations, including authorization, threat modeling, and
+secure handling of protocol-specific risks [11]. In chemical plants,
+these concerns are amplified because tool calls may influence
+safety-critical decisions.</p>
+<h2 id="paper-2026-p06-problem-statement">3. Problem Statement</h2>
+<h3 id="paper-2026-p06-existing-agent-studies-demonstrate-capability-not-deployment-strategy">3.1
+Existing agent studies demonstrate capability, not deployment
+strategy</h3>
+<p>Recent agent studies in chemistry and chemical engineering show that
+LLM-based agents can perform meaningful tasks when connected to external
+tools. ChemCrow and Coscientist demonstrate chemistry-oriented tool use
+and experimental automation [1,2]. Process-simulation agents demonstrate
+that LLMs can interact with simulation software through structured tools
+or MCP servers [3]. Multi-agent process design studies demonstrate that
+LLM workflows can translate natural-language process specifications into
+simulation configurations [4]. Reasoning-agent studies show that LLMs
+combined with toolsets can support simulation, optimization, carbon
+accounting, and decarbonization analysis [5].</p>
+<p>However, these works mainly answer the question:</p>
+<blockquote>
+<p>What can an agent do when appropriate tools are already provided?</p>
+</blockquote>
+<p>They do not fully answer the more practical industrial question:</p>
+<blockquote>
+<p>How should chemical engineering experts design, validate, and govern
+the MCP tools that agents will actually use in the field?</p>
+</blockquote>
+<p>This distinction matters. Demonstrating an agent workflow is not the
+same as specifying an industrial MCP ecosystem.</p>
+<h3 id="paper-2026-p06-agent-frameworks-are-not-enough">3.2 Agent frameworks are not
+enough</h3>
+<p>Many AI agent papers emphasize frameworks: planner-executor loops,
+reflection, multi-agent collaboration, memory modules, tool-use
+policies, or prompt harnesses. These are useful, but they are not
+sufficient for chemical engineering industry deployment.</p>
+<p>A plant engineer will not ask only whether an agent can reason. The
+engineer will ask:</p>
+<ul>
+<li><p>Can it retrieve the correct process tags?</p></li>
+<li><p>Can it distinguish current values from historical
+trends?</p></li>
+<li><p>Can it find the latest approved SOP?</p></li>
+<li><p>Can it check design limits?</p></li>
+<li><p>Can it run a validated simulator?</p></li>
+<li><p>Can it avoid unsafe operating recommendations?</p></li>
+<li><p>Can it explain which data and procedure it used?</p></li>
+<li><p>Can it incorporate field experience from operators?</p></li>
+<li><p>Can its recommendations be audited after the fact?</p></li>
+</ul>
+<p>These questions are not primarily about agent framework design. They
+are about MCP tool design, data governance, safety constraints, and
+field validation.</p>
+<h3 id="paper-2026-p06-harness-engineering-versus-field-tool-engineering">3.3 Harness
+engineering versus field-tool engineering</h3>
+<p>Prompt harness engineering improves how agents think, speak, and
+interact. Field-tool engineering determines what agents can safely know
+and execute.</p>
+<p>For chemical engineering applications, field-tool engineering is more
+important than general prompt orchestration. A well-prompted agent
+without plant data, SOP access, simulation capability, safety
+constraints, and worker-validated rules remains a conversational
+assistant. A field-validated MCP ecosystem can turn the same agent into
+an auditable decision-support interface.</p>
+<figure class="paper-figure">
+<img alt="Figure 2. Proposed taxonomy of industrial MCP servers for chemical engineering agents." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p06/figure-2.webp"/>
+<figcaption><p>Figure 2. Proposed taxonomy of industrial MCP servers for
+chemical engineering agents.</p></figcaption>
+</figure>
+<h3 id="paper-2026-p06-missing-layer-field-validated-mcp-design">3.4 Missing layer:
+field-validated MCP design</h3>
+<p>The missing layer in industrial chemical engineering agents is not
+another general-purpose agent framework. The missing layer is a
+methodology for designing MCP servers that encode plant data, process
+constraints, SOPs, safety rules, maintenance history, quality data,
+environmental calculations, and worker expertise into executable and
+auditable tools.</p>
+<p>This paper addresses that gap by proposing MCP design strategies for
+the chemical engineering industry.</p>
+<h2 id="paper-2026-p06-proposed-mcp-taxonomy-for-the-chemical-engineering-industry">4.
+Proposed MCP Taxonomy for the Chemical Engineering Industry</h2>
+<p>This section proposes eight MCP server categories required for
+chemical engineering industrial agents.</p>
+<h3 id="paper-2026-p06-process-data-mcp">4.1 Process Data MCP</h3>
+<h4 id="paper-2026-p06-purpose">Purpose</h4>
+<p>The Process Data MCP provides structured access to real-time and
+historical process data.</p>
+<h4 id="paper-2026-p06-required-data">Required data</h4>
+<ul>
+<li><p>sensor tags</p></li>
+<li><p>historian data</p></li>
+<li><p>DCS/SCADA logs</p></li>
+<li><p>temperature, pressure, flow, level, and composition
+values</p></li>
+<li><p>alarm logs</p></li>
+<li><p>batch records</p></li>
+<li><p>maintenance events</p></li>
+<li><p>operating ranges</p></li>
+<li><p>process-unit metadata</p></li>
+</ul>
+<h4 id="paper-2026-p06-required-protocols-and-interfaces">Required protocols and
+interfaces</h4>
+<ul>
+<li><p>OPC UA</p></li>
+<li><p>PI System or historian API</p></li>
+<li><p>MQTT</p></li>
+<li><p>SQL or time-series database access</p></li>
+<li><p>REST API</p></li>
+<li><p>tag dictionary</p></li>
+<li><p>equipment hierarchy schema</p></li>
+<li><p>timestamp normalization</p></li>
+</ul>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Example tools.</p></caption>
+<colgroup>
+<col style="width: 28%"/>
+<col style="width: 20%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Tool</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_current_process_values</td>
+<td>Retrieve current process values for selected tags.</td>
+</tr>
+<tr>
+<td>query_historian</td>
+<td>Query time-series data over a specified period.</td>
+</tr>
+<tr>
+<td>detect_trend_shift</td>
+<td>Detect abnormal trend changes.</td>
+</tr>
+<tr>
+<td>compare_with_normal_range</td>
+<td>Compare values with approved operating ranges.</td>
+</tr>
+<tr>
+<td>summarize_batch_profile</td>
+<td>Summarize a batch or campaign profile.</td>
+</tr>
+<tr>
+<td>retrieve_alarm_sequence</td>
+<td>Retrieve and summarize recent alarm sequences.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="paper-2026-p06-worker-collaboration">Worker collaboration</h4>
+<p>Operators and process engineers should help define critical tags,
+normal operating ranges, meaningful trend deviations, alarm patterns
+that matter in practice, false alarm patterns, and unit-specific
+interpretation rules.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Evaluation criteria.</p></caption>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Evaluation item</strong></th>
+<th><strong>Metric</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data retrieval accuracy</td>
+<td>Correct tag, unit, timestamp, and value retrieval.</td>
+</tr>
+<tr>
+<td>Tag mapping accuracy</td>
+<td>Agreement between requested variable and actual tag.</td>
+</tr>
+<tr>
+<td>Trend detection</td>
+<td>Precision and recall against historical abnormal events.</td>
+</tr>
+<tr>
+<td>Operator agreement</td>
+<td>Operator judgment on whether trend summaries are useful.</td>
+</tr>
+<tr>
+<td>Latency</td>
+<td>Time to retrieve and summarize data.</td>
+</tr>
+<tr>
+<td>Auditability</td>
+<td>Completeness of tool-call logs.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-sop-and-work-instruction-mcp">4.2 SOP and Work Instruction
+MCP</h3>
+<h4 id="paper-2026-p06-purpose-1">Purpose</h4>
+<p>The SOP and Work Instruction MCP retrieves approved procedures and
+converts them into actionable, cited, and version-controlled
+guidance.</p>
+<h4 id="paper-2026-p06-required-data-1">Required data</h4>
+<ul>
+<li><p>SOP documents</p></li>
+<li><p>work instructions</p></li>
+<li><p>startup and shutdown procedures</p></li>
+<li><p>emergency response manuals</p></li>
+<li><p>cleaning and changeover procedures</p></li>
+<li><p>inspection checklists</p></li>
+<li><p>permit-to-work forms</p></li>
+<li><p>document approval metadata</p></li>
+<li><p>document effective dates</p></li>
+</ul>
+<h4 id="paper-2026-p06-required-protocols-and-interfaces-1">Required protocols and
+interfaces</h4>
+<ul>
+<li><p>document repository API</p></li>
+<li><p>vector index with citation support</p></li>
+<li><p>version-control metadata</p></li>
+<li><p>role-based document access</p></li>
+<li><p>approval state tracking</p></li>
+<li><p>document retirement rules</p></li>
+</ul>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Example tools.</p></caption>
+<colgroup>
+<col style="width: 30%"/>
+<col style="width: 18%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Tool</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>retrieve_sop</td>
+<td>Retrieve SOPs relevant to equipment, unit, or situation.</td>
+</tr>
+<tr>
+<td>get_latest_approved_procedure</td>
+<td>Confirm latest approved document version.</td>
+</tr>
+<tr>
+<td>check_step_compliance</td>
+<td>Compare a described action with required SOP steps.</td>
+</tr>
+<tr>
+<td>generate_operator_checklist</td>
+<td>Create checklist from approved procedure.</td>
+</tr>
+<tr>
+<td>compare_current_action_with_sop</td>
+<td>Identify deviations from SOP.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="paper-2026-p06-worker-collaboration-1">Worker collaboration</h4>
+<p>Field workers should help identify procedural steps that are written
+but not followed, practical steps that are followed but not documented,
+ambiguous SOP sections, situations where strict SOP execution requires
+judgment, and unsafe shortcuts that should never be recommended.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Evaluation criteria.</p></caption>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 23%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Evaluation item</strong></th>
+<th><strong>Metric</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SOP retrieval accuracy</td>
+<td>Whether the correct procedure is retrieved.</td>
+</tr>
+<tr>
+<td>Citation correctness</td>
+<td>Whether each instruction is traceable to source text.</td>
+</tr>
+<tr>
+<td>Version accuracy</td>
+<td>Whether obsolete procedures are avoided.</td>
+</tr>
+<tr>
+<td>Missing critical step rate</td>
+<td>Frequency of omitted safety-critical steps.</td>
+</tr>
+<tr>
+<td>Operator usefulness</td>
+<td>Worker rating of checklist clarity and usefulness.</td>
+</tr>
+<tr>
+<td>Unsafe recommendation rate</td>
+<td>Must approach zero.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-safety-and-hazard-mcp">4.3 Safety and Hazard MCP</h3>
+<h4 id="paper-2026-p06-purpose-2">Purpose</h4>
+<p>The Safety and Hazard MCP ensures that agent recommendations respect
+safety constraints, hazard analyses, and escalation rules.</p>
+<h4 id="paper-2026-p06-required-data-2">Required data</h4>
+<ul>
+<li><p>HAZOP worksheets</p></li>
+<li><p>LOPA tables</p></li>
+<li><p>P&amp;IDs</p></li>
+<li><p>SDS/MSDS data</p></li>
+<li><p>equipment design limits</p></li>
+<li><p>interlock lists</p></li>
+<li><p>alarm setpoints</p></li>
+<li><p>safety-critical operating windows</p></li>
+<li><p>incident and near-miss records</p></li>
+<li><p>emergency response procedures</p></li>
+</ul>
+<h4 id="paper-2026-p06-required-protocols-and-interfaces-2">Required protocols and
+interfaces</h4>
+<ul>
+<li><p>hazard ontology</p></li>
+<li><p>equipment-to-tag mapping</p></li>
+<li><p>safety-critical action blacklist</p></li>
+<li><p>permit-to-work interface</p></li>
+<li><p>approval workflow</p></li>
+<li><p>emergency escalation routing</p></li>
+<li><p>interlock status interface</p></li>
+</ul>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Example tools.</p></caption>
+<colgroup>
+<col style="width: 28%"/>
+<col style="width: 20%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Tool</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>check_operating_limit</td>
+<td>Check whether a condition exceeds approved operating limits.</td>
+</tr>
+<tr>
+<td>retrieve_hazard_scenario</td>
+<td>Retrieve relevant HAZOP or LOPA scenarios.</td>
+</tr>
+<tr>
+<td>check_interlock_status</td>
+<td>Check safety interlock status.</td>
+</tr>
+<tr>
+<td>summarize_sds_hazard</td>
+<td>Summarize material hazards from SDS.</td>
+</tr>
+<tr>
+<td>recommend_safe_escalation</td>
+<td>Suggest safe escalation path rather than direct action.</td>
+</tr>
+<tr>
+<td>block_unsafe_action</td>
+<td>Reject tool calls that violate safety constraints.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="paper-2026-p06-worker-collaboration-2">Worker collaboration</h4>
+<p>Safety officers, operators, and engineers should identify high-risk
+operating regions, known near-miss patterns, actions that require dual
+approval, unsafe recommendations produced during testing, and cases
+where the safest response is escalation rather than optimization.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Evaluation criteria.</p></caption>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Evaluation item</strong></th>
+<th><strong>Metric</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unsafe action rate</td>
+<td>Frequency of unsafe recommendations.</td>
+</tr>
+<tr>
+<td>Hazard retrieval accuracy</td>
+<td>Whether relevant HAZOP scenarios are retrieved.</td>
+</tr>
+<tr>
+<td>SDS correctness</td>
+<td>Accuracy of material hazard summaries.</td>
+</tr>
+<tr>
+<td>Escalation appropriateness</td>
+<td>Whether the tool recommends proper human escalation.</td>
+</tr>
+<tr>
+<td>Safety officer approval</td>
+<td>Expert assessment of outputs.</td>
+</tr>
+<tr>
+<td>Fail-safe behavior</td>
+<td>Whether the tool refuses uncertain or dangerous requests.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-process-simulation-mcp">4.4 Process Simulation MCP</h3>
+<h4 id="paper-2026-p06-purpose-3">Purpose</h4>
+<p>The Process Simulation MCP connects agents to process simulation
+software for what-if analysis, sensitivity studies, flowsheet
+inspection, and optimization.</p>
+<h4 id="paper-2026-p06-required-data-3">Required data</h4>
+<ul>
+<li><p>simulator project files</p></li>
+<li><p>flowsheets</p></li>
+<li><p>thermodynamic packages</p></li>
+<li><p>feed compositions</p></li>
+<li><p>unit operation parameters</p></li>
+<li><p>convergence settings</p></li>
+<li><p>operating constraints</p></li>
+<li><p>design cases</p></li>
+<li><p>simulation result files</p></li>
+</ul>
+<h4 id="paper-2026-p06-required-protocols-and-interfaces-3">Required protocols and
+interfaces</h4>
+<ul>
+<li><p>Aspen Plus, Aspen HYSYS, AVEVA Process Simulation, gPROMS, DWSIM,
+or internal simulator APIs</p></li>
+<li><p>Python API wrapper</p></li>
+<li><p>simulation sandbox</p></li>
+<li><p>parameter boundary schema</p></li>
+<li><p>convergence error handling</p></li>
+<li><p>result export schema</p></li>
+<li><p>version-controlled model files</p></li>
+</ul>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Example tools.</p></caption>
+<colgroup>
+<col style="width: 28%"/>
+<col style="width: 20%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Tool</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>load_flowsheet</td>
+<td>Load a validated flowsheet.</td>
+</tr>
+<tr>
+<td>inspect_unit_operation</td>
+<td>Retrieve unit operation configuration.</td>
+</tr>
+<tr>
+<td>set_stream_condition</td>
+<td>Modify stream condition within allowed bounds.</td>
+</tr>
+<tr>
+<td>run_simulation</td>
+<td>Execute simulation.</td>
+</tr>
+<tr>
+<td>get_simulation_results</td>
+<td>Retrieve simulation results.</td>
+</tr>
+<tr>
+<td>run_sensitivity_analysis</td>
+<td>Perform parameter sensitivity analysis.</td>
+</tr>
+<tr>
+<td>optimize_operating_condition</td>
+<td>Search for feasible operating conditions.</td>
+</tr>
+<tr>
+<td>diagnose_convergence_failure</td>
+<td>Analyze convergence failure and suggest safe next steps.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="paper-2026-p06-worker-collaboration-3">Worker collaboration</h4>
+<p>Process engineers should define allowed parameter ranges, known
+simulator limitations, convergence troubleshooting rules, differences
+between simulator assumptions and plant reality, and conditions that
+appear optimal in simulation but are infeasible in operation.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Evaluation criteria.</p></caption>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 22%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Evaluation item</strong></th>
+<th><strong>Metric</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simulation execution success</td>
+<td>Percentage of successful simulation runs.</td>
+</tr>
+<tr>
+<td>Result reproducibility</td>
+<td>Whether repeated runs produce consistent results.</td>
+</tr>
+<tr>
+<td>Feasibility of recommendations</td>
+<td>Engineer assessment of suggested conditions.</td>
+</tr>
+<tr>
+<td>Convergence handling</td>
+<td>Ability to diagnose and recover from failures.</td>
+</tr>
+<tr>
+<td>Time saved</td>
+<td>Reduction in manual simulation workflow time.</td>
+</tr>
+<tr>
+<td>Boundary compliance</td>
+<td>Whether all tool calls respect process constraints.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Recent process-simulation agents already show the importance of this
+pattern. In one MCP-based process simulation framework, the MCP server
+acts as an intermediary between the LLM agent and process simulation
+software, wrapping simulator APIs into high-level tools with structured
+inputs and outputs [3]. That work supports the present paper’s claim
+that MCP design is central to chemical engineering agents.</p>
+<h3 id="paper-2026-p06-maintenance-and-equipment-health-mcp">4.5 Maintenance and
+Equipment Health MCP</h3>
+<h4 id="paper-2026-p06-purpose-4">Purpose</h4>
+<p>The Maintenance MCP supports equipment-health monitoring, fault
+diagnosis, maintenance-history retrieval, and work-order
+preparation.</p>
+<h4 id="paper-2026-p06-required-data-4">Required data</h4>
+<ul>
+<li><p>CMMS or EAM records</p></li>
+<li><p>equipment hierarchy</p></li>
+<li><p>maintenance history</p></li>
+<li><p>vibration data</p></li>
+<li><p>motor current</p></li>
+<li><p>valve position</p></li>
+<li><p>pump and compressor performance curves</p></li>
+<li><p>inspection logs</p></li>
+<li><p>spare-parts inventory</p></li>
+<li><p>failure mode records</p></li>
+</ul>
+<h4 id="paper-2026-p06-required-protocols-and-interfaces-4">Required protocols and
+interfaces</h4>
+<ul>
+<li><p>CMMS/EAM API</p></li>
+<li><p>historian integration</p></li>
+<li><p>equipment ID schema</p></li>
+<li><p>failure mode taxonomy</p></li>
+<li><p>maintenance work-order protocol</p></li>
+<li><p>spare-parts inventory interface</p></li>
+</ul>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Example tools.</p></caption>
+<colgroup>
+<col style="width: 29%"/>
+<col style="width: 18%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Tool</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_equipment_history</td>
+<td>Retrieve maintenance history.</td>
+</tr>
+<tr>
+<td>analyze_vibration_trend</td>
+<td>Analyze vibration trends.</td>
+</tr>
+<tr>
+<td>predict_failure_risk</td>
+<td>Estimate equipment failure risk.</td>
+</tr>
+<tr>
+<td>retrieve_failure_mode</td>
+<td>Retrieve FMEA or known failure modes.</td>
+</tr>
+<tr>
+<td>check_spare_parts_availability</td>
+<td>Check spare part inventory.</td>
+</tr>
+<tr>
+<td>draft_maintenance_recommendation</td>
+<td>Draft maintenance recommendation for human approval.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="paper-2026-p06-worker-collaboration-4">Worker collaboration</h4>
+<p>Maintenance technicians should contribute symptoms preceding common
+failures, practical diagnosis heuristics, false-positive maintenance
+burdens, equipment-specific exceptions, field notes from repeated
+failures, and priority rules for work orders.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Evaluation criteria.</p></caption>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Evaluation item</strong></th>
+<th><strong>Metric</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Failure prediction performance</td>
+<td>Precision, recall, lead time.</td>
+</tr>
+<tr>
+<td>Technician agreement</td>
+<td>Expert agreement with diagnosis.</td>
+</tr>
+<tr>
+<td>Work-order relevance</td>
+<td>Whether suggested work orders are useful.</td>
+</tr>
+<tr>
+<td>False maintenance rate</td>
+<td>Unnecessary maintenance recommendations.</td>
+</tr>
+<tr>
+<td>Downtime impact</td>
+<td>Potential or measured downtime reduction.</td>
+</tr>
+<tr>
+<td>Explainability</td>
+<td>Whether technicians understand the recommendation.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-quality-and-laboratory-data-mcp">4.6 Quality and Laboratory Data
+MCP</h3>
+<h4 id="paper-2026-p06-purpose-5">Purpose</h4>
+<p>The Quality and Laboratory Data MCP connects agents to
+quality-control results, laboratory information, product specifications,
+and batch traceability.</p>
+<h4 id="paper-2026-p06-required-data-5">Required data</h4>
+<ul>
+<li><p>LIMS data</p></li>
+<li><p>QC test results</p></li>
+<li><p>product specifications</p></li>
+<li><p>batch records</p></li>
+<li><p>lab instrument outputs</p></li>
+<li><p>impurity profiles</p></li>
+<li><p>chromatogram or spectra metadata</p></li>
+<li><p>out-of-specification records</p></li>
+<li><p>sample chain-of-custody data</p></li>
+</ul>
+<h4 id="paper-2026-p06-required-protocols-and-interfaces-5">Required protocols and
+interfaces</h4>
+<ul>
+<li><p>LIMS API</p></li>
+<li><p>batch ID linkage</p></li>
+<li><p>sample ID linkage</p></li>
+<li><p>specification version control</p></li>
+<li><p>chain-of-custody metadata</p></li>
+<li><p>OOS escalation procedure</p></li>
+</ul>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Example tools.</p></caption>
+<colgroup>
+<col style="width: 27%"/>
+<col style="width: 21%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Tool</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_batch_quality_results</td>
+<td>Retrieve quality results for a batch.</td>
+</tr>
+<tr>
+<td>check_spec_compliance</td>
+<td>Compare results with product specification.</td>
+</tr>
+<tr>
+<td>trace_quality_deviation</td>
+<td>Trace possible process causes of quality deviation.</td>
+</tr>
+<tr>
+<td>link_process_to_quality</td>
+<td>Analyze process-quality relationships.</td>
+</tr>
+<tr>
+<td>summarize_oos_case</td>
+<td>Summarize out-of-specification case.</td>
+</tr>
+<tr>
+<td>retrieve_related_batches</td>
+<td>Find similar batches or deviations.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="paper-2026-p06-worker-collaboration-5">Worker collaboration</h4>
+<p>QC analysts and production engineers should define how specifications
+are interpreted, how borderline results are handled, common sampling
+errors, known process-quality relationships, practical escalation
+routes, and audit requirements.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Evaluation criteria.</p></caption>
+<colgroup>
+<col style="width: 24%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Evaluation item</strong></th>
+<th><strong>Metric</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Specification-check accuracy</td>
+<td>Correct pass/fail classification.</td>
+</tr>
+<tr>
+<td>OOS detection</td>
+<td>Correct identification of out-of-spec cases.</td>
+</tr>
+<tr>
+<td>Batch traceability</td>
+<td>Accuracy of batch and sample linkage.</td>
+</tr>
+<tr>
+<td>QC staff agreement</td>
+<td>Expert assessment of output.</td>
+</tr>
+<tr>
+<td>False compliance rate</td>
+<td>Incorrectly marking non-compliant material as compliant.</td>
+</tr>
+<tr>
+<td>Audit readiness</td>
+<td>Traceability of all retrieved evidence.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-environmental-and-carbon-accounting-mcp">4.7 Environmental and
+Carbon Accounting MCP</h3>
+<h4 id="paper-2026-p06-purpose-6">Purpose</h4>
+<p>The Environmental and Carbon Accounting MCP supports energy analysis,
+emissions calculation, carbon accounting, and decarbonization scenario
+evaluation.</p>
+<h4 id="paper-2026-p06-required-data-6">Required data</h4>
+<ul>
+<li><p>utility consumption</p></li>
+<li><p>steam and electricity balances</p></li>
+<li><p>fuel usage</p></li>
+<li><p>emission factors</p></li>
+<li><p>process energy data</p></li>
+<li><p>carbon intensity scenarios</p></li>
+<li><p>waste treatment records</p></li>
+<li><p>energy price data</p></li>
+<li><p>regulatory reporting requirements</p></li>
+</ul>
+<h4 id="paper-2026-p06-required-protocols-and-interfaces-6">Required protocols and
+interfaces</h4>
+<ul>
+<li><p>GHG Protocol or ISO-compatible calculation schema</p></li>
+<li><p>emission factor version control</p></li>
+<li><p>energy balance validation</p></li>
+<li><p>scenario definition format</p></li>
+<li><p>regulatory reporting templates</p></li>
+<li><p>process simulator linkage</p></li>
+</ul>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Example tools.</p></caption>
+<colgroup>
+<col style="width: 30%"/>
+<col style="width: 18%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Tool</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>calculate_scope_emissions</td>
+<td>Calculate Scope 1, 2, or 3 emissions.</td>
+</tr>
+<tr>
+<td>run_energy_balance</td>
+<td>Perform process energy balance.</td>
+</tr>
+<tr>
+<td>compare_energy_scenarios</td>
+<td>Compare energy supply scenarios.</td>
+</tr>
+<tr>
+<td>estimate_decarbonization_impact</td>
+<td>Estimate emission reduction from process change.</td>
+</tr>
+<tr>
+<td>generate_carbon_report</td>
+<td>Generate auditable carbon report.</td>
+</tr>
+<tr>
+<td>check_emission_factor_version</td>
+<td>Verify emission factor source and version.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="paper-2026-p06-worker-collaboration-6">Worker collaboration</h4>
+<p>Environmental engineers and operations teams should validate meter
+reliability, emission factor selection, energy balance assumptions,
+feasibility of proposed decarbonization actions, operational
+consequences of energy changes, and reporting requirements.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Evaluation criteria.</p></caption>
+<colgroup>
+<col style="width: 24%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Evaluation item</strong></th>
+<th><strong>Metric</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Calculation accuracy</td>
+<td>Agreement with manual carbon accounting.</td>
+</tr>
+<tr>
+<td>Scenario reproducibility</td>
+<td>Repeatability of scenario results.</td>
+</tr>
+<tr>
+<td>Regulatory consistency</td>
+<td>Alignment with reporting rules.</td>
+</tr>
+<tr>
+<td>Engineer agreement</td>
+<td>Environmental engineer review score.</td>
+</tr>
+<tr>
+<td>Sensitivity analysis</td>
+<td>Effect of emission factor changes.</td>
+</tr>
+<tr>
+<td>Auditability</td>
+<td>Traceability of all assumptions and data sources.</td>
+</tr>
+</tbody>
+</table></div>
+<p>A recent distillation decarbonization study demonstrates the
+relevance of such tools: the authors developed a reasoning agent using
+an LLM and an extensive toolset to execute process simulation,
+optimization, carbon accounting, and result visualization from
+natural-language commands [5].</p>
+<h3 id="paper-2026-p06-operator-knowledge-capture-mcp">4.8 Operator Knowledge Capture
+MCP</h3>
+<h4 id="paper-2026-p06-purpose-7">Purpose</h4>
+<p>The Operator Knowledge Capture MCP structures tacit field knowledge
+from operators, technicians, and engineers into validated, retrievable,
+and updateable knowledge objects. This is the most important MCP for
+field-oriented industrial agents.</p>
+<h4 id="paper-2026-p06-required-data-7">Required data</h4>
+<ul>
+<li><p>operator interviews</p></li>
+<li><p>shift handover notes</p></li>
+<li><p>abnormal situation narratives</p></li>
+<li><p>incident retrospectives</p></li>
+<li><p>near-miss explanations</p></li>
+<li><p>troubleshooting stories</p></li>
+<li><p>maintenance anecdotes</p></li>
+<li><p>experienced-worker heuristics</p></li>
+<li><p>validation workshop records</p></li>
+</ul>
+<h4 id="paper-2026-p06-required-protocols-and-interfaces-7">Required protocols and
+interfaces</h4>
+<ul>
+<li><p>semi-structured interview protocol</p></li>
+<li><p>anonymization and consent procedure</p></li>
+<li><p>knowledge-card schema</p></li>
+<li><p>expert validation workflow</p></li>
+<li><p>versioning and retirement rules</p></li>
+<li><p>confidence score</p></li>
+<li><p>disagreement tracking</p></li>
+<li><p>retrieval index</p></li>
+</ul>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Example tools.</p></caption>
+<colgroup>
+<col style="width: 27%"/>
+<col style="width: 20%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Tool</strong></th>
+<th><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>record_operator_case</td>
+<td>Record field case in structured form.</td>
+</tr>
+<tr>
+<td>structure_tacit_knowledge</td>
+<td>Convert narrative into knowledge card.</td>
+</tr>
+<tr>
+<td>retrieve_similar_incident</td>
+<td>Retrieve similar past cases.</td>
+</tr>
+<tr>
+<td>validate_knowledge_card</td>
+<td>Check validation state by experts.</td>
+</tr>
+<tr>
+<td>update_field_rule</td>
+<td>Update field rule after approval.</td>
+</tr>
+<tr>
+<td>flag_outdated_knowledge</td>
+<td>Identify knowledge requiring review.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="paper-2026-p06-worker-collaboration-7">Worker collaboration</h4>
+<p>Field workers should be involved through contextual inquiry,
+shadowing, semi-structured interviews, shift handover observation,
+incident reconstruction workshops, think-aloud validation, abnormal
+scenario workshops, and cross-validation by multiple experienced
+workers.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Evaluation criteria.</p></caption>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Evaluation item</strong></th>
+<th><strong>Metric</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Knowledge-card acceptance</td>
+<td>Percentage approved by field experts.</td>
+</tr>
+<tr>
+<td>Inter-operator agreement</td>
+<td>Agreement among experienced workers.</td>
+</tr>
+<tr>
+<td>Retrieval usefulness</td>
+<td>Operator rating for similar-case retrieval.</td>
+</tr>
+<tr>
+<td>Time-to-diagnosis</td>
+<td>Reduction in troubleshooting time.</td>
+</tr>
+<tr>
+<td>Repeated mistake reduction</td>
+<td>Frequency of repeated known errors.</td>
+</tr>
+<tr>
+<td>Trust score</td>
+<td>Worker trust in agent output.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Operator Knowledge Capture MCP is the paper’s most distinctive
+proposal. Existing agent studies often emphasize chemistry tools,
+simulators, robotic APIs, and software workflows. Industrial chemical
+engineering additionally requires tacit plant expertise: the practical
+knowledge of what operators notice, which alarms matter, which shortcuts
+are unsafe, when procedures require judgment, and how abnormal
+situations are handled.</p>
+<h2 id="paper-2026-p06-mcp-design-methodology">5. MCP Design Methodology</h2>
+<h3 id="paper-2026-p06-step-1-select-high-value-field-tasks">5.1 Step 1: Select
+high-value field tasks</h3>
+<p>MCP development should begin with tasks that are operationally
+valuable and field-verifiable.</p>
+<ul>
+<li><p>high frequency</p></li>
+<li><p>high cost of error</p></li>
+<li><p>strong dependence on plant data</p></li>
+<li><p>dependence on expert judgment</p></li>
+<li><p>availability of historical cases</p></li>
+<li><p>feasibility of safe read-only or recommendation-only
+deployment</p></li>
+<li><p>ability to evaluate with field workers</p></li>
+</ul>
+<p>Examples include alarm interpretation, batch deviation analysis,
+simulator-assisted troubleshooting, maintenance-history retrieval, and
+SOP-based checklist generation.</p>
+<h3 id="paper-2026-p06-step-2-define-tool-boundaries">5.2 Step 2: Define tool
+boundaries</h3>
+<p>Not all MCP tools should have the same authority. Chemical
+engineering MCPs should be classified by action level.</p>
+<p>Table 1. MCP tool authority levels.</p>
+<figure class="paper-figure">
+<img alt="Figure 3. Field-validated MCP design and evaluation loop. MCP tools should be developed through iterative task selection, knowledge capture, schema design, prototyping, scenario testing, expert validation, shadow deployment, and continuous monitoring." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p06/figure-3.webp"/>
+<figcaption><p>Figure 3. Field-validated MCP design and evaluation loop.
+MCP tools should be developed through iterative task selection,
+knowledge capture, schema design, prototyping, scenario testing, expert
+validation, shadow deployment, and continuous
+monitoring.</p></figcaption>
+</figure>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 9%"/>
+<col style="width: 13%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Level</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>Initial deployment recommendation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L0 Read-only</td>
+<td>Retrieve information only.</td>
+<td>SOP search, historian query.</td>
+<td>Safe starting point.</td>
+</tr>
+<tr>
+<td>L1 Analysis</td>
+<td>Perform calculations or summaries.</td>
+<td>Trend analysis, mass balance.</td>
+<td>Allowed with logging.</td>
+</tr>
+<tr>
+<td>L2 Recommendation</td>
+<td>Generate recommendation.</td>
+<td>Maintenance suggestion, operating advice.</td>
+<td>Human approval required.</td>
+</tr>
+<tr>
+<td>L3 Controlled execution</td>
+<td>Execute action after approval.</td>
+<td>Work-order creation.</td>
+<td>Limited pilot only.</td>
+</tr>
+<tr>
+<td>L4 Autonomous execution</td>
+<td>Execute without human approval.</td>
+<td>Direct control action.</td>
+<td>Generally inappropriate for early deployment.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Chemical engineering MCPs should begin with L0-L2 tools. L3 and L4
+tools should require extensive validation, formal hazard review, access
+control, and audit logging.</p>
+<h3 id="paper-2026-p06-step-3-build-a-data-and-schema-layer">5.3 Step 3: Build a data
+and schema layer</h3>
+<p>Industrial MCP tools require consistent schema design. Key
+identifiers include equipment ID, tag ID, unit operation ID, batch ID,
+material ID, alarm ID, SOP ID, incident ID, maintenance work-order ID,
+sample ID, recommendation ID, and approval state. Without consistent
+identifiers, an agent cannot reliably connect process values,
+maintenance history, quality results, and procedures.</p>
+<h3 id="paper-2026-p06-step-4-encode-constraints">5.4 Step 4: Encode constraints</h3>
+<p>MCP tools should encode constraints before allowing analysis or
+recommendation. Important constraints include design limits, safety
+limits, operating windows, quality specifications, interlock
+constraints, environmental regulations, maintenance intervals, human
+approval requirements, and role-based access limits. A tool should not
+merely return data. It should also know whether a requested analysis or
+action is within its allowed operational boundary.</p>
+<h3 id="paper-2026-p06-step-5-co-design-tools-with-field-workers">5.5 Step 5: Co-design
+tools with field workers</h3>
+<p>MCP tools should be co-designed with operators, technicians,
+engineers, safety officers, and quality personnel.</p>
+<p>1. field observation</p>
+<p>2. task decomposition</p>
+<p>3. worker interviews</p>
+<p>4. abnormal case collection</p>
+<p>5. prototype tool walkthrough</p>
+<p>6. scenario testing</p>
+<p>7. shadow-mode deployment</p>
+<p>8. feedback-based revision</p>
+<p>Field workers should not be treated only as end-users. They are
+co-designers of operational knowledge, safety boundaries, and
+exception-handling logic.</p>
+<h3 id="paper-2026-p06-step-6-deploy-in-safe-mode">5.6 Step 6: Deploy in safe mode</h3>
+<p>Initial deployment should be conservative: read-only mode,
+recommendation-only mode, no direct control, mandatory human approval,
+access logging, output citation, refusal on uncertainty, and escalation
+for high-risk cases.</p>
+<h3 id="paper-2026-p06-step-7-continuously-validate-and-update">5.7 Step 7:
+Continuously validate and update</h3>
+<p>Industrial MCP systems require continuous validation. Monitoring
+should include tool-call logs, operator override cases, false
+recommendation reports, near-miss events, SOP updates, tag changes,
+simulator version changes, worker feedback, and model/tool drift. An MCP
+tool that was valid last year may become unsafe after equipment changes,
+SOP revisions, or new operating constraints.</p>
+<h2 id="paper-2026-p06-worker-collaboration-protocol">6. Worker Collaboration
+Protocol</h2>
+<h3 id="paper-2026-p06-workers-are-not-merely-users">6.1 Workers are not merely
+users</h3>
+<p>Field workers are not merely users of AI agents. They are holders of
+operational knowledge that often does not exist in formal documents.</p>
+<ul>
+<li><p>what abnormal trends look like</p></li>
+<li><p>which alarms matter</p></li>
+<li><p>when SOPs require judgment</p></li>
+<li><p>how equipment behaves before failure</p></li>
+<li><p>which sensor values are unreliable</p></li>
+<li><p>which operating changes are risky despite appearing
+feasible</p></li>
+<li><p>how work is actually performed during night shifts, startups,
+shutdowns, and emergencies</p></li>
+</ul>
+<h3 id="paper-2026-p06-collaboration-methods">6.2 Collaboration methods</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Table 2. Worker collaboration methods for MCP
+design.</p></caption>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contextual inquiry</td>
+<td>Understand real work context.</td>
+</tr>
+<tr>
+<td>Shadowing</td>
+<td>Observe undocumented procedures.</td>
+</tr>
+<tr>
+<td>Semi-structured interview</td>
+<td>Capture tacit knowledge.</td>
+</tr>
+<tr>
+<td>Incident reconstruction</td>
+<td>Analyze abnormal situations.</td>
+</tr>
+<tr>
+<td>Think-aloud validation</td>
+<td>Test whether agent output matches expert reasoning.</td>
+</tr>
+<tr>
+<td>Scenario workshop</td>
+<td>Evaluate abnormal-situation recommendations.</td>
+</tr>
+<tr>
+<td>Override review</td>
+<td>Understand why workers reject AI recommendations.</td>
+</tr>
+<tr>
+<td>Cross-validation</td>
+<td>Compare knowledge across multiple experts.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-knowledge-capture-template">6.3 Knowledge capture template</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Table 3. Field knowledge card template.</p></caption>
+<colgroup>
+<col style="width: 24%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Situation</td>
+<td>What situation occurs?</td>
+</tr>
+<tr>
+<td>Signals</td>
+<td>What signs does the worker observe?</td>
+</tr>
+<tr>
+<td>Normal action</td>
+<td>What is usually done?</td>
+</tr>
+<tr>
+<td>Exception</td>
+<td>When is a different action needed?</td>
+</tr>
+<tr>
+<td>Risk</td>
+<td>What can go wrong?</td>
+</tr>
+<tr>
+<td>Data source</td>
+<td>Which instrument, document, or experience is used?</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>Who validated the knowledge?</td>
+</tr>
+<tr>
+<td>MCP mapping</td>
+<td>Which tool, resource, or prompt uses this knowledge?</td>
+</tr>
+<tr>
+<td>Retirement condition</td>
+<td>When should this knowledge be revised or removed?</td>
+</tr>
+</tbody>
+</table></div>
+<p>This template converts tacit knowledge into structured MCP-ready
+knowledge objects.</p>
+<h2 id="paper-2026-p06-evaluation-framework">7. Evaluation Framework</h2>
+<p>MCP-based industrial agents should be evaluated at multiple
+levels.</p>
+<h3 id="paper-2026-p06-technical-evaluation">7.1 Technical evaluation</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 23%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Metric</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool-call success rate</td>
+<td>Percentage of successful tool executions.</td>
+</tr>
+<tr>
+<td>Schema validation rate</td>
+<td>Whether inputs and outputs follow schema.</td>
+</tr>
+<tr>
+<td>API error rate</td>
+<td>Frequency of integration failures.</td>
+</tr>
+<tr>
+<td>Latency</td>
+<td>Time required for response.</td>
+</tr>
+<tr>
+<td>Reproducibility</td>
+<td>Whether repeated calls produce consistent results.</td>
+</tr>
+<tr>
+<td>Data retrieval accuracy</td>
+<td>Correctness of retrieved data.</td>
+</tr>
+<tr>
+<td>Simulation convergence rate</td>
+<td>Percentage of successful simulation runs.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-domain-correctness">7.2 Domain correctness</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Metric</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Engineer agreement</td>
+<td>Process engineer approval of outputs.</td>
+</tr>
+<tr>
+<td>Operator agreement</td>
+<td>Operator approval of recommendation usefulness.</td>
+</tr>
+<tr>
+<td>Safety officer approval</td>
+<td>Safety review of outputs.</td>
+</tr>
+<tr>
+<td>SOP consistency</td>
+<td>Alignment with approved procedures.</td>
+</tr>
+<tr>
+<td>Regulatory consistency</td>
+<td>Alignment with regulatory requirements.</td>
+</tr>
+<tr>
+<td>Mass/energy balance consistency</td>
+<td>Engineering consistency of calculations.</td>
+</tr>
+<tr>
+<td>Unit conversion correctness</td>
+<td>Correct conversion of units and dimensions.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-operational-evaluation">7.3 Operational evaluation</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Metric</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Time-to-diagnosis</td>
+<td>Reduction in troubleshooting time.</td>
+</tr>
+<tr>
+<td>Manual lookup time</td>
+<td>Reduction in document/data search time.</td>
+</tr>
+<tr>
+<td>Alarm response time</td>
+<td>Faster interpretation of alarm sequences.</td>
+</tr>
+<tr>
+<td>Maintenance planning time</td>
+<td>Reduction in planning burden.</td>
+</tr>
+<tr>
+<td>Quality deviation response time</td>
+<td>Faster handling of quality issues.</td>
+</tr>
+<tr>
+<td>Simulation workflow time</td>
+<td>Reduction in manual simulation effort.</td>
+</tr>
+<tr>
+<td>Operator workload</td>
+<td>Perceived workload change.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-safety-evaluation">7.4 Safety evaluation</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Metric</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unsafe recommendation rate</td>
+<td>Frequency of unsafe outputs.</td>
+</tr>
+<tr>
+<td>Out-of-bound action rate</td>
+<td>Attempts to exceed operating boundaries.</td>
+</tr>
+<tr>
+<td>Unauthorized execution rate</td>
+<td>Unauthorized tool use.</td>
+</tr>
+<tr>
+<td>Failure-to-escalate rate</td>
+<td>Cases where escalation was required but not recommended.</td>
+</tr>
+<tr>
+<td>Hallucinated procedure rate</td>
+<td>Nonexistent or unsupported procedural recommendations.</td>
+</tr>
+<tr>
+<td>Prompt-injection resistance</td>
+<td>Resistance to malicious or misleading inputs.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-human-factors-evaluation">7.5 Human factors evaluation</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<colgroup>
+<col style="width: 24%"/>
+<col style="width: 23%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Metric</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trust score</td>
+<td>Worker trust in system output.</td>
+</tr>
+<tr>
+<td>Perceived usefulness</td>
+<td>Worker evaluation of practical value.</td>
+</tr>
+<tr>
+<td>Explainability score</td>
+<td>Whether workers understand outputs.</td>
+</tr>
+<tr>
+<td>Override rate</td>
+<td>Frequency of human rejection.</td>
+</tr>
+<tr>
+<td>Training time</td>
+<td>Time required for workers to use the system.</td>
+</tr>
+<tr>
+<td>Adoption intention</td>
+<td>Willingness to continue using the tool.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p06-field-validation-stages">7.6 Field validation stages</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<caption><p>Table 4. Field validation stages for MCP
+tools.</p></caption>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Stage</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Offline replay</td>
+<td>Test on historical data.</td>
+</tr>
+<tr>
+<td>Scenario simulation</td>
+<td>Test on designed abnormal scenarios.</td>
+</tr>
+<tr>
+<td>Expert review</td>
+<td>Engineers and workers review outputs.</td>
+</tr>
+<tr>
+<td>Shadow mode</td>
+<td>Run during operations without influencing decisions.</td>
+</tr>
+<tr>
+<td>Human-approved pilot</td>
+<td>Allow recommendations with mandatory approval.</td>
+</tr>
+<tr>
+<td>Controlled deployment</td>
+<td>Deploy in limited unit, shift, or process area.</td>
+</tr>
+<tr>
+<td>Continuous monitoring</td>
+<td>Monitor tool performance and safety over time.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="paper-2026-p06-security-and-governance">8. Security and Governance</h2>
+<h3 id="paper-2026-p06-access-control">8.1 Access control</h3>
+<p>Chemical engineering MCP systems require strict access control:</p>
+<ul>
+<li><p>role-based access</p></li>
+<li><p>plant-area access</p></li>
+<li><p>equipment-level permission</p></li>
+<li><p>read/write separation</p></li>
+<li><p>approval chains</p></li>
+<li><p>restricted high-risk tools</p></li>
+<li><p>separation between development and production
+environments</p></li>
+</ul>
+<h3 id="paper-2026-p06-audit-logging">8.2 Audit logging</h3>
+<p>Every MCP tool call should be logged:</p>
+<ul>
+<li><p>user identity</p></li>
+<li><p>time</p></li>
+<li><p>tool name</p></li>
+<li><p>input</p></li>
+<li><p>output</p></li>
+<li><p>retrieved resources</p></li>
+<li><p>recommendation</p></li>
+<li><p>human approval</p></li>
+<li><p>final action</p></li>
+<li><p>error messages</p></li>
+</ul>
+<p>Audit logs are essential for incident analysis, regulatory review,
+and continuous improvement.</p>
+<h3 id="paper-2026-p06-safety-guardrails">8.3 Safety guardrails</h3>
+<p>Minimum safety guardrails include:</p>
+<ul>
+<li><p>no autonomous control by default</p></li>
+<li><p>action whitelist</p></li>
+<li><p>forbidden action list</p></li>
+<li><p>operating-limit checks</p></li>
+<li><p>dual approval for high-risk actions</p></li>
+<li><p>refusal when data are missing</p></li>
+<li><p>emergency stop and escalation rules</p></li>
+</ul>
+<h3 id="paper-2026-p06-cybersecurity-risks">8.4 Cybersecurity risks</h3>
+<p>MCP systems create new attack surfaces because they connect language
+models to tools, databases, APIs, and potentially industrial systems.
+Security risks include:</p>
+<ul>
+<li><p>prompt injection</p></li>
+<li><p>malicious document retrieval</p></li>
+<li><p>tool poisoning</p></li>
+<li><p>unauthorized API calls</p></li>
+<li><p>credential leakage</p></li>
+<li><p>false sensor data</p></li>
+<li><p>unsafe tool invocation</p></li>
+<li><p>compromised MCP servers</p></li>
+</ul>
+<p>Official MCP security guidance emphasizes that MCP implementations
+require security considerations beyond ordinary application development
+[11]. In chemical engineering, this is especially important because an
+unsafe tool call may affect process safety, equipment integrity, or
+regulatory compliance.</p>
+<h3 id="paper-2026-p06-tool-description-quality">8.5 Tool description quality</h3>
+<p>MCP tool descriptions are not merely documentation. They affect how
+agents select and invoke tools. Tool descriptions include the tool name,
+natural-language description, and input schema used by clients and
+models for tool selection [12]. Therefore, chemical engineering MCP
+tools should be tested not only for API correctness, but also for
+description clarity, ambiguity, and misuse risk.</p>
+<h2 id="paper-2026-p06-proposed-reference-architecture">9. Proposed Reference
+Architecture</h2>
+<h3 id="paper-2026-p06-architecture-overview">9.1 Architecture overview</h3>
+<p>A chemical engineering MCP-based agent architecture should include
+the layers shown in Figure 1: human users, an LLM agent/MCP client, a
+router and policy layer, domain MCP servers, and industrial systems. The
+key principle is that the LLM does not directly control plant systems;
+bounded MCP tools mediate access and execution.</p>
+<h3 id="paper-2026-p06-core-design-principles">9.2 Core design principles</h3>
+<p>1. The LLM should not directly control plant equipment.</p>
+<p>2. MCP tools should expose typed, bounded, auditable functions.</p>
+<p>3. Safety checks should occur before recommendations are
+returned.</p>
+<p>4. Read-only tools should be deployed before execution tools.</p>
+<p>5. Field workers should validate tool behavior.</p>
+<p>6. Human approval should be mandatory for high-risk
+recommendations.</p>
+<p>7. All tool calls should be logged and reviewable.</p>
+<h2 id="paper-2026-p06-discussion">10. Discussion</h2>
+<h3 id="paper-2026-p06-mcp-design-is-more-important-than-agent-framework-design">10.1
+MCP design is more important than agent framework design</h3>
+<p>In the chemical engineering industry, agent intelligence is bounded
+by the quality of its executable interfaces. A sophisticated agent
+cannot be useful if it cannot retrieve the correct process data,
+interpret SOPs, check safety limits, or run simulations. Conversely,
+even a relatively simple agent can be valuable if it is connected to
+reliable, field-validated MCP tools. The industrial question is
+therefore not: Which agent framework is best? The more important
+question is: Which plant-specific MCP tools are safe, useful, validated,
+and auditable?</p>
+<h3 id="paper-2026-p06-field-knowledge-as-executable-infrastructure">10.2 Field
+knowledge as executable infrastructure</h3>
+<p>Chemical plants contain large amounts of tacit knowledge. Some of it
+is documented in SOPs, but much of it lives in operator experience,
+maintenance practice, shift handover habits, and informal
+troubleshooting routines. Industrial AI agents will fail if this
+knowledge remains outside the system. The purpose of Operator Knowledge
+Capture MCP is to convert tacit knowledge into structured, validated,
+and updateable knowledge cards that agents can retrieve and use.</p>
+<h3 id="paper-2026-p06-human-in-the-loop-is-not-temporary">10.3 Human-in-the-loop is
+not temporary</h3>
+<p>In many AI systems, human-in-the-loop is treated as a temporary phase
+before automation. In chemical engineering, human involvement should be
+treated as a permanent governance layer. Humans must remain responsible
+for safety-critical decisions, abnormal situation management, emergency
+response, operational trade-offs, regulatory compliance, and final
+approval of high-risk recommendations.</p>
+<h3 id="paper-2026-p06-from-digital-documents-to-executable-expertise">10.4 From
+digital documents to executable expertise</h3>
+<p>Many digital transformation projects digitize documents but do not
+make knowledge executable. MCP offers a different direction. The goal is
+not merely to store SOPs, process data, or maintenance records. The goal
+is to operationalize them as tools that agents can invoke, verify, cite,
+and log. The core transformation is from passive documents to executable
+expertise.</p>
+<h2 id="paper-2026-p06-limitations">11. Limitations</h2>
+<ul>
+<li><p>This paper is a conceptual design paper. It proposes MCP design
+strategies but does not implement all proposed MCP servers.</p></li>
+<li><p>Chemical engineering industries differ greatly. Oil refining,
+petrochemicals, pharmaceuticals, batteries, water treatment, food
+processing, and specialty chemicals have different data systems,
+regulations, safety requirements, and operating cultures.</p></li>
+<li><p>Field knowledge capture is difficult. Operator expertise may be
+inconsistent, outdated, context-dependent, or difficult to
+formalize.</p></li>
+<li><p>MCP tools may introduce cybersecurity and safety risks if poorly
+implemented. The proposed strategy therefore emphasizes read-only
+deployment, access control, audit logging, and human approval.</p></li>
+<li><p>Direct plant control is outside the scope of this paper. The
+proposed framework is intended primarily for decision support, analysis,
+simulation, retrieval, and recommendation.</p></li>
+</ul>
+<h2 id="paper-2026-p06-conclusion">12. Conclusion</h2>
+<p>AI agents in chemical engineering should not be designed only around
+agent frameworks, prompt harnesses, or multi-agent orchestration. In
+industrial environments, the practical bottleneck is the availability of
+field-validated MCP tools.</p>
+<p>This paper proposed MCP design strategies for AI agents in the
+chemical engineering industry. It argued that MCP servers should encode
+plant data, SOPs, safety constraints, simulation tools, maintenance
+records, quality data, carbon-accounting logic, and operator know-how
+into executable and auditable interfaces. It also proposed eight MCP
+categories, a worker collaboration protocol, an evaluation framework,
+and a reference architecture.</p>
+<blockquote>
+<p>Chemical engineering agents do not become useful because they can
+talk about processes. They become useful when they can safely act
+through validated tools that reflect real plant data, real procedures,
+real constraints, and real field expertise.</p>
+</blockquote>
+<p>The next stage of industrial chemical engineering AI should therefore
+focus less on building another general-purpose agent framework and more
+on building field-validated MCP ecosystems with operators, engineers,
+safety officers, quality personnel, and maintenance technicians.</p>
+<h2 id="paper-2026-p06-references">References</h2>
+<p>[1] A. M. Bran et al., “Augmenting large language models with
+chemistry tools,” Nature Machine Intelligence, 2024.</p>
+<p>[2] D. A. Boiko, R. MacKnight, B. Kline, and G. Gomes, “Autonomous
+chemical research with large language models,” Nature, 2023.</p>
+<p>[3] J. Liang, N. Groll, and G. Sin, “Large Language Model Agent for
+User-friendly Chemical Process Simulations,” arXiv, 2026.</p>
+<p>[4] X. Tian et al., “From Text to Simulation: A Multi-Agent LLM
+Workflow for Automated Chemical Process Design,” arXiv, 2026.</p>
+<p>[5] S. Tan et al., “Reasoning-agent-driven process simulation,
+optimization, carbon accounting and decarbonization of distillation,”
+Communications Engineering, 2026.</p>
+<p>[6] Model Context Protocol, “Specification,” 2025.</p>
+<p>[7] Model Context Protocol, “Introduction,” 2025.</p>
+<p>[8] Model Context Protocol, “Tools,” Specification, 2025.</p>
+<p>[9] Model Context Protocol, “Resources,” Specification, 2025.</p>
+<p>[10] Model Context Protocol, “Prompts,” Specification, 2025.</p>
+<p>[11] Model Context Protocol, “Security Best Practices,”
+Documentation, 2026.</p>
+<p>[12] “Model Context Protocol Tool Descriptions Are a Runtime
+Interface,” arXiv, 2026.</p>

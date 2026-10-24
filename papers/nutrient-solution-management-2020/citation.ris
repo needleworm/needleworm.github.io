@@ -1,0 +1,16 @@
+TY  - CONF
+AU  - Ban, Byunghyun
+AU  - Lee, Janghun
+AU  - Ryu, Donghun
+AU  - Lee, Minwoo
+AU  - Eom, Tae Dong
+TI  - Nutrient Solution Management System for Smart Farms and Plant Factory
+PY  - 2020
+T2  - 2020 International Conference on Information and Communication Technology Convergence (ICTC)
+SP  - 1537
+EP  - 1542
+DO  - 10.1109/ictc49870.2020.9289192
+UR  - https://doi.org/10.1109/ictc49870.2020.9289192
+AB  - We present an automated system for nutrient solution management. Prior arts usually measure only pH and EC of the nutrient solutions for maintenance. When EC drops, they just simply add concentrated nutrient to the horticulture bed. Such approach can maintain the density of nutrient solution but cannot maintain the rates of individual ion particles. To prevent nutrition related disorders, fertilization methods with ion selective electrodes are widely introduced. This trend measures individual ion concentration of nutrient solution to maintain appropriate nutrient composition by supplying only insufficient ions. Many researchers have suggested ISE based automated fertilization systems. However, they failed to control a chemical artifact called ion interference effect, which becomes greater at higher density. Our system measures individual concentration of multiple ions and add only deficient nutrients, while handling the ion interference effect issue. To ensure the performance of ion selective electrodes, the system also performs fully automated 3-point calibration 24 times a day. A machine learning algorithm is applied on the sensory parts to remove ion interference effect which make measurement of complex solution with ISE almost impossible. With automated calibration and signal processing technology, the system robustly and continuously maintains nutrient condition for plants. We suggest applying this system on closed hydroponic systems such as smart farms or plant factory, to reduce water consumption and to provide more appropriate environment for the crops.
+LA  - en
+ER  -

@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - Responding to Suspected LLM-Written Hallucinated Peer Reviews A Claim-Level Audit Protocol
+PY  - 2026
+DO  - 10.13140/RG.2.2.32483.11040
+UR  - https://www.researchgate.net/publication/404418703_Responding_to_Suspected_LLM-Written_Hallucinated_Peer_Reviews_A_Claim-Level_Audit_Protocol
+AB  - Authors are often advised to respond to peer-review comments politely and point by point. However, this advice is insufficient when a formal review appears to be LLM-written or hallucinated: fluent, plausible, professionally formatted, but contradicted by the manuscript. This paper proposes a claim-level audit protocol for responding to suspected LLM-written hallucinated peer reviews. The protocol decomposes reviewer comments into atomic claims, classifies each claim as supported, partially supported, contradicted, generic, scope-mismatched, or not assessable, and maps each claim to manuscript evidence before selecting a response strategy. The protocol is illustrated using an anonymized case from an actual submission to a Korea Citation Index (KCI) candidate journal, in which one review contained multiple false missing-content claims. The goal is not to encourage accusations of AI use, but to help authors replace speculation with auditable evidence for revision, rebuttal, and editorial escalation.
+LA  - en
+M3  - Preprint
+ER  -

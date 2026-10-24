@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - MCP Design Strategies for AI Agents in the Chemical Engineering Industry
+PY  - 2026
+DO  - 10.13140/RG.2.2.14152.69125
+UR  - https://www.researchgate.net/publication/404500792_MCP_Design_Strategies_for_AI_Agents_in_the_Chemical_Engineering_Industry
+AB  - Large language model (LLM) agents are increasingly being applied to chemistry and chemical engineering tasks, including synthesis planning, autonomous experimentation, process simulation, process design, optimization, and carbon accounting. Existing studies demonstrate that agents become powerful when connected to external tools, simulators, databases, and laboratory or process interfaces. However, many of these studies focus on what agents can do once appropriate tools are available, while providing less guidance on how chemical engineering experts should design, implement, and validate those tools for industrial environments. This paper proposes design strategies for Model Context Protocol (MCP)-based AI agents in the chemical engineering industry, including a taxonomy of industrial MCP servers, including Process Data MCP, SOP and Work Instruction MCP, Safety and Hazard MCP, Process Simulation MCP, Maintenance MCP, Quality and Laboratory Data MCP, Environmental and Carbon Accounting MCP, and Operator Knowledge Capture MCP. For each MCP type, the paper identifies required data, protocols, worker collaboration methods, and evaluation criteria. The paper concludes that future chemical engineering agents should be developed through field-validated MCP ecosystems rather than through agent frameworks alone.
+LA  - en
+M3  - Preprint
+ER  -

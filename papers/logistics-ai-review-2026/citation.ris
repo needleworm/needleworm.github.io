@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - Recent Applications of Artificial Intelligence in Logistics: An Evidence-Oriented Operational Review of Studies Published Since 2024
+PY  - 2026
+DO  - 10.20944/preprints202605.0444.v1
+UR  - https://www.preprints.org/manuscript/202605.0444
+AB  - Artificial intelligence (AI) research in logistics has rapidly shifted since 2024 toward operationally specific systems for forecasting, routing, warehouse optimization, supply-chain visibility, port scheduling, and smart-port maintenance. This paper presents an evidence-oriented operational review of studies published since 2024 on AI applications in logistics. Instead of classifying the literature by model type alone, the review organizes studies by logistics decision function and evaluates the evidence profile of each application: whether real operational data were used, whether the study relied on simulation or benchmark instances, whether the data scale was reported, and whether field validation was conducted. The analysis shows that recent AI logistics studies increasingly address concrete operational tasks, including demand forecasting, late-delivery prediction, route deviation prediction, dynamic vehicle routing, warehouse order picking, robotic fulfillment scheduling, vessel arrival prediction, berth allocation, quay crane scheduling, container dwell-time prediction, and predictive maintenance at smart ports. However, the evidence base remains uneven. Several studies use real operational or survey data, while many warehouse and routing studies rely on simulation, generated instances, or benchmark settings. Field validation remains rare. The paper argues that the next stage of logistics AI research should move beyond model accuracy and report operational evidence: data provenance, data scale, logistics KPIs, field validation, integration requirements, and human oversight.
+LA  - en
+M3  - Preprint
+ER  -

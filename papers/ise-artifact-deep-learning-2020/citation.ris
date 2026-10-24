@@ -1,0 +1,12 @@
+TY  - CONF
+AU  - Ban, Byunghyun
+TI  - Deep learning method to remove chemical, kinetic and electric artifacts on ISEs
+PY  - 2020
+T2  - 2020 International Conference on Information and Communication Technology Convergence (ICTC)
+SP  - 1242
+EP  - 1246
+DO  - 10.1109/ictc49870.2020.9289389
+UR  - https://doi.org/10.1109/ictc49870.2020.9289389
+AB  - I suggest a deep learning based sensor signal processing method to remove chemical, kinetic and electrical artifacts from ion selective electrodes’ measured values. An ISE is used to investigate the concentration of a specific ion from aqueous solution, by measuring the Nernst potential along the glass membrane. However, application of ISE on a mixture of multiple ion has some problem. First problem is a chemical artifact which is called ion interference effect. Electrically charged particles interact with each other and flows through the glass membrane of different ISEs. Second problem is the kinetic artifact caused by the movement of the liquid. Water molecules collide with the glass membrane causing abnormal peak values of voltage. The last artifact is the interference of ISEs. When multiple ISEs are dipped into same solution, one electrode’s signal emission interference voltage measurement of other electrodes. Therefore, an ISE is recommended to be applied on single-ion solution, without any other sensors applied at the same time. Deep learning approach can remove both 3 artifacts at the same time. The proposed method used 5 layers of artificial neural networks to regress correct signal to remove complex artifacts with one-shot calculation. Its MAPE was less than 1.8% and R2 of regression was 0.997. A randomly chosen value of AI processed data has MAPE less than 5% (p-value 0.016).
+LA  - en
+ER  -

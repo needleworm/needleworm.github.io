@@ -1,0 +1,14 @@
+TY  - CONF
+AU  - Ban, Byunghyun
+AU  - Ryu, Donghun
+AU  - Lee, Minwoo
+TI  - Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient Solutions
+PY  - 2019
+T2  - 2019 International Conference on Information and Communication Technology Convergence (ICTC)
+SP  - 1156
+EP  - 1161
+DO  - 10.1109/ictc46691.2019.8939812
+UR  - https://doi.org/10.1109/ictc46691.2019.8939812
+AB  - High concentration agricultural facilities such as vertical farms or plant factories consider hydroponic techniques as optimal solutions. Although closed-system dramatically reduces water consumption and pollution issues, it has ion-ratio related problem. As the root absorbs individual ions with different rate, ion rate in a nutrient solution should be adjusted periodically. But traditional method only considers pH and electrical conductivity to adjust the nutrient solution, leading to ion imbalance and accumulation of excessive salts. To avoid those problems, some researchers have proposed ion-balancing methods which measure and control each ion concentration. However, those approaches do not overcome the innate limitations of ISEs, especially ion interference effect. An anion sensor is affected by other anions, and the error grows larger in higher concentration solution. A machine learning approach to modify ISE data distorted by ion interference effect is proposed in this paper. As measurement of TDS value is relatively robust than any other signals, we applied TDS as key parameter to build a readjustment function to remove the artifact. Once a readjustment model is established, application on ISE data can be done in real time. Readjusted data with proposed model showed about 91.6 ~ 98.3% accuracies. This method will enable the fields to apply recent methods in feasible status.
+LA  - en
+ER  -

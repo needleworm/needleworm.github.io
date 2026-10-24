@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Choo, Sang-Mok
+AU  - Ban, Byunghyun
+AU  - Joo, Jae Il
+AU  - Cho, Kwang-Hyun
+TI  - The phenotype control kernel of a biomolecular regulatory network
+PY  - 2018
+T2  - BMC Systems Biology
+VL  - 12
+IS  - 1
+DO  - 10.1186/s12918-018-0576-8
+UR  - https://doi.org/10.1186/s12918-018-0576-8
+AB  - Background: Controlling complex molecular regulatory networks is getting a growing attention as it can provide a systematic way of driving any cellular state to a desired cell phenotypic state. A number of recent studies suggested various control methods, but there is still deficiency in finding out practically useful control targets that ensure convergence of any initial network state to one of attractor states corresponding to a desired cell phenotype. Results: To find out practically useful control targets, we introduce a new concept of phenotype control kernel (PCK) for a Boolean network, defined as the collection of all minimal sets of control nodes having their fixed state values that can generate all possible control sets which eventually drive any initial state to one of attractor states corresponding to a particular cell phenotype of interest. We also present a detailed method with which we can identify PCK in a systematic way based on the layered network and converging tree of a given network. We identify all candidates for control nodes from the layered network and then hierarchically search for all possible minimal sets by using the converging tree. We show the usefulness of PCK by applying it to cell proliferation and apoptosis signaling networks and comparing the results with other control methods. PCK is the unique control method for Boolean network models that can be used to identify all possible minimal sets of control nodes. Interestingly, many of the minimal sets have only one or two control nodes. Conclusions: Based on the new concept of PCK, we can identify all possible minimal sets of control nodes that can drive any molecular network state to one of multiple attractor states representing a same desired cell phenotype.
+LA  - en
+C7  - 49
+ER  -

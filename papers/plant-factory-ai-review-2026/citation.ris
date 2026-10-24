@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins
+PY  - 2026
+DO  - 10.20944/preprints202605.0438.v1
+UR  - https://www.preprints.org/manuscript/202605.0438
+AB  - Plant factories have evolved from automated cultivation facilities into data-driven crop production systems. Over the last decade, artificial intelligence has been applied to non-destructive crop monitoring, sensor correction, nutrient-solution diagnosis, growth prediction, environmental control, digital twins, and product-level inspection. This review summarizes AI technologies for plant factories, focusing on machine vision, deep learning, nutrient-solution intelligence, reinforcement learning, and digital-twin interfaces. The main argument is that plant-factory AI should not be understood only as image-based phenotyping; practical systems require an integrated intelligence stack connecting visual perception, sensor calibration, nutrient modeling, control, remote operation, and industrial inspection. Remaining challenges include dataset scarcity, model generalization, sensor drift, explainability, energy-aware control, and closed-loop decision-making.
+LA  - en
+M3  - Preprint
+ER  -

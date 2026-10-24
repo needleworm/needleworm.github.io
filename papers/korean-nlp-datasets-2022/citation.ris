@@ -1,0 +1,12 @@
+TY  - CONF
+AU  - Ban, Byunghyun
+TI  - A Survey on Awesome Korean NLP Datasets
+PY  - 2022
+T2  - 2022 13th International Conference on Information and Communication Technology Convergence (ICTC)
+SP  - 1615
+EP  - 1620
+DO  - 10.1109/ictc55196.2022.9952930
+UR  - https://doi.org/10.1109/ictc55196.2022.9952930
+AB  - English based datasets are commonly available from Kaggle, GitHub, or recently published papers. Although benchmark tests with English datasets are sufficient to show off the performances of new models and methods, still a researcher need to train and validate the models on Korean based datasets to produce a technology or product, suitable for Korean processing. This paper introduces 15 popular Korean based NLP datasets with summarized details such as volume, license, repositories, and other research results inspired by the datasets. Also, I provide high-resolution instructions with sample or statistics of datasets. The main characteristics of datasets are presented on a single table to provide a rapid summarization of datasets for researchers.
+LA  - en
+ER  -

@@ -12,6 +12,7 @@ from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 from build_site import ROOT, Blocks, VOID, GROUPS, LECTURE_CATEGORIES, latest_date, source_views
 from paper_pages import load_records, plain
+from paper_citations import citation_formats
 
 
 class Document(HTMLParser):
@@ -234,9 +235,31 @@ def check_paper_pages(config, source, require):
         titles.add(title)
         abstracts = re.findall(r'<p class="abstract"[^>]*>(.*?)</p>', html, re.S)
         require(len(abstracts) == 1 and plain(abstracts[0]) == record['abstract'], f'{key}: original abstract missing from readable HTML')
-        require(not any(tag in {'template', 'details'} for tag, _ in doc.tags), f'{key}: paper abstract cannot require expansion')
+        abstract_span = re.search(r'<section class="paper-abstract".*?</section>', html, re.S)
+        require(abstract_span and not re.search(r'<(?:template|details)\b', abstract_span[0]), f'{key}: paper abstract cannot require expansion')
         require(not doc.unclosed_layout, f'{key}: unclosed detail layout')
         require(record['path'] in listing_links, f'{key}: missing crawlable link from the paper index')
+        ids = [attrs['id'] for _, attrs in doc.tags if attrs.get('id')]
+        require(len(ids) == len(set(ids)), f'{key}: duplicate reader anchors')
+        for tag, attrs in doc.tags:
+            link = attrs.get('href', '')
+            if tag == 'a' and link.startswith('#'):
+                require(unquote(link[1:]) in ids, f'{key}: broken paper section link {link}')
+        body = record.get('full_text')
+        require(bool(body) == (key != 'paper-0'), f'{key}: full-text coverage or thesis exclusion mismatch')
+        if body:
+            require(body['html'] in html, f'{key}: source body missing or changed by rendering')
+            require('id="full-text"' in html and body['source_label'] in plain(html), f'{key}: full text needs a visible version label')
+            require('paper-reader.js?v=' in html, f'{key}: missing reader utilities')
+        else:
+            require('id="full-text"' not in html and '초록만 제공합니다' in html, f'{key}: thesis must remain abstract-only')
+        citation_data = re.search(r'<script type="application/json" id="citation-formats-data">(.*?)</script>', html, re.S)
+        formats = citation_formats(record)
+        require(citation_data and json.loads(citation_data[1]) == formats, f'{key}: citation formats differ from verified bibliography')
+        require({a.get('data-citation-format') for tag, a in doc.tags if tag == 'button' and 'data-citation-format' in a} == set(formats), f'{key}: missing citation copy button')
+        for style, extension in [('bibtex', 'bib'), ('ris', 'ris')]:
+            citation_file = target.parent / ('citation.' + extension)
+            require(citation_file.is_file() and citation_file.read_text(encoding='utf8').strip() == formats[style].strip(), f'{key}: citation download differs from copyable text')
         schemas = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
         graph = json.loads(schemas[0])['@graph'] if len(schemas) == 1 else []
         articles = [node for node in graph if node.get('@type') in {'ScholarlyArticle', 'Thesis'}]
@@ -263,7 +286,8 @@ def check_paper_pages(config, source, require):
                     route_path = unquote(urlsplit(value).path)
                     local = ROOT / route_path.lstrip('/')
                     require((local/'index.html').is_file() if route_path.endswith('/') else local.is_file(), f'{key}: missing local detail reference {value}')
-        report.append({'paper': key, 'url': url, 'full_pdf': bool(record.get('full_pdf'))})
+        report.append({'paper': key, 'url': url, 'full_pdf': bool(record.get('full_pdf')), 'full_text': bool(body),
+                       'sections': len(body['headings']) if body else 0, 'citation_formats': len(formats)})
     return report
 
 

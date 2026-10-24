@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs
+PY  - 2026
+DO  - 10.13140/RG.2.2.14616.35848
+UR  - https://www.researchgate.net/publication/404370528_A_Systematic_Review_of_AI-Based_Music_Composition_Limitations_and_Breakthroughs
+AB  - AI-based music composition has evolved rapidly, with research paradigms shifting from modeling local patterns to capturing global musical coherence. This paper examines how compositional AI has progressed from modeling local patterns to forming global musical ideas. Early machine learning models, based on state transition probabilities, were able to capture only local continuity between notes and chords, and thus failed to produce meaningful phrasing or large-scale musical structure. With the introduction of recurrent architectures, models began to incorporate temporal context, and transformer-based approaches further enabled the generation of musically coherent passages over longer spans. Nevertheless, these models still exhibit limitations in maintaining overall structural completeness and long-term musical direction. More recent approaches move beyond sequential prediction toward the simultaneous generation of musical structure and sonic characteristics. This shift reflects a transition from the accumulation of local decisions to the formation of a more holistic musical representation.
+LA  - en
+M3  - Preprint
+ER  -

@@ -1,0 +1,17 @@
+TY  - CONF
+AU  - Lee, Ha Yeon
+AU  - Kwak, Jin Myung
+AU  - Ban, Byunghyun
+AU  - Na, Seon Jin
+AU  - Lee, Se Ra
+AU  - Lee, Heung-Kyu
+TI  - GAN-D: Generative adversarial networks for image deconvolution
+PY  - 2017
+T2  - 2017 International Conference on Information and Communication Technology Convergence (ICTC)
+SP  - 132
+EP  - 137
+DO  - 10.1109/ictc.2017.8190958
+UR  - https://doi.org/10.1109/ictc.2017.8190958
+AB  - We propose new generative adversarial networks for generalized image deconvolution, GAN-D. Most of the previous researches concentrate to specific sub-topic of image deconvolution or generative image deconvolution models with a strong assumption. However, our network restores visual data from distorted images applied multiple dominant degradation problems such as noise, blur, saturation, compression without any prior information. As a generator, we leverage convolutional neural networks based ODCNN [12] which perform generalized image deconvolution with a decent performance, and we use VGGNet [11] to distinguish true/fake of an input image as a discriminator. We devise the loss function of the generator of GAN-D which combines mean square error (MSE) of network output and ground-truth images to traditional adversarial loss of GAN. This loss function and the presence of discriminator reinforces the generator to produce more high-quality images than the original model structured with a single convolutional neural network. During experiments with four datasets, we find that our network has higher PSNR/SSIM values and qualitative results than ODCNN.
+LA  - en
+ER  -

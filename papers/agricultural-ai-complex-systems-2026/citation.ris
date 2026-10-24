@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - Agricultural AI Agents Can Learn from Chemical Complex System Models
+PY  - 2026
+DO  - 10.13140/RG.2.2.10797.24808
+UR  - https://www.researchgate.net/publication/404500889_Agricultural_AI_Agents_Can_Learn_from_Chemical_Complex_System_Models
+AB  - Smart farms and plant factories increasingly use sensors, automatic controllers, digital twins, and artificial intelligence models. However, nutrient management remains difficult because nutrient solutions are nonlinear chemical systems coupled with plant uptake dynamics. This paper proposes a simulation-first strategy for smart-farm nutrient management agents. The proposed strategy is grounded in previous studies on ion-selective electrode correction, ODE network modeling of nutrient solutions, plant-root ion transport, nutrient-plant interaction simulation, automated nutrient-solution management systems, and plant-factory digital twins. The paper further proposes a three-layer digital-twin interpretation consisting of facility-level, crop-level, and nutrient-control digital twins. The nutrient-control digital twin is positioned as a chemical-physiological playground inside a broader plant-factory digital twin. The proposed approach does not require sub-second real-time agent control because nutrient uptake and nutrient-related physiological responses are evaluated over multi-minute, hourly, daily, or crop-stage timescales. Therefore, nutrient management agents should be introduced as supervisory simulators and target-profile optimizers rather than direct dosing robots.
+LA  - en
+M3  - Preprint
+ER  -

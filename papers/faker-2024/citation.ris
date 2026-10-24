@@ -1,0 +1,15 @@
+TY  - JOUR
+AU  - Ban, Byunghyun
+AU  - Lee, Hyoseok
+TI  - FAKER: Full-body Anonymization with Human Keypoint Extraction and Regression for Real-time Video Deidentification
+PY  - 2024
+T2  - Journal of The Korean Association of Artificial Intelligence Education
+VL  - 5
+IS  - 2
+SP  - 57
+EP  - 72
+DO  - 10.52618/aied.2024.5.2.6
+UR  - https://doi.org/10.52618/aied.2024.5.2.6
+AB  - In the contemporary digital era, protection of personal information has become a paramount issue. The exponential growth of the media industry has heightened concerns regarding the anonymization of individuals captured in video footage. Traditional methods, such as blurring or pixelation, are commonly employed, while recent advancements have introduced generative adversarial networks (GANs) to redraw faces in videos. In this study, we propose a novel approach that employs a significantly smaller model to achieve real-time full-body anonymization of individuals in videos. Unlike conventional techniques that often fail to effectively remove personal identification information—such as skin color, clothing, accessories, and body shape—our method successfully eradicates all such details. Furthermore, by leveraging pose estimation algorithms, our approach accurately represents information regarding individuals' positions, movements, and postures. This algorithm can be seamlessly integrated into CCTV or IP camera systems installed in various industrial settings, functioning in real-time and thus facilitating the widespread adoption of full-body anonymization technology.
+LA  - en
+ER  -

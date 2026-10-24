@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - Mixed Reality Interface for Digital Twin of Plant Factory
+PY  - 2022
+DO  - 10.48550/arXiv.2211.00597
+UR  - https://arxiv.org/abs/2211.00597
+AB  - An easier and intuitive interface architecture is necessary for digital twin of plant factory. I suggest an immersive and interactive mixed reality interface for digital twin models of smart farming, for remote work rather than simulation of components. The environment is constructed with UI display and a streaming background scene, which is a real time scene taken from camera device located in the plant factory, processed with deformable neural radiance fields. User can monitor and control the remote plant factory facilities with HMD or 2D display based mixed reality environment. This paper also introduces detailed concept and describes the system architecture to implement suggested mixed reality interface.
+LA  - en
+M3  - Preprint
+ER  -

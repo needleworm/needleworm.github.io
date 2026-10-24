@@ -1,0 +1,409 @@
+<p class="paper-keywords">Keywords—Systems Biology, Horticulture, Computational Biology,
+Complex System, Fertilization, System Modeling</p><h2 id="paper-6-introduction">Introduction</h2>
+<p>Recently, ODE network simulation is applied on nutrient solution
+system to understand the black-boxed behavior of complex chemical
+system. [1] The network-model based approach describes sedimentation and
+complex bidirected interactions among chemical compounds which the
+nutrient solution contains. It provided time-series simulations to
+investigate nutrient solution system with high accuracy. This method is
+based on ordinary differential equation (ODE) expression of chemical
+reactions. For example, ionization of NaCl<sub>(aq)</sub> is described
+as equation (1-3), where k<sub>1</sub> is forward reaction rate and
+k<sub>2</sub> is backward reaction rate.</p>
+<p>With reliable reaction rate coefficients, the equations can describe
+the concentration change of chemical components along time scale.
+Combination of those reactions enables simulation of complex chemical
+system’s behavior.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mrow><mo form="prefix" stretchy="true">[</mo><msup><mrow><mi>N</mi><mi>a</mi></mrow><mo>+</mo></msup><mo form="postfix" stretchy="true">]</mo></mrow></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mspace width="0.222em"></mspace><msub><mi>k</mi><mn>1</mn></msub><mo form="prefix" stretchy="false">[</mo><mi>N</mi><mi>a</mi><mi>C</mi><mi>l</mi><mo form="postfix" stretchy="false">]</mo><mo>−</mo><msub><mi>k</mi><mn>2</mn></msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>N</mi><msup><mi>a</mi><mo>+</mo></msup><mo form="postfix" stretchy="true">]</mo></mrow><mrow><mo form="prefix" stretchy="true">[</mo><mi>C</mi><msup><mi>l</mi><mo>−</mo></msup><mo form="postfix" stretchy="true">]</mo></mrow><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mo form="prefix" stretchy="false">(</mo><mn>1</mn><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{d\left\lbrack {Na}^{+} \right\rbrack}{dt} = \ k_{1}\lbrack NaCl\rbrack - k_{2}\left\lbrack Na^{+} \right\rbrack\left\lbrack Cl^{-} \right\rbrack\ \ (1)</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mrow><mo form="prefix" stretchy="true">[</mo><msup><mrow><mi>C</mi><mi>l</mi></mrow><mo>−</mo></msup><mo form="postfix" stretchy="true">]</mo></mrow></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mspace width="0.222em"></mspace><msub><mi>k</mi><mn>1</mn></msub><mo form="prefix" stretchy="false">[</mo><mi>N</mi><mi>a</mi><mi>C</mi><mi>l</mi><mo form="postfix" stretchy="false">]</mo><mo>−</mo><msub><mi>k</mi><mn>2</mn></msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>N</mi><msup><mi>a</mi><mo>+</mo></msup><mo form="postfix" stretchy="true">]</mo></mrow><mrow><mo form="prefix" stretchy="true">[</mo><mi>C</mi><msup><mi>l</mi><mo>−</mo></msup><mo form="postfix" stretchy="true">]</mo></mrow><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mo form="prefix" stretchy="false">(</mo><mn>2</mn><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{d\left\lbrack {Cl}^{-} \right\rbrack}{dt} = \ k_{1}\lbrack NaCl\rbrack - k_{2}\left\lbrack Na^{+} \right\rbrack\left\lbrack Cl^{-} \right\rbrack\ \ (2)</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mo form="prefix" stretchy="false">[</mo><mi>N</mi><mi>a</mi><mi>C</mi><mi>l</mi><mo form="postfix" stretchy="false">]</mo></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mspace width="0.222em"></mspace><msub><mrow><mi>−</mi><mi>k</mi></mrow><mn>1</mn></msub><mo form="prefix" stretchy="false">[</mo><mi>N</mi><mi>a</mi><mi>C</mi><mi>l</mi><mo form="postfix" stretchy="false">]</mo><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>N</mi><msup><mi>a</mi><mo>+</mo></msup><mo form="postfix" stretchy="true">]</mo></mrow><mrow><mo form="prefix" stretchy="true">[</mo><mi>C</mi><msup><mi>l</mi><mo>−</mo></msup><mo form="postfix" stretchy="true">]</mo></mrow><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><mo form="prefix" stretchy="false">(</mo><mn>3</mn><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{d\lbrack NaCl\rbrack}{dt} = \ {- k}_{1}\lbrack NaCl\rbrack + k_{2}\left\lbrack Na^{+} \right\rbrack\left\lbrack Cl^{-} \right\rbrack\ \ (3)</annotation></semantics></math></p>
+<p>This approach helps researchers to understand the state transition of
+nutrient solution system because ion selective electrodes does not work
+appropriate on nutrient solution because of ion interference effect.
+[2-3]. A computational method is necessary to fully trace the ion rate
+change.</p>
+<p>However, appropriate modeling method to match ODE scaled ion rate
+expression with plant’s ion uptake is necessary to apply those
+complex-system simulation approach on prediction of plant’s ion uptake.
+Although the influx of ions into roots are widely studied [4-7], their
+methods are not applicable to timescale simulation. They considered
+influx and efflux of ion as irreversible process so needed to prepare 2
+separate models for each ion. And they did not distinguish flux of
+cation and anion. Cation influx is based on secondary transport, while
+plant absorbs anion with symport with H<sup>+</sup> ion.</p>
+<p>M. Silberbush and J.H. Lieth (2004) presented nitrate and potassium
+uptake prediction model [8] but it is regression-based model to predict
+individual ion so does not consider the reaction of nitrate or potassium
+with other compounds to form plant-unabsorbable state.</p>
+<p>This work was supported by Agriculture, Food and Rural Affairs
+Convergence Technologies Program for Educating Creative Global Leader
+funded by the Ministry of Agriculture, Food and Rural Affairs (MAFRA,
+Korea). [Project Number 1545020852].</p>
+<p>An empirical model for macronutrient uptake is presented by A.
+Pardossi et al (2005) but they acquired data once a week. [9] So this
+model is not applicable to short-time interval simulation. Daniele Massa
+et al. (2008) presented an empirical model for sodium absorption
+simulation [10] but this model ignores interference of ionic components;
+for example, both association of sodium ion with Cl<sup>-</sup> and with
+FeEDTA<sup>-</sup> reduces the level of sodium ion but the model could
+not illustrate such phenomenon.</p>
+<p>Therefore, I present a continuous time scale model which describes
+secondary transportation of cation. This model is combined with ODE
+network model of nutrient solution system [1] to figure out whether the
+model provides different results on different plant models.</p>
+<figure class="paper-figure" id="paper-6-figure-1"><img alt="Figure 1. Ion channels are considered as electrical resistances" decoding="async" loading="lazy" src="/src/images/paper-body/paper-6/figure-1.png"/><figcaption><strong>Figure 1. Ion channels are considered as electrical
+resistances</strong></figcaption></figure>
+<p>(a) Ion channels around the membrane. Cell membrane is an insulator.
+(b) Membrane potential is an electrical voltage, which make charged
+particles to move. Influx of charged particles are electrical
+current.</p>
+<h2 id="paper-6-method">Method</h2>
+<h3 id="paper-6-cation-absorption-model">Cation Absorption Model</h3>
+<p>I first considered the ion channels for cation absorption as
+electrical register, and the other region of cell membrane as insulator.
+Then the group of a random ion channels becomes a parallel register
+system. This concept is described on the Figure 1. A root cell
+continuously emits H<sup>+</sup> ion with active transport to build a
+concentration gradient across the membrane. The difference of positively
+charged ions, especially H<sup>+</sup>, induces Nernst potential. The
+electrical potential outside the membrane becomes greater than inside,
+inducing an electrical field, to push cations inside the cell.</p>
+<p>Therefore, influx of cation through the membrane is an electrical
+current. Equation (4) is application of Ohm’s law to describe the
+secondary transport, where I<sub>ion</sub> is electric current of ion
+influx, V<sub>m</sub> is the membrane potential induced by target ion
+gradient is the voltage and R<sub>ion</sub> is combined resistance value
+of ion channels.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><msub><mi>V</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">I_{ion} = \frac{1}{R_{ion}}V_{m}</annotation></semantics></math>
+(4)</p>
+<p>Electric current is described as equation (5). S is surface area
+where the charged particle passes through,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>v</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{v}</annotation></semantics></math>
+is the average velocity of charged particle, k is the number of
+electrons which the selected ion lost, e is the charge of an electron
+and n is the number of particles per unit volume. The equation has
+negative value because the flux of positively charged particle is
+opposite to the definition of electric current, which is induced by
+negatively charged electrons.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>=</mo><mi>−</mi><mi>S</mi><mover><mi>v</mi><mo accent="true">¯</mo></mover><mi>k</mi><mi>e</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">I_{ion} = - S\overline{v}ken</annotation></semantics></math>
+(5)</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>−</mi><mfrac><msub><mi>I</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mrow><mi>S</mi><mover><mi>v</mi><mo accent="true">¯</mo></mover><mi>k</mi><mi>e</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">n = - \frac{I_{ion}}{S\overline{v}ke}</annotation></semantics></math>
+(6)</p>
+<p>As n is the number of particles in 1L volume, dividing both side of
+equation (6) with Avogadro’s number describes equation of molarity
+(equation 7).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>N</mi><mi>F</mi></msub><annotation encoding="application/x-tex">N_{F}</annotation></semantics></math>
+is Faraday’s number which is multiplication of N<sub>A</sub> and e.
+[ion] is the ion concentration inside the root because the electric
+current was defined as influx.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>n</mi><msub><mi>N</mi><mi>A</mi></msub></mfrac><mo>=</mo><mo form="prefix" stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><mo form="postfix" stretchy="false">]</mo><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><msub><mi>N</mi><mi>F</mi></msub></mfrac><mo>•</mo><mfrac><msub><mi>I</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mrow><mi>S</mi><mover><mi>v</mi><mo accent="true">¯</mo></mover><mi>k</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{n}{N_{A}} = \lbrack ion\rbrack = - \frac{1}{N_{F}} \bullet \frac{I_{ion}}{S\overline{v}k}</annotation></semantics></math>
+(7)</p>
+<p>Differentiation on equation (7) with time variable t expresses the
+differential equation of ion concentration change on time, which has
+same dimension with equation (1-3). Now the model shows a hint that it
+can be applied with ODE network model for nutrient solution [1].</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mo form="prefix" stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><mo form="postfix" stretchy="false">]</mo></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><msub><mi>N</mi><mi>F</mi></msub></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><mi>S</mi><mover><mi>v</mi><mo accent="true">¯</mo></mover><mi>k</mi></mrow></mfrac><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><msub><mi>I</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\frac{d\lbrack ion\rbrack}{dt} = - \frac{1}{N_{F}} \bullet \frac{1}{S\overline{v}k}\frac{d}{dt}I_{ion}</annotation></semantics></math>
+(8)</p>
+<p>Derivation on equation (4) becomes equation (9), which has derivation
+of current term. Applying it on equation (8) leads to equation (10).</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><msub><mi>I</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\frac{d}{dt}I_{ion} = \frac{1}{R_{ion}}{\frac{d}{dt}V}_{m}</annotation></semantics></math>
+(9)</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mo form="prefix" stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><mo form="postfix" stretchy="false">]</mo></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><msub><mi>N</mi><mi>F</mi></msub></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><mi>S</mi><mover><mi>v</mi><mo accent="true">¯</mo></mover><mi>k</mi></mrow></mfrac><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><msub><mi>I</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><msub><mi>N</mi><mi>F</mi></msub></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><mi>S</mi><mover><mi>v</mi><mo accent="true">¯</mo></mover><mi>k</mi></mrow></mfrac><mo>•</mo><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\frac{d\lbrack ion\rbrack}{dt} = - \frac{1}{N_{F}} \bullet \frac{1}{S\overline{v}k}\frac{d}{dt}I_{ion} = - \frac{1}{N_{F}} \bullet \frac{1}{S\overline{v}k} \bullet \frac{1}{R_{ion}}{\frac{d}{dt}V}_{m}</annotation></semantics></math>
+(10)</p>
+<p>The force on a particle inside the electrical field is described as
+equation (11), where E is the electrical field, q is the charge of
+particle,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>
+is the thickness of membrane and m is the mass of ion. The acceleration
+of the particle is described as equation (12), where m is the mass of
+single ion particle.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>E</mi><mi>q</mi><mo>=</mo><mfrac><msub><mi>V</mi><mi>m</mi></msub><mi>θ</mi></mfrac><mi>q</mi><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">F = Eq = \frac{V_{m}}{\theta}q = ma</annotation></semantics></math>
+(11)</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mi>m</mi></msub><mi>k</mi><mi>e</mi></mrow><mrow><mi>m</mi><mi>θ</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">a = \frac{dv}{dt} = \frac{V_{m}ke}{m\theta}</annotation></semantics></math>
+(12)</p>
+<p>With the supposition that the force on cation during passing through
+the ion channel is uniform, and the initial velocity of ion is zero, the
+average velocity of the ion during transport is described as equation
+(13).</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>v</mi><mo accent="true">¯</mo></mover><mo>=</mo><msqrt><mfrac><mrow><mi>a</mi><mi>θ</mi></mrow><mn>2</mn></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><msub><mi>V</mi><mi>m</mi></msub><mi>k</mi><mi>e</mi><mi>θ</mi></mrow><mrow><mn>2</mn><mi>m</mi><mi>θ</mi></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><msub><mi>V</mi><mi>m</mi></msub><mi>k</mi><mi>e</mi></mrow><mrow><mn>2</mn><mi>m</mi></mrow></mfrac></msqrt></mrow><annotation encoding="application/x-tex">\overline{v} = \sqrt{\frac{a\theta}{2}} = \sqrt{\frac{V_{m}ke\theta}{2m\theta}} = \sqrt{\frac{V_{m}ke}{2m}}</annotation></semantics></math>
+(13)</p>
+<p>Now applying equation (13) on equation (10) leads to equation
+(14).</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mo form="prefix" stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><mo form="postfix" stretchy="false">]</mo></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><msub><mi>N</mi><mi>F</mi></msub></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><mi>S</mi><mi>k</mi></mrow></mfrac><mo>•</mo><msqrt><mfrac><mrow><mn>2</mn><mi>m</mi></mrow><mrow><msub><mi>V</mi><mi>m</mi></msub><mi>k</mi><mi>e</mi></mrow></mfrac></msqrt><mo>•</mo><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\frac{d\lbrack ion\rbrack}{dt} = - \frac{1}{N_{F}} \bullet \frac{1}{Sk} \bullet \sqrt{\frac{2m}{V_{m}ke}} \bullet \frac{1}{R_{ion}}{\frac{d}{dt}V}_{m}</annotation></semantics></math>
+(14)</p>
+<p>Equation (15) describes the relationship between the resistance and
+permeability of ion channel. P<sub>ion</sub> is the permeability of the
+ion at channels defined in derivation of Goldman’s equation
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>D</mi><mi>A</mi></msub><mi>θ</mi></mfrac></mrow><annotation encoding="application/x-tex">P_{ion} = \frac{D_{A}}{\theta}</annotation></semantics></math>),
+D<sub>A</sub> is diffusion constant and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>
+is the thickness of the membrane.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+is a constant coefficient.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mi>κ</mi></mfrac><mfrac><mn>1</mn><msub><mi>P</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>κ</mi></mfrac><mfrac><mi>θ</mi><msub><mi>D</mi><mi>A</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">R_{ion} = \frac{1}{\kappa}\frac{1}{P_{ion}} = \frac{1}{\kappa}\frac{\theta}{D_{A}}</annotation></semantics></math>
+(15)</p>
+<p>The mass of an ion is defined as equation (16), where M is molar
+weight.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mn>1</mn><mn>1000</mn></mfrac><mfrac><mi>M</mi><msub><mi>N</mi><mi>A</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">m = \frac{1}{1000}\frac{M}{N_{A}}</annotation></semantics></math>
+(16)</p>
+<p>By applying equation (15, 16) on equation (14), equation (17) is
+derived.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mo form="prefix" stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><mo form="postfix" stretchy="false">]</mo></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><msub><mi>N</mi><mi>F</mi></msub></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><mi>S</mi><mi>k</mi></mrow></mfrac><mo>•</mo><msqrt><mfrac><mrow><mn>2</mn><mi>m</mi></mrow><mrow><msub><mi>V</mi><mi>m</mi></msub><mi>k</mi><mi>e</mi></mrow></mfrac></msqrt><mo>•</mo><mfrac><mn>1</mn><msub><mi>R</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\frac{d\lbrack ion\rbrack}{dt} = - \frac{1}{N_{F}} \bullet \frac{1}{Sk} \bullet \sqrt{\frac{2m}{V_{m}ke}} \bullet \frac{1}{R_{ion}}{\frac{d}{dt}V}_{m}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><msub><mi>N</mi><mi>F</mi></msub></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><mi>S</mi><mi>k</mi></mrow></mfrac><mo>•</mo><msqrt><mfrac><mrow><mn>2</mn><mi>m</mi></mrow><mrow><msub><mi>V</mi><mi>m</mi></msub><mi>k</mi><mi>e</mi></mrow></mfrac></msqrt><mo>•</mo><mi>κ</mi><msub><mi>P</mi><mrow><mi>i</mi><mi>o</mi><mi>n</mi></mrow></msub><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">= - \frac{1}{N_{F}} \bullet \frac{1}{Sk} \bullet \sqrt{\frac{2m}{V_{m}ke}} \bullet \kappa P_{ion}{\frac{d}{dt}V}_{m}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><msub><mi>N</mi><mi>F</mi></msub></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><mi>S</mi><mi>k</mi></mrow></mfrac><mo>•</mo><msqrt><mfrac><mrow><mn>2</mn><mi>m</mi></mrow><mrow><msub><mi>V</mi><mi>m</mi></msub><mi>k</mi><mi>e</mi></mrow></mfrac></msqrt><mo>•</mo><mi>κ</mi><mfrac><msub><mi>D</mi><mi>A</mi></msub><mi>θ</mi></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">= - \frac{1}{N_{F}} \bullet \frac{1}{Sk} \bullet \sqrt{\frac{2m}{V_{m}ke}} \bullet \kappa\frac{D_{A}}{\theta}{\frac{d}{dt}V}_{m}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><msub><mi>N</mi><mi>F</mi></msub></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><mi>S</mi><mi>k</mi></mrow></mfrac><mo>•</mo><msqrt><mfrac><mrow><mn>2</mn><mi>M</mi></mrow><mrow><msub><mrow><mn>1000</mn><mi>V</mi></mrow><mi>m</mi></msub><mi>k</mi><mi>e</mi><msub><mi>N</mi><mi>A</mi></msub></mrow></mfrac></msqrt><mo>•</mo><mi>κ</mi><mfrac><msub><mi>D</mi><mi>A</mi></msub><mi>θ</mi></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">= - \frac{1}{N_{F}} \bullet \frac{1}{Sk} \bullet \sqrt{\frac{2M}{{1000V}_{m}keN_{A}}} \bullet \kappa\frac{D_{A}}{\theta}{\frac{d}{dt}V}_{m}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><mrow><mn>10</mn><msqrt><mn>5</mn></msqrt></mrow></mfrac><mo>•</mo><mfrac><mn>1</mn><mi>S</mi></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><mi>k</mi><msub><mi>N</mi><mi>F</mi></msub></mrow></mfrac><mo>•</mo><msqrt><mfrac><mi>M</mi><mrow><msub><mi>V</mi><mi>m</mi></msub><mi>k</mi><msub><mi>N</mi><mi>F</mi></msub></mrow></mfrac></msqrt><mo>•</mo><mi>κ</mi><mfrac><msub><mi>D</mi><mi>A</mi></msub><mi>θ</mi></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">= - \frac{1}{10\sqrt{5}} \bullet \frac{1}{S} \bullet \frac{1}{kN_{F}} \bullet \sqrt{\frac{M}{V_{m}kN_{F}}} \bullet \kappa\frac{D_{A}}{\theta}{\frac{d}{dt}V}_{m}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><mrow><mn>10</mn><msqrt><mn>5</mn></msqrt></mrow></mfrac><mo>•</mo><mfrac><mn>1</mn><mi>S</mi></mfrac><mo>•</mo><mfrac><mn>1</mn><mrow><msup><mrow><mo form="prefix" stretchy="true">(</mo><mi>k</mi><msub><mi>N</mi><mi>F</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow><mn>1.5</mn></msup><mspace width="0.222em"></mspace></mrow></mfrac><mo>•</mo><msqrt><mfrac><mi>M</mi><msub><mi>V</mi><mi>m</mi></msub></mfrac></msqrt><mo>•</mo><mi>κ</mi><mfrac><msub><mi>D</mi><mi>A</mi></msub><mi>θ</mi></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">= - \frac{1}{10\sqrt{5}} \bullet \frac{1}{S} \bullet \frac{1}{\left( kN_{F} \right)^{1.5}\ } \bullet \sqrt{\frac{M}{V_{m}}} \bullet \kappa\frac{D_{A}}{\theta}{\frac{d}{dt}V}_{m}</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>−</mi><mfrac><mi>κ</mi><mrow><mn>10</mn><msqrt><mn>5</mn></msqrt><mi>θ</mi></mrow></mfrac><mo>•</mo><mfrac><mn>1</mn><mi>S</mi></mfrac><mo>•</mo><mfrac><mrow><msub><mi>D</mi><mi>A</mi></msub><msqrt><mi>M</mi></msqrt></mrow><mrow><msup><mrow><mo form="prefix" stretchy="true">(</mo><mi>k</mi><msub><mi>N</mi><mi>F</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow><mn>1.5</mn></msup><mspace width="0.222em"></mspace></mrow></mfrac><mo>•</mo><mfrac><mn>1</mn><msqrt><msub><mi>V</mi><mi>m</mi></msub></msqrt></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">= - \frac{\kappa}{10\sqrt{5}\theta} \bullet \frac{1}{S} \bullet \frac{D_{A}\sqrt{M}}{\left( kN_{F} \right)^{1.5}\ } \bullet \frac{1}{\sqrt{V_{m}}}{\frac{d}{dt}V}_{m}</annotation></semantics></math>
+(17)</p>
+<p>I defined the constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+term as equation (18) to eliminate the coefficient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+and other numbers.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+is also considered as a constant number because the phospholipid
+bilayers have typical thickness.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>κ</mi><mrow><mn>10</mn><msqrt><mn>5</mn></msqrt><mi>θ</mi></mrow></mfrac><mrow><mo mathvariant="script">=</mo><mi mathvariant="script">ℬ</mi></mrow></mrow><annotation encoding="application/x-tex">\frac{\kappa}{10\sqrt{5}\theta}\mathcal{= B}</annotation></semantics></math>
+(18)</p>
+<p>Then the equation (17) is simplified into equation (19).</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mo form="prefix" stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><mo form="postfix" stretchy="false">]</mo></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>−</mi><mfrac><mi mathvariant="script">ℬ</mi><mi>S</mi></mfrac><mo>•</mo><mfrac><mrow><msub><mi>D</mi><mi>A</mi></msub><msqrt><mi>M</mi></msqrt></mrow><mrow><msup><mrow><mo form="prefix" stretchy="true">(</mo><mi>k</mi><msub><mi>N</mi><mi>F</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow><mn>1.5</mn></msup><mspace width="0.222em"></mspace></mrow></mfrac><mo>•</mo><mfrac><mn>1</mn><msqrt><msub><mi>V</mi><mi>m</mi></msub></msqrt></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\frac{d\lbrack ion\rbrack}{dt} = - \frac{\mathcal{B}}{S} \bullet \frac{D_{A}\sqrt{M}}{\left( kN_{F} \right)^{1.5}\ } \bullet \frac{1}{\sqrt{V_{m}}}{\frac{d}{dt}V}_{m}</annotation></semantics></math>
+(19)</p>
+<p>V<sub>m</sub> is calculated with Goldman’s equation, which has the
+concentration of ions inside and outside the root as the only
+independent variable. Therefore, this model describes the variance of
+ion concentration on time with respect to the ion concentration
+only.</p>
+<p>The constant
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+describes the physiology of the plant species, phenotype or growth
+stages. It varies along the cell species because it is only affected by
+the membrane thickness, the diffusion constant of ion and combined
+resistance of ion channel. Membrane thickness of plant cells are not so
+different along the species and the diffusion constant is ion-related
+value. Therefore,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+is only affected by the physiological factor such as density and kind of
+ion channel.</p>
+<p>S is the surface area where ion flows. It is defined as the inner
+area of ion channel multiplied with the number of ion channels. It is
+most influenced by the growth of plant’s root.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>A</mi></msub><msqrt><mi>M</mi></msqrt></mrow><annotation encoding="application/x-tex">D_{A}\sqrt{M}</annotation></semantics></math>
+describes the physical property of the ion, while
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo form="prefix" stretchy="true">(</mo><mi>k</mi><msub><mi>N</mi><mi>F</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow><mn>1.5</mn></msup><annotation encoding="application/x-tex">\left( kN_{F} \right)^{1.5}</annotation></semantics></math>
+describes the electrical property.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msqrt><msub><mi>V</mi><mi>m</mi></msub></msqrt></mfrac><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mi>V</mi></mrow><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\frac{1}{\sqrt{V_{m}}}{\frac{d}{dt}V}_{m}</annotation></semantics></math>
+can be derived with Goldman’s equation. It depends on the environment
+(nutrient solution) and describes the interaction between the root cell
+and the surrounding.</p>
+<h3 id="paper-6-anion-absorption-model">Anion Absorption Model</h3>
+<p>Anion is absorbed as symport at the root. As it requires an ion to
+collide with H<sup>+</sup> ion at the channel, I described it like
+equations (1-3). Let w as the number of electrons which an ion acquired.
+Then the ODE model for anion influx is described as equation (20) where
+τ is a coefficient related to anion absorption.</p>
+<figure class="paper-figure" id="paper-6-figure-2"><img alt="Figure 2. The network topology of plant and nutrient solution interaction model" decoding="async" loading="lazy" src="/src/images/paper-body/paper-6/figure-2.png"/><figcaption><strong>Figure 2. The network topology of plant and nutrient solution
+interaction model</strong></figcaption></figure>
+<p>Brown nodes are system input, inorganic fertilizers and water. Purple
+nodes are plant-absorbable ions but blue nodes are unabsorbable. Green
+nodes indicate the components inside the root such as ions which are
+absorbed by the root cell or water. The label of green nodes starts with
+small 'p' as indicator.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mo form="prefix" stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><mo form="postfix" stretchy="false">]</mo></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mspace width="0.222em"></mspace><mo>−</mo><mi>τ</mi><mo form="prefix" stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><mo form="postfix" stretchy="false">]</mo><msup><mrow><mo form="prefix" stretchy="false">[</mo><msup><mi>H</mi><mo>+</mo></msup><mo form="postfix" stretchy="false">]</mo></mrow><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">\frac{d\lbrack ion\rbrack}{dt} = \  - \tau\lbrack ion\rbrack{\lbrack H^{+}\rbrack}^{k}</annotation></semantics></math>
+(20)</p>
+<h3 id="paper-6-ode-network-simulation">ODE Network Simulation</h3>
+<p>I combined the ODE network simulation on nutrient solution system [1]
+with plant’s ion absorption behavior. Detailed interactions, equations
+and coefficients are provided at my GitHub repository, with the
+simulator.</p>
+<p><a href="https://github.com/needleworm/nutrient_solution" rel="noopener noreferrer">https://github.com/needleworm/nutrient_solution</a></p>
+<h2 id="paper-6-experiment">Experiment</h2>
+<p>The experiment has one supposition that the membrane gradient is
+mainly induced by H<sup>+</sup> only because permeability coefficients
+are required to describe multiple ion interactions.</p>
+<p>The topology of the ODE complex system network model for interactions
+between nutrient solution and plant is described on the Figure 1, which
+was drawn with Cytoscape. [11] Total 20 different conditions were
+applied to perform the simulation. Same set of reaction rate
+coefficients and coefficient for H<sup>+</sup> ion pumping rate were
+applied to all simulation. But different values of cation absorption
+coefficient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+and anion absorption coefficient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+were applied on each simulation to verify that only change on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+can lead to different ion-absorption tendencies.</p>
+<p>The initial states of the nutrient solution systems were fixed as
+Yamazaki’s nutrient solution for lettuce [12], and the initial states of
+plants were considered as an 1L bag of H<sub>2</sub>O, containing no
+other nutrient inside. Coefficient sets with ODE network models are
+presented on the Supplementary Data 1, at my ResearchGate
+repository.</p>
+<p><a href="https://www.researchgate.net/publication/341997283" rel="noopener noreferrer">https://www.researchgate.net/publication/341997283</a></p>
+<p>The simulations were conducted until mean square error values between
+each temporal-distance gradient descent update reach 1e-20. But trial 18
+and 19 converged too fast so tighter MSE threshold was applied: 1e-21
+and 1e-22 each.</p>
+<p>The template is used to format your paper and style text. All
+margins, column widths, line spaces, and text fonts are prescribed;
+please do not alter them. You may note peculiarities. For example, the
+head margin in this template measures proportionately more than is
+customary. This measurement and others are deliberate, using
+specifications that anticipate your paper as one part of the entire
+proceedings, and not as an independent document. Please do not revise
+any of the current designations.</p>
+<h2 id="paper-6-results">Results</h2>
+<p>Summarized Results are presented on Figure 3-5. Detailed information
+on the convergence states from the experiments are provided as
+Supplementary Data 2, at my ResearchGate Repository.</p>
+<p><a href="https://www.researchgate.net/publication/341997426" rel="noopener noreferrer">https://www.researchgate.net/publication/341997426</a></p>
+<h3 id="paper-6-ph">pH</h3>
+<figure class="paper-figure" id="paper-6-figure-3"><img alt="Figure 3. pH inside the root at the convergence state" decoding="async" loading="lazy" src="/src/images/paper-body/paper-6/figure-3.png"/><figcaption><strong>Figure 3. pH inside the root at the convergence
+state</strong></figcaption></figure>
+<p>Every sample showed that pH inside the root increases at the
+convergence state.</p>
+<figure class="paper-figure" id="paper-6-figure-4"><img alt="Figure 4. Total dissolved mass (TDS) of nutrient solution at the root" decoding="async" loading="lazy" src="/src/images/paper-body/paper-6/figure-4.png"/><figcaption><strong>Figure 4. Total dissolved mass (TDS) of nutrient solution at
+the root</strong></figcaption></figure>
+<p>The amount of nutrients remaining in the nutrient solution is
+indicated as orange. Ions absorbed by plant is indicated as yellow.</p>
+<figure class="paper-figure" id="paper-6-figure-5"><img alt="Figure 5. Mass rate of N, P and K inside the root at the convergence state." decoding="async" loading="lazy" src="/src/images/paper-body/paper-6/figure-5.png"/><figcaption><strong>Figure 5. Mass rate of N, P and K inside the root at the
+convergence state.</strong></figcaption></figure>
+<p>Nutrient uptake rate at the convergence state differs.</p>
+<p>Figure 3 shows the pH values inside the root at the convergence
+state. The initial values of all experiments were set to 7.0 but all
+results showed increase because of active transport of H<sup>+</sup>
+ion. The root cells continuously try to emit H<sup>+</sup> ion to build
+a gradient along the cell membrane, which is the key mechanism of
+nutrient absorption. Also, increase of pH inside the root indicates the
+decrease of pH of nutrient solution; just same as commonly-known
+phenomenon.</p>
+<p>The experiment samples showed that different sets of cation and anion
+absorption coefficient lead to different absorption results. Sample 18
+and 19 showed higher result than other conditions. They had smaller
+anion absorption coefficient values.</p>
+<h3 id="paper-6-tds">TDS</h3>
+<p>TDS values at the convergence states are described in figure 4. Most
+sample absorbed more than 50% nutrients from the nutrient solution,
+except trial 4, 5, 10, 18 and 19. The result shows that the absorption
+efficiency is defined with two coefficients
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>.
+Note that the values are measured at the convergence state. The values
+change very little, although more time is allowed.</p>
+<h3 id="paper-6-npk-rate">NPK Rate</h3>
+<p>Figure 5 describes the rate of N, P and K absorbed by the root in
+mass scale. Some samples such as trial 6, 17, 18 and 19 seem to fail to
+absorb balanced nutrition. Figure 5 simply shows the coefficients
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+influences on the ion absorption tendencies.</p>
+<h2 id="paper-6-discussion">Discussion</h2>
+<p>Only equation (19) was applied to describe the secondary transport of
+cations and it showed that suggested model for cation absorbance
+performed well combined with previous technology. [1] The experiment
+showed that different coefficient variation on cation absorption
+coefficient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+and anion absorption coefficient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+for same network topology can lead to different nutrition absorbance
+tendencies.</p>
+<p>As
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+is description of ion channel and membrane thickness, I consider it as
+physiological term resulting from the gene expressions. Therefore, I
+suppose that each plant species has different
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+values, leading to different recipe for fertilization. For example, the
+nutrient solution recipe for lettuce is different with the recipe for
+basil because their gene expression patterns are different, leading to
+different
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+values.</p>
+<p>Inappropriate sets of coefficients leaded to failure of nutrient
+absorption. I think it is possible to predict the coefficient
+heuristically, repeating simulation for comparison between simulation
+result with actual ion absorption data.</p>
+<h2 id="paper-6-conclusion">Conclusion</h2>
+<p>I suggested an ordinary differential equation model to investigate
+ion absorption of plant. The equation for cation absorption contains
+parameters for plant physiology, growth, kinetic properties of ion and
+electrical properties of ion. It describes the amount of absorbed ion
+per time, with respect to the derivative of membrane potential induced
+by ion particles. Anion absorption model simply had a parameter to
+describe absorption rate, which is similar to reaction rate coefficient.
+Anion absorption rate is influenced by the collision rate of anion and
+H<sup>+</sup> ions. Both cation absorption rate coefficient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+and anion absorption rate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+values are influenced by the properties of ion channels, such as density
+or activities. Therefore, individual nutritional ion absorption rate is
+influenced by gene expressions or phenotypes of the plant. This model is
+compatible with ODE network model for nutrient solution system.
+Simulation result showed that different values of cation absorption rate
+coefficient
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+and anion absorption rate
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+lead to different nutrition uptake tendency. If the coefficients of a
+plant species are discovered with experiment or simulation, the model
+would provide in-silico predictions of root-nutrient interaction of real
+plant.</p>
+<h2 id="paper-6-acknowledgment-heading-5">Acknowledgment <em>(Heading
+5)</em></h2>
+<p>This work was supported by Agriculture, Food and Rural Affairs
+Convergence Technologies Program for Educating Creative Global Leader
+funded by the Ministry of Agriculture, Food and Rural Affairs (MAFRA,
+Korea). [Project Number 1545020852].</p>
+<h2 id="paper-6-references">References</h2>
+<p>[1] Ban, Byunghyun, Minwoo Lee, and Donghun Ryu. "ODE Network Model
+for Nonlinear and Complex Agricultural Nutrient Solution
+System." <em>2019 International Conference on Information and
+Communication Technology Convergence (ICTC)</em>. IEEE, 2019.</p>
+<p>(doi: 10.1109/ICTC46691.2019.8939946)</p>
+<p>[2] Ban, Byunghyun, Donghun Ryu, and Minwoo Lee. "Machine Learning
+Approach to Remove Ion Interference Effect in Agricultural Nutrient
+Solutions." <em>2019 International Conference on Information and
+Communication Technology Convergence (ICTC)</em>. IEEE, 2019.</p>
+<p>(doi: 10.1109/ICTC46691.2019.8939812)</p>
+<p>[3] Ban, Byunghyun. "Pan-artifact Removing with Deep Learning, on
+ISEs." <em>arXiv preprint arXiv:2005.13400</em> (2020).</p>
+<p>(doi: 10.20944/preprints202005.0381.v1)</p>
+<p>[4] Buysse, J., Smolders, E., Merckx, R., 1996. Modelling the uptake
+of nitrate by a growing plant with an adjustable root nitrate uptake
+capacity: I. Model description. Plant Soil 181, 19–23.</p>
+<p>[5] Claassen, N., Barber, S.A., 1974. A method for characterizing the
+relation between nutrient concentration and flux into roots of intact
+plants. Plant Physiol. 54, 564–568.</p>
+<p>[6] Cram, W.J., 1983. Chloride accumulation as a homeostatic system:
+set points and perturbations. The physiological significance of influx
+isotherms, temperature effects and the influence of plant growth
+substances. J. Exp. Bot. 34, 1484–1502.</p>
+<p>[7] Siddiqi, M.Y., Glass, A.D.M., 1986. A model for the regulation of
+Kq influx, and tissue potassium concentrations by negative feedback
+effects upon plasmalemma influx. Plant Physiol. 81, 1–7.</p>
+<p>[8] Silberbush, M., &amp; Lieth, J. H. (2004). Nitrate and potassium
+uptake by greenhouse roses (Rosa hybrida) along successive flower-cut
+cycles: a model and its calibration. <em>Scientia
+horticulturae</em>, <em>101</em>(1-2), 127-141.</p>
+<p>[9] Pardossi, A., Falossi, F., Malorgio, F., Incrocci, L., &amp;
+Bellocchi, G. (2005). Empirical models of macronutrient uptake in melon
+plants grown in recirculating nutrient solution culture. <em>Journal of
+plant nutrition</em>, <em>27</em>(7), 1261-1280.</p>
+<p>[10] Massa, D., Mattson, N. S., &amp; Lieth, H. (2008). An empirical
+model to simulate sodium absorption in roses growing in a hydroponic
+system. Scientia horticulturae, 118(3), 228-235.</p>
+<p>[11] Shannon, P., Markiel, A., Ozier, O., Baliga, N. S., Wang, J. T.,
+Ramage, D., ... &amp; Ideker, T. (2003). Cytoscape: a software
+environment for integrated models of biomolecular interaction
+networks. <em>Genome research</em>, <em>13</em>(11), 2498-2504.</p>
+<p>[12] Yamazaki K. Nutrient solution culture. Tokyo, Japan: Pak-kyo Co;
+1982. Japanese</p>

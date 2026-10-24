@@ -11,7 +11,7 @@ from pathlib import Path
 import re
 import sys
 import xml.etree.ElementTree as ET
-from paper_pages import load_records, link_card_titles, scholar_meta, article_schema, render_article, pdf_outputs
+from paper_pages import load_records, link_card_titles, scholar_meta, article_schema, render_article, pdf_outputs, citation_outputs
 
 ROOT = Path(__file__).resolve().parents[1]
 VOID = set('area base br col embed hr img input link meta param source track wbr'.split())
@@ -336,6 +336,7 @@ def build(check=False):
     asset_versions = {key: sha256((ROOT / name).read_text(encoding='utf8').encode('utf8')).hexdigest()[:12] for key, name in {
         'PAGE_CSS_VERSION': 'page.css', 'SCROLL_VERSION': 'continuous-scroll.js', 'SCRIPT_VERSION': 'script.js'
     }.items()}
+    reader_version = sha256((ROOT / 'paper-reader.js').read_bytes()).hexdigest()[:12]
     manifest_path = ROOT / 'content/build-manifest.json'
     previous = json.loads(manifest_path.read_text(encoding='utf8')) if manifest_path.exists() else {}
     manifest, outputs = {}, {}
@@ -421,7 +422,7 @@ def build(check=False):
                   'EXTRA_HEAD': scholar_meta(record, config['url']), 'OG_TYPE': 'article',
                   'OG_LOCALE': 'ko_KR' if record['language'] == 'ko' else 'en_US', 'OG_IMAGE': image,
                   'STRUCTURED_DATA': json.dumps({'@context': 'https://schema.org', '@graph': schemas}, ensure_ascii=False).replace('<', '\\u003c'),
-                  'LIBRARIES': '', 'BODY_CLASS': 'content-page paper-detail-page', 'PAGE_KEY': 'paper-detail',
+                  'LIBRARIES': '<script src="/paper-reader.js?v=' + reader_version + '" defer></script>', 'BODY_CLASS': 'content-page paper-detail-page', 'PAGE_KEY': 'paper-detail',
                   'NAVIGATION': navigation(page, pages), 'HERO': '', 'PAGE_HEADER': '',
                   'MAIN_CLASS': '', 'MAIN': render_article(record), 'MOBILE_NEXT_PAGE': '',
                   'FOOTER_LINKS': ''.join(f'<a href="{path(p)}">{escape(p["heading"])}</a>' for p in pages.values())}
@@ -437,6 +438,7 @@ def build(check=False):
         lastmod = previous.get(target, {}).get('lastmod', date.today().isoformat()) if previous.get(target, {}).get('sha256') == digest else date.today().isoformat()
         manifest[target] = {'sha256': digest, 'lastmod': lastmod, 'sections': ['papers'], 'cards': 0, 'paper_id': record['record_id']}
     outputs.update(pdf_outputs(paper_records))
+    outputs.update(citation_outputs(paper_records))
     for entry in redirects:
         destination = next(p for p in pages.values() if p['slug'] == entry['to'])
         destination_path = path(destination)

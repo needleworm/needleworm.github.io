@@ -1,0 +1,14 @@
+TY  - CONF
+AU  - Ban, Byunghyun
+AU  - Ryu, Donghun
+AU  - Hwang, Su-won
+TI  - CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts
+PY  - 2023
+T2  - 2023 14th International Conference on Information and Communication Technology Convergence (ICTC)
+SP  - 1892
+EP  - 1897
+DO  - 10.1109/ictc58733.2023.10393217
+UR  - https://doi.org/10.1109/ictc58733.2023.10393217
+AB  - We present 'CongNaMul', a comprehensive dataset designed for various tasks in soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks such as image classification, semantic segmentation, decomposition, and measurement of length and weight. The classification task provides four classes to determine the quality of soybean sprouts: normal, broken, spotted, and broken and spotted, for the development of AI-aided automatic quality inspection technology. For semantic segmentation, images with varying complexity, from single sprout images to images with multiple sprouts, along with human-labelled mask images, are included. The label has 4 different classes: background, head, body, tail. The dataset also provides images and masks for the image decomposition task, including two separate sprout images and their combined form. Lastly, 5 physical features of sprouts (head length, body length, body thickness, tail length, weight) are provided for image-based measurement tasks. This dataset is expected to be a valuable resource for a wide range of research and applications in the advanced analysis of images of soybean sprouts. Also, we hope that this dataset can assist researchers studying classification, semantic segmentation, decomposition, and physical feature measurement in other industrial fields, in evaluating their models. The dataset is available at the authors’ repository (https://bhban.kr/data).
+LA  - en
+ER  -

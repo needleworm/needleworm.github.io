@@ -1,0 +1,164 @@
+{
+  "paper-2": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 공개 PDF 원고",
+    "source_sha256": "10abdd1af7d4fa9a631388b4b1cdc710c1c211cbba132f6a308c3f3208ac66e5",
+    "note": "공개 PDF의 본문·표·그림·참고문헌을 옮겼습니다. 수식은 원문 표현을 보존해 표시합니다."
+  },
+  "paper-3": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 공개 PDF 원고",
+    "source_sha256": "a6958776855b37eb7057816b55508b7659acce2c60a93fa303975930ebd281f4",
+    "note": "공개 PDF의 본문·표·그림·참고문헌을 옮겼습니다. 수식은 원문 표현을 보존해 표시합니다."
+  },
+  "paper-4": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 공개 PDF 원고",
+    "source_sha256": "92ddfb2c0035eed40faf95177aa8880a66b14dbdebe7047008164c9db686ff34",
+    "note": "공개 PDF의 본문·표·그림·참고문헌을 옮겼습니다. 수식은 원문 표현을 보존해 표시합니다."
+  },
+  "paper-5": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 공개 PDF 원고",
+    "source_sha256": "9ddf67150b935c14355e131a919aa0c1f8971ede0ca8584dc262939e9ea704c5",
+    "note": "공개 PDF의 본문·표·그림·참고문헌을 옮겼습니다. 수식은 원문 표현을 보존해 표시합니다."
+  },
+  "paper-1": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 원고",
+    "source_sha256": "de218e1d06f551809c7c024f9866325ed13d92de2f36b7bf56f4078f0ebab5b4",
+    "note": "저자 보관 원고를 HTML로 옮겼습니다. 출판본과 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-6": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 원고",
+    "source_sha256": "4923d8d2d843cb6f4c9cd727f372df9901edd18c57667d20ffe39206a185328a",
+    "note": "저자 보관 원고를 HTML로 옮겼습니다. 출판본과 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-9": {
+    "source_kind": "author-manuscript",
+    "source_label": "확장 프리프린트 저자 원고",
+    "source_sha256": "4b8dcafa79049771257b4a6592e6179f4800b0feed514336d39bab357c987c0c",
+    "note": "학회 축약판보다 상세한 11쪽 확장 프리프린트에 대응하는 저자 원고입니다. 상단 서지정보와 인용 형식은 ICTC 2022 출판본을 기준으로 합니다."
+  },
+  "paper-11": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 원고",
+    "source_sha256": "2462c6ec3a8cc52ab75508a2c203beda81ef6156f18fc74978e09ec6b189d105",
+    "note": "저자 보관 원고를 HTML로 옮겼습니다. 출판본과 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-13": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 원고",
+    "source_sha256": "7ed93e57556a4bd430e3238c4fada25f0719451808a76b7d179e32ed27af5481",
+    "note": "저자 보관 원고를 HTML로 옮겼습니다. 출판본과 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-7": {
+    "source_kind": "published",
+    "source_label": "출판 PDF",
+    "source_sha256": "3f191718f88de25529be8631fa42f9db20d2623413b54a0ca876b588e3cfdc4d",
+    "note": "출판 PDF의 본문과 표·그림·수식을 웹 열람에 맞춰 옮겼습니다."
+  },
+  "paper-8": {
+    "source_kind": "published",
+    "source_label": "출판 원문 · BMC / PMC",
+    "source_sha256": "4909f8e71ffe168d70ece39855dfe7df6080145b877082fa5e0a4a7a315e0f63",
+    "note": "출판 원문의 구조화 텍스트와 MathML 수식, 그림·참고문헌을 보존했습니다."
+  },
+  "paper-10": {
+    "source_kind": "preprint",
+    "source_label": "arXiv 프리프린트",
+    "source_sha256": "71f9f0bdd96418fc84d673912476966a8fd67a6f824a3f1e389823bcd9b891f3",
+    "note": "arXiv 공개 PDF의 본문·그림·참고문헌을 옮겼습니다."
+  },
+  "paper-12": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 최종 원고",
+    "source_sha256": "186b55d905db9eef1482ce2e67ab9cbdaba4ffd413b42704a7a189401caa83e9",
+    "note": "저자 최종 원고를 기준으로 옮겼습니다. 출판 PDF의 단 나눔으로 떨어진 문장은 원문의 연결 관계에 맞춰 정리했습니다."
+  },
+  "paper-14": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 투고 원고",
+    "source_sha256": "402f51955d0ae7cf019bab14f34a4ae726040687e1ce79cf4b7148492521e14c",
+    "note": "학술지 최종 조판본과 편집·페이지 구성이 다른 저자 투고 원고입니다. 출판본은 상단 KCI 미리보기에서 확인할 수 있습니다."
+  },
+  "paper-2026-p01": {
+    "source_kind": "author-manuscript",
+    "source_label": "저자 투고 원고",
+    "source_sha256": "cbae2a596f7862e95f80c5f2287233e36135b56b50fbc5b061f9b4bbaabf1f74",
+    "note": "학술지 최종 조판본과 편집·페이지 구성이 다른 저자 투고 원고입니다. 출판본은 상단 KCI 미리보기에서 확인할 수 있습니다."
+  },
+  "paper-2026-p02": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "8b289aa3978dd60522299d31006c071f9d76aaf0197e67b50827d11d017b5f5e",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p03": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "c567547dd9ca0c4bb1eac83ea422d082c0ef2446ebad8c7e96ea5ef1fe114978",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p04": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "884de3dab94fce48b33b4b9666b4b60018fecf1dd1068befcd710f3e25054d9e",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p05": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "e557398a279fbd8e827bacf82581cb0481bfbd67494937c62448077399dfa49d",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p06": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "d700aa0fa57bfaa9465506525fa3dfe1a46d6730c11ec0cbf56a05ea79e9a945",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p07": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "ac4404c96ece95c28c770fa093c8381d4dc972a26edef37436f5fe4bd8f85f2b",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p08": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "4ef3e03f9d4d2bd04822511b069ce05f4ea129499ac4d2bccd437f4192538b94",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p09": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "fdd1576e184e5e9c66c75d03454b6389eaa1efb31b3952279a28f8eddbe2946e",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p10": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "99fa49534149c5a18712f4d0b2565540047f8c200591b752be72d51e2801249f",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p11": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "4714cc0d832b79edabcd20953701782dca3535b06f6a16155aacd548058d6ccd",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p12": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "71126c84048453a52fb02a623649a2dcef18530767ffb1e817e66f4cd3d6b4c2",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  },
+  "paper-2026-p13": {
+    "source_kind": "preprint",
+    "source_label": "프리프린트 저자 원고",
+    "source_sha256": "3c53ad31d437e1e511cf208e57cfe840ce1e6b7ec212ba5c050cc0d177d9e744",
+    "note": "저자 보관 원고에서 본문·표·그림·수식을 옮겼습니다. 공개 PDF와 줄바꿈·페이지 구성이 다를 수 있습니다."
+  }
+}

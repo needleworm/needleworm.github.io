@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing
+PY  - 2026
+DO  - 10.13140/RG.2.2.35963.07201
+UR  - https://www.researchgate.net/publication/404500998_TechNews_A_Technical_Report_on_Agentic_Workflow_Automation_for_Science_News_Publishing
+AB  - This technical report presents TechNews, a registered automated science news portal that transforms newly released scientific papers into publishable science news articles through an agentic production workflow. (https://technews.ai.kr) Rather than treating automated journalism as a single text-generation task, TechNews decomposes human content-production work into persistent stages: source collection, freshness filtering, article drafting, translation, formatting, thumbnail generation, publication upload, backend monitoring, and operational maintenance. The system is organized around two agentic components. The first is a reporter agent, Persica, which performs source collection, article generation, translation, formatting, thumbnail handling, upload preparation, and operational reporting. The second is a backend operations agent that maintains service awareness across the publishing backend, including API behavior, database state, media storage, deployment assumptions, diagnostic routines, and operational failure modes. Together, these agents form an agent-operated publishing infrastructure rather than a one-shot article generator. TechNews operates as a registered internet newspaper in the Republic of Korea under registration number 경북아 00881.
+LA  - en
+M3  - Preprint
+ER  -

@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - Era of RAG-as-a-Service for Pretrained AI Applications
+PY  - 2026
+DO  - 10.13140/RG.2.2.25757.47847
+UR  - https://www.researchgate.net/publication/404699960_Era_of_RAG-as-a-Service_for_Pretrained_AI_Applications
+AB  - Large language models are now used in many knowledge-intensive applications, but their outputs still need to be grounded in reliable, recent, and domain-specific information. Although many datasets and fine-tuning resources have been introduced for LLM development, many practical applications do not need to modify model weights; they need a convenient way to connect pretrained models to trusted external knowledge. Retrieval-Augmented Generation (RAG) has become a common approach for this purpose, but production RAG requires document ingestion, chunking, embedding, indexing, retrieval, reranking, access control, citation handling, and continuous evaluation. This short paper discusses RAG-as-a-Service (RAGaaS) as an emerging service model that provides retrieval, grounding, curation, and citation as a managed knowledge delivery layer. Unlike vector databases or enterprise search alone, RAGaaS is defined here as a reusable service interface that connects pretrained models to curated and citation-ready knowledge. We distinguish RAGaaS from adjacent concepts, review representative services and downstream implementations, classify likely demand areas, and propose practical criteria for evaluating RAGaaS platforms.
+LA  - en
+M3  - Preprint
+ER  -

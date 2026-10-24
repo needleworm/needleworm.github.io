@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - MCP Design Strategy for Plant-Factory Operation AI Agents
+PY  - 2026
+DO  - 10.13140/RG.2.2.29671.61608
+UR  - https://www.researchgate.net/publication/404500785_MCP_Design_Strategy_for_Plant-Factory_Operation_AI_Agents
+AB  - Plant factories are increasingly equipped with sensors, cameras, automatic controllers, digital twins, and artificial intelligence models. However, integrating these components into a practical operation AI agent requires a safe interface between AI reasoning and facility-level control. This paper proposes an MCP design strategy for plant-factory operation AI agents. The focus is not on implementing a new autonomous agent or replacing existing control systems, but on designing the Model Context Protocol layer through which an agent can read plant-factory context, call diagnostic and simulation tools, follow standard operating prompts, and update supervisory operation parameters. In the proposed strategy, MCP resources represent sensor data, crop images, nutrient states, recipes, actuator states, logs, and digital-twin states; MCP tools represent diagnosis, prediction, simulation, and bounded parameter-update functions; and MCP prompts represent user-selectable standard operating procedure templates. The key argument is that MCP should not be used as a deterministic real-time controller for plant factories. Instead, it should serve as a supervisory parameter interface that modifies setpoints, recipes, schedules, thresholds, and policy parameters used by existing 24-hour automatic control systems. This paper presents resource URI schemes, tool risk classification, parameter-update tool schemas, prompt-resource-tool binding, safety tables, and closed-loop operation workflows for MCP-mediated plant-factory operation.
+LA  - en
+M3  - Preprint
+ER  -

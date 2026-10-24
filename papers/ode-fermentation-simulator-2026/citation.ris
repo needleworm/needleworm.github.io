@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation
+PY  - 2026
+DO  - 10.13140/RG.2.2.31603.28968
+UR  - https://www.researchgate.net/publication/404682643_An_ODE-Network-Based_Chemical_Complex_System_Simulator_for_Multi-Environment_Fermentation
+AB  - Fermentation is a slow chemical-biological process in which substrates, enzymes, yeast biomass, oxygen, pH, temperature, and metabolic products co-evolve. This paper presents an ODE-network-based chemical complex system simulator for multi-environment fermentation. A shared state-space was instantiated for bread dough, rice wine, beer wort, and malt mash/wort, and a one-command Python workflow generated 108 simulated conditions with CSV outputs. The sweep produced interpretable optima and failure modes that aligned semi-quantitatively with literature-reported fermentation ranges, supporting the model as a compact benchmark for fermentation design and future control studies.
+LA  - en
+M3  - Preprint
+ER  -

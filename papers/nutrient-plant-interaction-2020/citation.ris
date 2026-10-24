@@ -1,0 +1,12 @@
+TY  - CONF
+AU  - Ban, Byunghyun
+TI  - Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis
+PY  - 2020
+T2  - 2020 International Conference on Information and Communication Technology Convergence (ICTC)
+SP  - 1531
+EP  - 1536
+DO  - 10.1109/ictc49870.2020.9289083
+UR  - https://doi.org/10.1109/ictc49870.2020.9289083
+AB  - Differential equation models to understand interaction between plant and nutrient solution are presented. The root cells selectively emit H+ ions with active transport consuming ATPs to establish electrical gradient along the cell membrane. It establishes electrical field with Nernst potential to make positively charged ions outside the cell membrane flow into the root cell. Anion influx is also modulated by H+ ion concentration because plant root cell absorbs negatively charged particles with symport. If an anion collides with H+ cell to make net charge as neutral, at symport channel, it can flow through. In this paper, mathematical models for cation and anion absorption are introduced. Cation absorption model was induced from Ohm’s law combined with Goldman’s equation. Anion absorption model is similar to chemical reaction rate model. Both models have physiological terms influenced by gene expression pattern, species or phenotypes. Cation model also includes terms for ion’s kinetic and electrical properties, growth of plant and interaction between the root and the surroundings. Simulation for 20 different sets of coefficients showed that the physiology-related coefficient has important role on nutrition absorption tendencies of plants.
+LA  - en
+ER  -

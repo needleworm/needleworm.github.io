@@ -1,0 +1,10 @@
+TY  - UNPB
+AU  - Ban, Byunghyun
+TI  - Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review
+PY  - 2026
+DO  - 10.13140/RG.2.2.34160.83209
+UR  - https://www.researchgate.net/publication/404420655_Can_LLMs_Review_Scientific_Papers
+AB  - Maybe not. Large language models (LLMs) can produce fluent and plausible peer-review reports, but fluency is not scholarly judgment. This paper presents a case study of three formal peer-review reports received during an actual submission to a Korea Citation Index (KCI) candidate journal. One review claimed that key methodological and experimental details were missing, although the manuscript explicitly contained information about validation data, hardware, software frameworks, model configuration, parameter count, algorithmic procedure, and limitations. After the author reported these grounding failures to the editor, the problematic review was not relied upon in the final decision, and the manuscript was subsequently accepted and published. The case is compared with two more grounded human reviews and an exploratory source-grounded LLM-generated review. The source-grounded LLM review was more aligned with the manuscript, but still produced minor factual errors and overstatements. The case suggests that grounding improves LLM-assisted review, but does not eliminate hallucination or accountability gaps.
+LA  - en
+M3  - Preprint
+ER  -

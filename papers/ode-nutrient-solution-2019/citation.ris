@@ -1,0 +1,14 @@
+TY  - CONF
+AU  - Ban, Byunghyun
+AU  - Lee, Minwoo
+AU  - Ryu, Donghun
+TI  - ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System
+PY  - 2019
+T2  - 2019 International Conference on Information and Communication Technology Convergence (ICTC)
+SP  - 996
+EP  - 1001
+DO  - 10.1109/ictc46691.2019.8939946
+UR  - https://doi.org/10.1109/ictc46691.2019.8939946
+AB  - In closed hydroponic systems, periodic readjustment of nutrient solution is necessary to continuously provide stable environment to plant roots because the interaction between plant and nutrient solution changes the rate of ions in it. The traditional method is to repeat supplying small amount of premade concentrated nutrient solution, measuring total electric conductivity and pH of the tank only. As it cannot control the collapse of ion rates, recent researches try to measure the concentration of individual components to provide insufficient ions only. However, those approaches use titration-like heuristic approaches, which repeat adding small amount of components and measuring ion density a lot of times for a single control input. Both traditional and recent methods are not only time-consuming, but also cannot predict chemical reactions related with control inputs because the nutrient solution is a nonlinear complex system, including many precipitation reactions and complicated interactions. We present a continuous network model of the nutrient solution system, whose reactions are described as differential equations. The model predicts molar concentration of each chemical components and total dissolved solids with low error. This model also can calculate the amount of chemical compounds needed to produce a desired nutrient solution, by reverse calculation from dissolved ion concentrations.
+LA  - en
+ER  -

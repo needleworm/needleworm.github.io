@@ -1,9 +1,11 @@
-"""Render one openly readable abstract page per paper, with scholarly metadata."""
+"""Render source-derived paper readers, abstracts and scholarly metadata."""
 from html import escape, unescape
 from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
+from paper_fulltext import load_fulltext, render_fulltext, render_toc
+from paper_citations import citation_formats
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -59,6 +61,7 @@ def load_records(cards):
         found.add(ident)
     if found != set(by_id):
         raise ValueError('Scholarly metadata refers to missing paper cards')
+    load_fulltext(by_id)
     return by_id
 
 
@@ -133,7 +136,6 @@ def render_article(record):
         if not replaced:
             footer = footer.replace('<div class="gitIcons">', '<div class="gitIcons"><a href="' + full_pdf_url + '" download title="PDF 다운로드" aria-label="PDF 다운로드"><span aria-hidden="true">PDF</span></a>', 1)
     footer = re.sub(r'\bhref="\./src/', 'href="/src/', footer)
-    citation = unescape(re.search(r'\bdata-citation=(["\'])(.*?)\1', card, re.S)[2])
     image = re.search(r'<img\b[^>]*>', card, re.S)[0]
     image = re.sub(r'\bsrc="\./src/', 'src="/src/', image)
     image = image.replace('class="websiteImage"', 'class="paper-detail-image"')
@@ -149,19 +151,53 @@ def render_article(record):
     if record.get('article_number'):
         parts.append('Article ' + str(record['article_number']))
     kind = 'Preprint · not peer-reviewed' if record['publication_type'] == 'preprint' else "Master’s thesis" if record.get('dissertation_institution') else 'Published research'
+    full = record.get('full_text')
+    if not full:
+        thesis_note = '<p class="paper-source-note">석사학위논문은 초록만 제공합니다.</p>'
+    else:
+        thesis_note = ''
+    jumps = ('<nav class="paper-reader-jumps" aria-label="논문 바로가기"><a href="#abstract-heading">Abstract</a>'
+             + ('<a href="#full-text">Full text</a>' if full else '') + '<a href="#citation-heading">Cite</a></nav>')
     return ('<nav class="paper-breadcrumbs" aria-label="현재 위치"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/papers/">Papers</a></nav>'
         '<article id="tab-papers" class="paper-detail" data-paper-id="' + record['record_id'] + '">'
         '<header><p class="paper-kind">' + kind + '</p><h1 id="paper-title" lang="' + record['language'] + '">' + escape(record['title']) + '</h1>'
         + ('<p class="paper-alternative-title" lang="en">' + escape(record['title_en']) + '</p>' if record.get('title_en') else '')
         + '<p class="paper-authors">' + escape(', '.join(record['authors'])) + '</p>'
-        '<p class="paper-venue">' + escape(' · '.join(parts)) + '</p></header>'
+        '<p class="paper-venue">' + escape(' · '.join(parts)) + '</p>' + jumps + footer + '</header>'
+        '<div class="paper-reader-layout">' + render_toc(record) + '<div class="paper-reading-column">'
         '<section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">Abstract</h2>'
-        '<p class="abstract" lang="en">' + escape(record['abstract']) + '</p></section>' + footer
-        + '<section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">Citation</h2><p>' + escape(citation) + '</p></section>'
-        '<figure class="paper-first-page">' + image + '<figcaption>논문 첫 페이지</figcaption></figure>'
-        '<a class="paper-back-link" href="/papers/">← 논문 목록으로 돌아가기</a></article>')
+        '<p class="abstract" lang="en">' + escape(record['abstract']) + '</p></section>' + thesis_note + render_fulltext(record)
+        + render_citations(record)
+        + ('' if full else '<figure class="paper-first-page">' + image + '<figcaption>논문 첫 페이지</figcaption></figure>')
+        + '<a class="paper-back-link" href="/papers/">← 논문 목록으로 돌아가기</a></div></div></article>')
+
+
+def render_citations(record):
+    formats = citation_formats(record)
+    labels = {'apa': 'APA', 'mla': 'MLA', 'chicago': 'Chicago', 'ieee': 'IEEE', 'bibtex': 'BibTeX', 'ris': 'RIS'}
+    buttons = ''.join('<button type="button" data-citation-format="' + key + '" aria-controls="citation-text" aria-pressed="'
+                      + ('true' if key == 'apa' else 'false') + '" title="' + label + ' 형식 복사">' + label + ' 복사</button>'
+                      for key, label in labels.items())
+    data = json.dumps(formats, ensure_ascii=False).replace('<', '\\u003c')
+    return ('<section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">Citation</h2>'
+            '<p class="citation-help">형식을 누르면 인용 정보가 복사됩니다.</p><div class="citation-formats">' + buttons + '</div>'
+            '<label for="citation-text" class="citation-preview-label">인용 미리보기 · <span id="citation-current-format">APA</span></label>'
+            '<textarea id="citation-text" rows="7" readonly spellcheck="false">' + escape(formats['apa']) + '</textarea>'
+            '<p id="citation-status" class="citation-status" role="status" aria-live="polite"></p>'
+            '<p class="citation-downloads"><a href="' + record['path'] + 'citation.bib" download>BibTeX 파일</a><a href="'
+            + record['path'] + 'citation.ris" download>RIS 파일</a></p>'
+            '<script type="application/json" id="citation-formats-data">' + data + '</script></section>')
 
 
 def pdf_outputs(records):
     return {record['path'].lstrip('/') + 'paper.pdf': (ROOT / record['full_pdf']).read_bytes()
             for record in records.values() if record.get('full_pdf')}
+
+
+def citation_outputs(records):
+    outputs = {}
+    for record in records.values():
+        formats = citation_formats(record)
+        outputs[record['path'].lstrip('/') + 'citation.bib'] = formats['bibtex'].rstrip('\n') + '\n'
+        outputs[record['path'].lstrip('/') + 'citation.ris'] = formats['ris'].rstrip('\n') + '\n'
+    return outputs

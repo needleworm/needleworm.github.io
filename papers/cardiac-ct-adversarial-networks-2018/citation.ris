@@ -1,0 +1,10 @@
+TY  - THES
+AU  - Ban, Byung-Hyun
+TI  - 대립 신경망을 이용한 심혈관 단층촬영 영상 표지 방법
+PY  - 2018
+UR  - https://koasas.kaist.ac.kr/handle/10203/295283
+AB  - Bio-medical image segmentation, which is an emerging technique for an assistive way for quick and deliberate diagnosis, is to separate a biological or medical image into different semantic parts. Contemporary machine learning based segmentation techniques depend on statistical approach to minimize the objective functions which ensure statistically to distinguish each pixel into one of the desired classes. However, thus philosophy consistently fails when the numbers of pixels for those class meet severe imbalance and presents prediction errors on all around the given input. This thesis provides a robust solution for Bio-medical image segmentation with adversarial networks, which are composed of a segmentor based on fully convolutional neural networks, image windowing technique and a discriminator which interferes the segmentor’s learning, to acquire manifest performance even with the severe pixel class imbalance.
+LA  - ko
+PB  - Korea Advanced Institute of Science and Technology
+M3  - Master’s thesis
+ER  -
