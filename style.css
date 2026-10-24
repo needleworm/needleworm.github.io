@@ -685,6 +685,7 @@ footer {
     }
 
     .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/images/bookcovers-astra-mobile-20261024.webp');
         height: auto !important;
         min-height: calc(100vh + var(--nav-height));
         padding-top: calc(10vh + var(--nav-height)) !important;
