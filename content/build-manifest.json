@@ -17,7 +17,7 @@
     "cards": 36
   },
   "media/index.html": {
-    "sha256": "d6da45842a593032391e5cd57546db93cc119b7e958b7dccf49e8c562f407b69",
+    "sha256": "ceeff0fd325c5afdc69104e61958ab636aea684f9228dc940daa170bec9168a3",
     "lastmod": "2026-10-24",
     "sections": [
       "media"
@@ -25,7 +25,7 @@
     "cards": 21
   },
   "news/index.html": {
-    "sha256": "ab44745efec1de48d6fcf55e92aee6459bda9284b957856b08185eaa4f4f6209",
+    "sha256": "6c5db7f65333606da39d7abdf6404e5586f5da9141889fc1bdfcd400f519ce8f",
     "lastmod": "2026-10-24",
     "sections": [
       "news"
@@ -33,7 +33,7 @@
     "cards": 52
   },
   "courses/online/index.html": {
-    "sha256": "edfa9558a1ead19c11c167a6f5f750d03ffeefe23b607fb8963d8b89242bc461",
+    "sha256": "a05c5f54df67039ecf0fec8786ae68acbddc3964da2871d8431e5065c4d6080b",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-online"
@@ -41,7 +41,7 @@
     "cards": 29
   },
   "courses/offline/index.html": {
-    "sha256": "45213cd3d747d27e180e7482537d66de70562f6817205e72740c02abaeb86e02",
+    "sha256": "2de63175c4798bf455f3e52406f12dabf36b2bbe435702b6734776cbb2a8a89f",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-offline"
@@ -49,7 +49,7 @@
     "cards": 14
   },
   "lectures/index.html": {
-    "sha256": "fcd9d25b3d7b1745f2d8b19858f4edf9885ef0349ac1c8410d5a853b14d00b25",
+    "sha256": "01d4546c68fa872fb3f2ecca808f365dc65db15352a89157e25857b7d020d78f",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -90,7 +90,7 @@
     "cards": 2
   },
   "memberships/index.html": {
-    "sha256": "ca53380dd47ef9f72a5df7d1665358609db3332d26a2fe6df1650cb721f0beba",
+    "sha256": "aa2bdac1dafead1945b336ca09f751ea3952951b75137616d3abcc032f56d930",
     "lastmod": "2026-10-24",
     "sections": [
       "membership"
