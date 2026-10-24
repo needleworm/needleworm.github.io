@@ -13,6 +13,7 @@ import sys
 import xml.etree.ElementTree as ET
 from paper_pages import load_records, link_card_titles, scholar_meta, article_schema, render_article, pdf_outputs, citation_outputs
 from lecture_pages import load_lecture_records, link_lecture_cards, render_lecture
+from site_feeds import generate_feeds
 
 ROOT = Path(__file__).resolve().parents[1]
 VOID = set('area base br col embed hr img input link meta param source track wbr'.split())
@@ -477,6 +478,10 @@ def build(check=False):
         digest = sha256(output.encode('utf8')).hexdigest()
         lastmod = previous.get(target, {}).get('lastmod', date.today().isoformat()) if previous.get(target, {}).get('sha256') == digest else date.today().isoformat()
         manifest[target] = {'sha256': digest, 'lastmod': lastmod, 'sections': ['lectures'], 'cards': 0, 'lecture_id': record['record_id']}
+    outputs.update(generate_feeds(config['url'],
+        [sources['books'][a:b] for a, b in sorted(Blocks(sources['books']).cards)],
+        [sources['news'][a:b] for a, b in sorted(Blocks(sources['news']).cards)],
+        lecture_records, paper_records))
     for entry in redirects:
         destination = next(p for p in pages.values() if p['slug'] == entry['to'])
         destination_path = path(destination)

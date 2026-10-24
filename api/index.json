@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "title": "반병현 공개 콘텐츠",
+  "home_page_url": "https://bhban.kr/",
+  "rss_url": "https://bhban.kr/feed.xml",
+  "json_feed_url": "https://bhban.kr/feed.json",
+  "catalogs": {
+    "books": {
+      "url": "https://bhban.kr/api/books.json",
+      "count": 36
+    },
+    "news": {
+      "url": "https://bhban.kr/api/news.json",
+      "count": 52
+    },
+    "lectures": {
+      "url": "https://bhban.kr/api/lectures.json",
+      "count": 231
+    },
+    "papers": {
+      "url": "https://bhban.kr/api/papers.json",
+      "count": 28
+    }
+  }
+}

@@ -20,6 +20,8 @@ jobs:
         run: python scripts/check_site.py
       - name: Verify scholarly citation formats and exports
         run: python -m unittest discover -s scripts -p test_paper_citations.py -v
+      - name: Verify public JSON catalogs and subscription feeds
+        run: python -m unittest discover -s scripts -p test_site_feeds.py -v
       - name: Verify desktop navigation and mobile continuous scrolling
         run: |
           node scripts/check_mobile_navigation.cjs

@@ -8,6 +8,7 @@
 - `index.html`과 각 하위 폴더의 `index.html`은 생성 결과입니다. 원본을 수정한 후 `python scripts/build_site.py`를 실행하세요.
 - `python scripts/build_site.py --check`로 생성 결과가 최신인지 확인하고, `python scripts/check_site.py`로 원문·카드 수·내부 경로·검색 메타데이터 보존 여부를 검사합니다. Python 표준 라이브러리만 사용합니다.
 - GitHub Pages에는 생성된 파일을 함께 배포합니다. 별도 애플리케이션 서버는 필요하지 않습니다. GitHub Actions는 푸시와 PR에서 생성 결과와 콘텐츠를 검사합니다.
+- `scripts/site_feeds.py`는 공개된 강의·저서·논문·언론 보도 카드에서 `/feed.xml`(RSS 2.0), `/feed.json`(JSON Feed 1.1), `/api/index.json` 및 `/api/lectures.json`, `/api/books.json`, `/api/papers.json`, `/api/news.json`을 생성합니다. API 목록은 전체 항목을 포함하며 확인된 원문 필드만 내보냅니다. 상세 페이지가 있는 강의·논문은 해당 주소로, 저서는 Books로, 보도는 원문 기사로 연결합니다. 기록된 날짜와 피드 게시일을 혼동하지 않도록 날짜는 본문과 `date_text`에 원문대로 유지하며 알 수 없는 최초 게시일·시간을 생성하지 않습니다. 같은 원본으로 빌드하면 피드도 동일하며, ID는 제목·설명 수정에 영향받지 않습니다. 피드 주소는 공통 head와 푸터에 표시합니다. JSON은 정적 조회용이며 쿼리 매개변수로 서버 필터링하지 않습니다.
 - 사이트맵은 기존 도서 예제 사이트 주소를 보존하면서 각 페이지 주소를 추가합니다. 실제 HTML 내용이 바뀐 페이지의 수정일만 갱신합니다.
 - `scripts/check_site.py`는 사이트맵의 페이지 누락·중복, 대표 주소와 호스트, 수정일, `robots.txt` 연결도 검사합니다. 강의 분류의 해시 주소와 모바일 연속 스크롤 상태, 이전 주소의 리다이렉트는 별도 페이지로 등록하지 않습니다. 별도 저장소에서 제공하는 예제 사이트 주소는 `content/project-sitemap.xml`에서 관리합니다.
 - 홈 `/`와 `/books/`, `/media/`, `/news/`, `/courses/online/`, `/courses/offline/`, `/lectures/`, `/papers/`, `/patents/`, `/projects/`, `/activities/`, `/memberships/`, `/collections/`, `/contact/`는 모두 실제 `index.html` 파일이 있는 주소입니다. 이전 `/courses/` 주소도 물리적인 `index.html`을 유지하며 Online으로 연결합니다.

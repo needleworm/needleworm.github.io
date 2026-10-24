@@ -1,0 +1,804 @@
+{
+  "version": 1,
+  "title": "논문",
+  "home_page_url": "https://bhban.kr/papers/",
+  "count": 28,
+  "items": [
+    {
+      "id": "papers:paper-2026-p01",
+      "type": "papers",
+      "title": "A Historical Review of AI-Based Music Composition: From Local Pattern Prediction to Holistic Audio Generation",
+      "url": "https://bhban.kr/papers/ai-music-composition-history-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p01-first-page-69c1ba32ca72.webp",
+      "date_text": "2026",
+      "description": "AI-based music composition has evolved from explicit rule encoding and local symbolic prediction to end-to-end generation of integrated musical audio. This historical review examines representative systems that either introduced a distinct generative paradigm or achieved practical deployment. It traces the progression from rule-based and stochastic models through recurrent networks and Transformers to waveform, latent-audio, diffusion, flow-matching, hybrid, and multimodal approaches. Early models reproduced local transitions among notes, chords, and rhythms but struggled with long-range form and thematic development. Recurrent and attention-based architectures expanded temporal context, yet largely remained within symbolic prediction. Audio-level models shifted the generative target from musical instructions to sound itself, enabling joint modeling of structure, performance, timbre, texture, and acoustic realization. The review argues that the key historical transition was not simply an increase in model capacity, but a change in representational scope: from decomposing music into human-defined units to learning high-dimensional relationships more holistically. Current systems still face unresolved problems in long-term planning, fine-grained control, editability, and human–AI collaboration. Nevertheless, their development reflects a broader movement from automating compositional procedures toward modeling increasingly integrated stages of musical ideation and sound formation.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "published",
+      "doi": "10.52618/aied.2026.7.3.4",
+      "links": [
+        {
+          "title": "미리보기 PDF (1쪽)",
+          "url": "https://bhban.kr/src/paperPdf/2026-p01-kci-preview.pdf"
+        },
+        {
+          "title": "KCI",
+          "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003395169"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-14",
+      "type": "papers",
+      "title": "FAKER: Full-body Anonymization with Human Keypoint Extraction and Regression for Real-time Video Deidentification",
+      "url": "https://bhban.kr/papers/faker-2024/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/faker-journal-2024-first-page-33adf0d683b3.webp",
+      "date_text": "2024",
+      "description": "In the contemporary digital era, protection of personal information has become a paramount issue. The exponential growth of the media industry has heightened concerns regarding the anonymization of individuals captured in video footage. Traditional methods, such as blurring or pixelation, are commonly employed, while recent advancements have introduced generative adversarial networks (GANs) to redraw faces in videos. In this study, we propose a novel approach that employs a significantly smaller model to achieve real-time full-body anonymization of individuals in videos. Unlike conventional techniques that often fail to effectively remove personal identification information—such as skin color, clothing, accessories, and body shape—our method successfully eradicates all such details. Furthermore, by leveraging pose estimation algorithms, our approach accurately represents information regarding individuals' positions, movements, and postures. This algorithm can be seamlessly integrated into CCTV or IP camera systems installed in various industrial settings, functioning in real-time and thus facilitating the widespread adoption of full-body anonymization technology.",
+      "authors": [
+        "Byunghyun Ban",
+        "Hyoseok Lee"
+      ],
+      "publication_type": "published",
+      "doi": "10.52618/aied.2024.5.2.6",
+      "links": [
+        {
+          "title": "미리보기 PDF (1쪽)",
+          "url": "https://bhban.kr/src/paperPdf/faker-journal-2024-kci-preview.pdf"
+        },
+        {
+          "title": "Journal",
+          "url": "https://doi.org/10.52618/aied.2024.5.2.6"
+        },
+        {
+          "title": "KCI",
+          "url": "https://kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003118309"
+        },
+        {
+          "title": "Preprint PDF",
+          "url": "https://arxiv.org/pdf/2408.11829"
+        },
+        {
+          "title": "arXiv 원문 정보",
+          "url": "https://arxiv.org/abs/2408.11829"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-11",
+      "type": "papers",
+      "title": "AI Knows Which Words Will Appear in Next Year's Korean CSAT",
+      "url": "https://bhban.kr/papers/ai-csat-vocabulary-2023/",
+      "image": "https://bhban.kr/src/images/papers/11.webp",
+      "date_text": "2023",
+      "description": "A text-mining-based word class categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple text appearance frequency analysis is first described. This method was developed as a data screening tool but showed 4.35 times higher prediction accuracy compared to Word Master book. An LSTM deep learning method is also suggested for vocabulary appearance pattern prediction method. AI performs a regression with various size of data window of previous exams to predict the probabilities of word appearance in the next exam. Predicted values of AI over various data windows are processed into a single score as a weighted sum, which we call an \"AI-Score\", which represents the probability of word appearance in next year's exam. Suggested method showed 100% accuracy at the range 100-score area and showed only 1.7% error of prediction in the section where the scores were over 60 points. All source codes are freely available at the authors' Git Hub repository. (https://github.com/needleworm/bigdata_voca)",
+      "authors": [
+        "Byunghyun Ban",
+        "Jejong Lee",
+        "Hyeonmok Hwang"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc58733.2023.10393339",
+      "links": [
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/11.pdf"
+        },
+        {
+          "title": "arXiv 원문 정보",
+          "url": "https://arxiv.org/abs/2211.15426"
+        },
+        {
+          "title": "GitHub 저장소",
+          "url": "https://github.com/needleworm/bigdata_voca"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-13",
+      "type": "papers",
+      "title": "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts",
+      "url": "https://bhban.kr/papers/congnamul-dataset-2023/",
+      "image": "https://bhban.kr/src/images/papers/13.webp",
+      "date_text": "2023",
+      "description": "We present 'CongNaMul', a comprehensive dataset designed for various tasks in soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks such as image classification, semantic segmentation, decomposition, and measurement of length and weight. The classification task provides four classes to determine the quality of soybean sprouts: normal, broken, spotted, and broken and spotted, for the development of AI-aided automatic quality inspection technology. For semantic segmentation, images with varying complexity, from single sprout images to images with multiple sprouts, along with human-labelled mask images, are included. The label has 4 different classes: background, head, body, tail. The dataset also provides images and masks for the image decomposition task, including two separate sprout images and their combined form. Lastly, 5 physical features of sprouts (head length, body length, body thickness, tail length, weight) are provided for image-based measurement tasks. This dataset is expected to be a valuable resource for a wide range of research and applications in the advanced analysis of images of soybean sprouts. Also, we hope that this dataset can assist researchers studying classification, semantic segmentation, decomposition, and physical feature measurement in other industrial fields, in evaluating their models. The dataset is available at the authors’ repository (https://bhban.kr/data).",
+      "authors": [
+        "Byunghyun Ban",
+        "Donghun Ryu",
+        "Su-won Hwang"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc58733.2023.10393217",
+      "links": [
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.1109/ICTC58733.2023.10393217"
+        },
+        {
+          "title": "프리프린트 PDF 다운로드",
+          "url": "https://arxiv.org/pdf/2308.15690"
+        },
+        {
+          "title": "arXiv 원문 정보",
+          "url": "https://arxiv.org/abs/2308.15690"
+        },
+        {
+          "title": "논문 원문 정보",
+          "url": "http://bhban.kr/data/"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-9",
+      "type": "papers",
+      "title": "A Survey on Awesome Korean NLP Datasets",
+      "url": "https://bhban.kr/papers/korean-nlp-datasets-2022/",
+      "image": "https://bhban.kr/src/images/papers/9.webp",
+      "date_text": "2022",
+      "description": "English based datasets are commonly available from Kaggle, GitHub, or recently published papers. Although benchmark tests with English datasets are sufficient to show off the performances of new models and methods, still a researcher need to train and validate the models on Korean based datasets to produce a technology or product, suitable for Korean processing. This paper introduces 15 popular Korean based NLP datasets with summarized details such as volume, license, repositories, and other research results inspired by the datasets. Also, I provide high-resolution instructions with sample or statistics of datasets. The main characteristics of datasets are presented on a single table to provide a rapid summarization of datasets for researchers.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc55196.2022.9952930",
+      "links": [
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/9.pdf"
+        },
+        {
+          "title": "논문 원문 정보",
+          "url": "https://ieeexplore.ieee.org/document/9952930"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-12",
+      "type": "papers",
+      "title": "수능 영어시험의 어휘 등장 패턴 분석",
+      "url": "https://bhban.kr/papers/csat-vocabulary-patterns-2022/",
+      "image": "https://bhban.kr/src/images/papers/12.webp",
+      "date_text": "2022",
+      "description": "A text-mining-based word class categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple text appearance frequency analysis is first described. This method was developed as a data screening tool but showed 4.35 times higher prediction accuracy compared to Word Master book. An LSTM deep learning method is also suggested for vocabulary appearance pattern prediction method. AI performs a regression with various size of data window of previous exams to predict the probabilities of word appearance in the next exam. Predicted values of AI over various data windows are processed into a single score as a weighted sum, which we call an \"AI-Score\", which represents the probability of word appearance in next year's exam. Suggested method showed 100% accuracy at the range 100-score area and showed only 1.7% error of prediction in the section where the scores were over 60 points.",
+      "authors": [
+        "Byunghyun Ban",
+        "Jejong Lee",
+        "Hyeonmok Hwang"
+      ],
+      "publication_type": "published",
+      "doi": "10.52618/aied.2022.3.3.3",
+      "links": [
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/12.pdf"
+        },
+        {
+          "title": "논문 원문 정보",
+          "url": "http://aied.or.kr/sub_html/sub02_08.html?pageNm=article&journal=1&code=425485&issue=32270"
+        },
+        {
+          "title": "GitHub 저장소",
+          "url": "https://github.com/needleworm/bigdata_voca"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-4",
+      "type": "papers",
+      "title": "Nutrient Solution Management System for Smart Farms and Plant Factory",
+      "url": "https://bhban.kr/papers/nutrient-solution-management-2020/",
+      "image": "https://bhban.kr/src/images/papers/4.webp",
+      "date_text": "2020",
+      "description": "We present an automated system for nutrient solution management. Prior arts usually measure only pH and EC of the nutrient solutions for maintenance. When EC drops, they just simply add concentrated nutrient to the horticulture bed. Such approach can maintain the density of nutrient solution but cannot maintain the rates of individual ion particles. To prevent nutrition related disorders, fertilization methods with ion selective electrodes are widely introduced. This trend measures individual ion concentration of nutrient solution to maintain appropriate nutrient composition by supplying only insufficient ions. Many researchers have suggested ISE based automated fertilization systems. However, they failed to control a chemical artifact called ion interference effect, which becomes greater at higher density. Our system measures individual concentration of multiple ions and add only deficient nutrients, while handling the ion interference effect issue. To ensure the performance of ion selective electrodes, the system also performs fully automated 3-point calibration 24 times a day. A machine learning algorithm is applied on the sensory parts to remove ion interference effect which make measurement of complex solution with ISE almost impossible. With automated calibration and signal processing technology, the system robustly and continuously maintains nutrient condition for plants. We suggest applying this system on closed hydroponic systems such as smart farms or plant factory, to reduce water consumption and to provide more appropriate environment for the crops.",
+      "authors": [
+        "Byunghyun Ban",
+        "Janghun Lee",
+        "Donghun Ryu",
+        "Minwoo Lee",
+        "Tae Dong Eom"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc49870.2020.9289192",
+      "links": [
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/4.pdf"
+        },
+        {
+          "title": "DOI 원문 정보",
+          "url": "https://doi.org/10.1109/ICTC49870.2020.9289192"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-5",
+      "type": "papers",
+      "title": "Deep learning method to remove chemical, kinetic and electric artifacts on ISEs",
+      "url": "https://bhban.kr/papers/ise-artifact-deep-learning-2020/",
+      "image": "https://bhban.kr/src/images/papers/5.webp",
+      "date_text": "2020",
+      "description": "I suggest a deep learning based sensor signal processing method to remove chemical, kinetic and electrical artifacts from ion selective electrodes’ measured values. An ISE is used to investigate the concentration of a specific ion from aqueous solution, by measuring the Nernst potential along the glass membrane. However, application of ISE on a mixture of multiple ion has some problem. First problem is a chemical artifact which is called ion interference effect. Electrically charged particles interact with each other and flows through the glass membrane of different ISEs. Second problem is the kinetic artifact caused by the movement of the liquid. Water molecules collide with the glass membrane causing abnormal peak values of voltage. The last artifact is the interference of ISEs. When multiple ISEs are dipped into same solution, one electrode’s signal emission interference voltage measurement of other electrodes. Therefore, an ISE is recommended to be applied on single-ion solution, without any other sensors applied at the same time. Deep learning approach can remove both 3 artifacts at the same time. The proposed method used 5 layers of artificial neural networks to regress correct signal to remove complex artifacts with one-shot calculation. Its MAPE was less than 1.8% and R2 of regression was 0.997. A randomly chosen value of AI processed data has MAPE less than 5% (p-value 0.016).",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc49870.2020.9289389",
+      "links": [
+        {
+          "title": "GitHub 저장소",
+          "url": "https://github.com/needleworm/ion_interference"
+        },
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/5.pdf"
+        },
+        {
+          "title": "DOI 원문 정보",
+          "url": "https://doi.org/10.1109/ICTC49870.2020.9289389"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-6",
+      "type": "papers",
+      "title": "Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis",
+      "url": "https://bhban.kr/papers/nutrient-plant-interaction-2020/",
+      "image": "https://bhban.kr/src/images/papers/6.webp",
+      "date_text": "2020",
+      "description": "Differential equation models to understand interaction between plant and nutrient solution are presented. The root cells selectively emit H+ ions with active transport consuming ATPs to establish electrical gradient along the cell membrane. It establishes electrical field with Nernst potential to make positively charged ions outside the cell membrane flow into the root cell. Anion influx is also modulated by H+ ion concentration because plant root cell absorbs negatively charged particles with symport. If an anion collides with H+ cell to make net charge as neutral, at symport channel, it can flow through. In this paper, mathematical models for cation and anion absorption are introduced. Cation absorption model was induced from Ohm’s law combined with Goldman’s equation. Anion absorption model is similar to chemical reaction rate model. Both models have physiological terms influenced by gene expression pattern, species or phenotypes. Cation model also includes terms for ion’s kinetic and electrical properties, growth of plant and interaction between the root and the surroundings. Simulation for 20 different sets of coefficients showed that the physiology-related coefficient has important role on nutrition absorption tendencies of plants.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc49870.2020.9289083",
+      "links": [
+        {
+          "title": "GitHub 저장소",
+          "url": "https://github.com/needleworm/bh_coefficient"
+        },
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/6.pdf"
+        },
+        {
+          "title": "DOI 원문 정보",
+          "url": "https://doi.org/10.1109/ICTC49870.2020.9289083"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2",
+      "type": "papers",
+      "title": "ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System",
+      "url": "https://bhban.kr/papers/ode-nutrient-solution-2019/",
+      "image": "https://bhban.kr/src/images/papers/2.webp",
+      "date_text": "2019",
+      "description": "In closed hydroponic systems, periodic readjustment of nutrient solution is necessary to continuously provide stable environment to plant roots because the interaction between plant and nutrient solution changes the rate of ions in it. The traditional method is to repeat supplying small amount of premade concentrated nutrient solution, measuring total electric conductivity and pH of the tank only. As it cannot control the collapse of ion rates, recent researches try to measure the concentration of individual components to provide insufficient ions only. However, those approaches use titration-like heuristic approaches, which repeat adding small amount of components and measuring ion density a lot of times for a single control input. Both traditional and recent methods are not only time-consuming, but also cannot predict chemical reactions related with control inputs because the nutrient solution is a nonlinear complex system, including many precipitation reactions and complicated interactions. We present a continuous network model of the nutrient solution system, whose reactions are described as differential equations. The model predicts molar concentration of each chemical components and total dissolved solids with low error. This model also can calculate the amount of chemical compounds needed to produce a desired nutrient solution, by reverse calculation from dissolved ion concentrations.",
+      "authors": [
+        "Byunghyun Ban",
+        "Minwoo Lee",
+        "Donghun Ryu"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc46691.2019.8939946",
+      "links": [
+        {
+          "title": "GitHub 저장소",
+          "url": "https://github.com/needleworm/nutrient_solution"
+        },
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/2.pdf"
+        },
+        {
+          "title": "DOI 원문 정보",
+          "url": "https://doi.org/10.1109/ICTC46691.2019.8939946"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-3",
+      "type": "papers",
+      "title": "Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient Solutions",
+      "url": "https://bhban.kr/papers/ion-interference-machine-learning-2019/",
+      "image": "https://bhban.kr/src/images/papers/3.webp",
+      "date_text": "2019",
+      "description": "High concentration agricultural facilities such as vertical farms or plant factories consider hydroponic techniques as optimal solutions. Although closed-system dramatically reduces water consumption and pollution issues, it has ion-ratio related problem. As the root absorbs individual ions with different rate, ion rate in a nutrient solution should be adjusted periodically. But traditional method only considers pH and electrical conductivity to adjust the nutrient solution, leading to ion imbalance and accumulation of excessive salts. To avoid those problems, some researchers have proposed ion-balancing methods which measure and control each ion concentration. However, those approaches do not overcome the innate limitations of ISEs, especially ion interference effect. An anion sensor is affected by other anions, and the error grows larger in higher concentration solution. A machine learning approach to modify ISE data distorted by ion interference effect is proposed in this paper. As measurement of TDS value is relatively robust than any other signals, we applied TDS as key parameter to build a readjustment function to remove the artifact. Once a readjustment model is established, application on ISE data can be done in real time. Readjusted data with proposed model showed about 91.6 ~ 98.3% accuracies. This method will enable the fields to apply recent methods in feasible status.",
+      "authors": [
+        "Byunghyun Ban",
+        "Donghun Ryu",
+        "Minwoo Lee"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc46691.2019.8939812",
+      "links": [
+        {
+          "title": "GitHub 저장소",
+          "url": "https://github.com/needleworm/ion_interference"
+        },
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/3.pdf"
+        },
+        {
+          "title": "DOI 원문 정보",
+          "url": "https://doi.org/10.1109/ICTC46691.2019.8939812"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-0",
+      "type": "papers",
+      "title": "대립 신경망을 이용한 심혈관 단층촬영 영상 표지 방법",
+      "url": "https://bhban.kr/papers/cardiac-ct-adversarial-networks-2018/",
+      "image": "https://bhban.kr/src/images/papers/0.webp",
+      "date_text": "2018",
+      "description": "Bio-medical image segmentation, which is an emerging technique for an assistive way for quick and deliberate diagnosis, is to separate a biological or medical image into different semantic parts. Contemporary machine learning based segmentation techniques depend on statistical approach to minimize the objective functions which ensure statistically to distinguish each pixel into one of the desired classes. However, thus philosophy consistently fails when the numbers of pixels for those class meet severe imbalance and presents prediction errors on all around the given input. This thesis provides a robust solution for Bio-medical image segmentation with adversarial networks, which are composed of a segmentor based on fully convolutional neural networks, image windowing technique and a discriminator which interferes the segmentor’s learning, to acquire manifest performance even with the severe pixel class imbalance.",
+      "authors": [
+        "Byung-Hyun Ban"
+      ],
+      "publication_type": "published",
+      "doi": "",
+      "links": [
+        {
+          "title": "논문 원문 정보",
+          "url": "https://koasas.kaist.ac.kr/handle/10203/295283"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-8",
+      "type": "papers",
+      "title": "The phenotype control kernel of a biomolecular regulatory network",
+      "url": "https://bhban.kr/papers/phenotype-control-kernel-2018/",
+      "image": "https://bhban.kr/src/images/papers/8.webp",
+      "date_text": "2018",
+      "description": "Background: Controlling complex molecular regulatory networks is getting a growing attention as it can provide a systematic way of driving any cellular state to a desired cell phenotypic state. A number of recent studies suggested various control methods, but there is still deficiency in finding out practically useful control targets that ensure convergence of any initial network state to one of attractor states corresponding to a desired cell phenotype. Results: To find out practically useful control targets, we introduce a new concept of phenotype control kernel (PCK) for a Boolean network, defined as the collection of all minimal sets of control nodes having their fixed state values that can generate all possible control sets which eventually drive any initial state to one of attractor states corresponding to a particular cell phenotype of interest. We also present a detailed method with which we can identify PCK in a systematic way based on the layered network and converging tree of a given network. We identify all candidates for control nodes from the layered network and then hierarchically search for all possible minimal sets by using the converging tree. We show the usefulness of PCK by applying it to cell proliferation and apoptosis signaling networks and comparing the results with other control methods. PCK is the unique control method for Boolean network models that can be used to identify all possible minimal sets of control nodes. Interestingly, many of the minimal sets have only one or two control nodes. Conclusions: Based on the new concept of PCK, we can identify all possible minimal sets of control nodes that can drive any molecular network state to one of multiple attractor states representing a same desired cell phenotype.",
+      "authors": [
+        "Sang-Mok Choo",
+        "Byunghyun Ban",
+        "Jae Il Joo",
+        "Kwang-Hyun Cho"
+      ],
+      "publication_type": "published",
+      "doi": "10.1186/s12918-018-0576-8",
+      "links": [
+        {
+          "title": "GitHub 저장소",
+          "url": "https://github.com/needleworm/nc2"
+        },
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/8.pdf"
+        },
+        {
+          "title": "DOI 원문 정보",
+          "url": "https://doi.org/10.1186/s12918-018-0576-8"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-1",
+      "type": "papers",
+      "title": "Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning",
+      "url": "https://bhban.kr/papers/greenhouse-reinforcement-learning-2017/",
+      "image": "https://bhban.kr/src/images/papers/1.webp",
+      "date_text": "2017",
+      "description": "Modern control theories such as systems engineering approaches try to solve nonlinear system problems by revelation of causal relationship or co-relationship among the components; most of those approaches focus on control of sophisticatedly modeled white-boxed systems. We suggest an application of actor-critic reinforcement learning approach to control a nonlinear, complex and black-boxed system. We demonstrated this approach on artificial green-house environment simulator all of whose control inputs have several side effects so human cannot figure out how to control this system easily. Our approach succeeded to maintain the circumstance at least 20 times longer than PID and Deep Q Learning.",
+      "authors": [
+        "Byunghyun Ban",
+        "Soobin Kim"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc.2017.8190813",
+      "links": [
+        {
+          "title": "GitHub 저장소",
+          "url": "https://github.com/needleworm/greenhouse_ai"
+        },
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/1.pdf"
+        },
+        {
+          "title": "DOI 원문 정보",
+          "url": "https://doi.org/10.1109/ICTC.2017.8190813"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-7",
+      "type": "papers",
+      "title": "GAN-D: Generative adversarial networks for image deconvolution",
+      "url": "https://bhban.kr/papers/gan-d-image-deconvolution-2017/",
+      "image": "https://bhban.kr/src/images/papers/7.webp",
+      "date_text": "2017",
+      "description": "We propose new generative adversarial networks for generalized image deconvolution, GAN-D. Most of the previous researches concentrate to specific sub-topic of image deconvolution or generative image deconvolution models with a strong assumption. However, our network restores visual data from distorted images applied multiple dominant degradation problems such as noise, blur, saturation, compression without any prior information. As a generator, we leverage convolutional neural networks based ODCNN [12] which perform generalized image deconvolution with a decent performance, and we use VGGNet [11] to distinguish true/fake of an input image as a discriminator. We devise the loss function of the generator of GAN-D which combines mean square error (MSE) of network output and ground-truth images to traditional adversarial loss of GAN. This loss function and the presence of discriminator reinforces the generator to produce more high-quality images than the original model structured with a single convolutional neural network. During experiments with four datasets, we find that our network has higher PSNR/SSIM values and qualitative results than ODCNN.",
+      "authors": [
+        "Ha Yeon Lee",
+        "Jin Myung Kwak",
+        "Byunghyun Ban",
+        "Seon Jin Na",
+        "Se Ra Lee",
+        "Heung-Kyu Lee"
+      ],
+      "publication_type": "published",
+      "doi": "10.1109/ictc.2017.8190958",
+      "links": [
+        {
+          "title": "GitHub 저장소",
+          "url": "https://github.com/needleworm/mlproject"
+        },
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/7.pdf"
+        },
+        {
+          "title": "DOI 원문 정보",
+          "url": "https://doi.org/10.1109/ICTC.2017.8190958"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p02",
+      "type": "papers",
+      "title": "An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation",
+      "url": "https://bhban.kr/papers/ode-fermentation-simulator-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p02-first-page-8422f8f3b993.webp",
+      "date_text": "2026",
+      "description": "Fermentation is a slow chemical-biological process in which substrates, enzymes, yeast biomass, oxygen, pH, temperature, and metabolic products co-evolve. This paper presents an ODE-network-based chemical complex system simulator for multi-environment fermentation. A shared state-space was instantiated for bread dough, rice wine, beer wort, and malt mash/wort, and a one-command Python workflow generated 108 simulated conditions with CSV outputs. The sweep produced interpretable optima and failure modes that aligned semi-quantitatively with literature-reported fermentation ranges, supporting the model as a compact benchmark for fermentation design and future control studies.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.31603.28968",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p02.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.31603.28968"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404682643_An_ODE-Network-Based_Chemical_Complex_System_Simulator_for_Multi-Environment_Fermentation"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p03",
+      "type": "papers",
+      "title": "Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins",
+      "url": "https://bhban.kr/papers/plant-factory-ai-review-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p03-first-page-bac33b970068.webp",
+      "date_text": "2026",
+      "description": "Plant factories have evolved from automated cultivation facilities into data-driven crop production systems. Over the last decade, artificial intelligence has been applied to non-destructive crop monitoring, sensor correction, nutrient-solution diagnosis, growth prediction, environmental control, digital twins, and product-level inspection. This review summarizes AI technologies for plant factories, focusing on machine vision, deep learning, nutrient-solution intelligence, reinforcement learning, and digital-twin interfaces. The main argument is that plant-factory AI should not be understood only as image-based phenotyping; practical systems require an integrated intelligence stack connecting visual perception, sensor calibration, nutrient modeling, control, remote operation, and industrial inspection. Remaining challenges include dataset scarcity, model generalization, sensor drift, explainability, energy-aware control, and closed-loop decision-making.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.20944/preprints202605.0438.v1",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p03.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.20944/preprints202605.0438.v1"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.preprints.org/manuscript/202605.0438"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p04",
+      "type": "papers",
+      "title": "Recent Applications of Artificial Intelligence in Logistics: An Evidence-Oriented Operational Review of Studies Published Since 2024",
+      "url": "https://bhban.kr/papers/logistics-ai-review-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p04-first-page-2bf00b423366.webp",
+      "date_text": "2026",
+      "description": "Artificial intelligence (AI) research in logistics has rapidly shifted since 2024 toward operationally specific systems for forecasting, routing, warehouse optimization, supply-chain visibility, port scheduling, and smart-port maintenance. This paper presents an evidence-oriented operational review of studies published since 2024 on AI applications in logistics. Instead of classifying the literature by model type alone, the review organizes studies by logistics decision function and evaluates the evidence profile of each application: whether real operational data were used, whether the study relied on simulation or benchmark instances, whether the data scale was reported, and whether field validation was conducted. The analysis shows that recent AI logistics studies increasingly address concrete operational tasks, including demand forecasting, late-delivery prediction, route deviation prediction, dynamic vehicle routing, warehouse order picking, robotic fulfillment scheduling, vessel arrival prediction, berth allocation, quay crane scheduling, container dwell-time prediction, and predictive maintenance at smart ports. However, the evidence base remains uneven. Several studies use real operational or survey data, while many warehouse and routing studies rely on simulation, generated instances, or benchmark settings. Field validation remains rare. The paper argues that the next stage of logistics AI research should move beyond model accuracy and report operational evidence: data provenance, data scale, logistics KPIs, field validation, integration requirements, and human oversight.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.20944/preprints202605.0444.v1",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p04.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.20944/preprints202605.0444.v1"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.preprints.org/manuscript/202605.0444"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p05",
+      "type": "papers",
+      "title": "MCP Design Strategy for Plant-Factory Operation AI Agents",
+      "url": "https://bhban.kr/papers/plant-factory-mcp-agents-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p05-first-page-e3803db7a1e7.webp",
+      "date_text": "2026",
+      "description": "Plant factories are increasingly equipped with sensors, cameras, automatic controllers, digital twins, and artificial intelligence models. However, integrating these components into a practical operation AI agent requires a safe interface between AI reasoning and facility-level control. This paper proposes an MCP design strategy for plant-factory operation AI agents. The focus is not on implementing a new autonomous agent or replacing existing control systems, but on designing the Model Context Protocol layer through which an agent can read plant-factory context, call diagnostic and simulation tools, follow standard operating prompts, and update supervisory operation parameters. In the proposed strategy, MCP resources represent sensor data, crop images, nutrient states, recipes, actuator states, logs, and digital-twin states; MCP tools represent diagnosis, prediction, simulation, and bounded parameter-update functions; and MCP prompts represent user-selectable standard operating procedure templates. The key argument is that MCP should not be used as a deterministic real-time controller for plant factories. Instead, it should serve as a supervisory parameter interface that modifies setpoints, recipes, schedules, thresholds, and policy parameters used by existing 24-hour automatic control systems. This paper presents resource URI schemes, tool risk classification, parameter-update tool schemas, prompt-resource-tool binding, safety tables, and closed-loop operation workflows for MCP-mediated plant-factory operation.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.29671.61608",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p05.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.29671.61608"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404500785_MCP_Design_Strategy_for_Plant-Factory_Operation_AI_Agents"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p06",
+      "type": "papers",
+      "title": "MCP Design Strategies for AI Agents in the Chemical Engineering Industry",
+      "url": "https://bhban.kr/papers/chemical-engineering-mcp-agents-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p06-first-page-9dd55d2f8c19.webp",
+      "date_text": "2026",
+      "description": "Large language model (LLM) agents are increasingly being applied to chemistry and chemical engineering tasks, including synthesis planning, autonomous experimentation, process simulation, process design, optimization, and carbon accounting. Existing studies demonstrate that agents become powerful when connected to external tools, simulators, databases, and laboratory or process interfaces. However, many of these studies focus on what agents can do once appropriate tools are available, while providing less guidance on how chemical engineering experts should design, implement, and validate those tools for industrial environments. This paper proposes design strategies for Model Context Protocol (MCP)-based AI agents in the chemical engineering industry, including a taxonomy of industrial MCP servers, including Process Data MCP, SOP and Work Instruction MCP, Safety and Hazard MCP, Process Simulation MCP, Maintenance MCP, Quality and Laboratory Data MCP, Environmental and Carbon Accounting MCP, and Operator Knowledge Capture MCP. For each MCP type, the paper identifies required data, protocols, worker collaboration methods, and evaluation criteria. The paper concludes that future chemical engineering agents should be developed through field-validated MCP ecosystems rather than through agent frameworks alone.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.14152.69125",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p06.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.14152.69125"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404500792_MCP_Design_Strategies_for_AI_Agents_in_the_Chemical_Engineering_Industry"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p07",
+      "type": "papers",
+      "title": "Agricultural AI Agents Can Learn from Chemical Complex System Models",
+      "url": "https://bhban.kr/papers/agricultural-ai-complex-systems-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p07-first-page-1197a8d4ca91.webp",
+      "date_text": "2026",
+      "description": "Smart farms and plant factories increasingly use sensors, automatic controllers, digital twins, and artificial intelligence models. However, nutrient management remains difficult because nutrient solutions are nonlinear chemical systems coupled with plant uptake dynamics. This paper proposes a simulation-first strategy for smart-farm nutrient management agents. The proposed strategy is grounded in previous studies on ion-selective electrode correction, ODE network modeling of nutrient solutions, plant-root ion transport, nutrient-plant interaction simulation, automated nutrient-solution management systems, and plant-factory digital twins. The paper further proposes a three-layer digital-twin interpretation consisting of facility-level, crop-level, and nutrient-control digital twins. The nutrient-control digital twin is positioned as a chemical-physiological playground inside a broader plant-factory digital twin. The proposed approach does not require sub-second real-time agent control because nutrient uptake and nutrient-related physiological responses are evaluated over multi-minute, hourly, daily, or crop-stage timescales. Therefore, nutrient management agents should be introduced as supervisory simulators and target-profile optimizers rather than direct dosing robots.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.10797.24808",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p07.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.10797.24808"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404500889_Agricultural_AI_Agents_Can_Learn_from_Chemical_Complex_System_Models"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p08",
+      "type": "papers",
+      "title": "TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing",
+      "url": "https://bhban.kr/papers/technews-agentic-publishing-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p08-first-page-80511ece05f6.webp",
+      "date_text": "2026",
+      "description": "This technical report presents TechNews, a registered automated science news portal that transforms newly released scientific papers into publishable science news articles through an agentic production workflow. (https://technews.ai.kr) Rather than treating automated journalism as a single text-generation task, TechNews decomposes human content-production work into persistent stages: source collection, freshness filtering, article drafting, translation, formatting, thumbnail generation, publication upload, backend monitoring, and operational maintenance. The system is organized around two agentic components. The first is a reporter agent, Persica, which performs source collection, article generation, translation, formatting, thumbnail handling, upload preparation, and operational reporting. The second is a backend operations agent that maintains service awareness across the publishing backend, including API behavior, database state, media storage, deployment assumptions, diagnostic routines, and operational failure modes. Together, these agents form an agent-operated publishing infrastructure rather than a one-shot article generator. TechNews operates as a registered internet newspaper in the Republic of Korea under registration number 경북아 00881.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.35963.07201",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p08.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.35963.07201"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404500998_TechNews_A_Technical_Report_on_Agentic_Workflow_Automation_for_Science_News_Publishing"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p09",
+      "type": "papers",
+      "title": "Responding to Suspected LLM-Written Hallucinated Peer Reviews A Claim-Level Audit Protocol",
+      "url": "https://bhban.kr/papers/llm-peer-review-audit-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p09-first-page-eb484c6605a5.webp",
+      "date_text": "2026",
+      "description": "Authors are often advised to respond to peer-review comments politely and point by point. However, this advice is insufficient when a formal review appears to be LLM-written or hallucinated: fluent, plausible, professionally formatted, but contradicted by the manuscript. This paper proposes a claim-level audit protocol for responding to suspected LLM-written hallucinated peer reviews. The protocol decomposes reviewer comments into atomic claims, classifies each claim as supported, partially supported, contradicted, generic, scope-mismatched, or not assessable, and maps each claim to manuscript evidence before selecting a response strategy. The protocol is illustrated using an anonymized case from an actual submission to a Korea Citation Index (KCI) candidate journal, in which one review contained multiple false missing-content claims. The goal is not to encourage accusations of AI use, but to help authors replace speculation with auditable evidence for revision, rebuttal, and editorial escalation.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.32483.11040",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p09.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.32483.11040"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404418703_Responding_to_Suspected_LLM-Written_Hallucinated_Peer_Reviews_A_Claim-Level_Audit_Protocol"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p10",
+      "type": "papers",
+      "title": "When Post-Publication Modification Is Not Enough - A Case Study of Multi-Layer Scholarly Overlap and Delayed Retraction",
+      "url": "https://bhban.kr/papers/scholarly-overlap-delayed-retraction-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p10-first-page-00a727859b66.webp",
+      "date_text": "2026",
+      "description": "Post-publication integrity concerns are often treated as problems of textual similarity, missing citation, or minor correctable error. However, some cases involve deeper forms of scholarly overlap that cannot be remedied through limited post-publication modification. This paper presents a case study of a post-publication complaint involving a 2022 preprint and a subsequent 2023 journal article that was later retracted. The official retraction notice states that an editorial investigation confirmed a high level of overlap between the subsequent article and the prior publication, including similarities in methodology, figures, layout, paper structure, and overall study topic, without appropriate acknowledgement and citation. The notice also states that concerns regarding the origins of the underlying data could not be satisfactorily resolved, leading the Editorial Board to lose confidence in the reliability and originality of the article. Using this case, the paper proposes a multi-layer overlap taxonomy and an editorial remedy framework. The central argument is that post-publication modification may be insufficient when the integrity concern extends beyond wording to methodology, visual materials, manuscript structure, attribution, and data provenance. In such cases, correction or citation addition cannot substitute for a full editorial investigation and, where appropriate, retraction.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.33321.97125",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p10.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.33321.97125"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404419191_When_Post-Publication_Modification_Is_Not_Enough_-_A_Case_Study_of_Multi-Layer_Scholarly_Overlap_and_Delayed_Retraction"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p11",
+      "type": "papers",
+      "title": "Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review",
+      "url": "https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p11-first-page-0feac38b4311.webp",
+      "date_text": "2026",
+      "description": "Maybe not. Large language models (LLMs) can produce fluent and plausible peer-review reports, but fluency is not scholarly judgment. This paper presents a case study of three formal peer-review reports received during an actual submission to a Korea Citation Index (KCI) candidate journal. One review claimed that key methodological and experimental details were missing, although the manuscript explicitly contained information about validation data, hardware, software frameworks, model configuration, parameter count, algorithmic procedure, and limitations. After the author reported these grounding failures to the editor, the problematic review was not relied upon in the final decision, and the manuscript was subsequently accepted and published. The case is compared with two more grounded human reviews and an exploratory source-grounded LLM-generated review. The source-grounded LLM review was more aligned with the manuscript, but still produced minor factual errors and overstatements. The case suggests that grounding improves LLM-assisted review, but does not eliminate hallucination or accountability gaps.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.34160.83209",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p11.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.34160.83209"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404420655_Can_LLMs_Review_Scientific_Papers"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p12",
+      "type": "papers",
+      "title": "A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs",
+      "url": "https://bhban.kr/papers/ai-music-composition-systematic-review-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p12-first-page-9fe68307097b.webp",
+      "date_text": "2026",
+      "description": "AI-based music composition has evolved rapidly, with research paradigms shifting from modeling local patterns to capturing global musical coherence. This paper examines how compositional AI has progressed from modeling local patterns to forming global musical ideas. Early machine learning models, based on state transition probabilities, were able to capture only local continuity between notes and chords, and thus failed to produce meaningful phrasing or large-scale musical structure. With the introduction of recurrent architectures, models began to incorporate temporal context, and transformer-based approaches further enabled the generation of musically coherent passages over longer spans. Nevertheless, these models still exhibit limitations in maintaining overall structural completeness and long-term musical direction. More recent approaches move beyond sequential prediction toward the simultaneous generation of musical structure and sonic characteristics. This shift reflects a transition from the accumulation of local decisions to the formation of a more holistic musical representation.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.14616.35848",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p12.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.14616.35848"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404370528_A_Systematic_Review_of_AI-Based_Music_Composition_Limitations_and_Breakthroughs"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-2026-p13",
+      "type": "papers",
+      "title": "Era of RAG-as-a-Service for Pretrained AI Applications",
+      "url": "https://bhban.kr/papers/rag-as-a-service-2026/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p13-first-page-3a7c33120e5c.webp",
+      "date_text": "2026",
+      "description": "Large language models are now used in many knowledge-intensive applications, but their outputs still need to be grounded in reliable, recent, and domain-specific information. Although many datasets and fine-tuning resources have been introduced for LLM development, many practical applications do not need to modify model weights; they need a convenient way to connect pretrained models to trusted external knowledge. Retrieval-Augmented Generation (RAG) has become a common approach for this purpose, but production RAG requires document ingestion, chunking, embedding, indexing, retrieval, reranking, access control, citation handling, and continuous evaluation. This short paper discusses RAG-as-a-Service (RAGaaS) as an emerging service model that provides retrieval, grounding, curation, and citation as a managed knowledge delivery layer. Unlike vector databases or enterprise search alone, RAGaaS is defined here as a reusable service interface that connects pretrained models to curated and citation-ready knowledge. We distinguish RAGaaS from adjacent concepts, review representative services and downstream implementations, classify likely demand areas, and propose practical criteria for evaluating RAGaaS platforms.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.13140/RG.2.2.25757.47847",
+      "links": [
+        {
+          "title": "PDF",
+          "url": "https://bhban.kr/src/paperPdf/2026-p13.pdf"
+        },
+        {
+          "title": "DOI",
+          "url": "https://doi.org/10.13140/RG.2.2.25757.47847"
+        },
+        {
+          "title": "Source",
+          "url": "https://www.researchgate.net/publication/404699960_Era_of_RAG-as-a-Service_for_Pretrained_AI_Applications"
+        }
+      ]
+    },
+    {
+      "id": "papers:paper-10",
+      "type": "papers",
+      "title": "Mixed Reality Interface for Digital Twin of Plant Factory",
+      "url": "https://bhban.kr/papers/plant-factory-mixed-reality-2022/",
+      "image": "https://bhban.kr/src/images/papers/10.webp",
+      "date_text": "2022",
+      "description": "An easier and intuitive interface architecture is necessary for digital twin of plant factory. I suggest an immersive and interactive mixed reality interface for digital twin models of smart farming, for remote work rather than simulation of components. The environment is constructed with UI display and a streaming background scene, which is a real time scene taken from camera device located in the plant factory, processed with deformable neural radiance fields. User can monitor and control the remote plant factory facilities with HMD or 2D display based mixed reality environment. This paper also introduces detailed concept and describes the system architecture to implement suggested mixed reality interface.",
+      "authors": [
+        "Byunghyun Ban"
+      ],
+      "publication_type": "preprint",
+      "doi": "10.48550/arXiv.2211.00597",
+      "links": [
+        {
+          "title": "PDF 다운로드",
+          "url": "https://bhban.kr/src/paperPdf/10.pdf"
+        },
+        {
+          "title": "arXiv 원문 정보",
+          "url": "https://arxiv.org/abs/2211.00597"
+        }
+      ]
+    }
+  ]
+}

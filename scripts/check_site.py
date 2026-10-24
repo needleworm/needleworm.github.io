@@ -338,6 +338,29 @@ def check_lecture_pages(config, original_source, require):
     return report
 
 
+def check_feeds(expected_counts, require):
+    ids = []
+    for kind, count in expected_counts.items():
+        target = ROOT/'api'/f'{kind}.json'
+        require(target.is_file(), f'Missing public catalog: {kind}')
+        if not target.is_file():
+            continue
+        catalog = json.loads(target.read_text(encoding='utf8'))
+        require(catalog.get('count')==len(catalog.get('items', []))==count, f'{kind}: public catalog count mismatch')
+        for item in catalog['items']:
+            require(bool(item.get('id')) and bool(item.get('title')), f'{kind}: feed item missing identity/title')
+            require(item.get('type')==kind and urlsplit(item.get('url', '')).scheme in {'https','http'}, f'{kind}: invalid public item destination/type')
+            ids.append(item['id'])
+    require(len(ids)==len(set(ids)), 'Public feed identities are not unique')
+    feed = json.loads((ROOT/'feed.json').read_text(encoding='utf8'))
+    require(feed.get('version')=='https://jsonfeed.org/version/1.1', 'JSON Feed version mismatch')
+    require(Counter(item['id'] for item in feed['items'])==Counter(ids), 'JSON Feed is missing or duplicating public records')
+    rss = ET.parse(ROOT/'feed.xml').getroot()
+    require(rss.tag=='rss' and rss.get('version')=='2.0', 'RSS version mismatch')
+    require(Counter(item.findtext('guid') for item in rss.findall('./channel/item'))==Counter(ids), 'RSS is missing or duplicating public records')
+    return {'catalogs': expected_counts, 'rss_items': len(ids), 'json_feed_items': len(feed['items'])}
+
+
 def main():
     config = json.loads((ROOT/'content/site.json').read_text(encoding='utf8'))
     runtime = (ROOT/'script.js').read_text(encoding='utf8')
@@ -446,7 +469,9 @@ def main():
     paper_report = check_paper_pages(config, sources['papers'], require)
     lecture_report = check_lecture_pages(config, original_lectures, require)
     sitemap_report = check_sitemap(config, require)
-    print(json.dumps({'pages':report,'paper_pages':paper_report,'lecture_pages':lecture_report,'redirects':config.get('redirects', []),'sitemap':sitemap_report,'failures':failures},ensure_ascii=False,indent=2))
+    feeds_report = check_feeds({'books':len(Blocks(sources['books']).cards), 'news':len(Blocks(sources['news']).cards),
+                                'lectures':len(lecture_records), 'papers':len(Blocks(sources['papers']).cards)}, require)
+    print(json.dumps({'pages':report,'paper_pages':paper_report,'lecture_pages':lecture_report,'redirects':config.get('redirects', []),'sitemap':sitemap_report,'feeds':feeds_report,'failures':failures},ensure_ascii=False,indent=2))
     return bool(failures)
 
 

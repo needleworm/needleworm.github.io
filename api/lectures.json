@@ -1,0 +1,3640 @@
+{
+  "version": 1,
+  "title": "강의",
+  "home_page_url": "https://bhban.kr/lectures/",
+  "count": 231,
+  "items": [
+    {
+      "id": "lectures:lecture-236",
+      "type": "lectures",
+      "title": "Agentic AI의 활용 – AI 팀원들을 고용해 일 시키기",
+      "url": "https://bhban.kr/lectures/lecture-236/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@029640fa0e12cdb37906a58dc5af7999613ddef1/src/images/lectures/236.webp",
+      "date_text": "2026.10.23.",
+      "description": "홍익대학교 학습전략강화워크숍에서 안티그래비티로 에이전틱 워크플로우를 체험하고, AI 팀원을 구성해 업무를 분담하는 방법과 토큰 엔지니어링을 다뤘습니다.",
+      "institution": "홍익대학교",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-234",
+      "type": "lectures",
+      "title": "AI 이후의 인간",
+      "url": "https://bhban.kr/lectures/lecture-234/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@746762abfe0481ceea9b7ba0171e1f3b4b154f85/src/images/lectures/234.webp",
+      "date_text": "2026.10.22.",
+      "description": "AI의 발전이 삶과 직업에 가져올 변화, 그리고 AI 시대에 사람이 준비해야 할 역량을 이야기했습니다.",
+      "institution": "강릉여자고등학교",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-233",
+      "type": "lectures",
+      "title": "AI 활용을 통한 정책문제 해결",
+      "url": "https://bhban.kr/lectures/lecture-233/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@746762abfe0481ceea9b7ba0171e1f3b4b154f85/src/images/lectures/233.webp",
+      "date_text": "2026.10.21.",
+      "description": "제5기 9급 신규자과정에서 업무 자료를 활용해 정책 문제를 해결하는 생성형 AI 실습을 진행했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-236-20261019",
+      "type": "lectures",
+      "title": "Agentic AI의 활용과 바이브코딩 실습",
+      "url": "https://bhban.kr/lectures/lecture-236-20261019/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@58bb2789ed1e676a56a5a40c5bf49f99ee24953d/src/images/lectures/logo-hongik-university-c763a5370d21.webp",
+      "date_text": "2026.10.19.",
+      "description": "홍익대학교 학습전략강화워크숍에서 Agentic AI의 개념과 주요 도구를 소개하고, 안티그래비티 설치부터 바이브코딩 실습까지 진행했습니다.",
+      "institution": "홍익대학교",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-190-957592625c54edcb",
+      "type": "lectures",
+      "title": "AI 이후의 인간 — 나보다 똑똑한 AI와 사는 법",
+      "url": "https://bhban.kr/lectures/lecture-190-957592625c54edcb/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/190.webp",
+      "date_text": "2026.10.15",
+      "description": "경북일고등학교에서 AI의 발전이 직업세계와 삶에 가져올 변화를 주제로 강연했습니다.",
+      "institution": "예천도서관 · 경북일고등학교",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20261012",
+      "type": "lectures",
+      "title": "생성형 AI 이해 및 실습",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20261012/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@746762abfe0481ceea9b7ba0171e1f3b4b154f85/src/images/lectures/233.webp",
+      "date_text": "2026.10.12.",
+      "description": "제5기 9급 신규자과정에서 생성형 AI의 기초와 프롬프트 작성 방법을 다루고 업무 활용을 실습했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-232",
+      "type": "lectures",
+      "title": "AI를 활용한 실무 문서 작성법",
+      "url": "https://bhban.kr/lectures/lecture-232/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@746762abfe0481ceea9b7ba0171e1f3b4b154f85/src/images/lectures/232.webp",
+      "date_text": "2026.09.28.",
+      "description": "통합건강증진사업 실무자를 대상으로 AI를 활용한 문서 작성 방법을 다뤘습니다.",
+      "institution": "울산 통합건강증진사업지원단",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260921",
+      "type": "lectures",
+      "title": "미래 행정, AI로 그리다",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260921/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/189.webp",
+      "date_text": "2026.09.21.",
+      "description": "제191기 5급 승진관리자과정에서 AI와 함께 업무용 프로그램을 만드는 바이브코딩을 다뤘습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-188-4afecb95ceb13342",
+      "type": "lectures",
+      "title": "Codex 기반 실무 업무 자동화",
+      "url": "https://bhban.kr/lectures/lecture-188-4afecb95ceb13342/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/188.webp",
+      "date_text": "2026.09.15",
+      "description": "Codex와 에이전틱 프레임워크를 활용한 실무 업무 자동화를 다뤘습니다.",
+      "institution": "한국행정연구원",
+      "category": "연구기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-237",
+      "type": "lectures",
+      "title": "AI Agent 팀원들과 협업하는 디렉터가 되어보세요!",
+      "url": "https://bhban.kr/lectures/lecture-237/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@d1e6ff843bca9c9113e216b2504fe8fe1c35d7c7/src/images/lectures/237.webp",
+      "date_text": "2026.08.24. 08.31. 09.07. 09.14.",
+      "description": "4주간의 Webex 온라인 학습모임에서 AI 에이전트와 협업해 업무용 웹 앱을 기획·제작하고, 배포한 결과를 공유하며 개선했습니다. 매주 실습과 피드 인증을 함께 진행했습니다.",
+      "institution": "LG인화원",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-187-13cd976a09d8defa",
+      "type": "lectures",
+      "title": "AI는 음악 연구를 수행할 수 있는가?",
+      "url": "https://bhban.kr/lectures/lecture-187-13cd976a09d8defa/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/187.webp",
+      "date_text": "2026.09.12",
+      "description": "AI 생성 논문의 동료평가 통과 사례를 중심으로 음악 연구에서의 AI 활용 가능성을 살펴봤습니다.",
+      "institution": "한국서양음악이론학회",
+      "category": "컨퍼런스",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-186",
+      "type": "lectures",
+      "title": "생성형 AI 혁명과 에이전틱 프레임워크",
+      "url": "https://bhban.kr/lectures/lecture-186/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/186.webp",
+      "date_text": "2026.08.27. 09.04. 09.10.",
+      "description": "생성형 AI의 활용 범위와 한계, 자료 검증, 에이전틱 프레임워크를 다뤘습니다.",
+      "institution": "종근당",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260821",
+      "type": "lectures",
+      "title": "분임 정책연구 AI 활용 발표",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260821/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/185.webp",
+      "date_text": "2026.08.21.",
+      "description": "제190기 5급 승진관리자과정에서 AI 활용 발표에 대한 평가와 총평을 진행했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-231",
+      "type": "lectures",
+      "title": "에이전트 시대의 도래와 활용",
+      "url": "https://bhban.kr/lectures/lecture-231/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@746762abfe0481ceea9b7ba0171e1f3b4b154f85/src/images/lectures/231.webp",
+      "date_text": "2026.08.13.",
+      "description": "MVP 강연에서 AI 에이전트의 활용 사례와 AI에 맡길 업무를 구분하는 방법을 다뤘습니다.",
+      "institution": "LG인화원",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-184-a757f63e9dc1299f",
+      "type": "lectures",
+      "title": "AI 시대의 데이터 시각화와 스토리텔링",
+      "url": "https://bhban.kr/lectures/lecture-184-a757f63e9dc1299f/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/184.webp",
+      "date_text": "2026.08.11",
+      "description": "생성형 AI와 에이전트를 활용해 데이터를 시각화하고 메시지를 전달하는 방법을 다뤘습니다.",
+      "institution": "볼보그룹코리아",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260727",
+      "type": "lectures",
+      "title": "미래 행정, AI로 그리다",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260727/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/185.webp",
+      "date_text": "2026.07.27.",
+      "description": "제190기 5급 승진관리자과정에서 AI와 함께 업무용 프로그램을 만드는 바이브코딩을 다뤘습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-230",
+      "type": "lectures",
+      "title": "AI를 활용한 업무 효율, 어디까지 와 있을까?",
+      "url": "https://bhban.kr/lectures/lecture-230/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@746762abfe0481ceea9b7ba0171e1f3b4b154f85/src/images/lectures/230.webp",
+      "date_text": "2026.07.22.",
+      "description": "AI와 에이전트가 업무 수행 방식에 가져오는 변화를 사례와 함께 살펴봤습니다.",
+      "institution": "LG인화원",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-183-31c12f57966ea0b4",
+      "type": "lectures",
+      "title": "AI를 활용한 기획보고서 작성법",
+      "url": "https://bhban.kr/lectures/lecture-183-31c12f57966ea0b4/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/183.webp",
+      "date_text": "2026.07.21",
+      "description": "온라인 강연에서 AI를 활용해 기획보고서를 작성하는 방법을 다뤘습니다.",
+      "institution": "한국농수산대학교",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-229",
+      "type": "lectures",
+      "title": "에이전트 시대의 도래와 활용",
+      "url": "https://bhban.kr/lectures/lecture-229/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@746762abfe0481ceea9b7ba0171e1f3b4b154f85/src/images/lectures/229.webp",
+      "date_text": "2026.07.16.",
+      "description": "온라인 강연에서 AI 에이전트의 등장과 업무 활용 사례를 소개했습니다.",
+      "institution": "LG인화원",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-182-106cbbf6f6789dd7",
+      "type": "lectures",
+      "title": "AI가 가져올 기회, 빼앗아 갈 미래",
+      "url": "https://bhban.kr/lectures/lecture-182-106cbbf6f6789dd7/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/182.webp",
+      "date_text": "2026.07.15",
+      "description": "용인중앙도서관 온라인 강연에서 AI가 만드는 새로운 기회와 직업·일상의 변화를 살펴봤습니다.",
+      "institution": "용인중앙도서관",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-181-7eb0abdd59c50827",
+      "type": "lectures",
+      "title": "연구자를 위한 NotebookLM 실무교육",
+      "url": "https://bhban.kr/lectures/lecture-181-7eb0abdd59c50827/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/181.webp",
+      "date_text": "2026.07.06. 07.13.",
+      "description": "선행논문 분석부터 리뷰 논문, 리비전 대응, 발표자료 작성까지 연구에 AI를 활용하는 방법을 실습했습니다.",
+      "institution": "대구기계부품연구원",
+      "category": "연구기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-228-85af1b2f8648c303",
+      "type": "lectures",
+      "title": "AI 시대의 진로 선택 가이드",
+      "url": "https://bhban.kr/lectures/lecture-228-85af1b2f8648c303/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/228.webp",
+      "date_text": "2026.07.03.",
+      "description": "AI가 바꾸는 직업세계와 진로 선택의 방향을 주제로 강연했습니다.",
+      "institution": "송린이음터도서관",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-227-78bde51e0f62311b",
+      "type": "lectures",
+      "title": "챗GPT와 인공지능의 미래",
+      "url": "https://bhban.kr/lectures/lecture-227-78bde51e0f62311b/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/227.webp",
+      "date_text": "2026.07.01.",
+      "description": "챗GPT를 중심으로 인공지능의 발전과 앞으로의 변화를 살펴봤습니다.",
+      "institution": "한국산업기술시험원",
+      "category": "연구기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260630",
+      "type": "lectures",
+      "title": "AI 활용을 통한 정책문제 해결Ⅰ·Ⅱ",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260630/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/226.webp",
+      "date_text": "2026.06.30.",
+      "description": "제14기 9급 신규자과정(지역인재수습직원)에서 업무 자료를 활용해 정책 문제를 해결하는 생성형 AI 실습을 진행했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-225-85b7d694d1b44714",
+      "type": "lectures",
+      "title": "AI를 활용한 공공기관 업무 및 연구 수행 자동화",
+      "url": "https://bhban.kr/lectures/lecture-225-85b7d694d1b44714/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/225.webp",
+      "date_text": "2026.06.25.",
+      "description": "생성형 AI를 공공기관 업무와 연구 수행에 적용하는 방법을 소개했습니다.",
+      "institution": "국립과학수사연구원",
+      "category": "연구기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260623",
+      "type": "lectures",
+      "title": "생성형 AI 이해 및 실습",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260623/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/226.webp",
+      "date_text": "2026.06.23.",
+      "description": "제14기 9급 신규자과정(지역인재수습직원)에서 생성형 AI의 기초와 프롬프트 작성 방법을 다루고 업무 활용을 실습했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260611",
+      "type": "lectures",
+      "title": "분임 정책연구 AI 활용 발표",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260611/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/224.webp",
+      "date_text": "2026.06.11.",
+      "description": "제189기 5급 승진관리자과정에서 분임 정책연구의 AI 활용 발표 강의를 진행했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-223-3d7b563fbb20844b",
+      "type": "lectures",
+      "title": "생성형 AI 활용 전략과 윤리 문제",
+      "url": "https://bhban.kr/lectures/lecture-223-3d7b563fbb20844b/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/223.webp",
+      "date_text": "2026.06.08.",
+      "description": "생성형 AI의 활용 전략과 업무에서 고려해야 할 윤리 문제를 다뤘습니다.",
+      "institution": "천안시청",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-222-e80f8b9e9ced549c",
+      "type": "lectures",
+      "title": "AI란 무엇인가? — 기술의 발전과 직업세계 변화",
+      "url": "https://bhban.kr/lectures/lecture-222-e80f8b9e9ced549c/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/222.webp",
+      "date_text": "2026.06.05.",
+      "description": "학생들과 AI의 발전, 로봇 기술, 일자리 변화에 관해 이야기를 나눴습니다.",
+      "institution": "경안고등학교",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-221",
+      "type": "lectures",
+      "title": "생성형 AI를 활용한 바이브코딩",
+      "url": "https://bhban.kr/lectures/lecture-221/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/221.webp",
+      "date_text": "2026.05.12. 05.19. 05.26. 06.02.",
+      "description": "네 차례 교육을 통해 업무용 웹 애플리케이션 제작과 외부 API 연결 방법을 다뤘습니다.",
+      "institution": "양구군청",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260522",
+      "type": "lectures",
+      "title": "생성형 AI를 활용한 바이브코딩",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260522/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/220.webp",
+      "date_text": "2026.05.22.",
+      "description": "제68기 7급 신규자과정에서 생성형 AI와 함께 웹 애플리케이션을 만드는 바이브코딩을 실습했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-219-28ddb57e351f4e9d",
+      "type": "lectures",
+      "title": "AI 활용 행정업무 효율화 및 행정서비스의 미래",
+      "url": "https://bhban.kr/lectures/lecture-219-28ddb57e351f4e9d/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/219.webp",
+      "date_text": "2026.05.21.",
+      "description": "AI로 행정업무의 효율을 높이는 방법과 행정서비스의 변화를 살펴봤습니다.",
+      "institution": "대구광역시",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260518",
+      "type": "lectures",
+      "title": "미래 행정, AI로 그리다",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260518/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/224.webp",
+      "date_text": "2026.05.18.",
+      "description": "제189기 5급 승진관리자과정에서 프롬프트 설계, 자료 기반 업무 처리, 웹 애플리케이션 제작을 다뤘습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-218-b48b54f5b3d4fb45",
+      "type": "lectures",
+      "title": "공직자를 위한 생성형 AI 활용 및 프롬프트 디자인",
+      "url": "https://bhban.kr/lectures/lecture-218-b48b54f5b3d4fb45/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/218.webp",
+      "date_text": "2026.05.15.",
+      "description": "생성형 AI를 행정업무에 활용하기 위한 프롬프트 설계 방법을 다뤘습니다.",
+      "institution": "서울특별시교육청교육연수원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-217-7cbde586f804e60e",
+      "type": "lectures",
+      "title": "CX 혁신 전문가를 위한 AI·에이전트 활용",
+      "url": "https://bhban.kr/lectures/lecture-217-7cbde586f804e60e/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/217.webp",
+      "date_text": "2026.05.14.",
+      "description": "프롬프트 설계, 시장조사, 보고자료와 기획서 작성까지 CX 실무에 필요한 AI 활용법을 다뤘습니다.",
+      "institution": "LG인화원",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-216-0be546a8c649c24b",
+      "type": "lectures",
+      "title": "AI와 일상생활, 그리고 업무에 관하여",
+      "url": "https://bhban.kr/lectures/lecture-216-0be546a8c649c24b/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/216.webp",
+      "date_text": "2026.05.11.",
+      "description": "AI 산업의 흐름과 일상·업무 활용, 프롬프트 설계 전략을 함께 살펴봤습니다.",
+      "institution": "삼성디스플레이",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260508",
+      "type": "lectures",
+      "title": "생성형 AI 이해 및 실습",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260508/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/220.webp",
+      "date_text": "2026.05.08.",
+      "description": "제68기 7급 신규자과정에서 생성형 AI의 기초와 프롬프트 작성 방법을 다루고 업무 활용을 실습했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-215-b6840bbf614c582b",
+      "type": "lectures",
+      "title": "생성형 AI 시대, 장애인 교육의 미래",
+      "url": "https://bhban.kr/lectures/lecture-215-b6840bbf614c582b/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/215.webp",
+      "date_text": "2026.04.28.",
+      "description": "생성형 AI의 발전과 장애인 교육의 미래를 주제로 강연했습니다.",
+      "institution": "국립특수교육원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-214-36cc3da4b65f382d",
+      "type": "lectures",
+      "title": "생성형 AI를 활용한 바이브코딩",
+      "url": "https://bhban.kr/lectures/lecture-214-36cc3da4b65f382d/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/214.webp",
+      "date_text": "2026.04.27.",
+      "description": "생성형 AI로 웹 애플리케이션을 만들고 업무에 적용하는 방법을 실습했습니다.",
+      "institution": "LG화학 대산공장",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-213-1aa0b3279756fea8",
+      "type": "lectures",
+      "title": "통합건강증진사업 수행을 위한 AI 활용 전략",
+      "url": "https://bhban.kr/lectures/lecture-213-1aa0b3279756fea8/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/213.webp",
+      "date_text": "2026.04.24.",
+      "description": "통합건강증진사업의 실무에 AI를 활용하는 전략을 소개했습니다.",
+      "institution": "울산 통합건강증진사업지원단",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-212-1ee5fdf660b695a9",
+      "type": "lectures",
+      "title": "AI 산업 트렌드와 AI 활용 사례",
+      "url": "https://bhban.kr/lectures/lecture-212-1ee5fdf660b695a9/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/212.webp",
+      "date_text": "2026.04.23.",
+      "description": "4년차 사원을 대상으로 AI 산업의 흐름과 업무 활용 사례를 소개했습니다.",
+      "institution": "LG인화원",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-211-2adc6d1fc7135a0b",
+      "type": "lectures",
+      "title": "팀 프로젝트 역량 강화를 위한 생성형 AI 활용",
+      "url": "https://bhban.kr/lectures/lecture-211-2adc6d1fc7135a0b/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/211.webp",
+      "date_text": "2026.04.21.",
+      "description": "생성형 AI로 아이디어를 기획하고 검토하는 팀 프로젝트 실습을 진행했습니다.",
+      "institution": "SPC",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260420",
+      "type": "lectures",
+      "title": "AI 활용을 통한 정책문제 해결Ⅰ·Ⅱ",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260420/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/210.webp",
+      "date_text": "2026.04.20.",
+      "description": "제67기 7급 신규자과정에서 업무 자료를 활용해 정책 문제를 해결하는 생성형 AI 실습을 진행했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260414",
+      "type": "lectures",
+      "title": "생성형 AI 이해 및 실습",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260414/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/210.webp",
+      "date_text": "2026.04.14.",
+      "description": "제67기 7급 신규자과정에서 생성형 AI의 기초와 프롬프트 작성 방법을 다루고 업무 활용을 실습했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-209-da0633add66fbd81",
+      "type": "lectures",
+      "title": "연구자를 위한 생성형 AI의 한계와 가능성 바로 알기",
+      "url": "https://bhban.kr/lectures/lecture-209-da0633add66fbd81/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/209.webp",
+      "date_text": "2026.04.11.",
+      "description": "연구자의 관점에서 생성형 AI의 활용 가능성과 주의해야 할 한계를 살펴봤습니다.",
+      "institution": "사이버한국외국어대학교",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-208",
+      "type": "lectures",
+      "title": "임원을 위한 AI의 이해부터 기업의 AI 전환",
+      "url": "https://bhban.kr/lectures/lecture-208/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/208.webp",
+      "date_text": "2026.03.27. 04.03. 04.10.",
+      "description": "회장님과 계열사 임원들을 대상으로 3회에 걸쳐 특강을 진행했고, 경쟁사의 AI도입 현황 분석과 계열사 주요 업무의 AX 가능성에 대한 자문을 제공했습니다.",
+      "institution": "팬택씨앤아이",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260330",
+      "type": "lectures",
+      "title": "미래 행정, AI로 그리다 (중급)",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260330/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/207.webp",
+      "date_text": "2026.03.30.",
+      "description": "제188기 5급 승진관리자과정에서 생성형 AI의 공직 실무 활용과 프롬프트 설계 방법을 다뤘습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260324",
+      "type": "lectures",
+      "title": "AI 활용을 통한 정책문제 해결",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260324/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/206.webp",
+      "date_text": "2026.03.24.",
+      "description": "제21기 7급 신규자과정(지역인재수습직원)에서 업무 자료를 활용해 정책 문제를 해결하는 생성형 AI 실습을 진행했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260317",
+      "type": "lectures",
+      "title": "생성형 AI 이해 및 실습",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260317/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/206.webp",
+      "date_text": "2026.03.17.",
+      "description": "제21기 7급 신규자과정(지역인재수습직원)에서 생성형 AI의 기초와 프롬프트 작성 방법을 다루고 업무 활용을 실습했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-205-d6f026cbfe02c116",
+      "type": "lectures",
+      "title": "업무 생산성을 높이는 AI 활용법",
+      "url": "https://bhban.kr/lectures/lecture-205-d6f026cbfe02c116/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/205.webp",
+      "date_text": "2026.03.04.",
+      "description": "생성형 AI를 업무에 활용해 생산성을 높이는 방법을 소개했습니다.",
+      "institution": "삼보모터스",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-204-056ff76920cba037",
+      "type": "lectures",
+      "title": "AI 이후의 인간, AI 이후의 교육",
+      "url": "https://bhban.kr/lectures/lecture-204-056ff76920cba037/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/204.webp",
+      "date_text": "2026.02.26.",
+      "description": "AI의 발전이 사람과 교육에 가져올 변화를 학교운영위원장들과 함께 살펴봤습니다.",
+      "institution": "강원특별자치도교육청 학교운영위원장 협의회",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-203-fd52066aeffd9e79",
+      "type": "lectures",
+      "title": "실무자를 위한 생성형 AI 활용과 업무 효율화",
+      "url": "https://bhban.kr/lectures/lecture-203-fd52066aeffd9e79/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/203.webp",
+      "date_text": "2026.02.12.",
+      "description": "2025 디지털새싹 성과공유회에서 생성형 AI를 활용한 실무 효율화 전략을 소개했습니다.",
+      "institution": "한국과학창의재단",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-202-6240396d6855d646",
+      "type": "lectures",
+      "title": "챗GPT와 함께하는 미래교육",
+      "url": "https://bhban.kr/lectures/lecture-202-6240396d6855d646/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/202.webp",
+      "date_text": "2026.02.09.",
+      "description": "마을교사 양성교육에서 챗GPT와 미래교육의 접점을 살펴봤습니다.",
+      "institution": "영주미래교육지구",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260204",
+      "type": "lectures",
+      "title": "공직자를 위한 생성형 AI의 업무 활용",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260204/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/201.webp",
+      "date_text": "2026.02.04.",
+      "description": "제187기 5급 승진관리자과정에서 공직자를 위한 생성형 AI의 업무 활용 교육을 진행했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20260203",
+      "type": "lectures",
+      "title": "미래 행정, AI로 그리다",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20260203/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/201.webp",
+      "date_text": "2026.02.03.",
+      "description": "제187기 5급 승진관리자과정에서 공직자를 위한 생성형 AI의 업무 활용 교육을 진행했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-200-a84e37c89ebe7cd4",
+      "type": "lectures",
+      "title": "디지털 전환시대, AI와 직업세계 변화",
+      "url": "https://bhban.kr/lectures/lecture-200-a84e37c89ebe7cd4/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/200.webp",
+      "date_text": "2026.01.20. 01.30.",
+      "description": "AI의 발전이 직업세계에 가져올 변화와 대응 방향을 살펴봤습니다.",
+      "institution": "동부건설",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-199-4dcdccda9b000954",
+      "type": "lectures",
+      "title": "프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-199-4dcdccda9b000954/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/199.webp",
+      "date_text": "2026.01.26.",
+      "description": "생성형 AI에 원하는 결과를 요청하기 위한 프롬프트 설계 방법을 다뤘습니다.",
+      "institution": "바이엘",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-198-b44733402cb9dc55",
+      "type": "lectures",
+      "title": "업무에서의 생성형 AI 활용",
+      "url": "https://bhban.kr/lectures/lecture-198-b44733402cb9dc55/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/198.webp",
+      "date_text": "2025.12.30.",
+      "description": "생성형 AI의 원리와 한계를 짚고, 업무용 프롬프트 작성과 AI 결과물 검토 기법을 소개했습니다. 데이터 분석과 모델 설계 지원 등 실무 적용 사례, AI 사용 시 보안상 주의점도 다뤘습니다.",
+      "institution": "신명이앤씨",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-197-381e68f409e342df",
+      "type": "lectures",
+      "title": "생성형 AI의 공직실무 활용",
+      "url": "https://bhban.kr/lectures/lecture-197-381e68f409e342df/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/197.webp",
+      "date_text": "2025.12.18.",
+      "description": "복지행정분야 핵심인력 워크숍에서 업무용 프롬프트 작성과 AI 답변 검토 기법을 다뤘습니다. NotebookLM을 활용한 자료 기반 질의응답과 유권해석 사례를 통해 공직 실무에 AI를 적용하는 방법을 실습했습니다.",
+      "institution": "한국보건복지인재원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-nhi-20251212",
+      "type": "lectures",
+      "title": "AI 실습 2(심화) · AI 실습 3(연습)",
+      "url": "https://bhban.kr/lectures/lecture-nhi-20251212/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/196.webp",
+      "date_text": "2025.12.12.",
+      "description": "제4기 AI 이해와 활용 과정에서 오전에는 AI 실습 2(심화), 오후에는 AI 실습 3(연습) 강의를 진행했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-195-30ebc79ef95c103a",
+      "type": "lectures",
+      "title": "챗GPT와 인공지능의 미래",
+      "url": "https://bhban.kr/lectures/lecture-195-30ebc79ef95c103a/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/195.webp",
+      "date_text": "2025.11.28.",
+      "description": "챗GPT의 작동 원리와 RAG를 살펴보고, AI 산업의 경쟁 구도와 인프라 변화를 소개했습니다. 기업의 AI 도입이 업무 환경에 가져올 변화도 함께 다뤘습니다.",
+      "institution": "한국포장재활용사업공제조합",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-194-214ae02343d2db91",
+      "type": "lectures",
+      "title": "공공기관 AI 활용 가이드",
+      "url": "https://bhban.kr/lectures/lecture-194-214ae02343d2db91/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/194.webp",
+      "date_text": "2025.11.20.",
+      "description": "공공기관의 AI 도입과 내부망 구축, RAG 활용 방식을 소개했습니다. 공공 AI 챗봇의 악용 사례와 대화 정보 유출 사례를 통해 도입 시 점검할 보안 문제도 살펴봤습니다.",
+      "institution": "대구디지털혁신진흥원",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-180-resized-816b7082a8ff-16ae1282077080a4",
+      "type": "lectures",
+      "title": "프롬프트 엔지니어링 - 기초, 심화",
+      "url": "https://bhban.kr/lectures/lecture-180-resized-816b7082a8ff-16ae1282077080a4/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/180-resized-816b7082a8ff.webp",
+      "date_text": "2025.11.03. 11.17.",
+      "description": "홍익대학교의 초청으로 학부생들을 대상으로 한 특강을 제공했습니다. 11월 3일, 11월 17일 2회에 걸쳐 기초, 심화강의 진행했습니다.",
+      "institution": "홍익대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "홍익대학교",
+          "url": "https://www.hongik.ac.kr/kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:course-34",
+      "type": "lectures",
+      "title": "기획재정부 청년인턴 AI 연수",
+      "url": "https://bhban.kr/lectures/course-34/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/courses/34-faces-blurred-1d8b33e09e3c.webp",
+      "date_text": "2025.11.05. 11.12. 11.13.",
+      "description": "기획재정부의 청년인턴 50여명을 대상으로 한 3일간의 AI 연수를 진행했습니다. 11월 5일 세종시에서 이론 연수가 진행되었고, 11월 12일~13일 양일간 태안의 공무원연수원에서 집합교육이 진행되었습니다. 시수가 많다 보니 기초부터 실습, 활용, 경시대회까지 올인원으로 진행하였고, 일부 수강생들과는 아직까지도 연락을 주고받고 있습니다.",
+      "institution": "",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-193-678a125cc276c118",
+      "type": "lectures",
+      "title": "생성형 AI 시대의 신산업과 기회들",
+      "url": "https://bhban.kr/lectures/lecture-193-678a125cc276c118/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/193.webp",
+      "date_text": "2025.11.10.",
+      "description": "생성형 AI로 달라지는 산업과 직업, 그 변화에서 찾을 수 있는 기회를 주제로 강연했습니다. 기업의 AI 구축 사례와 프롬프트 엔지니어링, RAG 활용 방식도 소개했습니다.",
+      "institution": "경안고등학교",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-192-cf73aa56fcc9aa33",
+      "type": "lectures",
+      "title": "AI 이후의 인간: 생성형 AI 시대의 미래",
+      "url": "https://bhban.kr/lectures/lecture-192-cf73aa56fcc9aa33/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/192.webp",
+      "date_text": "2025.11.08.",
+      "description": "생성형 AI가 일과 산업을 어떻게 바꾸는지 살펴보고, GPT의 원리와 프롬프트 작성법을 소개했습니다. 할루시네이션과 RAG, AI 악용 사례를 통해 활용 시 주의할 점도 짚었습니다.",
+      "institution": "병점도서관",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-191-d596257b7300d187",
+      "type": "lectures",
+      "title": "AI 시대의 진로와 미래",
+      "url": "https://bhban.kr/lectures/lecture-191-d596257b7300d187/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/191.webp",
+      "date_text": "2025.11.07.",
+      "description": "생성형 AI가 산업과 직업에 가져오는 변화를 살펴보고, AI 시대의 진로를 주제로 강연했습니다. GPT의 작동 원리와 프롬프트 엔지니어링, RAG의 기초도 함께 소개했습니다.",
+      "institution": "안동여자고등학교",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-logo-nhi-887d117b9eba-89839712d7a13870",
+      "type": "lectures",
+      "title": "생성형 AI의 이해와 활용 - AI실습 3",
+      "url": "https://bhban.kr/lectures/lecture-logo-nhi-887d117b9eba-89839712d7a13870/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-nhi-887d117b9eba.webp",
+      "date_text": "2025.10.31.",
+      "description": "국가공무원인재개발원에서 진행한 [제3기 AI이해와 활용 과정] 연수에 출강했습니다.",
+      "institution": "국가공무원인재개발원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "국가공무원인재개발원",
+          "url": "https://www.nhi.go.kr/index.jsp"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-178-faces-blurred-5c6cb3901f2c-bc529694e9503fca",
+      "type": "lectures",
+      "title": "자녀가 살아가야 할 AI시대의 일자리 대격변",
+      "url": "https://bhban.kr/lectures/lecture-178-faces-blurred-5c6cb3901f2c-bc529694e9503fca/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@58bb2789ed1e676a56a5a40c5bf49f99ee24953d/src/images/lectures/178-faces-blurred-5c6cb3901f2c.webp",
+      "date_text": "2025.10.28.",
+      "description": "영등포구청의 진로직업체험지원센터에서 구내 학부모분들을 대상으로 한 AI시대의 진로특강을 제공했습니다. 구청장님도 방문하시고, 학부모분들의 뜨거운 열정에 저도 자극을 많이 받는 자리였습니다.",
+      "institution": "영등포 진로직업체험지원센터",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "영등포 진로직업체험지원센터",
+          "url": "https://www.ydp.go.kr/www/selectBbsNttView.do?bbsNo=40&nttNo=406317&&pageUnit=10&pageIndex=60"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-jne-f4a4a1a0171b-36789401619422a1",
+      "type": "lectures",
+      "title": "생성형 AI 임팩트",
+      "url": "https://bhban.kr/lectures/lecture-logo-jne-f4a4a1a0171b-36789401619422a1/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-jne-f4a4a1a0171b.webp",
+      "date_text": "2025.10.27.",
+      "description": "전남교육청 특수교육지원센터에서 진행한 특수교육 담당자 연수에 참석해 특강을 제공했습니다. 장애학생e페스티벌에 참석하셨던 장학사님께서 불러주셨습니다.",
+      "institution": "전남교육청 특수교육지원센터",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "전남교육청 특수교육지원센터",
+          "url": "https://www.jge.go.kr/spedu/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-176-faces-blurred-b3192e8759b0-a14fa158d5a2f2ae",
+      "type": "lectures",
+      "title": "생성형 AI 혁명 - 기계 제조 산업에서의",
+      "url": "https://bhban.kr/lectures/lecture-176-faces-blurred-b3192e8759b0-a14fa158d5a2f2ae/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/176-faces-blurred-b3192e8759b0.webp",
+      "date_text": "2025.10.24.",
+      "description": "2025 서울기계리더스포럼 조합원사 임직원 혁신역량 교육에서 AI 특강을 제공했습니다.",
+      "institution": "서울시 기계공업 협동조합",
+      "category": "기업",
+      "links": [
+        {
+          "title": "서울시 기계공업 협동조합",
+          "url": "http://www.smic.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-csj-1a359314daeb-1c9b84cddff44188",
+      "type": "lectures",
+      "title": "생성형 AI의 활용 & 의료용 대마의 이해",
+      "url": "https://bhban.kr/lectures/lecture-logo-csj-1a359314daeb-1c9b84cddff44188/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-csj-1a359314daeb.webp",
+      "date_text": "2025.10.18.",
+      "description": "가톨릭상지대학교 바이오제약학과의 초청으로 생성형 AI 활용 특강과, 의료용 대마 관련 특강을 제공했습니다.",
+      "institution": "가톨릭상지대학교 바이오제약학과",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "가톨릭상지대학교 바이오제약학과",
+          "url": "https://biopharm.csj.ac.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-174-faces-blurred-f445fe2d8d3f-2128bf84d7ee0a2c",
+      "type": "lectures",
+      "title": "생성형 AI의 활용",
+      "url": "https://bhban.kr/lectures/lecture-174-faces-blurred-f445fe2d8d3f-2128bf84d7ee0a2c/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/174-faces-blurred-f445fe2d8d3f.webp",
+      "date_text": "2025.10.14.",
+      "description": "한국농수산대학교 전교생 대상 교양특강 강의에 출강했습니다.",
+      "institution": "한국농수산대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "한국농수산대학교",
+          "url": "https://eais.af.ac.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-173-2755d5dceeabbcfe",
+      "type": "lectures",
+      "title": "공직자를 위한 생성형AI 인사이트",
+      "url": "https://bhban.kr/lectures/lecture-173-2755d5dceeabbcfe/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/lectures/173.webp",
+      "date_text": "2025.09.25.",
+      "description": "교원연수 다녀왔습니다.",
+      "institution": "경북교육청연수원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "경북교육청연수원",
+          "url": "https://www.gbeti.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-169-cda95daf81969afc",
+      "type": "lectures",
+      "title": "생성형 AI의 활용",
+      "url": "https://bhban.kr/lectures/lecture-169-cda95daf81969afc/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/lectures/169.webp",
+      "date_text": "2025.09.10. 09.24.",
+      "description": "보건복지인재원에서 실시하는 [보건의료 디지털 실무역량 강화과정] 교육에 다녀왔습니다. 9월 10일, 9월 24일 2일간 진행된 교육이고 1일 8시간 진행되었습니다.",
+      "institution": "보건복지인재원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "보건복지인재원",
+          "url": "https://edu.kohi.or.kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-172-faces-blurred-aa500cae8ba0-e4dbc1f93be98043",
+      "type": "lectures",
+      "title": "공공기관 AI 동향과 실무활용, 보안 무력화 사례",
+      "url": "https://bhban.kr/lectures/lecture-172-faces-blurred-aa500cae8ba0-e4dbc1f93be98043/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/172-faces-blurred-aa500cae8ba0.webp",
+      "date_text": "2025.09.18.",
+      "description": "한국정보보호학회에서 주관하는 [2025 제6회 호남사이버보안콘퍼런스]에서 특강을 제공했습니다.",
+      "institution": "한국정보보호학회",
+      "category": "컨퍼런스",
+      "links": [
+        {
+          "title": "한국정보보호학회",
+          "url": "https://www.kiisc.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-171-resized-205ddd9bf6d3-09286f6185816567",
+      "type": "lectures",
+      "title": "도서관, 평생학습관 재직자 업무역량을 위한 생성형 AI의 활용",
+      "url": "https://bhban.kr/lectures/lecture-171-resized-205ddd9bf6d3-09286f6185816567/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/171-resized-205ddd9bf6d3.webp",
+      "date_text": "2025.09.15.",
+      "description": "[2025년도 서울시교육청 도서관 및 평생학습관 AI, 디지털기반 역량강화 연수]를 진행했습니다. 오전, 오후 각각 100여 명 참석하셨습니다.",
+      "institution": "서울특별시교육청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "서울특별시교육청",
+          "url": "https://www.sen.go.kr/sen/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-ediya-b0c77136e74b-38177e0fc503a737",
+      "type": "lectures",
+      "title": "생성형 AI의 직무 활용 전략",
+      "url": "https://bhban.kr/lectures/lecture-logo-ediya-b0c77136e74b-38177e0fc503a737/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-ediya-b0c77136e74b.webp",
+      "date_text": "2025.09.12",
+      "description": "과장급 승진자 대상 연수를 진행했습니다. 4시간 분량의 실습 위주 강의였습니다.",
+      "institution": "이디야",
+      "category": "기업",
+      "links": [
+        {
+          "title": "이디야",
+          "url": "https://www.ediya.com/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-168-cbc9f7daef59e5a8",
+      "type": "lectures",
+      "title": "생성형 AI 임팩트",
+      "url": "https://bhban.kr/lectures/lecture-168-cbc9f7daef59e5a8/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/168.webp",
+      "date_text": "2025.09.09.",
+      "description": "국립특수교육원, 한국콘텐츠진흥원, 넷마블 문화재단이 공동으로 개최한 [전국 장애학생 e페스티벌]에서 관리자를 대상으로 한 특강을 제공했습니다. 전국의 특수교육 관련 장학사, 교장선생님들이 모인 자리였습니다.",
+      "institution": "전국 장애학생 e페스티벌",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "전국 장애학생 e페스티벌",
+          "url": "https://www.nise.go.kr/boardCnts/view.do?boardID=14&boardSeq=735671&lev=0&searchType=null&statusYN=W&page=1&s=nise&m=0303&opType=N"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-kcc-historical-99e26fc5913f-262bcf72679402c6",
+      "type": "lectures",
+      "title": "기술자문",
+      "url": "https://bhban.kr/lectures/lecture-logo-kcc-historical-99e26fc5913f-262bcf72679402c6/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@9fcc0cb789f8ea779330f46b5cd0c4e06f17819b/src/images/lectures/logo-kcc-historical-99e26fc5913f.webp",
+      "date_text": "2025.09.08.",
+      "description": "방송통신위원회의 생성형 AI 관련 회의에 참석하여 기술자문을 제공했습니다.",
+      "institution": "방송통신위원회",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "방송통신위원회",
+          "url": "https://www.kmcc.go.kr/user.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-166-resized-823774981420-a208eb27b572deed",
+      "type": "lectures",
+      "title": "질문의 기술과 챗봇",
+      "url": "https://bhban.kr/lectures/lecture-166-resized-823774981420-a208eb27b572deed/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/166-resized-823774981420.webp",
+      "date_text": "2025.08.29.",
+      "description": "남양주시청의 [슈퍼 성장을 위한 일잘러:리워크 Work Smart 교육] - [2025년 일잘러 리 스킬(re-skill) 과정]에서 4시간 분량의 실습 연수를 제공했습니다.",
+      "institution": "남양주시청",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-165-faces-mosaic-edd62136384d-044b72aac267f9f8",
+      "type": "lectures",
+      "title": "생성형 AI 산업의 흐름과 실제 활용 사례",
+      "url": "https://bhban.kr/lectures/lecture-165-faces-mosaic-edd62136384d-044b72aac267f9f8/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@cb6f1e34b30ec759789391ed9e40ff3838357092/src/images/lectures/165-faces-mosaic-edd62136384d.webp",
+      "date_text": "2025.08.23.",
+      "description": "미래와소프트웨어 재단에서 주최하는 제16회 꿈찾기 캠프에서 특강을 제공했습니다. 어린이들이 아주 활기차서 즐거웠습니다.",
+      "institution": "미래와소프트웨어재단",
+      "category": "기업",
+      "links": [
+        {
+          "title": "미래와소프트웨어재단",
+          "url": "http://blog.kcc.co.kr/?p=24133"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-keti-bb0cd02c286c-d1eac5a4e54e79e0",
+      "type": "lectures",
+      "title": "Word2Vec 부터 GPT까지",
+      "url": "https://bhban.kr/lectures/lecture-logo-keti-bb0cd02c286c-d1eac5a4e54e79e0/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-keti-bb0cd02c286c.webp",
+      "date_text": "2025.08.14.",
+      "description": "KETI 워크숍에 참석하여 생성형 AI의 발전사에 대한 특강을 제공했습니다.",
+      "institution": "KETI",
+      "category": "연구기관",
+      "links": [
+        {
+          "title": "KETI",
+          "url": "https://www.keti.re.kr/main/main.php"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-haesung-c79671cedc0a-67fc7e713a27d7a9",
+      "type": "lectures",
+      "title": "임원을 위한 생성형 AI 특강",
+      "url": "https://bhban.kr/lectures/lecture-logo-haesung-c79671cedc0a-67fc7e713a27d7a9/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-haesung-c79671cedc0a.webp",
+      "date_text": "2025.08.12.",
+      "description": "임원을 대상으로 실습과 이론을 병행한 강의를 제공했습니다.",
+      "institution": "해성그룹",
+      "category": "기업",
+      "links": [
+        {
+          "title": "해성그룹",
+          "url": "https://www.haesunggroup.com/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-162-faces-blurred-a406584a20a7-c4673ff83a496794",
+      "type": "lectures",
+      "title": "공직자를 위한 생성형 AI 인사이트",
+      "url": "https://bhban.kr/lectures/lecture-162-faces-blurred-a406584a20a7-c4673ff83a496794/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/162-faces-blurred-a406584a20a7.webp",
+      "date_text": "2025.08.06.",
+      "description": "경주시청에서 매월 열리는 서라벌 아카데미 및 정례석회에 특강을 다녀왔습니다.",
+      "institution": "경주시청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "경주시청",
+          "url": "https://www.gyeongju.go.kr/open_content/ko/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-161-40c388c82ed4488d",
+      "type": "lectures",
+      "title": "AI 기초 지식에 대한 이해, 실생활에서 사용하는 인공지능",
+      "url": "https://bhban.kr/lectures/lecture-161-40c388c82ed4488d/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/161.webp",
+      "date_text": "2025.07.22.",
+      "description": "어르신들을 대상으로 특강을 진행했습니다. 그 넓은 홀이 가득 찬 걸 보고 깜짝 놀랐습니다.",
+      "institution": "신내노인종합복지관",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "신내노인종합복지관",
+          "url": "http://www.shinnaesenior.or.kr/#1"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-160-bc4b39775d461320",
+      "type": "lectures",
+      "title": "나보다 똑똑한 AI와 사는 법",
+      "url": "https://bhban.kr/lectures/lecture-160-bc4b39775d461320/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/160.webp",
+      "date_text": "2025.07.17.",
+      "description": "체육관에 의자를 쫙 깔아놓고 전교생 대상 특강 진행했습니다.",
+      "institution": "성주고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "성주고등학교",
+          "url": "https://school.gyo6.net/sjump/main.do?sysId=sjump"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-159-74d3195c36fe9bce",
+      "type": "lectures",
+      "title": "나보다 똑똑한 AI와 사는 법",
+      "url": "https://bhban.kr/lectures/lecture-159-74d3195c36fe9bce/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/159.webp",
+      "date_text": "2025.07.15.",
+      "description": "성주여고에 방문하여 특강을 진행했습니다. 제 얼굴이 박힌 머그컵과 직접 구운 쿠키도 선물로 받았습니다. 이런 환대는 처음이라 크게 감동했습니다.",
+      "institution": "성주여자고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "성주여자고등학교",
+          "url": "https://school.gyo6.net/sjghs/main.do?sysId=sjghs"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-gangwon-education-office-946d9ad0c86f-cd26251c8e1c70e5",
+      "type": "lectures",
+      "title": "생성형 AI 활용 방안",
+      "url": "https://bhban.kr/lectures/lecture-logo-gangwon-education-office-946d9ad0c86f-cd26251c8e1c70e5/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@58bb2789ed1e676a56a5a40c5bf49f99ee24953d/src/images/lectures/logo-gangwon-education-office-946d9ad0c86f.webp",
+      "date_text": "2025.07.04.",
+      "description": "강원특별자치도교육청에서 진행한 평생교육사 직무 연수에 출강하여 AI 활용방안을 강의했습니다.",
+      "institution": "강원특별자치도교육청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "강원특별자치도교육청",
+          "url": "https://v.daum.net/v/U36UheuSGM"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-157-resized-231efec701fd-2693b6699e18d283",
+      "type": "lectures",
+      "title": "생성형 AI 활용 방안",
+      "url": "https://bhban.kr/lectures/lecture-157-resized-231efec701fd-2693b6699e18d283/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/157-resized-231efec701fd.webp",
+      "date_text": "2025.06.23.",
+      "description": "계림고등학교를 방문해 교사 대상 연수를 진행했습니다.",
+      "institution": "계림고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "계림고등학교",
+          "url": "https://school.gyo6.net/gyerim/main.do?sysId=gyerim"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-gbeti-ee3d3ed641ba-edcfe4086065ab82",
+      "type": "lectures",
+      "title": "공직자를 위한 생성형 AI 업무 활용",
+      "url": "https://bhban.kr/lectures/lecture-logo-gbeti-ee3d3ed641ba-edcfe4086065ab82/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-gbeti-ee3d3ed641ba.webp",
+      "date_text": "2025.06.19.",
+      "description": "[미래를 준비하는 직급별 역량강화 3기] 연수에 출강해 AI교육을 진행했습니다.",
+      "institution": "경북교육청연수원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "경북교육청연수원",
+          "url": "https://www.gbeti.or.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-kohi-e45f84811eda-292f6d56058a7df0",
+      "type": "lectures",
+      "title": "공직자를 위한 생성형 AI 업무 활용",
+      "url": "https://bhban.kr/lectures/lecture-logo-kohi-e45f84811eda-292f6d56058a7df0/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-kohi-e45f84811eda.webp",
+      "date_text": "2025.06.17.",
+      "description": "제1기 금연사업관리과정의 \"AI를 활용한 보건사업 홍보전략\" 교육을 다녀왔습니다. 전국 보건소 재직자분들 집합교육입니다.",
+      "institution": "보건복지인재개발원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "보건복지인재개발원",
+          "url": "https://www.mohw.go.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-154-faces-blurred-da1a40050fb1-9d8ca70d288ca80c",
+      "type": "lectures",
+      "title": "공직자를 위한 생성형 AI 업무 활용",
+      "url": "https://bhban.kr/lectures/lecture-154-faces-blurred-da1a40050fb1-9d8ca70d288ca80c/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/154-faces-blurred-da1a40050fb1.webp",
+      "date_text": "2025.06.04.",
+      "description": "경북교육청에서 진행한 5급 이상 일반직공무원 대상 행정리더십 연수에서 특강을 제공했습니다.",
+      "institution": "경북교육청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "경북교육청",
+          "url": "https://www.dkilbo.com/news/articleView.html?idxno=499420"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-153-0d67ff8b36be393a",
+      "type": "lectures",
+      "title": "진짜 전문가에게 듣는 생성형 AI",
+      "url": "https://bhban.kr/lectures/lecture-153-0d67ff8b36be393a/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/153.webp",
+      "date_text": "2025.06.02.",
+      "description": "인하대학교 학부생들을 대상으로 특강을 진행했습니다.",
+      "institution": "인하대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "인하대학교",
+          "url": "https://www.inha.ac.kr/kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-152-7736197cd9a74947",
+      "type": "lectures",
+      "title": "나보다 똑똑한 AI와 사는 법",
+      "url": "https://bhban.kr/lectures/lecture-152-7736197cd9a74947/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/152.webp",
+      "date_text": "2025.05.29.",
+      "description": "IKP 입주기업 런치 클래스 특강을 진행했습니다.",
+      "institution": "KOTRA",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "KOTRA",
+          "url": "https://www.kotra.or.kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-ahnlab-945749d13d78-81f4a51743613440",
+      "type": "lectures",
+      "title": "기획자의 업무활용을 위한 프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-logo-ahnlab-945749d13d78-81f4a51743613440/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-ahnlab-945749d13d78.webp",
+      "date_text": "2025.05.28.",
+      "description": "안랩 기획자스쿨에 출강하여, 기획자 업무에 특화된 프롬프트엔지니어링 특강을 진행했습니다.",
+      "institution": "안랩",
+      "category": "기업",
+      "links": [
+        {
+          "title": "안랩",
+          "url": "https://www.ahnlab.com/ko"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-150",
+      "type": "lectures",
+      "title": "업무를 바꾸는 똑똑한 AI 활용법",
+      "url": "https://bhban.kr/lectures/lecture-150/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@9fcc0cb789f8ea779330f46b5cd0c4e06f17819b/src/images/lectures/logo-goe-289b3d74f56c.webp",
+      "date_text": "2025.05.20.",
+      "description": "[2025 교육공동체 미래역량 강화 과정] 연수 출강했습니다. 3주에 걸쳐 750명을 대상으로 교육 진행했습니다.",
+      "institution": "경기도교육청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "경기도교육청",
+          "url": "https://www.goe.go.kr/goe/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-lg-adead1a6f695-e7b4860881a5cdab",
+      "type": "lectures",
+      "title": "생성형 AI 업무 활용",
+      "url": "https://bhban.kr/lectures/lecture-logo-lg-adead1a6f695-e7b4860881a5cdab/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-lg-adead1a6f695.webp",
+      "date_text": "2025.05.16.",
+      "description": "LG인화원 CX혁신 전문가과정 연수를 다녀왔습니다. 각 계열사의 우수임직원이 참여하는 교육입니다.",
+      "institution": "LG",
+      "category": "기업",
+      "links": [
+        {
+          "title": "LG",
+          "url": "https://www.lg.co.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-148-fb1bb0ecf848f90e",
+      "type": "lectures",
+      "title": "생성형 AI 업무 활용",
+      "url": "https://bhban.kr/lectures/lecture-148-fb1bb0ecf848f90e/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/148.webp",
+      "date_text": "2025.05.14.",
+      "description": "팸텍과 TIS 재직자를 위해 생성형 AI를 업무에 활용하는 방법을 안내해드리고 왔습니다.",
+      "institution": "팸텍",
+      "category": "기업",
+      "links": [
+        {
+          "title": "팸텍",
+          "url": "https://pamtek.com/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-147-resized-816b7082a8ff-415e991897ee71e4",
+      "type": "lectures",
+      "title": "프롬프트 엔지니어링 실습",
+      "url": "https://bhban.kr/lectures/lecture-147-resized-816b7082a8ff-415e991897ee71e4/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/147-resized-816b7082a8ff.webp",
+      "date_text": "2025.05.09.",
+      "description": "홍익대학교에 재방문해, 이번에는 프롬프트 엔지니어링 실습 강의를 진행했습니다.",
+      "institution": "홍익대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "홍익대학교",
+          "url": "https://www.hongik.ac.kr/kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-146-faces-blurred-18e473a13307-baff0caf2e67a358",
+      "type": "lectures",
+      "title": "생성형 AI의 올바른 활용 방안과 AI시대의 교육",
+      "url": "https://bhban.kr/lectures/lecture-146-faces-blurred-18e473a13307-baff0caf2e67a358/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/146-faces-blurred-18e473a13307.webp",
+      "date_text": "2025.05.02.",
+      "description": "[2025년 미래교육 학부모 아카데미 1기 - 명사 초청 특강]의 세 번째 강사로 초청받아 지역 주민들과 AI에 대한 이야기를 나누었습니다.",
+      "institution": "청도도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "청도도서관",
+          "url": "https://www.gbelib.kr/cd/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-145-resized-7808cb5dcf8c-766b9117a61cf527",
+      "type": "lectures",
+      "title": "생성형 AI를 활용한 보건사업 실무",
+      "url": "https://bhban.kr/lectures/lecture-145-resized-7808cb5dcf8c-766b9117a61cf527/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/145-resized-7808cb5dcf8c.webp",
+      "date_text": "2025.04.29.",
+      "description": "보건복지인재원의 초청으로 [제1기 건강증진통합서비스관리과정] 특강강사로 출강했습니다. 실습이 포함된 프롬프트 엔지니어링 강의입니다.",
+      "institution": "한국보건복지인재원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "한국보건복지인재원",
+          "url": "https://edu.kohi.or.kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-144-faces-blurred-b39f8eb7c221-387fe1f946894446",
+      "type": "lectures",
+      "title": "생성형 AI: GPT로 시작된",
+      "url": "https://bhban.kr/lectures/lecture-144-faces-blurred-b39f8eb7c221-387fe1f946894446/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/144-faces-blurred-b39f8eb7c221.webp",
+      "date_text": "2025.04.25.",
+      "description": "홍익대학교의 초청으로 프롬프트 엔지니어링 이론 특강을 다녀왔습니다.",
+      "institution": "홍익대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "홍익대학교",
+          "url": "https://www.hongik.ac.kr/kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-143-resized-a368f623a3d7-88942f071965a6f7",
+      "type": "lectures",
+      "title": "생성형 AI의 직무 활용: 약간의 노력으로 초격차를 만들자",
+      "url": "https://bhban.kr/lectures/lecture-143-resized-a368f623a3d7-88942f071965a6f7/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/143-resized-a368f623a3d7.webp",
+      "date_text": "2025.04.23.",
+      "description": "한국공항공사의 초청으로 프롬프트 엔지니어링 특강을 다녀왔습니다.",
+      "institution": "한국공항공사",
+      "category": "기업",
+      "links": [
+        {
+          "title": "한국공항공사",
+          "url": "https://www.airport.co.kr/www/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-138-resized-85267972886c-37de591aea82ced8",
+      "type": "lectures",
+      "title": "프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-138-resized-85267972886c-37de591aea82ced8/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/138-resized-85267972886c.webp",
+      "date_text": "2025.04.17.",
+      "description": "한예종에서 한 번 더 특강을 진행했습니다.",
+      "institution": "한국예술종합학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "한국예술종합학교",
+          "url": "https://www.karts.ac.kr/index_karts.jsp"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-141-resized-24f4f042d295-ace8ae26edaf1140",
+      "type": "lectures",
+      "title": "공직자를 위한 생성형 AI의 직무활용",
+      "url": "https://bhban.kr/lectures/lecture-141-resized-24f4f042d295-ace8ae26edaf1140/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/141-resized-24f4f042d295.webp",
+      "date_text": "2025.04.14.",
+      "description": "2025 상반기 주니어보드 특강으로 생성형 AI 특강을 제공했습니다.",
+      "institution": "영월군청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "영월군청",
+          "url": "https://www.yw.go.kr/www/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-140-resized-9f5072e2b772-76b9975994278e74",
+      "type": "lectures",
+      "title": "챗GPT로 시작된 AI세상 따라잡기",
+      "url": "https://bhban.kr/lectures/lecture-140-resized-9f5072e2b772-76b9975994278e74/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/140-resized-9f5072e2b772.webp",
+      "date_text": "2025.04.12.",
+      "description": "내숲도서관의 초청으로 지역 주민들과 AI를 주제로 재미있는 이야기를 많이 나눌 수 있었습니다. 윤동주 기념도서관이라고 하셔서, AI에게 윤동주 스타일의 시를 쓰는 과정을 시연시켜 봤습니다.",
+      "institution": "내를건너서 숲으로 도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "내를건너서 숲으로 도서관",
+          "url": "https://www.nslib.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-139-00bd38f8306ee494",
+      "type": "lectures",
+      "title": "행정심판 재결서 작성을 위한 생성형 AI 활용법",
+      "url": "https://bhban.kr/lectures/lecture-139-00bd38f8306ee494/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/139.webp",
+      "date_text": "2025.04.10.",
+      "description": "보건복지부에서 진행했던 \"생성형 AI 올인원 패키지\"를 수강하신 국장님께서 직원들의 업무 효율 향상을 위한 강의를 요청해 주셨습니다. 재결서를 작성하는 데 필요한 다양한 프롬프트 기법들을 설계해 소개했고, 실무자들의 매우 뜨거운 성원을 받았습니다.",
+      "institution": "건강보험분쟁조정위원회",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-138-resized-85267972886c-7c2810d5415d4175",
+      "type": "lectures",
+      "title": "생성형 AI의 이해",
+      "url": "https://bhban.kr/lectures/lecture-138-resized-85267972886c-7c2810d5415d4175/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/138-resized-85267972886c.webp",
+      "date_text": "2025.04.10.",
+      "description": "한예종 영상원의 초청으로 생성형 AI의 기초에 대한 강의를 진행했습니다.",
+      "institution": "한국예술종합학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "한국예술종합학교",
+          "url": "https://www.karts.ac.kr/index_karts.jsp"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-137-resized-ab09adbb8da2-8555af5ed0ef9336",
+      "type": "lectures",
+      "title": "성공적인 비즈니스를 위한 생성형 AI의 활용 전략",
+      "url": "https://bhban.kr/lectures/lecture-137-resized-ab09adbb8da2-8555af5ed0ef9336/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/137-resized-ab09adbb8da2.webp",
+      "date_text": "2025.04.09.",
+      "description": "LG 이노텍과 협력회사들 사이의 친목을 도모하는 [2025 동반성장 상생DAY]에서 특강을 진행했습니다. Inno Family 회원사 대표이사님들 35분과 LG이노텍 임원분들을 대상으로 생성형 AI의 활용 전략을 안내했습니다. 반응이 무척 뜨거워, 이 날의 인연을 계기로 다른 협력도 진행했습니다.",
+      "institution": "LG이노텍",
+      "category": "기업",
+      "links": [
+        {
+          "title": "LG이노텍",
+          "url": "https://www.lginnotek.com/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-136-faces-blurred-d37c023b04e4-2209c387d4dd1afa",
+      "type": "lectures",
+      "title": "마음대로 살아 본 졸업생의 이야기",
+      "url": "https://bhban.kr/lectures/lecture-136-faces-blurred-d37c023b04e4-2209c387d4dd1afa/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/136-faces-blurred-d37c023b04e4.webp",
+      "date_text": "2025.04.03.",
+      "description": "카이스트 글로벌리더십센터에서 진행하는 \"영리더 목요특강\"에 초청을 받았습니다. 제가 학창시절 얼마나 주변 눈치 안 보고 재미있게 지냈는지 썰을 풀다 오는 즐거운 시간이었습니다. 오리연못에서 보트 탄 코스 특히 반응이 좋았습니다. 학생들이 인스타 팔로우도 많이 해 줘서 뿌듯했습니다.",
+      "institution": "KAIST",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "KAIST",
+          "url": "https://kaist.ac.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-135-7815248db0d072df",
+      "type": "lectures",
+      "title": "AI프롬프트 활용을 통한 업무 효율성 증대 방안",
+      "url": "https://bhban.kr/lectures/lecture-135-7815248db0d072df/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/135.webp",
+      "date_text": "2025.03.27.",
+      "description": "에너지리퍼블릭의 초청으로 생성형 AI 실습 교육을 진행했습니다.",
+      "institution": "에너지리퍼블릭",
+      "category": "기업",
+      "links": [
+        {
+          "title": "에너지리퍼블릭",
+          "url": "http://energyrepublic.net/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-134-faces-blurred-0d91e4c4b6a2-f9846f294161d8f2",
+      "type": "lectures",
+      "title": "GPT로 시작된 \"생성형 AI\"의 시대",
+      "url": "https://bhban.kr/lectures/lecture-134-faces-blurred-0d91e4c4b6a2-f9846f294161d8f2/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/134-faces-blurred-0d91e4c4b6a2.webp",
+      "date_text": "2025.03.19.",
+      "description": "한국농수산대학교에서 오랜만에 초대해 주셔서 전교생 대상 특강을 진행했습니다.",
+      "institution": "한국농수산대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "한국농수산대학교",
+          "url": "https://www.af.ac.kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-moel-chungju-f431eeb1e2cd-34ce49af798fecb0",
+      "type": "lectures",
+      "title": "생성형 AI의 업무 활용 전략",
+      "url": "https://bhban.kr/lectures/lecture-logo-moel-chungju-f431eeb1e2cd-34ce49af798fecb0/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-moel-chungju-f431eeb1e2cd.webp",
+      "date_text": "2025.03.18.",
+      "description": "고용노동부 충주지청의 초청으로 3시간 분량의 실습 교육을 제공했습니다.",
+      "institution": "고용노동부 충주지청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "고용노동부 충주지청",
+          "url": "https://www.moel.go.kr/local/chungju/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-132-resized-d90ece50596e-786b0362a98a8b7d",
+      "type": "lectures",
+      "title": "보건복지부 재직자 역량향상을 위한 생성형 AI 올인원 아카데미",
+      "url": "https://bhban.kr/lectures/lecture-132-resized-d90ece50596e-786b0362a98a8b7d/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/132-resized-d90ece50596e.webp",
+      "date_text": "2025.03.14.",
+      "description": "인사혁신처 챗GPT아카데미로 인연이 닿아 보건복지부에서 초청해 주셨습니다. 오전, 오후 통으로 진행되는 실습 교육을 제공했습니다. 사전설문, 사후설문평가를 제공하여 교육 이해도를 최대한 높이는 방향으로 많은 분들께서 수고해주셨습니다.",
+      "institution": "보건복지부",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "보건복지부",
+          "url": "https://www.mohw.go.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-131-resized-f1f3424deb6f-2a56746aa3a1bffe",
+      "type": "lectures",
+      "title": "성공적인 비즈니스를 위한 AI전략과 기업의 활용방안",
+      "url": "https://bhban.kr/lectures/lecture-131-resized-f1f3424deb6f-2a56746aa3a1bffe/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/131-resized-f1f3424deb6f.webp",
+      "date_text": "2025.03.13.",
+      "description": "2025년도 차석 및 지점장급 교육과정에 초청을 받아 생성형 AI 교육을 제공했습니다.",
+      "institution": "신협중앙회 광주전남지역본부",
+      "category": "기업",
+      "links": [
+        {
+          "title": "신협중앙회 광주전남지역본부",
+          "url": "https://www.cu.co.kr/cu/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-130-resized-b6535e6adf42-dc4475381a7a31b2",
+      "type": "lectures",
+      "title": "4급 승진자를 위한 챗GPT와 코파일럿",
+      "url": "https://bhban.kr/lectures/lecture-130-resized-b6535e6adf42-dc4475381a7a31b2/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/130-resized-b6535e6adf42.webp",
+      "date_text": "2025.03.07.",
+      "description": "올해도 가스안전공사 4급 승진자 대상 교육을 진행했습니다.",
+      "institution": "가스안전공사",
+      "category": "기업",
+      "links": [
+        {
+          "title": "가스안전공사",
+          "url": "https://www.kgs.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-129-resized-76a2c6544788-8cc1a878e2d234e0",
+      "type": "lectures",
+      "title": "질병관리청 재직자를 위한 생성형AI 활용 방안",
+      "url": "https://bhban.kr/lectures/lecture-129-resized-76a2c6544788-8cc1a878e2d234e0/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/129-resized-76a2c6544788.webp",
+      "date_text": "2025.02.27.",
+      "description": "인사혁신처 챗GPT 아카데미에서 인연이 닿아 질병관리청에 초청을 받았습니다. \"일 잘하는 공직 전문인재 양성을 위한 특강\"이 기획되었고, 실습이 포함된 특강을 제공했습니다.",
+      "institution": "질병관리청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "질병관리청",
+          "url": "https://www.kdca.go.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-128-resized-d7830b9fb7df-310b5ba7f4b39e61",
+      "type": "lectures",
+      "title": "생성형 AI를 활용한 보고서 작성",
+      "url": "https://bhban.kr/lectures/lecture-128-resized-d7830b9fb7df-310b5ba7f4b39e61/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/128-resized-d7830b9fb7df.webp",
+      "date_text": "2025.02.17.",
+      "description": "2025년도 기획조정분야 주요사업 설명회에 초청받아, 실습이 포함된 특강을 제공했습니다.",
+      "institution": "강원도청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "강원도청",
+          "url": "https://state.gwd.go.kr/portal"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-127-resized-342ae66c3cd1-11eef674f1584db7",
+      "type": "lectures",
+      "title": "AI를 통해 발견하는 GPT와 행복의 인문학",
+      "url": "https://bhban.kr/lectures/lecture-127-resized-342ae66c3cd1-11eef674f1584db7/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/127-resized-342ae66c3cd1.webp",
+      "date_text": "2025.02.15.",
+      "description": "영주시 지역 주민들과 함께 도서관에 모여 즐거운 시간을 나누었습니다. 대강당이 가득 찰 정도로 뜨거운 관심을 보내주셔서 감사했고, 제 얼굴을 건물 2층 높이 현수막에 뽑아놓으셔서 무척이나 부끄러웠습니다. 융숭한 대접 받았습니다 감사합니다.",
+      "institution": "영주선비도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "영주선비도서관",
+          "url": "https://www.gbelib.kr/yj/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-126-faces-blurred-bc04166128ef-3496e52742f088f3",
+      "type": "lectures",
+      "title": "마을교사를 위한 AI 리터러시",
+      "url": "https://bhban.kr/lectures/lecture-126-faces-blurred-bc04166128ef-3496e52742f088f3/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/126-faces-blurred-bc04166128ef.webp",
+      "date_text": "2025.02.13.",
+      "description": "2025학년도 영주미래교육지구 선비고을 마을교사 44인을 대상으로 한 연수를 진행했습니다.",
+      "institution": "영주교육지원청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "영주교육지원청",
+          "url": "https://www.gbe.kr/yj/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-125-resized-d9cb2f7075e6-373dfd573212e663",
+      "type": "lectures",
+      "title": "보건복지부 재직자를 위한 챗GPT 활용방안",
+      "url": "https://bhban.kr/lectures/lecture-125-resized-d9cb2f7075e6-373dfd573212e663/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/125-resized-d9cb2f7075e6.webp",
+      "date_text": "2024.12.19.",
+      "description": "인사혁신처 챗GPT 아카데미를 통해 연이 닿아 보건복지부에 다녀왔습니다. 재직자들을 대상으로 직무에 생성형 AI를 활용하는 방안을 교육했습니다.",
+      "institution": "보건복지부",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "보건복지부",
+          "url": "https://www.mohw.go.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-124-resized-0d26e2cd3279-b69cf77835ac584f",
+      "type": "lectures",
+      "title": "생성형 AI의 R&D 활용",
+      "url": "https://bhban.kr/lectures/lecture-124-resized-0d26e2cd3279-b69cf77835ac584f/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/124-resized-0d26e2cd3279.webp",
+      "date_text": "2024.12.06.",
+      "description": "펜타시큐리티의 개발자 컨퍼런스에 초청받아 키노트 스피치를 했습니다.",
+      "institution": "펜타시큐리티",
+      "category": "기업",
+      "links": [
+        {
+          "title": "펜타시큐리티",
+          "url": "https://www.pentasecurity.co.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-123-faces-blurred-8aa2f9ff6426-e90e26f9619e07e1",
+      "type": "lectures",
+      "title": "생성형 AI에서 디지털교과서까지",
+      "url": "https://bhban.kr/lectures/lecture-123-faces-blurred-8aa2f9ff6426-e90e26f9619e07e1/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/123-faces-blurred-8aa2f9ff6426.webp",
+      "date_text": "2024.11.30.",
+      "description": "디지털교과서 이해 및 AI리터러시 역량강화 연수의 특강강사로 초청받아 다녀왔습니다.",
+      "institution": "영주교육지원청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "영주교육지원청",
+          "url": "https://www.gbe.kr/yj/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-122-faces-blurred-68b80462635b-cc8ecbb0b9a2d354",
+      "type": "lectures",
+      "title": "챗GPT 활용법 - 1시간만에 뚝딱",
+      "url": "https://bhban.kr/lectures/lecture-122-faces-blurred-68b80462635b-cc8ecbb0b9a2d354/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/122-faces-blurred-68b80462635b.webp",
+      "date_text": "2024.11.30.",
+      "description": "의성군 교통혼잡의 원인, 제가 다시 방문했습니다. 이번에는 조금 더 실생활의 활용례에 가까운 예시들을 소개했습니다.",
+      "institution": "의성도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "의성도서관",
+          "url": "https://www.gbelib.kr/us/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-121-resized-e2b2c16232bb-b086a4694882094f",
+      "type": "lectures",
+      "title": "챗GPT 활용 방안",
+      "url": "https://bhban.kr/lectures/lecture-121-resized-e2b2c16232bb-b086a4694882094f/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/121-resized-e2b2c16232bb.webp",
+      "date_text": "2024.11.28.",
+      "description": "제주도에서 진행된 축사시설현대화사업 담당자 연수에 초청받았습니다.",
+      "institution": "농협중앙회",
+      "category": "기업",
+      "links": [
+        {
+          "title": "농협중앙회",
+          "url": "https://www.nonghyup.com/main/psniMain.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-poongsan-804e5de3cfd2-178cb8adae8b38bd",
+      "type": "lectures",
+      "title": "임원을 위한 생성형 AI 아카데미",
+      "url": "https://bhban.kr/lectures/lecture-logo-poongsan-804e5de3cfd2-178cb8adae8b38bd/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-poongsan-804e5de3cfd2.webp",
+      "date_text": "2024.11.25.",
+      "description": "풍산그룹 전 계열사 임원들과 대표님을 위한 생성형 AI 실습교육을 진행했습니다.",
+      "institution": "풍산그룹",
+      "category": "기업",
+      "links": [
+        {
+          "title": "풍산그룹",
+          "url": "https://www.poongsan.co.kr/main"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-kird-3e54fcb0f967-2af9d554937db0b1",
+      "type": "lectures",
+      "title": "생성형 AI시대의 보고 잘 하는 전략",
+      "url": "https://bhban.kr/lectures/lecture-logo-kird-3e54fcb0f967-2af9d554937db0b1/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-kird-3e54fcb0f967.webp",
+      "date_text": "2024.11.14.",
+      "description": "전국의 출연연 임직원들을 대상으로 AI를 활용한 효율적인 보고서 작성방안을 교육했습니다.",
+      "institution": "KIRD",
+      "category": "연구기관",
+      "links": [
+        {
+          "title": "KIRD",
+          "url": "https://www.kird.re.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-118-b89aed632e62b968",
+      "type": "lectures",
+      "title": "생성형 AI시대의 도서관 업무 혁신은?",
+      "url": "https://bhban.kr/lectures/lecture-118-b89aed632e62b968/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/118.webp",
+      "date_text": "2024.11.13.",
+      "description": "경북 도서관 사서분들이 한 자리에 모이는 자리에 초청받아 AI 특강을 진행했습니다.",
+      "institution": "공공도서관 경상북도협의회",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "공공도서관 경상북도협의회",
+          "url": "https://www.gb.go.kr/lib/main.tc"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-117-resized-44860c779bdc-1153f356dc33cc6c",
+      "type": "lectures",
+      "title": "챗GPT 시대의 논문작성, 리뷰, 리비전, 그리고 표절",
+      "url": "https://bhban.kr/lectures/lecture-117-resized-44860c779bdc-1153f356dc33cc6c/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/117-resized-44860c779bdc.webp",
+      "date_text": "2024.11.09.",
+      "description": "대한신경외과학회의 연구지회인 대한신경외과디지털융합연구회의 초청을 받아 키노트 스피치를 했습니다. 연구윤리와 관련된 다양한 경험을 나누었습니다. 특히 논문을 하루만에 써 accept 된 사례에서 많은 분들께서 놀라셨습니다.",
+      "institution": "대한신경외과학회",
+      "category": "컨퍼런스",
+      "links": [
+        {
+          "title": "대한신경외과학회",
+          "url": "https://www.neurosurgery.or.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-moe-30b6bd6a4a3b-3c8d3f57c52761ed",
+      "type": "lectures",
+      "title": "챗GPT 바로 알기 - 현황, 영향력, 실체",
+      "url": "https://bhban.kr/lectures/lecture-logo-moe-30b6bd6a4a3b-3c8d3f57c52761ed/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@9fcc0cb789f8ea779330f46b5cd0c4e06f17819b/src/images/lectures/logo-moe-30b6bd6a4a3b.webp",
+      "date_text": "2024.11.07.",
+      "description": "인사혁신처 챗GPT 아카데미에서 연이 닿아 교육부에 초대를 받았습니다. 교육부 직원들을 대상으로 생성형 AI의 실무 적용 방법을 교육했습니다.",
+      "institution": "교육부",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "교육부",
+          "url": "https://www.moe.go.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-115-faces-blurred-45483b8a3186-79cc2d88b91f7c81",
+      "type": "lectures",
+      "title": "챗GPT 이후의 세상",
+      "url": "https://bhban.kr/lectures/lecture-115-faces-blurred-45483b8a3186-79cc2d88b91f7c81/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/115-faces-blurred-45483b8a3186.webp",
+      "date_text": "2024.11.02.",
+      "description": "경주교육청의 초청으로 어린이들과 학부모 200여명을 대상으로 한 교육을 진행했습니다.",
+      "institution": "경주교육지원청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "경주교육지원청",
+          "url": "https://www.gbe.kr/gj/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-114-resized-732a60a86aa6-f56a8595137d4f93",
+      "type": "lectures",
+      "title": "스마트팜과 의료용 대마",
+      "url": "https://bhban.kr/lectures/lecture-114-resized-732a60a86aa6-f56a8595137d4f93/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/114-resized-732a60a86aa6.webp",
+      "date_text": "2024.10.31.",
+      "description": "안동대학교에서 경북농민사관학교 수강생을 대상으로 한 특강을 제공했습니다.",
+      "institution": "경북농민사관학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "경북농민사관학교",
+          "url": "https://www.aceo.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-113-faces-blurred-d8870933166f-144c80378d70c9aa",
+      "type": "lectures",
+      "title": "4급 승진자를 위한 챗GPT와 코파일럿",
+      "url": "https://bhban.kr/lectures/lecture-113-faces-blurred-d8870933166f-144c80378d70c9aa/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/113-faces-blurred-d8870933166f.webp",
+      "date_text": "2024.10.29.",
+      "description": "4급 승진대상자들을 대상으로 한 AI 교육을 진행했습니다.",
+      "institution": "한국가스안전공사",
+      "category": "기업",
+      "links": [
+        {
+          "title": "한국가스안전공사",
+          "url": "https://www.kgs.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-112-resized-407db2a656ab-b8fded0b93370784",
+      "type": "lectures",
+      "title": "생성형 AI가 초래할 금융산업과 농업에의 영향",
+      "url": "https://bhban.kr/lectures/lecture-112-resized-407db2a656ab-b8fded0b93370784/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/112-resized-407db2a656ab.webp",
+      "date_text": "2024.10.28.",
+      "description": "농협중앙회 재직자를 대상으로 특강을 진행했습니다.",
+      "institution": "농협중앙회",
+      "category": "기업",
+      "links": [
+        {
+          "title": "농협중앙회",
+          "url": "https://www.nonghyup.com/main/psniMain.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-111-faces-blurred-0978a949f483-df9b10139404695e",
+      "type": "lectures",
+      "title": "챗 GPT 이후의 세상 따라잡기 - 소방공무원을 위한",
+      "url": "https://bhban.kr/lectures/lecture-111-faces-blurred-0978a949f483-df9b10139404695e/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/111-faces-blurred-0978a949f483.webp",
+      "date_text": "2024.10.24.",
+      "description": "2024년도 하반기 정보통신담당자 기술교육 강사로 초청받아 특강을 제공하고 왔습니다. 강의 도중에도 출동 사이렌이 울리고, 많은 인원이 분주히 달려나가는 모습을 보며 많은 감동을 받았습니다. 존경합니다.",
+      "institution": "강원특별자치도소방본부",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "강원특별자치도소방본부",
+          "url": "https://fire.gwd.go.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-110-faces-blurred-b86904f0ebed-ea5b526d133b9c7f",
+      "type": "lectures",
+      "title": "스마트한 실버 라이프를 위한 챗GPT이후의 세상 따라잡기",
+      "url": "https://bhban.kr/lectures/lecture-110-faces-blurred-b86904f0ebed-ea5b526d133b9c7f/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/110-faces-blurred-b86904f0ebed.webp",
+      "date_text": "2024.10.17.",
+      "description": "어르신들이 AI시대에도 행복을 찾으실 수 있도록, 세상의 변화와 더 나은 내일에 대해 강의했습니다.",
+      "institution": "시흥시노인종합복지관",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "시흥시노인종합복지관",
+          "url": "https://shsenior.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-imt-aee573200ad5-3fb2effe984abb4e",
+      "type": "lectures",
+      "title": "프롬프트 엔지니어링 - 엔지니어를 위한",
+      "url": "https://bhban.kr/lectures/lecture-logo-imt-aee573200ad5-3fb2effe984abb4e/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-imt-aee573200ad5.webp",
+      "date_text": "2024.10.15.",
+      "description": "IMT에 재방문하여 이번에는 연구직을 위한 생성형 AI 활용방안 실습 교육을 진행했습니다.",
+      "institution": "IMT",
+      "category": "기업",
+      "links": [
+        {
+          "title": "IMT",
+          "url": "https://www.imtplus.com/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-108-resized-6223a39c7997-4300b42f06e505f7",
+      "type": "lectures",
+      "title": "챗GPT가 불러올 행정업무의 미래",
+      "url": "https://bhban.kr/lectures/lecture-108-resized-6223a39c7997-4300b42f06e505f7/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/108-resized-6223a39c7997.webp",
+      "date_text": "2024.10.11.",
+      "description": "교육공무직실무능력향상 과정 특강을 부탁받아 다녀왔습니다. 교무실무사, 행정실무원 등 교육공무원 200여명을 대상으로 진행했습니다.",
+      "institution": "경상북도교육청연수원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "경상북도교육청연수원",
+          "url": "https://www.gbeti.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-csj-1a359314daeb-307ddd899d14824a",
+      "type": "lectures",
+      "title": "의료용 대마의 이해",
+      "url": "https://bhban.kr/lectures/lecture-logo-csj-1a359314daeb-307ddd899d14824a/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-csj-1a359314daeb.webp",
+      "date_text": "2024.10.04.",
+      "description": "바이오제약과의 초청으로 3시간 특강을 제공하고 왔습니다. 대마관련 법부터 약효, 추출법, 가공법까지 강의했습니다.",
+      "institution": "가톨릭상지대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "가톨릭상지대학교",
+          "url": "https://biopharm.csj.ac.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-kocea-945cdadfbb27-52f54a2808eac5db",
+      "type": "lectures",
+      "title": "챗GPT 이후의 디지털 전환, 어느 수준까지 왔나?",
+      "url": "https://bhban.kr/lectures/lecture-logo-kocea-945cdadfbb27-52f54a2808eac5db/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ba6d7f7d643b59fb52026261af81c47163093afd/src/images/lectures/logo-kocea-945cdadfbb27.webp",
+      "date_text": "2024.09.28.",
+      "description": "건설기술인협회 전사 워크숍에 초청받아 특강을 제공했습니다. 과연 건설업에서 GPT가 어떻게 활약할 수 있을까요?",
+      "institution": "한국건설기술인협회",
+      "category": "기업",
+      "links": [
+        {
+          "title": "한국건설기술인협회",
+          "url": "https://homenet.kocea.or.kr:1443/kocea/koc-kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-samsungsem-ad424e029c2d-ab9bdbfe39bc50c9",
+      "type": "lectures",
+      "title": "프롬프트 엔지니어링부터 실무 활용까지 - ChatGPT 특강",
+      "url": "https://bhban.kr/lectures/lecture-logo-samsungsem-ad424e029c2d-ab9bdbfe39bc50c9/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-samsungsem-ad424e029c2d.webp",
+      "date_text": "2024.09.27.",
+      "description": "2024 하반기 신입사원 DX 연수를 다녀왔습니다.",
+      "institution": "삼성전기",
+      "category": "기업",
+      "links": [
+        {
+          "title": "삼성전기",
+          "url": "https://www.samsungsem.com/kr/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-imt-aee573200ad5-8b7209ab3b05aec7",
+      "type": "lectures",
+      "title": "프롬프트 엔지니어링 - 생성형 AI의 직무활용을 위한",
+      "url": "https://bhban.kr/lectures/lecture-logo-imt-aee573200ad5-8b7209ab3b05aec7/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-imt-aee573200ad5.webp",
+      "date_text": "2024.09.26.",
+      "description": "방산업체인 IMT에 방문하여 전 임직원 대상 AI 실습교육을 진행했습니다.",
+      "institution": "IMT",
+      "category": "기업",
+      "links": [
+        {
+          "title": "IMT",
+          "url": "https://www.imtplus.com/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-103-resized-d0e4a0c4da15-a6f9ed1ffe5d9801",
+      "type": "lectures",
+      "title": "챗GPT 이후의 세상에서 살아남기",
+      "url": "https://bhban.kr/lectures/lecture-103-resized-d0e4a0c4da15-a6f9ed1ffe5d9801/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/103-resized-d0e4a0c4da15.webp",
+      "date_text": "2024.09.05.",
+      "description": "백운호수도서관의 초청을 받아 특강을 다녀왔습니다. 주변이 무척이나 고즈넉하고 아름다워서 기억에 오래 남아 있습니다.",
+      "institution": "의왕시 백운호수도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "의왕시 백운호수도서관",
+          "url": "https://www.uwlib.or.kr/baegun/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-102-resized-f4f23857a9b2-34e19b5a82421172",
+      "type": "lectures",
+      "title": "디지털 전환시대, AI와 직업세계 변화",
+      "url": "https://bhban.kr/lectures/lecture-102-resized-f4f23857a9b2-34e19b5a82421172/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/102-resized-f4f23857a9b2.webp",
+      "date_text": "2024.09.03.",
+      "description": "2024 서울우먼업 페어에 초청받아 AI시대의 구직시장에 대한 특강을 제공했습니다.",
+      "institution": "서울시 남부여성발전센터",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "서울시 남부여성발전센터",
+          "url": "https://nambu.seoulwomanup.or.kr/nambu/main/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-101-resized-0867e6cc41fc-675a81c743f7f414",
+      "type": "lectures",
+      "title": "챗GPT 이후 우리의 갈 길은",
+      "url": "https://bhban.kr/lectures/lecture-101-resized-0867e6cc41fc-675a81c743f7f414/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/101-resized-0867e6cc41fc.webp",
+      "date_text": "2024.08.24.",
+      "description": "안녕하세요, 의성군 교통혼잡유발의 주범 반병현입니다. 많은 분들께서 참석해 주셔서 그 큰 공간이 가득 찼습니다. 지역주민들, 특히 어르신들과 AI를 활용하여 더 나은 내일을 고민하는 방법을 이야기했습니다.",
+      "institution": "의성도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "의성도서관",
+          "url": "https://www.gbelib.kr/us/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-100-faces-blurred-1b7e9b8f9606-6e7d0f1bc7c853c9",
+      "type": "lectures",
+      "title": "챗GPT의 활용 방안 실습",
+      "url": "https://bhban.kr/lectures/lecture-100-faces-blurred-1b7e9b8f9606-6e7d0f1bc7c853c9/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/100-faces-blurred-1b7e9b8f9606.webp",
+      "date_text": "2024.07.17.",
+      "description": "영주제일고등학교에 방문해 학생들을 대상으로 교육을 진행했습니다.",
+      "institution": "영주제일고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "영주제일고등학교",
+          "url": "https://school.gyo6.net/yeongjujeil/main.do/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-amplus-asset-development-3d3f4c12fbc9-fe8f3f08559039c1",
+      "type": "lectures",
+      "title": "프롬프트 엔지니어링 - 업무효율을 향상시키는 AI 활용팁",
+      "url": "https://bhban.kr/lectures/lecture-logo-amplus-asset-development-3d3f4c12fbc9-fe8f3f08559039c1/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ba6d7f7d643b59fb52026261af81c47163093afd/src/images/lectures/logo-amplus-asset-development-3d3f4c12fbc9.webp",
+      "date_text": "2024.06.25.",
+      "description": "애경그룹 신규 이사 교육으로 인연이 닿아 에이엠플러스 자산개발 전체 임직원 대상 AI교육을 진행했습니다.",
+      "institution": "에이엠플러스 자산개발",
+      "category": "기업",
+      "links": [
+        {
+          "title": "에이엠플러스 자산개발",
+          "url": "https://www.amplus.co.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-98-resized-a18aaac0199a-d65750aae855d279",
+      "type": "lectures",
+      "title": "빅데이터, AI활용 정책소통의 미래",
+      "url": "https://bhban.kr/lectures/lecture-98-resized-a18aaac0199a-d65750aae855d279/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/98-resized-a18aaac0199a.webp",
+      "date_text": "2024.06.20.",
+      "description": "한국생산성본부의 초청으로 문화체육관광부 재직자들을 대상으로 한 교육을 진행했습니다.",
+      "institution": "한국생산성본부",
+      "category": "기업",
+      "links": [
+        {
+          "title": "한국생산성본부",
+          "url": "https://www.kpc.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-97-resized-9fa295e43ea9-bc4cfb4e068f125a",
+      "type": "lectures",
+      "title": "베스트셀러 작가 반병현에게 배우는 ChatGPT 특강",
+      "url": "https://bhban.kr/lectures/lecture-97-resized-9fa295e43ea9-bc4cfb4e068f125a/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/97-resized-9fa295e43ea9.webp",
+      "date_text": "2024.06.05.",
+      "description": "농수산대의 초청으로 전교생 대상 특강을 진행했습니다.",
+      "institution": "국립한국농수산대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "국립한국농수산대학교",
+          "url": "https://www.af.ac.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-96-resized-ec3c2c453c2d-df28684ce04f9050",
+      "type": "lectures",
+      "title": "공무원 AI교육 관련 전문가 간담회",
+      "url": "https://bhban.kr/lectures/lecture-96-resized-ec3c2c453c2d-df28684ce04f9050/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/96-resized-ec3c2c453c2d.webp",
+      "date_text": "2024.05.31.",
+      "description": "인사혁신처의 초청으로 공직자의 AI교육과 관련된 자문을 제공하고 왔습니다.",
+      "institution": "인사혁신처",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "인사혁신처",
+          "url": "https://mpm.go.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-95-resized-85c05a137196-33baebb81b1b1e39",
+      "type": "lectures",
+      "title": "나보다 똑똑한 AI와 사는 법",
+      "url": "https://bhban.kr/lectures/lecture-95-resized-85c05a137196-33baebb81b1b1e39/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/95-resized-85c05a137196.webp",
+      "date_text": "2024.05.18.",
+      "description": "지역주민들을 대상으로 생성형 AI와 관련된 강의를 진행했습니다.",
+      "institution": "자양제4동도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "자양제4동도서관",
+          "url": "https://www.gwangjinlib.seoul.kr/jy4dong/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-94-faces-blurred-b02809b08837-23acbb1565f9bf28",
+      "type": "lectures",
+      "title": "나보다 똑똑한 AI와 사는 법",
+      "url": "https://bhban.kr/lectures/lecture-94-faces-blurred-b02809b08837-23acbb1565f9bf28/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/94-faces-blurred-b02809b08837.webp",
+      "date_text": "2024.05.17.",
+      "description": "2024학년도 AI정보교육중심학교 인공지능 전문가 특강 모교에 다녀왔습니다.",
+      "institution": "경안고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "경안고등학교",
+          "url": "https://school.gyo6.net/ka"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-93-resized-258701f35c14-b30e10920587796a",
+      "type": "lectures",
+      "title": "프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-93-resized-258701f35c14-b30e10920587796a/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/93-resized-258701f35c14.webp",
+      "date_text": "2024.05.14.",
+      "description": "성공 그 자체를 대변하는 CEO님들의 프라이빗 모임에 초청을 받아 프롬프트 엔지니어링과 AI가 불러올 변화에 대해 강의했습니다. 감사하게도 저도 회원으로 초대받았습니다.",
+      "institution": "CEO 독서클럽",
+      "category": "컨퍼런스",
+      "links": [
+        {
+          "title": "CEO 독서클럽",
+          "url": "https://www.ceoclub.co.kr/programs/bookclub"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-88-resized-8981f8f1cfa4-102f86e81bc8c7d9",
+      "type": "lectures",
+      "title": "이제는 모두가 알아야 할 프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-88-resized-8981f8f1cfa4-102f86e81bc8c7d9/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/88-resized-8981f8f1cfa4.webp",
+      "date_text": "2024.04.30.",
+      "description": "용인 수지도서관에서 다시 초청해 주셔서 특강을 제공하고 왔습니다. 이제는 모든 사람들이 챗GPT를 효율적으로 다루고, 스마트하게 질문을 설계하는 방법에 대하여 알아야 하지요. 이에 누구나 쉽게 활용할 수 있는 프롬프트 엔지니어링 기법을 소개했습니다.",
+      "institution": "용인 수지도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "용인 수지도서관",
+          "url": "https://lib.yongin.go.kr/suji/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-ahnlab-945749d13d78-c07806348f7f0e49",
+      "type": "lectures",
+      "title": "AI시대의 기획자를 위한 코파일럿, 챗GPT 활용 노하우",
+      "url": "https://bhban.kr/lectures/lecture-logo-ahnlab-945749d13d78-c07806348f7f0e49/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-ahnlab-945749d13d78.webp",
+      "date_text": "2024.04.25.",
+      "description": "안랩 소속 기획자들이 모두 모이는 기획자 스쿨에서 코파일럿과 챗GPT 등을 효율적으로 활용하는 방법에 대한 특강을 진행했습니다. 기획자 직무도 ENFP가 많은 것 같았습니다. 활기찬 분위기에 무척 즐거웠습니다.",
+      "institution": "안랩 기획자 스쿨",
+      "category": "기업",
+      "links": [
+        {
+          "title": "안랩 기획자 스쿨",
+          "url": "https://www.ahnlab.com/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-90-resized-776d144c96b2-fed97c4d4327b39c",
+      "type": "lectures",
+      "title": "인간을 대체할 수 있는 AI 소프트웨어, 어디까지 왔을까?",
+      "url": "https://bhban.kr/lectures/lecture-90-resized-776d144c96b2-fed97c4d4327b39c/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/90-resized-776d144c96b2.webp",
+      "date_text": "2024.04.13.",
+      "description": "울진군의 청소년들과 어르신들을 대상으로 챗GPT 관련 특강을 진행했습니다. 흰머리 지긋하신 어르신들께서 적극적인 자세로 새로운 지식을 습득하기 위하여 노력하시는 모습이 인상깊었습니다.",
+      "institution": "울진도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "울진도서관",
+          "url": "https://www.gbelib.kr/uj/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-89-resized-6dcfc11182de-5f064ac714545185",
+      "type": "lectures",
+      "title": "챗GPT와 파생 기술들 - LLM 열풍 1년 반, 무엇이 바뀌었나?",
+      "url": "https://bhban.kr/lectures/lecture-89-resized-6dcfc11182de-5f064ac714545185/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/89-resized-6dcfc11182de.webp",
+      "date_text": "2024.04.01.",
+      "description": "1차 융합독서특강 동국대 사범대 부속고등학교 도서관에서 초청해주셔서 특강을 진행했습니다. 진로형성에 있어 가장 중요한 시기를 겪고 있는 고등학생들을 대상으로, AI산업이 어디까지 발전했는지, 어떤 산업의 기회가 축소되거나 신설되고 있는지에 대한 인사이트를 제공했습니다.",
+      "institution": "동국대 사대 부속고",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "동국대 사대 부속고",
+          "url": "https://ddbk.sen.hs.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-samsung-b0591c2f7c37-f2c5241d2bba35e0",
+      "type": "lectures",
+      "title": "챗GPT와 파생 기술들",
+      "url": "https://bhban.kr/lectures/lecture-logo-samsung-b0591c2f7c37-f2c5241d2bba35e0/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-samsung-b0591c2f7c37.webp",
+      "date_text": "2024.03.28.",
+      "description": "삼성전자 DA사업부 임직원 350여명을 대상으로 특강을 진행했습니다. 특히, 생성형 AI가 생산시설 자동화와 품질관리 분야에 어떻게 적용될 수 있는지에 중점을 두고 최신 연구 결과들을 요약하여 전달했습니다.",
+      "institution": "삼성전자",
+      "category": "기업",
+      "links": [
+        {
+          "title": "삼성전자",
+          "url": "https://www.samsung.com/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-86-28ca419efd478804",
+      "type": "lectures",
+      "title": "4차 산업 혁명 시대의 스마트팜 현황",
+      "url": "https://bhban.kr/lectures/lecture-86-28ca419efd478804/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/86.webp",
+      "date_text": "2024.02.13.",
+      "description": "충북 직업전환 교육기관 지정 운영 사업에 참가하는 기관 담당자들을 대상으로 특강을 제공했습니다.",
+      "institution": "충청북도 DX직업전환교육센터",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "충청북도 DX직업전환교육센터",
+          "url": "https://cpu.ac.kr/cbdx/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-aekyung-d3c1ffc4addf-fd8c369e28c0b6d9",
+      "type": "lectures",
+      "title": "GPT가 생산성에 끼치는 영향력",
+      "url": "https://bhban.kr/lectures/lecture-logo-aekyung-d3c1ffc4addf-fd8c369e28c0b6d9/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-aekyung-d3c1ffc4addf.webp",
+      "date_text": "2024.01.30.",
+      "description": "애경그룹의 각 계열사 신규 임원 승진자 대상 특강을 진행하였습니다. 챗GPT의 영향력과 프롬프트 엔지니어링, 조직 내 성과창출을 위한 쾌속한 도입 방향 등에 대하여 강의했습니다.",
+      "institution": "애경그룹",
+      "category": "기업",
+      "links": [
+        {
+          "title": "애경그룹",
+          "url": "https://www.aekyung.co.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-84-resized-d152bf98abe1-c45ac5490e5e6cb2",
+      "type": "lectures",
+      "title": "마케터를 위한 프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-84-resized-d152bf98abe1-c45ac5490e5e6cb2/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/84-resized-d152bf98abe1.webp",
+      "date_text": "2024.01.19.",
+      "description": "한국암웨이 본사에서 마케팅 임직원 대상 특강을 진행하였습니다. 마케팅 담당자들이라 그런지 외향적인 분들이 많이 참여해주셔서 즐거웠습니다.",
+      "institution": "한국암웨이",
+      "category": "기업",
+      "links": [
+        {
+          "title": "한국암웨이",
+          "url": "https://amway.co.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-83-f8d9d6e1f1069afe",
+      "type": "lectures",
+      "title": "생성형 AI와 프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-83-f8d9d6e1f1069afe/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/83.webp",
+      "date_text": "2024.01.16.",
+      "description": "농협중앙회 신규직원 DT교육 농협그룹 전 계열 신입사원을 대상으로 챗GPT와 디지털 트렌드 관련 특강을 제공하였습니다.",
+      "institution": "농협중앙회",
+      "category": "기업",
+      "links": [
+        {
+          "title": "농협중앙회",
+          "url": "https://www.nonghyup.com"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-incheon-finance-high-school-5d66b4e0c523-e5807323c3779ff9",
+      "type": "lectures",
+      "title": "스마트팜 교육",
+      "url": "https://bhban.kr/lectures/lecture-logo-incheon-finance-high-school-5d66b4e0c523-e5807323c3779ff9/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ba6d7f7d643b59fb52026261af81c47163093afd/src/images/lectures/logo-incheon-finance-high-school-5d66b4e0c523.webp",
+      "date_text": "2024년",
+      "description": "아두이노를 활용한 코딩교육부터 스마트팜 키트 제작 등의 교육을 진행했습니다.",
+      "institution": "인천금융고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "인천금융고등학교",
+          "url": "https://finance.icehs.kr/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:course-26",
+      "type": "lectures",
+      "title": "공직자를 위한 챗GPT 아카데미",
+      "url": "https://bhban.kr/lectures/course-26/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/courses/26-resized-b8735dfdeee7.webp",
+      "date_text": "2024",
+      "description": "인사혁신처에서 전국 국가직 공직자를 대상으로 진행한, 2억 원 규모의 대형 교육사업입니다. 총 11회에 걸쳐 교육이 진행되었고, 600여명의 공직자 분들을 대상으로 생성형 AI의 실무 활용 방법을 강의했습니다.",
+      "institution": "",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-80-resized-e40dfb5d1b3c-f38786d42fb87511",
+      "type": "lectures",
+      "title": "챗GPT 출시 1주년, 세상은 어떻게 바뀌었나?",
+      "url": "https://bhban.kr/lectures/lecture-80-resized-e40dfb5d1b3c-f38786d42fb87511/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/80-resized-e40dfb5d1b3c.webp",
+      "date_text": "2023.11.04.",
+      "description": "수지도서관 베스트셀러 작가 초청 강연. 연말까지도 챗GPT의 열기가 뜨거우니 참 신기하네요. 재미있는 시간 보내고 왔습니다.",
+      "institution": "용인 수지도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "용인 수지도서관",
+          "url": "https://lib.yongin.go.kr/suji/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-79-84dff761ab69cabd",
+      "type": "lectures",
+      "title": "챗GPT에 대한 가장 재미있는 설명",
+      "url": "https://bhban.kr/lectures/lecture-79-84dff761ab69cabd/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/79.webp",
+      "date_text": "2023.10.28.",
+      "description": "미추홀구립도서관 문화가 있는 날 특강 성인을 위한 강의 진행했습니다. 어르신들에게 GPT를 이해시키는 대단한 강사가 바로 접니다.",
+      "institution": "미추홀구립도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "미추홀구립도서관",
+          "url": "https://hnrl.michu.incheon.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-235",
+      "type": "lectures",
+      "title": "AI, 위기일까? 기회일까?",
+      "url": "https://bhban.kr/lectures/lecture-235/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@029640fa0e12cdb37906a58dc5af7999613ddef1/src/images/lectures/235.webp",
+      "date_text": "2023.10.14.",
+      "description": "아산시립도서관의 음봉권역 찾아가는 독서문화행사에서 AI가 가져올 위기와 기회를 주제로 작가 강연을 진행했습니다.",
+      "institution": "아산시립도서관",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-74-resized-92c9939b033b-01ad8f37ec92951e",
+      "type": "lectures",
+      "title": "챗GPT와 인공지능의 미래",
+      "url": "https://bhban.kr/lectures/lecture-74-resized-92c9939b033b-01ad8f37ec92951e/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/74-resized-92c9939b033b.webp",
+      "date_text": "2023.09.02.",
+      "description": "안성 공도도서관에서 강연을 했습니다. 제 도서를 다양하게 소장하고 있는 것으로 보아 아주 훌륭한 곳입니다. 지역 주민들과 챗GPT에 대해 이야기를 나누었습니다.",
+      "institution": "안성 공도도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "안성 공도도서관",
+          "url": "https://www.anseong.go.kr/library/sub/main.do?library=2&mId=0602020800"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-69-faces-blurred-3be42792f7c2-ec7b5707ac9f1933",
+      "type": "lectures",
+      "title": "이젠 챗GPT 시대",
+      "url": "https://bhban.kr/lectures/lecture-69-faces-blurred-3be42792f7c2-ec7b5707ac9f1933/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/69-faces-blurred-3be42792f7c2.webp",
+      "date_text": "2023.07.22.",
+      "description": "영덕군에서 주민 대상 강연을 진행했습니다.",
+      "institution": "경북교육청 영덕도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "경북교육청 영덕도서관",
+          "url": "https://www.gbelib.kr/yd/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-68-faces-blurred-85440f56d27e-0a56be3489b05105",
+      "type": "lectures",
+      "title": "챗GPT에 대한 가장 재미있는 설명",
+      "url": "https://bhban.kr/lectures/lecture-68-faces-blurred-85440f56d27e-0a56be3489b05105/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/68-faces-blurred-85440f56d27e.webp",
+      "date_text": "2023.07.22.",
+      "description": "포항 과학원에서 교사들 대상으로 연수라는 명목하에 스탠딩 코미디를 하고 왔습니다. 13년 전, 여기서 영재교육을 받던 학생이었는데 이제는 강단에 서서 마이크를 잡으니 기분이 묘했습니다.",
+      "institution": "경상북도교육청과학원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "경상북도교육청과학원",
+          "url": "https://www.gbe.kr/gsei"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-67-8096c2b0b79e16c9",
+      "type": "lectures",
+      "title": "쉬운 딥러닝",
+      "url": "https://bhban.kr/lectures/lecture-67-8096c2b0b79e16c9/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/67.webp",
+      "date_text": "2023.07.20.",
+      "description": "올해도 모교 방문하여 딥러닝 시작부터 끝까지 한 번 훑어주고 왔습니다. 대학에 간 졸업생들이 앞다투어 효능을 간증하는 바로 그 강의가 올해도 돌아왔습니다.",
+      "institution": "경안고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "경안고등학교",
+          "url": "https://school.gyo6.net/ka/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-66-b4d727eb69671635",
+      "type": "lectures",
+      "title": "챗GPT시대 우리의 진로",
+      "url": "https://bhban.kr/lectures/lecture-66-b4d727eb69671635/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/66.webp",
+      "date_text": "2023.07.15.",
+      "description": "진로특강 겸 상담 진행하고 왔습니다.",
+      "institution": "영양여자고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "영양여자고등학교",
+          "url": "https://school.gyo6.net/yyg/main.do?sysId=yyg"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-65-d989dcd1e90a2b9e",
+      "type": "lectures",
+      "title": "4차 산업혁명 시대, 우리 아이가 살아남으려면 부모가 바뀌어야 할까?",
+      "url": "https://bhban.kr/lectures/lecture-65-d989dcd1e90a2b9e/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/65.webp",
+      "date_text": "2023.07.12.",
+      "description": "학부모분들 대상으로 4차산업혁명 분야에 대한 강의를 진행했습니다.",
+      "institution": "경남학부모아카데미",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "경남학부모아카데미",
+          "url": "https://www.gne.go.kr/parents/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-64-faces-blurred-102b61c7adf6-aae51dc9e66c9576",
+      "type": "lectures",
+      "title": "챗GPT 마침내 찾아온 특이점",
+      "url": "https://bhban.kr/lectures/lecture-64-faces-blurred-102b61c7adf6-aae51dc9e66c9576/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/64-faces-blurred-102b61c7adf6.webp",
+      "date_text": "2023.06.17.",
+      "description": "하남은 무척 살기 좋아 보이는 도시 같아 보였습니다. 돈 많이 벌면 꼭 하남에 집 사야지.",
+      "institution": "하남 미사도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "하남 미사도서관",
+          "url": "https://www.hanamlib.go.kr/mslib/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-63-resized-d5d501958745-bdfa4e8d6f31d9a1",
+      "type": "lectures",
+      "title": "챗GPT가 불러올 미래",
+      "url": "https://bhban.kr/lectures/lecture-63-resized-d5d501958745-bdfa4e8d6f31d9a1/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/63-resized-d5d501958745.webp",
+      "date_text": "2023.06.17.",
+      "description": "토요 인문학 특강 다녀왔습니다. 백발 어르신이 무서운 속도로 필기도 하시고 관련 애플리케이션 개발 동향 질문도 하셔서 무척 강렬한 기억으로 남았습니다.",
+      "institution": "문경점촌도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "문경점촌도서관",
+          "url": "https://www.gbelib.kr/jc/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-61-resized-379968b721d3-682396d2b33d2328",
+      "type": "lectures",
+      "title": "챗GPT, 마침내 찾아온 특이점",
+      "url": "https://bhban.kr/lectures/lecture-61-resized-379968b721d3-682396d2b33d2328/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/61-resized-379968b721d3.webp",
+      "date_text": "2023.06.13.",
+      "description": "모교 다녀왔습니다. 졸업한 지 12년이 지났네요. 시설이 어찌나 이렇게 좋아졌는지.",
+      "institution": "경안고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "경안고등학교",
+          "url": "https://school.gyo6.net/ka/main.do?sysId=ka"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-58-c2ec266951f16c2e",
+      "type": "lectures",
+      "title": "챗GPT와 함께 하는 AI 이야기",
+      "url": "https://bhban.kr/lectures/lecture-58-c2ec266951f16c2e/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/58.webp",
+      "date_text": "2023.05.13.",
+      "description": "광명시 하얀도서관에서 강연을 진행했습니다. 자리가 모자라 뒤쪽에 간이 의자를 깔고 앉아 수강해 주신 분들도 계셨습니다. 초청해 주셔서 무척이나 감사드립니다. 강연 후 광명 명물인 이케아에서 즐거운 시간을 보냈습니다.",
+      "institution": "하얀도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "하얀도서관",
+          "url": "https://gmlib.gm.go.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-57-faces-blurred-007bfcfb1d45-2af47de15e44617c",
+      "type": "lectures",
+      "title": "챗GPT와 함께 하는 AI 이야기",
+      "url": "https://bhban.kr/lectures/lecture-57-faces-blurred-007bfcfb1d45-2af47de15e44617c/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/57-faces-blurred-007bfcfb1d45.webp",
+      "date_text": "2023.05.12.",
+      "description": "서초구청에서 전 직원 대상 강연 진행했습니다. 제공해 주신 음료수가 참 맛있어서 즐거웠습니다. 복도에 \"기부의 벽\" 이라는, 기부금 키오스크가 있길래 가장 높은 금액 버튼 누르고 기부도 하고 왔습니다.",
+      "institution": "서초구청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "서초구청",
+          "url": "https://www.seocho.go.kr"
+        },
+        {
+          "title": "생중계 녹화",
+          "url": "https://www.youtube.com/watch?v=kXUHFJVJBw4"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-55-faces-blurred-59d768044636-7a289c48e494b9b9",
+      "type": "lectures",
+      "title": "챗GPT 바로 알기, 그리고 스마트하게 활용하기",
+      "url": "https://bhban.kr/lectures/lecture-55-faces-blurred-59d768044636-7a289c48e494b9b9/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/55-faces-blurred-59d768044636.webp",
+      "date_text": "2023.04.28.",
+      "description": "초중등교원 대상 강연 진행했습니다. 역시 초등교사분들이 손도 잘 들고 질문도 잘 하세요.",
+      "institution": "대전교육정보원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "대전교육정보원",
+          "url": "https://dei.djsch.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-54-resized-6aa9d5639d82-bdc972a2c97159db",
+      "type": "lectures",
+      "title": "살아남는 1%를 위한, 챗GPT에 대한 진짜 정보",
+      "url": "https://bhban.kr/lectures/lecture-54-resized-6aa9d5639d82-bdc972a2c97159db/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/54-resized-6aa9d5639d82.webp",
+      "date_text": "2023.04.28.",
+      "description": "농협중앙회 본부에 방문할 일은 로또 당첨 전에는 없을 줄 알았습니다. 강연도 제공하고 당첨자 기운도 받아왔습니다.",
+      "institution": "농협중앙회",
+      "category": "기업",
+      "links": [
+        {
+          "title": "농협중앙회",
+          "url": "http://nonghyup.com/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-53-faces-blurred-e403dd247f03-f8cd4313aef57030",
+      "type": "lectures",
+      "title": "챗GPT와 공존하는 삶",
+      "url": "https://bhban.kr/lectures/lecture-53-faces-blurred-e403dd247f03-f8cd4313aef57030/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@8c63ff2f1c088627f3776cb7a50d136ec64941af/src/images/lectures/53-faces-blurred-e403dd247f03.webp",
+      "date_text": "2023.04.22.",
+      "description": "부산까지 다녀온 보람이 있었습니다. 한 시간 가량 강연 후 끝없는 Q&A를 거쳐 사인회까지 무사히 마치고 돌아왔습니다.",
+      "institution": "해운대인문학도서관 북콘서트",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "해운대인문학도서관 북콘서트",
+          "url": "https://home.pen.go.kr/haeundaelib/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-51-resized-0145044860cc-b02c5d6c59a71819",
+      "type": "lectures",
+      "title": "ChatGPT의 영향을 피해갈 수 있을까?",
+      "url": "https://bhban.kr/lectures/lecture-51-resized-0145044860cc-b02c5d6c59a71819/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/51-resized-0145044860cc.webp",
+      "date_text": "2023.04.13.",
+      "description": "제5차 데이터기술경제포럼 KISTI의 초청으로 데이터기술경제포럼에 패널로 참여하였습니다.",
+      "institution": "KISTI",
+      "category": "연구기관",
+      "links": [
+        {
+          "title": "KISTI",
+          "url": "https://www.kisti.re.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-50-logo-1fb1e3cd5e7bd1ab",
+      "type": "lectures",
+      "title": "챗GPT 서비스를 완성하는 프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-50-logo-1fb1e3cd5e7bd1ab/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/50-logo.webp",
+      "date_text": "2023.03.29.",
+      "description": "미래엔 지식발전소 명사초청특강 챗GPT의 원리부터 프롬프트 엔지니어링, 그리고 챗GPT 기반 챗봇 서비스 설계 기획 방법을 알려드립니다.",
+      "institution": "미래엔",
+      "category": "기업",
+      "links": [
+        {
+          "title": "미래엔",
+          "url": "https://www.mirae-n.com"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-47-faces-blurred-08b76a60b97b-bb44a3fdf23eee62",
+      "type": "lectures",
+      "title": "지금을 바라보는 새로운 지평, Chat GPT",
+      "url": "https://bhban.kr/lectures/lecture-47-faces-blurred-08b76a60b97b-bb44a3fdf23eee62/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/47-faces-blurred-08b76a60b97b.webp",
+      "date_text": "2023.03.18. 03.25.",
+      "description": "선유도서관 초청 온라인 북콘서트! 111명의 주민들과 함께하는 2주간의 토요 문화 충전",
+      "institution": "선유도서관",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "선유도서관",
+          "url": "https://www.ydplib.or.kr/sylib/index.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-49-f674cbf072ac0479",
+      "type": "lectures",
+      "title": "챗GPT의 원리와 파급효과, 그리고 산업계의 전망",
+      "url": "https://bhban.kr/lectures/lecture-49-f674cbf072ac0479/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/49.webp",
+      "date_text": "2023.03.24.",
+      "description": "한은금요강좌. 챗GPT의 원리부터 활용 방안, 직업계의 영향까지를 소개하였습니다.",
+      "institution": "한국은행",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "한국은행",
+          "url": "https://www.bok.or.kr/portal/main/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-logo-seodaemun-gu-88e1617a0391-c6bee90b96f874c6",
+      "type": "lectures",
+      "title": "\"왜 챗GPT에 열광하는가?\" 챗GPT의 이해와 활용 교육",
+      "url": "https://bhban.kr/lectures/lecture-logo-seodaemun-gu-88e1617a0391-c6bee90b96f874c6/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@104ce857ad3ddcc8ab4648225e723dc1023f0544/src/images/lectures/logo-seodaemun-gu-88e1617a0391.webp",
+      "date_text": "2023.03.17.",
+      "description": "서대문구청 초청강연. 현장에서 110여명, 이원 생중계로 200여명 가량 참석해주셨습니다. 지금껏 모든 지자체의 챗GPT 강연 요청을 거절해왔으나 유일하게 수락한 한 곳이 서대문구청입니다.",
+      "institution": "서대문구청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "서대문구청",
+          "url": "https://www.sdm.go.kr/index.do"
+        },
+        {
+          "title": "강연 영상",
+          "url": "https://www.youtube.com/watch?v=SXQrcE7LYrg"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-45-logo-38c5b260ab07c655",
+      "type": "lectures",
+      "title": "챗GPT의 태생적 한계가 만들어낸 새로운 산업",
+      "url": "https://bhban.kr/lectures/lecture-45-logo-38c5b260ab07c655/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/45-logo.webp",
+      "date_text": "2023.03.03.",
+      "description": "한국 AI산업을 이끌어가는 KISTI 박사님들 앞에서 챗GPT 이야기를 해야 하다니, 막대한 부담감 속에서 진행된 강연입니다.",
+      "institution": "KISTI",
+      "category": "연구기관",
+      "links": [
+        {
+          "title": "KISTI",
+          "url": "https://www.kisti.re.kr/"
+        },
+        {
+          "title": "Lecture",
+          "url": "https://www.youtube.com/watch?v=eqoCyYRESjk"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-81-resized-eadd848f22ef-af085978732af689",
+      "type": "lectures",
+      "title": "챗GPT와 프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-81-resized-eadd848f22ef-af085978732af689/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/81-resized-eadd848f22ef.webp",
+      "date_text": "2023년",
+      "description": "챗GPT를 업무에 활용하여 효율적으로 업무역량을 향상시키는 방법에 대한 강의를 진행했습니다.",
+      "institution": "세종청사 디지털 아카데미",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "세종청사 디지털 아카데미",
+          "url": "https://www.mpm.go.kr/mpm/info/infoEdu/eduDomestic/eduDomestic05/eduDomestic0503/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-78",
+      "type": "lectures",
+      "title": "챗GPT와 업무혁신",
+      "url": "https://bhban.kr/lectures/lecture-78/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/78-faces-blurred-08b4c4331b9c.webp",
+      "date_text": "2023년",
+      "description": "벤처기업 신입사원 온보딩 감사하게도 다시 불러주셨습니다. 벤처기업에 입사한 신입사원들을 대상으로, 생성형 AI의 업무 활용 방안 교육을 총 4회 진행하였습니다.",
+      "institution": "(사) 벤처기업협회",
+      "category": "기업",
+      "links": [
+        {
+          "title": "(사) 벤처기업협회",
+          "url": "https://www.venture.or.kr"
+        },
+        {
+          "title": "벤처기업 신입사원 온보딩",
+          "url": "https://www.venture.or.kr/home/kor/M357642681/business/intro/contents.do?idx=cb00d1a0008a85e71a41b8741facbffeb867cf7f5c7adc365326c976b22336f5&idx2=cb00d1a0008a85e71a41b8741facbffea61d02da261506fa5bc6857da2fc3dff"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-77-logo-f7ff60f342d98704",
+      "type": "lectures",
+      "title": "챗GPT에 대한 가장 재미있는 설명",
+      "url": "https://bhban.kr/lectures/lecture-77-logo-f7ff60f342d98704/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/77-logo.webp",
+      "date_text": "2023년",
+      "description": "중학교 시절 담임선생님께서 초대해 주셨습니다. 안동여고 학생들과 함께 생성형 AI의 발전이 세상에 끼칠 영향과, 우리가 지향해야 할 성장의 방향에 대한 이야기를 나누었습니다.",
+      "institution": "안동여자고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "안동여자고등학교",
+          "url": "https://school.gyo6.net/andong-gh/main.do?sysId=andong-gh"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-75-faces-blurred-9330f9b1b5d5-fb39c7ed992b6ed3",
+      "type": "lectures",
+      "title": "챗GPT와 업무혁신",
+      "url": "https://bhban.kr/lectures/lecture-75-faces-blurred-9330f9b1b5d5-fb39c7ed992b6ed3/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/75-faces-blurred-9330f9b1b5d5.webp",
+      "date_text": "2023년",
+      "description": "벤처기업 신입사원 온보딩 벤처기업 신입사원들을 대상으로 한 교육프로그램에 초청받아 생성형 AI 활용 방안에 대한 강의를 제공했습니다.",
+      "institution": "(사) 벤처기업협회",
+      "category": "기업",
+      "links": [
+        {
+          "title": "(사) 벤처기업협회",
+          "url": "https://www.venture.or.kr"
+        },
+        {
+          "title": "벤처기업 신입사원 온보딩",
+          "url": "https://www.venture.or.kr/home/kor/M357642681/business/intro/contents.do?idx=cb00d1a0008a85e71a41b8741facbffeb867cf7f5c7adc365326c976b22336f5&idx2=cb00d1a0008a85e71a41b8741facbffea61d02da261506fa5bc6857da2fc3dff"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-73-resized-9e11743cd0a5-197c82f18300a63e",
+      "type": "lectures",
+      "title": "전문가의식과 책임감이 충돌할 때",
+      "url": "https://bhban.kr/lectures/lecture-73-resized-9e11743cd0a5-197c82f18300a63e/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/73-resized-9e11743cd0a5.webp",
+      "date_text": "2023년",
+      "description": "간만에 챗GPT 이외 토픽으로 강연요청이 들어와 무척 신났습니다. \"코딩하는 공익\"시절 이야기를 들려드렸습니다.",
+      "institution": "한국원자력연구원",
+      "category": "연구기관",
+      "links": [
+        {
+          "title": "한국원자력연구원",
+          "url": "https://www.kaeri.re.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-70-logo-65782ae1a7633e8c",
+      "type": "lectures",
+      "title": "챗GPT의 업무 활용",
+      "url": "https://bhban.kr/lectures/lecture-70-logo-65782ae1a7633e8c/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/70-logo.webp",
+      "date_text": "2023년",
+      "description": "이번에도 교사 대상 연수를 하고 왔습니다.",
+      "institution": "부산교육청 영재교육진흥원",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "부산교육청 영재교육진흥원",
+          "url": "https://home.pen.go.kr/giftedu/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-62",
+      "type": "lectures",
+      "title": "챗GPT와 프롬프트 엔지니어링",
+      "url": "https://bhban.kr/lectures/lecture-62/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/62-resized-af8fec888cef.webp",
+      "date_text": "2023년",
+      "description": "세종시 공무원 100여명을 대상으로 한 4차시 교육입니다. 국내 최초 프롬프트 엔지니어링 강의가 여기서 진행되었습니다.",
+      "institution": "세종청사 아카데미",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "세종청사 아카데미",
+          "url": "https://www.mpm.go.kr/mpm/info/infoEdu/eduDomestic/eduDomestic05/eduDomestic0503/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-56-logo-164bb10e2db7ece7",
+      "type": "lectures",
+      "title": "챗GPT와 활용 방안",
+      "url": "https://bhban.kr/lectures/lecture-56-logo-164bb10e2db7ece7/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/56-logo.webp",
+      "date_text": "2023년",
+      "description": "전 직원 대상 온라인 강의였습니다. 라이브로 200명 가량 수강해주셨고 녹화 영상이 한달 간 사내 교육자료로 사용될 예정이라고 하네요.",
+      "institution": "한국남동발전",
+      "category": "기업",
+      "links": [
+        {
+          "title": "한국남동발전",
+          "url": "https://www.koenergy.kr/kosep/fr/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-46-faces-blurred-7224017fd8aa-b86d3b65b34bd8fc",
+      "type": "lectures",
+      "title": "챗GPT의 원리와 활용 방안, 미래의 파급 효과",
+      "url": "https://bhban.kr/lectures/lecture-46-faces-blurred-7224017fd8aa-b86d3b65b34bd8fc/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/46-faces-blurred-7224017fd8aa.webp",
+      "date_text": "2023년",
+      "description": "대한민국의 행정정책을 선도하는 국무조정실 한국행정연구원의 초청으로 챗GPT에 대한 강연을 제공하였습니다. 뉴스나 유튜브에서는 볼 수 없는 깊은 내용들을, 인문학 및 사회과학 박사님들께 쉽게 전달해 드리려 최선을 다했습니다.",
+      "institution": "한국행정연구원",
+      "category": "연구기관",
+      "links": [
+        {
+          "title": "한국행정연구원",
+          "url": "https://www.kipa.re.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-43-faces-blurred-2e77daac89a3-825b278e658e893d",
+      "type": "lectures",
+      "title": "업무 자동화와 챗GPT",
+      "url": "https://bhban.kr/lectures/lecture-43-faces-blurred-2e77daac89a3-825b278e658e893d/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/43-faces-blurred-2e77daac89a3.webp",
+      "date_text": "2023년",
+      "description": "업무 자동화와 챗GPT에 대한 깊은 강의",
+      "institution": "한국생명공학연구원",
+      "category": "연구기관",
+      "links": [
+        {
+          "title": "한국생명공학연구원",
+          "url": "https://www.kribb.re.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-38-resized-3b8d4dfc1574-f62287cae9231a54",
+      "type": "lectures",
+      "title": "인공지능 시대를 준비하는 전문가의 마음가짐",
+      "url": "https://bhban.kr/lectures/lecture-38-resized-3b8d4dfc1574-f62287cae9231a54/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/38-resized-3b8d4dfc1574.webp",
+      "date_text": "2022.11.07.",
+      "description": "인공지능(AI) 교육선도학교 인공지능 전문가 특강",
+      "institution": "경안고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "경안고등학교",
+          "url": "https://school.gyo6.net/ka/main.do?sysId=ka"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-41-resized-78dcccf31b96-4c5459948eb67f67",
+      "type": "lectures",
+      "title": "기술이 하는 일, 사람이 하는 일",
+      "url": "https://bhban.kr/lectures/lecture-41-resized-78dcccf31b96-4c5459948eb67f67/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/41-resized-78dcccf31b96.webp",
+      "date_text": "2022년",
+      "description": "디지털인문예술전공 교수, 학생대상 초청강연.",
+      "institution": "한림대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "한림대학교",
+          "url": "https://www.hallym.ac.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-34-resized-47d243fe9133-1f9f5b45c88a68e3",
+      "type": "lectures",
+      "title": "진로특강",
+      "url": "https://bhban.kr/lectures/lecture-34-resized-47d243fe9133-1f9f5b45c88a68e3/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/34-resized-47d243fe9133.webp",
+      "date_text": "2022년",
+      "description": "진로특강 특강강사 초청",
+      "institution": "영양여자고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "영양여자고등학교",
+          "url": "https://school.gyo6.net/yyg/main.do?sysId=yyg"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-33-faces-blurred-1e59ab020fc4-a1e9cb9231b0e9c3",
+      "type": "lectures",
+      "title": "뇌과학에 발을 들이면서",
+      "url": "https://bhban.kr/lectures/lecture-33-faces-blurred-1e59ab020fc4-a1e9cb9231b0e9c3/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/33-faces-blurred-1e59ab020fc4.webp",
+      "date_text": "2022년",
+      "description": "인공지능 프로젝트 자문위원",
+      "institution": "경안고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "경안고등학교",
+          "url": "https://school.gyo6.net/ka/main.do?sysId=ka"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-32-resized-0744d7968884-80f79b2176708346",
+      "type": "lectures",
+      "title": "미래 사법의 과제 - AI 임팩트",
+      "url": "https://bhban.kr/lectures/lecture-32-resized-0744d7968884-80f79b2176708346/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/32-resized-0744d7968884.webp",
+      "date_text": "2022년",
+      "description": "미래 사법 Round Table AI기술과 관련하여, 미래의 사법부가 추구해야 할 바람직한 모습을 연구하고 설계하기 위한 방향에 대하여 논의.",
+      "institution": "대법원 사법정책연구원",
+      "category": "연구기관",
+      "links": [
+        {
+          "title": "대법원 사법정책연구원",
+          "url": "https://jpri.scourt.go.kr/main.do"
+        },
+        {
+          "title": "Slides",
+          "url": "https://www.slideshare.net/ssuserd66df4/2022-ai"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-238",
+      "type": "lectures",
+      "title": "스마트팜과 파생 직업, 잡을 수 있는 기회들",
+      "url": "https://bhban.kr/lectures/lecture-238/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@d1e6ff843bca9c9113e216b2504fe8fe1c35d7c7/src/images/lectures/238.webp",
+      "date_text": "2021년",
+      "description": "2021년 세종시교육청 영상진로박람회에서 스마트팜과 농업 자동화 기술, 관련 직업과 기회를 소개하는 진로특강을 진행했습니다.",
+      "institution": "세종시교육청",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-29-logo-bfc9281b504f9c5d",
+      "type": "lectures",
+      "title": "PMF와 그로스해킹, PDI와 스타트업의 조직구성, 공동창업계약과 자금조달",
+      "url": "https://bhban.kr/lectures/lecture-29-logo-bfc9281b504f9c5d/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/29-logo.webp",
+      "date_text": "2021년",
+      "description": "",
+      "institution": "전북 청년창업사관학교",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "전북 청년창업사관학교",
+          "url": "https://start.kosmes.or.kr/yh_mai001_001.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-27-resized-228d9dbbab06-28f48dcc604da0f5",
+      "type": "lectures",
+      "title": "스마트팜 교육",
+      "url": "https://bhban.kr/lectures/lecture-27-resized-228d9dbbab06-28f48dcc604da0f5/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/27-resized-228d9dbbab06.webp",
+      "date_text": "2021년",
+      "description": "대구한의대학교 교수진 및 시설팀 관계자들 대상 스마트팜 강의",
+      "institution": "대구한의대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "대구한의대학교",
+          "url": "https://www.dhu.ac.kr/"
+        }
+      ]
+    },
+    {
+      "id": "lectures:course-20",
+      "type": "lectures",
+      "title": "코스콤 임직원 대상 교육",
+      "url": "https://bhban.kr/lectures/course-20/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/courses/20-resized-708ab8fce56f.webp",
+      "date_text": "2021",
+      "description": "비개발자를 위한 파이썬과 엑셀/한글 RPA 실습 (24차시) 비전공자 사무직 수강생 전원이 자신만의 업무 자동화 소프트웨어를 개발하고, 윈도우용 응용 프로그램으로 빌드하여 배포까지 달성",
+      "institution": "",
+      "category": "기업",
+      "links": []
+    },
+    {
+      "id": "lectures:course-19",
+      "type": "lectures",
+      "title": "스마트팜 교육 프로그램",
+      "url": "https://bhban.kr/lectures/course-19/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/courses/19-faces-blurred-98d22e225448.webp",
+      "date_text": "2021",
+      "description": "대구 서구 도시재생지원센터 원고개마을 조성사업, 4차산업혁명과 스마트팜 경영방법 5주 교육과정",
+      "institution": "",
+      "category": "공공기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-3-resized-45e98a236fa9-9d7045ae67b596b5",
+      "type": "lectures",
+      "title": "IoT 연수",
+      "url": "https://bhban.kr/lectures/lecture-3-resized-45e98a236fa9-9d7045ae67b596b5/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/3-resized-45e98a236fa9.webp",
+      "date_text": "2020.12.08.",
+      "description": "교사 연수. IoT 이론강좌 및 실습지도방안",
+      "institution": "한국생명과학고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "한국생명과학고등학교",
+          "url": "https://school.gyo6.net/hansaenghs/main.do?sysId=hansaenghs"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-9-resized-8284abecb9a8-3e278f120b9f4685",
+      "type": "lectures",
+      "title": "AI개발을 위한 프레임워크",
+      "url": "https://bhban.kr/lectures/lecture-9-resized-8284abecb9a8-3e278f120b9f4685/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/9-resized-8284abecb9a8.webp",
+      "date_text": "2020.10.14.",
+      "description": "동서울대학교 LINK+ AI입문 특강",
+      "institution": "동서울대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "동서울대학교",
+          "url": "https://www.du.ac.kr"
+        },
+        {
+          "title": "News",
+          "url": "http://www.kdpress.co.kr/news/articleView.html?idxno=99797"
+        },
+        {
+          "title": "Slides",
+          "url": "https://www.slideshare.net/ssuserd66df4/ai-ai-251373482"
+        },
+        {
+          "title": "Vlog",
+          "url": "https://youtu.be/4uSN6mEBdNo"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-11-resized-60c365206d7c-ff71c7b21aa99db3",
+      "type": "lectures",
+      "title": "농촌체험상품 개발 브랜딩, 상표출원 교육 특강",
+      "url": "https://bhban.kr/lectures/lecture-11-resized-60c365206d7c-ff71c7b21aa99db3/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/11-resized-60c365206d7c.webp",
+      "date_text": "2020.06.02. 06.09.",
+      "description": "한국생명과학고등학교 고교학점제 초청강연",
+      "institution": "한국생명과학고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "한국생명과학고등학교",
+          "url": "https://school.gyo6.net/hansaenghs/main.do?sysId=hansaenghs"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-2",
+      "type": "lectures",
+      "title": "스마트팜 교육 프로그램",
+      "url": "https://bhban.kr/lectures/lecture-2/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/2-resized-4b268e1722eb.webp",
+      "date_text": "2020년",
+      "description": "대구 서구 도시재생지원센터 인동촌 백년마을 도시재생뉴딜사업, 마을관리 사회적협동조합 교육과정 4주 교육과정",
+      "institution": "대구광역시 서구청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "대구광역시 서구청",
+          "url": "https://www.dgs.go.kr/main.do"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-8-logo-85a8196041f67ca8",
+      "type": "lectures",
+      "title": "스마트팜과 수경재배",
+      "url": "https://bhban.kr/lectures/lecture-8-logo-85a8196041f67ca8/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/8-logo.webp",
+      "date_text": "2020년",
+      "description": "안동대학교 농업마이스터과정",
+      "institution": "안동대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "안동대학교",
+          "url": "https://www.andong.ac.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-10-resized-12de82da950e-4888f1d460c57e0d",
+      "type": "lectures",
+      "title": "가장 오래된 산업에 첨단기술 끼얹기",
+      "url": "https://bhban.kr/lectures/lecture-10-resized-12de82da950e-4888f1d460c57e0d/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/10-resized-12de82da950e.webp",
+      "date_text": "2020년",
+      "description": "넥슨 NYPC 토크콘서트",
+      "institution": "넥슨",
+      "category": "기업",
+      "links": [
+        {
+          "title": "넥슨",
+          "url": "https://www.nexon.com"
+        },
+        {
+          "title": "News",
+          "url": "http://gamefocus.co.kr/detail.php?number=108335"
+        },
+        {
+          "title": "YouTube",
+          "url": "https://youtu.be/lu4UOpEnHyY"
+        },
+        {
+          "title": "Slides",
+          "url": "https://www.slideshare.net/ssuserd66df4/nexon-nypc-2020"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-12-logo-ed059624b1785bfb",
+      "type": "lectures",
+      "title": "호프스테더 권력거리 이론 관점에서 본 고용노동부 행정혁신 성공사례",
+      "url": "https://bhban.kr/lectures/lecture-12-logo-ed059624b1785bfb/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/12-logo.webp",
+      "date_text": "2020년",
+      "description": "농촌진흥청 혁신역량향상 교육",
+      "institution": "농촌진흥청",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "농촌진흥청",
+          "url": "https://www.rda.go.kr/main/main.do"
+        },
+        {
+          "title": "brunch.co.kr",
+          "url": "https://brunch.co.kr/@needleworm/209"
+        },
+        {
+          "title": "brunch.co.kr",
+          "url": "https://brunch.co.kr/@needleworm/210"
+        },
+        {
+          "title": "Notes",
+          "url": "https://brunch.co.kr/@needleworm/211"
+        }
+      ]
+    },
+    {
+      "id": "lectures:course-18",
+      "type": "lectures",
+      "title": "선도농가 멘토링 - 스마트팜",
+      "url": "https://bhban.kr/lectures/course-18/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/courses/18-faces-blurred-35bed82e7e3d.webp",
+      "date_text": "2020",
+      "description": "한국생명과학고등학교 선도농가 멘토링 현장교수 4주 교육과정",
+      "institution": "",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:course-17",
+      "type": "lectures",
+      "title": "농업경영체, 경작이 아닌 경영을 기획하라",
+      "url": "https://bhban.kr/lectures/course-17/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/courses/17-resized-f50fcaa129f3.webp",
+      "date_text": "2020",
+      "description": "한국생명과학고등학교 고교학점제 교수 (4주)",
+      "institution": "",
+      "category": "교육기관",
+      "links": []
+    },
+    {
+      "id": "lectures:lecture-18-resized-8a1233e62b8a-c59625ea4c4e4fbb",
+      "type": "lectures",
+      "title": "그로스해킹을 통한 행정혁신 사례",
+      "url": "https://bhban.kr/lectures/lecture-18-resized-8a1233e62b8a-c59625ea4c4e4fbb/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/18-resized-8a1233e62b8a.webp",
+      "date_text": "2019.07.19.",
+      "description": "2019 제16회 워크 스마트 포럼 - 로보틱 프로세스 자동화 (RPA), 행정안전부 초청",
+      "institution": "행정안전부",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "행정안전부",
+          "url": "https://www.mois.go.kr"
+        },
+        {
+          "title": "Lecture",
+          "url": "https://bhban.tistory.com/9"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-14-resized-cf5c75bc9703-ede73cf8099b7587",
+      "type": "lectures",
+      "title": "혁신의 장벽을 개발자스럽게 부수기",
+      "url": "https://bhban.kr/lectures/lecture-14-resized-cf5c75bc9703-ede73cf8099b7587/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/14-resized-cf5c75bc9703.webp",
+      "date_text": "2019년",
+      "description": "마소콘 2019 기조연설. 코딩하는 공익 썰을 풀고 왔습니다. 저를 보기 위해 강의실이 가득 찬 것은 물론, 복도 밖까지 길게 줄이 이어졌습니다.",
+      "institution": "마소콘 2019",
+      "category": "컨퍼런스",
+      "links": [
+        {
+          "title": "마소콘 2019",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2019112502618"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-13-resized-f485553ab4f9-4b8d76132989a2cd",
+      "type": "lectures",
+      "title": "잔머리로 시스템을 가지고 노는 방법",
+      "url": "https://bhban.kr/lectures/lecture-13-resized-f485553ab4f9-4b8d76132989a2cd/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/13-resized-f485553ab4f9.webp",
+      "date_text": "2019년",
+      "description": "경안고등학교 초청강연",
+      "institution": "경안고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "경안고등학교",
+          "url": "http://school.gyo6.net/ka"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-15-logo-63840e8690b8396c",
+      "type": "lectures",
+      "title": "수필 두 편으로 50일만에 대한민국 움직이기",
+      "url": "https://bhban.kr/lectures/lecture-15-logo-63840e8690b8396c/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/15-logo.webp",
+      "date_text": "2019년",
+      "description": "계명대학교 초청강연",
+      "institution": "계명대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "계명대학교",
+          "url": "https://www.kmu.ac.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-16-resized-61d993268fa7-a9094eacaf0bc3e0",
+      "type": "lectures",
+      "title": "실패하는 스타트업",
+      "url": "https://bhban.kr/lectures/lecture-16-resized-61d993268fa7-a9094eacaf0bc3e0/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/16-resized-61d993268fa7.webp",
+      "date_text": "2019년",
+      "description": "POSTECH 영재기업인 교육원 온라인 마이 멘토 초청강연",
+      "institution": "포항공과대학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "포항공과대학교",
+          "url": "https://www.postech.ac.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-17-faces-blurred-934f833436a6-b18dd4b870396b6d",
+      "type": "lectures",
+      "title": "파이썬과 함께라는 마음가짐만 있으면 못 할 것은 없다는 마음가짐만 있으면 정말로 못 할 것은 없다",
+      "url": "https://bhban.kr/lectures/lecture-17-faces-blurred-934f833436a6-b18dd4b870396b6d/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/17-faces-blurred-934f833436a6.webp",
+      "date_text": "2019년",
+      "description": "2019 PyconKR 기조연설",
+      "institution": "PyconKR 2019",
+      "category": "컨퍼런스",
+      "links": [
+        {
+          "title": "PyconKR 2019",
+          "url": "https://pycon.kr"
+        },
+        {
+          "title": "녹화영상",
+          "url": "https://www.youtube.com/watch?v=c0w4oTZ41zY"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-19-resized-86a59547d884-b6222874c40bbac7",
+      "type": "lectures",
+      "title": "행정혁신 성공사례 강연",
+      "url": "https://bhban.kr/lectures/lecture-19-resized-86a59547d884-b6222874c40bbac7/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/19-resized-86a59547d884.webp",
+      "date_text": "2019년",
+      "description": "2019, 정부혁신 담당관 워크숍, 행정안전부 초청",
+      "institution": "행정안전부",
+      "category": "공공기관",
+      "links": [
+        {
+          "title": "행정안전부",
+          "url": "https://www.mois.go.kr"
+        },
+        {
+          "title": "Blog",
+          "url": "https://blog.naver.com/mopaspr/221516836663"
+        },
+        {
+          "title": "News",
+          "url": "https://www.news1.kr/articles/?3585452"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-20-faces-blurred-720564fad36b-3aa1c8c2e9c727c0",
+      "type": "lectures",
+      "title": "코딩하는 공익 - 아직 세상을 바꾸고 싶은 개발자에게",
+      "url": "https://bhban.kr/lectures/lecture-20-faces-blurred-720564fad36b-3aa1c8c2e9c727c0/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/20-faces-blurred-720564fad36b.webp",
+      "date_text": "2019년",
+      "description": "KCD2019, [코딩이랑무관합니다만] 세션",
+      "institution": "KCD2019",
+      "category": "컨퍼런스",
+      "links": [
+        {
+          "title": "brunch.co.kr",
+          "url": "https://brunch.co.kr/@needleworm/59"
+        },
+        {
+          "title": "Blog",
+          "url": "https://brunch.co.kr/@needleworm/61"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-21-faces-blurred-768109cfe8b3-8fd1368ea82fe082",
+      "type": "lectures",
+      "title": "학생창업과 KAIST",
+      "url": "https://bhban.kr/lectures/lecture-21-faces-blurred-768109cfe8b3-8fd1368ea82fe082/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/21-faces-blurred-768109cfe8b3.webp",
+      "date_text": "2018년",
+      "description": "2018 상반기, E5-KAIST 시니어 멘토 초청강연",
+      "institution": "KAIST",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "KAIST",
+          "url": "https://www.kaist.ac.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:course-16",
+      "type": "lectures",
+      "title": "리더십3: 리스크 없는 학생창업",
+      "url": "https://bhban.kr/lectures/course-16/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@ce92fa43f34d73dbdff7e041e2a6770bd9b3a3b0/src/images/lectures/logo-kaist-8382487cf4b2.webp",
+      "date_text": "2017",
+      "description": "KAIST 가을학기 학부 교양필수 강사",
+      "institution": "",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "수강생 후기",
+          "url": "https://brunch.co.kr/@needleworm/13"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-22-faces-blurred-b88f42c19acd-078757d785afd730",
+      "type": "lectures",
+      "title": "학생신분으로 스타트업 세우기",
+      "url": "https://bhban.kr/lectures/lecture-22-faces-blurred-b88f42c19acd-078757d785afd730/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/22-faces-blurred-b88f42c19acd.webp",
+      "date_text": "2016년",
+      "description": "2016 KLC 벤처포럼 at KAIST",
+      "institution": "KLC 벤처포럼",
+      "category": "컨퍼런스",
+      "links": [
+        {
+          "title": "KLC 벤처포럼",
+          "url": "https://www.kaist.ac.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-23-resized-afa106c902ab-9de27adc8fbeb637",
+      "type": "lectures",
+      "title": "아이디어에서 사업화까지",
+      "url": "https://bhban.kr/lectures/lecture-23-resized-afa106c902ab-9de27adc8fbeb637/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/23-resized-afa106c902ab.webp",
+      "date_text": "2012년",
+      "description": "제 2회 KAIST 전국 발명대회 시상식 워크숍 초청강연",
+      "institution": "KAIST 전국 발명대회",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "KAIST 전국 발명대회",
+          "url": "https://www.kaist.ac.kr"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-24-resized-90f0677f737b-07cb6e2a53196305",
+      "type": "lectures",
+      "title": "뇌과학에 발을 들이면서",
+      "url": "https://bhban.kr/lectures/lecture-24-resized-90f0677f737b-07cb6e2a53196305/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/24-resized-90f0677f737b.webp",
+      "date_text": "2012년",
+      "description": "경안고등학교 과학동아리 초청강연",
+      "institution": "경안고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "경안고등학교",
+          "url": "http://school.gyo6.net/ka"
+        }
+      ]
+    },
+    {
+      "id": "lectures:lecture-25-resized-610ad637772f-f38caa17de4d90a0",
+      "type": "lectures",
+      "title": "학습법 멘토링 강연",
+      "url": "https://bhban.kr/lectures/lecture-25-resized-610ad637772f-f38caa17de4d90a0/",
+      "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@0121b1cd870b2bfdd17fc4c6a6eda89637a522a9/src/images/lectures/25-resized-610ad637772f.webp",
+      "date_text": "2012년",
+      "description": "대전만년고등학교",
+      "institution": "대전만년고등학교",
+      "category": "교육기관",
+      "links": [
+        {
+          "title": "대전만년고등학교",
+          "url": "https://mannyonhs.djsch.kr/main.do"
+        }
+      ]
+    }
+  ]
+}
