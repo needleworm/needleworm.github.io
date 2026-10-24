@@ -23,9 +23,10 @@ LECTURE_CATEGORIES = [
     ('research', '연구기관'), ('conferences', '컨퍼런스'),
 ]
 GROUPS = [
-    ('about', 'About', ['home']), ('books', 'Books', ['books']),
-    ('media', 'Media', ['media', 'news']), ('lectures', 'Lectures', ['lectures']),
+    ('about', 'About', ['home']), ('media', 'Media', ['media']),
+    ('books', 'Books', ['books']), ('lectures', 'Lectures', ['lectures']),
     ('courses', 'Courses', ['courses-online', 'courses-offline']),
+    ('news', 'News', ['news']),
     ('research', 'R&D', ['papers', 'patents', 'projects']),
     ('activities', 'ETC', ['activities', 'memberships', 'collections']),
     ('contact', 'Contact', ['contact']),
@@ -273,7 +274,7 @@ def mobile_next_page(page, pages):
     label = destination['label']
     if destination['group'] == 'courses':
         label = 'Courses · ' + label
-    mobile_destination = pages['media'] if page['key'] == 'home' else None
+    mobile_destination = pages['books'] if page['key'] == 'home' else None
     mobile_attrs = (f' data-mobile-href="{path(mobile_destination)}"'
         f' data-mobile-label="{escape(mobile_destination["label"], quote=True)}"'
         f' data-mobile-heading="{escape(mobile_destination["heading"], quote=True)}"') if mobile_destination else ''
@@ -302,13 +303,13 @@ def home_directory(pages, counts):
     return '<section class="section-group home-directory" aria-labelledby="directory-title"><div class="group-header"><h2 id="directory-title" class="group-title">Explore</h2><p class="group-desc">책과 강의, 연구와 개발</p></div><div class="grid-container">' + ''.join(f'<a class="singleWebsiteCard directory-card" href="{path(pages[key])}"><h3>{title}</h3><p>{desc}</p><span class="directory-link">전체 {count}건 보기 <span aria-hidden="true">→</span></span></a>' for key, title, desc, count in items) + '</div></section>'
 
 
-def home_books(page, source):
-    """Use the canonical Books cards in the mobile home flow, with no copy to sync."""
+def home_mobile_section(page, source):
+    """Use the first content page in the mobile home flow, with no copy to sync."""
     subtitle = page.get('subtitle', page['heading'])
-    return ('<section class="section-group home-books-mobile" aria-labelledby="home-books-title">'
-        '<header class="group-header"><h2 id="home-books-title" class="group-title">Books</h2>'
+    return (f'<section class="section-group home-section-mobile" data-page="{page["key"]}" aria-labelledby="home-section-title">'
+        f'<header class="group-header"><h2 id="home-section-title" class="group-title">{escape(page["label"])}</h2>'
         f'<p class="group-desc">{escape(subtitle)}</p></header>'
-        + section_html('books', source) + '</section>')
+        + section_html(page['key'], source) + '</section>')
 
 
 def build(check=False):
@@ -353,7 +354,7 @@ def build(check=False):
             body = f'<div id="{wrapper}">{body}</div>'
         if page['key'] == 'home':
             body = ('<div class="section-group"><header class="group-header"><h2 class="group-title">About</h2></header>'
-                + body + '</div>' + home_directory(pages, view_counts) + home_books(pages['books'], views['books']))
+                + body + '</div>' + home_directory(pages, view_counts) + home_mobile_section(pages['media'], views['media']))
             hero = home_hero(counts)
             page_header = ''
         else:
@@ -404,7 +405,7 @@ def build(check=False):
         outputs[target] = output
         digest = sha256(output.encode('utf8')).hexdigest()
         lastmod = previous.get(target,{}).get('lastmod',date.today().isoformat()) if previous.get(target,{}).get('sha256') == digest else date.today().isoformat()
-        display_sections = page['sections'] + (['books'] if page['key'] == 'home' else [])
+        display_sections = page['sections'] + (['media'] if page['key'] == 'home' else [])
         manifest[target] = {'sha256':digest,'lastmod':lastmod,'sections':display_sections,'cards':sum(view_counts[k] for k in display_sections)}
     for record in paper_records.values():
         url = config['url'] + record['path']

@@ -124,4 +124,6 @@ def render_lecture(record):
     card = re.sub(r'\b(src|href)=(["\'])(?:\./)?src/', r'\1=\2/src/', card)
     card = re.sub(r'<img\b(?![^>]*\bdecoding=)', '<img decoding="async"', card)
     return ('<nav class="lecture-breadcrumbs" aria-label="현재 위치"><a href="/lectures/">Lectures</a></nav>'
-            '<article class="lecture-detail" data-lecture-id="' + record['record_id'] + '">' + card + '</article>')
+            '<article class="lecture-detail" data-lecture-id="' + record['record_id'] + '">' + card + '</article>'
+            '<nav class="lecture-return" aria-label="강의 목록으로 이동"><a class="lecture-return-link" href="/lectures/">'
+            '<span aria-hidden="true">←</span>강의목록으로 돌아가기</a></nav>')

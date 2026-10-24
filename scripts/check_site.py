@@ -368,9 +368,9 @@ def main():
             require(next_links[0].get('rel') == 'next', f'{page["key"]}: missing next-page relation')
             require(source.index('</main>') < source.index('id="mobile-next-link"') < source.index('<footer'), f'{page["key"]}: next-page prompt must be between main content and footer')
             if page['key'] == 'home':
-                require(next_links[0].get('data-mobile-href') == '/media/', 'Home mobile continuation must skip the Books list already shown')
-                require(next_links[0].get('data-mobile-label') == pages['media']['label'], 'Home mobile continuation label mismatch')
-                require(next_links[0].get('data-mobile-heading') == pages['media']['heading'], 'Home mobile continuation heading mismatch')
+                require(next_links[0].get('data-mobile-href') == '/books/', 'Home mobile continuation must skip the Media list already shown')
+                require(next_links[0].get('data-mobile-label') == pages['books']['label'], 'Home mobile continuation label mismatch')
+                require(next_links[0].get('data-mobile-heading') == pages['books']['heading'], 'Home mobile continuation heading mismatch')
         require(sum(t=='h1' for t,a in doc.tags)==1, f'{page["key"]}: expected one h1')
         require(not any(t=='template' for t,a in doc.tags), f'{page["key"]}: inert templates remain')
         require(not doc.unclosed_layout,f'{page["key"]}: layout div is not closed before {doc.unclosed_layout}')
@@ -383,11 +383,11 @@ def main():
         schema = re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S)
         require(len(schema)==1 and bool(json.loads(schema[0])['@graph']),f'{page["key"]}: invalid structured data')
         expected_cards = 0
-        display_sections = page['sections'] + (['books'] if page['key'] == 'home' else [])
+        display_sections = page['sections'] + (['media'] if page['key'] == 'home' else [])
         if page['key'] == 'home':
-            home_books_sections = [a for t,a in doc.tags if t=='section' and 'home-books-mobile' in a.get('class','').split()]
-            require(len(home_books_sections)==1, 'Home must have one canonical mobile Books list')
-            require(source.index('id="tab-about"') < source.index('class="section-group home-books-mobile"') < source.index('</main>'), 'Home mobile Books must follow the About content')
+            home_sections = [a for t,a in doc.tags if t=='section' and 'home-section-mobile' in a.get('class','').split()]
+            require(len(home_sections)==1 and home_sections[0].get('data-page')=='media', 'Home must start with the canonical mobile Media list')
+            require(source.index('id="tab-about"') < source.index('class="section-group home-section-mobile"') < source.index('</main>'), 'Home mobile Media must follow the About content')
         for key in display_sections:
             section = views[key]
             expected = Document(section)

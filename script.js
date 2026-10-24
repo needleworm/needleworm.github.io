@@ -108,9 +108,9 @@ function setupSectionNavigation() {
     const collect = () => {
         sections = [{ key: initialPage, element: document.querySelector('.hero') || main }];
         const about = main.querySelector('#tab-about');
-        const books = main.querySelector('.home-books-mobile');
+        const homeSection = main.querySelector('.home-section-mobile');
         if (about) sections.push({ key: initialPage, element: about });
-        if (books) sections.push({ key: 'books', element: books });
+        if (homeSection) sections.push({ key: homeSection.dataset.page, element: homeSection });
         main.querySelectorAll(':scope > .stream-page[data-page]').forEach(element => {
             sections.push({ key: element.dataset.page, element });
         });

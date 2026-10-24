@@ -71,6 +71,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .lecture-detail .lecture_title { font-size: clamp(1.35rem, 3vw, 2rem); line-height: 1.5; margin: 0 0 1.25rem; overflow-wrap: anywhere; }
 .lecture-detail .abstract { text-align: left; line-height: 1.85; overflow-wrap: anywhere; }
 .lecture-detail .gitIcons { flex-wrap: wrap; gap: .75rem; }
+.lecture-return { display: flex; justify-content: center; margin-top: 1.5rem; }
+.lecture-return-link { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; width: 100%; max-width: 360px; min-height: 48px; padding: .8rem 1.25rem; border-radius: 10px; background: var(--primary-color); color: #fff; font-size: .9rem; text-align: center; }
+.lecture-return-link:hover, .lecture-return-link:focus-visible { color: #fff; filter: brightness(1.12); }
 .static-site.content-page.paper-detail-page .page-main { max-width: 1220px; padding-top: 2rem; padding-bottom: 3rem; }
 .paper-breadcrumbs { display: flex; gap: .75rem; margin-bottom: 1.5rem; font-size: .85rem; }
 .paper-detail { padding: clamp(1.25rem, 4vw, 3rem); background: #fff; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
@@ -197,7 +200,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .65rem 1.4rem; max-width: 900px; margin: 0 auto 1.6rem; }
 .footer-links a { font-size: .83rem; }
 .btn-to-top { border: 0; font-size: 1.5rem; cursor: pointer; }
-.home-books-mobile { display: none; }
+.home-section-mobile { display: none; }
 .mobile-next-page { padding: 1.75rem 1.5rem; background: var(--bg-color, #f8f9fa); text-align: center; }
 .mobile-next-link { display: flex; flex-direction: column; gap: .4rem; max-width: 440px; margin: 0 auto; padding: 1.25rem 1.5rem; color: var(--primary-color); background: #fff; border: 1px solid #e5e9ed; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
 .mobile-next-eyebrow { color: var(--text-muted); font-size: .75rem; }
@@ -213,8 +216,8 @@ body.continuous-scroll { overflow-x: clip !important; overflow-y: visible; }
 .stream-page .stream-permalink:hover { color: var(--secondary-color); }
 .stream-page .tab-content-item:not(#tab-codes):not(#tab-websites) .content-section > .row:first-child:has(h2.section-heading) { display: none; }
 .continuous-scroll .home-directory { display: none; }
-.continuous-scroll .home-books-mobile { display: block; padding-bottom: 2rem; }
-.home-books-mobile + .stream-page { margin-top: 0; padding-top: 2.5rem; border-top: 0; }
+.continuous-scroll .home-section-mobile { display: block; padding-bottom: 2rem; }
+.home-section-mobile + .stream-page { margin-top: 0; padding-top: 2.5rem; border-top: 0; }
 .stream-page #contact { padding: 0; }
 .stream-page[data-page="contact"] :is(#div-institution, #div-phone, #div-email) { display: block; opacity: 1; visibility: visible; max-height: none; height: auto; transform: none; margin-bottom: 1.4rem; }
 .continuous-scroll.stream-pending .site-footer { display: none; }
@@ -228,8 +231,8 @@ body.continuous-scroll { overflow-x: clip !important; overflow-y: visible; }
 .stream-retry { margin-top: 1rem; padding: .7rem 1.2rem; background: #fff; border: 1px solid #cbd4dc; border-radius: 10px; color: var(--primary-color); font: inherit; cursor: pointer; }
 @media (max-width: 768px) {
     .home-page .home-directory { display: none; }
-    .home-books-mobile { display: block; }
-    .home-books-mobile .content-section > .row:first-child:has(h2.section-heading) { display: none; }
+    .home-section-mobile { display: block; }
+    .home-section-mobile .content-section > .row:first-child:has(h2.section-heading) { display: none; }
 }
 .lecture-results { margin: -1rem 0 1.5rem; color: var(--text-muted); font-size: .85rem; text-align: center; }
 body[data-page="lectures"] { overflow-x: clip !important; overflow-y: visible; }

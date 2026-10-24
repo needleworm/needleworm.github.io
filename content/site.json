@@ -14,19 +14,6 @@
       "group": "about"
     },
     {
-      "slug": "books",
-      "key": "books",
-      "title": "저서 | 반병현",
-      "heading": "저서",
-      "label": "Books",
-      "description": "반병현의 AI·생성형 AI·업무 자동화·프로그래밍 도서를 소개합니다. 책 소개와 서점 구매 링크를 확인하세요.",
-      "sections": [
-        "books"
-      ],
-      "group": "books",
-      "subtitle": "Recent Publications"
-    },
-    {
       "slug": "media",
       "key": "media",
       "title": "방송·영상 | 반병현",
@@ -40,16 +27,29 @@
       "subtitle": "Me on Media"
     },
     {
-      "slug": "news",
-      "key": "news",
-      "title": "언론 보도 | 반병현",
-      "heading": "언론 보도",
-      "label": "News",
-      "description": "반병현의 AI 강의, 저서, 연구와 활동을 다룬 언론 보도 및 원문 기사 링크를 확인하세요.",
+      "slug": "books",
+      "key": "books",
+      "title": "저서 | 반병현",
+      "heading": "저서",
+      "label": "Books",
+      "description": "반병현의 AI·생성형 AI·업무 자동화·프로그래밍 도서를 소개합니다. 책 소개와 서점 구매 링크를 확인하세요.",
       "sections": [
-        "news"
+        "books"
       ],
-      "group": "media"
+      "group": "books",
+      "subtitle": "Recent Publications"
+    },
+    {
+      "slug": "lectures",
+      "key": "lectures",
+      "title": "AI 강의·출강 이력 | 반병현",
+      "heading": "강의·출강 이력",
+      "label": "Lectures",
+      "description": "기업·공공기관·교육기관·연구기관의 AI 교육과 업무 자동화 강의 이력을 확인하세요. 기관별 분류와 최근 강의 날짜를 제공합니다.",
+      "sections": [
+        "lectures"
+      ],
+      "group": "lectures"
     },
     {
       "slug": "courses/online",
@@ -78,16 +78,16 @@
       "group": "courses"
     },
     {
-      "slug": "lectures",
-      "key": "lectures",
-      "title": "AI 강의·출강 이력 | 반병현",
-      "heading": "강의·출강 이력",
-      "label": "Lectures",
-      "description": "기업·공공기관·교육기관·연구기관의 AI 교육과 업무 자동화 강의 이력을 확인하세요. 기관별 분류와 최근 강의 날짜를 제공합니다.",
+      "slug": "news",
+      "key": "news",
+      "title": "언론 보도 | 반병현",
+      "heading": "언론 보도",
+      "label": "News",
+      "description": "반병현의 AI 강의, 저서, 연구와 활동을 다룬 언론 보도 및 원문 기사 링크를 확인하세요.",
       "sections": [
-        "lectures"
+        "news"
       ],
-      "group": "lectures"
+      "group": "news"
     },
     {
       "slug": "papers",

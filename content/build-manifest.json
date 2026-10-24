@@ -1,39 +1,39 @@
 {
   "index.html": {
-    "sha256": "b7d2b6723ed14143cec80a3f7165e3f328373392badb58ae62c149ffe5f68b8b",
+    "sha256": "53d4797729e758c21736a31233340ee1f4f02ce7b61a388a4430fbacf1b8e88d",
     "lastmod": "2026-10-24",
     "sections": [
       "about",
-      "books"
+      "media"
     ],
-    "cards": 36
-  },
-  "books/index.html": {
-    "sha256": "9a20b119e0ae9cfc6210fcc35a224fa1c62b02653417b807844333fb438eeb54",
-    "lastmod": "2026-10-24",
-    "sections": [
-      "books"
-    ],
-    "cards": 36
+    "cards": 21
   },
   "media/index.html": {
-    "sha256": "75d1751a568d0d5c9ae9fd30d59ade392a6c17fa2488f4208056e0015647e96c",
+    "sha256": "1e9fc9dc18ee7571088c23dc35f9fc66a3a56c88f1999c4a15dc0b8a621d3723",
     "lastmod": "2026-10-24",
     "sections": [
       "media"
     ],
     "cards": 21
   },
-  "news/index.html": {
-    "sha256": "c082a848e9dc2ccac5f9cf1922d4298a01e99feed37d1f630d8fe8eab3f417d5",
+  "books/index.html": {
+    "sha256": "edcd7440edf73e716f0413753da97b2a250197f12796a58d8dde67cb388c4128",
     "lastmod": "2026-10-24",
     "sections": [
-      "news"
+      "books"
     ],
-    "cards": 52
+    "cards": 36
+  },
+  "lectures/index.html": {
+    "sha256": "6b9a8a3d02b9dd5a56aa9ef1ba0e952f5acc38de35c5d85b10d32a69c3513624",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "lectures"
+    ],
+    "cards": 231
   },
   "courses/online/index.html": {
-    "sha256": "1db1990303a5c123e853b4ce9230a7b83dc27586e4105266ca7778ab748c5ff9",
+    "sha256": "3507cb5225e78755778cec2c2d3153ca3bb52cb0ac582e544b3b96cd405bb86c",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-online"
@@ -41,23 +41,23 @@
     "cards": 29
   },
   "courses/offline/index.html": {
-    "sha256": "6a6ffe606ed5a7b2221af61d7a7145517d5d78fbe9cdc359a5b390cb7acb3049",
+    "sha256": "c54ebc385083c807ba002a8f55cedab2d80a3d9d5d6d1e960581ebb556e22ff6",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-offline"
     ],
     "cards": 14
   },
-  "lectures/index.html": {
-    "sha256": "4034e57b58e823eaeb5138811606e94b5509c4e67f05eb552fbb3c0bf2c945b6",
+  "news/index.html": {
+    "sha256": "0023ba51cbbc8b05672053d666b35dd2b35f2211e55bd00c7ba04ece729b2965",
     "lastmod": "2026-10-24",
     "sections": [
-      "lectures"
+      "news"
     ],
-    "cards": 231
+    "cards": 52
   },
   "papers/index.html": {
-    "sha256": "2067a23dec06421f79f27202d6b5751d9f62c530533732ba137b59b27a54d54e",
+    "sha256": "daaa80bb1fb55189863d964eb6db578dc047c5a5d080d20076cb5918d0e5672a",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -65,7 +65,7 @@
     "cards": 28
   },
   "patents/index.html": {
-    "sha256": "4bc503d81a27616cea89e08fcf00d1bdec2f18f6b525bb57bb89722da58c21f4",
+    "sha256": "929a1c70bec74ed2ffc80cf6435be4d799386d769fc92adccff746d8d6f65ba2",
     "lastmod": "2026-10-24",
     "sections": [
       "patents"
@@ -73,7 +73,7 @@
     "cards": 34
   },
   "projects/index.html": {
-    "sha256": "23d00a6f4b55a3be71ff878e0e6ff27ab6fba04a6972886b7c42fd57dddf8da8",
+    "sha256": "6b774869892b3eb4779d1d51e14e48b829313896130a55323c37ea0bf84cc1ac",
     "lastmod": "2026-10-24",
     "sections": [
       "codes",
@@ -82,7 +82,7 @@
     "cards": 34
   },
   "activities/index.html": {
-    "sha256": "1df00a37518f459ece0ee667b7b3064cb51ae19c1636a4f0d25632c35ccfba9b",
+    "sha256": "07feb53ba7d09cf1d389507980bdd03da553a7dd087e2e8b3042c03aa74f193c",
     "lastmod": "2026-10-24",
     "sections": [
       "social"
@@ -90,7 +90,7 @@
     "cards": 2
   },
   "memberships/index.html": {
-    "sha256": "711807067b01660d7f11863707b919a089d53f161542cd908a9e9b77b2f34a29",
+    "sha256": "bf7d3c954294878bc57e852b793270bea7a31a868700e1b301e3155f22eb896d",
     "lastmod": "2026-10-24",
     "sections": [
       "membership"
@@ -98,7 +98,7 @@
     "cards": 9
   },
   "collections/index.html": {
-    "sha256": "ee3ca46a4671022ab68a8a03c165bf26679630e206f527b5faec5dcc558bd552",
+    "sha256": "0d9f0a552f88fc9d06fd6a7b333103bd96f5341d35afb7648f24604bf1880180",
     "lastmod": "2026-10-24",
     "sections": [
       "collections"
@@ -106,7 +106,7 @@
     "cards": 7
   },
   "contact/index.html": {
-    "sha256": "d3b438a49ad4faba9502f3c9e647edbe9482cec969ca99366b0a3ef186f73a34",
+    "sha256": "edd1bbdc93cbe8361f9b6fe347e72d90cbbf65cdb128860e0f8f2cb0778d380d",
     "lastmod": "2026-10-24",
     "sections": [
       "contact"
@@ -114,7 +114,7 @@
     "cards": 0
   },
   "papers/cardiac-ct-adversarial-networks-2018/index.html": {
-    "sha256": "6c69d0b6da56bd7baed52a67508ea32866239ed5641f028cfb1d964a1b9283a8",
+    "sha256": "19b8f7bbae8d0c0bd221a28b647e11ad728b7b418078fe8514939651c9705789",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -123,7 +123,7 @@
     "paper_id": "paper-0"
   },
   "papers/greenhouse-reinforcement-learning-2017/index.html": {
-    "sha256": "f50f2027d3018cab27f0ac62e2cac7e73a5d15c2af5998c2cdff574323b36893",
+    "sha256": "2f64914ede4c23bdc30771042977cd2fd80e8a83cd4aee419edef2e19ddc5511",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -132,7 +132,7 @@
     "paper_id": "paper-1"
   },
   "papers/ode-nutrient-solution-2019/index.html": {
-    "sha256": "4e7293e4865c2b6f8da8e120cf3a3f3d0c93a4b04f7c9f89896221adeecfe7b2",
+    "sha256": "7ad4381b14c440e446b5a847813ed4a56182b6967935302231a47f54d9f37c90",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -141,7 +141,7 @@
     "paper_id": "paper-2"
   },
   "papers/ion-interference-machine-learning-2019/index.html": {
-    "sha256": "842c89608d26b45c27af7c195a475a23239db0ad881d28cd76b27dae41d6ba2b",
+    "sha256": "4acc3790dccca89217415d704a458fb3594b0d57fd8a29d96c24708b88362577",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -150,7 +150,7 @@
     "paper_id": "paper-3"
   },
   "papers/nutrient-solution-management-2020/index.html": {
-    "sha256": "965f3433a964913e73fcde5fec75f6b2acee17895a2250398b8c6ef8ceb52047",
+    "sha256": "22eb00666b5dc898d00b8371a44f064da5937b5cb0d8ab9c77b7a382f575f782",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -159,7 +159,7 @@
     "paper_id": "paper-4"
   },
   "papers/ise-artifact-deep-learning-2020/index.html": {
-    "sha256": "b46f72eb29e9e8a44dbd55312934c91622ae69f1216986851d040ded5a3b3f31",
+    "sha256": "ee75f4316f7bc51cd4a2c24a3325e2339746d73b92749c96ec17620e3a46e01b",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -168,7 +168,7 @@
     "paper_id": "paper-5"
   },
   "papers/nutrient-plant-interaction-2020/index.html": {
-    "sha256": "1d0824b2457592700e4965ccca87925c6309d382d31a6d2bfc8f9e139d82692b",
+    "sha256": "5574135943b0e92327f3770afc30ba552553b474351b674646dddacd0cac5302",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -177,7 +177,7 @@
     "paper_id": "paper-6"
   },
   "papers/gan-d-image-deconvolution-2017/index.html": {
-    "sha256": "6b57cccca8acf59ffa3daf74e869ba5ba7bda9b91bd597435b0a2357a79c4a68",
+    "sha256": "b1a37ba9b18ea7f5f815cdbf9b01f42ae594434b01c45e9b0df4f49320a25b02",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -186,7 +186,7 @@
     "paper_id": "paper-7"
   },
   "papers/phenotype-control-kernel-2018/index.html": {
-    "sha256": "686cbfa9a4c6da16c516bff2eb71ade7e41bb43a8b834c2d7612bfe1f714787a",
+    "sha256": "ac7c7c06a7d5d7f879be76e05b19b8c65cd9e9773a97680eabaa98551b11acc1",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -195,7 +195,7 @@
     "paper_id": "paper-8"
   },
   "papers/korean-nlp-datasets-2022/index.html": {
-    "sha256": "3dfb8dcbc475aeb82bc0034c976557d6e1cc95f2ba343eaa2acb50826184e3d9",
+    "sha256": "8d4d8d72b0a90e284d192261aa94e83551f04300a6a4bf254711f5abbefdda73",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -204,7 +204,7 @@
     "paper_id": "paper-9"
   },
   "papers/plant-factory-mixed-reality-2022/index.html": {
-    "sha256": "1a053d8406be0d17c0b54a5369a0822ccc36cd6373bdd51cd182993b453611e0",
+    "sha256": "c252de4a1e834d5a20fc28c6bee163f71d534e6d33620a5107ff8d1039469938",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -213,7 +213,7 @@
     "paper_id": "paper-10"
   },
   "papers/ai-csat-vocabulary-2023/index.html": {
-    "sha256": "2e1c53b4a653852929117d27625ba161257075bead4c81a8876fde6a9ec96682",
+    "sha256": "d29a1c9f14ea61dfc5bf95246838b701bcfbc3e270029b3c5529b112a89eb516",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -222,7 +222,7 @@
     "paper_id": "paper-11"
   },
   "papers/csat-vocabulary-patterns-2022/index.html": {
-    "sha256": "7326c351d94af0badabbb60db97630262c85dbf1246c22d0937f6625c6e5b65b",
+    "sha256": "e5b7d141ee1ae171a99339be9f20ab1bdb5bc6fb965996a2a20d4a9a5d59dcf9",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -231,7 +231,7 @@
     "paper_id": "paper-12"
   },
   "papers/congnamul-dataset-2023/index.html": {
-    "sha256": "b5a3fccc9f0e8d8f688c7dfc3729a8cd98465a641b2a960a0c64fdd56183d1c2",
+    "sha256": "9a082c2b3f2d3bee0503384b5aeac3e0c34201211f0ccd7afd14c2d4d6659567",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -240,7 +240,7 @@
     "paper_id": "paper-13"
   },
   "papers/faker-2024/index.html": {
-    "sha256": "3307ceca0cc6117fa94875b6a74a70be1e1830a425952f0111f2ead8afb26f2d",
+    "sha256": "abf66fe1941a13866296e9d891d7fd57bc93e84b7c088c4efb7271ba1b8ce486",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -249,7 +249,7 @@
     "paper_id": "paper-14"
   },
   "papers/ai-music-composition-history-2026/index.html": {
-    "sha256": "076def654071382b0a3f7db1ff165308e9844e898c3a13279a7a9609948792bf",
+    "sha256": "6c6578b95490741da5e2d008824d1eec7559d11d0dde0e7696cefcb0aa731c8a",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -258,7 +258,7 @@
     "paper_id": "paper-2026-p01"
   },
   "papers/ode-fermentation-simulator-2026/index.html": {
-    "sha256": "6973c38825a84d4f5c6bea2be388efab153eca3743438e6a28b913e77595606a",
+    "sha256": "7b630bf3909ae252c4a7bfaed12cfc0d9446b7fc748700ff28a94bb7410077d8",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -267,7 +267,7 @@
     "paper_id": "paper-2026-p02"
   },
   "papers/plant-factory-ai-review-2026/index.html": {
-    "sha256": "6006a4b026eef6e01b6ee2dd69d080a70b9d3aca005ba6109f05458d1602aa5b",
+    "sha256": "2eb1e8d09c9674d016227bac5fa72b195d800569d40e6a65ac4973d357f80035",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -276,7 +276,7 @@
     "paper_id": "paper-2026-p03"
   },
   "papers/logistics-ai-review-2026/index.html": {
-    "sha256": "c5560247d893223f29cceb6a10deb1b4411c822348363066c9cbdc88e2bb9d25",
+    "sha256": "fe6d6c70b107b96732c8dcfa12e7fc87795f878028ed04b2d2d12747943241bf",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -285,7 +285,7 @@
     "paper_id": "paper-2026-p04"
   },
   "papers/plant-factory-mcp-agents-2026/index.html": {
-    "sha256": "446eaf67a9d5e6cf8873fea0718f22af05d341d38447606e77010947370b9c19",
+    "sha256": "a4a1b31696434a9cb2bf170fe9257f7240ff4281e9198ab15bb3b8c95eeebdcb",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -294,7 +294,7 @@
     "paper_id": "paper-2026-p05"
   },
   "papers/chemical-engineering-mcp-agents-2026/index.html": {
-    "sha256": "ff8176785b85cb1829af62eea42c8fcd93749d7e8e69091734979054b44635bd",
+    "sha256": "bf33d9107dbeb5911f33edf24a3b850815b84275e8da272743afde12a7717a7a",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -303,7 +303,7 @@
     "paper_id": "paper-2026-p06"
   },
   "papers/agricultural-ai-complex-systems-2026/index.html": {
-    "sha256": "5142f004cc2a397211afc1d8ef94a32418b7f3eccbc70a50b026606828d2f718",
+    "sha256": "74ac943022c7ccb0acc280c4d796f8dcd643d3350bbc735eb8312c25cb30af3f",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -312,7 +312,7 @@
     "paper_id": "paper-2026-p07"
   },
   "papers/technews-agentic-publishing-2026/index.html": {
-    "sha256": "de91d6485c67e94f1f02033827cc272bdf887092406e4db1ee85f1b65fb88ecc",
+    "sha256": "f09c90bc6d6e2a07728d1e19b9dbbc774de71f435aedc179043bcba8bdcac7e6",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -321,7 +321,7 @@
     "paper_id": "paper-2026-p08"
   },
   "papers/llm-peer-review-audit-2026/index.html": {
-    "sha256": "a69d52f65282306d1e33db164e9f05f1c9261c0c577e0899a732e2a5533a088f",
+    "sha256": "26a6dcf8d3f5334ad4a7baef72d9fea24eba047532f0f823248715416e88d732",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -330,7 +330,7 @@
     "paper_id": "paper-2026-p09"
   },
   "papers/scholarly-overlap-delayed-retraction-2026/index.html": {
-    "sha256": "a6e3b7b52f094858ec76d87414d93fcd686bfe8b933a4f84ada19206451b1a35",
+    "sha256": "997c7f5607cb18cb4ffa564c895df646b8af424cb76c72c0ff3e7f8e292e1b64",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -339,7 +339,7 @@
     "paper_id": "paper-2026-p10"
   },
   "papers/llm-peer-review-grounding-failure-2026/index.html": {
-    "sha256": "57d49fa62067e60876bb796ce08e81aa0d20ab3a595b192510269c3de46d3afc",
+    "sha256": "7d253427161ce5e3c7df62e2a40171f53d6ae93cd3c212eeb347dc66177f90f5",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -348,7 +348,7 @@
     "paper_id": "paper-2026-p11"
   },
   "papers/ai-music-composition-systematic-review-2026/index.html": {
-    "sha256": "57bb7548d516bba26087063fa551b9db5f9fdfcfcc03c948380aa4575e268dc5",
+    "sha256": "470cfdb4060e2e6ebbd2cc544690e23d609cf2abd12921fbcd562509d19c9539",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -357,7 +357,7 @@
     "paper_id": "paper-2026-p12"
   },
   "papers/rag-as-a-service-2026/index.html": {
-    "sha256": "d622dc8d6a2b40f53eda1e336fa32dee2498576cdb582b244b83eaa3408f0055",
+    "sha256": "36bbbea84c5845c2bbb9339f15c6e82f27e1bf353e888d65406679b2561fab76",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -366,7 +366,7 @@
     "paper_id": "paper-2026-p13"
   },
   "lectures/lecture-237/index.html": {
-    "sha256": "56a07fe2d3b89279ca781182e38373549361dee4a71ea473356fabb1d51b9761",
+    "sha256": "a33115a7c4efb2efa3fd19b639a7f52d95ebe1e1e7c4c47dcb2cfb8ff65c93c2",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -375,7 +375,7 @@
     "lecture_id": "lecture-237"
   },
   "lectures/lecture-238/index.html": {
-    "sha256": "e9ee4eaef5180d17d33c42e8511ab48aba07ed2bb84d76a3b26b0a31a6e75c43",
+    "sha256": "58002d47cedd3237cdbf7db8d8bf231d62f7e7c852e9579c07ae56839e87d4b1",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -384,7 +384,7 @@
     "lecture_id": "lecture-238"
   },
   "lectures/lecture-236/index.html": {
-    "sha256": "24c364342725c7d75e687ad640bca85795f3848d2653c7939a6d710ad179ab9e",
+    "sha256": "a6527f9ca9a16abd7545a0cb9f3d8b3835f587f93ce8a73255a4a97b78c1a36b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -393,7 +393,7 @@
     "lecture_id": "lecture-236"
   },
   "lectures/lecture-236-20261019/index.html": {
-    "sha256": "b2ed00e74e5b770102513f0f083c760148a91a7a9993586db84551c30835c92f",
+    "sha256": "85c286b9e64c64172247e3d923ca0d3d01f64fe79d7b010308e48f5ef41b49f5",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -402,7 +402,7 @@
     "lecture_id": "lecture-236-20261019"
   },
   "lectures/lecture-235/index.html": {
-    "sha256": "d15a29cab77a9ef4def8764f298a96eb16dede167dbe07df3f895299a158e96d",
+    "sha256": "442aa284e5c0d6f4550fde4efb8824afd00b9537a41d96797a0530c7cb6301f4",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -411,7 +411,7 @@
     "lecture_id": "lecture-235"
   },
   "lectures/lecture-234/index.html": {
-    "sha256": "2a6bce8e04214d067c67db2b54579a9f3ea40a45b12c8e5d576e0787bc5b50ab",
+    "sha256": "49bc583975f4630ece1029fa433b9a24a75a1c4aa62609a09ffee7052a05f541",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -420,7 +420,7 @@
     "lecture_id": "lecture-234"
   },
   "lectures/lecture-233/index.html": {
-    "sha256": "3758640015ab383a2bfa8152d067d0b1435b05f70f337a5938c8f02d2439316c",
+    "sha256": "86295c0b274d55bdd1ee963106d1d55ce7f8c5ee6fc2ce2a587146ed52ce62c6",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -429,7 +429,7 @@
     "lecture_id": "lecture-233"
   },
   "lectures/lecture-nhi-20261012/index.html": {
-    "sha256": "0686e073e61e88c6700cfcc5b3d43355424dd45d4b45361b7f41a980a51e3a00",
+    "sha256": "554acf5fb6d23ebeca84ed48bb738dc313923b98649880e636ad5ace32c0f563",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -438,7 +438,7 @@
     "lecture_id": "lecture-nhi-20261012"
   },
   "lectures/lecture-232/index.html": {
-    "sha256": "25d2a6f6011251009e599ca4495a7dc9ad294683450761187e3454dc0ad259b8",
+    "sha256": "53d98f9007c54b9e1062349996f334a1ea2345226eb4738b7d17ed26374f928b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -447,7 +447,7 @@
     "lecture_id": "lecture-232"
   },
   "lectures/lecture-231/index.html": {
-    "sha256": "b5df9bfb711bb5312d54e3a316ec04bb9d67455c4dee53682d175d4f8b3e1a1b",
+    "sha256": "fc5dd004a82676d35e68bee459c55d6fe491be8849833490952f475fa970f447",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -456,7 +456,7 @@
     "lecture_id": "lecture-231"
   },
   "lectures/lecture-230/index.html": {
-    "sha256": "1aed4a2a5c3c114f3484d6c78d88b2ffc13dc9a5b27c6b1428b0347b333d09c9",
+    "sha256": "7794929d087f78e0f3cbf88b976d7f2bbbb144d9f72358d5eb65218843b0643b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -465,7 +465,7 @@
     "lecture_id": "lecture-230"
   },
   "lectures/lecture-229/index.html": {
-    "sha256": "3bfd27368e38397270d97ab96b913181e7ae753d9e1474486a3dec3448bb40a5",
+    "sha256": "18743d7fe26bce56b9969a6cec2b8a618cd9cb5fbfce9a212618d89d4266b805",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -474,7 +474,7 @@
     "lecture_id": "lecture-229"
   },
   "lectures/lecture-228-85af1b2f8648c303/index.html": {
-    "sha256": "6749b09906bcd8661567a66f1c8d9c5e86b85caa09aa864016ea7eb437a703a4",
+    "sha256": "62a2bb01555bcf1e2a4b3215784e6a86fc700be79cda10766917494e942832e2",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -483,7 +483,7 @@
     "lecture_id": "lecture-228-85af1b2f8648c303"
   },
   "lectures/lecture-227-78bde51e0f62311b/index.html": {
-    "sha256": "72b4dfbff98dc77a4184ed1f16cfe69ae3422e8a20fd430ca21163bd026e9b1e",
+    "sha256": "e76d283991925bba0c30bebd3a68ccd3c0ca91d36e3ee34296038c3f02be1333",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -492,7 +492,7 @@
     "lecture_id": "lecture-227-78bde51e0f62311b"
   },
   "lectures/lecture-nhi-20260630/index.html": {
-    "sha256": "1d56dd43eefa2da4afff4a80a1d3b338376ecebf566ca08253c93de9c4520c8d",
+    "sha256": "8080f08b5c76ef8f0f253d33d00be2cb004c4f60fab08f5d62835948166bad44",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -501,7 +501,7 @@
     "lecture_id": "lecture-nhi-20260630"
   },
   "lectures/lecture-nhi-20260623/index.html": {
-    "sha256": "ec4c94cf5020c298822f047d5ca2f63bf080db980a464686e98864869e1cb895",
+    "sha256": "4f67693ae48eba85152b1b82bba7fb7396ac46b310dca038e1ecbb142415fd2d",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -510,7 +510,7 @@
     "lecture_id": "lecture-nhi-20260623"
   },
   "lectures/lecture-225-85b7d694d1b44714/index.html": {
-    "sha256": "4e0fae192398170552f0fe762676c073f80046d6d65b974cde1993041676efa5",
+    "sha256": "19372af81188548c7634bbd68127d46de919b0331edeb63203182317d6b3acee",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -519,7 +519,7 @@
     "lecture_id": "lecture-225-85b7d694d1b44714"
   },
   "lectures/lecture-nhi-20260611/index.html": {
-    "sha256": "c313721cdaa247280a2d01261df53e85d7e4914be828f720f5c6f2559f911970",
+    "sha256": "9adf28d12f0ff0eb89e19f57f2265c8fa1c2da4c870af83c41ffb43566531a3b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -528,7 +528,7 @@
     "lecture_id": "lecture-nhi-20260611"
   },
   "lectures/lecture-nhi-20260518/index.html": {
-    "sha256": "179d118c5ce78f4ff23ff972c5c4e3d3d5ec68e95e357914412fad96e74783d9",
+    "sha256": "21fcea09ea2eae94fc3690f05b30e872d17479228150c049dd5e7502f9e741e8",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -537,7 +537,7 @@
     "lecture_id": "lecture-nhi-20260518"
   },
   "lectures/lecture-223-3d7b563fbb20844b/index.html": {
-    "sha256": "88c8297df136f06dd2c7e795275ae989b2b7198416d51307dc6792af00424fce",
+    "sha256": "26c2a8dc1b30dc07406e785bc011c18199266a0fa443dbe5e2395366df10d5d5",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -546,7 +546,7 @@
     "lecture_id": "lecture-223-3d7b563fbb20844b"
   },
   "lectures/lecture-222-e80f8b9e9ced549c/index.html": {
-    "sha256": "b2116e7d9e3b22e843b86f252e2b4944fbf8672cbf8b28e48e136afd98bd236a",
+    "sha256": "af9d9c4fe54adbba600a1282b793107b997515142543e7d03989986ff71614e7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -555,7 +555,7 @@
     "lecture_id": "lecture-222-e80f8b9e9ced549c"
   },
   "lectures/lecture-221/index.html": {
-    "sha256": "ffc4ca70f1bee452a3059e2bd1df5660165d5176b4726e1ef9489a033e519420",
+    "sha256": "f42a0a30b08da96e2e563f4571984a7b62ef2b14c9f1b725c85ecd1becddab92",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -564,7 +564,7 @@
     "lecture_id": "lecture-221"
   },
   "lectures/lecture-nhi-20260522/index.html": {
-    "sha256": "3f9c913f2c90dfc5dd7ad019c5844c045072fabc4f3627cd12b69ff1798fca18",
+    "sha256": "c3380d2cf39f4463e050dd1c012e61016887d884bb592c879dee25a38342b9e3",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -573,7 +573,7 @@
     "lecture_id": "lecture-nhi-20260522"
   },
   "lectures/lecture-nhi-20260508/index.html": {
-    "sha256": "3b83be2f5e75aafa940d9698ffb5cd227229c8dd140ce6456b93d5fe5e6fdf92",
+    "sha256": "dff114ee5067b0841dc543ce5dbbc0716060b87451417b8dfe50862104ae0eaf",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -582,7 +582,7 @@
     "lecture_id": "lecture-nhi-20260508"
   },
   "lectures/lecture-219-28ddb57e351f4e9d/index.html": {
-    "sha256": "6503f99cf596ee5bb6871bf8ae69208d51046758815c083cbef116ea397a725a",
+    "sha256": "bcbdbc7085f69aeaa208fef80346ba4373194fb7cfc0a9ef3a913322674bdc84",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -591,7 +591,7 @@
     "lecture_id": "lecture-219-28ddb57e351f4e9d"
   },
   "lectures/lecture-218-b48b54f5b3d4fb45/index.html": {
-    "sha256": "b9c71368b9888c7d459b49d574df2ccf038d50c9b45df0891bc80e9037264531",
+    "sha256": "3a5ae58874efaea8979709ae4a925746fcb95d5601db582c81656d6e5a973682",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -600,7 +600,7 @@
     "lecture_id": "lecture-218-b48b54f5b3d4fb45"
   },
   "lectures/lecture-217-7cbde586f804e60e/index.html": {
-    "sha256": "d5609afd9e7f42147c9df9b3f347d8bc85e75041ac60a95d78f8a9786b7c7700",
+    "sha256": "8a39f26164e51f291401964fc1d08d39a021b7d9f97a65e22a199e2b5628436b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -609,7 +609,7 @@
     "lecture_id": "lecture-217-7cbde586f804e60e"
   },
   "lectures/lecture-216-0be546a8c649c24b/index.html": {
-    "sha256": "3fd6ca2d5edf61dfdac7edb2d5e9891df80d35a5d3e4dee9c60c3a1446c9ea68",
+    "sha256": "af2ffb2d0d5445b5ff0ee9f9bb242f6ebe183dd13cb7379541183ef3dbac1194",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -618,7 +618,7 @@
     "lecture_id": "lecture-216-0be546a8c649c24b"
   },
   "lectures/lecture-215-b6840bbf614c582b/index.html": {
-    "sha256": "55f8b7fadd15274489fa505d170b05ff7fe3753d67a8c5500a7799f954032d46",
+    "sha256": "db9c17656284dbe9396da38e3b517b7cdd54def82d4c4e1add01337fe0ec1bc7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -627,7 +627,7 @@
     "lecture_id": "lecture-215-b6840bbf614c582b"
   },
   "lectures/lecture-214-36cc3da4b65f382d/index.html": {
-    "sha256": "71272dd51d194301f451cdb150b72800012e396619cf4947cfa8bd7e4ad89375",
+    "sha256": "842ddba43ccf2248c6498666d8e1faaff0b6a09294dc1d825d92d514d53800ac",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -636,7 +636,7 @@
     "lecture_id": "lecture-214-36cc3da4b65f382d"
   },
   "lectures/lecture-213-1aa0b3279756fea8/index.html": {
-    "sha256": "75691faf4d5695438bea7b90dda05eeece3abc9f0dcd93908a4cf8f558955556",
+    "sha256": "20d82100d392650b232dff2bf9f09845d2ef1cbfbe0641fa9ad94eca62305f6a",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -645,7 +645,7 @@
     "lecture_id": "lecture-213-1aa0b3279756fea8"
   },
   "lectures/lecture-212-1ee5fdf660b695a9/index.html": {
-    "sha256": "38538bfd4246c4c18cf2aa3d115671c459b235064396816a29f54141f03be188",
+    "sha256": "c8d5da370388b5ff7161a945584707374c5fb07e5eca2ac576d1727826e5b984",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -654,7 +654,7 @@
     "lecture_id": "lecture-212-1ee5fdf660b695a9"
   },
   "lectures/lecture-211-2adc6d1fc7135a0b/index.html": {
-    "sha256": "c9a8d0da183e018c1756c254ad3af3d79b4bdd40f0184dbbbc7042e33670bf56",
+    "sha256": "71b88756f7931b3e185c1634a497e1d44e5bb19898aa54ce9b0605a28a8ca2d3",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -663,7 +663,7 @@
     "lecture_id": "lecture-211-2adc6d1fc7135a0b"
   },
   "lectures/lecture-nhi-20260420/index.html": {
-    "sha256": "200d8cdc4f2740b256a2d850eb732bc814207b62edf3f6a0e79d3963a1b8ed0b",
+    "sha256": "b640905074a6430cbeacb72fa4490242d6cc5d04c08a978ac7600cab019529e9",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -672,7 +672,7 @@
     "lecture_id": "lecture-nhi-20260420"
   },
   "lectures/lecture-nhi-20260414/index.html": {
-    "sha256": "0fc492e306863a2b66c0b75cb9a5d15fc3422f9dbe695cd2faa74df7f77be6dd",
+    "sha256": "609baea07f415f3eaa6c9d9b528e2e34c8370a86d6c669eecb98829e0e8e5f52",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -681,7 +681,7 @@
     "lecture_id": "lecture-nhi-20260414"
   },
   "lectures/lecture-209-da0633add66fbd81/index.html": {
-    "sha256": "e7a796a8588e384956ecd6dc00de2027ae4c969be6c6e898de1fa99a53fdb3ef",
+    "sha256": "adf8eca146f45065163a227254e048effe009c2fa34a306897d04cd295ff8ee3",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -690,7 +690,7 @@
     "lecture_id": "lecture-209-da0633add66fbd81"
   },
   "lectures/lecture-208/index.html": {
-    "sha256": "d57f42e8bd025d340bcfa471d661f9af40f9c8ca272c2cee412db7075d6fc4a7",
+    "sha256": "63bed417f5128dbfabed99657c89483a801f3943f13141e96277ec18213c234a",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -699,7 +699,7 @@
     "lecture_id": "lecture-208"
   },
   "lectures/lecture-nhi-20260330/index.html": {
-    "sha256": "dadfd2998002c37dffa79fd21c4aac83591ba64405e540fb507989e8174d7813",
+    "sha256": "240c98ddc3f29f97f0a9b45375d8cb0570390ee7441f577136d4f3953c74cfab",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -708,7 +708,7 @@
     "lecture_id": "lecture-nhi-20260330"
   },
   "lectures/lecture-nhi-20260324/index.html": {
-    "sha256": "c2c4bd5999191d1c22da991e8d25fefd0ed4352eb1f0b37c42239dd9968333ba",
+    "sha256": "45ef8f13e35bc2ad2708cacc459376a05d74517f7cfbc96c68d397683494dcf7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -717,7 +717,7 @@
     "lecture_id": "lecture-nhi-20260324"
   },
   "lectures/lecture-nhi-20260317/index.html": {
-    "sha256": "28e9b5eef1a7f947441657505acf3eb2234f2adc2ec00274cc7f7e1aedc5c634",
+    "sha256": "4b4da774334f9858f59117ace2ba9dcecabe9bacbaa8cc2380b146f26af46766",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -726,7 +726,7 @@
     "lecture_id": "lecture-nhi-20260317"
   },
   "lectures/lecture-205-d6f026cbfe02c116/index.html": {
-    "sha256": "c31c36125b1acd7d878bb58d3c554a4568c21513482d8d97e0f58c0709103b8e",
+    "sha256": "ea8efc8c1216c3d8d8035563d3ba07a3a5817a2c955f364f6b10538ad39ee4f4",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -735,7 +735,7 @@
     "lecture_id": "lecture-205-d6f026cbfe02c116"
   },
   "lectures/lecture-204-056ff76920cba037/index.html": {
-    "sha256": "d33ea01ba79c069f6a30aff6c99054de9fe2ac462e946a262112b787e2733244",
+    "sha256": "00c4c0a4956e36ec66c484376d1b99ab0ffbc075538646351a91e46bd3bc588c",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -744,7 +744,7 @@
     "lecture_id": "lecture-204-056ff76920cba037"
   },
   "lectures/lecture-203-fd52066aeffd9e79/index.html": {
-    "sha256": "ba8cc5b0fa69627d8224430471dd3c98bd53ca0a03304c7f516a053bcb6a5326",
+    "sha256": "c420104876521c99b6cd243006f56b99c1c0293f6c58ac4a2348c22ef9658652",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -753,7 +753,7 @@
     "lecture_id": "lecture-203-fd52066aeffd9e79"
   },
   "lectures/lecture-202-6240396d6855d646/index.html": {
-    "sha256": "44bf75134394de0752677ed4db1d00590c681301cc1f11a289dc110516653eff",
+    "sha256": "e0e3a63ad97f414572189b6505eb933532de99eb95d2c194713ddaeb13409240",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -762,7 +762,7 @@
     "lecture_id": "lecture-202-6240396d6855d646"
   },
   "lectures/lecture-nhi-20260204/index.html": {
-    "sha256": "757f13472afd48e5162f10052f052779b65ff214d1e88494ae567697d08de11d",
+    "sha256": "bf04e750e96c0d384a569722ca4d4b87b3a95c77136bded8023512c455564612",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -771,7 +771,7 @@
     "lecture_id": "lecture-nhi-20260204"
   },
   "lectures/lecture-nhi-20260203/index.html": {
-    "sha256": "3f400d02097791e69a9de45fe2b7d3ee0bbcd2163382bc296983b4b78d1fd55f",
+    "sha256": "4786c7a5506db580dc1b7feda478eae2aefa4be58eeea2fcae1c4f83caad114c",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -780,7 +780,7 @@
     "lecture_id": "lecture-nhi-20260203"
   },
   "lectures/lecture-200-a84e37c89ebe7cd4/index.html": {
-    "sha256": "d2631d086444b75144c53488e8265a0f81002c5d330a99f1449753f54f94c0fa",
+    "sha256": "b989478691a127dcd9404fb3d5ef10ed1510269e6a1de9b12f75226a51666ca5",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -789,7 +789,7 @@
     "lecture_id": "lecture-200-a84e37c89ebe7cd4"
   },
   "lectures/lecture-199-4dcdccda9b000954/index.html": {
-    "sha256": "7155da330f48395d2888d37e1ec9965bc168eae217376765a4fc09629d62b5df",
+    "sha256": "f2e2915493374fc7e28af7ec52ecd49e693975061c2d72029fd86e8c26c83dab",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -798,7 +798,7 @@
     "lecture_id": "lecture-199-4dcdccda9b000954"
   },
   "lectures/lecture-198-b44733402cb9dc55/index.html": {
-    "sha256": "3c3d88d5638a3a27b4999b64749a2e794626f257d8a8a9ea595fec642e730915",
+    "sha256": "de6ebb9e7c5e6417e1fd1f0694abee76c5fe1dfccdf9d5572ac87bc7ae17122c",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -807,7 +807,7 @@
     "lecture_id": "lecture-198-b44733402cb9dc55"
   },
   "lectures/lecture-197-381e68f409e342df/index.html": {
-    "sha256": "828a0f65ebd1c2ffd3f079158742de00cd9dd6cebb3e93ed8b6ebfe496a87819",
+    "sha256": "edb71df8c3754e5366cb50b5276ff657ffc06f4b3760e8901f49623275cedc5b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -816,7 +816,7 @@
     "lecture_id": "lecture-197-381e68f409e342df"
   },
   "lectures/lecture-nhi-20251212/index.html": {
-    "sha256": "310c9b3a37be9e433969567a29ead971ede7fb23282cca63f994db77da0d5364",
+    "sha256": "030d0b21f36c710daa36f038bac4f94abb615b056b8b7c20a178922e226efcc7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -825,7 +825,7 @@
     "lecture_id": "lecture-nhi-20251212"
   },
   "lectures/lecture-195-30ebc79ef95c103a/index.html": {
-    "sha256": "4acda0b45e63d315dd159113284927c7b5c9c6b8ef968398e0192ac22b287cde",
+    "sha256": "26713331838be4ee45a192547500c74c2111c5b460db562275b668e565c9eb4b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -834,7 +834,7 @@
     "lecture_id": "lecture-195-30ebc79ef95c103a"
   },
   "lectures/lecture-194-214ae02343d2db91/index.html": {
-    "sha256": "72aa60008b194cb7b7d86aba8a3019da4cfbcce3547b339756c3adab117140d7",
+    "sha256": "af906fcea0726e6fee320aef0cb925e32d405f6456fb1a5e7aafb404b969f4cc",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -843,7 +843,7 @@
     "lecture_id": "lecture-194-214ae02343d2db91"
   },
   "lectures/lecture-193-678a125cc276c118/index.html": {
-    "sha256": "f92cf81adeab0426a3e2d7e5dc91fa60fcc15510ad8b4868265a158d3cf4c108",
+    "sha256": "585f08feb39375015bba37b3e01a1a057d399decfdb80a16621f5fadcff123bf",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -852,7 +852,7 @@
     "lecture_id": "lecture-193-678a125cc276c118"
   },
   "lectures/lecture-192-cf73aa56fcc9aa33/index.html": {
-    "sha256": "6a71f456f4c57ec1590f7c36bfb75344c202f8d4b7dbcfb27ab9a84a92d141b1",
+    "sha256": "5cefa685dd004cfb7de965abf8de6c42650cd3eb850ae36c83038064caf34859",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -861,7 +861,7 @@
     "lecture_id": "lecture-192-cf73aa56fcc9aa33"
   },
   "lectures/lecture-191-d596257b7300d187/index.html": {
-    "sha256": "e25cfbab077b5933a324db68888986b3f06446414703dc8bac2d1267bb29634d",
+    "sha256": "46808b09b3dfa48bcd14bbf09471903815fdc8a8952c1924090948f680a86ba5",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -870,7 +870,7 @@
     "lecture_id": "lecture-191-d596257b7300d187"
   },
   "lectures/lecture-190-957592625c54edcb/index.html": {
-    "sha256": "078a6b6c909dec685a1e7899c3e83b38b5f59733a78fbfff6ba2f14f761b81b3",
+    "sha256": "791cede1e4b735428cd05e43f647fb7b54194c76b5c65769e493491de3e34776",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -879,7 +879,7 @@
     "lecture_id": "lecture-190-957592625c54edcb"
   },
   "lectures/lecture-nhi-20260921/index.html": {
-    "sha256": "291f05435c328a192aef4381772e79e961908e774539f4b2e40bcc18d23248d9",
+    "sha256": "1d78fcbb9784adc04cb72fe6af4d7e9a93c5150034eb035c49ddfb4ebee96331",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -888,7 +888,7 @@
     "lecture_id": "lecture-nhi-20260921"
   },
   "lectures/lecture-188-4afecb95ceb13342/index.html": {
-    "sha256": "848accc5c28f294cb9807635fc54ca845ef43fe282c900dcb7f5f21c6333f6e3",
+    "sha256": "bba7325cbec1440e42b0ce95fb241708c3d2b1dab81da9f5da8aa0bb596b6542",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -897,7 +897,7 @@
     "lecture_id": "lecture-188-4afecb95ceb13342"
   },
   "lectures/lecture-187-13cd976a09d8defa/index.html": {
-    "sha256": "ba1098c13bedc14ab08076da7affd9f0a3354e9fc942740cb562f39900d3a58c",
+    "sha256": "a3ea719deb7198f695f8ffb0e1ad6b11e549407d2c2bea3453931786a149f963",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -906,7 +906,7 @@
     "lecture_id": "lecture-187-13cd976a09d8defa"
   },
   "lectures/lecture-186/index.html": {
-    "sha256": "110aeee8f5298a00ff8f056244cefe5312cf35b58cfd9bd7f833d8b8c05f9443",
+    "sha256": "dc72ef99149071f8cb8bca6cbf8aa071cf9a542b3a8d47ea28faf6323a6effe5",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -915,7 +915,7 @@
     "lecture_id": "lecture-186"
   },
   "lectures/lecture-nhi-20260821/index.html": {
-    "sha256": "dfb9bda6d5476ecce575f4a1464873b019da6bd9e9a909f800caa52790c187db",
+    "sha256": "8e9c18b90d5c80d5b67d4ab45818f08f2293cb893833cc83b1e8591e69d9bbfe",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -924,7 +924,7 @@
     "lecture_id": "lecture-nhi-20260821"
   },
   "lectures/lecture-nhi-20260727/index.html": {
-    "sha256": "3a53ba77b27c70c327daa9d0397a82bce4e244ca2fa2f6c0fbc30bfd6860b2cf",
+    "sha256": "6622a22adcde1a8bf932464e512b567dfaa44e2153506c66f73b742c5cd9b913",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -933,7 +933,7 @@
     "lecture_id": "lecture-nhi-20260727"
   },
   "lectures/lecture-184-a757f63e9dc1299f/index.html": {
-    "sha256": "223877d544d5089e7b4bc7ec098d95a08e921d71051a574559451f505497dbb7",
+    "sha256": "63b0e743f7fd0ae667f58131d259ec9d995fc3eb3342ab86df7b76d3a230abf4",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -942,7 +942,7 @@
     "lecture_id": "lecture-184-a757f63e9dc1299f"
   },
   "lectures/lecture-183-31c12f57966ea0b4/index.html": {
-    "sha256": "73f7694dc59dfa0da7e21b076afd3fa6f6b4b14f87fd6f81d493412444e76ed5",
+    "sha256": "4fb02628c850f9b67a998b25339643e8b8f7c31fdd10e7ed7f6cde633e8bf2fb",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -951,7 +951,7 @@
     "lecture_id": "lecture-183-31c12f57966ea0b4"
   },
   "lectures/lecture-182-106cbbf6f6789dd7/index.html": {
-    "sha256": "de4f58b4c0d24f80d96daa8424d06d9e0d9cb2d0057c88418a304cd2cb7f45aa",
+    "sha256": "b4d2788e069ef6cf141b9cb6aa3c3844a0439e2ce88fdb5bedaa36f9fd93b4ba",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -960,7 +960,7 @@
     "lecture_id": "lecture-182-106cbbf6f6789dd7"
   },
   "lectures/lecture-181-7eb0abdd59c50827/index.html": {
-    "sha256": "56a1e2bda9db21ebcaa59fe1e4852a6316eb88ffea0d4e1a949f86b7401366bd",
+    "sha256": "4156983174afd2f115cb6a6114c332f5ad6c7e50bd0c79ebc313649cd2a8aabf",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -969,7 +969,7 @@
     "lecture_id": "lecture-181-7eb0abdd59c50827"
   },
   "lectures/lecture-180-resized-816b7082a8ff-16ae1282077080a4/index.html": {
-    "sha256": "6813fd172889a53fd62684f7eea091abb41ce1493190bfe12ad8600a25057da8",
+    "sha256": "098d544343ccf80fba95b617b9e415d90f32b769755fcc19a61c898e7026fc37",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -978,7 +978,7 @@
     "lecture_id": "lecture-180-resized-816b7082a8ff-16ae1282077080a4"
   },
   "lectures/lecture-logo-nhi-887d117b9eba-89839712d7a13870/index.html": {
-    "sha256": "0c4b98fa9b4bb29c59fca8ea6905c6e46a3d27ddc19276f83d4514931c372c76",
+    "sha256": "a0b2988f54f390801a980a591b222ac3552c887dbc29a78674f79ab22f1dd9f1",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -987,7 +987,7 @@
     "lecture_id": "lecture-logo-nhi-887d117b9eba-89839712d7a13870"
   },
   "lectures/lecture-178-faces-blurred-5c6cb3901f2c-bc529694e9503fca/index.html": {
-    "sha256": "98699ebbdc78cc518551d0f4093b07bb031a56ca2368927ef1728bc525f01488",
+    "sha256": "3a180258f2471095f2cc3ecc68306caf57008c35e2ce173d9680d2373348e354",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -996,7 +996,7 @@
     "lecture_id": "lecture-178-faces-blurred-5c6cb3901f2c-bc529694e9503fca"
   },
   "lectures/lecture-logo-jne-f4a4a1a0171b-36789401619422a1/index.html": {
-    "sha256": "7dcdc0ce6d415b10798f468adedc70b1a6e29fb0d72d6d19e1a6a2a14c0d57c2",
+    "sha256": "7941fc44023f898662d4dd07ff50b2fd8b6b08225ac92ea8887724eecf1b9ede",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1005,7 +1005,7 @@
     "lecture_id": "lecture-logo-jne-f4a4a1a0171b-36789401619422a1"
   },
   "lectures/lecture-176-faces-blurred-b3192e8759b0-a14fa158d5a2f2ae/index.html": {
-    "sha256": "66211bf98077ea0787b2ad11d1afc7c29a2c7659c2af26a85b9fa7bd7a076032",
+    "sha256": "9df05c1f392dcd14b8a78fdbb4504e4cb30af1894516881f835b6e881bfc7d6d",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1014,7 +1014,7 @@
     "lecture_id": "lecture-176-faces-blurred-b3192e8759b0-a14fa158d5a2f2ae"
   },
   "lectures/lecture-logo-csj-1a359314daeb-1c9b84cddff44188/index.html": {
-    "sha256": "c28ad9b2d956f86382029f12b0c0f0babd61707f4b4809db0269e92b6e840bee",
+    "sha256": "e556910559e72a5263b69a45eb107a817ece7aaf22e4093d18a0e98f86512dbc",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1023,7 +1023,7 @@
     "lecture_id": "lecture-logo-csj-1a359314daeb-1c9b84cddff44188"
   },
   "lectures/lecture-174-faces-blurred-f445fe2d8d3f-2128bf84d7ee0a2c/index.html": {
-    "sha256": "1dec171fecf28e9d87ecc35ce16851cd6195e3b0371c654d5dbef133c4aa0b8b",
+    "sha256": "8e732d469f90bf02c030de70bfa350bbebbf5dd7d3732e82148fceb0ac3d187c",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1032,7 +1032,7 @@
     "lecture_id": "lecture-174-faces-blurred-f445fe2d8d3f-2128bf84d7ee0a2c"
   },
   "lectures/lecture-173-2755d5dceeabbcfe/index.html": {
-    "sha256": "93814ba66b42f024f797d9652aba1e35b43e01800c4a3f5bf407e1674ca0a386",
+    "sha256": "da94668ba35f396b19f450b03092435b3c7b84e55bfc1d8ec17cf3736c5f3d49",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1041,7 +1041,7 @@
     "lecture_id": "lecture-173-2755d5dceeabbcfe"
   },
   "lectures/lecture-172-faces-blurred-aa500cae8ba0-e4dbc1f93be98043/index.html": {
-    "sha256": "3cf35c90727f62ed0b35cb1a8c6b5adedee9bdc28e2ff8174d05044d114b6cdf",
+    "sha256": "cc2f6fc8bc96c6c38342498a5888ea3b8854a064b93676e8d7cbb8deb3d50d3d",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1050,7 +1050,7 @@
     "lecture_id": "lecture-172-faces-blurred-aa500cae8ba0-e4dbc1f93be98043"
   },
   "lectures/lecture-171-resized-205ddd9bf6d3-09286f6185816567/index.html": {
-    "sha256": "e7aee3843a861cefcf52d8ec16458bbc25e0ccb122ac83d34cf8e26c0083e1d8",
+    "sha256": "58fdc558c7d8fb0f5a315993241c4bb8cafc0d64b38ae046576136e147d6ad92",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1059,7 +1059,7 @@
     "lecture_id": "lecture-171-resized-205ddd9bf6d3-09286f6185816567"
   },
   "lectures/lecture-logo-ediya-b0c77136e74b-38177e0fc503a737/index.html": {
-    "sha256": "bf72d55839bff97f04d051405932384885bfd1153330c3cae9a020f78bfa7f14",
+    "sha256": "aad5ee3e2d476f33f898128138956bca546dbfebc3588f7419e967935473d3f2",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1068,7 +1068,7 @@
     "lecture_id": "lecture-logo-ediya-b0c77136e74b-38177e0fc503a737"
   },
   "lectures/lecture-169-cda95daf81969afc/index.html": {
-    "sha256": "b0c62253a39788d9c42865155b48d0bafbe055a60e99c96ea35e2b804c8f43f9",
+    "sha256": "470fd9a5cc9aa27eaefb90ff5a0506c8b2059c14c364bc60090a2455e4f91a2a",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1077,7 +1077,7 @@
     "lecture_id": "lecture-169-cda95daf81969afc"
   },
   "lectures/lecture-168-cbc9f7daef59e5a8/index.html": {
-    "sha256": "807d4d2154079d7bfbed3c07fbe0849d03bfec8b48bc0d89e77afd9a48eb7404",
+    "sha256": "41ca24d998c0ed36750d286626adf3a90ec7d38f49cea31bdd51754ced485eb3",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1086,7 +1086,7 @@
     "lecture_id": "lecture-168-cbc9f7daef59e5a8"
   },
   "lectures/lecture-logo-kcc-historical-99e26fc5913f-262bcf72679402c6/index.html": {
-    "sha256": "9d21ff76380ca7ba019a59522a82502c713a1a4f049805aaa6b217b17718f6f5",
+    "sha256": "cae859cf9e16c66da857c07f58bf7a67b2ab596356320783d79d67812e5023e7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1095,7 +1095,7 @@
     "lecture_id": "lecture-logo-kcc-historical-99e26fc5913f-262bcf72679402c6"
   },
   "lectures/lecture-166-resized-823774981420-a208eb27b572deed/index.html": {
-    "sha256": "051379d7bd96b93fc4e0ce3bca3638a4ba57748386be90614b815733f0d8cb04",
+    "sha256": "6facab771e645b60b8f3509b6e4a73e39834d0992f8de1227ebd70cbb496da89",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1104,7 +1104,7 @@
     "lecture_id": "lecture-166-resized-823774981420-a208eb27b572deed"
   },
   "lectures/lecture-165-faces-mosaic-edd62136384d-044b72aac267f9f8/index.html": {
-    "sha256": "28c5c443df999856b18fe027c7e228b2d004dded846ec82b920e53991f11c43f",
+    "sha256": "fc2ae5e78505140a1ff3b02ea50811982669783533b2f1b551412cdfa9ff18c5",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1113,7 +1113,7 @@
     "lecture_id": "lecture-165-faces-mosaic-edd62136384d-044b72aac267f9f8"
   },
   "lectures/lecture-logo-keti-bb0cd02c286c-d1eac5a4e54e79e0/index.html": {
-    "sha256": "c83e7fff0bfa08bd5ae07c4418638ce6c4fb455d5dfd6eeefaedc1e9cbaad317",
+    "sha256": "2fd93c4dccb10859edf49e8c5e111a2f53b470cbdfe9d0a41f77811109bb0e2c",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1122,7 +1122,7 @@
     "lecture_id": "lecture-logo-keti-bb0cd02c286c-d1eac5a4e54e79e0"
   },
   "lectures/lecture-logo-haesung-c79671cedc0a-67fc7e713a27d7a9/index.html": {
-    "sha256": "351e12ffcb8b44fc18503891e1561086ff2c2342865a7f2459c50650f124df33",
+    "sha256": "075545fc37cbefeba5680a8652cba80d829048da53ea9fd228c3bd5f7a82ac22",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1131,7 +1131,7 @@
     "lecture_id": "lecture-logo-haesung-c79671cedc0a-67fc7e713a27d7a9"
   },
   "lectures/lecture-162-faces-blurred-a406584a20a7-c4673ff83a496794/index.html": {
-    "sha256": "85d99a02876a86477ceec0eca7112daff087160f434da6fa9a1a5fe7db250739",
+    "sha256": "d9c06495b88c15b4ae49a3648284ce1767dd24bbf3657b21091acf3992ffea32",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1140,7 +1140,7 @@
     "lecture_id": "lecture-162-faces-blurred-a406584a20a7-c4673ff83a496794"
   },
   "lectures/lecture-161-40c388c82ed4488d/index.html": {
-    "sha256": "200313c8963ffbf13e1920129aefa72aa3d69fd4937aa850b80111fc98dec747",
+    "sha256": "60155d150f8e744155cc81812d190cdef0b0f16775c4f694416b93b04ebc206e",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1149,7 +1149,7 @@
     "lecture_id": "lecture-161-40c388c82ed4488d"
   },
   "lectures/lecture-160-bc4b39775d461320/index.html": {
-    "sha256": "e19af21b28d7840754e79a1b1a32bec7ccbc334da6faa9dd08233dde9274f645",
+    "sha256": "16de3e1922edcd7e528b438e2f5f09e98925ee0788379528a83b9f3ffb76d33a",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1158,7 +1158,7 @@
     "lecture_id": "lecture-160-bc4b39775d461320"
   },
   "lectures/lecture-159-74d3195c36fe9bce/index.html": {
-    "sha256": "3b5d9ed9becb33b8bd27912bf890e906fe9a883d5d71dffc0db7f54720da1812",
+    "sha256": "0329e3747af36d1bdc5a1f126d0fc0407eb378c230de6cdef4f7b3b57c4bb462",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1167,7 +1167,7 @@
     "lecture_id": "lecture-159-74d3195c36fe9bce"
   },
   "lectures/lecture-logo-gangwon-education-office-946d9ad0c86f-cd26251c8e1c70e5/index.html": {
-    "sha256": "1aad5677f4a87783975327c9834a4660a659375058abba7384920c3854e1fa54",
+    "sha256": "e1ab777ce1425f0497e82b280fb0f471081c47a615577a4b6d0519037d44d3ca",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1176,7 +1176,7 @@
     "lecture_id": "lecture-logo-gangwon-education-office-946d9ad0c86f-cd26251c8e1c70e5"
   },
   "lectures/lecture-157-resized-231efec701fd-2693b6699e18d283/index.html": {
-    "sha256": "1a20b6ea5f9c2432307a157f53ca6cb4e9d310a7cd0b9554db3b10841b444dfb",
+    "sha256": "6c04cca24b13541765359483064fc9114b64c40a6d49ab519d48d809d3bb9545",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1185,7 +1185,7 @@
     "lecture_id": "lecture-157-resized-231efec701fd-2693b6699e18d283"
   },
   "lectures/lecture-logo-gbeti-ee3d3ed641ba-edcfe4086065ab82/index.html": {
-    "sha256": "759b22e0bfc78705dce1b307c9ffe06182550d61e9b96476679eb824e332bb11",
+    "sha256": "98402bd12f5fcd70d5b8e79a7fd35ace52c669c3b3d57c2a2d7cd9991cd667f2",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1194,7 +1194,7 @@
     "lecture_id": "lecture-logo-gbeti-ee3d3ed641ba-edcfe4086065ab82"
   },
   "lectures/lecture-logo-kohi-e45f84811eda-292f6d56058a7df0/index.html": {
-    "sha256": "b542025f3fff7193b2ac50acc7c736a2910c18b885e062eb78336937c80164c6",
+    "sha256": "7404afae8d2c692f1c0f9353d48caa02ff8f31b927ad9125762726b04d9a3c74",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1203,7 +1203,7 @@
     "lecture_id": "lecture-logo-kohi-e45f84811eda-292f6d56058a7df0"
   },
   "lectures/lecture-154-faces-blurred-da1a40050fb1-9d8ca70d288ca80c/index.html": {
-    "sha256": "19079e9bd169b122120222606020e823c3191bc6ba0ccd8efe970fb4f21d89bf",
+    "sha256": "1af6ba67077d68b699477a636e6e96968fc4292d85280545ff48c88e5dff68c8",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1212,7 +1212,7 @@
     "lecture_id": "lecture-154-faces-blurred-da1a40050fb1-9d8ca70d288ca80c"
   },
   "lectures/lecture-153-0d67ff8b36be393a/index.html": {
-    "sha256": "91f1ae5d2c5f9fa2a25467152a9f5bfe6a862244a0e733641221e1219f62cc4f",
+    "sha256": "fbeb6e8d98c108cc69e6e92d993475e749899fba91f81a406f5c5bfe672f6821",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1221,7 +1221,7 @@
     "lecture_id": "lecture-153-0d67ff8b36be393a"
   },
   "lectures/lecture-152-7736197cd9a74947/index.html": {
-    "sha256": "ad0f34db01c545e9a909da187ee2264c693a063f815f11e80821dcd97eb99b15",
+    "sha256": "5260ddf4beb185b67bc9acd9e7b2d1ecf7b7cf54d5049c9dbe8cc715bbae0236",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1230,7 +1230,7 @@
     "lecture_id": "lecture-152-7736197cd9a74947"
   },
   "lectures/lecture-logo-ahnlab-945749d13d78-81f4a51743613440/index.html": {
-    "sha256": "9a805d155a9c8d41b10ba7bdb095f79192948236ccb7316d3c9c1ae43b0a0c90",
+    "sha256": "cc4fa44fb277630afa45a99179a8fec89c34c94b5525341312ab9d7c2533cf13",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1239,7 +1239,7 @@
     "lecture_id": "lecture-logo-ahnlab-945749d13d78-81f4a51743613440"
   },
   "lectures/lecture-150/index.html": {
-    "sha256": "ec373037573ac2ccaec84936c101d671864b3bb0b2719e655c64f9277cfe3327",
+    "sha256": "c1f850303bf65ca4b3ebad37a2d6e30a4119a80f1ac8155dd434c82373493d51",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1248,7 +1248,7 @@
     "lecture_id": "lecture-150"
   },
   "lectures/lecture-logo-lg-adead1a6f695-e7b4860881a5cdab/index.html": {
-    "sha256": "7408d435befcda932a7cb4ebcf84ed5cecebad326f2c64a379b163947fdb2871",
+    "sha256": "fbcde4407bb32fca537fcbf3515689aaa4514d1ea441a6b11e7db6120ac9770b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1257,7 +1257,7 @@
     "lecture_id": "lecture-logo-lg-adead1a6f695-e7b4860881a5cdab"
   },
   "lectures/lecture-148-fb1bb0ecf848f90e/index.html": {
-    "sha256": "a6201697fe3cdd5fca6cb0bf76b90fc06737058b8737001c31f7009ca3a512fc",
+    "sha256": "726598b51af6c63f604cb4619ae16d77bc48c65aa186172a0449c72b8979d736",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1266,7 +1266,7 @@
     "lecture_id": "lecture-148-fb1bb0ecf848f90e"
   },
   "lectures/lecture-147-resized-816b7082a8ff-415e991897ee71e4/index.html": {
-    "sha256": "2e1c03a19e9c78f41f10029729f3451a2fb8de38f6f6d2716e9147bd0c220242",
+    "sha256": "653e0c2baf144b98d138de9b767b07fcdc244099865b05fd34536990bf8b9017",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1275,7 +1275,7 @@
     "lecture_id": "lecture-147-resized-816b7082a8ff-415e991897ee71e4"
   },
   "lectures/lecture-146-faces-blurred-18e473a13307-baff0caf2e67a358/index.html": {
-    "sha256": "93b302fefc675ed5c63b4a770f5ad31c295d5131ac55298942b7c096a19f8c43",
+    "sha256": "b6b10edbb6a8005c4ef1240576a3fb240ece5f2ce73be6303cc5396a25caa678",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1284,7 +1284,7 @@
     "lecture_id": "lecture-146-faces-blurred-18e473a13307-baff0caf2e67a358"
   },
   "lectures/lecture-145-resized-7808cb5dcf8c-766b9117a61cf527/index.html": {
-    "sha256": "2ad679f3526fd22762f5996e2da5f6fbd3d92ac77268c88eaf34378eb8d462df",
+    "sha256": "04a6dfd22a1c978ab8ec785d12276e228d2f11151fbad6bb01d0fd98231bcf3e",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1293,7 +1293,7 @@
     "lecture_id": "lecture-145-resized-7808cb5dcf8c-766b9117a61cf527"
   },
   "lectures/lecture-144-faces-blurred-b39f8eb7c221-387fe1f946894446/index.html": {
-    "sha256": "fb6c54b1283be7267919675039135ec9f61835614955a1ac38b0999ff670f425",
+    "sha256": "d1cf029ec83d95bfd40337e9380016e20ad1ec6b8da0a1809d67163d247fed25",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1302,7 +1302,7 @@
     "lecture_id": "lecture-144-faces-blurred-b39f8eb7c221-387fe1f946894446"
   },
   "lectures/lecture-143-resized-a368f623a3d7-88942f071965a6f7/index.html": {
-    "sha256": "4055432bb8f9e36fd13be269a3fefaf6eefb281e2349650eb0c5a2efcd34649d",
+    "sha256": "bd83a99130a9920d56adb3d6350ee9b5a8c0fd23c89f462371d36754f4003673",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1311,7 +1311,7 @@
     "lecture_id": "lecture-143-resized-a368f623a3d7-88942f071965a6f7"
   },
   "lectures/lecture-138-resized-85267972886c-37de591aea82ced8/index.html": {
-    "sha256": "6c97af33024f0d8179e978d9447fd2cacb4d5082e2f42ae3914c5ba3d4ffc047",
+    "sha256": "694897e73c9ea7b94a9b85d42466f219d5ad3965eff9d05923b90fa688c187c1",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1320,7 +1320,7 @@
     "lecture_id": "lecture-138-resized-85267972886c-37de591aea82ced8"
   },
   "lectures/lecture-141-resized-24f4f042d295-ace8ae26edaf1140/index.html": {
-    "sha256": "bf641637d0e2980f40ecef15b3e38818eaf3f2e48d1ac36cda8eb3e539b9c386",
+    "sha256": "1dec3342b20cc7481b73892e60bb93297da30d73650945edf2f30ddee5c97a70",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1329,7 +1329,7 @@
     "lecture_id": "lecture-141-resized-24f4f042d295-ace8ae26edaf1140"
   },
   "lectures/lecture-140-resized-9f5072e2b772-76b9975994278e74/index.html": {
-    "sha256": "68bf2ff6b0c3aef6470ca6e99cebeba73df992dc0f3deb68cbcb5da6216ad69a",
+    "sha256": "e6d0be14c135cab08b1b9ef411e6ac722729585e0e70f3b5818d4798f55e6ff7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1338,7 +1338,7 @@
     "lecture_id": "lecture-140-resized-9f5072e2b772-76b9975994278e74"
   },
   "lectures/lecture-139-00bd38f8306ee494/index.html": {
-    "sha256": "517fb5849826dbe19d2718a66769399ababe396b32df2d41d78a43b5a014c8d3",
+    "sha256": "22e97aaea4741a724190eb43e7a2f696a24f80807ae95127362b1ae2187e8ace",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1347,7 +1347,7 @@
     "lecture_id": "lecture-139-00bd38f8306ee494"
   },
   "lectures/lecture-138-resized-85267972886c-7c2810d5415d4175/index.html": {
-    "sha256": "5d05c8b5a511b19646c0d59c00615cc30ca58a394cbc1e3941a941669837fb89",
+    "sha256": "49cef16b52a3c2b3496aa150a10ceb7a9eb132c207b6199d3d01fff966c41538",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1356,7 +1356,7 @@
     "lecture_id": "lecture-138-resized-85267972886c-7c2810d5415d4175"
   },
   "lectures/lecture-137-resized-ab09adbb8da2-8555af5ed0ef9336/index.html": {
-    "sha256": "d744513a3e174f2fc1b94d5c7dc36ef65658d1ba10a897fab3f6e946dc7d7ede",
+    "sha256": "2efd2abaccdcbee6e82be64f96c7295d9e0dcf1ad57f98bcceb2481792d4014a",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1365,7 +1365,7 @@
     "lecture_id": "lecture-137-resized-ab09adbb8da2-8555af5ed0ef9336"
   },
   "lectures/lecture-136-faces-blurred-d37c023b04e4-2209c387d4dd1afa/index.html": {
-    "sha256": "df8960b431d74671098c3ae6dd72f2c387d1d7a560d9db99c3109b8c69ff9969",
+    "sha256": "d9fd821d0a2f8dbf907227f4cf406bf4ec9a9f6d2108d9d8615fc76a015ba754",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1374,7 +1374,7 @@
     "lecture_id": "lecture-136-faces-blurred-d37c023b04e4-2209c387d4dd1afa"
   },
   "lectures/lecture-135-7815248db0d072df/index.html": {
-    "sha256": "5f07d457945e846cac9ee6c9ebb571d533efd53529e6dd7ad4554107d826619b",
+    "sha256": "4b1b984126a4b530035da0bfc62822160c2143f2b3414d501a2f5d559e8f54e4",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1383,7 +1383,7 @@
     "lecture_id": "lecture-135-7815248db0d072df"
   },
   "lectures/lecture-134-faces-blurred-0d91e4c4b6a2-f9846f294161d8f2/index.html": {
-    "sha256": "2cc46eba051ef0d764c1e49b36cf5eb2726bf3eb54e9b9bc681d779e960fda88",
+    "sha256": "b73df089539cca580ac6052765c23db923169275193bc28bcd686a0627661af5",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1392,7 +1392,7 @@
     "lecture_id": "lecture-134-faces-blurred-0d91e4c4b6a2-f9846f294161d8f2"
   },
   "lectures/lecture-logo-moel-chungju-f431eeb1e2cd-34ce49af798fecb0/index.html": {
-    "sha256": "cab00e36ed5bc5569f5c8ec0a37485450530be2497b416b5d38ffa88d4f84186",
+    "sha256": "bab93af77d4c8aea6e7023857202ce2be2d222b9f1e52fdb3e9842610fd3750b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1401,7 +1401,7 @@
     "lecture_id": "lecture-logo-moel-chungju-f431eeb1e2cd-34ce49af798fecb0"
   },
   "lectures/lecture-132-resized-d90ece50596e-786b0362a98a8b7d/index.html": {
-    "sha256": "204d6cbe88bfa55a213d44d4c3e6a57cc79e639e191acd644846b9b921b2fe62",
+    "sha256": "ef9ba18a485c5bfaa123beff3b155fad7017134ff74002aa7247eee872a9b4c8",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1410,7 +1410,7 @@
     "lecture_id": "lecture-132-resized-d90ece50596e-786b0362a98a8b7d"
   },
   "lectures/lecture-131-resized-f1f3424deb6f-2a56746aa3a1bffe/index.html": {
-    "sha256": "adb31e3836f4dc13fbae973cc19e4c3929407fb9c12d2c32f2c2d25d4d215c2f",
+    "sha256": "6224346b522d8fbe98ce7f6b6fbc0337306cbb9406dd13aec8b8f915c6249419",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1419,7 +1419,7 @@
     "lecture_id": "lecture-131-resized-f1f3424deb6f-2a56746aa3a1bffe"
   },
   "lectures/lecture-130-resized-b6535e6adf42-dc4475381a7a31b2/index.html": {
-    "sha256": "322951b9fcb4e1362f0879e71787ca6a4855371528e7625b4a4724a7a36ee091",
+    "sha256": "ac532e888355230e63f512a2ea3d2125a86939605caa95f69fdfe6fc8b0afb6b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1428,7 +1428,7 @@
     "lecture_id": "lecture-130-resized-b6535e6adf42-dc4475381a7a31b2"
   },
   "lectures/lecture-129-resized-76a2c6544788-8cc1a878e2d234e0/index.html": {
-    "sha256": "50ccf204c17f0150920d0afc6c5b5b70b06b845aca9e24a8a9d468304e07e449",
+    "sha256": "88cfc9bd6971daa8333d8910b08e158e6a493ac0cebf578a0d995a580de144ab",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1437,7 +1437,7 @@
     "lecture_id": "lecture-129-resized-76a2c6544788-8cc1a878e2d234e0"
   },
   "lectures/lecture-128-resized-d7830b9fb7df-310b5ba7f4b39e61/index.html": {
-    "sha256": "b389ffd8db3064a26ce46f28a9435a20eac446ef8bd29d19356231e77c93d460",
+    "sha256": "86c399b405ae4802a5bd2b65213fb5b11d4d5decc583de22d6f0eee11b406b9b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1446,7 +1446,7 @@
     "lecture_id": "lecture-128-resized-d7830b9fb7df-310b5ba7f4b39e61"
   },
   "lectures/lecture-127-resized-342ae66c3cd1-11eef674f1584db7/index.html": {
-    "sha256": "7c18f07610b28fbcd442a3a574a377661a00691cc08296a10a903db4bcfa42ad",
+    "sha256": "f0800c6cea4869f745d2d55b0c6ad433504e56bd3b9f523abfcd37e152338417",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1455,7 +1455,7 @@
     "lecture_id": "lecture-127-resized-342ae66c3cd1-11eef674f1584db7"
   },
   "lectures/lecture-126-faces-blurred-bc04166128ef-3496e52742f088f3/index.html": {
-    "sha256": "8b66fef83ade46c2b18e004e5c70b6022991d1b99562408f8c9ae6086430479d",
+    "sha256": "bc5acc8fe2b793917d1b49dfac6cfc0fe5a9b299c91074891439ffb6570e1f11",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1464,7 +1464,7 @@
     "lecture_id": "lecture-126-faces-blurred-bc04166128ef-3496e52742f088f3"
   },
   "lectures/lecture-125-resized-d9cb2f7075e6-373dfd573212e663/index.html": {
-    "sha256": "780716c84aab182174f903ac392bee9dc43e00f6a29bd4c87939ef1b6168fb0b",
+    "sha256": "0c1ec5639365e008ecece1328d346512d0fe7e0b9c6a39f8c24c469ca39a7732",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1473,7 +1473,7 @@
     "lecture_id": "lecture-125-resized-d9cb2f7075e6-373dfd573212e663"
   },
   "lectures/lecture-124-resized-0d26e2cd3279-b69cf77835ac584f/index.html": {
-    "sha256": "c99c8e12955a4be669c7d362870c6f900cc054a71bac74c04d773a1216217d50",
+    "sha256": "281fcadbc7ae2ba62024fb26ecb86a733ead01c92b1b2a13fc39b4e64ec48391",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1482,7 +1482,7 @@
     "lecture_id": "lecture-124-resized-0d26e2cd3279-b69cf77835ac584f"
   },
   "lectures/lecture-123-faces-blurred-8aa2f9ff6426-e90e26f9619e07e1/index.html": {
-    "sha256": "98c34c1a46b032abaf4e9d038687bdf378d468bd989c3c24a758e7a5c8c38b27",
+    "sha256": "62bf02226c13d9d8c239bb1808145f19f82f07b976fd68fc8d117692c723f041",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1491,7 +1491,7 @@
     "lecture_id": "lecture-123-faces-blurred-8aa2f9ff6426-e90e26f9619e07e1"
   },
   "lectures/lecture-122-faces-blurred-68b80462635b-cc8ecbb0b9a2d354/index.html": {
-    "sha256": "32113d1d0b9eddd8cd0908eb31236a21e6c6b748d2e4ec5deb076038fcd8f78d",
+    "sha256": "6e8914108337d1834bdd778c8c6eacd63a8bb2d7c61dc7143c1e1195a7d14d1b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1500,7 +1500,7 @@
     "lecture_id": "lecture-122-faces-blurred-68b80462635b-cc8ecbb0b9a2d354"
   },
   "lectures/lecture-121-resized-e2b2c16232bb-b086a4694882094f/index.html": {
-    "sha256": "fcf740844d922bb593fe71fa0b4e6558d05a1cac47a4e02cb1389371c8bc62bf",
+    "sha256": "3a231a7c8305e28e78baaa1e87210f511e8cdb52ebf4fba624910f3445197f1c",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1509,7 +1509,7 @@
     "lecture_id": "lecture-121-resized-e2b2c16232bb-b086a4694882094f"
   },
   "lectures/lecture-logo-poongsan-804e5de3cfd2-178cb8adae8b38bd/index.html": {
-    "sha256": "d44166aba0dbd12f67bfc2c4fc80fb21c2aca54271cc8aca35cbf886049f3571",
+    "sha256": "8616321b8d5c79ed0c1abad42435b29fb562968b9cdc846169d937ad4c0230b2",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1518,7 +1518,7 @@
     "lecture_id": "lecture-logo-poongsan-804e5de3cfd2-178cb8adae8b38bd"
   },
   "lectures/lecture-logo-kird-3e54fcb0f967-2af9d554937db0b1/index.html": {
-    "sha256": "123cd7514d0598cdcccddf2a05f336ae8967340080d0189d0a3445ac2494bc5d",
+    "sha256": "a12768c5b0ef76bfbc91e6c62e8ee5022c20be85fcd8a432a3bd79809681b1fc",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1527,7 +1527,7 @@
     "lecture_id": "lecture-logo-kird-3e54fcb0f967-2af9d554937db0b1"
   },
   "lectures/lecture-118-b89aed632e62b968/index.html": {
-    "sha256": "344438f268f570ad520a692397ad7861db017a7a577f6149c7d1ca644856071a",
+    "sha256": "f88ba62f41bd8ea339de0f76e011e911a52c73384d52eec9822cf07b6bcd6746",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1536,7 +1536,7 @@
     "lecture_id": "lecture-118-b89aed632e62b968"
   },
   "lectures/lecture-117-resized-44860c779bdc-1153f356dc33cc6c/index.html": {
-    "sha256": "94afb4f26e0f00eb762926212f5efe434dfc952d77955f2a28c3d0b9c6602220",
+    "sha256": "6bcdf6647e76515615fa7919ce94596563c87a0f1780d798d68bd7a9a4792f7c",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1545,7 +1545,7 @@
     "lecture_id": "lecture-117-resized-44860c779bdc-1153f356dc33cc6c"
   },
   "lectures/lecture-logo-moe-30b6bd6a4a3b-3c8d3f57c52761ed/index.html": {
-    "sha256": "7378b342fb1fd43146e0de1cb9646d9270d9de9e5c8bb8e0b1485d23cdd00772",
+    "sha256": "418a0caf2a11425a328cf53d5aed128c74ba31840fa6e6b37a58501fef208352",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1554,7 +1554,7 @@
     "lecture_id": "lecture-logo-moe-30b6bd6a4a3b-3c8d3f57c52761ed"
   },
   "lectures/lecture-115-faces-blurred-45483b8a3186-79cc2d88b91f7c81/index.html": {
-    "sha256": "d5606dcb411d10d69240eb48b8d086b12dd4afa0a3e42b6de414aa0782bf9de3",
+    "sha256": "35d5c43d57d55a6bc7bb72c3bdc42c9c564626ff85f7cf2e385f1910e0a0350a",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1563,7 +1563,7 @@
     "lecture_id": "lecture-115-faces-blurred-45483b8a3186-79cc2d88b91f7c81"
   },
   "lectures/lecture-114-resized-732a60a86aa6-f56a8595137d4f93/index.html": {
-    "sha256": "e7b1298fa6e070aed2d4aa6fadbe7953b20398dbeb5bae7ba33936dce0dbeae6",
+    "sha256": "085b46d5bff2fd27f46908c1a1e465ef79d1e0e6ff0b68f341187b802fe94bc0",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1572,7 +1572,7 @@
     "lecture_id": "lecture-114-resized-732a60a86aa6-f56a8595137d4f93"
   },
   "lectures/lecture-113-faces-blurred-d8870933166f-144c80378d70c9aa/index.html": {
-    "sha256": "663c96a84b13bfb1433b74c332a461ee974f11ad19df2f977e7bb4d92face34c",
+    "sha256": "fbba59c5375f4162abe23a43511db9e16c6d73cd44fbe38c68b8c150cf222f70",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1581,7 +1581,7 @@
     "lecture_id": "lecture-113-faces-blurred-d8870933166f-144c80378d70c9aa"
   },
   "lectures/lecture-112-resized-407db2a656ab-b8fded0b93370784/index.html": {
-    "sha256": "4bf2d7efc1dd6f3a8dd7b9237409db419b9e25c34b59f55594d0664fb5d3cf84",
+    "sha256": "91cd8150d3c1048158ab654094049b112c081df15ed5bced06b39da2ca5ca3a7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1590,7 +1590,7 @@
     "lecture_id": "lecture-112-resized-407db2a656ab-b8fded0b93370784"
   },
   "lectures/lecture-111-faces-blurred-0978a949f483-df9b10139404695e/index.html": {
-    "sha256": "428645fcae840249250c570bea9edd89b894d7d02089a18fed1da8ea3bffed3a",
+    "sha256": "5a8f2f6f339b4cced55a1c747530ed5ddfa1c55f7c3906cd886f305192c3af25",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1599,7 +1599,7 @@
     "lecture_id": "lecture-111-faces-blurred-0978a949f483-df9b10139404695e"
   },
   "lectures/lecture-110-faces-blurred-b86904f0ebed-ea5b526d133b9c7f/index.html": {
-    "sha256": "29f7d0df256d5b039dc087929445d611d71bd4f60746e2d57580b0bc9f3580c1",
+    "sha256": "fe4daad2805116582b4abad162d5a5776fda09c6275f2e8f2832c2564766934a",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1608,7 +1608,7 @@
     "lecture_id": "lecture-110-faces-blurred-b86904f0ebed-ea5b526d133b9c7f"
   },
   "lectures/lecture-logo-imt-aee573200ad5-3fb2effe984abb4e/index.html": {
-    "sha256": "2b35e8059037080084449ce0320cad09a1970e8be9d7f6e0e3944354593ea1d3",
+    "sha256": "3897ed0368432a617bf6c094d03598f7945f2994599355f7e0cf7a75fdadd620",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1617,7 +1617,7 @@
     "lecture_id": "lecture-logo-imt-aee573200ad5-3fb2effe984abb4e"
   },
   "lectures/lecture-108-resized-6223a39c7997-4300b42f06e505f7/index.html": {
-    "sha256": "9ae4f6751707de3ec7c8d95707c920aefdd4e053b38a29998ab354d6d5f6cfbf",
+    "sha256": "44de38056e13f166231f6f53fdd85f1f3eeed98b67329865baf49ce92f0108e7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1626,7 +1626,7 @@
     "lecture_id": "lecture-108-resized-6223a39c7997-4300b42f06e505f7"
   },
   "lectures/lecture-logo-csj-1a359314daeb-307ddd899d14824a/index.html": {
-    "sha256": "d19c18587df6a508c20d24bc022bb4732e2d2f6ef1a9fb1faee6aa49cf6f0e4f",
+    "sha256": "7f880fdffb44e01fc992e0fe99bd556af6176f5015d6ea6b924321fcfef0a593",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1635,7 +1635,7 @@
     "lecture_id": "lecture-logo-csj-1a359314daeb-307ddd899d14824a"
   },
   "lectures/lecture-logo-kocea-945cdadfbb27-52f54a2808eac5db/index.html": {
-    "sha256": "4ce3bc72757ceed776e89cc7c8718913a321ddd7c6ef9beed2f8fdb939dc9478",
+    "sha256": "4d4411bd134094661eabba2e2e7d8bb4e1da02d868e74e35852412e3aa4ea565",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1644,7 +1644,7 @@
     "lecture_id": "lecture-logo-kocea-945cdadfbb27-52f54a2808eac5db"
   },
   "lectures/lecture-logo-samsungsem-ad424e029c2d-ab9bdbfe39bc50c9/index.html": {
-    "sha256": "b437c473ee0da7e979542a25d96cadc7414f5643e1818475b0c3aa0593f451d0",
+    "sha256": "937fd3ce4f890fc2443d51c4e3715e4fe4242cd9da96641fa6d5719c95af03bb",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1653,7 +1653,7 @@
     "lecture_id": "lecture-logo-samsungsem-ad424e029c2d-ab9bdbfe39bc50c9"
   },
   "lectures/lecture-logo-imt-aee573200ad5-8b7209ab3b05aec7/index.html": {
-    "sha256": "aecbfd2427ee47f7282514da5340de6af549ec8fe60f7b2dbb1b509197e23aa7",
+    "sha256": "0febcfcd38e147ea48e8a6d8d031d5694bbe898025cd3457df468e68123a3593",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1662,7 +1662,7 @@
     "lecture_id": "lecture-logo-imt-aee573200ad5-8b7209ab3b05aec7"
   },
   "lectures/lecture-103-resized-d0e4a0c4da15-a6f9ed1ffe5d9801/index.html": {
-    "sha256": "57a58ee88373c207090f4fac96dcefbc86e51560ea3f06a89acabd8f0a7710d6",
+    "sha256": "9ce8df6afeeb65017d889e898bd491e51f008c90c438630b05cb2f7e4498c487",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1671,7 +1671,7 @@
     "lecture_id": "lecture-103-resized-d0e4a0c4da15-a6f9ed1ffe5d9801"
   },
   "lectures/lecture-102-resized-f4f23857a9b2-34e19b5a82421172/index.html": {
-    "sha256": "fb32d5849948219d2fd1c281268320e1c4987c1fb242d6198e3c819d634d1977",
+    "sha256": "e697c4e51525d2fb451e17c816961b01f24ee42004c838a4c8c873b3e54e5732",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1680,7 +1680,7 @@
     "lecture_id": "lecture-102-resized-f4f23857a9b2-34e19b5a82421172"
   },
   "lectures/lecture-101-resized-0867e6cc41fc-675a81c743f7f414/index.html": {
-    "sha256": "38af201c6617fdbba650d8f6b9313fbddfa055ecab4384ff945f20b44c110995",
+    "sha256": "67852dfd1e6db8da39e65fa33076553b35a51a115f1294a821cb3f95de846e15",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1689,7 +1689,7 @@
     "lecture_id": "lecture-101-resized-0867e6cc41fc-675a81c743f7f414"
   },
   "lectures/lecture-100-faces-blurred-1b7e9b8f9606-6e7d0f1bc7c853c9/index.html": {
-    "sha256": "53fc4b51c7e5344b803deac382b77524e58cb5ab2d276b120937663c9643ecea",
+    "sha256": "87569c336320605b85e47d89274e978c0feebeafe34580f10b5644efb02dc7f5",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1698,7 +1698,7 @@
     "lecture_id": "lecture-100-faces-blurred-1b7e9b8f9606-6e7d0f1bc7c853c9"
   },
   "lectures/lecture-logo-amplus-asset-development-3d3f4c12fbc9-fe8f3f08559039c1/index.html": {
-    "sha256": "5d494da5115bd38e4841506b9b8fee28fac099ca8bc399389d351a2edc5205a0",
+    "sha256": "a120a419ec4f567f81f1723cda66b7c58bdb3dffdf337887f5f141de5d6b92bf",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1707,7 +1707,7 @@
     "lecture_id": "lecture-logo-amplus-asset-development-3d3f4c12fbc9-fe8f3f08559039c1"
   },
   "lectures/lecture-98-resized-a18aaac0199a-d65750aae855d279/index.html": {
-    "sha256": "acb7d3f4dca4698b3e81ebd1818577558813847c03fe3236a9331d0e991ecb4e",
+    "sha256": "6492dd4045fc37b44156c4b0b038f473ecac3cbddc7dc38108e29eb28d4b4ff7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1716,7 +1716,7 @@
     "lecture_id": "lecture-98-resized-a18aaac0199a-d65750aae855d279"
   },
   "lectures/lecture-97-resized-9fa295e43ea9-bc4cfb4e068f125a/index.html": {
-    "sha256": "5fe3d76c5695182a667c0f0c7746ab67daa9b0f1c5f5e80aa0069bcedaf94312",
+    "sha256": "a3ba8ae0d583176aa68c8ed0a68446511d18e0ed4da9e46f0adb359c57f0d899",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1725,7 +1725,7 @@
     "lecture_id": "lecture-97-resized-9fa295e43ea9-bc4cfb4e068f125a"
   },
   "lectures/lecture-96-resized-ec3c2c453c2d-df28684ce04f9050/index.html": {
-    "sha256": "85b3f0072f6ff66e6281f2c7b58278202e645b77733fe8c5096de14eaba2a5e7",
+    "sha256": "bae4aac2cce6798ecaf2667ac4d5008e94a0667d0340297371e7c17c380c318e",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1734,7 +1734,7 @@
     "lecture_id": "lecture-96-resized-ec3c2c453c2d-df28684ce04f9050"
   },
   "lectures/lecture-95-resized-85c05a137196-33baebb81b1b1e39/index.html": {
-    "sha256": "0c53aabb26dae08b48a1c5b8729e51ed32333f6353bc8792bc719a9fa339d489",
+    "sha256": "363991ad474b7c071a2244b2f8698318add1b98ed0405260092c795a5f75eb92",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1743,7 +1743,7 @@
     "lecture_id": "lecture-95-resized-85c05a137196-33baebb81b1b1e39"
   },
   "lectures/lecture-94-faces-blurred-b02809b08837-23acbb1565f9bf28/index.html": {
-    "sha256": "fc302a9ee9b9d574f5d34bad168020b125ec2a89ab610219fd633ffae6c6a400",
+    "sha256": "fbec5e07844daf15594fe2cf722c06e14e4fd53e725376a06d92a22df06d9003",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1752,7 +1752,7 @@
     "lecture_id": "lecture-94-faces-blurred-b02809b08837-23acbb1565f9bf28"
   },
   "lectures/lecture-93-resized-258701f35c14-b30e10920587796a/index.html": {
-    "sha256": "5f14144fe84baba2ecf4074dad4af3379e3094e8956bea3ef336b287591c2caf",
+    "sha256": "e7c19d0094540782e8451e17dca477cc120d05b34be608f2e5d8425ca1280ecf",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1761,7 +1761,7 @@
     "lecture_id": "lecture-93-resized-258701f35c14-b30e10920587796a"
   },
   "lectures/lecture-logo-ahnlab-945749d13d78-c07806348f7f0e49/index.html": {
-    "sha256": "12ff2126db4db12a87984bb04652cf9ff338efcd4c2a9856666523fb76ccbf81",
+    "sha256": "ac234d6caebf276df462886c6af6fe79909cc34c5ae02368e52eca81bdc37111",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1770,7 +1770,7 @@
     "lecture_id": "lecture-logo-ahnlab-945749d13d78-c07806348f7f0e49"
   },
   "lectures/lecture-90-resized-776d144c96b2-fed97c4d4327b39c/index.html": {
-    "sha256": "eec8743baec72eb015f84344b1ab3f3e274cd812debc9bbec86c9a15df7981d6",
+    "sha256": "a850e1d17abc80db6569e80d403b35eab6df5ae2bee2c9b4b787eb9942630ab0",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1779,7 +1779,7 @@
     "lecture_id": "lecture-90-resized-776d144c96b2-fed97c4d4327b39c"
   },
   "lectures/lecture-89-resized-6dcfc11182de-5f064ac714545185/index.html": {
-    "sha256": "fc7bc9fa386595df0d99b0c6e69a2604ae828c5e99ebe5505a75c56f8311d189",
+    "sha256": "cb987206337ca90bd1a1dc86f5e1100aa5769964864b51c38ba12a9ae5c222fd",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1788,7 +1788,7 @@
     "lecture_id": "lecture-89-resized-6dcfc11182de-5f064ac714545185"
   },
   "lectures/lecture-88-resized-8981f8f1cfa4-102f86e81bc8c7d9/index.html": {
-    "sha256": "2eaacdaae4f779acb67388858c464340bca37e0c521b9f2b4547d50690127a51",
+    "sha256": "968d61517ec06ab160d49faf71873e2aa90a7fd00326951b341950c5ea92ebf7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1797,7 +1797,7 @@
     "lecture_id": "lecture-88-resized-8981f8f1cfa4-102f86e81bc8c7d9"
   },
   "lectures/lecture-logo-samsung-b0591c2f7c37-f2c5241d2bba35e0/index.html": {
-    "sha256": "bd1ab8ab1344a5ca9c854e12a21838e108a22b4d96b4abfb4d8fe9b8c8834a36",
+    "sha256": "e7a718bbd29ce6df479b702d7a22dc9def89beeb3a69cbd5cf1a0839c53ef186",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1806,7 +1806,7 @@
     "lecture_id": "lecture-logo-samsung-b0591c2f7c37-f2c5241d2bba35e0"
   },
   "lectures/lecture-86-28ca419efd478804/index.html": {
-    "sha256": "bb352b400337173217181a5b7b31d1722a57acf90c693afa7e7566a58a09849e",
+    "sha256": "0f6218384dc06c8b174e861f71fc41c1715a8dcc99d2305e7bef0a00d0030dd4",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1815,7 +1815,7 @@
     "lecture_id": "lecture-86-28ca419efd478804"
   },
   "lectures/lecture-logo-aekyung-d3c1ffc4addf-fd8c369e28c0b6d9/index.html": {
-    "sha256": "3961f56077efc09f25da95e86c480c36b34f422e2ded397b35db3344d32992e2",
+    "sha256": "1ffcd2558f67410da386fbabb34b64b09cf660d9dca2a5f068c9b35dfc9c07c4",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1824,7 +1824,7 @@
     "lecture_id": "lecture-logo-aekyung-d3c1ffc4addf-fd8c369e28c0b6d9"
   },
   "lectures/lecture-84-resized-d152bf98abe1-c45ac5490e5e6cb2/index.html": {
-    "sha256": "e73c429ed557f8cdcf675d1d3eb58272b82f7761abf821e3ee5f765fd1365d9c",
+    "sha256": "5a07ecd492df9ff32bca0df11b53d2cbed4343b506e74908c0a3d6a4be78986b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1833,7 +1833,7 @@
     "lecture_id": "lecture-84-resized-d152bf98abe1-c45ac5490e5e6cb2"
   },
   "lectures/lecture-83-f8d9d6e1f1069afe/index.html": {
-    "sha256": "c5b68047dc9ff2c0ddfae009427f95d1705eb6a6702b137caf441aba74a5475c",
+    "sha256": "fa87c4399c4e5cf58193aeadacb3f6cefb73e0bbf53d095aee9ed0d7bdb2c07f",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1842,7 +1842,7 @@
     "lecture_id": "lecture-83-f8d9d6e1f1069afe"
   },
   "lectures/lecture-logo-incheon-finance-high-school-5d66b4e0c523-e5807323c3779ff9/index.html": {
-    "sha256": "dc74728839fb05f7cc5b0e101dd97717aad6dded87c8cc6661cddc4ba0c2ebf3",
+    "sha256": "792c3f20020334d66b9e2980c8f24ecb52ebeb6694615886f4011b48eec406bf",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1851,7 +1851,7 @@
     "lecture_id": "lecture-logo-incheon-finance-high-school-5d66b4e0c523-e5807323c3779ff9"
   },
   "lectures/lecture-81-resized-eadd848f22ef-af085978732af689/index.html": {
-    "sha256": "0a5ece09c46c82c64109c4569b501217a78593b6a0c10da8ccf01cf2ff94bdda",
+    "sha256": "b0083404357d2f919362adeca588c580aaae1e710756291e5758b872dd82ab21",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1860,7 +1860,7 @@
     "lecture_id": "lecture-81-resized-eadd848f22ef-af085978732af689"
   },
   "lectures/lecture-80-resized-e40dfb5d1b3c-f38786d42fb87511/index.html": {
-    "sha256": "17facddf6e548bf2781e28facfcc612fb2e12650efe6711c2b024259901d6001",
+    "sha256": "ab9b6bc6ccaffd7bb183e52692ac51a5b59f0228a78fda8a87c110bc690d8cb2",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1869,7 +1869,7 @@
     "lecture_id": "lecture-80-resized-e40dfb5d1b3c-f38786d42fb87511"
   },
   "lectures/lecture-79-84dff761ab69cabd/index.html": {
-    "sha256": "449d0b9643d7eac1451c3b63e2597ba3ec6c360766f5b00b9130460a10f92d2b",
+    "sha256": "83394d1e6683bac1194199641b9a69835cb269d74fc598c1be8cf9142f8d4a60",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1878,7 +1878,7 @@
     "lecture_id": "lecture-79-84dff761ab69cabd"
   },
   "lectures/lecture-78/index.html": {
-    "sha256": "6391fd7bfa33b3d7c0b2def8682222fb16f6404625073bac5823b4839ff12d3c",
+    "sha256": "60f9d64633bb7d45819d625d97b5c3ccd6324f46e37669e1db9201a1ee7d20f3",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1887,7 +1887,7 @@
     "lecture_id": "lecture-78"
   },
   "lectures/lecture-77-logo-f7ff60f342d98704/index.html": {
-    "sha256": "79d86e3b2089ed0317d1fb1b974f09ecd048db6e765dadead981de7a9659b64a",
+    "sha256": "799db23abc5f2043662f51957ebc48f7cae18d25fab7c67c74be010fed79b52d",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1896,7 +1896,7 @@
     "lecture_id": "lecture-77-logo-f7ff60f342d98704"
   },
   "lectures/lecture-75-faces-blurred-9330f9b1b5d5-fb39c7ed992b6ed3/index.html": {
-    "sha256": "917a4c45f85627ab1dd2c2076a1089cfd1a86e0393fa534fb2c68427a5cfea2c",
+    "sha256": "876135ee6543059fa4ab62b29e2eecd2d1d0b0b7fbc5ded7ee9124fbaa416735",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1905,7 +1905,7 @@
     "lecture_id": "lecture-75-faces-blurred-9330f9b1b5d5-fb39c7ed992b6ed3"
   },
   "lectures/lecture-74-resized-92c9939b033b-01ad8f37ec92951e/index.html": {
-    "sha256": "54dd63a2bb5c302ce56e441799c6ba653340e2f002603a1023b0c5d6f57ca647",
+    "sha256": "016295fbbf69b88a9f7812058c187358cb498babc6da998eed5140cef37db1b6",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1914,7 +1914,7 @@
     "lecture_id": "lecture-74-resized-92c9939b033b-01ad8f37ec92951e"
   },
   "lectures/lecture-73-resized-9e11743cd0a5-197c82f18300a63e/index.html": {
-    "sha256": "8d790c0cdf03f5c817c188c17d14599a7158a7d309494526d4129509f27330a4",
+    "sha256": "2ead7f7c3601528431360e021daa1335561c3467279ffc94d1ebd9e532a5a7a4",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1923,7 +1923,7 @@
     "lecture_id": "lecture-73-resized-9e11743cd0a5-197c82f18300a63e"
   },
   "lectures/lecture-70-logo-65782ae1a7633e8c/index.html": {
-    "sha256": "14abb736cbba4dfff297320519192e1c0014a4c258291ece9a783a436b555eb4",
+    "sha256": "934c9122f214f7d18d25fd3f01f852a7db9d404aa66673b1f6c64b064fd45ead",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1932,7 +1932,7 @@
     "lecture_id": "lecture-70-logo-65782ae1a7633e8c"
   },
   "lectures/lecture-69-faces-blurred-3be42792f7c2-ec7b5707ac9f1933/index.html": {
-    "sha256": "2637463c16224524ef4bf69edd2417c7151f068aab6cc23bc338d103fe395a46",
+    "sha256": "a0add3e3874c20851ca79027416ec12b9fa07267297ba608394820d3ad66d0fb",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1941,7 +1941,7 @@
     "lecture_id": "lecture-69-faces-blurred-3be42792f7c2-ec7b5707ac9f1933"
   },
   "lectures/lecture-68-faces-blurred-85440f56d27e-0a56be3489b05105/index.html": {
-    "sha256": "828cf7ea17f4e015cfe0a8e7289e13a628eefebb19257940398ee9cb09316b9e",
+    "sha256": "572ceb62cc51218a75557f24421142ed0b8a68d8dc0fe2f19e0eae65b32c5629",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1950,7 +1950,7 @@
     "lecture_id": "lecture-68-faces-blurred-85440f56d27e-0a56be3489b05105"
   },
   "lectures/lecture-67-8096c2b0b79e16c9/index.html": {
-    "sha256": "0ef6ea35df5c9179b18702e30b726d2503e64c31b9e045dd72f3ffaf4ae9aed2",
+    "sha256": "b926d0496b66879f70d8add49b8467f3dab05a22b7b61534e82217bd894915a7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1959,7 +1959,7 @@
     "lecture_id": "lecture-67-8096c2b0b79e16c9"
   },
   "lectures/lecture-66-b4d727eb69671635/index.html": {
-    "sha256": "2af4a12e3caeba48deef1af6bd20e37e06a4181ff3964697c8b56888219bb0de",
+    "sha256": "d113a2ea24c27ad9f9da4c682b281a171fba235204c4a629fb27ffd2f1d288d8",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1968,7 +1968,7 @@
     "lecture_id": "lecture-66-b4d727eb69671635"
   },
   "lectures/lecture-65-d989dcd1e90a2b9e/index.html": {
-    "sha256": "4117a3966f3407887e2b9fcfc930a1b200cd10a5665269ef21a815942a29abe6",
+    "sha256": "59ddfb8279adf3051fe1e1bc1c28e064f3035e871120c03177a10048c12c9031",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1977,7 +1977,7 @@
     "lecture_id": "lecture-65-d989dcd1e90a2b9e"
   },
   "lectures/lecture-64-faces-blurred-102b61c7adf6-aae51dc9e66c9576/index.html": {
-    "sha256": "b63d0366a59349b0556052cdfd5217a9b34b61dcd1608dad30614ea6568965ab",
+    "sha256": "7e1debdcda1c619f7b0f6efd7422ac12ce834029c2b98c1874573b8530781f1f",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1986,7 +1986,7 @@
     "lecture_id": "lecture-64-faces-blurred-102b61c7adf6-aae51dc9e66c9576"
   },
   "lectures/lecture-63-resized-d5d501958745-bdfa4e8d6f31d9a1/index.html": {
-    "sha256": "56b3642b1d17e3f93a5a7dd0e3e8dc4cd2ae5707f2a5a052fef0f220772614ff",
+    "sha256": "41c12943f260741eda245a67fe0e0a3dc097b07466903413fd2c85ba53f70d25",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -1995,7 +1995,7 @@
     "lecture_id": "lecture-63-resized-d5d501958745-bdfa4e8d6f31d9a1"
   },
   "lectures/lecture-62/index.html": {
-    "sha256": "4b5ce5bf6c91c5652207ee4aab87e1fa67038a57affe8e04151ccbc9a82bb904",
+    "sha256": "31b623d48034fee2ade5e89426fa302989acf219ccf9a0742eed90e8330c07ec",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2004,7 +2004,7 @@
     "lecture_id": "lecture-62"
   },
   "lectures/lecture-61-resized-379968b721d3-682396d2b33d2328/index.html": {
-    "sha256": "f90159704a345624b69ed7adc83a9a60e5a535f88be7b4605910012e50f3a7e1",
+    "sha256": "ded8ac814adabf79a3f35d8c6393798b0e66c16b1b58c92e3dd4e3e77314f9e8",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2013,7 +2013,7 @@
     "lecture_id": "lecture-61-resized-379968b721d3-682396d2b33d2328"
   },
   "lectures/lecture-58-c2ec266951f16c2e/index.html": {
-    "sha256": "55f1c272716b4590eb88157f7f3aacdfe5a5d4a9bceeab7e8a2abb29f693fbf1",
+    "sha256": "d3c05c46c8b8d986ee11c33ce2e5e17091f949037ce43838074a72fbc56bfd7d",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2022,7 +2022,7 @@
     "lecture_id": "lecture-58-c2ec266951f16c2e"
   },
   "lectures/lecture-57-faces-blurred-007bfcfb1d45-2af47de15e44617c/index.html": {
-    "sha256": "b1ddd5ee2ffa7c9323ccfd8bb17e99c14b9c23ac599aebd949e0334c33c8109d",
+    "sha256": "8372da3710698c12125c8d095f053e9f7bbcc34ef5eb4c9cb132a232c0a70d19",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2031,7 +2031,7 @@
     "lecture_id": "lecture-57-faces-blurred-007bfcfb1d45-2af47de15e44617c"
   },
   "lectures/lecture-56-logo-164bb10e2db7ece7/index.html": {
-    "sha256": "0a4c21812ce9288a5de2cb212d5254f2e99068427979ee6c0acd2424ae2e1357",
+    "sha256": "4f9f8e279068a408bcc4211aef0c48da4f091ea6969c1709a2d4693aa6b48865",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2040,7 +2040,7 @@
     "lecture_id": "lecture-56-logo-164bb10e2db7ece7"
   },
   "lectures/lecture-55-faces-blurred-59d768044636-7a289c48e494b9b9/index.html": {
-    "sha256": "4581fd3693e30a747bbe20bdb90c921c9cf115d756f86f56488140a63b61e4d0",
+    "sha256": "c5151240f5056f43b1e529c9ebafdd971620ab31b3238c4e07812afac610b08a",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2049,7 +2049,7 @@
     "lecture_id": "lecture-55-faces-blurred-59d768044636-7a289c48e494b9b9"
   },
   "lectures/lecture-54-resized-6aa9d5639d82-bdc972a2c97159db/index.html": {
-    "sha256": "e52d1c85d090caaca650b7f3201885a25019575762fd1e90c38296f06ad099ba",
+    "sha256": "cf514fa5688f24c9bd0645e279a5662d1442d8c5cdd98f4af7d5a3efc124ec59",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2058,7 +2058,7 @@
     "lecture_id": "lecture-54-resized-6aa9d5639d82-bdc972a2c97159db"
   },
   "lectures/lecture-53-faces-blurred-e403dd247f03-f8cd4313aef57030/index.html": {
-    "sha256": "ceb4f6b38eaee440701bf5bfe2f9d0ab6c962ad4d6e0d17ca0860bfe4f7f1897",
+    "sha256": "76e83e4c57ec8f4c72bf1640a580b77b153fa0eb4000208fc28a369106073afe",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2067,7 +2067,7 @@
     "lecture_id": "lecture-53-faces-blurred-e403dd247f03-f8cd4313aef57030"
   },
   "lectures/lecture-51-resized-0145044860cc-b02c5d6c59a71819/index.html": {
-    "sha256": "41b2399979384ffb5a111d9424eb7af5baa4973f7199fc074e7e0bbab14a3691",
+    "sha256": "2761365b2875831a0cf4feafb883af5a759211ed567f9a00328a20e4c2607c64",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2076,7 +2076,7 @@
     "lecture_id": "lecture-51-resized-0145044860cc-b02c5d6c59a71819"
   },
   "lectures/lecture-50-logo-1fb1e3cd5e7bd1ab/index.html": {
-    "sha256": "aac00179e6fc8239cfd1b0524ef0b6236f3607353e78ff4a1fb0b896a60de631",
+    "sha256": "0a754ef2788dd0d391cefe33face39fe5fecd8220ce27c228d4105cda0e26e98",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2085,7 +2085,7 @@
     "lecture_id": "lecture-50-logo-1fb1e3cd5e7bd1ab"
   },
   "lectures/lecture-49-f674cbf072ac0479/index.html": {
-    "sha256": "009147627c1b49a6294c2329f7d92d0e18ffd22813d0c822cab62acc7919cb82",
+    "sha256": "faf387a789d296bffabb06fc19c52b4a5c5475ecf26cc2dd264494ccc0136db2",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2094,7 +2094,7 @@
     "lecture_id": "lecture-49-f674cbf072ac0479"
   },
   "lectures/lecture-logo-seodaemun-gu-88e1617a0391-c6bee90b96f874c6/index.html": {
-    "sha256": "00faabb61a5ef7ec74c274620c89f9e8d273a602dd8beb09d5972c8cbbfeb907",
+    "sha256": "73a11f31f44a5d2d556d740be114770028e5937354612b1957c2787f33dc6ea7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2103,7 +2103,7 @@
     "lecture_id": "lecture-logo-seodaemun-gu-88e1617a0391-c6bee90b96f874c6"
   },
   "lectures/lecture-47-faces-blurred-08b76a60b97b-bb44a3fdf23eee62/index.html": {
-    "sha256": "ce9ec9db1e9b572bc64820fb745ad13a8012498a18394ddd631138c34c196d1f",
+    "sha256": "8652dbfb4413b643858083a1416e07c400955a46f359a7ee5ae72636115978dc",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2112,7 +2112,7 @@
     "lecture_id": "lecture-47-faces-blurred-08b76a60b97b-bb44a3fdf23eee62"
   },
   "lectures/lecture-46-faces-blurred-7224017fd8aa-b86d3b65b34bd8fc/index.html": {
-    "sha256": "7fb901375a6853a7fb61ac44d3b760c8a548367a2eb08d575e297140b0491393",
+    "sha256": "22850a20ea1e2f18ddae3855039a706fb2d75e325262da12a206d3c7a6e4a03e",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2121,7 +2121,7 @@
     "lecture_id": "lecture-46-faces-blurred-7224017fd8aa-b86d3b65b34bd8fc"
   },
   "lectures/lecture-45-logo-38c5b260ab07c655/index.html": {
-    "sha256": "c9043d920a0ebc1d6d6ca365119b4b62c3c1af84b1ba73b602ce873ef294c0e2",
+    "sha256": "9baac06d69f5765520c1cd9a9eab814668e9f5ba6455230694e698d2296371af",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2130,7 +2130,7 @@
     "lecture_id": "lecture-45-logo-38c5b260ab07c655"
   },
   "lectures/lecture-43-faces-blurred-2e77daac89a3-825b278e658e893d/index.html": {
-    "sha256": "5b0a789bf75394892063f17fd30ffa41d5f31c0488de85f4b4dbfad9e562d128",
+    "sha256": "02b2969a0310cd701900881c494ef420ba7177747dcb31be81c2d8e9d068c450",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2139,7 +2139,7 @@
     "lecture_id": "lecture-43-faces-blurred-2e77daac89a3-825b278e658e893d"
   },
   "lectures/lecture-41-resized-78dcccf31b96-4c5459948eb67f67/index.html": {
-    "sha256": "cdc74c04f28d0c279a53f06baa729c9be307d686b19c563f781b0fd871d532fc",
+    "sha256": "684da0eadbdb84937d568b19aba5c7ac85d3fb674eb11da4580c554e09319880",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2148,7 +2148,7 @@
     "lecture_id": "lecture-41-resized-78dcccf31b96-4c5459948eb67f67"
   },
   "lectures/lecture-38-resized-3b8d4dfc1574-f62287cae9231a54/index.html": {
-    "sha256": "25ba93fd131875a72bc6ab8a1c307776bbb695c92f87b9a9617ac28d17a72f6e",
+    "sha256": "eb7e396236ae65dc17f92cfbebd5999957f4f11b2465fbf367383ac18945269a",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2157,7 +2157,7 @@
     "lecture_id": "lecture-38-resized-3b8d4dfc1574-f62287cae9231a54"
   },
   "lectures/lecture-34-resized-47d243fe9133-1f9f5b45c88a68e3/index.html": {
-    "sha256": "5562d5cfea9df4617e08824b106256a9bdaedbf4dc09e3eb9d5dc59fe923fd5a",
+    "sha256": "beed98a22ef20ad803f67d592c9eb3a21cd6e235ce228fbeb28749c6da158519",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2166,7 +2166,7 @@
     "lecture_id": "lecture-34-resized-47d243fe9133-1f9f5b45c88a68e3"
   },
   "lectures/lecture-33-faces-blurred-1e59ab020fc4-a1e9cb9231b0e9c3/index.html": {
-    "sha256": "e05d992957a25a8f456e16ac43915d15cfae9b54c172d3546e7e16af414e962b",
+    "sha256": "250298aefd3e8b100fd1a0d2ab357aa0f29c991aa7d0e29d7c9a206e64d89752",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2175,7 +2175,7 @@
     "lecture_id": "lecture-33-faces-blurred-1e59ab020fc4-a1e9cb9231b0e9c3"
   },
   "lectures/lecture-32-resized-0744d7968884-80f79b2176708346/index.html": {
-    "sha256": "ddd1265223520c2a79b4a234522db123ea804f527b5f09a675a48a26d8ed7641",
+    "sha256": "1e6cf7f7f981b42e84a6d675d798352a23787be219c2abd19eb48e6260dae23b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2184,7 +2184,7 @@
     "lecture_id": "lecture-32-resized-0744d7968884-80f79b2176708346"
   },
   "lectures/lecture-29-logo-bfc9281b504f9c5d/index.html": {
-    "sha256": "9b585f4095451a8d17b21cf3e71634d0df40ddc1673759b145c31dc665b625c8",
+    "sha256": "a45a65a90f6a215468d59c4475d7ffd95a8948a969836d4e643f806cb32a2c75",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2193,7 +2193,7 @@
     "lecture_id": "lecture-29-logo-bfc9281b504f9c5d"
   },
   "lectures/lecture-27-resized-228d9dbbab06-28f48dcc604da0f5/index.html": {
-    "sha256": "06f2bede6edfd6da23ca69b1df775f4492a65727b58adf6eabaeaedcd1f15c95",
+    "sha256": "f099ac6ffe206cf690fde89db5d0cfa79e3c215f81497fbec48ac64a268e5651",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2202,7 +2202,7 @@
     "lecture_id": "lecture-27-resized-228d9dbbab06-28f48dcc604da0f5"
   },
   "lectures/lecture-2/index.html": {
-    "sha256": "37dc2ab0f831dcb378e3e86f8cc4752ec75cdcedd87a01aa388fc129eaa49bcf",
+    "sha256": "970ad1ca2cc33245bbed3b17cb7b396088a567f371f200e74b01494b88b4b942",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2211,7 +2211,7 @@
     "lecture_id": "lecture-2"
   },
   "lectures/lecture-3-resized-45e98a236fa9-9d7045ae67b596b5/index.html": {
-    "sha256": "543d20208c093ac2915755d0069fd9637779cfbe188c451a74163eabe272e5e6",
+    "sha256": "81e3a070c846010b2ac4ab8c99d3d99c9f1bf6466226b4ef08e4fb53cfb4f7ff",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2220,7 +2220,7 @@
     "lecture_id": "lecture-3-resized-45e98a236fa9-9d7045ae67b596b5"
   },
   "lectures/lecture-8-logo-85a8196041f67ca8/index.html": {
-    "sha256": "0f3c6fb4bcbf20f504183f7ecbc7d8eca0ba1bcf9b91615368d46e18e4f81bc1",
+    "sha256": "66ca3f62a5e9a862097d95e9d4f41125ef96eb493f976d5c946294e0b226c189",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2229,7 +2229,7 @@
     "lecture_id": "lecture-8-logo-85a8196041f67ca8"
   },
   "lectures/lecture-9-resized-8284abecb9a8-3e278f120b9f4685/index.html": {
-    "sha256": "5c98596c5465e52f2ba5633614aead89225b765647213244c40d247a96ea158d",
+    "sha256": "2e17141e0d74db587055da07b04b381803268c71dde9668617455e22ed2cf586",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2238,7 +2238,7 @@
     "lecture_id": "lecture-9-resized-8284abecb9a8-3e278f120b9f4685"
   },
   "lectures/lecture-10-resized-12de82da950e-4888f1d460c57e0d/index.html": {
-    "sha256": "69caea017f961f13fe5b4f26eac1cad52fb80f6fbe56317382df02373954c910",
+    "sha256": "f6d3ac0d07a6bde13631f459e6fb63406829a340a446510f5e810ab3f4e129c7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2247,7 +2247,7 @@
     "lecture_id": "lecture-10-resized-12de82da950e-4888f1d460c57e0d"
   },
   "lectures/lecture-11-resized-60c365206d7c-ff71c7b21aa99db3/index.html": {
-    "sha256": "2dd0d04a61e67d289cecc70093edd85c771f1f67c6637722e97af1ab8507ea93",
+    "sha256": "227df5e942de021022035fc55516e524c94c27d80c2b1670c0cd94349a98729c",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2256,7 +2256,7 @@
     "lecture_id": "lecture-11-resized-60c365206d7c-ff71c7b21aa99db3"
   },
   "lectures/lecture-12-logo-ed059624b1785bfb/index.html": {
-    "sha256": "554ed1e1eec1004ac3807ebf9b2082e6f5bfeea6b16b881bab4fcf98ff8173e1",
+    "sha256": "042d671ea4a459a9bf6f961f6fdc99c235f165d2489814becc3b438871a1d400",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2265,7 +2265,7 @@
     "lecture_id": "lecture-12-logo-ed059624b1785bfb"
   },
   "lectures/lecture-14-resized-cf5c75bc9703-ede73cf8099b7587/index.html": {
-    "sha256": "d3ec8f49968f288fd22ed95c6099a705c096d08f48e2a8891db5b76877c2cb6a",
+    "sha256": "a7c7b5ab258143f5b34c078f6b65b12e5fd3ed3b976e8d026dff3283ac44b55b",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2274,7 +2274,7 @@
     "lecture_id": "lecture-14-resized-cf5c75bc9703-ede73cf8099b7587"
   },
   "lectures/lecture-13-resized-f485553ab4f9-4b8d76132989a2cd/index.html": {
-    "sha256": "9f5e28accab78824f89694f40f3ddceadb21fc15fde20237324cc0d2792eb699",
+    "sha256": "c443507c9c134ef06348cd37860f6e8afa04570e4d17c3f27cb2932f5bb40c75",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2283,7 +2283,7 @@
     "lecture_id": "lecture-13-resized-f485553ab4f9-4b8d76132989a2cd"
   },
   "lectures/lecture-15-logo-63840e8690b8396c/index.html": {
-    "sha256": "3085fc6fa429dd2fec2b105991c1b39c03d0bef2504f0aa2ff8cd2e3d6f3c807",
+    "sha256": "50404197a28a4472e0604978e74a050a0ad9f82d95435c8c02277e218222b873",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2292,7 +2292,7 @@
     "lecture_id": "lecture-15-logo-63840e8690b8396c"
   },
   "lectures/lecture-16-resized-61d993268fa7-a9094eacaf0bc3e0/index.html": {
-    "sha256": "34a90879d1cb57d25bda9cb4df1e7c60a35c530f570964854ac7484a8245bfa6",
+    "sha256": "0ebc67dc03183cb8cb0eb2f5fb002d3ec23c2c72b9024ed094d53276e6af2073",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2301,7 +2301,7 @@
     "lecture_id": "lecture-16-resized-61d993268fa7-a9094eacaf0bc3e0"
   },
   "lectures/lecture-17-faces-blurred-934f833436a6-b18dd4b870396b6d/index.html": {
-    "sha256": "1c3139e62b88eb3c56447547f9d912411a427694542590956d81d25e609eef59",
+    "sha256": "857cf0d5441d9008aafb92e0223c29486c927e542280684997e50b01aaf73485",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2310,7 +2310,7 @@
     "lecture_id": "lecture-17-faces-blurred-934f833436a6-b18dd4b870396b6d"
   },
   "lectures/lecture-18-resized-8a1233e62b8a-c59625ea4c4e4fbb/index.html": {
-    "sha256": "bdeb87c363d3c7225c47b8d1b162d79c1104665a8df1f3bd9898c6b108d5e087",
+    "sha256": "ddfcd7db2dbbe390f61808862e8329bd674073f51c338686bed81b8683aed7e2",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2319,7 +2319,7 @@
     "lecture_id": "lecture-18-resized-8a1233e62b8a-c59625ea4c4e4fbb"
   },
   "lectures/lecture-19-resized-86a59547d884-b6222874c40bbac7/index.html": {
-    "sha256": "335f4254b529bd62f08f01956f7138b298194468f6917a39148c71b9ceb39efd",
+    "sha256": "5d2365deef1b4c6d892a49decbb886a014bb4aa8680b2dae36009cfccd997b42",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2328,7 +2328,7 @@
     "lecture_id": "lecture-19-resized-86a59547d884-b6222874c40bbac7"
   },
   "lectures/lecture-20-faces-blurred-720564fad36b-3aa1c8c2e9c727c0/index.html": {
-    "sha256": "371614421c7404bea2f85def5a7ff43f164c0f47a05f8d2ceca1f9f03aab1768",
+    "sha256": "11ffb6a95fe8c3c651fd1468c52506f15b2296fe29b0f80bd59bdc818e80dee1",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2337,7 +2337,7 @@
     "lecture_id": "lecture-20-faces-blurred-720564fad36b-3aa1c8c2e9c727c0"
   },
   "lectures/lecture-21-faces-blurred-768109cfe8b3-8fd1368ea82fe082/index.html": {
-    "sha256": "b8601bb617dbec9e53f7b59a465001e0eb4e85187e66b621f9265dbae039b86e",
+    "sha256": "cf43851af79a27832eb6d3de4898889f98420e09affc028ad2e961a8c07dd53d",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2346,7 +2346,7 @@
     "lecture_id": "lecture-21-faces-blurred-768109cfe8b3-8fd1368ea82fe082"
   },
   "lectures/lecture-22-faces-blurred-b88f42c19acd-078757d785afd730/index.html": {
-    "sha256": "9bd654055dd41604425e93840acac6d9c0acbdc1669fdea7a5fb6eb7676827e1",
+    "sha256": "afc727d6878d71c14d5c18ad2904f9a0e637c09bb87a53db79c2bc75c7b351c2",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2355,7 +2355,7 @@
     "lecture_id": "lecture-22-faces-blurred-b88f42c19acd-078757d785afd730"
   },
   "lectures/lecture-23-resized-afa106c902ab-9de27adc8fbeb637/index.html": {
-    "sha256": "68967667a6c03d183e50205f7162a41fdaee99a713007007703c4f71d80b139c",
+    "sha256": "bac445896557ce1a2cdb759b5fd6f1edf3c05d8226234cd3eadeb93215cd303d",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2364,7 +2364,7 @@
     "lecture_id": "lecture-23-resized-afa106c902ab-9de27adc8fbeb637"
   },
   "lectures/lecture-24-resized-90f0677f737b-07cb6e2a53196305/index.html": {
-    "sha256": "faaaf235bec30df80f69313f1f28b53d5ed4872da8259851ba519b6ca3fa3367",
+    "sha256": "f9d1d27799c94bb66bd56a576187cc81358938a394af2982ff3285bd917ccee7",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2373,7 +2373,7 @@
     "lecture_id": "lecture-24-resized-90f0677f737b-07cb6e2a53196305"
   },
   "lectures/lecture-25-resized-610ad637772f-f38caa17de4d90a0/index.html": {
-    "sha256": "bf2620ef4ed6f05f8d37ff6d6fec687da75dcbd84af50fdbb5dd1f7de4c02ee8",
+    "sha256": "2006022964ae27541ca284dc4b1561bcfec8bd2bfb6dbc911821d2841ddf5146",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2382,7 +2382,7 @@
     "lecture_id": "lecture-25-resized-610ad637772f-f38caa17de4d90a0"
   },
   "lectures/course-34/index.html": {
-    "sha256": "fed216168bb345804eeec46218d4191c85760e773f274148e9865dcd2c80c634",
+    "sha256": "0f5d25534c11d76867d907d7b32d3613011487fae57248ba46c755d545749ff6",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2391,7 +2391,7 @@
     "lecture_id": "course-34"
   },
   "lectures/course-26/index.html": {
-    "sha256": "f20cb624f249cc7deac5ab3601d582f6d1e067e7f77e6e74c12fc416c182bb3c",
+    "sha256": "373edb1dfd8f2f8f89dabf99e9ed68684414f58203bdfe6c8e95fcb8a5ebea14",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2400,7 +2400,7 @@
     "lecture_id": "course-26"
   },
   "lectures/course-20/index.html": {
-    "sha256": "5fe62086d96de7155a8c450f4586bf53590e48d216de42a8d63c94696050f413",
+    "sha256": "7337d8256201cb1e9ec6a6ec771337dff759511ddbb2eccf26c0ffd33a030ca6",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2409,7 +2409,7 @@
     "lecture_id": "course-20"
   },
   "lectures/course-19/index.html": {
-    "sha256": "c8ec430eae5f5754b714099862969aa0d50eddef4a0204fba87f7326a61fb2b9",
+    "sha256": "db3b663328ef888e29b48bbdd09187b5b234f14c1745456baef882962b4265f6",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2418,7 +2418,7 @@
     "lecture_id": "course-19"
   },
   "lectures/course-18/index.html": {
-    "sha256": "3b9c3b4bb91e02e74c573390b4e7d9836c1638c7b5e365b9b5fead6b6709131d",
+    "sha256": "78cd01957cc8e2542961b0e5cf07a57c709dbd6065f7c837c661be9b830e7b86",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2427,7 +2427,7 @@
     "lecture_id": "course-18"
   },
   "lectures/course-17/index.html": {
-    "sha256": "ad5c38f43ed1928f47aae9c65ce1d6389c6c7f502e771b7deb8c989fc84e74c2",
+    "sha256": "34f9460f5398c0a08ca9f98eb2f0e6ae44455316b5f2aec5b9d9e21010b0ca8f",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -2436,7 +2436,7 @@
     "lecture_id": "course-17"
   },
   "lectures/course-16/index.html": {
-    "sha256": "fe10aeebd7db278501e2c26a14e20344d3f4d33f76159295d5e878704434225b",
+    "sha256": "e5c69085636c126869f7d5741c84a8edfeebe86afb04611ae28186a395aa6ef0",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"

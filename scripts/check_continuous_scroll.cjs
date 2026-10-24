@@ -39,7 +39,7 @@ function fixture({ mobile = true, home = false } = {}) {
     panel.top = 10000;
     panel.getBoundingClientRect = () => ({ top: panel.top });
     panel.querySelector = selector => selector === '.mobile-next-hint' ? hint : description;
-    link.href = 'https://example.test/media/';
+    link.href = home ? 'https://example.test/books/' : 'https://example.test/media/';
     link.querySelector = () => label;
     label.textContent = 'Media';
     const document = Object.assign(surface(), {
@@ -138,11 +138,11 @@ test('a collapsed or expanded list rechecks the next section without requiring a
     await f.flush();
     assert.equal(f.requests.length, 1, 'do not duplicate the pending request');
 });
-test('home starts after its existing Books, then follows each page next link', async () => {
-    const f = fixture({ home: true }); await f.near(); await f.respond();
-    await f.near(); await f.respond({ key: 'news', next: '/lectures/' });
-    assert.deepEqual(f.requests.map(r => r.url), ['https://example.test/media/', 'https://example.test/news/']);
-    assert.equal(f.link.href, 'https://example.test/lectures/');
+test('home starts after its existing Media, then follows Books and Lectures', async () => {
+    const f = fixture({ home: true }); await f.near(); await f.respond({ key: 'books', next: '/lectures/' });
+    await f.near(); await f.respond({ key: 'lectures', next: '/courses/online/' });
+    assert.deepEqual(f.requests.map(r => r.url), ['https://example.test/books/', 'https://example.test/lectures/']);
+    assert.equal(f.link.href, 'https://example.test/courses/online/');
     assert.equal(f.window.location.href, 'https://example.test/');
 });
 test('last section ends the stream and reveals the sole existing footer', async () => {

@@ -8,8 +8,8 @@ function setupMobileContinuousScroll({ link, panel, mobile, enhance }) {
     const label = link.querySelector('.next-page-label');
     const description = panel.querySelector('.mobile-next-description');
     const visited = new Set([new URL(window.location.href).pathname.replace(/index\.html$/, '')]);
-    // Home already includes all Books on mobile.
-    if (document.body.dataset.page === 'home') visited.add('/books/');
+    // Home already includes Media on mobile.
+    if (document.body.dataset.page === 'home') visited.add('/media/');
     let appended = false;
     let loading = false;
     let failed = false;

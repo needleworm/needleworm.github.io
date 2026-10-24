@@ -5,15 +5,15 @@
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://bhban.kr/books/</loc>
-    <lastmod>2026-10-24</lastmod>
-  </url>
-  <url>
     <loc>https://bhban.kr/media/</loc>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://bhban.kr/news/</loc>
+    <loc>https://bhban.kr/books/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://bhban.kr/lectures/</loc>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
@@ -25,7 +25,7 @@
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
-    <loc>https://bhban.kr/lectures/</loc>
+    <loc>https://bhban.kr/news/</loc>
     <lastmod>2026-10-24</lastmod>
   </url>
   <url>
