@@ -11,6 +11,7 @@ import sys
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
 from build_site import ROOT, Blocks, VOID, GROUPS, LECTURE_CATEGORIES, latest_date, source_views
+from paper_pages import load_records, plain
 
 
 class Document(HTMLParser):
@@ -160,6 +161,8 @@ def check_sitemap(config, require):
         (p['slug']+'/index.html' if p['slug'] else 'index.html')
         for p in config['pages']
     }
+    for record in json.loads((ROOT/'content/papers.json').read_text(encoding='utf8')):
+        page_urls[config['url']+'/papers/'+record['slug']+'/'] = 'papers/'+record['slug']+'/index.html'
     project_urls = {node.text for node in projects.findall('sm:url/sm:loc', ns)} - set(page_urls)
     expected_urls = set(page_urls) | project_urls
     urls = []
@@ -198,6 +201,70 @@ def check_sitemap(config, require):
     require(robots_maps == [config['url']+'/sitemap.xml'], 'robots.txt: sitemap declaration mismatch')
     return {'urls': len(urls), 'canonical_pages': len(page_urls), 'project_pages': len(project_urls),
             'robots_sitemap': robots_maps}
+
+
+def check_paper_pages(config, source, require):
+    records = load_records([source[a:b] for a, b in sorted(Blocks(source).cards)])
+    listing = Document((ROOT/'papers/index.html').read_text(encoding='utf8'))
+    listing_links = {a.get('href') for tag, a in listing.tags if tag == 'a'}
+    report = []
+    titles = set()
+    for record in records.values():
+        key = record['record_id']
+        target = ROOT / record['path'].strip('/') / 'index.html'
+        require(target.is_file(), f'{key}: missing paper detail route')
+        if not target.is_file():
+            continue
+        html = target.read_text(encoding='utf8')
+        doc = Document(html)
+        url = config['url'] + record['path']
+        meta = {}
+        for tag, attrs in doc.tags:
+            if tag == 'meta' and attrs.get('name'):
+                meta.setdefault(attrs['name'], []).append(attrs.get('content'))
+        require(meta.get('citation_title') == [record['title']], f'{key}: scholarly title mismatch')
+        require(meta.get('citation_author') == record['authors'], f'{key}: scholarly author names/order mismatch')
+        require(meta.get('citation_publication_date') == [str(record['year'])], f'{key}: publication year mismatch')
+        require(meta.get('citation_abstract_html_url') == [url], f'{key}: abstract URL mismatch')
+        require([a.get('href') for tag, a in doc.tags if tag == 'link' and a.get('rel') == 'canonical'] == [url], f'{key}: detail canonical mismatch')
+        require(not any(re.search(r'\bnoindex\b', value or '', re.I) for value in meta.get('robots', [])), f'{key}: paper must be indexable')
+        require(sum(tag == 'h1' for tag, _ in doc.tags) == 1, f'{key}: expected one visible main title')
+        title = plain(re.search(r'<title>(.*?)</title>', html, re.S)[1])
+        require(title not in titles, f'{key}: duplicate page title')
+        titles.add(title)
+        abstracts = re.findall(r'<p class="abstract"[^>]*>(.*?)</p>', html, re.S)
+        require(len(abstracts) == 1 and plain(abstracts[0]) == record['abstract'], f'{key}: original abstract missing from readable HTML')
+        require(not any(tag in {'template', 'details'} for tag, _ in doc.tags), f'{key}: paper abstract cannot require expansion')
+        require(not doc.unclosed_layout, f'{key}: unclosed detail layout')
+        require(record['path'] in listing_links, f'{key}: missing crawlable link from the paper index')
+        schemas = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
+        graph = json.loads(schemas[0])['@graph'] if len(schemas) == 1 else []
+        articles = [node for node in graph if node.get('@type') in {'ScholarlyArticle', 'Thesis'}]
+        require(len(articles) == 1, f'{key}: expected one scholarly work per detail page')
+        if articles:
+            article = articles[0]
+            require(article.get('name') == record['title'] and article.get('abstract') == record['abstract'], f'{key}: structured data differs from visible paper')
+            require([a.get('name') for a in article.get('author', [])] == record['authors'], f'{key}: structured authors mismatch')
+            require(article.get('datePublished') == str(record['year']), f'{key}: structured publication year mismatch')
+            require((article.get('creativeWorkStatus') == 'Preprint') == (record['publication_type'] == 'preprint'), f'{key}: publication status mismatch')
+        if record.get('full_pdf'):
+            expected_pdf = url + 'paper.pdf'
+            require(meta.get('citation_pdf_url') == [expected_pdf], f'{key}: full-text PDF must share the abstract directory')
+            pdf = target.parent / 'paper.pdf'
+            require(pdf.is_file() and pdf.read_bytes() == (ROOT/record['full_pdf']).read_bytes(), f'{key}: full PDF copy differs from verified source')
+            require(any(tag == 'a' and a.get('href') == record['path']+'paper.pdf' for tag, a in doc.tags), f'{key}: scholarly PDF has no visible download link')
+        else:
+            require('citation_pdf_url' not in meta and not (target.parent/'paper.pdf').exists(), f'{key}: preview, excluded or mismatched PDF must not be marked as full text')
+            require(not articles or 'encoding' not in articles[0], f'{key}: no full-text encoding without a matching PDF')
+        for tag, attrs in doc.tags:
+            for attr in ['href', 'src']:
+                value = attrs.get(attr, '')
+                if value.startswith('/') and not value.startswith('//') and value != '/':
+                    route_path = unquote(urlsplit(value).path)
+                    local = ROOT / route_path.lstrip('/')
+                    require((local/'index.html').is_file() if route_path.endswith('/') else local.is_file(), f'{key}: missing local detail reference {value}')
+        report.append({'paper': key, 'url': url, 'full_pdf': bool(record.get('full_pdf'))})
+    return report
 
 
 def main():
@@ -301,8 +368,9 @@ def main():
         for t,a in doc.tags:
             if t=='a' and a.get('href','').startswith('/'):
                 require((ROOT/a['href'].strip('/')/'index.html').is_file(), f'{redirect["from"]}: missing fallback link {a["href"]}')
+    paper_report = check_paper_pages(config, sources['papers'], require)
     sitemap_report = check_sitemap(config, require)
-    print(json.dumps({'pages':report,'redirects':config.get('redirects', []),'sitemap':sitemap_report,'failures':failures},ensure_ascii=False,indent=2))
+    print(json.dumps({'pages':report,'paper_pages':paper_report,'redirects':config.get('redirects', []),'sitemap':sitemap_report,'failures':failures},ensure_ascii=False,indent=2))
     return bool(failures)
 
 

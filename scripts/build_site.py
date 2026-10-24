@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 import sys
 import xml.etree.ElementTree as ET
+from paper_pages import load_records, link_card_titles, scholar_meta, article_schema, render_article, pdf_outputs
 
 ROOT = Path(__file__).resolve().parents[1]
 VOID = set('area base br col embed hr img input link meta param source track wbr'.split())
@@ -328,6 +329,8 @@ def build(check=False):
         raise ValueError('Every source section must appear on exactly one page')
     counts = {key: len(Blocks(source).cards) for key, source in sources.items()}
     views = source_views(sources)
+    paper_records = load_records([sources['papers'][a:b] for a, b in sorted(Blocks(sources['papers']).cards)])
+    views['papers'] = link_card_titles(views['papers'], paper_records)
     view_counts = {key: len(Blocks(source).cards) for key, source in views.items()}
     layout = (ROOT / 'content/layout.html').read_text(encoding='utf8')
     asset_versions = {key: sha256((ROOT / name).read_text(encoding='utf8').encode('utf8')).hexdigest()[:12] for key, name in {
@@ -355,6 +358,11 @@ def build(check=False):
         schema = {'@type':'ProfilePage' if page['key']=='home' else 'WebPage','@id':url+'#page','url':url,'name':page['title'],'description':page['description'],'inLanguage':'ko-KR','about':{'@id':person['@id']},'isPartOf':{'@id':config['url']+'/#website'}}
         if page['key'] == 'home':
             schema['mainEntity'] = {'@id':person['@id']}
+        elif page['key'] == 'papers':
+            schema['@type'] = 'CollectionPage'
+            schema['mainEntity'] = {'@type': 'ItemList', 'itemListElement': [
+                {'@type': 'ListItem', 'position': index + 1, 'name': record['title'], 'url': config['url'] + record['path']}
+                for index, record in enumerate(paper_records.values())]}
         schemas = [person, {'@type':'WebSite','@id':config['url']+'/#website','url':config['url']+'/','name':'반병현','inLanguage':'ko-KR'}, schema]
         if page['key'] != 'home':
             crumbs = [{'@type':'ListItem','position':1,'name':'Home','item':config['url']+'/'}]
@@ -366,6 +374,8 @@ def build(check=False):
         values = {
             **asset_versions,
             'TITLE': escape(page['title']),
+            'LANG': 'ko', 'EXTRA_HEAD': '', 'OG_TYPE': 'website', 'OG_LOCALE': 'ko_KR',
+            'OG_IMAGE': 'https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@9a7f553312705d9178fbdb73676d681727aa85ac/src/images/bookcovers.webp',
             'DESCRIPTION': escape(page['description'], quote=True),
             'URL': url,
             'STRUCTURED_DATA': json.dumps({'@context':'https://schema.org','@graph':schemas}, ensure_ascii=False).replace('<', '\\u003c'),
@@ -391,6 +401,42 @@ def build(check=False):
         lastmod = previous.get(target,{}).get('lastmod',date.today().isoformat()) if previous.get(target,{}).get('sha256') == digest else date.today().isoformat()
         display_sections = page['sections'] + (['books'] if page['key'] == 'home' else [])
         manifest[target] = {'sha256':digest,'lastmod':lastmod,'sections':display_sections,'cards':sum(view_counts[k] for k in display_sections)}
+    for record in paper_records.values():
+        url = config['url'] + record['path']
+        description = record['abstract'] if len(record['abstract']) <= 180 else record['abstract'][:177].rstrip() + '…'
+        page = {'key': 'paper-detail', 'group': 'research'}
+        article = article_schema(record, config['url'])
+        schema = {'@type': 'WebPage', '@id': url + '#page', 'url': url, 'name': record['title'],
+                  'description': description, 'inLanguage': record['language'],
+                  'mainEntity': {'@id': article['@id']}, 'isPartOf': {'@id': config['url'] + '/#website'}}
+        schemas = [person, {'@type': 'WebSite', '@id': config['url'] + '/#website', 'url': config['url'] + '/', 'name': '반병현'},
+                   schema, article, {'@type': 'BreadcrumbList', 'itemListElement': [
+                       {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': config['url'] + '/'},
+                       {'@type': 'ListItem', 'position': 2, 'name': 'Papers', 'item': config['url'] + '/papers/'},
+                       {'@type': 'ListItem', 'position': 3, 'name': record['title'], 'item': url}]}]
+        image = re.search(r'<img\b[^>]*\bsrc="([^"]+)"', record['card'])[1]
+        image = config['url'] + '/' + image.removeprefix('./') if image.startswith('./') else image
+        values = {**asset_versions, 'TITLE': escape(record['title'] + ' | Byunghyun Ban'),
+                  'DESCRIPTION': escape(description, quote=True), 'URL': url, 'LANG': record['language'],
+                  'EXTRA_HEAD': scholar_meta(record, config['url']), 'OG_TYPE': 'article',
+                  'OG_LOCALE': 'ko_KR' if record['language'] == 'ko' else 'en_US', 'OG_IMAGE': image,
+                  'STRUCTURED_DATA': json.dumps({'@context': 'https://schema.org', '@graph': schemas}, ensure_ascii=False).replace('<', '\\u003c'),
+                  'LIBRARIES': '', 'BODY_CLASS': 'content-page paper-detail-page', 'PAGE_KEY': 'paper-detail',
+                  'NAVIGATION': navigation(page, pages), 'HERO': '', 'PAGE_HEADER': '',
+                  'MAIN_CLASS': '', 'MAIN': render_article(record), 'MOBILE_NEXT_PAGE': '',
+                  'FOOTER_LINKS': ''.join(f'<a href="{path(p)}">{escape(p["heading"])}</a>' for p in pages.values())}
+        output = layout
+        for key, value in values.items():
+            output = output.replace('{{' + key + '}}', value)
+        if re.search(r'\{\{[A-Z_]+\}\}', output):
+            raise ValueError('Unresolved paper layout variable')
+        output = '\n'.join(line.rstrip() for line in output.splitlines()) + '\n'
+        target = record['path'].strip('/') + '/index.html'
+        outputs[target] = output
+        digest = sha256(output.encode('utf8')).hexdigest()
+        lastmod = previous.get(target, {}).get('lastmod', date.today().isoformat()) if previous.get(target, {}).get('sha256') == digest else date.today().isoformat()
+        manifest[target] = {'sha256': digest, 'lastmod': lastmod, 'sections': ['papers'], 'cards': 0, 'paper_id': record['record_id']}
+    outputs.update(pdf_outputs(paper_records))
     for entry in redirects:
         destination = next(p for p in pages.values() if p['slug'] == entry['to'])
         destination_path = path(destination)
@@ -416,6 +462,12 @@ def build(check=False):
         ET.SubElement(node,'{'+ns+'}loc').text = url
         target = f"{page['slug']}/index.html" if page['slug'] else 'index.html'
         ET.SubElement(node,'{'+ns+'}lastmod').text = manifest[target]['lastmod']
+    for record in paper_records.values():
+        url = config['url'] + record['path']
+        current_urls.add(url)
+        node = ET.SubElement(sitemap, '{' + ns + '}url')
+        ET.SubElement(node, '{' + ns + '}loc').text = url
+        ET.SubElement(node, '{' + ns + '}lastmod').text = manifest[record['path'].strip('/') + '/index.html']['lastmod']
     for node in ET.parse(ROOT/'content/project-sitemap.xml').getroot():
         loc = node.find('{'+ns+'}loc')
         if loc is not None and loc.text not in current_urls:
@@ -426,12 +478,16 @@ def build(check=False):
     stale = []
     for name, output in outputs.items():
         target = ROOT/name
-        if not target.exists() or target.read_text(encoding='utf8') != output:
+        current = target.read_bytes() if target.exists() and isinstance(output, bytes) else target.read_text(encoding='utf8') if target.exists() else None
+        if current != output:
             stale.append(name)
             if not check:
                 target.parent.mkdir(parents=True,exist_ok=True)
-                target.write_text(output,encoding='utf8',newline='\n')
-    print(json.dumps({'pages':len(pages),'source_cards':counts,'display_cards':view_counts,'changed':stale,'check':check},ensure_ascii=False))
+                if isinstance(output, bytes):
+                    target.write_bytes(output)
+                else:
+                    target.write_text(output,encoding='utf8',newline='\n')
+    print(json.dumps({'pages':len(pages),'paper_pages':len(paper_records),'source_cards':counts,'display_cards':view_counts,'changed':stale,'check':check},ensure_ascii=False))
     return bool(check and stale)
 
 

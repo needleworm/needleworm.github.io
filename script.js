@@ -99,7 +99,7 @@ function setupSectionNavigation() {
     const main = document.getElementById('main-content');
     const menu = document.getElementById('nav-links');
     if (!main || !menu) return;
-    const initialPage = document.body.dataset.page;
+    const initialPage = document.body.dataset.page === 'paper-detail' ? 'papers' : document.body.dataset.page;
     let currentPage = null;
     let scheduled = false;
     let refresh = true;

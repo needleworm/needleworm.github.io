@@ -59,6 +59,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .full-content .show-more-btn, .full-content .paper-show-more-btn, .full-content .btn-load-more { display: none !important; }
 #tab-papers .paper-action-label { margin-left: .3rem; }
 #tab-papers .paper-action-icon { display: none; }
+.singleWebsiteCard .paper-detail-link { color: inherit; }
+.singleWebsiteCard .paper-detail-link:hover, .singleWebsiteCard .paper-detail-link:focus-visible { text-decoration: underline; }
+.static-site.content-page.paper-detail-page .page-main { max-width: 960px; padding-top: 2rem; padding-bottom: 3rem; }
+.paper-breadcrumbs { display: flex; gap: .75rem; margin-bottom: 1.5rem; font-size: .85rem; }
+.paper-detail { padding: clamp(1.25rem, 4vw, 3rem); background: #fff; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+.paper-detail h1 { font-size: clamp(1.45rem, 3vw, 2.25rem); line-height: 1.4; margin: 0 0 1rem; overflow-wrap: anywhere; }
+.paper-kind { margin-bottom: .65rem; font-size: .8rem; color: var(--text-muted); }
+.paper-authors { margin: 0 0 .6rem; line-height: 1.6; }
+.paper-venue, .paper-alternative-title { margin-bottom: 1rem; color: var(--text-muted); font-size: .85rem; line-height: 1.6; }
+.paper-abstract { margin-top: 1.5rem; padding: 0; }
+.paper-detail h2 { font-size: 1.1rem; margin-bottom: .75rem; }
+.paper-abstract .abstract { margin: 0; font-size: .95rem; line-height: 1.8; text-align: left; overflow-wrap: break-word; }
+.paper-citation { margin-top: 1.5rem; padding: 1.5rem 0 0; border-top: 1px solid #eee; }
+.paper-citation p { margin: 0; font-size: .85rem; line-height: 1.7; overflow-wrap: anywhere; }
+.paper-first-page { margin: 2rem 0; text-align: center; }
+.paper-detail-image { display: block; max-width: 100%; width: auto; height: auto; max-height: 650px; margin: 0 auto; object-fit: contain; }
+.paper-first-page figcaption { margin-top: .75rem; font-size: .8rem; color: var(--text-muted); }
+.paper-back-link { display: inline-block; padding: .75rem 0; font-size: .9rem; }
 .mobile-list-controls, .mobile-list-controls[hidden] { display: none; }
 @media (max-width: 768px) {
     #tab-papers .gitIcons { flex-wrap: wrap; gap: .625rem; padding-left: 0; padding-right: 0; }

@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "sha256": "d7ac4ba9722b269fc3d48905945139d765c114279262dac611f7695cab73c068",
+    "sha256": "0b219283b843f3608818b24dc6e5d4e8b4a2e5ba83f16a2cc70ab30cc40cd271",
     "lastmod": "2026-10-24",
     "sections": [
       "about",
@@ -9,7 +9,7 @@
     "cards": 36
   },
   "books/index.html": {
-    "sha256": "42a8ddb9a1d21d6f6d0a0b6d5efd2b35913149b10e9e7b4ba6def68504341e87",
+    "sha256": "9eb0b6ba4675ccf4ce0ec925c5ab2a5801c1b55bd9cfbc39ec373fa3ef9f2de5",
     "lastmod": "2026-10-24",
     "sections": [
       "books"
@@ -17,7 +17,7 @@
     "cards": 36
   },
   "media/index.html": {
-    "sha256": "6930b38c2a77ffa342ac1d605f9542e6e83735710c3d43c20fe8eaf4432ec69c",
+    "sha256": "aabf7c4f450ba3d38c7ece54b96b413cb82e4222a65437972ab8898e3e6008f1",
     "lastmod": "2026-10-24",
     "sections": [
       "media"
@@ -25,7 +25,7 @@
     "cards": 21
   },
   "news/index.html": {
-    "sha256": "139fb289fac1b06b9fb43f4326719a36e92e864df447bb47f4315be935ec81ba",
+    "sha256": "6159a63ee0515270b17172e56702fc5ca3c5f2db70937492a61f5256e9a5ab49",
     "lastmod": "2026-10-24",
     "sections": [
       "news"
@@ -33,7 +33,7 @@
     "cards": 52
   },
   "courses/online/index.html": {
-    "sha256": "3a4dbe7aa824e67c8a8a447be97411f166e75ccb68acc1f307e171a272292ed5",
+    "sha256": "a9c9067c006a662a58f8ed5b9a6b8bc5c296c27c19018658274a3c930309120e",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-online"
@@ -41,7 +41,7 @@
     "cards": 29
   },
   "courses/offline/index.html": {
-    "sha256": "a4bfe59ff5b16ca0266ef4111a50947d5df2b17f40bd2e1267caa8d00c46b254",
+    "sha256": "e7127c701a973b4d2d9d20a73755e0fe83ec0cd1152a6b180c07494bb9841851",
     "lastmod": "2026-10-24",
     "sections": [
       "courses-offline"
@@ -49,7 +49,7 @@
     "cards": 14
   },
   "lectures/index.html": {
-    "sha256": "0a6d817523c9360f1a414fcd0e0c0d72ecf72757a0d3ea81a3a52507231b3ecc",
+    "sha256": "2024ff274a557ba5638b3ad4cd58f4ab1563527d2d2563f5ca7360167884c944",
     "lastmod": "2026-10-24",
     "sections": [
       "lectures"
@@ -57,7 +57,7 @@
     "cards": 231
   },
   "papers/index.html": {
-    "sha256": "f72ae6228c19a197af257adc3da56e811ca46313e58ee0016775568f5b2978d3",
+    "sha256": "8283f0ab917143254e1fe58f008083dba106db587373c7369534d7e06bdb24e9",
     "lastmod": "2026-10-24",
     "sections": [
       "papers"
@@ -65,7 +65,7 @@
     "cards": 28
   },
   "patents/index.html": {
-    "sha256": "ae01f7bc757d4c2e2b8b6f17b2c6cfcc707265530c4d56f5863b78d504abd9ec",
+    "sha256": "7e857ee1aade88898d3e0c6b5c0f3b53b65f81bcf441f4296b6a5c93de5a485f",
     "lastmod": "2026-10-24",
     "sections": [
       "patents"
@@ -73,7 +73,7 @@
     "cards": 34
   },
   "projects/index.html": {
-    "sha256": "a4df00ad2e4e3f24c265573c0dec6aa35d4633b4009c438d8ea334bb136f6bd0",
+    "sha256": "ca4694bc6b732b60e2a49b15ad26d4dbfbaefb0168e06e9aea2ba4f69fb666a7",
     "lastmod": "2026-10-24",
     "sections": [
       "codes",
@@ -82,7 +82,7 @@
     "cards": 34
   },
   "activities/index.html": {
-    "sha256": "b3f0c0b20ac4ebbe284abb97d7a249834ba99fdd5d83d78140194763d30b056f",
+    "sha256": "7cc9a3218a5015221fe53672b10b8c19c9810946d74ba88723c9ecc6ded517de",
     "lastmod": "2026-10-24",
     "sections": [
       "social"
@@ -90,7 +90,7 @@
     "cards": 2
   },
   "memberships/index.html": {
-    "sha256": "0bb439422dcf79c625e13b7f9c8501403ef41a572879199ee5c2c6fd4df5cec4",
+    "sha256": "4e59cda9c2c79030ee6ffb204db5f604b24d13559a58f51faaa36a828e041779",
     "lastmod": "2026-10-24",
     "sections": [
       "membership"
@@ -98,7 +98,7 @@
     "cards": 9
   },
   "collections/index.html": {
-    "sha256": "15ac4df6fdb1abcb07e852770ad49b8bbed5295c49ed370331e9f190b2458578",
+    "sha256": "eb226a3335294ef6afc7967bcf53a6d759e5dbfa7895a1aca9b89126eea615fb",
     "lastmod": "2026-10-24",
     "sections": [
       "collections"
@@ -106,11 +106,263 @@
     "cards": 7
   },
   "contact/index.html": {
-    "sha256": "01960549e62c6a64d8a03f4f388a512c06aea69a8078d4c9eef8440acd1bb921",
+    "sha256": "edd56c0c92fe35bdceb41e40cf5716b06babd7bb44af70ce784c815b7d7e4cbc",
     "lastmod": "2026-10-24",
     "sections": [
       "contact"
     ],
     "cards": 0
+  },
+  "papers/cardiac-ct-adversarial-networks-2018/index.html": {
+    "sha256": "d8dd5473201f2ac0685355a0a0299ebd40b8e745e8f21eca2c47b9a40bfc3fb5",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-0"
+  },
+  "papers/greenhouse-reinforcement-learning-2017/index.html": {
+    "sha256": "b091816ac7a5eb8e070a7e196f5da74b2d259b6c3208a827e9d2a4f97e78e3a6",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-1"
+  },
+  "papers/ode-nutrient-solution-2019/index.html": {
+    "sha256": "4f98dd86f3e89e72a7c44f9bf9c07e0b7ec4530b089a9b1c97ebe0b8bd99f096",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2"
+  },
+  "papers/ion-interference-machine-learning-2019/index.html": {
+    "sha256": "3a8695e1e66b45ec96e0eaaf282a32d61e76dcd319c74efe083cf0263b0b30e3",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-3"
+  },
+  "papers/nutrient-solution-management-2020/index.html": {
+    "sha256": "6d9b0f5e68c05495e7130e473f529ee37e9b44ddcd243ab3b87eaa72ffd42b42",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-4"
+  },
+  "papers/ise-artifact-deep-learning-2020/index.html": {
+    "sha256": "25efdebb80dddd42217186a4eae22bdd102a49b10760f7b885d218dc0a2094da",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-5"
+  },
+  "papers/nutrient-plant-interaction-2020/index.html": {
+    "sha256": "8c28b38a8ee5f67cc9d86c4cd783725080c2b27d8228a06b58e7a076f9ffbc24",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-6"
+  },
+  "papers/gan-d-image-deconvolution-2017/index.html": {
+    "sha256": "414b1858d57b3bc8e603cd226d8c05c129639a2d83a4a691b3103901389a02a8",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-7"
+  },
+  "papers/phenotype-control-kernel-2018/index.html": {
+    "sha256": "1c0b43fa5d3a8fad67a4a11bde49211c3444aa395275e495c2e4e162a897ac5e",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-8"
+  },
+  "papers/korean-nlp-datasets-2022/index.html": {
+    "sha256": "2109c303cbe98335fd9a56c5c5845e3bcd95911992c89e2e5727d3666caa67b0",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-9"
+  },
+  "papers/plant-factory-mixed-reality-2022/index.html": {
+    "sha256": "7355d4fc429163777b9ea95e12e034d988d39535e5e9499a27941e2ef9b42e32",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-10"
+  },
+  "papers/ai-csat-vocabulary-2023/index.html": {
+    "sha256": "9167f7ff0eb246bd7714389c144f9fe029e4f0350fb2f03f7324614a4369d01c",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-11"
+  },
+  "papers/csat-vocabulary-patterns-2022/index.html": {
+    "sha256": "2caa69e2c594827526af540c78cc90625d5310abf047fd8c58c90b83f30c55a5",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-12"
+  },
+  "papers/congnamul-dataset-2023/index.html": {
+    "sha256": "e063f9567fb316b24fe61767c9ca1d709fa1005b350136d2bfc11e270559dd41",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-13"
+  },
+  "papers/faker-2024/index.html": {
+    "sha256": "cdeb21dc09e77bf5a193ceff682409fd55a1c632ebfd76e575f024a8d99d10b3",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-14"
+  },
+  "papers/ai-music-composition-history-2026/index.html": {
+    "sha256": "06f86d977ef0d559fedace580636357a94b6d477ac8d6bde0e7e32876fa85f8c",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p01"
+  },
+  "papers/ode-fermentation-simulator-2026/index.html": {
+    "sha256": "238a30d917c59613c304291f828bd931814569a1dfa14bc38270099abae3334b",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p02"
+  },
+  "papers/plant-factory-ai-review-2026/index.html": {
+    "sha256": "93d9a842160b22579b899b7946a86b5f19ebad9afcd01f32256776c4652ce3ab",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p03"
+  },
+  "papers/logistics-ai-review-2026/index.html": {
+    "sha256": "b3e67b3da31825a05d06d52caa2a4dba9ccf6fbf45584783bf71dcbde0d19049",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p04"
+  },
+  "papers/plant-factory-mcp-agents-2026/index.html": {
+    "sha256": "4100ee6c985889d07b9f6e3acf92b25ed466994e9cd62a663dc970aa190a9fe6",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p05"
+  },
+  "papers/chemical-engineering-mcp-agents-2026/index.html": {
+    "sha256": "31de6c11ea0e30830f52f98ba45dc47b344e7c62e46fa83d6b2945fb4ee48959",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p06"
+  },
+  "papers/agricultural-ai-complex-systems-2026/index.html": {
+    "sha256": "2f77350c82f068a0f10c9df8965cd7319b675f2c8cb8723491ae21c8872acf8f",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p07"
+  },
+  "papers/technews-agentic-publishing-2026/index.html": {
+    "sha256": "983f2508ea82dc51f26f64f9023eca8505d34c85701f703481189b21f667502d",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p08"
+  },
+  "papers/llm-peer-review-audit-2026/index.html": {
+    "sha256": "590d00b74f9fc1cbdca2a11047a881ba1be5556e01f522b599d6da9791501a30",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p09"
+  },
+  "papers/scholarly-overlap-delayed-retraction-2026/index.html": {
+    "sha256": "4728a8b872d3e557859727fd5659c6092b6a78bc2992b06e6595c7c5de9db4d0",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p10"
+  },
+  "papers/llm-peer-review-grounding-failure-2026/index.html": {
+    "sha256": "7babd97e177a66ff006935eb9d50c3a130c6be03ac8046eb59760c500819d506",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p11"
+  },
+  "papers/ai-music-composition-systematic-review-2026/index.html": {
+    "sha256": "8cbcb35cc053d6b8d5f92529dfc45a2d7e89eea6b316566b9cf70df8c85ef31f",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p12"
+  },
+  "papers/rag-as-a-service-2026/index.html": {
+    "sha256": "a917d4945197d4e11a2cbc77bfa451ec84bd56df1bd843368f9f15b96dc2dda5",
+    "lastmod": "2026-10-24",
+    "sections": [
+      "papers"
+    ],
+    "cards": 0,
+    "paper_id": "paper-2026-p13"
   }
 }

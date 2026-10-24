@@ -1,0 +1,402 @@
+[
+  {
+    "record_id": "paper-0",
+    "title": "대립 신경망을 이용한 심혈관 단층촬영 영상 표지 방법",
+    "authors": [
+      "Byung-Hyun Ban"
+    ],
+    "year": 2018,
+    "dissertation_institution": "Korea Advanced Institute of Science and Technology",
+    "title_en": "Cardiac CT image segmentation with Adversarial Networks",
+    "evidence_url": "https://koasas.kaist.ac.kr/handle/10203/295283",
+    "slug": "cardiac-ct-adversarial-networks-2018"
+  },
+  {
+    "record_id": "paper-1",
+    "title": "Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning",
+    "authors": [
+      "Byunghyun Ban",
+      "Soobin Kim"
+    ],
+    "year": 2017,
+    "doi": "10.1109/ictc.2017.8190813",
+    "conference_title": "2017 International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "913",
+    "lastpage": "918",
+    "evidence_url": "https://doi.org/10.1109/ictc.2017.8190813",
+    "slug": "greenhouse-reinforcement-learning-2017"
+  },
+  {
+    "record_id": "paper-2",
+    "title": "ODE Network Model for Nonlinear and Complex Agricultural Nutrient Solution System",
+    "authors": [
+      "Byunghyun Ban",
+      "Minwoo Lee",
+      "Donghun Ryu"
+    ],
+    "year": 2019,
+    "doi": "10.1109/ictc46691.2019.8939946",
+    "conference_title": "2019 International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "996",
+    "lastpage": "1001",
+    "evidence_url": "https://doi.org/10.1109/ictc46691.2019.8939946",
+    "slug": "ode-nutrient-solution-2019"
+  },
+  {
+    "record_id": "paper-3",
+    "title": "Machine Learning Approach to Remove Ion Interference Effect in Agricultural Nutrient Solutions",
+    "authors": [
+      "Byunghyun Ban",
+      "Donghun Ryu",
+      "Minwoo Lee"
+    ],
+    "year": 2019,
+    "doi": "10.1109/ictc46691.2019.8939812",
+    "conference_title": "2019 International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "1156",
+    "lastpage": "1161",
+    "evidence_url": "https://doi.org/10.1109/ictc46691.2019.8939812",
+    "slug": "ion-interference-machine-learning-2019"
+  },
+  {
+    "record_id": "paper-4",
+    "title": "Nutrient Solution Management System for Smart Farms and Plant Factory",
+    "authors": [
+      "Byunghyun Ban",
+      "Janghun Lee",
+      "Donghun Ryu",
+      "Minwoo Lee",
+      "Tae Dong Eom"
+    ],
+    "year": 2020,
+    "doi": "10.1109/ictc49870.2020.9289192",
+    "conference_title": "2020 International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "1537",
+    "lastpage": "1542",
+    "evidence_url": "https://doi.org/10.1109/ictc49870.2020.9289192",
+    "slug": "nutrient-solution-management-2020"
+  },
+  {
+    "record_id": "paper-5",
+    "title": "Deep learning method to remove chemical, kinetic and electric artifacts on ISEs",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2020,
+    "doi": "10.1109/ictc49870.2020.9289389",
+    "conference_title": "2020 International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "1242",
+    "lastpage": "1246",
+    "evidence_url": "https://doi.org/10.1109/ictc49870.2020.9289389",
+    "slug": "ise-artifact-deep-learning-2020"
+  },
+  {
+    "record_id": "paper-6",
+    "title": "Mathematical Model and Simulation for Nutrient-Plant Interaction Analysis",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2020,
+    "doi": "10.1109/ictc49870.2020.9289083",
+    "conference_title": "2020 International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "1531",
+    "lastpage": "1536",
+    "evidence_url": "https://doi.org/10.1109/ictc49870.2020.9289083",
+    "slug": "nutrient-plant-interaction-2020"
+  },
+  {
+    "record_id": "paper-7",
+    "title": "GAN-D: Generative adversarial networks for image deconvolution",
+    "authors": [
+      "Ha Yeon Lee",
+      "Jin Myung Kwak",
+      "Byunghyun Ban",
+      "Seon Jin Na",
+      "Se Ra Lee",
+      "Heung-Kyu Lee"
+    ],
+    "year": 2017,
+    "doi": "10.1109/ictc.2017.8190958",
+    "conference_title": "2017 International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "132",
+    "lastpage": "137",
+    "evidence_url": "https://doi.org/10.1109/ictc.2017.8190958",
+    "slug": "gan-d-image-deconvolution-2017",
+    "full_pdf": "src/paperPdf/7.pdf"
+  },
+  {
+    "record_id": "paper-8",
+    "title": "The phenotype control kernel of a biomolecular regulatory network",
+    "authors": [
+      "Sang-Mok Choo",
+      "Byunghyun Ban",
+      "Jae Il Joo",
+      "Kwang-Hyun Cho"
+    ],
+    "year": 2018,
+    "doi": "10.1186/s12918-018-0576-8",
+    "journal_title": "BMC Systems Biology",
+    "volume": "12",
+    "issue": "1",
+    "article_number": "49",
+    "evidence_url": "https://doi.org/10.1186/s12918-018-0576-8",
+    "slug": "phenotype-control-kernel-2018",
+    "full_pdf": "src/paperPdf/8.pdf"
+  },
+  {
+    "record_id": "paper-9",
+    "title": "A Survey on Awesome Korean NLP Datasets",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2022,
+    "doi": "10.1109/ictc55196.2022.9952930",
+    "conference_title": "2022 13th International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "1615",
+    "lastpage": "1620",
+    "evidence_url": "https://doi.org/10.1109/ictc55196.2022.9952930",
+    "slug": "korean-nlp-datasets-2022"
+  },
+  {
+    "record_id": "paper-10",
+    "title": "Mixed Reality Interface for Digital Twin of Plant Factory",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2022,
+    "doi": "10.48550/arXiv.2211.00597",
+    "evidence_url": "https://arxiv.org/abs/2211.00597",
+    "slug": "plant-factory-mixed-reality-2022",
+    "full_pdf": "src/paperPdf/10.pdf"
+  },
+  {
+    "record_id": "paper-11",
+    "title": "AI Knows Which Words Will Appear in Next Year's Korean CSAT",
+    "authors": [
+      "Byunghyun Ban",
+      "Jejong Lee",
+      "Hyeonmok Hwang"
+    ],
+    "year": 2023,
+    "doi": "10.1109/ictc58733.2023.10393339",
+    "conference_title": "2023 14th International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "1353",
+    "lastpage": "1357",
+    "evidence_url": "https://doi.org/10.1109/ictc58733.2023.10393339",
+    "slug": "ai-csat-vocabulary-2023",
+    "full_pdf": "src/paperPdf/csat-ictc-2023.pdf"
+  },
+  {
+    "record_id": "paper-12",
+    "title": "수능 영어시험의 어휘 등장 패턴 분석",
+    "authors": [
+      "Byunghyun Ban",
+      "Jejong Lee",
+      "Hyeonmok Hwang"
+    ],
+    "year": 2022,
+    "doi": "10.52618/aied.2022.3.3.3",
+    "journal_title": "Journal of The Korean Association of Artificial Intelligence Education",
+    "volume": "3",
+    "issue": "3",
+    "firstpage": "15",
+    "lastpage": "23",
+    "evidence_url": "https://doi.org/10.52618/aied.2022.3.3.3",
+    "slug": "csat-vocabulary-patterns-2022",
+    "full_pdf": "src/paperPdf/12.pdf"
+  },
+  {
+    "record_id": "paper-13",
+    "title": "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts",
+    "authors": [
+      "Byunghyun Ban",
+      "Donghun Ryu",
+      "Su-won Hwang"
+    ],
+    "year": 2023,
+    "doi": "10.1109/ictc58733.2023.10393217",
+    "conference_title": "2023 14th International Conference on Information and Communication Technology Convergence (ICTC)",
+    "firstpage": "1892",
+    "lastpage": "1897",
+    "evidence_url": "https://doi.org/10.1109/ictc58733.2023.10393217",
+    "slug": "congnamul-dataset-2023",
+    "full_pdf": "src/paperPdf/congnamul-ictc-2023.pdf"
+  },
+  {
+    "record_id": "paper-14",
+    "title": "FAKER: Full-body Anonymization with Human Keypoint Extraction and Regression for Real-time Video Deidentification",
+    "authors": [
+      "Byunghyun Ban",
+      "Hyoseok Lee"
+    ],
+    "year": 2024,
+    "doi": "10.52618/aied.2024.5.2.6",
+    "journal_title": "Journal of The Korean Association of Artificial Intelligence Education",
+    "volume": "5",
+    "issue": "2",
+    "firstpage": "57",
+    "lastpage": "72",
+    "evidence_url": "https://doi.org/10.52618/aied.2024.5.2.6",
+    "slug": "faker-2024"
+  },
+  {
+    "record_id": "paper-2026-p01",
+    "title": "A Historical Review of AI-Based Music Composition: From Local Pattern Prediction to Holistic Audio Generation",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "journal_title": "Journal of The Korean Association of Artificial Intelligence Education",
+    "volume": "7",
+    "issue": "3",
+    "firstpage": "37",
+    "lastpage": "66",
+    "doi": "10.52618/aied.2026.7.3.4",
+    "evidence_url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003395169",
+    "slug": "ai-music-composition-history-2026"
+  },
+  {
+    "record_id": "paper-2026-p02",
+    "title": "An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.31603.28968",
+    "evidence_url": "https://www.researchgate.net/publication/404682643_An_ODE-Network-Based_Chemical_Complex_System_Simulator_for_Multi-Environment_Fermentation",
+    "slug": "ode-fermentation-simulator-2026",
+    "full_pdf": "src/paperPdf/2026-p02.pdf"
+  },
+  {
+    "record_id": "paper-2026-p03",
+    "title": "Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.20944/preprints202605.0438.v1",
+    "evidence_url": "https://www.preprints.org/manuscript/202605.0438",
+    "slug": "plant-factory-ai-review-2026",
+    "full_pdf": "src/paperPdf/2026-p03.pdf"
+  },
+  {
+    "record_id": "paper-2026-p04",
+    "title": "Recent Applications of Artificial Intelligence in Logistics: An Evidence-Oriented Operational Review of Studies Published Since 2024",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.20944/preprints202605.0444.v1",
+    "evidence_url": "https://www.preprints.org/manuscript/202605.0444",
+    "slug": "logistics-ai-review-2026",
+    "full_pdf": "src/paperPdf/2026-p04.pdf"
+  },
+  {
+    "record_id": "paper-2026-p05",
+    "title": "MCP Design Strategy for Plant-Factory Operation AI Agents",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.29671.61608",
+    "evidence_url": "https://www.researchgate.net/publication/404500785_MCP_Design_Strategy_for_Plant-Factory_Operation_AI_Agents",
+    "slug": "plant-factory-mcp-agents-2026",
+    "full_pdf": "src/paperPdf/2026-p05.pdf"
+  },
+  {
+    "record_id": "paper-2026-p06",
+    "title": "MCP Design Strategies for AI Agents in the Chemical Engineering Industry",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.14152.69125",
+    "evidence_url": "https://www.researchgate.net/publication/404500792_MCP_Design_Strategies_for_AI_Agents_in_the_Chemical_Engineering_Industry",
+    "slug": "chemical-engineering-mcp-agents-2026",
+    "full_pdf": "src/paperPdf/2026-p06.pdf"
+  },
+  {
+    "record_id": "paper-2026-p07",
+    "title": "Agricultural AI Agents Can Learn from Chemical Complex System Models",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.10797.24808",
+    "evidence_url": "https://www.researchgate.net/publication/404500889_Agricultural_AI_Agents_Can_Learn_from_Chemical_Complex_System_Models",
+    "slug": "agricultural-ai-complex-systems-2026",
+    "full_pdf": "src/paperPdf/2026-p07.pdf"
+  },
+  {
+    "record_id": "paper-2026-p08",
+    "title": "TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.35963.07201",
+    "evidence_url": "https://www.researchgate.net/publication/404500998_TechNews_A_Technical_Report_on_Agentic_Workflow_Automation_for_Science_News_Publishing",
+    "slug": "technews-agentic-publishing-2026",
+    "full_pdf": "src/paperPdf/2026-p08.pdf"
+  },
+  {
+    "record_id": "paper-2026-p09",
+    "title": "Responding to Suspected LLM-Written Hallucinated Peer Reviews A Claim-Level Audit Protocol",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.32483.11040",
+    "evidence_url": "https://www.researchgate.net/publication/404418703_Responding_to_Suspected_LLM-Written_Hallucinated_Peer_Reviews_A_Claim-Level_Audit_Protocol",
+    "slug": "llm-peer-review-audit-2026",
+    "full_pdf": "src/paperPdf/2026-p09.pdf"
+  },
+  {
+    "record_id": "paper-2026-p10",
+    "title": "When Post-Publication Modification Is Not Enough - A Case Study of Multi-Layer Scholarly Overlap and Delayed Retraction",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.33321.97125",
+    "evidence_url": "https://www.researchgate.net/publication/404419191_When_Post-Publication_Modification_Is_Not_Enough_-_A_Case_Study_of_Multi-Layer_Scholarly_Overlap_and_Delayed_Retraction",
+    "slug": "scholarly-overlap-delayed-retraction-2026",
+    "full_pdf": "src/paperPdf/2026-p10.pdf"
+  },
+  {
+    "record_id": "paper-2026-p11",
+    "title": "Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.34160.83209",
+    "evidence_url": "https://www.researchgate.net/publication/404420655_Can_LLMs_Review_Scientific_Papers",
+    "slug": "llm-peer-review-grounding-failure-2026",
+    "full_pdf": "src/paperPdf/2026-p11.pdf"
+  },
+  {
+    "record_id": "paper-2026-p12",
+    "title": "A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.14616.35848",
+    "evidence_url": "https://www.researchgate.net/publication/404370528_A_Systematic_Review_of_AI-Based_Music_Composition_Limitations_and_Breakthroughs",
+    "slug": "ai-music-composition-systematic-review-2026",
+    "full_pdf": "src/paperPdf/2026-p12.pdf"
+  },
+  {
+    "record_id": "paper-2026-p13",
+    "title": "Era of RAG-as-a-Service for Pretrained AI Applications",
+    "authors": [
+      "Byunghyun Ban"
+    ],
+    "year": 2026,
+    "doi": "10.13140/RG.2.2.25757.47847",
+    "evidence_url": "https://www.researchgate.net/publication/404699960_Era_of_RAG-as-a-Service_for_Pretrained_AI_Applications",
+    "slug": "rag-as-a-service-2026",
+    "full_pdf": "src/paperPdf/2026-p13.pdf"
+  }
+]
