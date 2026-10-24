@@ -249,10 +249,11 @@ def check_paper_pages(config, source, require):
         require(bool(body) == (key != 'paper-0'), f'{key}: full-text coverage or thesis exclusion mismatch')
         if body:
             require(body['html'] in html, f'{key}: source body missing or changed by rendering')
-            require('id="full-text"' in html and body['source_label'] in plain(html), f'{key}: full text needs a visible version label')
+            require('id="full-text"' in html, f'{key}: full-text reader missing')
             require('paper-reader.js?v=' in html, f'{key}: missing reader utilities')
         else:
-            require('id="full-text"' not in html and '초록만 제공합니다' in html, f'{key}: thesis must remain abstract-only')
+            require('id="full-text"' not in html, f'{key}: thesis must remain abstract-only')
+        require(not any(a.get('class', '') in {'paper-source-note', 'paper-manuscript-version'} for _, a in doc.tags), f'{key}: conversion notices must not be displayed')
         citation_data = re.search(r'<script type="application/json" id="citation-formats-data">(.*?)</script>', html, re.S)
         formats = citation_formats(record)
         require(citation_data and json.loads(citation_data[1]) == formats, f'{key}: citation formats differ from verified bibliography')

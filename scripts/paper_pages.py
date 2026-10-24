@@ -152,10 +152,6 @@ def render_article(record):
         parts.append('Article ' + str(record['article_number']))
     kind = 'Preprint · not peer-reviewed' if record['publication_type'] == 'preprint' else "Master’s thesis" if record.get('dissertation_institution') else 'Published research'
     full = record.get('full_text')
-    if not full:
-        thesis_note = '<p class="paper-source-note">석사학위논문은 초록만 제공합니다.</p>'
-    else:
-        thesis_note = ''
     jumps = ('<nav class="paper-reader-jumps" aria-label="논문 바로가기"><a href="#abstract-heading">Abstract</a>'
              + ('<a href="#full-text">Full text</a>' if full else '') + '<a href="#citation-heading">Cite</a></nav>')
     return ('<nav class="paper-breadcrumbs" aria-label="현재 위치"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/papers/">Papers</a></nav>'
@@ -166,7 +162,7 @@ def render_article(record):
         '<p class="paper-venue">' + escape(' · '.join(parts)) + '</p>' + jumps + footer + '</header>'
         '<div class="paper-reader-layout">' + render_toc(record) + '<div class="paper-reading-column">'
         '<section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">Abstract</h2>'
-        '<p class="abstract" lang="en">' + escape(record['abstract']) + '</p></section>' + thesis_note + render_fulltext(record)
+        '<p class="abstract" lang="en">' + escape(record['abstract']) + '</p></section>' + render_fulltext(record)
         + render_citations(record)
         + ('' if full else '<figure class="paper-first-page">' + image + '<figcaption>논문 첫 페이지</figcaption></figure>')
         + '<a class="paper-back-link" href="/papers/">← 논문 목록으로 돌아가기</a></div></div></article>')

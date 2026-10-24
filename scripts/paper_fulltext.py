@@ -106,8 +106,5 @@ def render_fulltext(record):
     full = record.get('full_text')
     if not full:
         return ''
-    label = escape(full['source_label'])
-    note = escape(full.get('note', ''))
     return ('<section id="full-text" class="paper-fulltext" lang="' + full['language'] + '" aria-label="논문 전문">'
-            '<p class="paper-source-note"><strong>HTML 전문 · ' + label + '</strong>'
-            + ('<span>' + note + '</span>' if note else '') + '</p>' + full['html'] + '</section>')
+            + full['html'] + '</section>')
