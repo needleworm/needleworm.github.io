@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "sha256": "78b3ccf5f1ce0705d0627152df22b418146e272699f28f4666a00b9f0573c395",
+    "sha256": "b26a6c94c2faddaf3f6de7fdca7a758d850fcf3a87f37be9849fc947d0c2f64f",
     "lastmod": "2026-10-24",
     "sections": [
       "about",
@@ -65,12 +65,12 @@
     "cards": 15
   },
   "patents/index.html": {
-    "sha256": "cfc9b54d90f39f9e86f240605a3f8d45081d93d59f7966d6707d1e022f9e5cc2",
+    "sha256": "069fd685d35854e07b78f51f1c97061c63c2fb85fcb7c54681a05011081c5d24",
     "lastmod": "2026-10-24",
     "sections": [
       "patents"
     ],
-    "cards": 31
+    "cards": 34
   },
   "projects/index.html": {
     "sha256": "700dee5b7caac24bac3bd32cfb5568ec2b09d9d034d4aec61f626bda0014d45d",
