@@ -144,6 +144,7 @@ function setupMobileContinuousScroll({ link, panel, mobile, enhance }) {
             }
             // Page-specific controls must also work when reached by scrolling.
             enhance(section);
+            document.dispatchEvent(new CustomEvent('site:section-added', { detail: { section } }));
         } catch (error) {
             if (request === generation && enabled()) failed = true;
         } finally {

@@ -217,19 +217,24 @@ def navigation(page, pages):
         first = pages[keys[0]]
         css = 'btn-contact' if group == 'contact' else 'nav-link' + (' active' if page['group'] == group else '')
         aria = ' aria-current="page"' if page['key'] == first['key'] else ''
-        link = f'<a href="{path(first)}" class="{css}"{aria}>{escape(label)}</a>'
+        link = f'<a href="{path(first)}" class="{css} nav-main-link" data-nav-page="{first["key"]}"{aria}>{escape(label)}</a>'
+        submenu_id = 'submenu-' + group
+        toggle = (f'<button type="button" class="submenu-toggle" aria-controls="{submenu_id}"'
+            f' aria-expanded="false" aria-label="{escape(label)} 하위 메뉴 펼치기" hidden>'
+            '<span aria-hidden="true">⌄</span></button>')
+        heading = f'<div class="nav-group-heading">{link}{toggle}</div>'
         if group == 'lectures':
             categories = [('lecture-list', '전체')] + [('lectures-' + slug, name) for slug, name in LECTURE_CATEGORIES]
             children = ''.join(
-                f'<li><a href="{path(first)}#{target}" data-lecture-category="{name}"'
+                f'<li><a href="{path(first)}#{target}" data-nav-page="lectures" data-lecture-category="{name}"'
                 + (' aria-current="true"' if page['key'] == 'lectures' and name == '전체' else '')
                 + f'>{name}</a></li>' for target, name in categories)
-            items.append(f'<li class="nav-item">{link}<ul class="dropdown-menu" aria-label="강의 분류">{children}</ul></li>')
+            items.append(f'<li class="nav-item" data-nav-group="{group}">{heading}<ul id="{submenu_id}" class="dropdown-menu" aria-label="강의 분류">{children}</ul></li>')
         elif len(keys) > 1:
-            children = ''.join(f'<li><a href="{path(pages[k])}"' + (' aria-current="page"' if page['key'] == k else '') + f'>{escape(pages[k]["label"])}</a></li>' for k in keys)
-            items.append(f'<li class="nav-item">{link}<ul class="dropdown-menu">{children}</ul></li>')
+            children = ''.join(f'<li><a href="{path(pages[k])}" data-nav-page="{k}"' + (' aria-current="page"' if page['key'] == k else '') + f'>{escape(pages[k]["label"])}</a></li>' for k in keys)
+            items.append(f'<li class="nav-item" data-nav-group="{group}">{heading}<ul id="{submenu_id}" class="dropdown-menu">{children}</ul></li>')
         else:
-            items.append(f'<li>{link}</li>')
+            items.append(f'<li data-nav-group="{group}">{link}</li>')
     return '<nav class="navbar" aria-label="주 메뉴"><div class="navbar-brand"><a href="/" aria-label="반병현 홈"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="메뉴 열기">☰</button><ul class="nav-links" id="nav-links">' + ''.join(items) + '</ul></nav>'
 
 

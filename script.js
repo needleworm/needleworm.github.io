@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupPageMenu();
     setupMobilePageNavigation();
     setupLectureFilters();
+    setupSectionNavigation();
     setupNearbyImages();
     setupCitationButtons();
     setupContactForm();
@@ -46,6 +47,33 @@ function setupPageMenu() {
     const button = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('nav-links');
     if (!button || !menu) return;
+    const mobile = window.matchMedia('(max-width: 768px)');
+    const groups = Array.from(menu.querySelectorAll(':scope > .nav-item'));
+    const setOpenGroup = active => {
+        groups.forEach(group => {
+            const open = group === active;
+            const toggle = group.querySelector('.submenu-toggle');
+            const label = group.querySelector('.nav-main-link').textContent;
+            group.classList.toggle('submenu-open', open);
+            toggle.setAttribute('aria-expanded', String(open));
+            toggle.setAttribute('aria-label', `${label} 하위 메뉴 ${open ? '접기' : '펼치기'}`);
+        });
+    };
+    const openCurrentGroup = () => {
+        const current = menu.querySelector('.nav-main-link.active, .nav-main-link[aria-current="page"]');
+        setOpenGroup(current?.closest('.nav-item'));
+    };
+    const updateAccordion = () => {
+        menu.classList.add('accordion-ready');
+        groups.forEach(group => { group.querySelector('.submenu-toggle').hidden = !mobile.matches; });
+        openCurrentGroup();
+    };
+    groups.forEach(group => {
+        group.querySelector('.submenu-toggle').addEventListener('click', () => {
+            if (mobile.matches) setOpenGroup(group.classList.contains('submenu-open') ? null : group);
+        });
+    });
+    updateAccordion();
     const close = () => {
         menu.classList.remove('active');
         button.setAttribute('aria-expanded', 'false');
@@ -57,12 +85,71 @@ function setupPageMenu() {
         button.setAttribute('aria-expanded', String(open));
         button.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
         document.body.style.overflow = open ? 'hidden' : '';
+        if (open) { openCurrentGroup(); menu.scrollTop = 0; }
     });
     menu.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
     document.addEventListener('keydown', event => {
         if (event.key === 'Escape' && menu.classList.contains('active')) { close(); button.focus(); }
     });
-    window.addEventListener('resize', () => { if (window.innerWidth > 768) close(); });
+    mobile.addEventListener('change', () => { updateAccordion(); if (!mobile.matches) close(); });
+}
+
+function setupSectionNavigation() {
+    const main = document.getElementById('main-content');
+    const menu = document.getElementById('nav-links');
+    if (!main || !menu) return;
+    const initialPage = document.body.dataset.page;
+    let currentPage = null;
+    let scheduled = false;
+    let refresh = true;
+    let sections = [];
+    const collect = () => {
+        sections = [{ key: initialPage, element: document.querySelector('.hero') || main }];
+        const about = main.querySelector('#tab-about');
+        const books = main.querySelector('.home-books-mobile');
+        if (about) sections.push({ key: initialPage, element: about });
+        if (books) sections.push({ key: 'books', element: books });
+        main.querySelectorAll(':scope > .stream-page[data-page]').forEach(element => {
+            sections.push({ key: element.dataset.page, element });
+        });
+    };
+    const update = () => {
+        scheduled = false;
+        if (refresh) collect();
+        const activationLine = Math.max(100, Math.min(window.innerHeight * .3, 250));
+        let active = initialPage;
+        sections.forEach(({ key, element }) => {
+            if (element.getClientRects().length && element.getBoundingClientRect().top <= activationLine) active = key;
+        });
+        if (active === currentPage && !refresh) return;
+        refresh = false;
+        currentPage = active;
+        document.body.dataset.activePage = active;
+        const target = Array.from(menu.querySelectorAll('a[data-nav-page]')).find(link => link.dataset.navPage === active);
+        const activeGroup = target?.closest('[data-nav-group]');
+        menu.querySelectorAll('a[data-nav-page]').forEach(link => {
+            const mainLink = link.classList.contains('nav-main-link');
+            const groupActive = mainLink && link.closest('[data-nav-group]') === activeGroup;
+            if (mainLink) link.classList.toggle('active', groupActive);
+            if (link.dataset.lectureCategory) {
+                const category = document.querySelector('#lecture-category-nav [aria-pressed="true"]')?.dataset.category || '전체';
+                if (active === 'lectures' && link.dataset.lectureCategory === category) link.setAttribute('aria-current', 'true');
+                else link.removeAttribute('aria-current');
+            } else if (link.dataset.navPage === active) link.setAttribute('aria-current', 'page');
+            else if (groupActive) link.setAttribute('aria-current', 'true');
+            else link.removeAttribute('aria-current');
+        });
+    };
+    const schedule = () => {
+        if (scheduled) return;
+        scheduled = true;
+        window.requestAnimationFrame(update);
+    };
+    document.addEventListener('site:section-added', () => { refresh = true; schedule(); });
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', () => { refresh = true; schedule(); });
+    window.addEventListener('pageshow', () => { refresh = true; schedule(); });
+    update();
 }
 
 function setupMobilePageNavigation() {
