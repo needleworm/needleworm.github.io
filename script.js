@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupPageMenu();
     setupMobilePageNavigation();
     setupLectureFilters();
+    setupMobileLists();
     setupSectionNavigation();
     setupNearbyImages();
     setupCitationButtons();
@@ -146,6 +147,7 @@ function setupSectionNavigation() {
         window.requestAnimationFrame(update);
     };
     document.addEventListener('site:section-added', () => { refresh = true; schedule(); });
+    document.addEventListener('site:content-resized', schedule);
     window.addEventListener('scroll', schedule, { passive: true });
     window.addEventListener('resize', () => { refresh = true; schedule(); });
     window.addEventListener('pageshow', () => { refresh = true; schedule(); });
@@ -272,6 +274,7 @@ function loadStreamLibrary(src) {
 
 function enhanceStreamSection(section) {
     if (section.querySelector('#lecture-list')) setupLectureFilters();
+    setupMobileLists(section);
     setupNearbyImages(section);
     setupCitationButtons(section);
     if (section.querySelector('#contact-form')) {
@@ -313,6 +316,7 @@ function setupLectureFilters() {
             else link.removeAttribute('aria-current');
         });
         results.textContent = `${category} ${count}건 · 최신 강의순`;
+        document.dispatchEvent(new CustomEvent('site:list-filtered', { detail: { list } }));
         if (scroll) results.scrollIntoView({ block: 'start', behavior: 'instant' });
     };
     const updateOffset = () => {
@@ -338,6 +342,99 @@ function setupLectureFilters() {
     updateOffset();
     const legacyCategory = buttons.find(button => button.dataset.categoryId === window.location.hash.slice(1));
     apply(legacyCategory?.dataset.category || '전체');
+}
+
+// Keep all records in the static HTML, but reveal long mobile lists four rows at a time.
+// Books deliberately stay fully visible, both on their own page and in the home stream.
+function setupMobileLists(root = document) {
+    if (!setupMobileLists.controller) {
+        const mobile = window.matchMedia('(max-width: 768px)');
+        const entries = new Map();
+        const labels = {
+            media: '영상', news: '언론 보도', lectures: '강의',
+            'courses-online': '온라인 강좌', 'courses-offline': '오프라인 교육과정',
+            papers: '논문', patents: '특허', websites: '프로젝트',
+            social: '활동', membership: '회원 활동', collections: '소장품'
+        };
+        let sequence = 0;
+        let scheduled = false;
+        const eligible = entry => Array.from(entry.list.children).filter(item =>
+            item.matches(entry.table ? 'tr' : '.singleLectureContainer, .singleProjectContainer') && !item.hidden);
+        const columns = entry => entry.table ? 1 : Math.max(1,
+            getComputedStyle(entry.list).gridTemplateColumns.split(/\s+/).length);
+        const notify = () => document.dispatchEvent(new CustomEvent('site:content-resized'));
+        const render = entry => {
+            const items = eligible(entry);
+            const limit = entry.rows * columns(entry);
+            Array.from(entry.list.children).forEach(item => item.classList.remove('mobile-list-folded'));
+            if (mobile.matches) items.slice(limit).forEach(item => item.classList.add('mobile-list-folded'));
+            entry.visible = mobile.matches ? Math.min(items.length, limit) : items.length;
+            const remaining = items.length - entry.visible;
+            entry.controls.hidden = !mobile.matches || remaining === 0;
+            entry.status.textContent = `${items.length}건 중 ${entry.visible}건 표시`;
+            entry.button.textContent = `${entry.label} 더 보기 (${remaining}건 남음)`;
+        };
+        const refresh = () => {
+            scheduled = false;
+            entries.forEach(render);
+            notify();
+        };
+        const schedule = () => {
+            if (scheduled) return;
+            scheduled = true;
+            window.requestAnimationFrame(refresh);
+        };
+        document.addEventListener('site:list-filtered', event => {
+            const entry = entries.get(event.detail.list);
+            if (!entry) return;
+            entry.rows = 4;
+            render(entry);
+            notify();
+        });
+        window.addEventListener('resize', schedule, { passive: true });
+        window.addEventListener('pageshow', schedule);
+        setupMobileLists.controller = {
+            enhance(scope) {
+                scope.querySelectorAll('.websitesContainer, .lecturesContainer, .codesContainer, .projectContainer, .donation-table tbody').forEach(list => {
+                    if (entries.has(list)) return;
+                    const table = list.matches('tbody');
+                    if (!list.querySelector(table ? ':scope > tr' : ':scope > .singleLectureContainer, :scope > .singleProjectContainer')) return;
+                    const section = list.closest('.tab-content-item');
+                    if (section?.id === 'tab-books') return;
+                    if (!list.id) list.id = `mobile-list-${++sequence}`;
+                    const controls = document.createElement('div');
+                    controls.className = 'mobile-list-controls';
+                    const status = document.createElement('p');
+                    status.className = 'mobile-list-status';
+                    status.setAttribute('role', 'status');
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.className = 'mobile-list-more';
+                    button.setAttribute('aria-controls', list.id);
+                    controls.append(status, button);
+                    const entry = { list, table, controls, status, button, rows: 4,
+                        label: table ? '기부 내역' : labels[section?.id.replace(/^tab-/, '')] || '목록' };
+                    entries.set(list, entry);
+                    render(entry);
+                    (table ? list.closest('.donation-table-wrap') : list).after(controls);
+                    button.addEventListener('click', () => {
+                        const firstNew = eligible(entry)[entry.visible];
+                        entry.rows += 4;
+                        render(entry);
+                        if (firstNew) {
+                            const focusTarget = firstNew.querySelector('h3, h4, h5') || firstNew;
+                            focusTarget.setAttribute('tabindex', '-1');
+                            focusTarget.focus({ preventScroll: true });
+                            firstNew.scrollIntoView({ block: 'start', behavior: 'instant' });
+                        }
+                        notify();
+                    });
+                });
+                notify();
+            }
+        };
+    }
+    setupMobileLists.controller.enhance(root);
 }
 
 function setupCitationButtons(root = document) {

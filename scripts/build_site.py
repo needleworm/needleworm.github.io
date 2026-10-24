@@ -190,6 +190,22 @@ def section_html(key, source):
             pieces.extend([source[cursor:start], card])
             cursor = end
         source = ''.join(pieces) + source[cursor:]
+    elif key == 'papers':
+        spans = sorted(Blocks(source).cards)
+        cards = [source[a:b] for a, b in spans]
+        def publication_order(card):
+            opening = card[:card.index('>') + 1]
+            publication_type = re.search(r'\bdata-publication-type="([^"]+)"', opening)
+            year = re.search(r'\bdata-publication-year="(\d{4})"', opening)
+            if not publication_type or publication_type[1] not in {'published', 'preprint'} or not year:
+                raise ValueError('Every paper needs its publication type and verified year')
+            return publication_type[1] == 'preprint', -int(year[1])
+        ordered = sorted(cards, key=publication_order)
+        pieces, cursor = [], 0
+        for (start, end), card in zip(spans, ordered):
+            pieces.extend([source[cursor:start], card])
+            cursor = end
+        source = ''.join(pieces) + source[cursor:]
     source = re.sub(r'\b(src|href|poster)=(["\'])(?:\./)?src/', r'\1=\2/src/', source)
     source = re.sub(r'(<section\b[^>]*\bclass=")([^"]*)"', lambda m: m[1] + 'content-section ' + ' '.join(c for c in m[2].split() if c not in {'animated', 'bounceInDown'}) + '"', source, count=1)
     source = re.sub(r'<img\b(?![^>]*\bloading=)', '<img loading="lazy"', source)

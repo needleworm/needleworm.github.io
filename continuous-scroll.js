@@ -165,6 +165,7 @@ function setupMobileContinuousScroll({ link, panel, mobile, enhance }) {
     window.addEventListener('resize', scheduleCheck, { passive: true });
     window.addEventListener('pageshow', scheduleCheck);
     document.addEventListener('visibilitychange', scheduleCheck);
+    document.addEventListener('site:content-resized', scheduleCheck);
     window.addEventListener('online', () => { if (failed) { failed = false; render(); scheduleCheck(); } });
     retry.addEventListener('click', loadNext);
     link.addEventListener('click', event => {

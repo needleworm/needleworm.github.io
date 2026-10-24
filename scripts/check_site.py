@@ -276,6 +276,17 @@ def main():
         require(len(ids)==len(set(ids)),f'{page["key"]}: duplicate IDs {list(k for k,v in Counter(ids).items() if v>1)}')
         if page['key']=='lectures':
             check_lecture_sections(source, views['lectures'], require)
+        if page['key']=='papers':
+            previous_type, previous_year = 'published', 9999
+            for start, end in sorted(Blocks(source).cards):
+                attrs = Document(source[start:end]).tags[0][1]
+                publication_type = attrs.get('data-publication-type')
+                raw_year = attrs.get('data-publication-year', '')
+                require(publication_type in {'published', 'preprint'} and bool(re.fullmatch(r'\d{4}', raw_year)), 'Papers: missing publication type or verified year')
+                year = int(raw_year) if raw_year.isdigit() else 0
+                require(not (previous_type=='preprint' and publication_type=='published'), 'Papers: a formal publication follows a preprint')
+                require(publication_type!=previous_type or year<=previous_year, 'Papers: publication years are not newest first within the group')
+                previous_type, previous_year = publication_type, year
         report.append({'page':expected_url,'file':str(target.relative_to(ROOT)),'cards':actual_cards,'bytes':target.stat().st_size})
     for redirect in config.get('redirects', []):
         target = ROOT/redirect['from']/'index.html'

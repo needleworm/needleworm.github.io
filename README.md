@@ -11,7 +11,7 @@
 - 사이트맵은 기존 도서 예제 사이트 주소를 보존하면서 각 페이지 주소를 추가합니다. 실제 HTML 내용이 바뀐 페이지의 수정일만 갱신합니다.
 - `scripts/check_site.py`는 사이트맵의 페이지 누락·중복, 대표 주소와 호스트, 수정일, `robots.txt` 연결도 검사합니다. 강의 분류의 해시 주소와 모바일 연속 스크롤 상태, 이전 주소의 리다이렉트는 별도 페이지로 등록하지 않습니다. 별도 저장소에서 제공하는 예제 사이트 주소는 `content/project-sitemap.xml`에서 관리합니다.
 - 홈 `/`와 `/books/`, `/media/`, `/news/`, `/courses/online/`, `/courses/offline/`, `/lectures/`, `/papers/`, `/patents/`, `/projects/`, `/activities/`, `/memberships/`, `/collections/`, `/contact/`는 모두 실제 `index.html` 파일이 있는 주소입니다. 이전 `/courses/` 주소도 물리적인 `index.html`을 유지하며 Online으로 연결합니다.
-- 모든 카드와 본문은 처음부터 펼쳐집니다. Lectures의 전체 목록과 기관 필터·건수도 정적 HTML에 포함됩니다. JavaScript는 기관 필터, 모바일 메뉴, 문의 폼, GitHub 통계 등의 상호작용만 처리합니다.
+- 모든 카드와 본문은 정적 HTML에 포함됩니다. 데스크톱과 JavaScript 미사용 환경에서는 전체 목록을 표시합니다. 모바일(768px 이하)에서는 Books를 제외한 카드 목록과 기부 내역을 4행씩 표시하며, 더보기 버튼으로 4행씩 추가합니다. 현재 열 수를 기준으로 행을 계산하므로 1열에서는 4건, 2열에서는 8건이 먼저 표시됩니다. Lectures 기관 필터를 바꾸면 해당 분류의 첫 4행부터 표시하며, 이어 붙인 섹션에도 같은 규칙을 적용합니다.
 - 화면 디자인은 기존 `style.css`를 공통으로 사용합니다. 페이지 제목은 `group-header`·`group-title`·`group-desc`, 본문은 `section-group`을 유지하며, `page.css`에는 정적 페이지 전환에 필요한 보완만 둡니다. 홈 히어로와 기존 카드 크기·색상·간격을 별도로 덮어쓰지 않습니다.
 - 콘텐츠 카드 목록은 화면 폭 1920px 이상에서 본문 최대 폭 1600px·4열로 표시합니다. 그보다 작은 화면의 기존 열 수와 홈·문의 페이지 배열은 유지합니다.
 - 상단 메뉴는 `Lectures`와 `Courses`로 나눕니다. `Lectures`에는 기관별 출강 이력을, `Courses`에는 `Online / Offline` 교육과정을 표시합니다.
@@ -23,6 +23,7 @@
 - 공통 스크립트와 `page.css` 주소에는 빌드 시 파일 내용의 해시를 붙여 배포 직후 이전 캐시와 섞이지 않도록 합니다.
 - 교육과정 원본은 `content/sections/courses-online.html`과 `courses-offline.html`에서 관리합니다. 온라인 영상·라이브 교육과 대면 교육을 실제 진행 방식으로 분류합니다. LG 인화원의 MVP·그룹스터디 과정도 사용자 확인에 따라 Online에 포함합니다.
 - Online은 인프런 강좌(`inflearn.com` 또는 `inf.run` 링크)를 먼저 표시합니다. 인프런 강좌끼리와 나머지 교육과정끼리는 원본 순서를 유지하며, 빌드 시 자동 정렬합니다.
+- Papers는 정식 출판물(학술지·학회 논문과 학위논문)을 먼저 표시하고 프리프린트를 뒤에 표시합니다. 각 그룹 안에서는 확인된 출판 연도의 내림차순이며 같은 연도는 원본 순서를 유지합니다. 모든 논문 카드에 `data-publication-type="published|preprint"`와 `data-publication-year`를 기재합니다. 같은 연구의 정식 출판본과 프리프린트 링크는 한 카드에 함께 둘 수 있습니다.
 - Offline 과정은 Lectures에도 함께 표시하고, Lectures에서 출강일이 3개 이상인 항목은 Courses에도 표시합니다. 날짜가 부족한 기록의 사용자 확인 결과와 Online/Offline 구분은 `content/cross-listing.json`에서 관리합니다. 반복 출강의 진행 방식이 미확인 상태이면 빌드를 중단하므로 임의로 분류하지 않습니다.
 - 교차 게재하는 카드의 제목·설명·이미지는 원본 한 곳에서만 관리합니다. `data-record-id`는 항목을 참조하는 고유값이며, Offline 원본의 `data-category`는 Lectures의 기관 필터에도 사용됩니다. 목록 안의 중복과 반복 교차 게재는 생성기가 방지합니다. Offline과 Lectures 모두 전체 최근 날짜순으로 정렬합니다.
 - 홈의 강의 통계는 교차 게재 전 원본 수로 계산해 중복 집계를 피하고, 강의 이력 바로가기에는 실제 목록에 표시되는 수를 사용합니다.

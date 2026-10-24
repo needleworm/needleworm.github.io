@@ -57,6 +57,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .full-content .projectText, .full-content .codeBody { overflow-wrap: anywhere; }
 .full-content .projectText p, .full-content .abstract { max-height: none; }
 .full-content .show-more-btn, .full-content .paper-show-more-btn, .full-content .btn-load-more { display: none !important; }
+.mobile-list-controls, .mobile-list-controls[hidden] { display: none; }
+@media (max-width: 768px) {
+    .static-site.full-content .mobile-list-folded { display: none !important; }
+    .mobile-list-controls:not([hidden]) { display: flex; flex-direction: column; align-items: center; gap: .65rem; margin: 1.5rem auto 2rem; }
+    .mobile-list-status { margin: 0; color: var(--text-muted); font-size: .8rem; }
+    .mobile-list-more { width: 100%; max-width: 380px; min-height: 48px; padding: .8rem 1rem; border: 1px solid var(--primary-color); border-radius: 12px; background: var(--primary-color); color: #fff; font: inherit; font-size: .9rem; cursor: pointer; }
+    .mobile-list-more:hover { filter: brightness(1.1); }
+    .mobile-list-more:active { transform: translateY(1px); }
+    :is(.websitesContainer, .lecturesContainer, .codesContainer, .projectContainer) > *, .donation-table tbody > tr { scroll-margin-top: var(--lecture-anchor-offset, calc(var(--nav-height) + 1rem)); }
+}
 /* The new home directory uses the existing card/grid design. */
 .directory-card { padding: 1.5rem; }
 .directory-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }

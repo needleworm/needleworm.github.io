@@ -125,6 +125,19 @@ test('new sections notify navigation after controls have been enhanced', async (
     assert.equal(announced.length, 1);
     assert.equal(announced[0].dataset.page, 'media');
 });
+
+test('a collapsed or expanded list rechecks the next section without requiring a new scroll', async () => {
+    const f = fixture();
+    await f.flush();
+    assert.equal(f.requests.length, 0);
+    f.panel.top = 1800;
+    f.document.dispatchEvent({ type: 'site:content-resized' });
+    await f.flush();
+    assert.equal(f.requests.length, 1);
+    f.document.dispatchEvent({ type: 'site:content-resized' });
+    await f.flush();
+    assert.equal(f.requests.length, 1, 'do not duplicate the pending request');
+});
 test('home starts after its existing Books, then follows each page next link', async () => {
     const f = fixture({ home: true }); await f.near(); await f.respond();
     await f.near(); await f.respond({ key: 'news', next: '/lectures/' });
