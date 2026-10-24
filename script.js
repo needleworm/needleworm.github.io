@@ -344,7 +344,7 @@ function setupLectureFilters() {
     apply(legacyCategory?.dataset.category || '전체');
 }
 
-// Keep all records in the static HTML, but reveal long mobile lists four rows at a time.
+// Keep all records in the static HTML; mobile previews four rows, then reveals the full list.
 // Books deliberately stay fully visible, both on their own page and in the home stream.
 function setupMobileLists(root = document) {
     if (!setupMobileLists.controller) {
@@ -365,7 +365,7 @@ function setupMobileLists(root = document) {
         const notify = () => document.dispatchEvent(new CustomEvent('site:content-resized'));
         const render = entry => {
             const items = eligible(entry);
-            const limit = entry.rows * columns(entry);
+            const limit = entry.expanded ? items.length : 4 * columns(entry);
             Array.from(entry.list.children).forEach(item => item.classList.remove('mobile-list-folded'));
             if (mobile.matches) items.slice(limit).forEach(item => item.classList.add('mobile-list-folded'));
             entry.visible = mobile.matches ? Math.min(items.length, limit) : items.length;
@@ -387,7 +387,7 @@ function setupMobileLists(root = document) {
         document.addEventListener('site:list-filtered', event => {
             const entry = entries.get(event.detail.list);
             if (!entry) return;
-            entry.rows = 4;
+            entry.expanded = false;
             render(entry);
             notify();
         });
@@ -412,14 +412,14 @@ function setupMobileLists(root = document) {
                     button.className = 'mobile-list-more';
                     button.setAttribute('aria-controls', list.id);
                     controls.append(status, button);
-                    const entry = { list, table, controls, status, button, rows: 4,
+                    const entry = { list, table, controls, status, button, expanded: false,
                         label: table ? '기부 내역' : labels[section?.id.replace(/^tab-/, '')] || '목록' };
                     entries.set(list, entry);
                     render(entry);
                     (table ? list.closest('.donation-table-wrap') : list).after(controls);
                     button.addEventListener('click', () => {
                         const firstNew = eligible(entry)[entry.visible];
-                        entry.rows += 4;
+                        entry.expanded = true;
                         render(entry);
                         if (firstNew) {
                             const focusTarget = firstNew.querySelector('h3, h4, h5') || firstNew;
