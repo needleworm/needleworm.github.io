@@ -173,6 +173,21 @@
         "contact"
       ],
       "group": "contact"
+    },
+    {
+      "slug": "privacy",
+      "key": "privacy",
+      "output": "privacy.html",
+      "title": "개인정보처리방침 | 반병현",
+      "heading": "개인정보처리방침",
+      "label": "개인정보처리방침",
+      "subtitle": "시행일: 2026년 10월 25일",
+      "description": "NaNa Lab의 문의정보 처리와 보관 기간, 방문 통계 및 광고 서비스 이용에 관한 개인정보처리방침입니다.",
+      "sections": [
+        "privacy"
+      ],
+      "group": "legal",
+      "footer": false
     }
   ],
   "redirects": [

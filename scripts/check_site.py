@@ -10,7 +10,7 @@ import re
 import sys
 from urllib.parse import unquote, urlsplit
 import xml.etree.ElementTree as ET
-from build_site import ROOT, Blocks, VOID, GROUPS, LECTURE_CATEGORIES, latest_date, source_views
+from build_site import ROOT, Blocks, VOID, GROUPS, LECTURE_CATEGORIES, latest_date, source_views, path, output_path
 from paper_pages import load_records, plain
 from paper_citations import citation_formats
 from lecture_pages import load_lecture_records, link_lecture_cards
@@ -159,8 +159,7 @@ def check_sitemap(config, require):
 
     require(sitemap.tag == '{'+ns['sm']+'}urlset', 'Sitemap: invalid urlset namespace')
     page_urls = {
-        config['url'] + ('/'+p['slug']+'/' if p['slug'] else '/'):
-        (p['slug']+'/index.html' if p['slug'] else 'index.html')
+        config['url'] + path(p): output_path(p)
         for p in config['pages']
     }
     for record in json.loads((ROOT/'content/papers.json').read_text(encoding='utf8')):
@@ -378,16 +377,16 @@ def main():
         if not condition:
             failures.append(message)
     for page in config['pages']:
-        target = ROOT/page['slug']/'index.html' if page['slug'] else ROOT/'index.html'
+        target = ROOT/output_path(page)
         require(target.is_file(), f'Missing physical file: {target}')
         source = target.read_text(encoding='utf8')
         doc = Document(source)
-        position = next(i for i, item in enumerate(sequence) if item['key'] == page['key'])
+        position = next((i for i, item in enumerate(sequence) if item['key'] == page['key']), None)
         next_links = [a for tag, a in doc.tags if tag == 'a' and a.get('id') == 'mobile-next-link']
-        expected_next = sequence[position + 1] if position + 1 < len(sequence) else None
+        expected_next = sequence[position + 1] if position is not None and position + 1 < len(sequence) else None
         require(len(next_links) == (1 if expected_next else 0), f'{page["key"]}: incorrect mobile next-page link count')
         if next_links and expected_next:
-            require(next_links[0].get('href') == '/' + expected_next['slug'] + '/', f'{page["key"]}: incorrect mobile next-page order')
+            require(next_links[0].get('href') == path(expected_next), f'{page["key"]}: incorrect mobile next-page order')
             require(next_links[0].get('rel') == 'next', f'{page["key"]}: missing next-page relation')
             require(source.index('</main>') < source.index('id="mobile-next-link"') < source.index('<footer'), f'{page["key"]}: next-page prompt must be between main content and footer')
             if page['key'] == 'home':
@@ -397,7 +396,7 @@ def main():
         require(sum(t=='h1' for t,a in doc.tags)==1, f'{page["key"]}: expected one h1')
         require(not any(t=='template' for t,a in doc.tags), f'{page["key"]}: inert templates remain')
         require(not doc.unclosed_layout,f'{page["key"]}: layout div is not closed before {doc.unclosed_layout}')
-        expected_url = config['url'] + ('/'+page['slug']+'/' if page['slug'] else '/')
+        expected_url = config['url'] + path(page)
         require([a.get('href') for t,a in doc.tags if t=='link' and a.get('rel')=='canonical']==[expected_url],f'{page["key"]}: canonical mismatch')
         require(not any(t=='meta' and a.get('name', '').lower()=='robots' and
                         re.search(r'\bnoindex\b', a.get('content', ''), re.I) for t,a in doc.tags),
@@ -433,8 +432,10 @@ def main():
                 if not url.startswith('/') or url.startswith('//'):
                     continue
                 local = ROOT/unquote(urlsplit(url).path.lstrip('/'))
-                if tag=='a' and url.endswith('/'):
+                if tag=='a' and urlsplit(url).path.endswith('/'):
                     require((local/'index.html').is_file(),f'{page["key"]}: missing route {url}')
+                elif tag=='a' and urlsplit(url).path.endswith('.html'):
+                    require(local.is_file(),f'{page["key"]}: missing route {url}')
                 elif tag in ['img','script','link']:
                     require(local.is_file(),f'{page["key"]}: missing asset {url}')
         ids = [a['id'] for t,a in doc.tags if 'id' in a]

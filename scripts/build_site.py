@@ -219,7 +219,17 @@ def section_html(key, source):
 
 
 def path(page):
+    if page.get('output'):
+        return '/' + page['output']
     return f"/{page['slug']}/" if page['slug'] else '/'
+
+
+def output_path(page):
+    return page.get('output') or (f"{page['slug']}/index.html" if page['slug'] else 'index.html')
+
+
+def footer_links(pages):
+    return ''.join(f'<a href="{path(p)}">{escape(p["heading"])}</a>' for p in pages.values() if p.get('footer', True))
 
 
 def validate_source_entities(sources):
@@ -268,8 +278,8 @@ def related_nav(page, pages):
 def mobile_next_page(page, pages):
     """Continue through the same order as the visible navigation, without wrapping."""
     ordered = [pages[key] for _, _, keys in GROUPS for key in keys]
-    index = next(i for i, item in enumerate(ordered) if item['key'] == page['key'])
-    if index == len(ordered) - 1:
+    index = next((i for i, item in enumerate(ordered) if item['key'] == page['key']), None)
+    if index is None or index == len(ordered) - 1:
         return ''
     destination = ordered[index + 1]
     label = destination['label']
@@ -319,6 +329,9 @@ def build(check=False):
     slugs = [p['slug'] for p in pages.values()]
     if len(slugs) != len(set(slugs)) or any(slug and not re.fullmatch(r'[a-z0-9-]+(?:/[a-z0-9-]+)*', slug) for slug in slugs):
         raise ValueError('Page folders must be unique, safe relative paths')
+    targets = [output_path(page) for page in pages.values()]
+    if len(targets) != len(set(targets)) or any(not re.fullmatch(r'(?:[a-z0-9-]+/)*[a-z0-9-]+\.html', target) for target in targets):
+        raise ValueError('Page outputs must be unique, safe relative HTML paths')
     redirects = config.get('redirects', [])
     redirect_slugs = [entry['from'] for entry in redirects]
     if len(redirect_slugs) != len(set(redirect_slugs)) or any(not re.fullmatch(r'[a-z0-9-]+(?:/[a-z0-9-]+)*', slug) or slug in slugs for slug in redirect_slugs):
@@ -392,7 +405,7 @@ def build(check=False):
             'NAVIGATION': navigation(page, pages),
             'HERO': hero,
             'MAIN': body,
-            'FOOTER_LINKS': ''.join(f'<a href="{path(p)}">{escape(p["heading"])}</a>' for p in pages.values()),
+            'FOOTER_LINKS': footer_links(pages),
             'MOBILE_NEXT_PAGE': mobile_next_page(page, pages),
         }
         values.update(PAGE_HEADER=page_header, MAIN_CLASS='' if page['key']=='home' else 'section-group')
@@ -402,7 +415,7 @@ def build(check=False):
         if re.search(r'\{\{[A-Z_]+\}\}', output):
             raise ValueError('Unresolved layout variable')
         output = '\n'.join(line.rstrip() for line in output.splitlines()) + '\n'
-        target = f"{page['slug']}/index.html" if page['slug'] else 'index.html'
+        target = output_path(page)
         outputs[target] = output
         digest = sha256(output.encode('utf8')).hexdigest()
         lastmod = previous.get(target,{}).get('lastmod',date.today().isoformat()) if previous.get(target,{}).get('sha256') == digest else date.today().isoformat()
@@ -431,7 +444,7 @@ def build(check=False):
                   'LIBRARIES': '<script src="/paper-reader.js?v=' + reader_version + '" defer></script>', 'BODY_CLASS': 'content-page paper-detail-page', 'PAGE_KEY': 'paper-detail',
                   'NAVIGATION': navigation(page, pages), 'HERO': '', 'PAGE_HEADER': '',
                   'MAIN_CLASS': '', 'MAIN': render_article(record), 'MOBILE_NEXT_PAGE': '',
-                  'FOOTER_LINKS': ''.join(f'<a href="{path(p)}">{escape(p["heading"])}</a>' for p in pages.values())}
+                  'FOOTER_LINKS': footer_links(pages)}
         output = layout
         for key, value in values.items():
             output = output.replace('{{' + key + '}}', value)
@@ -466,7 +479,7 @@ def build(check=False):
                   'LIBRARIES': '', 'BODY_CLASS': 'content-page lecture-detail-page', 'PAGE_KEY': 'lecture-detail',
                   'NAVIGATION': navigation(page, pages), 'HERO': '', 'PAGE_HEADER': '',
                   'MAIN_CLASS': '', 'MAIN': render_lecture(record), 'MOBILE_NEXT_PAGE': '',
-                  'FOOTER_LINKS': ''.join(f'<a href="{path(p)}">{escape(p["heading"])}</a>' for p in pages.values())}
+                  'FOOTER_LINKS': footer_links(pages)}
         output = layout
         for key, value in values.items():
             output = output.replace('{{' + key + '}}', value)
@@ -505,7 +518,7 @@ def build(check=False):
         current_urls.add(url)
         node = ET.SubElement(sitemap,'{'+ns+'}url')
         ET.SubElement(node,'{'+ns+'}loc').text = url
-        target = f"{page['slug']}/index.html" if page['slug'] else 'index.html'
+        target = output_path(page)
         ET.SubElement(node,'{'+ns+'}lastmod').text = manifest[target]['lastmod']
     for record in paper_records.values():
         url = config['url'] + record['path']

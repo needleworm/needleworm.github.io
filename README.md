@@ -5,7 +5,8 @@
 
 - 이 사이트는 빌드 시 본문이 포함된 HTML을 생성합니다. 각 주소에서 자바스크립트 없이도 전체 본문을 읽을 수 있습니다.
 - 원본 콘텐츠는 `content/sections/*.html`, 페이지 구성과 제목·설명은 `content/site.json`, 공통 레이아웃은 `content/layout.html`에서 관리합니다.
-- `index.html`과 각 하위 폴더의 `index.html`은 생성 결과입니다. 원본을 수정한 후 `python scripts/build_site.py`를 실행하세요.
+- `index.html`과 각 하위 폴더의 `index.html`, `privacy.html`은 생성 결과입니다. 원본을 수정한 후 `python scripts/build_site.py`를 실행하세요.
+- 개인정보처리방침은 승인된 `content/sections/privacy.html`에서 `/privacy.html`로 생성합니다. `content/site.json`의 `output`은 파일 주소를 지정하고 `footer: false`는 공통 푸터 목록에서 제외합니다. 문의폼 하단의 작은 링크로 연결하며 상단 메뉴와 연속 스크롤 순서에는 넣지 않습니다. 주소와 사이트맵은 동일한 출력 경로를 사용합니다. 문안 변경은 게시 전에 운영자의 승인을 받습니다.
 - `python scripts/build_site.py --check`로 생성 결과가 최신인지 확인하고, `python scripts/check_site.py`로 원문·카드 수·내부 경로·검색 메타데이터 보존 여부를 검사합니다. Python 표준 라이브러리만 사용합니다.
 - GitHub Pages에는 생성된 파일을 함께 배포합니다. 별도 애플리케이션 서버는 필요하지 않습니다. GitHub Actions는 푸시와 PR에서 생성 결과와 콘텐츠를 검사합니다.
 - `scripts/site_feeds.py`는 공개된 강의·저서·논문·언론 보도 카드에서 `/feed.xml`(RSS 2.0), `/feed.json`(JSON Feed 1.1), `/api/index.json` 및 `/api/lectures.json`, `/api/books.json`, `/api/papers.json`, `/api/news.json`을 생성합니다. API 목록은 전체 항목을 포함하며 확인된 원문 필드만 내보냅니다. 상세 페이지가 있는 강의·논문은 해당 주소로, 저서는 Books로, 보도는 원문 기사로 연결합니다. 기록된 날짜와 피드 게시일을 혼동하지 않도록 날짜는 본문과 `date_text`에 원문대로 유지하며 알 수 없는 최초 게시일·시간을 생성하지 않습니다. 같은 원본으로 빌드하면 피드도 동일하며, ID는 제목·설명 수정에 영향받지 않습니다. 피드 주소는 공통 head와 푸터에 표시합니다. JSON은 정적 조회용이며 쿼리 매개변수로 서버 필터링하지 않습니다.
