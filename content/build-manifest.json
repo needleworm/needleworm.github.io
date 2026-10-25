@@ -1,7 +1,7 @@
 {
   "index.html": {
-    "sha256": "2275404b832b9bb24ded206c2fd3ef28a698f00bbb2e3072e5a59a4ceb11762f",
-    "lastmod": "2026-10-24",
+    "sha256": "613fe1f9e53a21f9417ee1607fa9dc7acdcefbabad5cbf431e08569cd636d163",
+    "lastmod": "2026-10-25",
     "sections": [
       "about",
       "media"
@@ -17,8 +17,8 @@
     "cards": 21
   },
   "books/index.html": {
-    "sha256": "60d202b6e5c0062bb87042ecfa7de9409d9844f96b64ca9cc3872e3974eff4d4",
-    "lastmod": "2026-10-24",
+    "sha256": "d6d7ccc2d2c7a5e87384d6e79e27432fb6a314bafaab9933fb8697711805bf18",
+    "lastmod": "2026-10-25",
     "sections": [
       "books"
     ],
@@ -33,8 +33,8 @@
     "cards": 231
   },
   "courses/online/index.html": {
-    "sha256": "abb4d264d7210a0efe094f36c5ad4b21391b3af3dd7f7327309575c3c05ad1b2",
-    "lastmod": "2026-10-24",
+    "sha256": "f90a599975de2ed84644a5c4ecf6caf537dea488e5ec1f8fd0b0657cea660893",
+    "lastmod": "2026-10-25",
     "sections": [
       "courses-online"
     ],
@@ -57,8 +57,8 @@
     "cards": 52
   },
   "papers/index.html": {
-    "sha256": "99bc858b62548885a821cfaf0baf657c1f158ae5cf4ab38a5cf51bfd46117d72",
-    "lastmod": "2026-10-24",
+    "sha256": "e2a1504be234ccb84c41244b3b56002f0ab13de19c0fdeac6b59414bdb59cfd5",
+    "lastmod": "2026-10-25",
     "sections": [
       "papers"
     ],
@@ -73,8 +73,8 @@
     "cards": 34
   },
   "projects/index.html": {
-    "sha256": "d4f02cdd49edab827735524d56185ab5621aac7683c96704cd6651e270d9840c",
-    "lastmod": "2026-10-24",
+    "sha256": "1ee9381e314990364996bd00b4081a133dc28502637287a444f3b0ca415d7c01",
+    "lastmod": "2026-10-25",
     "sections": [
       "codes",
       "websites"
@@ -82,8 +82,8 @@
     "cards": 34
   },
   "activities/index.html": {
-    "sha256": "a3ae4abfe3b1af845bee4c3fd001e9b6df94d9bddb0d0660067d728e5f0684e2",
-    "lastmod": "2026-10-24",
+    "sha256": "be75e96713584ef09b21fcf3971c98299323a28b20b141144a18e3971163b1b5",
+    "lastmod": "2026-10-25",
     "sections": [
       "social"
     ],
@@ -231,8 +231,8 @@
     "paper_id": "paper-12"
   },
   "papers/congnamul-dataset-2023/index.html": {
-    "sha256": "25160bb714d452a5dc6b36cdfb1ce366c76153192cbf5df0643d3eb6b0f61c22",
-    "lastmod": "2026-10-24",
+    "sha256": "67aea52f822716aa64e241c82e7c3b892fa93dbfac17da8dfe6949cd789047b0",
+    "lastmod": "2026-10-25",
     "sections": [
       "papers"
     ],
