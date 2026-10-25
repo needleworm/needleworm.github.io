@@ -354,7 +354,8 @@ def build(check=False, prepare_locales=False):
     view_counts = {key: len(Blocks(source).cards) for key, source in views.items()}
     layout = (ROOT / 'content/layout.html').read_text(encoding='utf8')
     asset_versions = {key: sha256((ROOT / name).read_text(encoding='utf8').encode('utf8')).hexdigest()[:12] for key, name in {
-        'STYLE_CSS_VERSION': 'style.css', 'PAGE_CSS_VERSION': 'page.css', 'SCROLL_VERSION': 'continuous-scroll.js', 'SCRIPT_VERSION': 'script.js'
+        'STYLE_CSS_VERSION': 'style.css', 'PAGE_CSS_VERSION': 'page.css', 'SCROLL_VERSION': 'continuous-scroll.js', 'SCRIPT_VERSION': 'script.js',
+        'LOCALE_ROUTING_VERSION': 'locale-routing.js'
     }.items()}
     reader_version = sha256((ROOT / 'paper-reader.js').read_text(encoding='utf8').encode('utf8')).hexdigest()[:12]
     manifest_path = ROOT / 'content/build-manifest.json'

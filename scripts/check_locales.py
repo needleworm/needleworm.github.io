@@ -269,6 +269,22 @@ def check_locales(config, require):
             require(len(alternates) == 10 and dict(alternates) == expected_alternates, f'{localized_target}: nonreciprocal/missing hreflang links')
             canonical_tags = [node.attrs.get('href') for node in doc.nodes if node.tag == 'link' and node.attrs.get('rel') == 'canonical']
             require(canonical_tags == [canonical], f'{localized_target}: canonical mismatch')
+            switchers = [node for node in doc.nodes if 'language-switcher' in node.classes]
+            require(len(switchers) == 1, f'{localized_target}: language selector count mismatch')
+            if len(switchers) == 1:
+                switcher = switchers[0]
+                footer = switcher.parent
+                require(footer is not None and footer.tag == 'footer' and 'site-footer' in footer.classes
+                        and footer.children[-1] is switcher, f'{localized_target}: language selector is not last in footer')
+                choices = [(node.attrs.get('hreflang'), node.attrs.get('href')) for node in doc.nodes
+                           if node.tag == 'a' and switcher in node.ancestry()]
+                wanted_choices = {'ko': route, **{lang: locale_path(lang, route) for lang in LOCALES}}
+                require(len(choices) == 9 and dict(choices) == wanted_choices,
+                        f'{localized_target}: footer language links mismatch')
+            routers = [node for node in doc.nodes if node.tag == 'script'
+                       and node.attrs.get('src', '').startswith('/locale-routing.js?v=')]
+            require(len(routers) == 1 and 'defer' in routers[0].attrs,
+                    f'{localized_target}: country language routing script missing or duplicated')
             require([node.attrs.get('content') for node in doc.nodes if node.tag == 'meta' and node.attrs.get('property') == 'og:url'] == [canonical], f'{localized_target}: og:url mismatch')
             require(not any(node.tag == 'meta' and node.attrs.get('name', '').lower() == 'robots' and re.search(r'\bnoindex\b', node.attrs.get('content', ''), re.I) for node in doc.nodes), f'{localized_target}: canonical page is noindex')
             entry = manifest.get(localized_target, {})

@@ -324,15 +324,11 @@ def enhance_page(source, base_route, locale, translations, runtime, base_url):
     alternate_html = '\n'.join('    <link rel="alternate" hreflang="' + code + '" href="' + url + '">' for code, url in alternates(base_route, base_url))
     data = json.dumps(runtime, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
     source = source.replace('</head>', alternate_html + '\n    <script id="site-i18n" type="application/json">' + data + '</script>\n</head>', 1)
-    # Place switcher between menu links and the hamburger without changing menu IDs.
-    navbar = re.search(r'<nav class="navbar".*?</nav>', source, re.S)
-    if navbar:
-        markup = navbar[0]
-        button = re.search(r'<button\b[^>]*\bid="mobile-menu-btn"[^>]*>.*?</button>', markup, re.S)
-        if button:
-            markup = markup[:button.start()] + markup[button.end():]
-        markup = markup[:-6] + language_switcher(base_route, locale, translations) + (button[0] if button else '') + '</nav>'
-        source = source[:navbar.start()] + markup + source[navbar.end():]
+    # Keep language selection at the end of the footer, after the business details.
+    footer = re.search(r'<footer\b[^>]*\bclass="[^"]*\bsite-footer\b[^"]*"[^>]*>.*?</footer>', source, re.S)
+    if footer:
+        markup = footer[0][:-9] + '        ' + language_switcher(base_route, locale, translations) + '\n    </footer>'
+        source = source[:footer.start()] + markup + source[footer.end():]
     return source
 
 
