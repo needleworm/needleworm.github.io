@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>Byunghyun Ban | محاضرات الذكاء الاصطناعي وتدريب الذكاء الاصطناعي التوليدي وأتمتة العمل</title>
+    <meta name="description" content="الموقع الرسمي لمهندس الذكاء الاصطناعي والكاتب Byunghyun Ban. يعرّف بدوراته في الذكاء الاصطناعي التوليدي وأتمتة العمل، وبكتبه وأبحاثه وبراءات اختراعه ومشاريعه.">
+    <meta name="author" content="Byunghyun Ban">
+
+    <link rel="canonical" href="https://bhban.kr/ar/">
+    <link rel="alternate" type="application/rss+xml" title="RSS لـByunghyun Ban" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="موجز JSON لـByunghyun Ban" href="/feed.json">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:site_name" content="Byunghyun Ban">
+    <meta property="og:title" content="Byunghyun Ban | محاضرات الذكاء الاصطناعي وتدريب الذكاء الاصطناعي التوليدي وأتمتة العمل">
+    <meta property="og:description" content="الموقع الرسمي لمهندس الذكاء الاصطناعي والكاتب Byunghyun Ban. يعرّف بدوراته في الذكاء الاصطناعي التوليدي وأتمتة العمل، وبكتبه وأبحاثه وبراءات اختراعه ومشاريعه.">
+    <meta property="og:url" content="https://bhban.kr/ar/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@9a7f553312705d9178fbdb73676d681727aa85ac/src/images/bookcovers.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/ar/#website", "url": "https://bhban.kr/ar/", "name": "Byunghyun Ban", "inLanguage": "ar"}, {"@type": "ProfilePage", "@id": "https://bhban.kr/ar/#page", "url": "https://bhban.kr/ar/", "name": "Byunghyun Ban | محاضرات الذكاء الاصطناعي وتدريب الذكاء الاصطناعي التوليدي وأتمتة العمل", "description": "الموقع الرسمي لمهندس الذكاء الاصطناعي والكاتب Byunghyun Ban. يعرّف بدوراته في الذكاء الاصطناعي التوليدي وأتمتة العمل، وبكتبه وأبحاثه وبراءات اختراعه ومشاريعه.", "inLanguage": "ar", "about": {"@id": "https://bhban.kr/#person"}, "isPartOf": {"@id": "https://bhban.kr/ar/#website"}, "mainEntity": {"@id": "https://bhban.kr/#person"}}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"فتح القائمة","menuClose":"إغلاق القائمة","submenuExpand":"توسيع القائمة الفرعية لـ{label}","submenuCollapse":"طي القائمة الفرعية لـ{label}","nextSwipeHint":"عند الوصول إلى النهاية، اسحب للأعلى مرة أخرى للانتقال.","nextScrollHint":"عند الوصول إلى النهاية، مرّر للأسفل مرة أخرى للانتقال.","lectureResults":"{category}: {count} · أحدث المحاضرات أولًا","categoryAll":"الكل","categoryCompany":"الشركات","categoryPublic":"المؤسسات العامة","categoryEducation":"المؤسسات التعليمية","categoryResearch":"المؤسسات البحثية","categoryConference":"المؤتمرات","listMedia":"فيديو","listNews":"التغطية الصحفية","listLectures":"المحاضرات","listCoursesOnline":"دورات عبر الإنترنت","listCoursesOffline":"البرامج التعليمية الحضورية","listPapers":"الأبحاث","listPatents":"براءات الاختراع","listProjects":"المشاريع","listActivities":"الأنشطة","listMemberships":"أنشطة العضوية","listCollections":"المقتنيات","listDonations":"سجل التبرعات","listGeneric":"القائمة","listStatus":"الإجمالي {total}؛ المعروض {visible}","listMore":"عرض المزيد من {label} (متبقٍ {remaining})","citationCopyLabel":"نسخ معلومات الاستشهاد","citationCopied":"تم نسخ معلومات الاستشهاد.","citationError":"تعذر نسخ معلومات الاستشهاد. يرجى التحقق من إعدادات الحافظة في المتصفح.","citationFormatCopied":"تم نسخ معلومات الاستشهاد بصيغة {label}.","citationManualCopy":"تم تحديد الاستشهاد. يرجى نسخه يدويًا.","contactLoadError":"تعذر تحميل وظيفة إرسال الاستفسار. يرجى المحاولة بعد قليل.","contactSent":"تم استلام استفسارك.","contactError":"حدث خطأ. يرجى المحاولة مجددًا.","contactSending":"جارٍ الإرسال...","streamRetry":"إعادة التحميل","streamError":"تعذر تحميل المحتوى التالي. أعد المحاولة أو انتقل عبر الرابط أعلاه.","streamLoading":"جارٍ تحميل محتوى {label} للمتابعة."}</script>
+</head>
+<body data-locale="ar" class="static-site full-content home-page" data-page="home">
+    <a class="skip-link" href="#main-content">الانتقال إلى المحتوى</a>
+    <nav class="navbar" aria-label="القائمة الرئيسية"><div class="navbar-brand"><a href="/ar/" aria-label="الصفحة الرئيسية لـByunghyun Ban"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/ar/" class="nav-link active nav-main-link" data-nav-page="home" aria-current="page">نبذة</a></li><li data-nav-group="media"><a href="/ar/media/" class="nav-link nav-main-link" data-nav-page="media">الوسائط</a></li><li data-nav-group="books"><a href="/ar/books/" class="nav-link nav-main-link" data-nav-page="books">الكتب</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/ar/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">المحاضرات</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="توسيع القائمة الفرعية للمحاضرات" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="تصنيف المحاضرات"><li><a href="/ar/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">الكل</a></li><li><a href="/ar/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">الشركات</a></li><li><a href="/ar/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">المؤسسات العامة</a></li><li><a href="/ar/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">المؤسسات التعليمية</a></li><li><a href="/ar/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">مؤسسات البحث</a></li><li><a href="/ar/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">المؤتمرات</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/ar/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">الدورات</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="توسيع القائمة الفرعية للدورات" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/ar/courses/online/" data-nav-page="courses-online">عبر الإنترنت</a></li><li><a href="/ar/courses/offline/" data-nav-page="courses-offline">حضوريًا</a></li></ul></li><li data-nav-group="news"><a href="/ar/news/" class="nav-link nav-main-link" data-nav-page="news">الأخبار</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/ar/papers/" class="nav-link nav-main-link" data-nav-page="papers">البحث والتطوير</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="توسيع القائمة الفرعية للبحث والتطوير" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/ar/papers/" data-nav-page="papers">الأبحاث</a></li><li><a href="/ar/patents/" data-nav-page="patents">براءات الاختراع</a></li><li><a href="/ar/projects/" data-nav-page="projects">المشاريع</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/ar/activities/" class="nav-link nav-main-link" data-nav-page="activities">أخرى</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="توسيع القائمة الفرعية للموضوعات الأخرى" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/ar/activities/" data-nav-page="activities">المساهمات الاجتماعية</a></li><li><a href="/ar/memberships/" data-nav-page="memberships">العضويات</a></li><li><a href="/ar/collections/" data-nav-page="collections">المقتنيات</a></li></ul></li><li data-nav-group="contact"><a href="/ar/contact/" class="btn-contact nav-main-link" data-nav-page="contact">التواصل</a></li></ul><details class="language-switcher"><summary aria-label="اختيار اللغة"><span aria-hidden="true">🌐</span> <span>العربية</span></summary><nav class="language-options" aria-label="اختيار اللغة"><a href="/" hreflang="ko" lang="ko">한국어</a><a href="/en/" hreflang="en" lang="en">English</a><a href="/zh/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/ar/" hreflang="ar" lang="ar" aria-current="true" dir="rtl">العربية</a><a href="/fr/" hreflang="fr" lang="fr">Français</a><a href="/bn/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="فتح القائمة">☰</button></nav>
+    <header class="hero"><div class="hero-content">
+    <img src="/src/images/profile.webp" alt="Byunghyun Ban" class="profile-img" fetchpriority="high" width="320" height="320">
+    <h1 class="hero-title">Byunghyun Ban</h1><p class="hero-subtitle">باحث · مطور · مؤلف</p>
+    <div class="hero-socials"><a href="https://github.com/needleworm" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.youtube.com/channel/UCpV0ZdloVwvSjxHfnYYQPQg?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a><a href="https://brunch.co.kr/@needleworm" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Brunch"><i class="fas fa-pen-nib"></i></a><a href="https://www.inflearn.com/users/1040535/@bhban" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Inflearn"><i class="fas fa-chalkboard-teacher"></i></a></div>
+    <div class="hero-buttons"><a href="/ar/contact/" class="btn-hero btn-primary">الاستفسار عن المحاضرات</a></div>
+    <div class="hero-stats-banner"><a href="/ar/books/" class="stat-item"><i class="fas fa-book stat-icon"></i><span class="stat-info"><span class="stat-label">الكتب</span><span class="stat-value">36+</span></span></a><span class="stat-divider"></span><a href="/ar/papers/" class="stat-item"><i class="fas fa-flask stat-icon"></i><span class="stat-info"><span class="stat-label">البحث والتطوير</span><span class="stat-value">96+</span></span></a><span class="stat-divider"></span><a href="/ar/lectures/" class="stat-item"><i class="fas fa-chalkboard-teacher stat-icon"></i><span class="stat-info"><span class="stat-label">المحاضرات</span><span class="stat-value">259+</span></span></a></div></div></header>
+    <main id="main-content" class="container page-main ">
+
+        <div class="section-group"><header class="group-header"><h2 class="group-title">نبذة</h2></header><div id="tab-about" class="tab-content-item active-tab-content">
+<section id="about" class="content-section ">
+            <div class="row">
+                <div class="col-lg-12 about-container">
+                    <div class="about-text">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Byunghyun Ban</h2>
+                        <p class="about-description">
+                            مهندس ذكاء اصطناعي ورئيس تنفيذي
+                        </p>
+                        <ul class="about-points">
+                            <li>🥽 رئيس NaNa Lab (2023. ~ )</li>
+                            <li>🚀 المدير التقني السابق لشركة SangSang Farm (2018. ~ 2024.)</li>
+                            <li>✒️ 36 كتابًا</li>
+                            <li>💡 34 طلب براءة اختراع ونموذج منفعة</li>
+                            <li>🔬 27 بحثًا (تشمل أبحاث SCI)</li>
+                            <li>🎓 تخرج مبكر في البكالوريوس والماجستير بقسم الهندسة الحيوية وهندسة الدماغ في KAIST</li>
+                            <li>📜 حاصل على تكريم وزير الداخلية والسلامة</li>
+                            <li>🕶️ أول كوري يحصل على العضوية الكاملة في <a href="https://www.opalquestgroup.com/societiestests.html"
+                                    target="_blank">الجمعية الدولية للحاصلين على الدرجة الكاملة في الذكاء (LPS)</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <div class="img-placeholder">
+                            <a href="https://bhban.kr/ar/" target="_blank">
+                                <img decoding="async" loading="lazy" id="profile_pic" src="/src/images/about.webp" alt="الملف الشخصي">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+</div></div><section class="section-group home-directory" aria-labelledby="directory-title"><div class="group-header"><h2 id="directory-title" class="group-title">استكشف</h2><p class="group-desc">الكتب والمحاضرات والبحث والتطوير</p></div><div class="grid-container"><a class="singleWebsiteCard directory-card" href="/ar/books/"><h3>الكتب</h3><p>حكايات نلتقيها في الكتب، من الذكاء الاصطناعي إلى أتمتة العمل</p><span class="directory-link">عرض جميع العناصر الـ36 <span aria-hidden="true">→</span></span></a><a class="singleWebsiteCard directory-card" href="/ar/lectures/"><h3>المحاضرات والتعليم</h3><p>سجل المحاضرات في الشركات والمؤسسات العامة والتعليمية</p><span class="directory-link">عرض جميع العناصر البالغ عددها 231 <span aria-hidden="true">→</span></span></a><a class="singleWebsiteCard directory-card" href="/ar/media/"><h3>البرامج والمقابلات</h3><p>قصص الذكاء الاصطناعي والتقنية عبر الفيديو</p><span class="directory-link">عرض جميع العناصر الـ21 <span aria-hidden="true">→</span></span></a><a class="singleWebsiteCard directory-card" href="/ar/news/"><h3>التغطية الصحفية</h3><p>أبحاث وكتب وأنشطة تناولتها وسائل الإعلام</p><span class="directory-link">عرض جميع العناصر البالغ عددها 52 <span aria-hidden="true">→</span></span></a><a class="singleWebsiteCard directory-card" href="/ar/papers/"><h3>الأوراق العلمية والبحوث</h3><p>سجل استكشاف الذكاء الاصطناعي والبيانات والتقنية</p><span class="directory-link">عرض جميع العناصر الـ28 <span aria-hidden="true">→</span></span></a><a class="singleWebsiteCard directory-card" href="/ar/projects/"><h3>مشاريع التطوير</h3><p>برمجيات مفتوحة وأدوات ويب طورتها بنفسي</p><span class="directory-link">عرض جميع العناصر البالغ عددها 34 <span aria-hidden="true">→</span></span></a></div></section><section class="section-group home-section-mobile" data-page="media" aria-labelledby="home-section-title"><header class="group-header"><h2 id="home-section-title" class="group-title">الوسائط</h2><p class="group-desc">ظهوري الإعلامي</p></header><div id="tab-media" class="tab-content-item active-tab-content">
+<section id="media" class="content-section ">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">الوسائط</h2>
+                </div>
+            </div>
+            <div class="websitesContainer" id="media-list">
+
+                <!-- media 21 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview"
+                            src="https://www.youtube.com/embed/KfovFytj_Q4?si=l58qCs9Ag2dnp3z4" title="Hoo Insight"
+                            frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen>
+                        </iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">مهن ستختفي وأخرى ستظهر في عصر الذكاء الاصطناعي | ما الأداة التي ينبغي أن تسبق إلى امتلاكها؟ [الكاتب Byunghyun Ban]</h5>
+                            <p class="abstract">
+                                مع الكاتب Byunghyun Ban، مؤلف «الإنسان بعد الذكاء الاصطناعي» و«بنقرة واحدة! البرمجة بالتوجيه الطبيعي باستخدام Antigravity»، ومطور الذكاء الاصطناعي والمهندس ورئيس NaNa Lab، نستكشف الفهم الصحيح للذكاء الاصطناعي، وكيفية تقييم قابلية مهنتنا للبقاء، والمهن التي ستظهر أو تختفي، وطرق الاستمرار طويلًا في عصر الذكاء الاصطناعي.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=KfovFytj_Q4"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- media 20 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview"
+                            src="https://www.youtube.com/embed/UH0OAq8iT2Y?si=U2p9hghHJt0Carg1" title="EBS Culture"
+                            frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen>
+                        </iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">
+                                «كل شيء سيُستبدل خلال 5 سنوات»: الذكاء الاصطناعي يحل محل البشر واحدًا تلو الآخر في كل مجال توجد فيه بيانات، فكيف سيكون مستقبلنا؟</h5>
+                            <br />
+                            <p class="abstract">
+                                كيف سيغير الذكاء الاصطناعي التوليدي مستقبلنا في عصر الذكاء الاصطناعي سريع التحول؟ لكي نحسن استخدام هذه الأداة، نحتاج إلى فهم عميق لطريقة عمل الذكاء الاصطناعي وإلى استيعاب هندسة الأوامر، أي تقنية الحوار معه. نستعرض بصورة منظمة المفاهيم وطرق الاستخدام الضرورية اليوم، بعدما أصبح الذكاء الاصطناعي جزءًا من الثقافة العامة.
+                            </p>
+                            <div class="lectureIcons">
+                                <a href="https://www.youtube.com/watch?v=naKw0hU9TwU" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-youtube"></i>الجزء 1
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=UH0OAq8iT2Y" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-youtube"></i>مقالتان
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=0iRXIZeKoKc" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-youtube"></i>3 مقالات
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- media 19 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview"
+                            src="https://www.youtube.com/embed/jG9ANjGpiZs?si=VZ_5ZzwSiOl9_MYN" title="Ontori TV"
+                            frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen>
+                        </iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">استراتيجيات واتجاهات زيادة إنتاجية العمل بالذكاء الاصطناعي التوليدي [الكاتب Byunghyun Ban]</h5>
+                            <br />
+                            <p class="abstract">
+                                قدمت محاضرة خاصة عن استخدامات الذكاء الاصطناعي التوليدي وأحدث اتجاهاته بدعوة من Ontori TV.
+                            </p>
+                            <div class="lectureIcons">
+                                <a href="https://www.youtube.com/watch?v=jG9ANjGpiZs" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-youtube"></i>الجزء 1
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=3v2ojLd5udk" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-youtube"></i>مقالتان
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- media 18 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview"
+                            src="https://www.youtube.com/embed/HzHhzXInkdc?si=MYjBhWtc3FxKM65T" title="Ontori TV"
+                            frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen>
+                        </iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">أرى أن هذه آخر فرصة للبدء بالذكاء الاصطناعي / طرق الاستخدام من مطور ذكاء اصطناعي [الكاتب Byunghyun Ban]</h5>
+                            <br />
+                            <p class="abstract">
+                                سجلت محاضرتين خاصتين عن استخدام الذكاء الاصطناعي بدعوة من Ontori TV.
+                            </p>
+                            <div class="lectureIcons">
+                                <a href="https://www.youtube.com/watch?v=HzHhzXInkdc" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-youtube"></i>الجزء 1
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=A9XTZsVoesg" target="_blank"
+                                    rel="noreferrer"><i class="fab fa-youtube"></i>مقالتان
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- media 17 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview"
+                            src="https://www.youtube.com/embed/Ot3V2Z17EGo?si=thSkkp6sMQyroRrR" title="لعبة السداسي"
+                            frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen>
+                        </iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">لعبة السداسي</h5>
+                            <p class="abstract">
+                                شاركت في <strong>Geekble</strong>، قناة YouTube ذات 1.1 مليون مشترك، ضمن برنامجها الترفيهي الضخم على الإنترنت <strong>لعبة السداسي</strong>.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=Ot3V2Z17EGo"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> المقطع الترويجي</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/yh6lx62yHTs"
+                            title="[معاينة الدورة] الدورة الأولى والأحدث! تعلم الإنجليزية باستخدام ChatGPT" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen>
+                        </iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">[معاينة الدورة] الدورة الأولى والأحدث! تعلم الإنجليزية باستخدام ChatGPT</h5>
+                            <p class="abstract">
+                                ChatGPT يصبح معلمك الشخصي للإنجليزية! سأريكم كيف تتقنون الإنجليزية باستخدام ChatGPT وحده.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=yh6lx62yHTs"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> Fast Campus</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/qbxmD616erM"
+                            title="عصر ChatGPT: المعلومات الدقيقة التي لا يعرفها إلا الـ1% الناجون" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen>
+                        </iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">عصر ChatGPT: المعلومات الدقيقة التي لا يعرفها إلا الـ1% الناجون</h5>
+                            <p class="abstract">
+                                قدمت أول بث مباشر بمناسبة اكتمال استوديو يانغجي لإذاعة المرور الكورية. شكرًا على الدعوة.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=qbxmD616erM"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> TBN</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/iTmhi7LYtvI"
+                            title="ما المهارات اللازمة للتقدم في عصر ChatGPT والذكاء الاصطناعي؟ (الكاتب Byunghyun Ban، الجزء 3)" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">ما المهارات اللازمة للتقدم في عصر ChatGPT والذكاء الاصطناعي؟ (الكاتب Byunghyun Ban، الجزء 3)</h5>
+                            <p class="abstract">
+                                الفيديو الثالث من سلسلة المحاضرات الخاصة عن ChatGPT بالتعاون مع المتحف الوطني للعلوم.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=iTmhi7LYtvI"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> المتحف الوطني للعلوم</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/kpvWDHRxtWc"
+                            title="هل وصلت استخدامات ChatGPT إلى هذا الحد بالفعل؟ (الكاتب Byunghyun Ban، الجزء 2)" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">هل وصلت استخدامات ChatGPT إلى هذا الحد بالفعل؟ (الكاتب Byunghyun Ban، الجزء 2)</h5>
+                            <p class="abstract">
+                                الفيديو الثاني من سلسلة المحاضرات الخاصة عن ChatGPT بالتعاون مع المتحف الوطني للعلوم.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=kpvWDHRxtWc"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> المتحف الوطني للعلوم</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/Z8Y6aqlq8DM"
+                            title="[Andoelmebo] لماذا يؤلف ChatGPT قصصًا أحيانًا؟ (مع مدير التقنية Byunghyun Ban)" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">[Andoelmebo] لماذا يؤلف ChatGPT قصصًا أحيانًا؟ (مع مدير التقنية Byunghyun Ban)</h5>
+                            <p class="abstract">
+                                المدير التقني Byunghyun Ban شخص يحب الغناء كثيرًا، وله صلة بهذه القناة
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=Z8Y6aqlq8DM"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> Medical Voice — التدريب الصوتي الطبي</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/SC1OfEdxZiM"
+                            title="100 مليون مستخدم في شهرين... ChatGPT، ما حقيقتك؟ (الكاتب Byunghyun Ban، الجزء 1)" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">100 مليون مستخدم في شهرين... ChatGPT، ما حقيقتك؟ (الكاتب Byunghyun Ban، الجزء 1)</h5>
+                            <p class="abstract">
+                                هذا أول فيديو في سلسلة المحاضرات الخاصة عن ChatGPT بالتعاون مع المتحف الوطني للعلوم.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=SC1OfEdxZiM"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> المتحف الوطني للعلوم</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/Bc7MjNjt0FY"
+                            title="شخص أصبح مصمم مؤثرات حاسوبية بسبب شغفه بنجم محبوب! عرض حي بالفوتوشوب للفنان جونغ غيومين" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">شخص أصبح مصمم مؤثرات حاسوبية بسبب شغفه بنجم محبوب! عرض حي بالفوتوشوب للفنان جونغ غيومين</h5>
+                            <p class="abstract">
+                                فيديو من إنتاجي
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=Bc7MjNjt0FY"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> </a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/media/media7.webp" alt="الصورة المصغرة" />
+                        <div class="projectText">
+                            <h5 class="lecture_title">[News Story] مخدر أم علاج؟ وجها القنب / SBS</h5>
+                            <p class="abstract">
+                                بعد قضايا القنب التي شملت أبناء العائلات الثرية وكبار المسؤولين، طال الجدل الممثل يو آه إن. وقد خففت تايلاند وبعض الولايات الأمريكية وكندا القيود على القنب. وأصبح مؤخرًا يُطرح أيضًا قطاعًا عالي القيمة كمادة خام دوائية. هل يفسر ذلك تكرار الجدل وزيادة تهريب القنب من الخارج؟ يسهل تجاهل مخاطره، لكن الخبراء يحذرون من أنه يشكل بوابة لإدمان مخدرات مثل الميثامفيتامين والكوكايين. يحقق برنامج News Story هذا الأسبوع في وجهي القنب بوصفه مخدرًا ودواءً.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=ZZ-hkWyVooI"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> أخبار SBS</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/km083tSB5DA"
+                            title="هل الذكاء الاصطناعي تهديد حقيقي للبشر؟ وكيف ينبغي أن نستفيد منه؟" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">هل الذكاء الاصطناعي تهديد حقيقي للبشر؟ وكيف ينبغي أن نستفيد منه؟</h5>
+                            <p class="abstract">
+                                هل لا تعرف عن الذكاء الاصطناعي سوى الخوارزميات والقيادة الذاتية وAlphaGo؟ شاهد هذا الفيديو! نستعرض تطوره ونطاق استخدامه وكيف يمكن لغير المتخصصين الاستفادة منه أيضًا.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=km083tSB5DA"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> Fast Campus</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/wKvUT208qao"
+                            title="المزارع الذكية والمهن المتفرعة منها والفرص المتاحة" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">المزارع الذكية والمهن المتفرعة منها والفرص المتاحة</h5>
+                            <p class="abstract">
+                                ملتقى KB للأمل والمسار المهني «كما تحلم»
+                            </p>
+                            <div class="lectureIcons" <a href="https://www.kbstar.com/">بنك Kookmin</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/lu4UOpEnHyY"
+                            title="[NYPC 2020] لقاء حواري مع السفير Byunghyun Ban" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">
+                                [NYPC 2020] لقاء حواري مع السفير Byunghyun Ban</h5>
+                            <p class="abstract">
+                                NYPC 2020، اللقاء الحواري، اليوم 1 [البرمجة تتحدث عن المستقبل المتغير]: من موظف الخدمة العامة المبرمج إلى تأسيس مزرعة ذكية، يتحدث السفير Byunghyun Ban من Imagination Garden عن «إضافة التقنية المتقدمة إلى أقدم الصناعات»
+                            </p>
+                            <div class="lectureIcons" <a href="https://www.youtube.com/@NEXONKR">NEXON</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/fuwZmgKenqs"
+                            title="إنشاء مزرعة آلية للأرز (مزرعة ذكية) باستخدام حوض مطاطي... طالب هندسة ذو أعلى درجة ذكاء يأتي للمساعدة" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">إنشاء مزرعة آلية للأرز (مزرعة ذكية) باستخدام حوض مطاطي... طالب هندسة ذو أعلى درجة ذكاء يأتي للمساعدة</h5>
+                            <p class="abstract">
+                                محاضرة من الألف إلى الياء عن الزراعة الآلية يقدمها خبير المزارع الذكية، المدير التقني لشركة SangSang Farm! لا أعرف لماذا أتابعها، لكنني أنجذب إليها تمامًا…
+                            </p>
+                            <div class="lectureIcons">
+                                <a href="https://www.youtube.com/watch?v=fuwZmgKenqs" target="_blank" rel="noreferrer">
+                                    <i class="fab fa-youtube"></i> الحلقة 1
+                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="https://www.youtube.com/watch?v=fzp2fg6CekM" target="_blank" rel="noreferrer">
+                                    <i class="fab fa-youtube"></i> مقطع إضافي 1
+                                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="https://www.youtube.com/watch?v=Ni6Q1sENdmI" target="_blank" rel="noreferrer">
+                                    <i class="fab fa-youtube"></i> مقطع إضافي 2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/16hsA3CyM7M"
+                            title="أجروا مقابلة مع موظف الخدمة العامة الذي أنهى في يوم عملًا يستغرق ستة أشهر" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">أجروا مقابلة مع موظف الخدمة العامة الذي أنهى في يوم عملًا يستغرق ستة أشهر</h5>
+                            <p class="abstract">
+                                قبل نحو عام ونصف، أظهر موظف خدمة عامة قدرة مدهشة على إنجاز العمل حتى استُدعي إلى البيت الأزرق. كان Byunghyun Ban، الذي يعمل في فرع أندونغ لوزارة التوظيف والعمل. طلب منه رئيسه إدخال أرقام تتبع من 13 رقمًا لأكثر من 3900 رسالة مسجلة في موقع البريد ثم طباعة نتائجها جميعًا. كان إنجاز هذا العمل المتكرر سيحتاج إلى ستة أشهر على الأقل، لكنه أنهاه في يوم واحد! فقد حصل على ماجستير في الذكاء الاصطناعي من KAIST، وطور برنامج أتمتة بنفسه اختصر وقت العمل جذريًا. أثار آنذاك الاهتمام بلقبي «موظف الخدمة العامة الذي غيّر كوريا» و«موظف الخدمة العامة المبرمج». تلقينا طلبًا لمتابعة أخباره، وتمكنا من الاتصال به بعد البحث. أخبرنا أنه أنهى خدمته مؤخرًا، وعندما سألناه عن أحواله أذهلنا هذا الشخص مجددًا لدرجة عقدت ألسنتناااااااا (ذهول حقيقي).
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=16hsA3CyM7M"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> وكالة التقارير Waeng</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/VJpjk8j6zTM"
+                            title="هل القنب قانوني في أندونغ؟ لقاء مباشر مع صاحب مزرعة قنب" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">هل القنب قانوني في أندونغ؟ لقاء مباشر مع صاحب مزرعة قنب</h5>
+                            <p class="abstract">
+                                زراعة القنب أو إنباته غير قانونية في جميع أنحاء كوريا وفق قانون إدارة المخدرات. لكن يوجد استثناء واحد فقط: مدينة أندونغ في غيونغبوك.
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=VJpjk8j6zTM"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> SBS News</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/s0skJO5TfAk"
+                            title="★فخر كبير★ مزارع القنب خريج KAIST متعدد المواهب [اسألنا عن أي شيء]" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">★فخر كبير★ مزارع القنب خريج KAIST متعدد المواهب [اسألنا عن أي شيء]</h5>
+                            <p class="abstract">
+                                مزارع خريج KAIST أسَر قلب حبيبته المعلمة الجميلة! كل ما تريد معرفته عن القنب مع صاحب مزرعة قانونية
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=s0skJO5TfAk"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> KBS N</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1 -->
+                <div class="singleLectureContainer">
+                    <div class="singleWebsiteCard">
+                        <iframe loading="lazy" class="YoutubePreview" src="https://www.youtube.com/embed/_-ugbwhhApI"
+                            title="ماذا يحدث عندما يصبح طالب دراسات عليا من KAIST موظف خدمة عامة؟! (مع البرمجة) / SBS News" frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                        <div class="projectText">
+                            <h5 class="lecture_title">ماذا يحدث عندما يصبح طالب دراسات عليا من KAIST موظف خدمة عامة؟! (مع البرمجة) / SBS News</h5>
+                            <p class="abstract">
+                                ماذا لو كُلفت بكمية هائلة من العمل الروتيني لا تُنجز إلا بعد ستة أشهر؟ موقف لا نريد حتى تخيله. هذا ما واجهه مؤخرًا Byunghyun Ban، موظف الخدمة الاجتماعية بفرع أندونغ لوزارة التوظيف والعمل. لكنه حاصل على ماجستير في الذكاء الاصطناعي من KAIST، فأنهى العمل في 30 دقيقة. نشر قصته في مدونته، وتسبب المنشور في أحداث لم يكن يتخيلها. ماذا حدث؟
+                            </p>
+                            <div class="lectureIcons"><a href="https://www.youtube.com/watch?v=_-ugbwhhApI"
+                                    target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i> SBS News</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+</div></section>
+    </main>
+    <nav class="mobile-next-page" aria-label="الصفحة التالية"><a class="mobile-next-link" id="mobile-next-link" rel="next" href="/ar/media/" data-mobile-href="/ar/books/" data-mobile-label="الكتب" data-mobile-heading="الكتب"><span class="mobile-next-eyebrow">الصفحة التالية</span><strong><span class="next-page-label">الإعلام</span><span aria-hidden="true">↑</span></strong><span class="mobile-next-description">البرامج والفيديو</span></a><p class="mobile-next-hint">اضغط الزر أعلاه للانتقال.</p></nav>
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="جميع الصفحات"><a href="/ar/">Byunghyun Ban</a><a href="/ar/media/">البث والفيديو</a><a href="/ar/books/">الكتب</a><a href="/ar/lectures/">سجل المحاضرات</a><a href="/ar/courses/online/">دورات عبر الإنترنت</a><a href="/ar/courses/offline/">البرامج التعليمية الحضورية</a><a href="/ar/news/">التغطية الصحفية</a><a href="/ar/papers/">الأوراق العلمية والبحوث</a><a href="/ar/patents/">براءات الاختراع</a><a href="/ar/projects/">مشاريع التطوير</a><a href="/ar/activities/">المساهمات الاجتماعية</a><a href="/ar/memberships/">العضويات والأنشطة المهنية</a><a href="/ar/collections/">المقتنيات</a><a href="/ar/contact/">استفسارات المحاضرات والتعاون</a></nav>
+            <p><a href="/feed.xml">الاشتراك عبر RSS</a> · <a href="/feed.json">موجز JSON</a></p>
+            <p>© 2026 Byunghyun Ban. جميع الحقوق محفوظة.</p>
+            <p>NaNa Lab (رقم تسجيل النشاط: 269-08-02374)، الممثل: Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="الانتقال إلى الأعلى">↑</button>
+</body>
+</html>

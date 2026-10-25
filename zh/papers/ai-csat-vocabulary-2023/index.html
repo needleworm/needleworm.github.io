@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>AI Knows Which Words Will Appear in Next Year&#x27;s Korean CSAT | Byunghyun Ban</title>
+    <meta name="description" content="A text-mining-based word class categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple tex…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="AI Knows Which Words Will Appear in Next Year&#x27;s Korean CSAT">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_author" content="Jejong Lee">
+<meta name="citation_author" content="Hyeonmok Hwang">
+<meta name="citation_publication_date" content="2023">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/ai-csat-vocabulary-2023/">
+<meta name="citation_conference_title" content="2023 14th International Conference on Information and Communication Technology Convergence (ICTC)">
+<meta name="citation_firstpage" content="1353">
+<meta name="citation_lastpage" content="1357">
+<meta name="citation_doi" content="10.1109/ictc58733.2023.10393339">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/ai-csat-vocabulary-2023/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/zh/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="AI Knows Which Words Will Appear in Next Year&#x27;s Korean CSAT | Byunghyun Ban">
+    <meta property="og:description" content="A text-mining-based word class categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple tex…">
+    <meta property="og:url" content="https://bhban.kr/zh/papers/ai-csat-vocabulary-2023/">
+    <meta property="og:image" content="https://bhban.kr/src/images/papers/11.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/zh/#website", "url": "https://bhban.kr/zh/", "name": "Byunghyun Ban", "inLanguage": "zh"}, {"@type": "WebPage", "@id": "https://bhban.kr/zh/papers/ai-csat-vocabulary-2023/#page", "url": "https://bhban.kr/zh/papers/ai-csat-vocabulary-2023/", "name": "AI Knows Which Words Will Appear in Next Year's Korean CSAT | Byunghyun Ban", "description": "A text-mining-based word class categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple tex…", "inLanguage": "zh", "mainEntity": {"@id": "https://bhban.kr/papers/ai-csat-vocabulary-2023/#article"}, "isPartOf": {"@id": "https://bhban.kr/zh/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/ai-csat-vocabulary-2023/#article", "url": "https://bhban.kr/papers/ai-csat-vocabulary-2023/", "name": "AI Knows Which Words Will Appear in Next Year's Korean CSAT", "headline": "AI Knows Which Words Will Appear in Next Year's Korean CSAT", "author": [{"@type": "Person", "name": "Byunghyun Ban"}, {"@type": "Person", "name": "Jejong Lee"}, {"@type": "Person", "name": "Hyeonmok Hwang"}], "datePublished": "2023", "inLanguage": "en", "abstract": "A text-mining-based word class categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple text appearance frequency analysis is first described. This method was developed as a data screening tool but showed 4.35 times higher prediction accuracy compared to Word Master book. An LSTM deep learning method is also suggested for vocabulary appearance pattern prediction method. AI performs a regression with various size of data window of previous exams to predict the probabilities of word appearance in the next exam. Predicted values of AI over various data windows are processed into a single score as a weighted sum, which we call an \"AI-Score\", which represents the probability of word appearance in next year's exam. Suggested method showed 100% accuracy at the range 100-score area and showed only 1.7% error of prediction in the section where the scores were over 60 points. All source codes are freely available at the authors' Git Hub repository. (https://github.com/needleworm/bigdata_voca)", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/ai-csat-vocabulary-2023/#page"}, "isPartOf": {"@type": "CreativeWork", "name": "2023 14th International Conference on Information and Communication Technology Convergence (ICTC)"}, "pageStart": "1353", "pageEnd": "1357", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.1109/ictc58733.2023.10393339"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/ai-csat-vocabulary-2023/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://bhban.kr/zh/"}, {"@type": "ListItem", "position": 2, "name": "论文", "item": "https://bhban.kr/zh/papers/"}, {"@type": "ListItem", "position": 3, "name": "AI Knows Which Words Will Appear in Next Year's Korean CSAT", "item": "https://bhban.kr/zh/papers/ai-csat-vocabulary-2023/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/ai-csat-vocabulary-2023/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/ai-csat-vocabulary-2023/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"打开菜单","menuClose":"关闭菜单","submenuExpand":"展开{label}子菜单","submenuCollapse":"收起{label}子菜单","nextSwipeHint":"滚动到底部后，再向上滑动一次即可前往。","nextScrollHint":"滚动到底部后，再向下滚动一次即可前往。","lectureResults":"{category} {count}项 · 按最新讲座排序","categoryAll":"全部","categoryCompany":"企业","categoryPublic":"公共机构","categoryEducation":"教育机构","categoryResearch":"研究机构","categoryConference":"会议","listMedia":"视频","listNews":"新闻报道","listLectures":"讲座","listCoursesOnline":"在线课程","listCoursesOffline":"线下培训课程","listPapers":"论文","listPatents":"专利","listProjects":"项目","listActivities":"活动","listMemberships":"会员活动","listCollections":"收藏品","listDonations":"捐赠记录","listGeneric":"列表","listStatus":"共{total}项，显示{visible}项","listMore":"查看更多{label}（还剩{remaining}项）","citationCopyLabel":"复制引用信息","citationCopied":"已复制引用信息。","citationError":"无法复制引用信息，请检查浏览器的剪贴板设置。","citationFormatCopied":"已复制{label}引用信息。","citationManualCopy":"已选中引用文本，请手动复制。","contactLoadError":"无法加载咨询发送功能。请稍后重试。","contactSent":"已收到您的咨询。","contactError":"发生错误，请重试。","contactSending":"发送中……","streamRetry":"重新加载","streamError":"无法加载后续内容。请重试，或点击上方链接前往。","streamLoading":"正在继续加载{label}内容。"}</script>
+</head>
+<body data-locale="zh" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">跳转至正文</a>
+    <nav class="navbar" aria-label="主菜单"><div class="navbar-brand"><a href="/zh/" aria-label="Byunghyun Ban 首页"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/zh/" class="nav-link nav-main-link" data-nav-page="home">关于</a></li><li data-nav-group="media"><a href="/zh/media/" class="nav-link nav-main-link" data-nav-page="media">媒体</a></li><li data-nav-group="books"><a href="/zh/books/" class="nav-link nav-main-link" data-nav-page="books">书籍</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/zh/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">讲座</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="展开讲座子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="讲座分类"><li><a href="/zh/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">全部</a></li><li><a href="/zh/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">企业</a></li><li><a href="/zh/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">公共机构</a></li><li><a href="/zh/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">教育机构</a></li><li><a href="/zh/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">研究机构</a></li><li><a href="/zh/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">会议</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/zh/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">课程</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="展开课程子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/zh/courses/online/" data-nav-page="courses-online">在线</a></li><li><a href="/zh/courses/offline/" data-nav-page="courses-offline">线下</a></li></ul></li><li data-nav-group="news"><a href="/zh/news/" class="nav-link nav-main-link" data-nav-page="news">新闻</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/zh/papers/" class="nav-link active nav-main-link" data-nav-page="papers">研发</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="展开研发子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/zh/papers/" data-nav-page="papers">论文</a></li><li><a href="/zh/patents/" data-nav-page="patents">专利</a></li><li><a href="/zh/projects/" data-nav-page="projects">项目</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/zh/activities/" class="nav-link nav-main-link" data-nav-page="activities">其他</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="展开其他子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/zh/activities/" data-nav-page="activities">社会贡献</a></li><li><a href="/zh/memberships/" data-nav-page="memberships">会员活动</a></li><li><a href="/zh/collections/" data-nav-page="collections">收藏</a></li></ul></li><li data-nav-group="contact"><a href="/zh/contact/" class="btn-contact nav-main-link" data-nav-page="contact">联系</a></li></ul><details class="language-switcher"><summary aria-label="选择语言"><span aria-hidden="true">🌐</span> <span>简体中文</span></summary><nav class="language-options" aria-label="选择语言"><a href="/papers/ai-csat-vocabulary-2023/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/ai-csat-vocabulary-2023/" hreflang="en" lang="en">English</a><a href="/zh/papers/ai-csat-vocabulary-2023/" hreflang="zh" lang="zh" aria-current="true">简体中文</a><a href="/hi/papers/ai-csat-vocabulary-2023/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/ai-csat-vocabulary-2023/" hreflang="es" lang="es">Español</a><a href="/ar/papers/ai-csat-vocabulary-2023/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/ai-csat-vocabulary-2023/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/ai-csat-vocabulary-2023/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/papers/ai-csat-vocabulary-2023/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="打开菜单">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="当前位置"><a href="/zh/">首页</a><span aria-hidden="true">/</span><a href="/zh/papers/">论文</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-11"><header><p class="paper-kind">已发表研究</p><h1 id="paper-title" lang="en">AI Knows Which Words Will Appear in Next Year&#x27;s Korean CSAT</h1><p class="paper-authors">Byunghyun Ban, Jejong Lee, Hyeonmok Hwang</p><p class="paper-venue">2023 · 2023 14th International Conference on Information and Communication Technology Convergence (ICTC) · 1353–1357</p><nav class="paper-reader-jumps" aria-label="前往论文"><a href="#abstract-heading">摘要</a><a href="#full-text">全文</a><a href="#citation-heading">引用</a></nav><div class="gitIcons">
+                                <a href="/papers/ai-csat-vocabulary-2023/paper.pdf" target="_blank" rel="noreferrer" download aria-label="下载 PDF" title="下载 PDF"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg></a>
+                                <a href="https://arxiv.org/abs/2211.15426" target="_blank" rel="noreferrer" aria-label="arXiv 原文信息" title="arXiv 原文信息"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg></a>
+                                <a href="https://github.com/needleworm/bigdata_voca" target="_blank" rel="noreferrer" aria-label="GitHub 仓库" title="GitHub 仓库"><i aria-hidden="true" class="fab fa-github"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg></a>
+                                <span class="citation"
+                                    data-citation="Ban, Byunghyun, et al. 'AI Knows Which Words Will Appear in Next Year's Korean CSAT.' 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023." aria-label="复制引用信息" title="复制引用信息"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">引用</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>目录 · Contents</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-11-introduction">Introduction</a></li><li class="toc-level-3"><a href="#paper-11-patterns-of-exams">Patterns of Exams</a></li><li class="toc-level-3"><a href="#paper-11-natural-language-processing">Natural Language Processing</a></li><li class="toc-level-2"><a href="#paper-11-method">Method</a></li><li class="toc-level-3"><a href="#paper-11-data">Data</a></li><li class="toc-level-3"><a href="#paper-11-preprocessing">Preprocessing</a></li><li class="toc-level-3"><a href="#paper-11-frequency-analysis">Frequency Analysis</a></li><li class="toc-level-3"><a href="#paper-11-word-screening-by-experts">Word Screening by Experts</a></li><li class="toc-level-3"><a href="#paper-11-neural-network-architecture">Neural Network Architecture</a></li><li class="toc-level-3"><a href="#paper-11-data-windowing">Data Windowing</a></li><li class="toc-level-3"><a href="#paper-11-training">Training</a></li><li class="toc-level-3"><a href="#paper-11-normalization-of-regression-results">Normalization of Regression Results</a></li><li class="toc-level-2"><a href="#paper-11-result">Result</a></li><li class="toc-level-3"><a href="#paper-11-bigdata-screening-method">Bigdata Screening Method</a></li><li class="toc-level-3"><a href="#paper-11-ai-prediction-values">AI Prediction Values</a></li><li class="toc-level-3"><a href="#paper-11-prediction-result-compared-to-2023-k-csat-exam">Prediction Result Compared to 2023 K-CSAT Exam</a></li><li class="toc-level-3"><a href="#paper-11-ai-prediction-accuracy">AI Prediction Accuracy</a></li><li class="toc-level-2"><a href="#paper-11-discussion">Discussion</a></li><li class="toc-level-2"><a href="#paper-11-conclusion">Conclusion</a></li><li class="toc-level-2"><a href="#paper-11-acknowledgment">Acknowledgment</a></li><li class="toc-level-2"><a href="#paper-11-supplement-data">Supplement Data</a></li><li class="toc-level-2"><a href="#paper-11-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">摘要</h2><p class="abstract" lang="en">A text-mining-based word class categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple text appearance frequency analysis is first described. This method was developed as a data screening tool but showed 4.35 times higher prediction accuracy compared to Word Master book. An LSTM deep learning method is also suggested for vocabulary appearance pattern prediction method. AI performs a regression with various size of data window of previous exams to predict the probabilities of word appearance in the next exam. Predicted values of AI over various data windows are processed into a single score as a weighted sum, which we call an &quot;AI-Score&quot;, which represents the probability of word appearance in next year&#x27;s exam. Suggested method showed 100% accuracy at the range 100-score area and showed only 1.7% error of prediction in the section where the scores were over 60 points. All source codes are freely available at the authors&#x27; Git Hub repository. (https://github.com/needleworm/bigdata_voca)</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords">Keywords—Natural Language Processing, NLP, Text Mining, Deep
+Learning, Pattern Prediction</p><h2 id="paper-11-introduction">Introduction</h2>
+<p>Korean CSAT(대학수학능력시험) is an annual test administered by
+Korean Ministry of Education. Every Korean student takes K-CSAT for
+admission of university. As K-CSAT is held only once a year, Korea
+Institute of Curriculum and Evaluation (KICE) provides official mock
+exams in June and September. On average, 510 thousand students take
+K-CSAT every year [1]. As previous questions from K-CSAT are freely
+available at KICE, many instructors and educational institutes struggle
+for analyzing the pattern itself and the change of patterns over year
+from previous exams.</p>
+<p>This paper provides a prediction matehod for english vocabulary
+appearance pattern with big-data mining and deep learning.</p>
+<p>Previous works related to exam pattern analysis and natural language
+processing are summarized on II. Related works.</p>
+<p>Details on data acquisition, preprocessing, screening and AI-based
+prediction are described in III. Method. It also provides detailed
+training strategies such as data windowing and loss function, and
+normalization method to convert AI-predicted logit into a score which
+measures the probability of word appearance.</p>
+<p>IV. Results. shows the distribution and accuracy of AI-predicted
+values, and the prediction accuracy on 2023 K-CSAT English exam.</p>
+<h3 id="paper-11-patterns-of-exams">Patterns of Exams</h3>
+<p>The author of Word Master introduces that he gathered English words
+from K-CSAT, official mock exam of K-CSAT, government authorized
+textbooks to write the vocabulary book [2]. Seonsik Kyeong claims that
+his book, which contains 4,138 words, predicted English vocabulary of
+K-CSAT with 93.3% ~ 98.5% accuracy for recent 3 years [3]. But each
+year's exam contained less than 1,600 words so maximum possible accuracy
+cannot numerically exceed 38.7%, which is achieved only when every word
+from an exam is contained in the book. It seems that the author did not
+apply mathematical definition: number of correct predictions over total
+number of predictions, or the result is not accurate.</p>
+<p>Those two books are most popular in Korean English education book
+market, but not any statistical analysis results or big data analysis
+method about them are available.</p>
+<p>Hyerang Lim provided a prediction method of difficulty of Korean CSAT
+English test, based on corpus analysis [4]. She applied Lexical
+Complexity Analyzer and L2 Syntactic Complexity Analyzer to investigate
+the relationship between linguistic features and item difficulty of a
+Mock CSAT English test. Y. Wang, et al. [5] and C. Zhang, et al. [6]
+proposed a neural network-based model with Long Short-Term Memory(LSTM)
+for SAT problem solving. Their LSTM model learns the question-answering
+pattern from SAT exam to perform problem solving.</p>
+<p>Recent studies even provide various generative methods for
+educational-purposed question generation with artificial neural networks
+[6-9]. As even various generative model for question-answering is
+available, pattern analysis of a serial exam is not difficult at
+all.</p>
+<h3 id="paper-11-natural-language-processing">Natural Language Processing</h3>
+<p>Natural Language Processing (NLP) is a computer-science area for
+understanding and generating the patterns of human-speaking languages.
+Although linguistic definition of natural language is limited as
+naturally formed language along a community, NLP technologies can be
+also applied to artificial languages such as Esperanto or programming
+languages.</p>
+<p>NLP approaches generally use linear algebraic approaches. So, most
+approaches for text NLP first convert the text or spoken words into
+tensor of integers. One of the easiest but most effective way is word
+vector embedding. Word vector embedding first requires a table of words
+to convert each word into a number. Whole vocabularies for analysis
+should be enlisted on the table. After writing the table, input
+sentences are tokenized and converted into a series of number,
+referencing the table. This method is called word2vec [10]. A sparse
+representation of word vectors, which just convert the word embedding
+vector into a set of one-hot vectors, can be applied for easier
+classification of each word because the one-hot vector representation is
+described as 2D data array which fits best for linear algebraic methods
+and neural networks.</p>
+<p>Long Short-Term Memory(LSTM) was proposed by S.Hochreiter in 1997.
+[11] As LSTM has dynamic forget gate architecture, it has great
+advantage in learning time-series data and languages. Although
+transformer or CNN methods for NLP are highly recognized today, LSTM
+based NLP models are still the most popular algorithms [12].</p>
+<h2 id="paper-11-method">Method</h2>
+<p>The authors solemnly declare that this research is never intended to
+provide certain participant of Korean CSAT exam with an unfair advantage
+over other competitors. We wanted to rediscover and point out the
+positive roles of big data mining and artificial intelligence in English
+education. Also, we would like to suggest a method to predict vocabulary
+appearance pattern from short-scaled time series data with combination
+of AI-predicted probabilities inferred from various length of time
+scopes.</p>
+<h3 id="paper-11-data">Data</h3>
+<p><a href="https://www.kice.re.kr/boardCnts/list.do?boardID=1500234" rel="noopener noreferrer">KICE's
+website</a> (https://www.kice.re.kr) provides K-CSAT exam PDF files and
+the official mock test files. We obtained K-CSAT test files from 2003 to
+2022, and mock test from 2004 Jun to 2022 September. As there were two
+types of English exam in 2014, total 21 PDF files of K-CSAT English exam
+and 40 mock test files were downloaded.</p>
+<p>We used K-CSAT exam files for main analysis and the training
+resources of AI, while we used the mock test files for optimization of
+our method but not for training the neural networks.</p>
+<h3 id="paper-11-preprocessing">Preprocessing</h3>
+<p>All PDF files were converted into txt files with <a href="https://github.com/needleworm/bigdata_voca/tree/main/pdf%20parser" rel="noopener noreferrer">Python
+codes</a> (Supplement Data 1). We have removed all Korean words and
+escape characters. We also replaced any useless patterns, Unicode
+errors, and some string patterns which appear only on some specific
+year's exam. 20 samples of removed tokens are described on Table 1.</p>
+<ol type="I">
+<li><p>20 Samples of Removed Tokens</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-11-table-1" style="width:49%;"><caption>TABLE I. 20 Samples of Removed Tokens</caption>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 13%"/>
+<col style="width: 10%"/>
+<col style="width: 12%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">"\U000f0802"</th>
+<th style="text-align: center;">" \n. \n"</th>
+<th style="text-align: center;">"(A) , "</th>
+<th style="text-align: center;">"fffbg.\n"</th>
+</tr>
+<tr>
+<th style="text-align: center;">"\U000f003b"</th>
+<th style="text-align: center;">". ,"</th>
+<th style="text-align: center;">"(B) , "</th>
+<th style="text-align: center;">"(e.\ng"</th>
+</tr>
+<tr>
+<th style="text-align: center;">"\x0c"</th>
+<th style="text-align: center;">"’’"</th>
+<th style="text-align: center;">"(C) , "</th>
+<th style="text-align: center;">" a.\nm."</th>
+</tr>
+<tr>
+<th style="text-align: center;">"\xa0"</th>
+<th style="text-align: center;">"___________"</th>
+<th style="text-align: center;">"(D) , "</th>
+<th style="text-align: center;">" p.\nm."</th>
+</tr>
+<tr>
+<th style="text-align: center;">"/return"</th>
+<th style="text-align: center;">"--"</th>
+<th style="text-align: center;">"(E) , "</th>
+<th style="text-align: center;">"’’"</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>Preprocessing rules are indicated on the <em>read sunung txts()</em>
+function of our <a href="https://github.com/needleworm/bigdata_voca/blob/main/2023%20sunung%20analysis/extract_sentences_from_sunung.py" rel="noopener noreferrer">source
+code</a> (Supplement Data 2). After preprocessing, we also extracted
+sentences for analysis of word correlation in sentences. Then the
+processed texts are tokenized for frequency analysis.</p>
+<h3 id="paper-11-frequency-analysis">Frequency Analysis</h3>
+<p>6,575 words have appeared in K-CSAT, and 6,951 words have appeared in
+the mock test. 2,262 words have appeared in the mock test but never have
+appeared in the official K-CSAT. Also 1,886 words have only appeared in
+the official K-CSAT but never in the mock test. 4,689 words have
+appeared in both exams. The result shows that vocabulary tendency of the
+two tests is different.</p>
+
+<p>However, word tokens were not directly used for pattern analysis
+because raw tokens contain not only the original forms of words but also
+plural forms of nouns, third person singular form of verbs, past tense
+form of verbs, and past or present participle form of verbs, etc.
+Therefore another step for restoring the original forms of word tokens
+were required. So we have built a dictionary which maps the words into
+their original forms with Selenium and Chrome Driver to convert the word
+tokens into their original form. Then the appearance frequency of each
+word was calculated along years.</p>
+<h3 id="paper-11-word-screening-by-experts">Word Screening by Experts</h3>
+<p>It is not so recommended to sort whole words by the frequencies of
+appearance because the grammatically repeated words, articles, pronouns,
+"to" for to infinitive, and many other tokens should be highly-ranked on
+the list. To analyze vocabulary tendency of time-series document data,
+we first had to remove some words which just technically have
+high-appearance-frequencies but do not provide patterns underlying
+sequential K-CSAT exam.</p>
+<p>To remove such artifact for higher-resolution of analysis, two
+English education experts participated in the screening work; one was a
+public education teacher and the other  was a private education teacher.
+They have screened proper nouns, inappropriate tokens, conjugations of
+verbs which computer could not process, and other words which do not
+fully reflect K-CSAT exam tendencies. After screening process, only
+2,500 words were survived. The words were then categorized into two
+groups by frequencies of appearance.</p>
+<p>Word group of 'High rank' contained 1,300 words, and the other group
+had 1,200 words. Finally, we used the 1,300 word group for training of
+AI.</p>
+<p>The correlation of tokens of 'High rank' group in sentences are
+described in Fig 1. It shows that only small rate of words shows high
+correlation. We consider this result shows the removal of artifacts,
+because the result shows sparse correlation between words, which implies
+generalization of source data.</p><figure class="paper-figure" id="paper-11-figure-1"><img alt="Fig 1. Heatmap for Word Correlation in Sentences" decoding="async" loading="lazy" src="/src/images/paper-body/paper-11/figure-1.png"/><figcaption>Fig 1. Heatmap for Word Correlation in Sentences</figcaption></figure>
+<p>The frequency analysis result for 9,329 tokenized words is available
+at the authors' repository (Supplement Data 4). And 1,300 words' data
+over 19 years are available (Supplement Data 5).</p>
+<h3 id="paper-11-neural-network-architecture">Neural Network Architecture</h3>
+<p>We designed a small deep neural network model because the time-scale
+dimension of data was too small. As K-CSAT exam has only 20 years of
+history, a big model may show severe overfitting.</p>
+
+<p>The whole architecture is displayed on Fig 2. The model has single
+LSTM layer and 3 FNN layers. Flatten layer is applied to convert the
+shape of LSTM output into lower dimension tensor. First 2 FNN layers has
+dropout with rate 0.3. The output layer does not have a softMax or other
+nonlinear activation function because the post-processing step just can
+normalize the positive values of output logits. ReLu was applied to
+remove negative values because negative-signed probability is not needed
+to predict word appearance pattern. The source code is uploaded online
+(Supplement Data 3).</p><figure class="paper-figure" id="paper-11-figure-2"><img alt="Fig 2. Neural Network Architecture" decoding="async" loading="lazy" src="/src/images/paper-body/paper-11/figure-2.png"/><figcaption>Fig 2. Neural Network Architecture</figcaption></figure>
+
+<h3 id="paper-11-data-windowing">Data Windowing</h3>
+<p>In order to learn the previous exam and to predict the appearance
+probability of future exam, we used data windowing strategy. Windowing
+strategy is described in Fig 3. Each window consists of past N year's
+frequency tensor data. As a frequency distribution of 1,300 words in
+each year is a vector, 1D data, the elongation of data on the
+perpendicular direction forms 2D matrix.</p><figure class="paper-figure" id="paper-11-figure-3"><img alt="Fig 3. Data Windowing Strategy" decoding="async" loading="lazy" src="/src/images/paper-body/paper-11/figure-4.png"/><figcaption>Fig 3. Data Windowing Strategy</figcaption></figure>
+<p>A minibatch for training obtains an array of several windows,
+therefore, the input LSTM layer of the neural network receives a (1300,
+1, N, B) size tensor, where B is the size of minibatch. Or it can be
+also represented into (1300, N, B) by squeezing the unnecessary
+dimension.</p>
+<h3 id="paper-11-training">Training</h3>
+<p>The model is then trained with the loss function described in
+equation (1).
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mrow><mi>t</mi><mo>−</mo><mi>N</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>t</mi></mrow></msub><annotation encoding="application/x-tex">X_{t - N,\ t}</annotation></semantics></math></span>
+describes the data window of size N between t-N and t, and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">X_{t + 1}</annotation></semantics></math></span>
+is the future probability at time t+1.</p>
+<p><span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>o</mi><mi>s</mi><mi>s</mi><mo form="prefix" stretchy="false">(</mo><mi>θ</mi><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mspace width="0.222em"></mspace><mi>l</mi><mi>n</mi><mo form="prefix" stretchy="false">(</mo><mi>c</mi><mi>o</mi><mi>s</mi><mi>h</mi><mo form="prefix" stretchy="false">(</mo><mo form="prefix" stretchy="false">(</mo><msub><mi>P</mi><mi>θ</mi></msub><mo form="prefix" stretchy="false">(</mo><msub><mi>X</mi><mrow><mi>t</mi><mo>−</mo><mi>N</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>t</mi></mrow></msub><mo form="postfix" stretchy="false">)</mo><mo>−</mo><mspace width="0.222em"></mspace><msub><mi>X</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo form="postfix" stretchy="false">)</mo><mo form="postfix" stretchy="false">)</mo><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Loss(\theta) = \ ln(cosh((P_{\theta}(X_{t - N,\ t}) - \ X_{t + 1})))</annotation></semantics></math></span>
+(1)</p>
+<p>It's a very simple strategy: with the given past tendency, predicting
+next year's word appearance tendency. We applied Adam optimizer [12] for
+stochastic weight readjustment.</p>
+<p>We used TensorFlow 2.9.1 for implementation. And a MacBook Air with
+Apple Silicon(M1) was used for training.</p>
+<h3 id="paper-11-normalization-of-regression-results">Normalization of Regression
+Results</h3>
+<p>We trained the same model with 5 different-sized windows. After
+training the model with K-CSAT between 2003~2022, the trained model
+predicted frequency at 2023 exam, which was going to be held on November
+17, 2022.</p>
+<p>The predicted values for 5 different windows are described as 5
+separated vectors with 1,300 values. Each value from different window
+was merged into single value by simple weighted sum. Window sizes used
+for the experiment and the weights are described on Table II.</p>
+<ol start="2" type="I">
+<li><p>Weighted Sum Information</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-11-table-2" style="width:52%;"><caption>TABLE II. Weighted Sum Information</caption>
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 17%"/>
+<col style="width: 17%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">Window Size</th>
+<th style="text-align: center;">Weight</th>
+<th style="text-align: center;">Mean. Output.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;">13.14</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;">15.07</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">15.86</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">15.32</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">14.07</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>As larger window values implies long-ranged timeseries tendencies
+while smaller windows more concentrate on recent exams, we provided
+smaller weights for larger windows and bigger weights for smaller
+windows. We call the processed weighted sum as AI-Score.</p>
+<h2 id="paper-11-result">Result</h2>
+<h3 id="paper-11-bigdata-screening-method">Bigdata Screening Method</h3>
+<p>The frequency analysis result for 9,329 tokenized words is available
+at the authors' <a href="After%202023's%20K-CSAT%20e%20xam%20was%20held%20on%20November%2017,%202022,%20we%20obtained%20and%20processed%20the%20English%20exam%20PDF%20file%20into%20processed%20tokens.%20Total%201,558%20tokens%20including%20some%20misprocessed%20symbols%20or%20conjugations%20of%20verbs%20were%20extracted.%20After%20removing%20the%20words%20which%20we%20have%20screened%20to%20remove%20artifact,%201,120%20meaningful%20words%20remained.%20The%20list%20of%20words%20are%20available%20online%20(Supplement%20Data%207)." rel="noopener noreferrer">repository</a>
+(Supplement Data 4). And 1,300 words' data over 19 years are available
+<a href="https://www.researchgate.net/publication/365491164_sunung_english_analysis" rel="noopener noreferrer">here</a>
+(Supplement Data 5).</p>
+<h3 id="paper-11-ai-prediction-values">AI Prediction Values</h3>
+<p>Processed weighted sum of AI predicted values is available at <a href="https://www.researchgate.net/publication/365491618_ai_score_of_words" rel="noopener noreferrer">ResearchGate</a>
+(Supplement Data 6) and the distribution is described on Fig 4. The
+Model predicted 479 words will not appear on 2023 K-CSAT Exam.</p><figure class="paper-figure" id="paper-11-figure-4"><img alt="Fig 4. Distribution of AI-Scores." decoding="async" loading="lazy" src="/src/images/paper-body/paper-11/figure-3.png"/><figcaption>Fig 4. Distribution of AI-Scores.</figcaption></figure>
+<h3 id="paper-11-prediction-result-compared-to-2023-k-csat-exam">Prediction
+Result Compared to 2023 K-CSAT Exam</h3>
+<p>After 2023's K-CSAT exam was held on November 17, 2022, we obtained
+and processed the English exam PDF file into processed tokens. Total
+1,558 tokens including conjugations of verbs were extracted. After
+removing the duplicated words and conjugated word forms, 1,120
+meaningful words remained. The list of words is available <a href="https://www.researchgate.net/publication/365670891_2023_total_analysis" rel="noopener noreferrer">online</a>
+(Supplement Data 7).</p><figure class="paper-figure" id="paper-11-figure-5"><img alt="Fig 5. Illustration for the accuracy of AI-predicted Scores." decoding="async" loading="lazy" src="/src/images/paper-body/paper-11/figure-5.png"/><figcaption>Fig 5. Illustration for the accuracy of AI-predicted Scores.</figcaption></figure>
+<p>The prediction results of proposed methods and previous works are
+summarized on Table II. Our method showed 4.35 times higher accuracy
+compared to Previous Work 1, and 6.2 times higher accuracy compared to
+Previous Work 2<em>.</em></p>
+<p>Also, the rate of intersection between the set of words from 2023
+K-CSAT and the set of the words in interest of the proposed method is
+1.98 times higher than Previous Work 1, and 2.32 times higher than
+Previous Work 2.</p>
+<p>Only the list of words from 2023 Korean CSAT English exams and with
+appearance data from proposed method and previous works are also
+provided on Supplement data 7.</p>
+<ol start="3" type="I">
+<li><p>Prediction Results</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-11-table-3" style="width:51%;"><caption>TABLE III. Prediction Results</caption>
+<colgroup>
+<col style="width: 14%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Proposed Method</th>
+<th style="text-align: center;">Previous Work 1 [1]</th>
+<th style="text-align: center;"><p><em>Previous Work 2</em></p>
+<p><em>[2, 3]</em></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Predicted words<sup>*</sup></td>
+<td style="text-align: center;">1,300</td>
+<td style="text-align: center;">3,208</td>
+<td style="text-align: center;">4,024</td>
+</tr>
+<tr>
+<td style="text-align: center;">Correct Prediction</td>
+<td style="text-align: center;">460</td>
+<td style="text-align: center;">385</td>
+<td style="text-align: center;">337</td>
+</tr>
+<tr>
+<td style="text-align: center;">Accuracy<sup>**</sup></td>
+<td style="text-align: center;">52.2%</td>
+<td style="text-align: center;">12.0%</td>
+<td style="text-align: center;">8.4%</td>
+</tr>
+<tr>
+<td style="text-align: center;">Intersection <sup>***</sup></td>
+<td style="text-align: center;">68.2%</td>
+<td style="text-align: center;">34.4%</td>
+<td style="text-align: center;">30.1%</td>
+</tr>
+</tbody>
+</table></div>
+<p>* The number of words in interest (except duplicated words)</p>
+<p>** (# of True Positive) / (# of words in interest)</p>
+<p>*** (# of True Positive) / (# of words from 2023 K-CSAT)</p>
+<p>Although Copyright law is limited on research purpose so providing
+word lists from those two book is legally possible, we would not provide
+it, because the lists are the most important intellectual property of
+their books. As many people are involved in their publication business,
+we do not want to disrupt their economic activities. If you want to
+access the list of those two books, please reference the printed books;
+ISBN codes are available on the reference section.</p>
+<h3 id="paper-11-ai-prediction-accuracy">AI Prediction Accuracy</h3>
+<p>After 2023's K-CSAT exam was held on, we compared the words with our
+AI-Scores. The results are described on Fig 5. The values of K-CSAT
+explains the appearance rate of words between each AI-Score segment. And
+the values of Accumulated K-CSAT is the rate of total words, in each
+segment and higher segment: in short, it's an accumulated rate
+calculated from the top.</p>
+<h2 id="paper-11-discussion">Discussion</h2>
+<p>AI-Score works more similar to accumulated K-CSAT distribution rather
+than K-CSAT result itself. Also, AI-Score worked much better at
+high-score segments rather than low-score segments. The result showed
+that ground truth probability of English vocabulary appearance was much
+higher than AI predicted value.</p>
+<p>Therefore, in other words, we assume that any words which AI
+predicted to be likely to appear on the next exam would appear more
+often actually. Also, with the comparison result described on Table II,
+we think that applying human experts' know-how on data driven analysis
+model would perform much better.</p>
+<p>One weak point of our approach was the size of data. As the data
+appearance pattern between K-CSAT and mock test was too different, we
+could not directly train our model on mock test to predict K-CSAT
+patterns. Therefore, if more data were available, much more dramatic
+result would be expected.</p>
+<h2 id="paper-11-conclusion">Conclusion</h2>
+<p>We have provided a set of words with high correlation with K-CSAT. We
+provided preprocessing modules for K-CSAT exam tokenization, and for
+word appearance tendency analysis. After 2 human experts' screen, 1,300
+words remained. Those words set showed much more accuracy rate than
+previous method s.</p>
+<p>Also, we suggested an LSTM based AI model which learns the pattern of
+vocabulary appearance from K-CSAT exams. It showed higher accuracy on
+high-probability sections, and lower-probability words tend to appear
+much more than we expected.</p>
+<h2 id="paper-11-acknowledgment">Acknowledgment</h2>
+<p>We would like to express our great gratitude to Jehun Yoo for
+OCR-recording of word sheets from <em>Word Master</em> and <em>Kyeong
+Seon Sik Voca</em>.</p>
+<h2 id="paper-11-supplement-data">Supplement Data</h2>
+<ol type="1">
+<li><p><a href="https://github.com/needleworm/bigdata_voca/tree/main/pdf%20parser" rel="noopener noreferrer">https://github.com/needleworm/bigdata_voca/tree/main/pdf%20parser</a></p></li>
+<li><p><a href="https://github.com/needleworm/bigdata_voca/blob/main/2023%20sunung%20analysis/extract_sentences_from_sunung.py" rel="noopener noreferrer">https://github.com/needleworm/bigdata_voca/blob/main/2023%20sunung%20analysis/extract_sentences_from_sunung.py</a></p></li>
+<li><p><a href="https://github.com/needleworm/bigdata_voca/blob/main/bigdata%20analysis/train.py" rel="noopener noreferrer">https://github.com/needleworm/bigdata_voca/blob/main/bigdata%20analysis/train.py</a></p></li>
+<li><p><a href="https://www.researchgate.net/publication/365678306" rel="noopener noreferrer">https://www.researchgate.net/publication/365678306</a></p></li>
+<li><p><a href="https://www.researchgate.net/publication/365491164" rel="noopener noreferrer">https://www.researchgate.net/publication/365491164</a></p></li>
+<li><p><a href="https://www.researchgate.net/publication/365491618_ai_score_of_words" rel="noopener noreferrer">https://www.researchgate.net/publication/365491618</a></p></li>
+<li><p><a href="https://www.researchgate.net/publication/365670891_2023_total_analysis" rel="noopener noreferrer">https://www.researchgate.net/publication/365670891</a></p></li>
+</ol>
+<h2 id="paper-11-references">References</h2>
+<ol type="1">
+<li><p>Hyungjung Kim, <em>워드마스터 수능 2000</em>, 5<sup>th</sup>
+edition, Seoul: Etoos Edu Inc., 2021. Print. ISBN:
+979-11-6123-728-2.</p></li>
+<li><p>Seonsik Kyeong, <em>경선식 수능영단어 Vol.1 기본</em>, 2022
+edition, Seoul: Kyong Seon Sik Edu. 2022. Print. ISBN:
+979-11-8990-217-7</p></li><li><p>Seonsik Kyeong, <em>경선식 수능영단어 Vol.2 기본</em>, 2022
+edition, Seoul: Kyong Seon Sik Edu. 2022. Print. ISBN:
+979-11-8990-212-4</p></li><li><p>Wang, Yichuan, et al. "A Heuristic SAT Problems Solving Method
+based on LSTM Network." <em>2021 12th International Symposium on
+Parallel Architectures, Algorithms and Programming (PAAP)</em>. IEEE,
+2021.</p></li><li><p>Zhang, Chenhao, et al. "Towards Better Generalization for Neural
+Network-Based SAT Solvers." <em>Pacific-Asia Conference on Knowledge
+Discovery and Data Mining</em>. Springer, Cham, 2022.</p></li><li><p>Serban, IV, García-Durán, A., Gulcehre, C, Ahn, S, Chandar, S,
+Courville, A, Bengio, Y. (2016). Generating factoid questions with
+recurrent neural networks: The 30M factoid question-answer corpus.
+ACL.</p></li><li><p>Xu, Xing, et al. "Radial graph convolutional network for visual
+question generation." <em>IEEE transactions on neural networks and
+learning systems</em> 32.4 (2020): 1654-1667.</p></li><li><p>Tang, Duyu, et al. "Question answering and question generation as
+dual tasks." <em>arXiv preprint arXiv:1706.02027</em> (2017).</p></li><li><p>Mikolov, Tomas, et al. "Efficient estimation of word
+representations in vector space." <em>arXiv preprint
+arXiv:1301.3781</em>(2013).</p></li><li><p>Hochreiter, Sepp, and Jürgen Schmidhuber. "Long short-term
+memory." <em>Neural computation</em> 9.8 (1997): 1735-1780.</p></li><li><p>Khurana, Diksha, et al. "Natural language processing: State of
+the art, current trends and challenges." <em>Multimedia Tools and
+Applications</em> (2022): 1-32.</p></li><li><p>Kingma, Diederik P., and Jimmy Ba. "Adam: A method for stochastic
+optimization." arXiv preprint arXiv:1412.6980 (2014).</p></li><li><p><em>"대학수학능력시험 연도별 접수현황",</em> Korea Institute of
+Curriculum &amp; Evaluation. 2022. Web Report. 16 Nov. 2022.</p></li><li><p>Hyerang Lim. "Predicting the Item Difficulty of a Simulated CSAT
+English Test Based on Corpus Analysis." <em>영어평가</em> 16.1 (2021):
+59-78.</p></li></ol>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">引用</h2><p class="citation-help">点击格式即可复制引用信息。</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="复制 APA 格式">复制 APA</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="复制 MLA 格式">复制 MLA</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="复制 Chicago 格式">复制 Chicago</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="复制 IEEE 格式">复制 IEEE</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="复制 BibTeX 格式">复制 BibTeX</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="复制 RIS 格式">复制 RIS</button></div><label for="citation-text" class="citation-preview-label">引用预览 · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B., Lee, J., &amp; Hwang, H. (2023). AI knows which words will appear in next year&#x27;s Korean CSAT. In 2023 14th International Conference on Information and Communication Technology Convergence (ICTC) (pp. 1353–1357). https://doi.org/10.1109/ictc58733.2023.10393339</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/ai-csat-vocabulary-2023/citation.bib" download>BibTeX 文件</a><a href="/papers/ai-csat-vocabulary-2023/citation.ris" download>RIS 文件</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B., Lee, J., & Hwang, H. (2023). AI knows which words will appear in next year's Korean CSAT. In 2023 14th International Conference on Information and Communication Technology Convergence (ICTC) (pp. 1353–1357). https://doi.org/10.1109/ictc58733.2023.10393339", "mla": "Ban, Byunghyun, et al. “AI Knows Which Words Will Appear in Next Year's Korean CSAT.” 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023, pp. 1353-57. https://doi.org/10.1109/ictc58733.2023.10393339.", "chicago": "Ban, Byunghyun, Jejong Lee, and Hyeonmok Hwang. “AI Knows Which Words Will Appear in Next Year's Korean CSAT.” In 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 1353–57. 2023. https://doi.org/10.1109/ictc58733.2023.10393339.", "ieee": "B. Ban, J. Lee, and H. Hwang, “AI knows which words will appear in next year's Korean CSAT,” in 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023, pp. 1353–1357, doi: 10.1109/ictc58733.2023.10393339.", "bibtex": "@inproceedings{ban2023_738aa2c61742,\n  author = {Ban, Byunghyun and Lee, Jejong and Hwang, Hyeonmok},\n  title = {{AI Knows Which Words Will Appear in Next Year's Korean CSAT}},\n  year = {2023},\n  booktitle = {2023 14th International Conference on Information and Communication Technology Convergence (ICTC)},\n  pages = {1353--1357},\n  doi = {10.1109/ictc58733.2023.10393339},\n  url = {https://doi.org/10.1109/ictc58733.2023.10393339}\n}", "ris": "TY  - CONF\nAU  - Ban, Byunghyun\nAU  - Lee, Jejong\nAU  - Hwang, Hyeonmok\nTI  - AI Knows Which Words Will Appear in Next Year's Korean CSAT\nPY  - 2023\nT2  - 2023 14th International Conference on Information and Communication Technology Convergence (ICTC)\nSP  - 1353\nEP  - 1357\nDO  - 10.1109/ictc58733.2023.10393339\nUR  - https://doi.org/10.1109/ictc58733.2023.10393339\nAB  - A text-mining-based word class categorization method and LSTM-based vocabulary pattern prediction method are introduced in this paper. A preprocessing method based on simple text appearance frequency analysis is first described. This method was developed as a data screening tool but showed 4.35 times higher prediction accuracy compared to Word Master book. An LSTM deep learning method is also suggested for vocabulary appearance pattern prediction method. AI performs a regression with various size of data window of previous exams to predict the probabilities of word appearance in the next exam. Predicted values of AI over various data windows are processed into a single score as a weighted sum, which we call an \"AI-Score\", which represents the probability of word appearance in next year's exam. Suggested method showed 100% accuracy at the range 100-score area and showed only 1.7% error of prediction in the section where the scores were over 60 points. All source codes are freely available at the authors' Git Hub repository. (https://github.com/needleworm/bigdata_voca)\nLA  - en\nER  -\n"}</script></section><a class="paper-back-link" href="/zh/papers/">← 返回论文列表</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="全部页面"><a href="/zh/">Byunghyun Ban</a><a href="/zh/media/">广播与视频</a><a href="/zh/books/">著作</a><a href="/zh/lectures/">讲座与授课经历</a><a href="/zh/courses/online/">在线课程</a><a href="/zh/courses/offline/">线下培训课程</a><a href="/zh/news/">新闻报道</a><a href="/zh/papers/">论文与研究</a><a href="/zh/patents/">专利</a><a href="/zh/projects/">开发项目</a><a href="/zh/activities/">社会贡献</a><a href="/zh/memberships/">会员与专业活动</a><a href="/zh/collections/">收藏品</a><a href="/zh/contact/">讲座与合作咨询</a></nav>
+            <p><a href="/feed.xml">订阅 RSS</a> · <a href="/feed.json">JSON Feed</a></p>
+            <p>© 2026 Byunghyun Ban. 版权所有。</p>
+            <p>NaNa Lab（营业登记号：269-08-02374）负责人 Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="回到顶部">↑</button>
+</body>
+</html>

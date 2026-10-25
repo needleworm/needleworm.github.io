@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>开发项目 | Byunghyun Ban</title>
+    <meta name="description" content="介绍 Byunghyun Ban 的开源软件、网站、图书示例及生活实用工具。可查看项目和源代码链接。">
+    <meta name="author" content="Byunghyun Ban">
+
+    <link rel="canonical" href="https://bhban.kr/zh/projects/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="Byunghyun Ban">
+    <meta property="og:title" content="开发项目 | Byunghyun Ban">
+    <meta property="og:description" content="介绍 Byunghyun Ban 的开源软件、网站、图书示例及生活实用工具。可查看项目和源代码链接。">
+    <meta property="og:url" content="https://bhban.kr/zh/projects/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@9a7f553312705d9178fbdb73676d681727aa85ac/src/images/bookcovers.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/zh/#website", "url": "https://bhban.kr/zh/", "name": "Byunghyun Ban", "inLanguage": "zh"}, {"@type": "WebPage", "@id": "https://bhban.kr/zh/projects/#page", "url": "https://bhban.kr/zh/projects/", "name": "开发项目 | Byunghyun Ban", "description": "介绍 Byunghyun Ban 的开源软件、网站、图书示例及生活实用工具。可查看项目和源代码链接。", "inLanguage": "zh", "about": {"@id": "https://bhban.kr/#person"}, "isPartOf": {"@id": "https://bhban.kr/zh/#website"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://bhban.kr/zh/"}, {"@type": "ListItem", "position": 2, "name": "开发项目", "item": "https://bhban.kr/zh/projects/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/projects/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/projects/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/projects/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/projects/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/projects/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/projects/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/projects/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/projects/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/projects/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/projects/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"打开菜单","menuClose":"关闭菜单","submenuExpand":"展开{label}子菜单","submenuCollapse":"收起{label}子菜单","nextSwipeHint":"滚动到底部后，再向上滑动一次即可前往。","nextScrollHint":"滚动到底部后，再向下滚动一次即可前往。","lectureResults":"{category} {count}项 · 按最新讲座排序","categoryAll":"全部","categoryCompany":"企业","categoryPublic":"公共机构","categoryEducation":"教育机构","categoryResearch":"研究机构","categoryConference":"会议","listMedia":"视频","listNews":"新闻报道","listLectures":"讲座","listCoursesOnline":"在线课程","listCoursesOffline":"线下培训课程","listPapers":"论文","listPatents":"专利","listProjects":"项目","listActivities":"活动","listMemberships":"会员活动","listCollections":"收藏品","listDonations":"捐赠记录","listGeneric":"列表","listStatus":"共{total}项，显示{visible}项","listMore":"查看更多{label}（还剩{remaining}项）","citationCopyLabel":"复制引用信息","citationCopied":"已复制引用信息。","citationError":"无法复制引用信息，请检查浏览器的剪贴板设置。","citationFormatCopied":"已复制{label}引用信息。","citationManualCopy":"已选中引用文本，请手动复制。","contactLoadError":"无法加载咨询发送功能。请稍后重试。","contactSent":"已收到您的咨询。","contactError":"发生错误，请重试。","contactSending":"发送中……","streamRetry":"重新加载","streamError":"无法加载后续内容。请重试，或点击上方链接前往。","streamLoading":"正在继续加载{label}内容。"}</script>
+</head>
+<body data-locale="zh" class="static-site full-content content-page" data-page="projects">
+    <a class="skip-link" href="#main-content">跳转至正文</a>
+    <nav class="navbar" aria-label="主菜单"><div class="navbar-brand"><a href="/zh/" aria-label="Byunghyun Ban 首页"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/zh/" class="nav-link nav-main-link" data-nav-page="home">关于</a></li><li data-nav-group="media"><a href="/zh/media/" class="nav-link nav-main-link" data-nav-page="media">媒体</a></li><li data-nav-group="books"><a href="/zh/books/" class="nav-link nav-main-link" data-nav-page="books">书籍</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/zh/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">讲座</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="展开讲座子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="讲座分类"><li><a href="/zh/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">全部</a></li><li><a href="/zh/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">企业</a></li><li><a href="/zh/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">公共机构</a></li><li><a href="/zh/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">教育机构</a></li><li><a href="/zh/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">研究机构</a></li><li><a href="/zh/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">会议</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/zh/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">课程</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="展开课程子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/zh/courses/online/" data-nav-page="courses-online">在线</a></li><li><a href="/zh/courses/offline/" data-nav-page="courses-offline">线下</a></li></ul></li><li data-nav-group="news"><a href="/zh/news/" class="nav-link nav-main-link" data-nav-page="news">新闻</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/zh/papers/" class="nav-link active nav-main-link" data-nav-page="papers">研发</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="展开研发子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/zh/papers/" data-nav-page="papers">论文</a></li><li><a href="/zh/patents/" data-nav-page="patents">专利</a></li><li><a href="/zh/projects/" data-nav-page="projects" aria-current="page">项目</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/zh/activities/" class="nav-link nav-main-link" data-nav-page="activities">其他</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="展开其他子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/zh/activities/" data-nav-page="activities">社会贡献</a></li><li><a href="/zh/memberships/" data-nav-page="memberships">会员活动</a></li><li><a href="/zh/collections/" data-nav-page="collections">收藏</a></li></ul></li><li data-nav-group="contact"><a href="/zh/contact/" class="btn-contact nav-main-link" data-nav-page="contact">联系</a></li></ul><details class="language-switcher"><summary aria-label="选择语言"><span aria-hidden="true">🌐</span> <span>简体中文</span></summary><nav class="language-options" aria-label="选择语言"><a href="/projects/" hreflang="ko" lang="ko">한국어</a><a href="/en/projects/" hreflang="en" lang="en">English</a><a href="/zh/projects/" hreflang="zh" lang="zh" aria-current="true">简体中文</a><a href="/hi/projects/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/projects/" hreflang="es" lang="es">Español</a><a href="/ar/projects/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/projects/" hreflang="fr" lang="fr">Français</a><a href="/bn/projects/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/projects/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="打开菜单">☰</button></nav>
+
+    <main id="main-content" class="container page-main section-group">
+        <header class="group-header"><h1 class="group-title">项目</h1><p class="group-desc">开发项目</p><nav class="sub-nav-pills" aria-label="相关页面"><a href="/zh/papers/" class="pill-btn">论文</a><a href="/zh/patents/" class="pill-btn">专利</a><a href="/zh/projects/" class="pill-btn" aria-current="page">项目</a></nav></header>
+        <div id="rnd-section"><div id="tab-codes" class="tab-content-item active-tab-content">
+<section id="codes" class="content-section ">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">代码</h2>
+                </div>
+            </div>
+
+            <div class="codeContainer">
+                <div class="row"
+                    style="margin-bottom: 50px; display: flex; align-items: center; justify-content: center;">
+                    <!-- Left: Stats -->
+                    <div class="row justify-content-center" style="margin-top: 30px;">
+                        <div class="col-md-8 text-center">
+                            <!-- Stats Row -->
+                            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; font-size: 1.2rem; font-weight: normal; color: #555; margin-bottom: 20px;"
+                                data-version="v3">
+                                <div style="margin: 0 15px;">
+                                    <i class="far fa-star"></i> <span id="total-stars">1716</span>
+                                </div>
+                                <div style="margin: 0 15px;">
+                                    <i class="fas fa-code-branch"></i> <span id="total-forks">1826</span>
+                                </div>
+                            </div>
+
+                            <!-- Chart -->
+                            <div class="language-chart-container">
+                                <canvas id="languageChart"></canvas>
+                            </div>
+                            <p class="text-center"
+                                style="margin-top: 10px; font-size: 0.9em; color: #666; text-align: center;">
+                                汇总自 <a href="https://github.com/needleworm" target="_blank">needleworm</a> 与 <a href="https://github.com/NaNaCompany" target="_blank">NaNaCompany</a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+</div><div id="tab-websites" class="tab-content-item active-tab-content">
+<section id="websites" class="content-section ">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading subpageHeading">网站</h2>
+                </div>
+            </div>
+            <div class="websitesContainer">
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/aieng.webp"
+                            alt="项目图片" />
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://aieng.kr" target="_blank"
+                                rel="noreferrer">
+                                <h5>https://aieng.kr</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    AI.Eng 官方网站，使用 React.js 与 @material-ui 构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/aieng" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://aieng.kr" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/zh/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/blog.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/zh/" target="_blank"
+                                rel="noreferrer">
+                                <h5>https://needleworm.github.io</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    这是我使用 <i class="fab fa-react"></i> React 制作的个人网页，托管在 <i class="fab fa-github"></i> GitHub Pages 上，灵感来自 <a href='https://github.com/tzuehlke/jekyll-uno-timeline/' target="_blank"
+                                        rel="noreferrer"> Thomas Zuhlke 的 Jekyll 主题 </a>。原主题通过 jQuery 调用 GitHub API，并使用 SCSS 设置样式；其 jQuery 功能只支持一个内容容器。<br /> 我构建了一个外观与 Thomas 作品类似的 <i class="fab fa-react"></i> React 应用。如你所见，本页支持多个内容容器。如果你想用这个主题制作自己的网页，请访问我的仓库获取源代码。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/needleworm.github.io" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/zh/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/ai_voca/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/ai_voca.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/ai_voca/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/ai_voca</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    这是《AI 精准预测高考英语词汇》（2023，Saengneung Books）附赠的学习应用。<br /> 提供每日测验功能，以及为教师制作 PDF 单词试卷的功能。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/ai_voca" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/ai_voca/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/dev/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/dev.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/dev/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/dev</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    本页提供我的著作《虽非科班，也靠开发谋生》（Saengneung Books，2022）的示例代码。网站使用 <i class="fas fa-vial"></i> Jekyll 和 Ravi Riley 的 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/dev" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/dev/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PSD -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/psd/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/psd.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/psd/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/psd</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    本页提供我的著作《Photoshop 大师课》（Saengneung Books，2023）的示例代码。网站使用 <i class="fas fa-vial"></i> Jekyll 和 Ravi Riley 的 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/psd" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/psd/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Price -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://www.sangsang.farm/price" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/price.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://www.sangsang.farm/price"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://www.sangsang.farm/price</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    这个网页提供智慧农场与植物工厂设施的自动咨询。由于韩国市场尚无标准化的智慧农场设施方案，每次咨询都需要客户和我们投入大量时间与精力。因此，我制作了这款自动化交互网页应用，为客户提供信息并推荐合适选项。系统还提供标准化报价文件，方便企业行政工作。<br /> 这个静态网站使用 <i class="fab fa-react"></i> React 构建，托管于 <i class="fab fa-microsoft"></i> Azure。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://www.sangsang.farm/price" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://www.sangsang.farm/business" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/business.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://www.sangsang.farm/business"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://www.sangsang.farm/business</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    Imagination Garden 公司商业提案页面，提供嵌入式幻灯片演示。这个静态网站使用 <i class="fas fa-vial"></i> Jekyll 构建，托管于 <i class="fab fa-microsoft"></i> Azure，并使用了 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Ravi Riley 的 Agency 主题 </a>。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://www.sangsang.farm/business" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FinanceBook -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/financebook/" target="_blank"
+                            rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/financebook.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/financebook/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/financebook</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    本页提供我的著作《自动管理自己的资产》（Saengneung 出版社，2021.07.09）的示例代码。网站使用 <i class="fas fa-vial"></i> Jekyll 和 Ravi Riley 的 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/financebook" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/financebook/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dataset -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/dataset/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/dataset.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/dataset/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/dataset</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    本页提供我的著作《让 AI 与大数据应用更轻松的142种数据集》（Saengneung Books，2022.02.22.）的示例代码。网站使用 <i class="fas fa-vial"></i> Jekyll 和 Ravi Riley 的 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/dataset" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/dataset/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 101 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/101/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/101.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/101/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/101</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    本页提供我的著作《非专业人士工作中经常询问的101个电脑使用技巧》（Saengneung 出版社，2021.07.15.）的示例代码。网站使用 <i
+                                        class="fas fa-vial"></i> Jekyll 和 Ravi Riley 的 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/101" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/101/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/frontend/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/frontend.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/frontend/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/frontend</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    本页提供我的著作《跟着编程就能制作网页的 HTML + CSS + JavaScript》（Saengneung Books，2022.02.15.）的示例代码。网站使用 <i
+                                        class="fas fa-vial"></i> Jekyll 和 Ravi Riley 的 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/frontend" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/frontend/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/bhban_ai/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/ai.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/bhban_ai/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/bhban_ai</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    本页提供我的著作《不懂数学统计也能理解的轻松深度学习》（Saengneung 出版社，2021）的示例代码。网站使用 <i class="fas fa-vial"></i> Jekyll 和 Ravi Riley 的 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/bhban_ai/tree/web" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/bhban_ai/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RPA -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/bhban_rpa/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/rpa.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/bhban_rpa/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/bhban_rpa</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    本页提供我的著作《一天完成6个月工作的业务自动化》（Saengneung 出版社，2020）的示例代码。网站使用 <i class="fas fa-vial"></i> Jekyll 和 Ravi Riley 的 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/bhban_rpa/tree/web" target="_blank"
+                                    rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/bhban_rpa/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MoneyAuto -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/moneyauto/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/moneyauto.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/moneyauto/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/moneyauto</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    Money AUTO 项目的介绍页面。Money AUTO 是为个人投资者提供自动化方案的非商业项目，目前提供加密货币自动交易系统 Coin AUTO，未来还将提供股票自动交易、实时资产管理及投资组合设计服务。Money AUTO 的所有服务均免费提供。<br /> 这个静态网站使用 <i class="fas fa-vial"></i> Jekyll 及 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Ravi Riley 的 Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/moneyauto" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/moneyauto/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech3 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://bhban.kr/tech3/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/tech3.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://bhban.kr/tech3/"
+                                target="_blank" rel="noreferrer">
+                                <h5>https://needleworm.github.io/tech3</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    本页提供我的著作《让财富复制的虚拟资产课程》（Saengneung Books，2022）的示例代码。网站使用 <i class="fas fa-vial"></i> Jekyll 和 Ravi Riley 的 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Agency 主题 </a>构建。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://github.com/needleworm/tech3" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="https://bhban.kr/tech3/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSTB2 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://www.sangsang.farm" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/sstb2.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://www.sangsang.farm" target="_blank"
+                                rel="noreferrer">
+                                <h5>https://www.sangsang.farm</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    Imagination Garden 公司2022年第4季度官方网站。此前网站为静态网站，本版使用 MySQL 后端服务器管理数据。<br /> 网站使用 <i class="fa-brands fa-docker"></i> Docker、MySQL 与 <i class="fa-brands fa-wordpress"></i> WordPress 构建，托管于 <i
+                                        class="fab fa-microsoft"></i> Azure。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://www.sangsang.farm" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SangsangFarm -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://www.sangsang.farm" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/websites/sangsangfarm.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://www.sangsang.farm" target="_blank"
+                                rel="noreferrer">
+                                <h5>https://www.sangsang.farm</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    Imagination Garden 公司官方网站。这个静态网站使用 <i class="fas fa-vial"></i> Jekyll 构建，托管于 <i class="fab fa-microsoft"></i> Azure，并使用了 <a href="https://github.com/raviriley/agency-jekyll-theme/" target="_blank"
+                                        rel="noreferrer"> Ravi Riley 的 Agency 主题 </a>。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://www.sangsang.farm" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- NaNa Investment -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/invest" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/invest.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/invest" target="_blank"
+                                rel="noreferrer">
+                                <h5>NaNa Investment</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    用于投资组合探索与模拟的综合投资分析平台。实时提供 KOSPI、KOSDAQ、NASDAQ 与 S&amp;P 500 等主要市场指数，并支持查询个股近期价格。介绍常见资产配置策略，以及如何使用 ETF 实现这些策略。用户可以将选中的投资组合方案复制到个人库并进行回测，例如模拟十年前投入10,000美元可能产生的表现。除示例组合外，也可使用自行选择的资产定制组合。通过 Google 账号登录后，组合方案会安全保存在用户的 Google Drive 中。NaNa Lab 不收集或存储个人投资数据，所有信息均保留在用户自己的账号内。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/invest" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QR Code Generator -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/qr" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/qr.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/qr" target="_blank"
+                                rel="noreferrer">
+                                <h5>二维码生成器</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    直接在浏览器中即时将网址转换为二维码。二维码在本地生成，无需经过外部服务器，因此比多数替代工具快得多，即使没有网络也能可靠运行。服务完全免费，一键即可下载清晰美观的二维码。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/qr" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Calculator -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/smart_calculator" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage"
+                                src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/smart_calculator.webp" alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/smart_calculator"
+                                target="_blank" rel="noreferrer">
+                                <h5>智能计算器</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    轻巧而强大的智能计算器，适合日常及办公使用。内置语音识别，在不便打字时提供更好的可访问性。屏幕显示计算历史，便于跟踪连续运算；还支持货币换算，尤其适合会计和财务工作。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/smart_calculator" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fortune Teller -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/fortune" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/fortune.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/fortune" target="_blank"
+                                rel="noreferrer">
+                                <h5>运势占卜</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    从了解运势开始新的一天。本应用根据星座与出生日期提供每日运势。无论你想获得爱情、事业还是健康方面的建议，运势占卜都能提供参考，让你更自信地度过一天。这是在忙碌生活中留一点时间给自己的有趣而神秘的方式。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/fortune" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Away Screen -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/afd" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/afd.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/afd" target="_blank"
+                                rel="noreferrer">
+                                <h5>离席屏幕</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    即使离开座位，也能保持职业礼仪。这个便捷工具将显示器变为清晰的状态显示屏，便于办公室同事之间沟通。还提供自动全屏模式，带来连贯的状态展示体验。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/afd" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BMI Calculator -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/bmi" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/bmi.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/bmi" target="_blank"
+                                rel="noreferrer">
+                                <h5>BMI 计算器</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    使用这款全面的身体质量指数计算器，掌握自己的健康旅程。它不只进行简单计算，还会分析当前体重类别并提供可执行的建议。工具可计算达到特定 BMI 目标（例如90、100或110）所需增减的体重，帮助你设定并跟踪切实可行的健身目标。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/bmi" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lucky Cannon -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/luck" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/lucky_cannon.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/luck" target="_blank"
+                                rel="noreferrer">
+                                <h5>幸运大炮</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    这款有趣的交互工具可从一群人中随机抽取幸运者。无论组织团队活动、抽奖，还是决定谁先开始，都能把过程变成刺激的小游戏。趣味动画与活泼界面增添期待感，让选择的瞬间更快乐。告别单调方法，让幸运大炮欢乐地决定胜出者！
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/luck" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lorem Ipsum Generator -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/lipsum/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/lipsum.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/lipsum/" target="_blank"
+                                rel="noreferrer">
+                                <h5>Lorem Ipsum 占位文本生成器</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    为设计与排版项目生成 Lorem Ipsum 占位文本的简便高效工具。无论是网站模型的几段文字，还是印刷版面的大量虚拟文本，都能快速生成标准拉丁文。帮助设计师专注视觉元素，不受文字含义干扰。可自定义文本量，满足版面需求。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/lipsum/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart GIF Studio -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/gif_studio" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/gif_studio.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/gif_studio" target="_blank"
+                                rel="noreferrer">
+                                <h5>Smart GIF Studio</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    Smart GIF Studio 是免费的浏览器 GIF 编辑器，可调整动画尺寸、裁剪或添加留白、通过多种优化选项减小体积、旋转或翻转、倒放、调整速度及删减帧。还支持将 GIF 转为 MP4、WEBM 和 JPG，并保存简单编辑记录，加速重复操作。所有处理均在浏览器本地进行，文件不会上传至外部服务器，可放心处理敏感媒体。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/gif_studio" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video to GIF -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/video_2_gif/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/video_to_gif.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/video_2_gif/"
+                                target="_blank" rel="noreferrer">
+                                <h5>视频转 GIF</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    营销人员、设计师、网站管理员及其他媒体从业者经常需要将视频转换成 GIF，用于演示、文档或社交媒体。这款轻量 GIF 转换工具比启动专业视频编辑器等大型桌面软件更快速便捷。工具采用无服务器架构，所有处理均在用户电脑本地进行，视频数据不会上传或向外传输，适合高效且保护隐私地转换敏感或保密视频素材。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/video_2_gif/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Resizer -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/image_resize/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/image_resize.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/image_resize/"
+                                target="_blank" rel="noreferrer">
+                                <h5>图片尺寸调整工具</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    营销人员、设计师与策划者经常需要批量处理图片。无论是调整尺寸与宽高比，还是为社交媒体裁剪图片，NaNa Lab 图片尺寸调整工具都能一键即时完成。所有图像处理在浏览器本地运行，不使用外部服务器，文件不会上传，充分保护数据隐私。由于无需网络传输图片，比许多传统在线服务更快，也省去了不必要的上传下载时间。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/image_resize/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Doc Compressor -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/doc_compress/" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/doc_compress.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/doc_compress/"
+                                target="_blank" rel="noreferrer">
+                                <h5>智能文档压缩工具</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    快速高效地压缩 PDF、PPT、Word 和图像文件。与许多将文档上传至外部服务器的在线工具不同，NaNa Lab 在浏览器本地处理全部文件，不会向其他地方传输或存储数据。智能文档压缩工具适合处理保密文件及含个人信息的文件，同时提升效率、生产力与安全性。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/doc_compress/" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Count Words -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/count_words" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/count_words.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/count_words"
+                                target="_blank" rel="noreferrer">
+                                <h5>字数统计</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    专为作者、编辑与学生设计的强大精准字数统计工具。不只统计词数，还提供含空格及不含空格的字符数、段落数与预计阅读时间等详细信息。支持多种语言，适合检查社交媒体帖文、文章及报告的长度限制。所有文本处理都在浏览器中即时完成，内容保持私密。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/count_words" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Analyzer -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/doc_stat" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/doc_stat.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/doc_stat" target="_blank"
+                                rel="noreferrer">
+                                <h5>文档分析器</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    利用这款强大的分析工具深入了解文档。支持 PDF 和 DOCX，提取字数、页数及关键词频率等关键指标，适用于审核法律合同、学术论文或商业报告，帮助你一眼掌握文件结构与内容。与我们的其他工具一样，它完全在客户端运行，敏感文档不会离开你的设备。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/doc_stat" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDF Merger -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/merge_pdf" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/merge_pdf.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/merge_pdf" target="_blank"
+                                rel="noreferrer">
+                                <h5>PDF 合并工具</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    高效地将多个 PDF 文档合并为一个有序文件。无论是整理分散的报告、收据还是学习资料，工具都能在浏览器本地完成。文件不会上传至外部服务器，因此可放心处理敏感内容，保持数据私密与安全。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/merge_pdf" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chatbot V5 -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/chatbot_v5" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/chatbot_v5.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/chatbot_v5" target="_blank"
+                                rel="noreferrer">
+                                <h5>聊天机器人 V5</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    面向专业工作流的高级多模态聊天机器人原型。支持语音识别交互，并允许上传 PDF，以文档内容为依据开展对话，例如使用上传的法律文本讨论法律问题。对话结果可总结为一至两页 A4 内容，打印或导出 PDF，便于制作报告与审核文档。用户还可整理工作文档，并向 AI 寻求结构化协助。可选的 Google 搜索集成让机器人回答问题时主动搜索网页。由 Gemini 3.0 驱动。作为原型，每日限20次对话。用于企业内部时，可切换为按使用量付费模式。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/chatbot_v5" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solo Chat Template -->
+                <div class="singleProjectContainer">
+                    <div class="singleWebsiteCard">
+                        <a class="tempa" href="https://nanalab.kr/chatTemplate" target="_blank" rel="noreferrer">
+                            <img decoding="async" loading="lazy" class="websiteImage" src="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@034b889e0d4fac79308695267909cef9ec44f7b3/src/images/apps/solo_chat.webp"
+                                alt="项目图片" />
+                        </a>
+                        <div class="projectText">
+                            <a class="text-center textMarginBottom" href="https://nanalab.kr/chatTemplate"
+                                target="_blank" rel="noreferrer">
+                                <h5>Solo 聊天模板</h5>
+                            </a>
+                            <div class="codeBody">
+                                <p class="bookDescription">
+                                    简洁现代的 AI 聊天界面模板，提供流畅交互体验，可作为构建定制 AI 聊天应用的响应式前端基础。功能包括主题切换、模型选择占位项及清爽的消息界面。
+                                </p>
+                            </div>
+                            <div class="gitIcons">
+                                <a href="https://nanalab.kr/chatTemplate" target="_blank" rel="noreferrer">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+</div></div>
+    </main>
+    <nav class="mobile-next-page" aria-label="下一页"><a class="mobile-next-link" id="mobile-next-link" rel="next" href="/zh/activities/"><span class="mobile-next-eyebrow">下一页</span><strong><span class="next-page-label">社会贡献</span><span aria-hidden="true">↑</span></strong><span class="mobile-next-description">社会贡献</span></a><p class="mobile-next-hint">点击上方按钮前往。</p></nav>
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="全部页面"><a href="/zh/">Byunghyun Ban</a><a href="/zh/media/">广播与视频</a><a href="/zh/books/">著作</a><a href="/zh/lectures/">讲座与授课经历</a><a href="/zh/courses/online/">在线课程</a><a href="/zh/courses/offline/">线下培训课程</a><a href="/zh/news/">新闻报道</a><a href="/zh/papers/">论文与研究</a><a href="/zh/patents/">专利</a><a href="/zh/projects/">开发项目</a><a href="/zh/activities/">社会贡献</a><a href="/zh/memberships/">会员与专业活动</a><a href="/zh/collections/">收藏品</a><a href="/zh/contact/">讲座与合作咨询</a></nav>
+            <p><a href="/feed.xml">订阅 RSS</a> · <a href="/feed.json">JSON Feed</a></p>
+            <p>© 2026 Byunghyun Ban. 版权所有。</p>
+            <p>NaNa Lab（营业登记号：269-08-02374）负责人 Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="回到顶部">↑</button>
+</body>
+</html>

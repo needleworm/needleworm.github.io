@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning | Byunghyun Ban</title>
+    <meta name="description" content="Modern control theories such as systems engineering approaches try to solve nonlinear system problems by revelation of causal relationship or co-relationship among the component…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_author" content="Soobin Kim">
+<meta name="citation_publication_date" content="2017">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/greenhouse-reinforcement-learning-2017/">
+<meta name="citation_conference_title" content="2017 International Conference on Information and Communication Technology Convergence (ICTC)">
+<meta name="citation_firstpage" content="913">
+<meta name="citation_lastpage" content="918">
+<meta name="citation_doi" content="10.1109/ictc.2017.8190813">
+    <link rel="canonical" href="https://bhban.kr/zh/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning | Byunghyun Ban">
+    <meta property="og:description" content="Modern control theories such as systems engineering approaches try to solve nonlinear system problems by revelation of causal relationship or co-relationship among the component…">
+    <meta property="og:url" content="https://bhban.kr/zh/papers/greenhouse-reinforcement-learning-2017/">
+    <meta property="og:image" content="https://bhban.kr/src/images/papers/1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/zh/#website", "url": "https://bhban.kr/zh/", "name": "Byunghyun Ban", "inLanguage": "zh"}, {"@type": "WebPage", "@id": "https://bhban.kr/zh/papers/greenhouse-reinforcement-learning-2017/#page", "url": "https://bhban.kr/zh/papers/greenhouse-reinforcement-learning-2017/", "name": "Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning | Byunghyun Ban", "description": "Modern control theories such as systems engineering approaches try to solve nonlinear system problems by revelation of causal relationship or co-relationship among the component…", "inLanguage": "zh", "mainEntity": {"@id": "https://bhban.kr/papers/greenhouse-reinforcement-learning-2017/#article"}, "isPartOf": {"@id": "https://bhban.kr/zh/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/greenhouse-reinforcement-learning-2017/#article", "url": "https://bhban.kr/papers/greenhouse-reinforcement-learning-2017/", "name": "Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning", "headline": "Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning", "author": [{"@type": "Person", "name": "Byunghyun Ban"}, {"@type": "Person", "name": "Soobin Kim"}], "datePublished": "2017", "inLanguage": "en", "abstract": "Modern control theories such as systems engineering approaches try to solve nonlinear system problems by revelation of causal relationship or co-relationship among the components; most of those approaches focus on control of sophisticatedly modeled white-boxed systems. We suggest an application of actor-critic reinforcement learning approach to control a nonlinear, complex and black-boxed system. We demonstrated this approach on artificial green-house environment simulator all of whose control inputs have several side effects so human cannot figure out how to control this system easily. Our approach succeeded to maintain the circumstance at least 20 times longer than PID and Deep Q Learning.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/greenhouse-reinforcement-learning-2017/#page"}, "isPartOf": {"@type": "CreativeWork", "name": "2017 International Conference on Information and Communication Technology Convergence (ICTC)"}, "pageStart": "913", "pageEnd": "918", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.1109/ictc.2017.8190813"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://bhban.kr/zh/"}, {"@type": "ListItem", "position": 2, "name": "论文", "item": "https://bhban.kr/zh/papers/"}, {"@type": "ListItem", "position": 3, "name": "Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning", "item": "https://bhban.kr/zh/papers/greenhouse-reinforcement-learning-2017/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/greenhouse-reinforcement-learning-2017/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/greenhouse-reinforcement-learning-2017/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"打开菜单","menuClose":"关闭菜单","submenuExpand":"展开{label}子菜单","submenuCollapse":"收起{label}子菜单","nextSwipeHint":"滚动到底部后，再向上滑动一次即可前往。","nextScrollHint":"滚动到底部后，再向下滚动一次即可前往。","lectureResults":"{category} {count}项 · 按最新讲座排序","categoryAll":"全部","categoryCompany":"企业","categoryPublic":"公共机构","categoryEducation":"教育机构","categoryResearch":"研究机构","categoryConference":"会议","listMedia":"视频","listNews":"新闻报道","listLectures":"讲座","listCoursesOnline":"在线课程","listCoursesOffline":"线下培训课程","listPapers":"论文","listPatents":"专利","listProjects":"项目","listActivities":"活动","listMemberships":"会员活动","listCollections":"收藏品","listDonations":"捐赠记录","listGeneric":"列表","listStatus":"共{total}项，显示{visible}项","listMore":"查看更多{label}（还剩{remaining}项）","citationCopyLabel":"复制引用信息","citationCopied":"已复制引用信息。","citationError":"无法复制引用信息，请检查浏览器的剪贴板设置。","citationFormatCopied":"已复制{label}引用信息。","citationManualCopy":"已选中引用文本，请手动复制。","contactLoadError":"无法加载咨询发送功能。请稍后重试。","contactSent":"已收到您的咨询。","contactError":"发生错误，请重试。","contactSending":"发送中……","streamRetry":"重新加载","streamError":"无法加载后续内容。请重试，或点击上方链接前往。","streamLoading":"正在继续加载{label}内容。"}</script>
+</head>
+<body data-locale="zh" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">跳转至正文</a>
+    <nav class="navbar" aria-label="主菜单"><div class="navbar-brand"><a href="/zh/" aria-label="Byunghyun Ban 首页"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/zh/" class="nav-link nav-main-link" data-nav-page="home">关于</a></li><li data-nav-group="media"><a href="/zh/media/" class="nav-link nav-main-link" data-nav-page="media">媒体</a></li><li data-nav-group="books"><a href="/zh/books/" class="nav-link nav-main-link" data-nav-page="books">书籍</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/zh/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">讲座</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="展开讲座子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="讲座分类"><li><a href="/zh/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">全部</a></li><li><a href="/zh/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">企业</a></li><li><a href="/zh/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">公共机构</a></li><li><a href="/zh/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">教育机构</a></li><li><a href="/zh/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">研究机构</a></li><li><a href="/zh/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">会议</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/zh/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">课程</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="展开课程子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/zh/courses/online/" data-nav-page="courses-online">在线</a></li><li><a href="/zh/courses/offline/" data-nav-page="courses-offline">线下</a></li></ul></li><li data-nav-group="news"><a href="/zh/news/" class="nav-link nav-main-link" data-nav-page="news">新闻</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/zh/papers/" class="nav-link active nav-main-link" data-nav-page="papers">研发</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="展开研发子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/zh/papers/" data-nav-page="papers">论文</a></li><li><a href="/zh/patents/" data-nav-page="patents">专利</a></li><li><a href="/zh/projects/" data-nav-page="projects">项目</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/zh/activities/" class="nav-link nav-main-link" data-nav-page="activities">其他</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="展开其他子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/zh/activities/" data-nav-page="activities">社会贡献</a></li><li><a href="/zh/memberships/" data-nav-page="memberships">会员活动</a></li><li><a href="/zh/collections/" data-nav-page="collections">收藏</a></li></ul></li><li data-nav-group="contact"><a href="/zh/contact/" class="btn-contact nav-main-link" data-nav-page="contact">联系</a></li></ul><details class="language-switcher"><summary aria-label="选择语言"><span aria-hidden="true">🌐</span> <span>简体中文</span></summary><nav class="language-options" aria-label="选择语言"><a href="/papers/greenhouse-reinforcement-learning-2017/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/greenhouse-reinforcement-learning-2017/" hreflang="en" lang="en">English</a><a href="/zh/papers/greenhouse-reinforcement-learning-2017/" hreflang="zh" lang="zh" aria-current="true">简体中文</a><a href="/hi/papers/greenhouse-reinforcement-learning-2017/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/greenhouse-reinforcement-learning-2017/" hreflang="es" lang="es">Español</a><a href="/ar/papers/greenhouse-reinforcement-learning-2017/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/greenhouse-reinforcement-learning-2017/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/greenhouse-reinforcement-learning-2017/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/papers/greenhouse-reinforcement-learning-2017/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="打开菜单">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="当前位置"><a href="/zh/">首页</a><span aria-hidden="true">/</span><a href="/zh/papers/">论文</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-1"><header><p class="paper-kind">已发表研究</p><h1 id="paper-title" lang="en">Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning</h1><p class="paper-authors">Byunghyun Ban, Soobin Kim</p><p class="paper-venue">2017 · 2017 International Conference on Information and Communication Technology Convergence (ICTC) · 913–918</p><nav class="paper-reader-jumps" aria-label="前往论文"><a href="#abstract-heading">摘要</a><a href="#full-text">全文</a><a href="#citation-heading">引用</a></nav><div class="gitIcons">
+                                <a href="https://github.com/needleworm/greenhouse_ai" target="_blank" rel="noreferrer" aria-label="GitHub 仓库" title="GitHub 仓库"><i aria-hidden="true" class="fab fa-github"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg></a>
+                                <a href="/src/paperPdf/1.pdf" target="_blank" rel="noreferrer" download aria-label="下载 PDF" title="下载 PDF"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg></a>
+                                <a href="https://doi.org/10.1109/ICTC.2017.8190813" target="_blank" rel="noreferrer" aria-label="DOI 原文信息" title="DOI 原文信息"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg></a>
+                                <span class="citation"
+                                    data-citation='B. Ban and S. Kim, "Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning," 2017 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South), 2017, pp. 913-918, doi: 10.1109/ICTC.2017.8190813.' aria-label="复制引用信息" title="复制引用信息"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">引用</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>目录 · Contents</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-1-introduction">Introduction</a></li><li class="toc-level-2"><a href="#paper-1-reinforcement-learning-backgrounds">Reinforcement Learning Backgrounds</a></li><li class="toc-level-3"><a href="#paper-1-critic-only-methods">Critic-only methods</a></li><li class="toc-level-3"><a href="#paper-1-actor-only-methods">Actor-only methods</a></li><li class="toc-level-3"><a href="#paper-1-actor-critic-policy-gradient">Actor-critic policy gradient</a></li><li class="toc-level-2"><a href="#paper-1-method">Method</a></li><li class="toc-level-3"><a href="#paper-1-network-architecture">Network Architecture</a></li><li class="toc-level-3"><a href="#paper-1-training">Training</a></li><li class="toc-level-2"><a href="#paper-1-expereiment">Expereiment</a></li><li class="toc-level-3"><a href="#paper-1-environment">Environment</a></li><li class="toc-level-3"><a href="#paper-1-training-1">Training</a></li><li class="toc-level-3"><a href="#paper-1-computational-environments">Computational Environments</a></li><li class="toc-level-2"><a href="#paper-1-results">Results</a></li><li class="toc-level-3"><a href="#paper-1-conventional-pid">Conventional PID</a></li><li class="toc-level-3"><a href="#paper-1-deep-q-learning">Deep Q learning</a></li><li class="toc-level-3"><a href="#paper-1-actor-critic-policy-gradient-1">Actor-critic policy gradient</a></li><li class="toc-level-2"><a href="#paper-1-conclusion">Conclusion</a></li><li class="toc-level-2"><a href="#paper-1-references">References</a></li><li class="toc-level-2"><a href="#paper-1-supplementary-information">Supplementary Information</a></li><li class="toc-level-3"><a href="#paper-1-hidden-parameters">Hidden Parameters</a></li><li class="toc-level-3"><a href="#paper-1-observable-parameters">Observable Parameters</a></li><li class="toc-level-3"><a href="#paper-1-gradient">Gradient</a></li><li class="toc-level-3"><a href="#paper-1-actions">Actions</a></li><li class="toc-level-3"><a href="#paper-1-perturbations">Perturbations</a></li><li class="toc-level-3"><a href="#paper-1-interact-between-the-agent">Interact between the agent</a></li><li class="toc-level-3"><a href="#paper-1-terminal-condition">Terminal condition</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">摘要</h2><p class="abstract" lang="en">Modern control theories such as systems engineering approaches try to solve nonlinear system problems by revelation of causal relationship or co-relationship among the components; most of those approaches focus on control of sophisticatedly modeled white-boxed systems. We suggest an application of actor-critic reinforcement learning approach to control a nonlinear, complex and black-boxed system. We demonstrated this approach on artificial green-house environment simulator all of whose control inputs have several side effects so human cannot figure out how to control this system easily. Our approach succeeded to maintain the circumstance at least 20 times longer than PID and Deep Q Learning.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords">Keyword<em><strong>s</strong></em>—System Engineering, Deep Learning,
+Machine Learning, Reinforcement Learning</p><h2 id="paper-1-introduction"> Introduction </h2>
+<p>Frequently, the approaches in nonlinear system control is to model
+the target system in highly sophisticated level. For example, systems
+biologist starts with defining the components of the system; the number
+of components are usually tens but sometimes thousands. The next step is
+to revealing interaction among all components and to draw interactional
+network. Continuous scaled systems are usually modeled in ordinary
+differential equation model [2][3]. When the number of component is too
+great to handle, researchers apply discrete model such as Boolean
+networks and write full truth table for individual interactions or
+establish Boolean equations for each component’s input condition [4].
+After modeling the system, they apply complicated control methods
+[5][6][7][8], which usually have non-polynomial computational cost.</p>
+<p>Those routine is time-consuming and not realistic in two points.
+First, when the model is big enough, a researcher may fail to gather all
+interactions among the components because current approaches mainly
+depends on paper search. Second, control methods for nonlinear systems
+often takes exponential time complexity so applying them on large scaled
+system is not feasible. Not to mention most of the methods are not even
+applicable when the model is black-box status.</p>
+<p>Thanks to 상상텃밭 Inc.</p>
+<p>The idea of our work is to provide a control method for black-boxed
+complex system whose input and output are only observable variables.</p>
+<h2 id="paper-1-reinforcement-learning-backgrounds">Reinforcement Learning
+Backgrounds</h2>
+<p>Reinforcement learning is interactions between the environment and
+agent over some discrete time steps, where the agent learns how to apply
+action on environment to maximize future rewards. At each time step t,
+the agent observes current state
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>t</mi></msub><annotation encoding="application/x-tex">s_{t}</annotation></semantics></math></span>
+and decide an action
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>t</mi></msub><annotation encoding="application/x-tex">a_{t}</annotation></semantics></math></span>
+according to its policy
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span>
+which, is a function whose domain is
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mi>t</mi></msub><annotation encoding="application/x-tex">s_{t}</annotation></semantics></math></span>
+and has possible actions as codomain. The model decides future action by
+approximation of action value which is expected future rewards by
+applying
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>t</mi></msub><annotation encoding="application/x-tex">a_{t}</annotation></semantics></math></span>
+to the environment.</p>
+<h3 id="paper-1-critic-only-methods">Critic-only methods</h3>
+<p>Critic-only methods, value based reinforcement learning methods in
+other words, aims to approximate the value or action-value function Q
+(s, a; w), where
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math></span>
+is internal parameter for Q function [9] and is updated with various
+reinforcement learning algorithms [10]. For example, in one-step
+Q-learning [11], the learning is done by minimizing the loss
+function;</p>
+<p><span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>t</mi></msub><mrow><mo form="prefix" stretchy="true">(</mo><msub><mi>w</mi><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow><mrow><mo mathvariant="double-struck">=</mo><mspace width="0.222em"></mspace><mi mathvariant="double-struck">𝔼</mi></mrow><msup><mrow><mo form="prefix" stretchy="true">(</mo><mi>r</mi><mo>+</mo><mspace width="0.222em"></mspace><mi>γ</mi><msub><mrow><mi mathvariant="normal">max</mi><mo>⁡</mo></mrow><msup><mi>a</mi><mo>′</mo></msup></msub><mrow><mi>Q</mi><mo form="prefix" stretchy="false">(</mo><msup><mi>s</mi><mo>′</mo></msup><mo>,</mo><mspace width="0.222em"></mspace><msup><mi>a</mi><mo>′</mo></msup><mo>;</mo><mspace width="0.222em"></mspace></mrow><msub><mi>w</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo form="postfix" stretchy="false">)</mo><mo>−</mo><mi>Q</mi><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>w</mi><mi>t</mi></msub><mo form="postfix" stretchy="false">)</mo><mo form="postfix" stretchy="true">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">L_{t}\left( w_{t} \right)\mathbb{= \ E}\left( r + \ \gamma\max_{a'}{Q(s',\ a';\ }w_{t - 1}) - Q(s,\ a,\ w_{t}) \right)^{2}</annotation></semantics></math></span>,
+where
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>s</mi><mo>′</mo></msup><annotation encoding="application/x-tex">s'</annotation></semantics></math></span>
+is the state encountered after state <em>s</em> and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>γ</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math></span>
+is discount factor. The output value of value-based reinforcement
+learning agent neural network is Q.</p>
+<h3 id="paper-1-actor-only-methods">Actor-only methods</h3>
+<p>Policy gradient methods belongs to actor-only methods. The output of
+policy-based reinforcement learning agent neural network is the policy
+function
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>π</mi><mi>θ</mi></msub><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\pi_{\theta}(s,\ a)</annotation></semantics></math></span>,
+not Q itself. [12] Policy based reinforcement learning is to find best
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span>
+for
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>π</mi><mi>θ</mi></msub><annotation encoding="application/x-tex">\pi_{\theta}</annotation></semantics></math></span>.
+To measure the quality of
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>π</mi><mi>θ</mi></msub><annotation encoding="application/x-tex">\pi_{\theta}</annotation></semantics></math></span>,
+policy based approaches suggest various objective functions. By the
+policy gradient theorem proposed by Sutton et al., the policy gradient
+is described as</p>
+<p><span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mi>s</mi><mrow></mrow></msubsup><mrow><msubsup><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>∞</mi></msubsup><mrow><msup><mi>γ</mi><mi>t</mi></msup><mi>P</mi><mi>r</mi><mo form="prefix" stretchy="false">{</mo><msub><mi>s</mi><mi>t</mi></msub><mo>=</mo><mi>s</mi><mo form="prefix" stretchy="false">|</mo><msub><mi>s</mi><mn>0</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mi>π</mi><mo form="postfix" stretchy="false">}</mo></mrow></mrow><mspace width="0.222em"></mspace><msubsup><mo>∑</mo><mi>a</mi><mrow></mrow></msubsup><mrow><mfrac><mrow><mi>∂</mi><mi>π</mi><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mo form="postfix" stretchy="false">)</mo></mrow><mrow><mi>∂</mi><mi>θ</mi></mrow></mfrac><msup><mi>Q</mi><mi>π</mi></msup><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mi>a</mi><mo form="postfix" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{s}^{}{\sum_{t = 0}^{\infty}{\gamma^{t}Pr\{ s_{t} = s|s_{0},\ \pi\}}}\ \sum_{a}^{}{\frac{\partial\pi(s,\ a)}{\partial\theta}Q^{\pi}(s,a)}</annotation></semantics></math></span>.</p>
+<h3 id="paper-1-actor-critic-policy-gradient">Actor-critic policy gradient</h3>
+<p>Actor-critic methods aims to combine and maximize the strong point of
+value-based and policy-based models. This approach train 2 models,
+critic model and actor model, at the same time.</p>
+<p>Critic is a temporal difference learning algorithm with a linearly
+parameterized approximation architecture for action-value function Q.
+[13] With linear approximation, with the basis function
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>⌀</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">\varnothing,</annotation></semantics></math></span>
+the value function is described as
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mi>w</mi></msub><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mo form="postfix" stretchy="false">)</mo><mo>=</mo><mspace width="0.222em"></mspace><mi>⌀</mi><msup><mrow><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mo form="postfix" stretchy="false">)</mo></mrow><mi>T</mi></msup><mi>w</mi></mrow><annotation encoding="application/x-tex">Q_{w}(s,\ a) = \ \varnothing{(s,\ a)}^{T}w</annotation></semantics></math></span>.
+[14][15] It updates action-value function parameter w by linear TD.
+Critic estimates current policy with Q function. Actor updates policy
+parameter
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span>,
+in direction suggested by critic.</p>
+<figure class="paper-figure" id="paper-1-figure-1">
+<img alt="[Figure 1] (a) Network Architecture The reinforcement learning agent consists of two independent deep neural networks. Actor network (left) makes decision on which action to make at every time step and is updated with gradient provided by critic network. Critic network (right) receives state of the environment and action of actor network at the same time. Critic network has two networks for observation and action, and addition of each layer’s output passes through single FNN layer. The output of critic network is the gradient for actor network. (b) Environment The network describes interaction of variables which consists of or affects the greenhouse system. It has 8 possible actions, 5 hidden variables and 7 observable parameters. Although human appearance and disappearance are described as independent component, it can be described as single Boolean variable in mathematical expressions. Solid arrow means enhancement or activation, and dot-headed arrow means inhibition. Dashed line means this interaction can work as both enhancement and inhibition, depending on their gradient." decoding="async" loading="lazy" src="/src/images/paper-body/paper-1/figure-1.png"/>
+<figcaption><p>[Figure 1] (a) Network Architecture The reinforcement
+learning agent consists of two independent deep neural networks. Actor
+network (left) makes decision on which action to make at every time step
+and is updated with gradient provided by critic network. Critic network
+(right) receives state of the environment and action of actor network at
+the same time. Critic network has two networks for observation and
+action, and addition of each layer’s output passes through single FNN
+layer. The output of critic network is the gradient for actor network.
+(b) Environment The network describes interaction of variables which
+consists of or affects the greenhouse system. It has 8 possible actions,
+5 hidden variables and 7 observable parameters. Although human
+appearance and disappearance are described as independent component, it
+can be described as single Boolean variable in mathematical expressions.
+Solid arrow means enhancement or activation, and dot-headed arrow means
+inhibition. Dashed line means this interaction can work as both
+enhancement and inhibition, depending on their
+gradient.</p></figcaption>
+</figure>
+<p>Actor-critic algorithms follow an approximate policy gradient:</p>
+<p><span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>∇</mi><mi>θ</mi></msub><mi>J</mi><mo form="prefix" stretchy="false">(</mo><mi>θ</mi><mo form="postfix" stretchy="false">)</mo><mrow><mo mathvariant="double-struck">≈</mo><mi mathvariant="double-struck">𝔼</mi><mo form="prefix" mathvariant="double-struck" stretchy="false">[</mo></mrow><mspace width="0.222em"></mspace><msub><mi>∇</mi><mi>θ</mi></msub><mrow><mi mathvariant="normal">log</mi><mo>⁡</mo></mrow><mrow><msub><mi>π</mi><mi>θ</mi></msub><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mo form="postfix" stretchy="false">)</mo><msub><mi>Q</mi><mi>w</mi></msub><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mo form="postfix" stretchy="false">)</mo><mo form="postfix" stretchy="false">]</mo><mspace width="0.222em"></mspace></mrow></mrow><annotation encoding="application/x-tex">\nabla_{\theta}J(\theta)\mathbb{\approx E\lbrack}\ \nabla_{\theta}\log{\pi_{\theta}(s,\ a)Q_{w}(s,\ a)\rbrack\ }</annotation></semantics></math></span>,</p>
+<p><span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>θ</mi><mo>=</mo><mi>α</mi><msub><mi>∇</mi><mi>θ</mi></msub><mrow><mi mathvariant="normal">log</mi><mo>⁡</mo></mrow><mrow><msub><mi>π</mi><mi>θ</mi></msub><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mo form="postfix" stretchy="false">)</mo><msub><mi>Q</mi><mi>w</mi></msub><mo form="prefix" stretchy="false">(</mo><mi>s</mi><mo>,</mo><mspace width="0.222em"></mspace><mi>a</mi><mo form="postfix" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}\theta = \alpha\nabla_{\theta}\log{\pi_{\theta}(s,\ a)Q_{w}(s,\ a)}</annotation></semantics></math></span>.
+[14].</p>
+<h2 id="paper-1-method">Method</h2>
+<p>Our approach is implementation of actor-critic policy gradient based
+reinforcement learning agent with artificial neural networks. This deep
+reinforcement learning algorithm tries to find out how to maximize the
+future rewards: maximize control performance.</p>
+<h3 id="paper-1-network-architecture">Network Architecture</h3>
+<p>The agent is combined actor-critic networks. The structural backbone
+is described on Figure 1 (a). The structure is same as pemami4911’s work
+on his GitHub repository [16] but parameters are changed to fit for
+nonlinear, black-boxed and complex system control.</p>
+<p>Actor network has 4 layers of fully connected neural networks. The
+activation functions are ReLu except the final layer; it is softmax
+function. The first and second layers has 128 neurons while the third
+layer has 32 neurons. The number of the neurons in final layer is same
+with the number of possible actions. The actor produces one-hot vector
+formed output corresponding with an action to be applied to the
+environment. Input to the actor is observation only. Network parameters
+are updated with critic output value.</p>
+<p>Critic network has slightly unique structure. It is 3-layered FNN
+model, which has fuse operation on the second layer. Another single
+layer receives actor’s output to be merged with encoded observation
+information. The backpropagation of critic network follows both
+subnetworks at the same time so this network naturally trains how to
+optimize the actor policy by evaluating actor policy regarding the
+observation at the same time.</p>
+<p>Network parameters are updated to reduce the mean squared error
+between previously predicted Q value with discounted real rewards.</p>
+<h3 id="paper-1-training">Training</h3>
+<p>For each step, the agent receives observation form the environment.
+Actor decides which action to make regarding the observed state. For
+each step, the critic updates its internal parameter for Q function and
+returns gradient for actor. Then the actor is updated with the given
+gradient. This routine is repeated until the environment returns game
+over signal; after an episode is done, new episode starts with cleared
+environment.</p>
+<h2 id="paper-1-expereiment">Expereiment</h2>
+<h3 id="paper-1-environment">Environment</h3>
+<p>The environment used for experiment is artificial greenhouse
+simulator. It simulates a greenhouse on very barren environment; weather
+changes a lot and sunlight is too strong so its inside circumstance
+becomes detrimental for the plants only in 10 hours. The derivatives of
+internal variables are proportional to difference between the internal
+value and external value and the coefficient for the derivative is
+chosen stochastically between [0.01, 0.2]. Perturbation on the external
+weather and entrance of human user randomly occurs.</p>
+<p>The Environment has 7 observable values; current temperature, current
+humidity of air, current humidity of ground, current height of the
+plants, pesticide density, the existence of human and insects, and
+receives 8 actions; fan on, curtain open, water injection inside, water
+injection outside, pesticide injection, light on, spraying nutrients and
+harvest.</p>
+<p>Figure 1 (b) shows the complexity of greenhouse system. Each action
+affects several internal values at the same time so any action can cause
+undesirable effects on the system. For example, if an agent take
+‘curtain open’ action to reduce internal temperature, current humidity
+of both air and ground is changed with gradient calculated with outside
+values, and the pesticide density drops too.</p>
+<p>Usually, Smart-farm owners apply several PIDs to maintain each value
+individually. However, it is very inefficient; notwithstanding the
+initial cost, it consumes lots of energies; it’s common for them to
+activate the air conditioner, dehumidifier and humidifier at the same
+time to maintain all the variable at the same time with individual PIDs.
+The agent of our method learned how to avoid such problem while
+maintaining the environment appropriately, taking least costs. If the
+environment is still sustainable after each hour, it returns +1 reward;
+total reward is hours for which the agent can maintain the
+environment.</p>
+<p>Details on the environment are described on the supplementary
+information.</p>
+<h3 id="paper-1-training-1">Training</h3>
+<p>The agent only observes current status but never receives information
+on interactions of internal variables to figure out appropriate control
+input. The environment is initialized as follows; allowed temperature
+range as [10, 100], allowed air humidity as [10, 90], allowed ground
+humidity as [30, 80], initial temperature as 21, initial air humidity as
+50, initial ground humidity as 50. The episode is interrupted even a
+single variable exceeds the range.</p>
+<p>To avoid converging in local minimum, actor’s sample action is
+ignored with probability eps, which is initially 0.95 and decays to 10%
+per 9 episodes; initially the model train and calculates value and
+policy for random action. For each step, the action and rewards are
+stored in a queue and 256 samples are drawn for mini batch.</p>
+<h3 id="paper-1-computational-environments">Computational Environments</h3>
+<p>The agent was implemented with Tensor Flow on python 3. Numpy library
+is used for training routine and the implementation of environment.
+NVIDIA GTX 1080 8gb was used for training.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-1-table-1" style="width:45%;">
+<caption><p>[Table 1] PID Experiment Results</p></caption>
+<colgroup>
+<col style="width: 6%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+</colgroup>
+<thead>
+<tr>
+<th rowspan="2"></th>
+<th colspan="3" style="text-align: center;">Scores</th>
+</tr>
+<tr>
+<th style="text-align: center;">Trial A</th>
+<th>Trial B</th>
+<th>Trial C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mean</td>
+<td style="text-align: center;">6.02</td>
+<td>6.01</td>
+<td>10.04</td>
+</tr>
+<tr>
+<td>Stddev</td>
+<td style="text-align: center;">1.84</td>
+<td>1.80</td>
+<td>1.80</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="paper-1-results">Results</h2>
+<p>We compared actor-critic network with conventional PID and Deep Q
+learning algorithm. Deep reinforcement learning approach showed better
+performance than conventional PID approach.</p>
+<h3 id="paper-1-conventional-pid">Conventional PID</h3>
+<p>PID controller measures each observable variable, and apply actions
+which can draw it into normal state. We applied it with 3 different
+conditions.</p>
+<p>Trial A: Apply actions at every hour</p>
+<p>Trial B: Apply actions with 3-hour interval</p>
+<p>Trial C: Apply actions after 6<sup>th</sup> hour.</p>
+<p>Results from Trial A and B was frustrating. The environment itself
+requires average 10 hours to be destroyed without any control input but
+the result showed that PID accelerated destruction of the system. The
+trial C started after 5 hours passed, and managed to maintain the
+environment slightly longer than 10 hours. (Table 1)</p>
+<p>It was mainly due to side effects of each control inputs. The major
+variable for the system is temperature. However, most control input
+related to temperature drops ground humidity dramatically so the system
+easily get dry.</p>
+<h3 id="paper-1-deep-q-learning">Deep Q learning</h3>
+<p>Deep Q learning suggested by Google DeepMind [1], implemented with 4
+layers of fully connected networks failed to achieve desirable
+performance. As the circumstance is sustainable up to 10 hours without
+any actions, this model definitely failed to learn how to maintain the
+greenhouse. It sometimes showed more than 10 scores but most of the
+trial showed less than 10 scores.</p>
+<h3 id="paper-1-actor-critic-policy-gradient-1">Actor-critic policy
+gradient</h3>
+<p>Our model showed outstanding result. After 2,000 episodes, the score
+increased dramatically and it succeeded to maintain the environment for
+200~350 hours which is enough for farmers to grow and harvest lettuce.
+Regarding that the artificial greenhouse is unrealistically infertile,
+it can already be applied commercially in real world especially in the
+climate around the Republic of Korea.</p>
+<h2 id="paper-1-conclusion">Conclusion</h2>
+<p>We showed the performance comparison between PID and simple DQN with
+actor-critic network on controlling so extreme environment even a single
+action changes several internal values of the system. Moreover, the
+system is nonlinear and observation is limited so the agent doesn’t know
+the internal dynamics (black-boxed). It is not surprising that simple
+DQN, critic-only approach, failed to learn how to control such complex
+system.</p>
+<p>Actor-critic policy gradient method showed surprisingly great
+performance because the complex rules are naturally trained not only on
+the action-value function but also on the policy gradient so that the
+agent could to figure out the appropriate policy and future rewards at
+the same time. We suggest applying actor-critic policy gradient on
+complex system control problems.</p>
+<figure class="paper-figure" id="paper-1-figure-2">
+<img alt="[Figure 2] Experiment result of each deep reinforcement learning algorithm. (a) Deep Q learning algorithm failed to achieve and maintain high-score. Its peak score was 28. (b) Actor-critic policy gradient method achieved much higher score than Deep Q learning. Although the variance is high, even minimum peaks were higher than DQN’s score." decoding="async" loading="lazy" src="/src/images/paper-body/paper-1/figure-2.png"/>
+<figcaption><p>[Figure 2] Experiment result of each deep reinforcement
+learning algorithm. (a) Deep Q learning algorithm failed to achieve and
+maintain high-score. Its peak score was 28. (b) Actor-critic policy
+gradient method achieved much higher score than Deep Q learning.
+Although the variance is high, even minimum peaks were higher than DQN’s
+score.</p></figcaption>
+</figure>
+<h2 id="paper-1-references">References</h2>
+<p>[1] Mnih, Volodymyr, et al. "Playing atari with deep reinforcement
+learning." <em>arXiv preprint arXiv:1312.5602</em> (2013).</p>
+<p>[2] Xu, Alexander M., and Paul H. Huang. "Receptor tyrosine kinase
+coactivation networks in cancer." <em>Cancer research</em> 70.10 (2010):
+3857-3860.</p>
+<p>[3] Grieco, Luca, et al. "Integrative modelling of the influence of
+MAPK network on cancer cell fate decision." <em>PLoS Comput
+Biol</em> 9.10 (2013): e1003286.</p>
+<p>[4] Fumia, Herman F., and Marcelo L. Martins. "Boolean network model
+for cancer pathways: predicting carcinogenesis and targeted therapy
+outcomes." <em>PloS one</em> 8.7 (2013): e69008.</p>
+<p>[5] Mochizuki, Atsushi, et al. "Dynamics and control at feedback
+vertex sets. II: A faithful monitor to determine the diversity of
+molecular activities in regulatory networks." <em>Journal of theoretical
+biology</em> 335 (2013): 130-146.</p>
+<p>[6] Liu, Yang-Yu, Jean-Jacques Slotine, and Albert-László Barabási.
+"Controllability of complex networks." <em>Nature</em> 473.7346 (2011):
+167-173.</p>
+<p>[7] Wu, Fang-Xiang, et al. "Transittability of complex networks and
+its applications to regulatory biomolecular networks." <em>Scientific
+reports</em> 4 (2014): 4819.</p>
+<p>[8] Gao, Jianxi, et al. "Target control of complex
+networks." <em>Nature communications</em> 5 (2014).</p>
+<p>[9] Watkins, Christopher JCH, and Peter Dayan.
+"Q-learning." <em>Machine learning</em> 8.3-4 (1992): 279-292.</p>
+<p>[10] Mnih, Volodymyr, et al. "Asynchronous methods for deep
+reinforcement learning." <em>International Conference on Machine
+Learning</em>. 2016.</p>
+<p>[11] Watkins, Christopher John Cornish Hellaby. <em>Learning from
+delayed rewards</em>. Diss. University of Cambridge, 1989.</p>
+<p>[12] Sutton, Richard S., et al. "Policy gradient methods for
+reinforcement learning with function approximation." <em>Advances in
+neural information processing systems</em>. 2000.</p>
+<p>[13] Konda, Vijay R., and John N. Tsitsiklis. "Actor-critic
+algorithms." <em>Advances in neural information processing systems</em>.
+2000.</p>
+<p>[14] David Silver, “Lecture 7: Policy Gradient”, UCL Course on RL,
+2015, Lecture.</p>
+<p>[15] Grondman, Ivo, et al. "A survey of actor-critic reinforcement
+learning: Standard and natural policy gradients." <em>IEEE Transactions
+on Systems, Man, and Cybernetics, Part C (Applications and
+Reviews)</em> 42.6 (2012): 1291-1307.</p>
+<p>[16] https://github.com/pemami4911/deep-rl/tree/master/ddpg</p>
+<h2 id="paper-1-supplementary-information">Supplementary Information</h2>
+<p>This section covers details of the greenhouse environment.</p>
+<h3 id="paper-1-hidden-parameters">Hidden Parameters</h3>
+<p>The environment has both observable and hidden parameters. For
+example, (a) outside temperature, (b) outside humidity, (c) weather, (d)
+temperature of the water are not observable to the agent. But they
+affect the internal state change.</p>
+<h3 id="paper-1-observable-parameters">Observable Parameters</h3>
+<p>The environment Vinylhouse provides observation of the system status.
+An agent can observe (a) current temperature inside the greenhouse, (b)
+current humidity of inside air, (c) current humidity of the ground, (d)
+current height of plants inside, (e) current density of pesticide, (f)
+existence of a human inside the greenhouse, (g) existence of insect
+inside the greenhouse.</p>
+<h3 id="paper-1-gradient">Gradient</h3>
+<p>We supposed that the internal parameter of this nonlinear system is
+changed by simple different equation below;</p>
+<p><span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>s</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>α</mi><mo form="prefix" stretchy="false">(</mo><mi>φ</mi><mo>−</mo><mspace width="0.222em"></mspace><mi>s</mi><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\frac{\Delta s}{\Delta t} = \alpha(\varphi - \ s)</annotation></semantics></math></span>,</p>
+<p>where s is single parameter such as current humidity and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math></span>
+is comparison partner.
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span>
+is random float between [0.01, 0.2]; this value is randomly chosen for
+every step of gradient calculation to increase difficulty of maintenance
+problem.</p>
+<p>The update for internal parameter can be described;</p>
+<p><span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>s</mi><mi>t</mi></msub><mo>+</mo><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi><msub><mi>s</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">s_{t + 1} = s_{t} + \ \mathrm{\Delta}s_{t}</annotation></semantics></math></span>,
+where</p>
+<p><span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>s</mi><mi>t</mi></msub><mo>=</mo><mspace width="0.222em"></mspace><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>s</mi><mi>t</mi></msub></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mspace width="0.222em"></mspace><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\mathrm{\Delta}s_{t} = \ \frac{\Delta s_{t}}{\Delta t}\ \Delta t</annotation></semantics></math></span>
+=
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>φ</mi><mo>−</mo><mspace width="0.222em"></mspace><msub><mi>s</mi><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\alpha\left( \varphi - \ s_{t} \right)\Delta t</annotation></semantics></math></span>.</p>
+<p>As
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta t</annotation></semantics></math></span>
+is just 1 for each discrete time step, update rule for internal
+parameter is simply approximated to
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mi>s</mi><mi>t</mi></msub><mo>+</mo><mspace width="0.222em"></mspace><mi>α</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>φ</mi><mo>−</mo><mspace width="0.222em"></mspace><msub><mi>s</mi><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">s_{t + 1} \approx s_{t} + \ \alpha\left( \varphi - \ s_{t} \right)</annotation></semantics></math></span>.</p>
+<h3 id="paper-1-actions">Actions</h3>
+<p>The environment may receive 8 actions. Each action is modeled to
+realistic ones. Usually, smart farm owners apply several PIDs to
+maintain each value individually. However, it is very inefficient;
+notwithstanding the initial cost, it consumes lots of energies; it’s
+common for them to activate the air conditioner, dehumidifier and
+humidifier at the same time to maintain all the variable at the same
+time with individual PIDs. The agent will learn how to avoid such
+problem while maintaining the environment appropriately, taking least
+costs.</p>
+<h4 id="paper-1-fan-on">Fan On</h4>
+<p>Open the window and activate ventilator. It continues for 10 hours.
+For each hour, current temperature, humidity of air, humidity of ground,
+density of pesticide changes.
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>t</mi></msub><annotation encoding="application/x-tex">T_{t}</annotation></semantics></math></span>
+is inside temperature at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><annotation encoding="application/x-tex">{H\_ a}_{t}</annotation></semantics></math></span>
+is humidity of the air at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>t</mi></msub><annotation encoding="application/x-tex">P_{t}</annotation></semantics></math></span>
+is pesticide density at time t.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mi>T</mi><mi>t</mi></msub><mo>+</mo><mspace width="0.222em"></mspace><mi>α</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>O</mi><mi>u</mi><mi>t</mi><mi>s</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>_</mi><mi>t</mi><mi>e</mi><mi>m</mi><mi>p</mi><mi>a</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>e</mi><mo>−</mo><mspace width="0.222em"></mspace><msub><mi>T</mi><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">T_{t + 1} \approx T_{t} + \ \alpha\left( Outside\_ temparature - \ T_{t} \right)</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><mo>+</mo><mspace width="0.222em"></mspace><mi>α</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>O</mi><mi>u</mi><mi>t</mi><mi>s</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>_</mi><mi>h</mi><mi>u</mi><mi>m</mi><mi>i</mi><mi>d</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>−</mo><mspace width="0.222em"></mspace><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">{H\_ a}_{t + 1} \approx {H\_ a}_{t} + \ \alpha\left( Outside\_ humidity - \ {H\_ a}_{t} \right)</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><msub><mi>H</mi><mi>g</mi></msub><mi>t</mi></msub><mo>+</mo><mspace width="0.222em"></mspace><mn>0.1</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>α</mi><mrow><mo form="prefix" stretchy="true">(</mo><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><mo>−</mo><mspace width="0.222em"></mspace><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">{H\_ g}_{t + 1} \approx {H_{g}}_{t} + \ 0.1\  \times \ \alpha\left( {H\_ a}_{t} - \ {H\_ g}_{t} \right)</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>0.9</mn><mspace width="0.222em"></mspace><msub><mrow><mi>×</mi><mspace width="0.222em"></mspace><mi>P</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">P_{t + 1} \approx 0.9\ {\times \ P}_{t}</annotation></semantics></math></p>
+<h4 id="paper-1-curtain-open">Curtain Open</h4>
+<p>Open the side curtain of greenhouse. It continues for 30 hours. For
+each hour, current temperature, humidity of air, humidity of ground,
+density of pesticide changes.
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>t</mi></msub><annotation encoding="application/x-tex">T_{t}</annotation></semantics></math></span>
+is inside temperature at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><annotation encoding="application/x-tex">{H\_ a}_{t}</annotation></semantics></math></span>
+is humidity of the air at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>t</mi></msub><annotation encoding="application/x-tex">P_{t}</annotation></semantics></math></span>
+is pesticide density at time t.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mi>T</mi><mi>t</mi></msub><mo>+</mo><mspace width="0.222em"></mspace><mn>3</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>α</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>O</mi><mi>u</mi><mi>t</mi><mi>s</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>_</mi><mi>t</mi><mi>e</mi><mi>m</mi><mi>p</mi><mi>a</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>e</mi><mo>−</mo><mspace width="0.222em"></mspace><msub><mi>T</mi><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">T_{t + 1} \approx T_{t} + \ 3\  \times \ \alpha\left( Outside\_ temparature - \ T_{t} \right)</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><mo>+</mo><mn>3</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>α</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>O</mi><mi>u</mi><mi>t</mi><mi>s</mi><mi>i</mi><mi>d</mi><mi>e</mi><mi>_</mi><mi>h</mi><mi>u</mi><mi>m</mi><mi>i</mi><mi>d</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>−</mo><mspace width="0.222em"></mspace><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">{H\_ a}_{t + 1} \approx {H\_ a}_{t} + 3\  \times \ \alpha\left( Outside\_ humidity - \ {H\_ a}_{t} \right)</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mi>t</mi></msub><mo>+</mo><mn>0.2</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>α</mi><mrow><mo form="prefix" stretchy="true">(</mo><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><mo>−</mo><mspace width="0.222em"></mspace><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">{H\_ g}_{t + 1} \approx {H\_ g}_{t} + 0.2\  \times \ \alpha\left( {H\_ a}_{t} - \ {H\_ g}_{t} \right)</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>0.8</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><msub><mi>P</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">P_{t + 1} \approx 0.8\  \times \ P_{t}</annotation></semantics></math></p>
+<h4 id="paper-1-water-injection-inside">Water Injection Inside</h4>
+<p>Switch on the sprinkler inside the greenhouse. It continues for 10
+hours. For each hour, current temperature, humidity of air, humidity of
+ground, density of pesticide changes.
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>t</mi></msub><annotation encoding="application/x-tex">T_{t}</annotation></semantics></math></span>
+is inside temperature at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><annotation encoding="application/x-tex">{H\_ a}_{t}</annotation></semantics></math></span>
+is humidity of the air at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>t</mi></msub><annotation encoding="application/x-tex">P_{t}</annotation></semantics></math></span>
+is pesticide density at time t.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mi>T</mi><mi>t</mi></msub><mo>+</mo><mspace width="0.222em"></mspace><mn>3</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>α</mi><mrow><mo form="prefix" stretchy="true">(</mo><mi>w</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>_</mi><mi>t</mi><mi>e</mi><mi>m</mi><mi>p</mi><mi>a</mi><mi>r</mi><mi>a</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>e</mi><mo>−</mo><mspace width="0.222em"></mspace><msub><mi>T</mi><mi>t</mi></msub><mo form="postfix" stretchy="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">T_{t + 1} \approx T_{t} + \ 3\  \times \ \alpha\left( water\_ temparature - \ T_{t} \right)</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>1.1</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ a}_{t + 1} \approx 1.1\  \times \ {H\_ a}_{t}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mrow><mn>1.3</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ g}_{t + 1} \approx {1.3\  \times \ H\_ g}_{t}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>0.7</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><msub><mi>P</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">P_{t + 1} \approx 0.7\  \times \ P_{t}</annotation></semantics></math></p>
+<h4 id="paper-1-water-injection-outside">Water Injection Outside</h4>
+<p>Activate rooftop water flow. It continues for 20 hours. For each
+hour, current temperature, humidity of air, humidity of ground changes.
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>t</mi></msub><annotation encoding="application/x-tex">T_{t}</annotation></semantics></math></span>
+is inside temperature at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><annotation encoding="application/x-tex">{H\_ a}_{t}</annotation></semantics></math></span>
+is humidity of the air at time.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mi>T</mi><mi>t</mi></msub><mo>+</mo><mspace width="0.222em"></mspace><mn>0.5</mn></mrow><annotation encoding="application/x-tex">T_{t + 1} \approx T_{t} + \ 0.5</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>0.9</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ a}_{t + 1} \approx 0.9\  \times \ {H\_ a}_{t}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mrow><mn>0.95</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ g}_{t + 1} \approx {0.95\  \times \ H\_ g}_{t}</annotation></semantics></math></p>
+<h4 id="paper-1-pesticide-injection">Pesticide Injection</h4>
+<p>Spray pesticide inside the greenhouse. It continues for 10 hours. For
+each hour, humidity of air, humidity of ground, density of pesticide
+changes.
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><annotation encoding="application/x-tex">{H\_ a}_{t}</annotation></semantics></math></span>
+is humidity of the air at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>t</mi></msub><annotation encoding="application/x-tex">P_{t}</annotation></semantics></math></span>
+is pesticide density at time t.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>1.1</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ a}_{t + 1} \approx 1.1\  \times \ {H\_ a}_{t}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mrow><mn>1.2</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ g}_{t + 1} \approx {1.2\  \times \ H\_ g}_{t}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>2</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><msub><mi>P</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">P_{t + 1} \approx 2\  \times \ P_{t}</annotation></semantics></math></p>
+<h4 id="paper-1-light-on">Light on</h4>
+<p>Turn on the plant growth stimulating light. It continues for 50
+hours. For each hour, current temperature, humidity of air, humidity of
+ground changes.
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>t</mi></msub><annotation encoding="application/x-tex">T_{t}</annotation></semantics></math></span>
+is inside temperature at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><annotation encoding="application/x-tex">{H\_ a}_{t}</annotation></semantics></math></span>
+is humidity of the air at time.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mrow><mn>1.01</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>T</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">T_{t + 1} \approx {1.01\  \times \ T}_{t}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>0.95</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ a}_{t + 1} \approx 0.95\  \times \ {H\_ a}_{t}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mrow><mn>0.98</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ g}_{t + 1} \approx {0.98\  \times \ H\_ g}_{t}</annotation></semantics></math></p>
+<h4 id="paper-1-nutrient-spray">Nutrient Spray</h4>
+<p>Spray nutrient inside the greenhouse. It continues for 10 hours. For
+each hour, humidity of air, humidity of ground, density of pesticide
+changes.
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub><annotation encoding="application/x-tex">{H\_ a}_{t}</annotation></semantics></math></span>
+is humidity of the air at time t and
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>t</mi></msub><annotation encoding="application/x-tex">P_{t}</annotation></semantics></math></span>
+is pesticide density at time t.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>1.1</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><msub><mrow><mi>H</mi><mi>_</mi><mi>a</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ a}_{t + 1} \approx 1.1\  \times \ {H\_ a}_{t}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><msub><mrow><mn>1.2</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><mi>H</mi><mi>_</mi><mi>g</mi></mrow><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">{H\_ g}_{t + 1} \approx {1.2\  \times \ H\_ g}_{t}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≈</mo><mn>0.8</mn><mspace width="0.222em"></mspace><mo>×</mo><mspace width="0.222em"></mspace><msub><mi>P</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">P_{t + 1} \approx 0.8\  \times \ P_{t}</annotation></semantics></math></p>
+<h4 id="paper-1-harvest">Harvest</h4>
+<p>Doesn’t change any internal variable. If plant height is not
+sufficient to be harvested or too tall, stop the episode. Otherwise, put
+huge reward.</p>
+<h3 id="paper-1-perturbations">Perturbations</h3>
+<p>The environment got perturbations by outside circumstance at every
+time step.</p>
+<h4 id="paper-1-by-weather-change">By weather change</h4>
+<p>Periodically the system decided whether to change the weather or not.
+If whether is changed, also outside temperature is changed too. Apply
+gradient on inside temperature.</p>
+<h4 id="paper-1-by-rain">By rain</h4>
+<p>If it’s raining outside, set outside humidity value as maximum. Then
+apply gradient for inside air humidity. Also drop the temperature along
+the gradient.</p>
+<h4 id="paper-1-by-sunny-weather">By sunny weather</h4>
+<p>Reduce outside humidity into a random value among [10, 30], which is
+average humidity of south Korea. Applying gradient on temperature and
+increase its value +4. If temperature is increased, reduce current
+humidity among 0~6 random degrees. If current plant height is more than
+50, apply inverse gradient on air humidity to reflect transpiration
+rate.</p>
+<h4 id="paper-1-interaction-between-internal-parameters">Interaction between
+internal parameters</h4>
+<p>Current humidity of ground is updated with gradient with current air
+humidity. Current plant height increases a little bit.</p>
+<h4 id="paper-1-correction">Correction</h4>
+<p>If any value exceeds 100, reduce it to 100. Also, any negative value
+is updated into 0.</p>
+<h4 id="paper-1-human-entrance">Human Entrance</h4>
+<p>If human hasn’t appeared for 30 hours, a human enters the greenhouse
+with 1/3 probability. If a human has existed for more than 20 hours, he
+disappears with 4/5 probability.</p>
+<h4 id="paper-1-insect-attack">Insect Attack</h4>
+<p>If pesticide has been applied in 600 hours, insect doesn’t appear.
+Otherwise, it appears with 1/10 probability.</p>
+<h3 id="paper-1-interact-between-the-agent">Interact between the agent</h3>
+<p>Whenever an episode starts, the parameters are initialized. For each
+step, environment receives action from actor network and apply it. After
+that, a perturbation is applied to the environment too. Then the agent
+observes the environment.</p>
+<h3 id="paper-1-terminal-condition">Terminal condition</h3>
+<p>If any observable variable exceeds allowed range, the environment
+returns game over signal to agent and get ready for another episode.
+Also, the game may be finished by harvest action.</p>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">引用</h2><p class="citation-help">点击格式即可复制引用信息。</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="复制 APA 格式">复制 APA</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="复制 MLA 格式">复制 MLA</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="复制 Chicago 格式">复制 Chicago</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="复制 IEEE 格式">复制 IEEE</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="复制 BibTeX 格式">复制 BibTeX</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="复制 RIS 格式">复制 RIS</button></div><label for="citation-text" class="citation-preview-label">引用预览 · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B., &amp; Kim, S. (2017). Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning. In 2017 International Conference on Information and Communication Technology Convergence (ICTC) (pp. 913–918). https://doi.org/10.1109/ictc.2017.8190813</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/greenhouse-reinforcement-learning-2017/citation.bib" download>BibTeX 文件</a><a href="/papers/greenhouse-reinforcement-learning-2017/citation.ris" download>RIS 文件</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B., & Kim, S. (2017). Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning. In 2017 International Conference on Information and Communication Technology Convergence (ICTC) (pp. 913–918). https://doi.org/10.1109/ictc.2017.8190813", "mla": "Ban, Byunghyun, and Soobin Kim. “Control of Nonlinear, Complex and Black-Boxed Greenhouse System with Reinforcement Learning.” 2017 International Conference on Information and Communication Technology Convergence (ICTC), 2017, pp. 913-18. https://doi.org/10.1109/ictc.2017.8190813.", "chicago": "Ban, Byunghyun, and Soobin Kim. “Control of Nonlinear, Complex and Black-Boxed Greenhouse System with Reinforcement Learning.” In 2017 International Conference on Information and Communication Technology Convergence (ICTC), 913–18. 2017. https://doi.org/10.1109/ictc.2017.8190813.", "ieee": "B. Ban and S. Kim, “Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning,” in 2017 International Conference on Information and Communication Technology Convergence (ICTC), 2017, pp. 913–918, doi: 10.1109/ictc.2017.8190813.", "bibtex": "@inproceedings{ban2017_dbb6181095c9,\n  author = {Ban, Byunghyun and Kim, Soobin},\n  title = {{Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning}},\n  year = {2017},\n  booktitle = {2017 International Conference on Information and Communication Technology Convergence (ICTC)},\n  pages = {913--918},\n  doi = {10.1109/ictc.2017.8190813},\n  url = {https://doi.org/10.1109/ictc.2017.8190813}\n}", "ris": "TY  - CONF\nAU  - Ban, Byunghyun\nAU  - Kim, Soobin\nTI  - Control of nonlinear, complex and black-boxed greenhouse system with reinforcement learning\nPY  - 2017\nT2  - 2017 International Conference on Information and Communication Technology Convergence (ICTC)\nSP  - 913\nEP  - 918\nDO  - 10.1109/ictc.2017.8190813\nUR  - https://doi.org/10.1109/ictc.2017.8190813\nAB  - Modern control theories such as systems engineering approaches try to solve nonlinear system problems by revelation of causal relationship or co-relationship among the components; most of those approaches focus on control of sophisticatedly modeled white-boxed systems. We suggest an application of actor-critic reinforcement learning approach to control a nonlinear, complex and black-boxed system. We demonstrated this approach on artificial green-house environment simulator all of whose control inputs have several side effects so human cannot figure out how to control this system easily. Our approach succeeded to maintain the circumstance at least 20 times longer than PID and Deep Q Learning.\nLA  - en\nER  -\n"}</script></section><a class="paper-back-link" href="/zh/papers/">← 返回论文列表</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="全部页面"><a href="/zh/">Byunghyun Ban</a><a href="/zh/media/">广播与视频</a><a href="/zh/books/">著作</a><a href="/zh/lectures/">讲座与授课经历</a><a href="/zh/courses/online/">在线课程</a><a href="/zh/courses/offline/">线下培训课程</a><a href="/zh/news/">新闻报道</a><a href="/zh/papers/">论文与研究</a><a href="/zh/patents/">专利</a><a href="/zh/projects/">开发项目</a><a href="/zh/activities/">社会贡献</a><a href="/zh/memberships/">会员与专业活动</a><a href="/zh/collections/">收藏品</a><a href="/zh/contact/">讲座与合作咨询</a></nav>
+            <p><a href="/feed.xml">订阅 RSS</a> · <a href="/feed.json">JSON Feed</a></p>
+            <p>© 2026 Byunghyun Ban. 版权所有。</p>
+            <p>NaNa Lab（营业登记号：269-08-02374）负责人 Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="回到顶部">↑</button>
+</body>
+</html>

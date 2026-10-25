@@ -1,8 +1,35 @@
 
 // Static pages already contain all content. JavaScript only enhances interactions.
+// Translated copy is built into each page; this dictionary only serves dynamic UI.
+function siteLocale() {
+    const locale = (document.body?.dataset.locale || document.documentElement?.lang || 'ko').toLowerCase().split('-')[0];
+    return ['en', 'zh', 'hi', 'es', 'ar', 'fr', 'bn', 'pt'].includes(locale) ? locale : 'ko';
+}
+
+function siteLocalePath(input) {
+    const base = window.location.href || document.baseURI;
+    const destination = new URL(input, base);
+    if (destination.origin !== new URL(base).origin) return input;
+    const path = destination.pathname.replace(/^\/(?:en|zh|hi|es|ar|fr|bn|pt)(?=\/|$)/, '') || '/';
+    const locale = siteLocale();
+    destination.pathname = (locale === 'ko' ? '' : '/' + locale) + path;
+    return /^https?:\/\//i.test(input) ? destination.href : destination.pathname + destination.search + destination.hash;
+}
+
+function siteText(key, fallback, values = {}) {
+    if (!siteText.messages) {
+        try { siteText.messages = JSON.parse(document.getElementById('site-i18n')?.textContent || '{}'); }
+        catch { siteText.messages = {}; }
+    }
+    const translated = siteText.messages[key];
+    return (typeof translated === 'string' ? translated : fallback).replace(/\{(\w+)\}/g,
+        (token, name) => Object.hasOwn(values, name) ? String(values[name]) : token);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     restoreLegacyNavigation();
     setupPageMenu();
+    setupLanguageSwitcher();
     setupMobilePageNavigation();
     setupLectureFilters();
     setupMobileLists();
@@ -26,7 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function restoreLegacyNavigation() {
-    if (!['/', '/index.html'].includes(window.location.pathname)) return;
+    const localRoot = siteLocalePath('/');
+    if (![localRoot, localRoot + 'index.html'].includes(window.location.pathname)) return;
     const routes = {
         '#books': '/books/', '#books-section': '/books/', '#tab-books': '/books/',
         '#media-section': '/media/', '#media': '/media/', '#tab-media': '/media/',
@@ -41,14 +69,28 @@ function restoreLegacyNavigation() {
         '#collections': '/collections/', '#tab-collections': '/collections/', '#contact': '/contact/'
     };
     const destination = routes[window.location.hash];
-    if (destination) window.location.replace(destination);
+    if (destination) window.location.replace(siteLocalePath(destination));
+}
+
+function setupLanguageSwitcher() {
+    const switcher = document.querySelector('.language-switcher');
+    if (!switcher) return;
+    document.addEventListener('click', event => {
+        if (!switcher.contains(event.target)) switcher.open = false;
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && switcher.open) {
+            switcher.open = false;
+            switcher.querySelector('summary').focus();
+        }
+    });
 }
 
 function setupPageMenu() {
     const button = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('nav-links');
     if (!button || !menu) return;
-    const mobile = window.matchMedia('(max-width: 768px)');
+    const mobile = window.matchMedia('(max-width: 1100px)');
     const groups = Array.from(menu.querySelectorAll(':scope > .nav-item'));
     const setOpenGroup = active => {
         groups.forEach(group => {
@@ -57,7 +99,8 @@ function setupPageMenu() {
             const label = group.querySelector('.nav-main-link').textContent;
             group.classList.toggle('submenu-open', open);
             toggle.setAttribute('aria-expanded', String(open));
-            toggle.setAttribute('aria-label', `${label} 하위 메뉴 ${open ? '접기' : '펼치기'}`);
+            toggle.setAttribute('aria-label', siteText(open ? 'submenuCollapse' : 'submenuExpand',
+                `{label} 하위 메뉴 ${open ? '접기' : '펼치기'}`, { label }));
         });
     };
     const openCurrentGroup = () => {
@@ -78,13 +121,13 @@ function setupPageMenu() {
     const close = () => {
         menu.classList.remove('active');
         button.setAttribute('aria-expanded', 'false');
-        button.setAttribute('aria-label', '메뉴 열기');
+        button.setAttribute('aria-label', siteText('menuOpen', '메뉴 열기'));
         document.body.style.overflow = '';
     };
     button.addEventListener('click', () => {
         const open = menu.classList.toggle('active');
         button.setAttribute('aria-expanded', String(open));
-        button.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+        button.setAttribute('aria-label', open ? siteText('menuClose', '메뉴 닫기') : siteText('menuOpen', '메뉴 열기'));
         document.body.style.overflow = open ? 'hidden' : '';
         if (open) { openCurrentGroup(); menu.scrollTop = 0; }
     });
@@ -197,10 +240,12 @@ function setupMobilePageNavigation() {
         resetAll();
         if (stream?.hasAppended()) { stream.refresh(); return; }
         const alternate = mobile.matches && link.dataset.mobileHref;
-        link.href = alternate ? link.dataset.mobileHref : defaultRoute.href;
+        link.href = siteLocalePath(alternate ? link.dataset.mobileHref : defaultRoute.href);
         if (label) label.textContent = alternate ? link.dataset.mobileLabel : defaultRoute.label;
         if (description) description.textContent = alternate ? link.dataset.mobileHeading : defaultRoute.heading;
-        hint.textContent = mobile.matches ? '끝까지 내려온 뒤 한 번 더 위로 밀면 이동합니다.' : '끝까지 내려온 뒤 한 번 더 아래로 스크롤하면 이동합니다.';
+        hint.textContent = mobile.matches
+            ? siteText('nextSwipeHint', '끝까지 내려온 뒤 한 번 더 위로 밀면 이동합니다.')
+            : siteText('nextScrollHint', '끝까지 내려온 뒤 한 번 더 아래로 스크롤하면 이동합니다.');
         stream?.refresh();
     };
     document.addEventListener('touchstart', event => {
@@ -316,7 +361,10 @@ function setupLectureFilters() {
             if (link.dataset.lectureCategory === category) link.setAttribute('aria-current', 'true');
             else link.removeAttribute('aria-current');
         });
-        results.textContent = `${category} ${count}건 · 최신 강의순`;
+        const categoryKey = { '전체': 'categoryAll', '기업': 'categoryCompany', '공공기관': 'categoryPublic',
+            '교육기관': 'categoryEducation', '연구기관': 'categoryResearch', '컨퍼런스': 'categoryConference' }[category];
+        results.textContent = siteText('lectureResults', '{category} {count}건 · 최신 강의순',
+            { category: siteText(categoryKey, category), count });
         document.dispatchEvent(new CustomEvent('site:list-filtered', { detail: { list } }));
         if (scroll) results.scrollIntoView({ block: 'start', behavior: 'instant' });
     };
@@ -352,10 +400,10 @@ function setupMobileLists(root = document) {
         const mobile = window.matchMedia('(max-width: 768px)');
         const entries = new Map();
         const labels = {
-            media: '영상', news: '언론 보도', lectures: '강의',
-            'courses-online': '온라인 강좌', 'courses-offline': '오프라인 교육과정',
-            papers: '논문', patents: '특허', websites: '프로젝트',
-            social: '활동', membership: '회원 활동', collections: '소장품'
+            media: siteText('listMedia', '영상'), news: siteText('listNews', '언론 보도'), lectures: siteText('listLectures', '강의'),
+            'courses-online': siteText('listCoursesOnline', '온라인 강좌'), 'courses-offline': siteText('listCoursesOffline', '오프라인 교육과정'),
+            papers: siteText('listPapers', '논문'), patents: siteText('listPatents', '특허'), websites: siteText('listProjects', '프로젝트'),
+            social: siteText('listActivities', '활동'), membership: siteText('listMemberships', '회원 활동'), collections: siteText('listCollections', '소장품')
         };
         let sequence = 0;
         let scheduled = false;
@@ -372,8 +420,8 @@ function setupMobileLists(root = document) {
             entry.visible = mobile.matches ? Math.min(items.length, limit) : items.length;
             const remaining = items.length - entry.visible;
             entry.controls.hidden = !mobile.matches || remaining === 0;
-            entry.status.textContent = `${items.length}건 중 ${entry.visible}건 표시`;
-            entry.button.textContent = `${entry.label} 더 보기 (${remaining}건 남음)`;
+            entry.status.textContent = siteText('listStatus', '{total}건 중 {visible}건 표시', { total: items.length, visible: entry.visible });
+            entry.button.textContent = siteText('listMore', '{label} 더 보기 ({remaining}건 남음)', { label: entry.label, remaining });
         };
         const refresh = () => {
             scheduled = false;
@@ -414,7 +462,7 @@ function setupMobileLists(root = document) {
                     button.setAttribute('aria-controls', list.id);
                     controls.append(status, button);
                     const entry = { list, table, controls, status, button, expanded: false,
-                        label: table ? '기부 내역' : labels[section?.id.replace(/^tab-/, '')] || '목록' };
+                        label: table ? siteText('listDonations', '기부 내역') : labels[section?.id.replace(/^tab-/, '')] || siteText('listGeneric', '목록') };
                     entries.set(list, entry);
                     render(entry);
                     (table ? list.closest('.donation-table-wrap') : list).after(controls);
@@ -442,7 +490,7 @@ function setupCitationButtons(root = document) {
     root.querySelectorAll('.citation[data-citation]').forEach(item => {
         item.setAttribute('role', 'button');
         item.setAttribute('tabindex', '0');
-        item.setAttribute('aria-label', '인용 정보 복사');
+        item.setAttribute('aria-label', siteText('citationCopyLabel', '인용 정보 복사'));
         if (!item.hasAttribute('onclick')) item.addEventListener('click', () => copyCitation(item));
         item.addEventListener('keydown', event => {
             if (event.key === 'Enter' || event.key === ' ') {
@@ -458,9 +506,9 @@ async function copyCitation(item) {
     if (!citation) return;
     try {
         await navigator.clipboard.writeText(citation);
-        showToast('인용 정보를 복사했습니다.');
+        showToast(siteText('citationCopied', '인용 정보를 복사했습니다.'));
     } catch {
-        showToast('인용 정보를 복사하지 못했습니다. 브라우저의 클립보드 설정을 확인해 주세요.', 'error');
+        showToast(siteText('citationError', '인용 정보를 복사하지 못했습니다. 브라우저의 클립보드 설정을 확인해 주세요.'), 'error');
     }
 }
 
@@ -695,19 +743,19 @@ function setupContactForm() {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         if (typeof emailjs === 'undefined') {
-            showToast('문의 전송 기능을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.', 'error');
+            showToast(siteText('contactLoadError', '문의 전송 기능을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.'), 'error');
             return;
         }
 
         const btn = form.querySelector('button[type="submit"]');
         const originalText = btn.textContent;
 
-        btn.textContent = 'Sending...';
+        btn.textContent = siteText('contactSending', 'Sending...');
         btn.disabled = true;
 
         emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
             .then(() => {
-                showToast('문의가 접수되었습니다.', 'success');
+                showToast(siteText('contactSent', '문의가 접수되었습니다.'), 'success');
                 btn.textContent = originalText;
                 btn.disabled = false;
                 form.reset();
@@ -718,7 +766,7 @@ function setupContactForm() {
                 if (emailDiv) emailDiv.classList.remove('visible');
 
             }, (error) => {
-                showToast('오류가 발생했습니다. 다시 시도해주세요.', 'error');
+                showToast(siteText('contactError', '오류가 발생했습니다. 다시 시도해주세요.'), 'error');
                 console.error('EmailJS Error:', error);
                 btn.textContent = originalText;
                 btn.disabled = false;
@@ -790,7 +838,7 @@ function closeAllSelect(elmnt) {
 // --- Text Truncation ---
 
 function setupSubmenuHover() {
-    if (window.innerWidth <= 768) return; // Mobile handled by CSS default visibility
+    if (window.innerWidth <= 1100) return; // Compact navigation uses the accordion.
 
     const navItems = document.querySelectorAll('.nav-item');
     navItems.forEach(item => {

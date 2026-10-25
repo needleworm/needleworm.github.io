@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>Era of RAG-as-a-Service for Pretrained AI Applications | Byunghyun Ban</title>
+    <meta name="description" content="Large language models are now used in many knowledge-intensive applications, but their outputs still need to be grounded in reliable, recent, and domain-specific information. Al…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="Era of RAG-as-a-Service for Pretrained AI Applications">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/rag-as-a-service-2026/">
+<meta name="citation_doi" content="10.13140/RG.2.2.25757.47847">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/rag-as-a-service-2026/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/ar/papers/rag-as-a-service-2026/">
+    <link rel="alternate" type="application/rss+xml" title="RSS لـByunghyun Ban" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="موجز JSON لـByunghyun Ban" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="Era of RAG-as-a-Service for Pretrained AI Applications | Byunghyun Ban">
+    <meta property="og:description" content="Large language models are now used in many knowledge-intensive applications, but their outputs still need to be grounded in reliable, recent, and domain-specific information. Al…">
+    <meta property="og:url" content="https://bhban.kr/ar/papers/rag-as-a-service-2026/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p13-first-page-3a7c33120e5c.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/ar/#website", "url": "https://bhban.kr/ar/", "name": "Byunghyun Ban", "inLanguage": "ar"}, {"@type": "WebPage", "@id": "https://bhban.kr/ar/papers/rag-as-a-service-2026/#page", "url": "https://bhban.kr/ar/papers/rag-as-a-service-2026/", "name": "Era of RAG-as-a-Service for Pretrained AI Applications | Byunghyun Ban", "description": "Large language models are now used in many knowledge-intensive applications, but their outputs still need to be grounded in reliable, recent, and domain-specific information. Al…", "inLanguage": "ar", "mainEntity": {"@id": "https://bhban.kr/papers/rag-as-a-service-2026/#article"}, "isPartOf": {"@id": "https://bhban.kr/ar/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/rag-as-a-service-2026/#article", "url": "https://bhban.kr/papers/rag-as-a-service-2026/", "name": "Era of RAG-as-a-Service for Pretrained AI Applications", "headline": "Era of RAG-as-a-Service for Pretrained AI Applications", "author": [{"@type": "Person", "name": "Byunghyun Ban"}], "datePublished": "2026", "inLanguage": "en", "abstract": "Large language models are now used in many knowledge-intensive applications, but their outputs still need to be grounded in reliable, recent, and domain-specific information. Although many datasets and fine-tuning resources have been introduced for LLM development, many practical applications do not need to modify model weights; they need a convenient way to connect pretrained models to trusted external knowledge. Retrieval-Augmented Generation (RAG) has become a common approach for this purpose, but production RAG requires document ingestion, chunking, embedding, indexing, retrieval, reranking, access control, citation handling, and continuous evaluation. This short paper discusses RAG-as-a-Service (RAGaaS) as an emerging service model that provides retrieval, grounding, curation, and citation as a managed knowledge delivery layer. Unlike vector databases or enterprise search alone, RAGaaS is defined here as a reusable service interface that connects pretrained models to curated and citation-ready knowledge. We distinguish RAGaaS from adjacent concepts, review representative services and downstream implementations, classify likely demand areas, and propose practical criteria for evaluating RAGaaS platforms.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/rag-as-a-service-2026/#page"}, "creativeWorkStatus": "Preprint", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.13140/RG.2.2.25757.47847"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/rag-as-a-service-2026/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://bhban.kr/ar/"}, {"@type": "ListItem", "position": 2, "name": "الأبحاث", "item": "https://bhban.kr/ar/papers/"}, {"@type": "ListItem", "position": 3, "name": "Era of RAG-as-a-Service for Pretrained AI Applications", "item": "https://bhban.kr/ar/papers/rag-as-a-service-2026/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/rag-as-a-service-2026/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/rag-as-a-service-2026/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/rag-as-a-service-2026/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/rag-as-a-service-2026/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/rag-as-a-service-2026/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/rag-as-a-service-2026/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/rag-as-a-service-2026/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/rag-as-a-service-2026/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/rag-as-a-service-2026/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/rag-as-a-service-2026/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"فتح القائمة","menuClose":"إغلاق القائمة","submenuExpand":"توسيع القائمة الفرعية لـ{label}","submenuCollapse":"طي القائمة الفرعية لـ{label}","nextSwipeHint":"عند الوصول إلى النهاية، اسحب للأعلى مرة أخرى للانتقال.","nextScrollHint":"عند الوصول إلى النهاية، مرّر للأسفل مرة أخرى للانتقال.","lectureResults":"{category}: {count} · أحدث المحاضرات أولًا","categoryAll":"الكل","categoryCompany":"الشركات","categoryPublic":"المؤسسات العامة","categoryEducation":"المؤسسات التعليمية","categoryResearch":"المؤسسات البحثية","categoryConference":"المؤتمرات","listMedia":"فيديو","listNews":"التغطية الصحفية","listLectures":"المحاضرات","listCoursesOnline":"دورات عبر الإنترنت","listCoursesOffline":"البرامج التعليمية الحضورية","listPapers":"الأبحاث","listPatents":"براءات الاختراع","listProjects":"المشاريع","listActivities":"الأنشطة","listMemberships":"أنشطة العضوية","listCollections":"المقتنيات","listDonations":"سجل التبرعات","listGeneric":"القائمة","listStatus":"الإجمالي {total}؛ المعروض {visible}","listMore":"عرض المزيد من {label} (متبقٍ {remaining})","citationCopyLabel":"نسخ معلومات الاستشهاد","citationCopied":"تم نسخ معلومات الاستشهاد.","citationError":"تعذر نسخ معلومات الاستشهاد. يرجى التحقق من إعدادات الحافظة في المتصفح.","citationFormatCopied":"تم نسخ معلومات الاستشهاد بصيغة {label}.","citationManualCopy":"تم تحديد الاستشهاد. يرجى نسخه يدويًا.","contactLoadError":"تعذر تحميل وظيفة إرسال الاستفسار. يرجى المحاولة بعد قليل.","contactSent":"تم استلام استفسارك.","contactError":"حدث خطأ. يرجى المحاولة مجددًا.","contactSending":"جارٍ الإرسال...","streamRetry":"إعادة التحميل","streamError":"تعذر تحميل المحتوى التالي. أعد المحاولة أو انتقل عبر الرابط أعلاه.","streamLoading":"جارٍ تحميل محتوى {label} للمتابعة."}</script>
+</head>
+<body data-locale="ar" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">الانتقال إلى المحتوى</a>
+    <nav class="navbar" aria-label="القائمة الرئيسية"><div class="navbar-brand"><a href="/ar/" aria-label="الصفحة الرئيسية لـByunghyun Ban"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/ar/" class="nav-link nav-main-link" data-nav-page="home">نبذة</a></li><li data-nav-group="media"><a href="/ar/media/" class="nav-link nav-main-link" data-nav-page="media">الوسائط</a></li><li data-nav-group="books"><a href="/ar/books/" class="nav-link nav-main-link" data-nav-page="books">الكتب</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/ar/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">المحاضرات</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="توسيع القائمة الفرعية للمحاضرات" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="تصنيف المحاضرات"><li><a href="/ar/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">الكل</a></li><li><a href="/ar/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">الشركات</a></li><li><a href="/ar/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">المؤسسات العامة</a></li><li><a href="/ar/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">المؤسسات التعليمية</a></li><li><a href="/ar/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">مؤسسات البحث</a></li><li><a href="/ar/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">المؤتمرات</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/ar/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">الدورات</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="توسيع القائمة الفرعية للدورات" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/ar/courses/online/" data-nav-page="courses-online">عبر الإنترنت</a></li><li><a href="/ar/courses/offline/" data-nav-page="courses-offline">حضوريًا</a></li></ul></li><li data-nav-group="news"><a href="/ar/news/" class="nav-link nav-main-link" data-nav-page="news">الأخبار</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/ar/papers/" class="nav-link active nav-main-link" data-nav-page="papers">البحث والتطوير</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="توسيع القائمة الفرعية للبحث والتطوير" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/ar/papers/" data-nav-page="papers">الأبحاث</a></li><li><a href="/ar/patents/" data-nav-page="patents">براءات الاختراع</a></li><li><a href="/ar/projects/" data-nav-page="projects">المشاريع</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/ar/activities/" class="nav-link nav-main-link" data-nav-page="activities">أخرى</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="توسيع القائمة الفرعية للموضوعات الأخرى" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/ar/activities/" data-nav-page="activities">المساهمات الاجتماعية</a></li><li><a href="/ar/memberships/" data-nav-page="memberships">العضويات</a></li><li><a href="/ar/collections/" data-nav-page="collections">المقتنيات</a></li></ul></li><li data-nav-group="contact"><a href="/ar/contact/" class="btn-contact nav-main-link" data-nav-page="contact">التواصل</a></li></ul><details class="language-switcher"><summary aria-label="اختيار اللغة"><span aria-hidden="true">🌐</span> <span>العربية</span></summary><nav class="language-options" aria-label="اختيار اللغة"><a href="/papers/rag-as-a-service-2026/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/rag-as-a-service-2026/" hreflang="en" lang="en">English</a><a href="/zh/papers/rag-as-a-service-2026/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/papers/rag-as-a-service-2026/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/rag-as-a-service-2026/" hreflang="es" lang="es">Español</a><a href="/ar/papers/rag-as-a-service-2026/" hreflang="ar" lang="ar" aria-current="true" dir="rtl">العربية</a><a href="/fr/papers/rag-as-a-service-2026/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/rag-as-a-service-2026/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/papers/rag-as-a-service-2026/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="فتح القائمة">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="الموقع الحالي"><a href="/ar/">الرئيسية</a><span aria-hidden="true">/</span><a href="/ar/papers/">الأبحاث</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-2026-p13"><header><p class="paper-kind">نسخة أولية · لم تخضع لمراجعة الأقران</p><h1 id="paper-title" lang="en">Era of RAG-as-a-Service for Pretrained AI Applications</h1><p class="paper-authors">Byunghyun Ban</p><p class="paper-venue">2026</p><nav class="paper-reader-jumps" aria-label="الانتقال إلى البحث"><a href="#abstract-heading">الملخص</a><a href="#full-text">النص الكامل</a><a href="#citation-heading">استشهد</a></nav><div class="gitIcons">
+                                <a href="/papers/rag-as-a-service-2026/paper.pdf" target="_blank" rel="noreferrer" download aria-label="Era of RAG-as-a-Service for Pretrained AI Applications تنزيل النسخة الأولية كاملة بصيغة PDF" title="تنزيل PDF"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg><span class="paper-action-label">PDF</span></a>
+                                <a href="https://doi.org/10.13140/RG.2.2.25757.47847" target="_blank" rel="noreferrer" aria-label="Era of RAG-as-a-Service for Pretrained AI Applications DOI" title="DOI معلومات المصدر الأصلي"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">DOI</span></a>
+                                <a href="https://www.researchgate.net/publication/404699960_Era_of_RAG-as-a-Service_for_Pretrained_AI_Applications" target="_blank" rel="noreferrer" aria-label="Era of RAG-as-a-Service for Pretrained AI Applications معلومات المصدر الأصلي" title="معلومات المصدر الأصلي للبحث"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">المصدر</span></a>
+                                <span class="citation" data-citation="Byunghyun Ban. (2026). &quot;Era of RAG-as-a-Service for Pretrained AI Applications.&quot; ResearchGate · Preprint (not peer-reviewed). https://doi.org/10.13140/RG.2.2.25757.47847" aria-label="نسخ معلومات الاستشهاد" title="نسخ معلومات الاستشهاد"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">استشهد</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>المحتويات</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-2026-p13-introduction">Introduction</a></li><li class="toc-level-2"><a href="#paper-2026-p13-what-makes-ragaas-different">What Makes RAGaaS Different?</a></li><li class="toc-level-2"><a href="#paper-2026-p13-ragaas-ecosystems">RAGaaS Ecosystems</a></li><li class="toc-level-2"><a href="#paper-2026-p13-products-and-implementations">Products and Implementations</a></li><li class="toc-level-2"><a href="#paper-2026-p13-built-on-managed-retrieval-services">Built on Managed Retrieval Services</a></li><li class="toc-level-2"><a href="#paper-2026-p13-importance-of-knowledge-delivery">Importance of Knowledge Delivery</a></li><li class="toc-level-2"><a href="#paper-2026-p13-reference-architecture-and-evaluation-criteria">Reference Architecture and Evaluation Criteria</a></li><li class="toc-level-2"><a href="#paper-2026-p13-challenges-and-future-directions">Challenges and Future Directions</a></li><li class="toc-level-2"><a href="#paper-2026-p13-conclusion">Conclusion</a></li><li class="toc-level-2"><a href="#paper-2026-p13-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">الملخص</h2><p class="abstract" lang="en">Large language models are now used in many knowledge-intensive applications, but their outputs still need to be grounded in reliable, recent, and domain-specific information. Although many datasets and fine-tuning resources have been introduced for LLM development, many practical applications do not need to modify model weights; they need a convenient way to connect pretrained models to trusted external knowledge. Retrieval-Augmented Generation (RAG) has become a common approach for this purpose, but production RAG requires document ingestion, chunking, embedding, indexing, retrieval, reranking, access control, citation handling, and continuous evaluation. This short paper discusses RAG-as-a-Service (RAGaaS) as an emerging service model that provides retrieval, grounding, curation, and citation as a managed knowledge delivery layer. Unlike vector databases or enterprise search alone, RAGaaS is defined here as a reusable service interface that connects pretrained models to curated and citation-ready knowledge. We distinguish RAGaaS from adjacent concepts, review representative services and downstream implementations, classify likely demand areas, and propose practical criteria for evaluating RAGaaS platforms.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords">Keywords— Retrieval-Augmented Generation, RAG-as-a-Service,
+Knowledge-as-a-Service, Knowledge Delivery, Citation, Enterprise AI</p><h2 id="paper-2026-p13-introduction">Introduction</h2>
+<p>Recent AI systems are being applied across academic, industrial,
+legal, medical, educational, and administrative domains. As LLMs are
+increasingly used in scholarly and professional workflows, their
+responsible use and precise grounding are increasingly required [1]. The
+issue is not only whether a model can generate fluent text, but whether
+its output can be checked, traced, and trusted.</p>
+<p>At the same time, data resources for LLM development are growing
+quickly. Language-specific datasets, general language understanding
+benchmarks, multitask evaluation sets, instruction-tuning corpora, and
+alignment datasets have all been introduced to improve model training
+and evaluation [2-8]. These efforts show that data remains one of the
+most important resources in the LLM ecosystem.</p>
+<p>However, not every AI application needs additional training or
+fine-tuning. In many cases, the pretrained model is already strong
+enough as a language interface. The harder problem is giving that model
+access to current, curated, domain-specific, and citable knowledge. A
+customer-support assistant needs the latest product manual. A legal
+assistant needs the relevant clause or statute. A research assistant
+needs a source that can actually be cited. For these cases, changing the
+model weights may be less practical than connecting the model to an
+external knowledge source.</p>
+<p>RAG has attracted attention because it provides a practical way to
+connect pretrained models with external documents at inference time
+[9-16]. The idea is straightforward: retrieve relevant knowledge, insert
+it into the model context, and generate an answer based on that
+evidence. In production, however, the work is not so simple. A RAG
+system often requires document ingestion, parsing, chunking, embedding,
+indexing, hybrid retrieval, reranking, prompt construction, citation
+management, permission control, and evaluation [17-20].</p>
+<p>For small teams and domain users, the practical question is often not
+how to train a better model, but how to connect an already capable
+pretrained model to trustworthy knowledge. This paper argues that
+RAG-as-a-Service (RAGaaS) answers this gap by shifting the burden of
+retrieval and citation infrastructure from the application developer to
+a managed service provider.</p>
+<h2 id="paper-2026-p13-what-makes-ragaas-different">What Makes RAGaaS Different?</h2>
+<p>The term RAGaaS can easily become vague. If every vector database,
+search engine, or chatbot with documents is called RAGaaS, the term
+loses value. Therefore, this paper uses RAGaaS in a narrower sense.</p>
+<p>In this paper, RAGaaS refers to a managed service layer that provides
+retrieval, corpus management, grounding, citation, and governance
+functions for pretrained AI applications through reusable
+interfaces.</p>
+<p>This definition is intentionally broader than a vector database, but
+narrower than the entire AI application. RAGaaS does not necessarily
+replace the LLM. It also does not necessarily own the end-user
+interface. Instead, it sits between the pretrained model and the
+knowledge corpus.</p>
+<figure class="paper-figure"><img alt="Fig. 1. DIY RAG vs RAG-as-a-Service. Comparison between building a full RAG pipeline inside an application and using RAGaaS as an external managed knowledge delivery layer." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p13/figure-1.webp"/><figcaption>Fig. 1. DIY RAG vs RAG-as-a-Service. Comparison between building a
+full RAG pipeline inside an application and using RAGaaS as an external
+managed knowledge delivery layer.</figcaption></figure>
+
+<p>TABLE I. RAGaaS and adjacent concepts</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 18%"/>
+<col style="width: 24%"/>
+<col style="width: 31%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Concept</strong></th>
+<th><strong>Main function</strong></th>
+<th><strong>Limitation when used alone</strong></th>
+<th><strong>Relation to RAGaaS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vector database</td>
+<td>Stores and retrieves embeddings</td>
+<td>Usually does not handle full ingestion, citation, access control, or
+answer grounding</td>
+<td>Can be a component of RAGaaS</td>
+</tr>
+<tr>
+<td>Enterprise search</td>
+<td>Searches documents across an organization</td>
+<td>Often optimized for human search, not generative answer
+grounding</td>
+<td>Can provide retrieval input to RAGaaS</td>
+</tr>
+<tr>
+<td>Fine-tuning</td>
+<td>Modifies model behavior or style</td>
+<td>Inefficient for fast-changing facts and does not automatically
+provide citations</td>
+<td>Alternative to retrieval-based knowledge delivery</td>
+</tr>
+<tr>
+<td>Long-context prompting</td>
+<td>Puts many documents directly into context</td>
+<td>Costly and hard to scale for large or dynamic corpora</td>
+<td>Useful for small-scale cases</td>
+</tr>
+<tr>
+<td>DIY RAG</td>
+<td>Full in-house RAG pipeline</td>
+<td>High engineering and maintenance cost</td>
+<td>What RAGaaS tries to simplify</td>
+</tr>
+<tr>
+<td>Managed RAG</td>
+<td>Managed implementation of a RAG pipeline</td>
+<td>May focus mainly on retrieval infrastructure</td>
+<td>Early or partial form of RAGaaS</td>
+</tr>
+<tr>
+<td>RAG-as-a-Service</td>
+<td>Managed retrieval, curation, citation, access control, and
+evaluation</td>
+<td>Requires trust in provider and clear governance</td>
+<td>Knowledge delivery layer for pretrained AI applications</td>
+</tr>
+</tbody>
+</table></div>
+<p>The key difference is service boundary. In a conventional RAG system,
+retrieval and citation are internal modules of one application. In
+RAGaaS, they become reusable service interfaces. A single knowledge
+layer may support multiple models, products, departments, or agents.</p>
+<p>The term citation-ready is also important. In this paper,
+citation-ready means that retrieved evidence is returned with enough
+metadata for verification, such as document title, source identifier,
+section or page, retrieval timestamp, access status, and the passage
+used to support the generated claim. A citation-ready system does not
+merely retrieve text. It returns evidence in a form that can be
+inspected.</p>
+<figure class="paper-figure"><img alt="Fig. 2. Functional taxonomy of the RAGaaS ecosystem. Representative service types in the RAGaaS ecosystem, including cloud knowledge bases, managed RAG engines, agentic search, managed knowledge layers, search-as-retrieval services, and reranking components." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p13/figure-2.webp"/><figcaption>Fig. 2. Functional taxonomy of the RAGaaS ecosystem. Representative
+service types in the RAGaaS ecosystem, including cloud knowledge bases,
+managed RAG engines, agentic search, managed knowledge layers,
+search-as-retrieval services, and reranking components.</figcaption></figure>
+
+<h2 id="paper-2026-p13-ragaas-ecosystems">RAGaaS Ecosystems</h2>
+<p>Several current services already show the direction of RAGaaS,
+although they use different names.</p>
+<p>Amazon Bedrock Knowledge Bases supports a managed RAG workflow for
+connecting foundation models and agents to enterprise data sources [21].
+Google Vertex AI RAG Engine presents RAG as a managed service for
+building context-augmented LLM applications [22]. Microsoft Azure AI
+Search has introduced agentic retrieval, where an LLM helps decompose
+complex questions into subqueries for RAG and agent workflows [23].</p>
+<p>Other services are closer to an application-facing knowledge layer.
+Pinecone Assistant describes a managed knowledge layer that handles
+document processing, embeddings, retrieval, query planning, reranking,
+and answer generation [24]. Vectara positions its platform around
+managed RAG for enterprise assistants and agents [25]. Meilisearch
+explicitly discusses RAG-as-a-Service as a service model involving
+retrieval, hybrid search, citations, and access control [26]. Cohere
+Rerank does not provide a full RAGaaS platform, but it supports the
+ecosystem by improving the quality of retrieved passages before they are
+passed into the model [27].</p>
+<p>Rather than treating these products as identical, it is more useful
+to classify them by function. This classification avoids treating vendor
+products as the main contribution of the paper. The products are
+evidence of a broader shift: retrieval, grounding, and citation are
+moving from local implementation details to service-level
+infrastructure.</p>
+<h2 id="paper-2026-p13-products-and-implementations">Products and Implementations </h2>
+<h2 id="paper-2026-p13-built-on-managed-retrieval-services">Built on Managed Retrieval
+Services</h2>
+<p>RAGaaS is not only a provider-side infrastructure category. It is
+also becoming a foundation for downstream AI products and enterprise
+workflows. The clearest cases are not always labeled "RAGaaS" by
+vendors, but they share a common pattern: application builders separate
+the user-facing AI product from the managed retrieval and
+knowledge-delivery layer.</p>
+<p>CustomGPT.ai is a useful downstream SaaS example. Pinecone describes
+CustomGPT.ai as a no-code platform that helps businesses build
+domain-specific GPTs connected to their own data for use cases such as
+employee training, helpdesk automation, content generation, and
+knowledge management [29]. This case shows how a user-facing AI product
+can be built on retrieval infrastructure while focusing on workflows,
+integrations, attribution, and user experience.</p>
+<p>Ring provides a stronger managed RAG example. AWS reports that Ring
+built a production-ready, multi-locale RAG-based support chatbot using
+Amazon Bedrock Knowledge Bases [30]. The system uses metadata-driven
+filtering for region-specific content and separates ingestion,
+evaluation, and promotion workflows. AWS also reports that Ring reduced
+the cost of scaling to each additional locale by 21% while maintaining
+consistent customer experiences across 10 international regions
+[30].</p>
+<p>Lotte Shopping is another strong enterprise workflow case. AWS Korea
+describes a Slack-based AI operation assistant that uses Amazon Bedrock
+Knowledge Bases to retrieve operational documents from Confluence, Wiki,
+AWS documentation, and accumulated operational knowledge [31]. The
+system also integrates Amazon Bedrock Agents, Slack, JIRA, and RCA
+report generation, showing how managed retrieval can become part of an
+operational response workflow.</p>
+<p>Cox Automotive shows how managed retrieval can support agentic
+systems. AWS states that Amazon Bedrock Knowledge Bases handles RAG
+pipelines for Cox Automotive, searching thousands of documents in
+milliseconds using Amazon Titan embeddings [32]. In this architecture,
+the retrieval layer supports AI agents together with Amazon Bedrock,
+AgentCore, guardrails, and observability tools.</p>
+<p>Other cases should be treated more cautiously. SonoSim's
+Vectara-based question-answering system is a useful domain-specific QA
+example, but public materials do not necessarily label it as RAGaaS
+[33]. Kiwa Digital's Caitlyn and CultureQ are relevant as Bedrock-based
+generative AI applications for cultural knowledge preservation, but the
+available public AWS materials do not clearly identify Amazon Bedrock
+Knowledge Bases as the retrieval layer [34]. Conversica's Vectara case
+is better treated as an AI-search predecessor rather than a clean RAGaaS
+implementation [35].</p>
+<p>These cases are not identical, and not all of them call themselves
+RAGaaS. Still, they show the same architectural movement. Application
+builders are increasingly separating the user-facing AI product from the
+knowledge delivery infrastructure. The product may be a chatbot,
+assistant, agent, or no-code platform. Underneath it, a managed
+retrieval layer provides the current and domain-specific knowledge that
+the pretrained model needs.</p>
+<p>This matters for the argument of the paper. RAGaaS is not only an
+abstract category. It is already visible in products and workflows where
+the value comes from connecting pretrained models to curated corpora
+without building the entire RAG stack internally.</p>
+<h2 id="paper-2026-p13-importance-of-knowledge-delivery">Importance of Knowledge
+Delivery</h2>
+<p>The demand for RAGaaS comes from a simple observation. Many AI
+applications do not mainly need a new model. They need better access to
+knowledge.</p>
+<p>In enterprise settings, useful knowledge is scattered across internal
+documents, wikis, PDFs, ticket systems, customer histories, product
+databases, and shared drives. Employees may ask questions that require
+current policy documents, technical manuals, project records, or
+customer-specific information. A general pretrained model cannot be
+expected to know these materials. A RAGaaS layer can make them
+searchable and usable without requiring every organization to build a
+retrieval stack from the beginning [20-23].</p>
+<p>Customer support is another natural case. Support assistants must
+answer based on product manuals, warranty conditions, troubleshooting
+guides, release notes, and known issues. These documents change
+frequently. A model-only system may generate a fluent but outdated
+answer, while a RAG-based system can retrieve the current source and
+include supporting evidence [21,24-26,30].</p>
+<p>Citation-sensitive work is especially important. Legal, policy,
+compliance, and research tasks require more than plausible answers. They
+require references. In these fields, a generated answer is useful only
+if the user can check the supporting passage. This is where RAGaaS can
+become more than a search tool. If the service returns document title,
+section, date, page, URL, permission status, and confidence score, it
+becomes a citation layer.</p>
+<p>This point also applies to research and literature review. AI tools
+are increasingly used to summarize papers, compare claims, and assist
+scholarly workflows. Yet academic work depends on attribution and
+verifiability. If a model invents a citation, misreads a source, or
+cites a paper that does not support its claim, the issue is not just
+technical. It becomes a research-integrity problem [1]. A RAGaaS system
+designed for scholarly corpora could provide fast retrieval over curated
+papers and return citation-ready evidence.</p>
+<p>These use cases can be organized not only by domain, but also by the
+type of knowledge demand. This classification also explains why RAGaaS
+may grow even as pretrained models improve. A better model does not
+remove the need for fresh, permissioned, and verifiable knowledge. In
+many settings, the model is not the scarce resource. The scarce resource
+is reliable knowledge.</p>
+<h2 id="paper-2026-p13-reference-architecture-and-evaluation-criteria">Reference
+Architecture and Evaluation Criteria</h2>
+<p>A RAGaaS-based application can be described with a simple
+workflow:</p>
+<p>User Query</p>
+<p>-&gt; Application</p>
+<p>-&gt; Pretrained Model</p>
+<p>-&gt; RAGaaS API</p>
+<p>-&gt; Curated Corpus</p>
+<p>-&gt; Citation-Aware Answer</p>
+<p>-&gt; Evaluation and Audit Log</p>
+<p>The corpus may include company documents, manuals, research papers,
+laws, reports, tickets, product pages, and structured records. The
+important point is not only that data exists, but that it is curated.
+Old, duplicated, contradictory, or low-quality documents can easily
+damage the output of a RAG system. The RAGaaS API handles the retrieval
+side. It may parse documents, chunk them, create embeddings, build
+indexes, apply hybrid search, rerank candidates, and return relevant
+passages. In a mature service, the retrieved result should include
+metadata such as source, section, timestamp, relevance score, and access
+status. The citation layer is what makes the service useful in
+professional contexts. A retrieved passage should be returned as
+evidence, not just as hidden context for the model. This means that the
+answer can show where a claim came from and whether the cited passage
+actually supports it. The pretrained model then becomes only one part of
+the application. The model may be replaced or upgraded, while the
+curated knowledge layer remains. This is one reason RAGaaS is
+attractive: it separates model access from knowledge delivery.</p>
+<p>To compare RAGaaS platforms, evaluation criteria are needed. RAG
+evaluation is already an active topic, with work on faithfulness,
+retrieval quality, factuality, and system-level performance [18,19]. For
+RAGaaS, these criteria should be extended to include service-level
+concerns.</p>
+<h2 id="paper-2026-p13-challenges-and-future-directions">Challenges and Future
+Directions</h2>
+<p>RAGaaS is useful because it hides complexity. But hiding complexity
+does not remove it.</p>
+<p>The first challenge is privacy and access control. A retrieval system
+may touch sensitive documents, customer data, contracts, internal
+policies, or personal records. If access control is weak, the model may
+reveal information that the user should not see. This is especially
+serious when RAGaaS connects many data sources into one knowledge layer
+[23,28].</p>
+<p>The second challenge is citation faithfulness. A model may produce a
+citation that looks correct but does not actually support the sentence
+it is attached to. For RAGaaS to be trusted in academic, legal, medical,
+or compliance settings, it must evaluate whether cited evidence really
+supports the generated answer [18,19].</p>
+<p>The third challenge is latency and cost. RAG systems often combine
+retrieval, reranking, prompt augmentation, and generation. Each step can
+improve quality, but each step may also increase response time and cost.
+Reranking can reduce irrelevant passages, but it adds another processing
+stage [27].</p>
+<p>The fourth challenge is vendor lock-in. If embeddings, indexes,
+metadata schemas, and citation formats are proprietary, users may find
+it difficult to move from one provider to another. This issue may become
+more important as organizations build multiple applications on top of
+managed knowledge layers.</p>
+<p>The fifth challenge is corpus quality. RAG does not automatically
+make an application reliable. If the knowledge base is stale, noisy,
+biased, or contradictory, the system may still generate bad answers. In
+the long run, successful RAGaaS platforms may need to provide not only
+retrieval APIs but also tools for corpus cleaning, deduplication,
+authority ranking, freshness monitoring, and conflict detection.</p>
+<p>A final challenge is evaluation at the service level. Many current
+RAG evaluations focus on the answer quality of a single application.
+RAGaaS requires a broader view. A service may support many applications,
+models, and corpora. Therefore, future work should ask how managed
+knowledge layers can be evaluated across retrieval quality, citation
+faithfulness, privacy, portability, latency, localization, and corpus
+governance.</p>
+<h2 id="paper-2026-p13-conclusion"> Conclusion</h2>
+<figure class="paper-figure"><img alt="Fig. 3. Reference architecture and evaluation criteria for RAGaaS. A RAGaaS-based application connects a pretrained model to a curated corpus through retrieval, grounding, citation, and access-control APIs." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p13/figure-3.webp"/><figcaption>Fig. 3. Reference architecture and evaluation criteria for RAGaaS. A
+RAGaaS-based application connects a pretrained model to a curated corpus
+through retrieval, grounding, citation, and access-control APIs.</figcaption></figure>
+
+<p>RAG has become a common method for connecting LLMs to external
+knowledge, but production RAG is not easy to build or maintain.
+RAG-as-a-Service responds to this problem by turning retrieval,
+grounding, curation, and citation into a managed service layer.</p>
+<p>The main argument of this paper is that RAGaaS should not be
+understood merely as managed vector search. It is better viewed as a
+knowledge delivery layer for pretrained AI applications. This layer
+allows application builders to connect capable pretrained models to
+curated, permission-aware, and citation-ready knowledge without
+operating the entire RAG pipeline themselves.</p>
+<p>The paper distinguished RAGaaS from adjacent concepts, organized
+representative services into a functional taxonomy, reviewed downstream
+products and implementations, and proposed evaluation criteria for
+RAGaaS platforms. The implementation cases are important because they
+show that RAGaaS is not only a provider-side infrastructure category. It
+is already being used under customer-support chatbots, no-code GPT
+products, operational assistants, domain QA systems, and agentic
+enterprise workflows.</p>
+<p>As pretrained models become easier to access, many applications may
+compete less on model ownership and more on the quality of the knowledge
+they can retrieve, verify, and cite. In that sense, the next stage of AI
+application development may depend as much on knowledge infrastructure
+as on model capability.</p>
+<h2 id="paper-2026-p13-references">References</h2>
+<p>[1] B. Ban, "Can LLMs Review Scientific Papers?" ResearchGate
+preprint, 2026, doi:10.13140/RG.2.2.34160.83209.</p>
+<p>[2] B. Ban, "A Survey on Awesome Korean NLP Datasets," in 2022 13th
+International Conference on Information and Communication Technology
+Convergence (ICTC), pp. 1615-1620, 2022; arXiv:2112.01624.</p>
+<p>[3] A. Wang et al., "SuperGLUE: A Stickier Benchmark for
+General-Purpose Language Understanding Systems," Advances in Neural
+Information Processing Systems, 2019.</p>
+<p>[4] D. Hendrycks et al., "Measuring Massive Multitask Language
+Understanding," International Conference on Learning Representations,
+2021.</p>
+<p>[5] S. Longpre et al., "The Flan Collection: Designing Data and
+Methods for Effective Instruction Tuning," International Conference on
+Machine Learning, 2023.</p>
+<p>[6] R. Taori et al., "Stanford Alpaca: An Instruction-following LLaMA
+Model," Stanford CRFM, 2023.</p>
+<p>[7] A. Koepf et al., "OpenAssistant Conversations: Democratizing
+Large Language Model Alignment," arXiv:2304.07327, 2023.</p>
+<p>[8] M. Conover et al., "Free Dolly: Introducing the World's First
+Truly Open Instruction-Tuned LLM," Databricks, 2023.</p>
+<p>[9] P. Lewis et al., "Retrieval-Augmented Generation for
+Knowledge-Intensive NLP Tasks," Advances in Neural Information
+Processing Systems, 2020.</p>
+<p>[10] K. Guu et al., "REALM: Retrieval-Augmented Language Model
+Pre-Training," International Conference on Machine Learning, 2020.</p>
+<p>[11] V. Karpukhin et al., "Dense Passage Retrieval for Open-Domain
+Question Answering," Empirical Methods in Natural Language Processing,
+2020.</p>
+<p>[12] G. Izacard and E. Grave, "Leveraging Passage Retrieval with
+Generative Models for Open Domain Question Answering," arXiv:2007.01282,
+2020.</p>
+<p>[13] S. Borgeaud et al., "Improving Language Models by Retrieving
+from Trillions of Tokens," International Conference on Machine Learning,
+2022.</p>
+<p>[14] A. Asai et al., "Self-RAG: Learning to Retrieve, Generate, and
+Critique through Self-Reflection," International Conference on Learning
+Representations, 2024.</p>
+<p>[15] Y. Gao et al., "Retrieval-Augmented Generation for Large
+Language Models: A Survey," arXiv:2312.10997, 2023.</p>
+<p>[16] S. Zhao et al., "Retrieval Augmented Generation and Beyond: A
+Comprehensive Survey on How to Make Language Models Use External Data
+More Wisely," arXiv:2409.14924, 2024.</p>
+<p>[17] D. Edge et al., "From Local to Global: A Graph RAG Approach to
+Query-Focused Summarization," arXiv:2404.16130, 2024.</p>
+<p>[18] S. Es et al., "RAGAs: Automated Evaluation of Retrieval
+Augmented Generation," Proceedings of EACL System Demonstrations,
+2024.</p>
+<p>[19] A. Gan et al., "Retrieval Augmented Generation Evaluation in the
+Era of Large Language Models: A Comprehensive Survey," arXiv:2504.14891,
+2025.</p>
+<p>[20] E. Karakurt and A. Akbulut, "Retrieval-Augmented Generation
+(RAG) and Large Language Models (LLMs) for Enterprise Knowledge
+Management and Document Automation: A Systematic Literature Review,"
+Applied Sciences, vol. 16, no. 1, article 368, 2026.</p>
+<p>[21] Amazon Web Services, "Knowledge Bases for Amazon Bedrock," AWS
+Documentation/Product Page, accessed May 2026.</p>
+<p>[22] Google Cloud, "Vertex AI RAG Engine," Google Cloud
+Documentation/Product Blog, accessed May 2026.</p>
+<p>[23] Microsoft, "Agentic Retrieval in Azure AI Search," Microsoft
+Learn, accessed May 2026.</p>
+<p>[24] Pinecone, "A Managed Knowledge Layer for Production AI
+Applications," Pinecone Blog, accessed May 2026.</p>
+<p>[25] Vectara, "Retrieval-Augmented Generation: Everything You Need to
+Know," Vectara Product Resource, accessed May 2026.</p>
+<p>[26] Meilisearch, "RAG-as-a-Service: What It Is, Use Cases, Providers
+and More," Meilisearch Blog, accessed May 2026.</p>
+<p>[27] Cohere, "Rerank: Boost Enterprise Search and Retrieval," Cohere
+Product Documentation, accessed May 2026.</p>
+<p>[28] European Data Protection Supervisor, "Retrieval-Augmented
+Generation," EDPS TechSonar, accessed May 2026.</p>
+<p>[29] Pinecone, "Domain-specific AI agents at scale: CustomGPT.ai
+serves 10,000+ businesses with Pinecone," Pinecone Customer Story,
+accessed May 2026.</p>
+<p>[30] Amazon Web Services, "How Ring scales global customer support
+with Amazon Bedrock Knowledge Bases," AWS Machine Learning Blog,
+2026.</p>
+<p>[31] Amazon Web Services, "롯데쇼핑의 Amazon Bedrock 기반 AI운영
+어시스턴트 구축 사례," AWS Korea Tech Blog, 2025.</p>
+<p>[32] Amazon Web Services, "How Cox Automotive launched AI agents at
+scale using Amazon Bedrock AgentCore," AWS Customer Case Study, accessed
+May 2026.</p>
+<p>[33] SonoSim, "Vectara and SonoSim Announce Partnership to Bring LLMs
+to Healthcare Training," SonoSim News, 2023.</p>
+<p>[34] Amazon Web Services, "Revitalizing Indigenous Language with AI:
+Kiwa Digital + Caitlyn on AWS," AWS Partner Network Blog, 2025.</p>
+<p>[35] Vectara, "Conversica Case Study," Vectara Customer Story,
+accessed May 2026.</p>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">الاستشهاد</h2><p class="citation-help">اضغط على الصيغة لنسخ معلومات الاستشهاد.</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="نسخ بصيغة APA">نسخ APA</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة MLA">نسخ MLA</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة Chicago">نسخ بصيغة Chicago</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة IEEE">نسخ IEEE</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة BibTeX">نسخ BibTeX</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة RIS">نسخ RIS</button></div><label for="citation-text" class="citation-preview-label">معاينة الاستشهاد · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B. (2026). Era of RAG-as-a-Service for pretrained AI applications. ResearchGate. https://doi.org/10.13140/RG.2.2.25757.47847</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/rag-as-a-service-2026/citation.bib" download>ملف BibTeX</a><a href="/papers/rag-as-a-service-2026/citation.ris" download>ملف RIS</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B. (2026). Era of RAG-as-a-Service for pretrained AI applications. ResearchGate. https://doi.org/10.13140/RG.2.2.25757.47847", "mla": "Ban, Byunghyun. “Era of RAG-as-a-Service for Pretrained AI Applications.” ResearchGate, 2026. Preprint. https://doi.org/10.13140/RG.2.2.25757.47847.", "chicago": "Ban, Byunghyun. “Era of RAG-as-a-Service for Pretrained AI Applications.” Preprint, ResearchGate, 2026. https://doi.org/10.13140/RG.2.2.25757.47847.", "ieee": "B. Ban, “Era of RAG-as-a-Service for pretrained AI applications,” ResearchGate, preprint, 2026, doi: 10.13140/RG.2.2.25757.47847.", "bibtex": "@misc{ban2026_e48305d48157,\n  author = {Ban, Byunghyun},\n  title = {{Era of RAG-as-a-Service for Pretrained AI Applications}},\n  year = {2026},\n  doi = {10.13140/RG.2.2.25757.47847},\n  url = {https://www.researchgate.net/publication/404699960\\_Era\\_of\\_RAG-as-a-Service\\_for\\_Pretrained\\_AI\\_Applications},\n  note = {Preprint},\n  howpublished = {ResearchGate}\n}", "ris": "TY  - UNPB\nAU  - Ban, Byunghyun\nTI  - Era of RAG-as-a-Service for Pretrained AI Applications\nPY  - 2026\nDO  - 10.13140/RG.2.2.25757.47847\nUR  - https://www.researchgate.net/publication/404699960_Era_of_RAG-as-a-Service_for_Pretrained_AI_Applications\nAB  - Large language models are now used in many knowledge-intensive applications, but their outputs still need to be grounded in reliable, recent, and domain-specific information. Although many datasets and fine-tuning resources have been introduced for LLM development, many practical applications do not need to modify model weights; they need a convenient way to connect pretrained models to trusted external knowledge. Retrieval-Augmented Generation (RAG) has become a common approach for this purpose, but production RAG requires document ingestion, chunking, embedding, indexing, retrieval, reranking, access control, citation handling, and continuous evaluation. This short paper discusses RAG-as-a-Service (RAGaaS) as an emerging service model that provides retrieval, grounding, curation, and citation as a managed knowledge delivery layer. Unlike vector databases or enterprise search alone, RAGaaS is defined here as a reusable service interface that connects pretrained models to curated and citation-ready knowledge. We distinguish RAGaaS from adjacent concepts, review representative services and downstream implementations, classify likely demand areas, and propose practical criteria for evaluating RAGaaS platforms.\nLA  - en\nM3  - Preprint\nER  -\n"}</script></section><a class="paper-back-link" href="/ar/papers/">← العودة إلى قائمة الأبحاث</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="جميع الصفحات"><a href="/ar/">Byunghyun Ban</a><a href="/ar/media/">البث والفيديو</a><a href="/ar/books/">الكتب</a><a href="/ar/lectures/">سجل المحاضرات</a><a href="/ar/courses/online/">دورات عبر الإنترنت</a><a href="/ar/courses/offline/">البرامج التعليمية الحضورية</a><a href="/ar/news/">التغطية الصحفية</a><a href="/ar/papers/">الأوراق العلمية والبحوث</a><a href="/ar/patents/">براءات الاختراع</a><a href="/ar/projects/">مشاريع التطوير</a><a href="/ar/activities/">المساهمات الاجتماعية</a><a href="/ar/memberships/">العضويات والأنشطة المهنية</a><a href="/ar/collections/">المقتنيات</a><a href="/ar/contact/">استفسارات المحاضرات والتعاون</a></nav>
+            <p><a href="/feed.xml">الاشتراك عبر RSS</a> · <a href="/feed.json">موجز JSON</a></p>
+            <p>© 2026 Byunghyun Ban. جميع الحقوق محفوظة.</p>
+            <p>NaNa Lab (رقم تسجيل النشاط: 269-08-02374)، الممثل: Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="الانتقال إلى الأعلى">↑</button>
+</body>
+</html>

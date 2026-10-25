@@ -14,6 +14,7 @@ import xml.etree.ElementTree as ET
 from paper_pages import load_records, link_card_titles, scholar_meta, article_schema, render_article, pdf_outputs, citation_outputs
 from lecture_pages import load_lecture_records, link_lecture_cards, render_lecture
 from site_feeds import generate_feeds
+from site_locales import LOCALES, prepare_catalog, localize_outputs, alternates, route as locale_base_route
 
 ROOT = Path(__file__).resolve().parents[1]
 VOID = set('area base br col embed hr img input link meta param source track wbr'.split())
@@ -323,7 +324,7 @@ def home_mobile_section(page, source):
         + section_html(page['key'], source) + '</section>')
 
 
-def build(check=False):
+def build(check=False, prepare_locales=False):
     config = json.loads((ROOT / 'content/site.json').read_text(encoding='utf8'))
     pages = {p['key']: p for p in config['pages']}
     slugs = [p['slug'] for p in pages.values()]
@@ -509,8 +510,15 @@ def build(check=False):
             '<main class="container section-group"><header class="group-header"><h1 class="group-title">Courses</h1>'
             '<p class="group-desc">온라인 강좌와 오프라인 교육과정</p>'
             f'<nav class="sub-nav-pills" aria-label="교육과정">{links}</nav></header></main></body></html>\n')
+    if prepare_locales:
+        catalog = prepare_catalog(ROOT, outputs, manifest)
+        print(json.dumps({'localization_strings': len(catalog['strings']), 'languages': list(LOCALES), 'catalog': 'content/locales/source.json'}, ensure_ascii=False))
+        return False
+    locale_pages = localize_outputs(ROOT, outputs, manifest, previous, config['url'], [entry['from'] + '/index.html' for entry in redirects])
     ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'
+    xhtml_ns = 'http://www.w3.org/1999/xhtml'
     ET.register_namespace('',ns)
+    ET.register_namespace('xhtml', xhtml_ns)
     sitemap = ET.Element('{'+ns+'}urlset')
     current_urls = set()
     for page in pages.values():
@@ -532,6 +540,22 @@ def build(check=False):
         node = ET.SubElement(sitemap, '{' + ns + '}url')
         ET.SubElement(node, '{' + ns + '}loc').text = url
         ET.SubElement(node, '{' + ns + '}lastmod').text = manifest[record['path'].strip('/') + '/index.html']['lastmod']
+    # Every version advertises the same reciprocal language cluster.
+    for node in sitemap:
+        original_url = node.find('{' + ns + '}loc').text
+        original_path = original_url.removeprefix(config['url'])
+        for language, alternate_url in alternates(original_path, config['url']):
+            ET.SubElement(node, '{' + xhtml_ns + '}link', {'rel': 'alternate', 'hreflang': language, 'href': alternate_url})
+    for target, entry in manifest.items():
+        if entry.get('locale') in (None, 'ko'):
+            continue
+        url = config['url'] + locale_base_route(target)
+        current_urls.add(url)
+        node = ET.SubElement(sitemap, '{' + ns + '}url')
+        ET.SubElement(node, '{' + ns + '}loc').text = url
+        ET.SubElement(node, '{' + ns + '}lastmod').text = entry['lastmod']
+        for language, alternate_url in alternates(locale_base_route(entry['source']), config['url']):
+            ET.SubElement(node, '{' + xhtml_ns + '}link', {'rel': 'alternate', 'hreflang': language, 'href': alternate_url})
     for node in ET.parse(ROOT/'content/project-sitemap.xml').getroot():
         loc = node.find('{'+ns+'}loc')
         if loc is not None and loc.text not in current_urls:
@@ -551,11 +575,15 @@ def build(check=False):
                     target.write_bytes(output)
                 else:
                     target.write_text(output,encoding='utf8',newline='\n')
-    print(json.dumps({'pages':len(pages),'paper_pages':len(paper_records),'lecture_pages':len(lecture_records),'source_cards':counts,'display_cards':view_counts,'changed':stale,'check':check},ensure_ascii=False))
+    print(json.dumps({'pages':len(pages),'paper_pages':len(paper_records),'lecture_pages':len(lecture_records),'localized_pages':locale_pages,'source_cards':counts,'display_cards':view_counts,'changed':stale,'check':check},ensure_ascii=False))
     return bool(check and stale)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check',action='store_true',help='Fail when generated HTML is stale; write nothing')
-    sys.exit(build(parser.parse_args().check))
+    parser.add_argument('--prepare-locales',action='store_true',help='Refresh translation source catalog without generating pages')
+    args = parser.parse_args()
+    if args.check and args.prepare_locales:
+        parser.error('--check and --prepare-locales cannot be combined')
+    sys.exit(build(args.check, args.prepare_locales))

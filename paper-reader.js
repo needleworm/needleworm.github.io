@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (typeof text !== 'string') return;
             preview.value = text;
             preview.rows = Math.min(16, Math.max(7, text.split('\n').length + 1));
-            const label = button.textContent.replace(/\s*복사$/, '');
+            const label = { apa: 'APA', mla: 'MLA', chicago: 'Chicago', ieee: 'IEEE', bibtex: 'BibTeX', ris: 'RIS' }[key] || key;
             current.textContent = label;
             buttons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
             status.textContent = '';
@@ -31,7 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 try { copied = document.execCommand('copy'); } catch { /* manual copy below */ }
                 if (copied) button.focus({ preventScroll: true });
             }
-            status.textContent = copied ? `${label} 인용 정보를 복사했습니다.` : '인용문을 선택했습니다. 직접 복사해 주세요.';
+            status.textContent = copied
+                ? siteText('citationFormatCopied', '{label} 인용 정보를 복사했습니다.', { label })
+                : siteText('citationManualCopy', '인용문을 선택했습니다. 직접 복사해 주세요.');
         }));
     }
 

@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>MCP Design Strategy for Plant-Factory Operation AI Agents | Byunghyun Ban</title>
+    <meta name="description" content="Plant factories are increasingly equipped with sensors, cameras, automatic controllers, digital twins, and artificial intelligence models. However, integrating these components…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="MCP Design Strategy for Plant-Factory Operation AI Agents">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/plant-factory-mcp-agents-2026/">
+<meta name="citation_doi" content="10.13140/RG.2.2.29671.61608">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/plant-factory-mcp-agents-2026/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/ar/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" type="application/rss+xml" title="RSS لـByunghyun Ban" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="موجز JSON لـByunghyun Ban" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="MCP Design Strategy for Plant-Factory Operation AI Agents | Byunghyun Ban">
+    <meta property="og:description" content="Plant factories are increasingly equipped with sensors, cameras, automatic controllers, digital twins, and artificial intelligence models. However, integrating these components…">
+    <meta property="og:url" content="https://bhban.kr/ar/papers/plant-factory-mcp-agents-2026/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p05-first-page-e3803db7a1e7.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/ar/#website", "url": "https://bhban.kr/ar/", "name": "Byunghyun Ban", "inLanguage": "ar"}, {"@type": "WebPage", "@id": "https://bhban.kr/ar/papers/plant-factory-mcp-agents-2026/#page", "url": "https://bhban.kr/ar/papers/plant-factory-mcp-agents-2026/", "name": "MCP Design Strategy for Plant-Factory Operation AI Agents | Byunghyun Ban", "description": "Plant factories are increasingly equipped with sensors, cameras, automatic controllers, digital twins, and artificial intelligence models. However, integrating these components…", "inLanguage": "ar", "mainEntity": {"@id": "https://bhban.kr/papers/plant-factory-mcp-agents-2026/#article"}, "isPartOf": {"@id": "https://bhban.kr/ar/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/plant-factory-mcp-agents-2026/#article", "url": "https://bhban.kr/papers/plant-factory-mcp-agents-2026/", "name": "MCP Design Strategy for Plant-Factory Operation AI Agents", "headline": "MCP Design Strategy for Plant-Factory Operation AI Agents", "author": [{"@type": "Person", "name": "Byunghyun Ban"}], "datePublished": "2026", "inLanguage": "en", "abstract": "Plant factories are increasingly equipped with sensors, cameras, automatic controllers, digital twins, and artificial intelligence models. However, integrating these components into a practical operation AI agent requires a safe interface between AI reasoning and facility-level control. This paper proposes an MCP design strategy for plant-factory operation AI agents. The focus is not on implementing a new autonomous agent or replacing existing control systems, but on designing the Model Context Protocol layer through which an agent can read plant-factory context, call diagnostic and simulation tools, follow standard operating prompts, and update supervisory operation parameters. In the proposed strategy, MCP resources represent sensor data, crop images, nutrient states, recipes, actuator states, logs, and digital-twin states; MCP tools represent diagnosis, prediction, simulation, and bounded parameter-update functions; and MCP prompts represent user-selectable standard operating procedure templates. The key argument is that MCP should not be used as a deterministic real-time controller for plant factories. Instead, it should serve as a supervisory parameter interface that modifies setpoints, recipes, schedules, thresholds, and policy parameters used by existing 24-hour automatic control systems. This paper presents resource URI schemes, tool risk classification, parameter-update tool schemas, prompt-resource-tool binding, safety tables, and closed-loop operation workflows for MCP-mediated plant-factory operation.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/plant-factory-mcp-agents-2026/#page"}, "creativeWorkStatus": "Preprint", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.13140/RG.2.2.29671.61608"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/plant-factory-mcp-agents-2026/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://bhban.kr/ar/"}, {"@type": "ListItem", "position": 2, "name": "الأبحاث", "item": "https://bhban.kr/ar/papers/"}, {"@type": "ListItem", "position": 3, "name": "MCP Design Strategy for Plant-Factory Operation AI Agents", "item": "https://bhban.kr/ar/papers/plant-factory-mcp-agents-2026/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/plant-factory-mcp-agents-2026/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/plant-factory-mcp-agents-2026/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"فتح القائمة","menuClose":"إغلاق القائمة","submenuExpand":"توسيع القائمة الفرعية لـ{label}","submenuCollapse":"طي القائمة الفرعية لـ{label}","nextSwipeHint":"عند الوصول إلى النهاية، اسحب للأعلى مرة أخرى للانتقال.","nextScrollHint":"عند الوصول إلى النهاية، مرّر للأسفل مرة أخرى للانتقال.","lectureResults":"{category}: {count} · أحدث المحاضرات أولًا","categoryAll":"الكل","categoryCompany":"الشركات","categoryPublic":"المؤسسات العامة","categoryEducation":"المؤسسات التعليمية","categoryResearch":"المؤسسات البحثية","categoryConference":"المؤتمرات","listMedia":"فيديو","listNews":"التغطية الصحفية","listLectures":"المحاضرات","listCoursesOnline":"دورات عبر الإنترنت","listCoursesOffline":"البرامج التعليمية الحضورية","listPapers":"الأبحاث","listPatents":"براءات الاختراع","listProjects":"المشاريع","listActivities":"الأنشطة","listMemberships":"أنشطة العضوية","listCollections":"المقتنيات","listDonations":"سجل التبرعات","listGeneric":"القائمة","listStatus":"الإجمالي {total}؛ المعروض {visible}","listMore":"عرض المزيد من {label} (متبقٍ {remaining})","citationCopyLabel":"نسخ معلومات الاستشهاد","citationCopied":"تم نسخ معلومات الاستشهاد.","citationError":"تعذر نسخ معلومات الاستشهاد. يرجى التحقق من إعدادات الحافظة في المتصفح.","citationFormatCopied":"تم نسخ معلومات الاستشهاد بصيغة {label}.","citationManualCopy":"تم تحديد الاستشهاد. يرجى نسخه يدويًا.","contactLoadError":"تعذر تحميل وظيفة إرسال الاستفسار. يرجى المحاولة بعد قليل.","contactSent":"تم استلام استفسارك.","contactError":"حدث خطأ. يرجى المحاولة مجددًا.","contactSending":"جارٍ الإرسال...","streamRetry":"إعادة التحميل","streamError":"تعذر تحميل المحتوى التالي. أعد المحاولة أو انتقل عبر الرابط أعلاه.","streamLoading":"جارٍ تحميل محتوى {label} للمتابعة."}</script>
+</head>
+<body data-locale="ar" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">الانتقال إلى المحتوى</a>
+    <nav class="navbar" aria-label="القائمة الرئيسية"><div class="navbar-brand"><a href="/ar/" aria-label="الصفحة الرئيسية لـByunghyun Ban"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/ar/" class="nav-link nav-main-link" data-nav-page="home">نبذة</a></li><li data-nav-group="media"><a href="/ar/media/" class="nav-link nav-main-link" data-nav-page="media">الوسائط</a></li><li data-nav-group="books"><a href="/ar/books/" class="nav-link nav-main-link" data-nav-page="books">الكتب</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/ar/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">المحاضرات</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="توسيع القائمة الفرعية للمحاضرات" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="تصنيف المحاضرات"><li><a href="/ar/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">الكل</a></li><li><a href="/ar/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">الشركات</a></li><li><a href="/ar/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">المؤسسات العامة</a></li><li><a href="/ar/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">المؤسسات التعليمية</a></li><li><a href="/ar/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">مؤسسات البحث</a></li><li><a href="/ar/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">المؤتمرات</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/ar/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">الدورات</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="توسيع القائمة الفرعية للدورات" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/ar/courses/online/" data-nav-page="courses-online">عبر الإنترنت</a></li><li><a href="/ar/courses/offline/" data-nav-page="courses-offline">حضوريًا</a></li></ul></li><li data-nav-group="news"><a href="/ar/news/" class="nav-link nav-main-link" data-nav-page="news">الأخبار</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/ar/papers/" class="nav-link active nav-main-link" data-nav-page="papers">البحث والتطوير</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="توسيع القائمة الفرعية للبحث والتطوير" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/ar/papers/" data-nav-page="papers">الأبحاث</a></li><li><a href="/ar/patents/" data-nav-page="patents">براءات الاختراع</a></li><li><a href="/ar/projects/" data-nav-page="projects">المشاريع</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/ar/activities/" class="nav-link nav-main-link" data-nav-page="activities">أخرى</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="توسيع القائمة الفرعية للموضوعات الأخرى" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/ar/activities/" data-nav-page="activities">المساهمات الاجتماعية</a></li><li><a href="/ar/memberships/" data-nav-page="memberships">العضويات</a></li><li><a href="/ar/collections/" data-nav-page="collections">المقتنيات</a></li></ul></li><li data-nav-group="contact"><a href="/ar/contact/" class="btn-contact nav-main-link" data-nav-page="contact">التواصل</a></li></ul><details class="language-switcher"><summary aria-label="اختيار اللغة"><span aria-hidden="true">🌐</span> <span>العربية</span></summary><nav class="language-options" aria-label="اختيار اللغة"><a href="/papers/plant-factory-mcp-agents-2026/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/plant-factory-mcp-agents-2026/" hreflang="en" lang="en">English</a><a href="/zh/papers/plant-factory-mcp-agents-2026/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/papers/plant-factory-mcp-agents-2026/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/plant-factory-mcp-agents-2026/" hreflang="es" lang="es">Español</a><a href="/ar/papers/plant-factory-mcp-agents-2026/" hreflang="ar" lang="ar" aria-current="true" dir="rtl">العربية</a><a href="/fr/papers/plant-factory-mcp-agents-2026/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/plant-factory-mcp-agents-2026/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/papers/plant-factory-mcp-agents-2026/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="فتح القائمة">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="الموقع الحالي"><a href="/ar/">الرئيسية</a><span aria-hidden="true">/</span><a href="/ar/papers/">الأبحاث</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-2026-p05"><header><p class="paper-kind">نسخة أولية · لم تخضع لمراجعة الأقران</p><h1 id="paper-title" lang="en">MCP Design Strategy for Plant-Factory Operation AI Agents</h1><p class="paper-authors">Byunghyun Ban</p><p class="paper-venue">2026</p><nav class="paper-reader-jumps" aria-label="الانتقال إلى البحث"><a href="#abstract-heading">الملخص</a><a href="#full-text">النص الكامل</a><a href="#citation-heading">استشهد</a></nav><div class="gitIcons">
+                                <a href="/papers/plant-factory-mcp-agents-2026/paper.pdf" target="_blank" rel="noreferrer" download aria-label="MCP Design Strategy for Plant-Factory Operation AI Agents تنزيل النسخة الأولية كاملة بصيغة PDF" title="تنزيل PDF"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg><span class="paper-action-label">PDF</span></a>
+                                <a href="https://doi.org/10.13140/RG.2.2.29671.61608" target="_blank" rel="noreferrer" aria-label="MCP Design Strategy for Plant-Factory Operation AI Agents DOI" title="DOI معلومات المصدر الأصلي"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">DOI</span></a>
+                                <a href="https://www.researchgate.net/publication/404500785_MCP_Design_Strategy_for_Plant-Factory_Operation_AI_Agents" target="_blank" rel="noreferrer" aria-label="MCP Design Strategy for Plant-Factory Operation AI Agents معلومات المصدر الأصلي" title="معلومات المصدر الأصلي للبحث"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">المصدر</span></a>
+                                <span class="citation" data-citation="Byunghyun Ban. (2026). &quot;MCP Design Strategy for Plant-Factory Operation AI Agents.&quot; ResearchGate · Preprint (not peer-reviewed). https://doi.org/10.13140/RG.2.2.29671.61608" aria-label="نسخ معلومات الاستشهاد" title="نسخ معلومات الاستشهاد"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">استشهد</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>المحتويات</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-2026-p05-introduction">1. Introduction</a></li><li class="toc-level-2"><a href="#paper-2026-p05-background-ai-components-required-by-plant-factory-operation-agents">2. Background: AI Components Required by Plant-Factory Operation Agents</a></li><li class="toc-level-3"><a href="#paper-2026-p05-machine-vision-and-crop-state-perception">2.1 Machine vision and crop-state perception</a></li><li class="toc-level-3"><a href="#paper-2026-p05-stress-and-disorder-detection">2.2 Stress and disorder detection</a></li><li class="toc-level-3"><a href="#paper-2026-p05-nutrient-solution-intelligence-and-sensor-correction">2.3 Nutrient-solution intelligence and sensor correction</a></li><li class="toc-level-3"><a href="#paper-2026-p05-environmental-control-and-reinforcement-learning">2.4 Environmental control and reinforcement learning</a></li><li class="toc-level-3"><a href="#paper-2026-p05-digital-twins-and-remote-operation">2.5 Digital twins and remote operation</a></li><li class="toc-level-3"><a href="#paper-2026-p05-dataset-driven-product-inspection">2.6 Dataset-driven product inspection</a></li><li class="toc-level-2"><a href="#paper-2026-p05-position-of-this-paper">3. Position of This Paper</a></li><li class="toc-level-3"><a href="#paper-2026-p05-design-strategy-paper-without-implementation-claim">3.1 Design-strategy paper without implementation claim</a></li><li class="toc-level-3"><a href="#paper-2026-p05-mcp-as-a-supervisory-parameter-interface">3.2 MCP as a supervisory parameter interface</a></li><li class="toc-level-3"><a href="#paper-2026-p05-difference-between-mcp-operation-and-real-time-control">3.3 Difference between MCP operation and real-time control</a></li><li class="toc-level-2"><a href="#paper-2026-p05-mcp-feature-mapping-for-plant-factory-operation">4. MCP Feature Mapping for Plant-Factory Operation</a></li><li class="toc-level-2"><a href="#paper-2026-p05-control-hierarchy-for-mcp-based-plant-factory-operation">5. Control Hierarchy for MCP-Based Plant-Factory Operation</a></li><li class="toc-level-2"><a href="#paper-2026-p05-from-plant-factory-ai-components-to-mcp-implications">6. From Plant-Factory AI Components to MCP Implications</a></li><li class="toc-level-2"><a href="#paper-2026-p05-mcp-resource-design-strategy">7. MCP Resource Design Strategy</a></li><li class="toc-level-3"><a href="#paper-2026-p05-resource-principles">7.1 Resource principles</a></li><li class="toc-level-3"><a href="#paper-2026-p05-proposed-resource-uri-scheme">7.2 Proposed resource URI scheme</a></li><li class="toc-level-3"><a href="#paper-2026-p05-resource-categories">7.3 Resource categories</a></li><li class="toc-level-3"><a href="#paper-2026-p05-resource-validation-rules">7.4 Resource validation rules</a></li><li class="toc-level-3"><a href="#paper-2026-p05-resource-subscription-strategy">7.5 Resource subscription strategy</a></li><li class="toc-level-2"><a href="#paper-2026-p05-mcp-tool-design-strategy">8. MCP Tool Design Strategy</a></li><li class="toc-level-3"><a href="#paper-2026-p05-tool-principles">8.1 Tool principles</a></li><li class="toc-level-3"><a href="#paper-2026-p05-risk-classification">8.2 Risk classification</a></li><li class="toc-level-3"><a href="#paper-2026-p05-diagnostic-tools">8.3 Diagnostic tools</a></li><li class="toc-level-3"><a href="#paper-2026-p05-nutrient-intelligence-tools">8.4 Nutrient-intelligence tools</a></li><li class="toc-level-3"><a href="#paper-2026-p05-digital-twin-and-simulation-tools">8.5 Digital-twin and simulation tools</a></li><li class="toc-level-3"><a href="#paper-2026-p05-parameter-update-tool-schema-examples">8.6 Parameter-update tool schema examples</a></li><li class="toc-level-3"><a href="#paper-2026-p05-error-handling-and-rejection-logic">8.7 Error handling and rejection logic</a></li><li class="toc-level-2"><a href="#paper-2026-p05-mcp-prompt-design-strategy">9. MCP Prompt Design Strategy</a></li><li class="toc-level-3"><a href="#paper-2026-p05-sop-prompts-as-workflow-templates">9.1 SOP prompts as workflow templates</a></li><li class="toc-level-3"><a href="#paper-2026-p05-proposed-prompt-library">9.2 Proposed prompt library</a></li><li class="toc-level-3"><a href="#paper-2026-p05-prompt-resource-tool-binding">9.3 Prompt-resource-tool binding</a></li><li class="toc-level-2"><a href="#paper-2026-p05-parameter-oriented-closed-loop-workflow">10. Parameter-Oriented Closed-Loop Workflow</a></li><li class="toc-level-3"><a href="#paper-2026-p05-observe">10.1 Observe</a></li><li class="toc-level-3"><a href="#paper-2026-p05-interpret">10.2 Interpret</a></li><li class="toc-level-3"><a href="#paper-2026-p05-simulate">10.3 Simulate</a></li><li class="toc-level-3"><a href="#paper-2026-p05-recommend">10.4 Recommend</a></li><li class="toc-level-3"><a href="#paper-2026-p05-approve">10.5 Approve</a></li><li class="toc-level-3"><a href="#paper-2026-p05-update-parameters">10.6 Update parameters</a></li><li class="toc-level-3"><a href="#paper-2026-p05-automatic-control">10.7 Automatic control</a></li><li class="toc-level-3"><a href="#paper-2026-p05-audit">10.8 Audit</a></li><li class="toc-level-2"><a href="#paper-2026-p05-reference-mcp-server-architecture">11. Reference MCP Server Architecture</a></li><li class="toc-level-2"><a href="#paper-2026-p05-case-scenarios">12. Case Scenarios</a></li><li class="toc-level-3"><a href="#paper-2026-p05-lettuce-growth-monitoring-and-lighting-policy-update">12.1 Lettuce growth monitoring and lighting policy update</a></li><li class="toc-level-3"><a href="#paper-2026-p05-tip-burn-risk-triage-and-climate-setpoint-review">12.2 Tip-burn risk triage and climate setpoint review</a></li><li class="toc-level-3"><a href="#paper-2026-p05-nutrient-imbalance-diagnosis-and-target-profile-update">12.3 Nutrient imbalance diagnosis and target-profile update</a></li><li class="toc-level-3"><a href="#paper-2026-p05-digital-twin-based-remote-operation">12.4 Digital-twin-based remote operation</a></li><li class="toc-level-3"><a href="#paper-2026-p05-postharvest-product-inspection">12.5 Postharvest product inspection</a></li><li class="toc-level-2"><a href="#paper-2026-p05-safety-security-and-governance">13. Safety, Security, and Governance</a></li><li class="toc-level-3"><a href="#paper-2026-p05-safety-risks-and-mitigations">13.1 Safety risks and mitigations</a></li><li class="toc-level-3"><a href="#paper-2026-p05-authorization-and-role-based-access">13.2 Authorization and role-based access</a></li><li class="toc-level-3"><a href="#paper-2026-p05-separation-of-recommendation-and-parameter-update">13.3 Separation of recommendation and parameter update</a></li><li class="toc-level-3"><a href="#paper-2026-p05-prompt-injection-and-tool-misuse">13.4 Prompt injection and tool misuse</a></li><li class="toc-level-3"><a href="#paper-2026-p05-audit-and-accountability">13.5 Audit and accountability</a></li><li class="toc-level-2"><a href="#paper-2026-p05-discussion">14. Discussion</a></li><li class="toc-level-3"><a href="#paper-2026-p05-why-parameter-oriented-mcp-is-appropriate-for-plant-factories">14.1 Why parameter-oriented MCP is appropriate for plant factories</a></li><li class="toc-level-3"><a href="#paper-2026-p05-why-mcp-should-not-replace-automatic-control-systems">14.2 Why MCP should not replace automatic control systems</a></li><li class="toc-level-3"><a href="#paper-2026-p05-limitations-of-this-design-strategy-paper">14.3 Limitations of this design-strategy paper</a></li><li class="toc-level-3"><a href="#paper-2026-p05-from-ai-monitoring-to-mcp-mediated-biological-manufacturing">14.4 From AI monitoring to MCP-mediated biological manufacturing</a></li><li class="toc-level-2"><a href="#paper-2026-p05-conclusion">15. Conclusion</a></li><li class="toc-level-2"><a href="#paper-2026-p05-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">الملخص</h2><p class="abstract" lang="en">Plant factories are increasingly equipped with sensors, cameras, automatic controllers, digital twins, and artificial intelligence models. However, integrating these components into a practical operation AI agent requires a safe interface between AI reasoning and facility-level control. This paper proposes an MCP design strategy for plant-factory operation AI agents. The focus is not on implementing a new autonomous agent or replacing existing control systems, but on designing the Model Context Protocol layer through which an agent can read plant-factory context, call diagnostic and simulation tools, follow standard operating prompts, and update supervisory operation parameters. In the proposed strategy, MCP resources represent sensor data, crop images, nutrient states, recipes, actuator states, logs, and digital-twin states; MCP tools represent diagnosis, prediction, simulation, and bounded parameter-update functions; and MCP prompts represent user-selectable standard operating procedure templates. The key argument is that MCP should not be used as a deterministic real-time controller for plant factories. Instead, it should serve as a supervisory parameter interface that modifies setpoints, recipes, schedules, thresholds, and policy parameters used by existing 24-hour automatic control systems. This paper presents resource URI schemes, tool risk classification, parameter-update tool schemas, prompt-resource-tool binding, safety tables, and closed-loop operation workflows for MCP-mediated plant-factory operation.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords"><strong>Keywords: Model Context Protocol, MCP, plant factory, AI
+agent, controlled-environment agriculture, supervisory control,
+parameter update, digital twin, nutrient solution, machine vision, safe
+closed-loop cultivation</strong></p><h2 id="paper-2026-p05-introduction">1. Introduction</h2>
+<p>Plant factories have developed into highly instrumented
+controlled-environment agricultural systems. Modern plant factories may
+include RGB cameras, RGB-D cameras, hyperspectral imaging devices, pH
+and electrical conductivity sensors, ion-selective electrodes,
+temperature and humidity sensors, CO2 sensors, LED lighting systems,
+HVAC devices, irrigation systems, nutrient tanks, dosing controllers,
+automatic control software, digital dashboards, and digital twins.
+Artificial intelligence has been applied to crop-state perception,
+fresh-weight estimation, stress detection, nutrient diagnosis, growth
+prediction, environmental control, digital twins, and product-level
+inspection [1-29].</p>
+<p>However, the existence of individual AI models does not automatically
+produce a plant-factory operation agent. A model can estimate lettuce
+fresh weight [4-7,20,25-29], detect tip-burn or nutrient-deficiency
+symptoms [8-10,23,24], correct ion-selective electrode measurements
+[11-14], explore control policies [15], or support digital-twin
+simulation [16-18]. An operation agent, by contrast, must coordinate
+heterogeneous data and tools under operational constraints. It must read
+cultivation context, interpret plant and nutrient states, generate
+recommendations, simulate candidate interventions, request approval,
+update facility operation parameters, and produce auditable records.</p>
+<p>In this paper, a plant-factory operation AI agent is defined as a
+supervisory AI system that can interpret plant-factory context, invoke
+diagnostic and simulation tools, generate operation recommendations,
+request bounded updates to supervisory control parameters through MCP
+tools, and produce auditable operation records under human and
+system-level safety constraints.</p>
+<p>This paper does not assume that an AI agent directly performs
+real-time physical control of plant-factory devices. In commercial plant
+factories, lighting, HVAC, irrigation, CO2 supply, and nutrient dosing
+are usually handled by automatic control systems that operate
+continuously. Therefore, the proposed MCP layer is positioned as a
+supervisory parameter interface, not as a deterministic real-time
+controller. The operation agent reads plant-factory context through MCP
+resources and modifies the direction of operation by updating setpoints,
+recipes, schedules, thresholds, and control-policy parameters through
+bounded MCP tools. The physical execution of these parameters remains
+the responsibility of existing control systems, PLCs, embedded
+controllers, SCADA systems, or facility-level automation software.</p>
+<p>This position is especially appropriate for plant-factory operation
+because many agronomic decisions are evaluated over multi-hour, daily,
+crop-stage, or production-cycle timescales rather than sub-second
+control cycles. A lettuce canopy does not need a language model to
+switch a pump on for three seconds; it may need a supervisory system
+that notices slow growth, checks sensor and nutrient context, simulates
+recipe changes, and recommends a revised lighting or nutrient policy for
+the next several hours or days.</p>
+<p>The purpose of this paper is to propose a design strategy for that
+MCP layer. This paper is a design-strategy and reference-architecture
+paper. It does not report a crop-growth experiment, a full MCP
+deployment, or a real facility implementation. Instead, it derives
+protocol-layer design requirements from plant-factory AI literature and
+proposes an MCP design strategy for connecting operation AI agents with
+plant-factory resources, diagnostic tools, standard operating prompts,
+simulation tools, parameter-update tools, and existing automatic control
+systems.</p>
+<h2 id="paper-2026-p05-background-ai-components-required-by-plant-factory-operation-agents">2.
+Background: AI Components Required by Plant-Factory Operation
+Agents</h2>
+<h3 id="paper-2026-p05-machine-vision-and-crop-state-perception">2.1 Machine vision and
+crop-state perception</h3>
+<p>Machine vision is one of the most mature AI components for
+plant-factory operation. A plant-factory agent must know the crop state
+before making operational recommendations. Previous studies have
+reviewed machine vision in plant factories and deep learning in
+controlled-environment agriculture, identifying growth monitoring,
+fresh-weight estimation, stress detection, robot operation, and product
+inspection as major applications [1,2].</p>
+<p>Optical-flow analysis and machine learning have been used to predict
+lettuce growth from leaf movement, showing that plant growth can be
+interpreted as a temporal visual process [3]. RGB-D imaging, CNNs,
+segmentation, multimodal fusion, point-cloud completion, and
+production-oriented imaging setups have been used to estimate fresh
+weight, growth parameters, seedling status, and phenotypic traits
+[4-7,20-22,25-29]. These studies provide diagnostic and prediction
+functions that can be exposed as MCP tools.</p>
+<h3 id="paper-2026-p05-stress-and-disorder-detection">2.2 Stress and disorder
+detection</h3>
+<p>Plant-factory agents should not only estimate biomass but also detect
+risk. Tip-burn detection studies show that deep-learning models can
+identify physiological disorders in indoor or plant-factory lettuce
+[8,9]. Nutrient-deficiency diagnosis has also been studied using
+multidimensional image analysis, hyperspectral imaging, and
+machine-vision methods [10,23,24]. These models can support early
+warning, anomaly triage, and intervention planning.</p>
+<h3 id="paper-2026-p05-nutrient-solution-intelligence-and-sensor-correction">2.3
+Nutrient-solution intelligence and sensor correction</h3>
+<p>Nutrient-solution management is a critical hidden layer of
+plant-factory operation. In hydroponic systems, pH and EC alone cannot
+fully describe individual ion balance. Ion-selective electrodes can
+measure individual ions, but they are affected by interference, drift,
+kinetic artifacts, and electrical artifacts. Machine-learning correction
+of ion interference, ODE-network modeling of nutrient-solution dynamics,
+deep-learning artifact removal from ISEs, and automated
+nutrient-solution management systems have been proposed to address these
+problems [11-14].</p>
+<p>For an MCP-based operation agent, these studies imply that nutrient
+data should not be treated as raw sensor values only. The agent should
+read corrected nutrient resources, inspect sensor confidence, call
+nutrient-diagnosis tools, and simulate target-profile changes before
+requesting any update to the facility nutrient-management
+controller.</p>
+<h3 id="paper-2026-p05-environmental-control-and-reinforcement-learning">2.4
+Environmental control and reinforcement learning</h3>
+<p>Plant-factory control is a multivariable problem. Lighting, HVAC,
+CO2, airflow, irrigation, and nutrient conditions affect crop growth,
+energy use, physiological stress, and production schedules.
+Reinforcement learning has been applied to nonlinear and black-boxed
+greenhouse control, demonstrating a transferable method for
+controlled-environment agriculture [15]. Although greenhouse systems and
+plant factories are not identical, both involve complex actuator
+interactions and incomplete system knowledge.</p>
+<p>In the MCP design proposed here, reinforcement learning or
+optimization models are not treated as direct actuator drivers. Instead,
+they are treated as simulation or recommendation tools that may propose
+parameter updates for existing automatic controllers.</p>
+<h3 id="paper-2026-p05-digital-twins-and-remote-operation">2.5 Digital twins and remote
+operation</h3>
+<p>Digital twins can represent plant-factory states in virtual
+environments. They can integrate sensor data, spatial layouts, crop
+models, environmental maps, and control logic. Studies on plant-factory
+digital twins and mixed-reality interfaces show that digital twins can
+support monitoring, simulation, and operator-centered remote control
+[16-18]. In the proposed architecture, the digital twin can act as both
+a resource server and a simulation tool server.</p>
+<h3 id="paper-2026-p05-dataset-driven-product-inspection">2.6 Dataset-driven product
+inspection</h3>
+<p>Plant-factory operation extends beyond cultivation. Commercial
+systems also require product grading, sorting, measurement, and quality
+assessment. The CongNaMul dataset demonstrates how crop-product
+inspection can be formulated as image classification, segmentation,
+decomposition, and physical feature measurement tasks [19]. Such methods
+can be exposed as postharvest inspection tools in an MCP-based operation
+workflow.</p>
+<h2 id="paper-2026-p05-position-of-this-paper">3. Position of This Paper</h2>
+<h3 id="paper-2026-p05-design-strategy-paper-without-implementation-claim">3.1
+Design-strategy paper without implementation claim</h3>
+<p>This paper does not claim that a full plant-factory MCP system has
+been implemented or validated in a commercial facility. Its purpose is
+to define a protocol-layer design strategy. The contribution lies in
+mapping plant-factory AI components to MCP resources, tools, prompts,
+parameter-update workflows, and safety structures.</p>
+<p>This framing matters because implementation papers and
+design-strategy papers should be evaluated differently. A plant-growth
+experiment asks whether a biological treatment improved yield. A
+software deployment paper asks whether a system worked in a facility.
+This paper asks how MCP should be designed if plant-factory operation AI
+agents are to interact safely with existing automatic control
+systems.</p>
+<h3 id="paper-2026-p05-mcp-as-a-supervisory-parameter-interface">3.2 MCP as a
+supervisory parameter interface</h3>
+<p>The central claim of this paper is that MCP should expose
+plant-factory operation parameters, not replace facility controllers.
+The proposed MCP layer allows an operation AI agent to read cultivation
+context, interpret crop and nutrient states, simulate candidate changes,
+and update supervisory parameters such as setpoints, recipes, schedules,
+thresholds, and policy values. Continuous physical control remains
+within existing automatic control systems.</p>
+<blockquote>
+<p>Operation AI Agent</p>
+<p>↓</p>
+<p>MCP Resource / Tool / Prompt Layer</p>
+<p>↓</p>
+<p>Supervisory parameter update</p>
+<p>↓</p>
+<p>Existing automatic control system</p>
+<p>↓</p>
+<p>Physical actuators</p>
+</blockquote>
+<h3 id="paper-2026-p05-difference-between-mcp-operation-and-real-time-control">3.3
+Difference between MCP operation and real-time control</h3>
+<p>MCP is an integration protocol that enables language-model
+applications to access context and external capabilities through
+structured client-server interactions [30,31]. It is not a deterministic
+real-time control protocol. Time-critical and safety-critical control
+must remain in PLCs, SCADA systems, embedded controllers, automatic
+climate controllers, nutrient controllers, and physical interlock
+systems.</p>
+<p>Therefore, MCP tools should request bounded parameter updates.
+Lower-level controllers should enforce timing, hard limits, fail-safe
+behavior, and device-level execution.</p>
+<h2 id="paper-2026-p05-mcp-feature-mapping-for-plant-factory-operation">4. MCP Feature
+Mapping for Plant-Factory Operation</h2>
+<p>MCP is suitable for plant-factory operation agents because its core
+primitives map naturally onto the needs of controlled-environment
+cultivation. Resources provide context, tools provide callable
+functions, and prompts provide workflow templates [30-34]. Resources are
+identified by URIs and may support subscription and list-change
+capabilities; tools include schema metadata and are model-invocable;
+prompts are exposed as structured templates intended for user-controlled
+selection or invocation.</p>
+<p>MCP tools are designed to be model-controlled, but the official tools
+specification also emphasizes trust and safety, including
+human-in-the-loop confirmation and the ability to deny tool invocations
+[33]. This is especially important in plant factories because some tools
+may alter operational parameters that are later executed by physical
+controllers.</p>
+<p><strong>Table 1. MCP features and plant-factory design
+implications.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 21%"/>
+<col style="width: 27%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>MCP feature</strong></th>
+<th><strong>Role in MCP</strong></th>
+<th><strong>Plant-factory operation implication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base protocol</td>
+<td>JSON-RPC-based client-server messaging</td>
+<td>Operation agents communicate with plant-factory servers through
+structured requests and responses</td>
+</tr>
+<tr>
+<td>Lifecycle</td>
+<td>Initialization, capability negotiation, operation, shutdown</td>
+<td>The agent discovers whether each server is read-only, diagnostic,
+simulation-capable, or parameter-update-capable</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>Contextual data identified by URIs</td>
+<td>Sensor values, crop images, nutrient states, actuator states,
+recipes, logs, and digital-twin states</td>
+</tr>
+<tr>
+<td>Resource subscription</td>
+<td>Change notifications for selected resources</td>
+<td>Environment, nutrient, alarm, and actuator-state updates can be
+monitored without direct device control</td>
+</tr>
+<tr>
+<td>Tools</td>
+<td>Callable functions exposed by servers</td>
+<td>Diagnosis, prediction, simulation, recommendation, and bounded
+parameter-update functions</td>
+</tr>
+<tr>
+<td>Tool schemas</td>
+<td>JSON Schema-based argument validation</td>
+<td>Zone, parameter, unit, range, duration, approval ID, and simulation
+ID can be enforced at the interface level</td>
+</tr>
+<tr>
+<td>Prompts</td>
+<td>Structured prompt templates</td>
+<td>SOP-style workflows for reports, nutrient diagnosis, tip-burn
+triage, and control-action review</td>
+</tr>
+<tr>
+<td>Authorization</td>
+<td>Transport-level authorization for HTTP-based deployments</td>
+<td>Role-based access can restrict who may read resources, run
+simulations, or approve parameter updates</td>
+</tr>
+<tr>
+<td>Logging</td>
+<td>Cross-cutting utility</td>
+<td>Every resource read, tool call, approval, and parameter update can
+be recorded</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="paper-2026-p05-control-hierarchy-for-mcp-based-plant-factory-operation">5.
+Control Hierarchy for MCP-Based Plant-Factory Operation</h2>
+<p>The proposed MCP design separates AI reasoning from low-level
+physical execution.</p>
+<p><strong>Table 2. Control hierarchy for MCP-based plant-factory
+operation agents.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 21%"/>
+<col style="width: 26%"/>
+<col style="width: 27%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Layer</strong></th>
+<th><strong>Function</strong></th>
+<th><strong>MCP involvement</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical safety layer</td>
+<td>Emergency stop, hard interlock, electrical/mechanical
+protection</td>
+<td>None or indirect</td>
+<td>CO2 upper-limit interlock, pump dry-run protection</td>
+</tr>
+<tr>
+<td>Automatic control layer</td>
+<td>Continuous 24-hour control</td>
+<td>Not directly controlled by the agent</td>
+<td>PID, PLC, SCADA, embedded climate/nutrient controllers</td>
+</tr>
+<tr>
+<td>Supervisory parameter layer</td>
+<td>Setpoint, recipe, schedule, threshold, policy update</td>
+<td>Main MCP tool target</td>
+<td>Change target PPFD, nutrient target profile, irrigation
+schedule</td>
+</tr>
+<tr>
+<td>AI operation layer</td>
+<td>Interpretation, recommendation, simulation, audit</td>
+<td>MCP client behavior</td>
+<td>Diagnose slow growth, recommend recipe update, request approval</td>
+</tr>
+<tr>
+<td>Human governance layer</td>
+<td>Approval, exception handling, accountability</td>
+<td>Prompt/tool policy</td>
+<td>Manager approves high-risk parameter changes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The core design principle is that MCP tools should update what the
+automatic controller should aim for, not micromanage how the controller
+drives physical actuators in real time.</p>
+<figure class="paper-figure">
+<img alt="Figure 1. MCP architecture for plant-factory operation AI agents." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p05/figure-1.webp"/>
+<figcaption><p>Figure 1. MCP architecture for plant-factory operation AI
+agents.</p></figcaption>
+</figure>
+<figure class="paper-figure"><img alt="Figure 2. Five-layer control hierarchy for MCP-based plant-factory operation. The AI agent changes supervisory parameters, while the automatic control layer performs continuous 24-hour regulation and the physical safety layer remains always active." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p05/figure-2.webp"/><figcaption>Figure 2. <em>Five-layer control hierarchy for MCP-based
+plant-factory operation. The AI agent changes supervisory parameters,
+while the automatic control layer performs continuous 24-hour regulation
+and the physical safety layer remains always active.</em></figcaption></figure>
+
+<h2 id="paper-2026-p05-from-plant-factory-ai-components-to-mcp-implications">6. From
+Plant-Factory AI Components to MCP Implications</h2>
+<p>Existing AI studies justify specific MCP resources and tools. The
+literature does not merely provide background; it determines which
+functions a plant-factory operation agent should be able to call.</p>
+<p><strong>Table 3. AI component to MCP implication
+mapping.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:100%;">
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 23%"/>
+<col style="width: 43%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Existing AI component</strong></th>
+<th><strong>Representative references</strong></th>
+<th><strong>MCP implication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Machine-vision review and CEA deep learning</td>
+<td>[1], [2]</td>
+<td>General diagnostic and perception tool category</td>
+</tr>
+<tr>
+<td>Leaf-motion growth prediction</td>
+<td>[3]</td>
+<td>predict_growth_from_time_series tool</td>
+</tr>
+<tr>
+<td>RGB-D and CNN fresh-weight estimation</td>
+<td>[4-7], [20], [25-29]</td>
+<td>estimate_fresh_weight diagnostic tool</td>
+</tr>
+<tr>
+<td>Tip-burn detection</td>
+<td>[8], [9]</td>
+<td>detect_tipburn anomaly tool</td>
+</tr>
+<tr>
+<td>Nutrient-deficiency imaging</td>
+<td>[10], [23], [24]</td>
+<td>classify_nutrient_deficiency tool</td>
+</tr>
+<tr>
+<td>ISE interference and artifact correction</td>
+<td>[11], [13]</td>
+<td>correct_ise_interference and remove_ise_artifacts tools</td>
+</tr>
+<tr>
+<td>ODE nutrient-solution model</td>
+<td>[12]</td>
+<td>simulate_nutrient_profile_update tool</td>
+</tr>
+<tr>
+<td>Nutrient-management system</td>
+<td>[14]</td>
+<td>Nutrient resources and target-profile update tools</td>
+</tr>
+<tr>
+<td>Reinforcement-learning control</td>
+<td>[15]</td>
+<td>Policy simulation and parameter recommendation tools</td>
+</tr>
+<tr>
+<td>Digital twin and MR interface</td>
+<td>[16-18]</td>
+<td>Digital-twin resources and simulation tools</td>
+</tr>
+<tr>
+<td>Product inspection dataset</td>
+<td>[19]</td>
+<td>Postharvest classification and segmentation tools</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="paper-2026-p05-mcp-resource-design-strategy">7. MCP Resource Design
+Strategy</h2>
+<h3 id="paper-2026-p05-resource-principles">7.1 Resource principles</h3>
+<p>MCP resources allow servers to expose contextual data to clients.
+Each resource is identified by a URI [32]. In plant factories, resources
+should represent observable or historical states rather than executable
+commands.</p>
+<p>Resources should be read-only from the agent perspective,
+hierarchically tied to site, zone, crop batch, device, and time, typed
+with MIME type or structured metadata when possible, versioned or
+timestamped for auditability, and protected by role-based access when
+sensitive.</p>
+<h3 id="paper-2026-p05-proposed-resource-uri-scheme">7.2 Proposed resource URI
+scheme</h3>
+<p>A suggested convention is:</p>
+<blockquote>
+<p>pf://{site_id}/zones/{zone_id}/{domain}/{object}/{time_or_state}</p>
+</blockquote>
+<p>Examples:</p>
+<blockquote>
+<p>pf://site-a/zones/z1/environment/current</p>
+<p>pf://site-a/zones/z1/vision/rgb/latest</p>
+<p>pf://site-a/zones/z1/vision/depth/latest</p>
+<p>pf://site-a/zones/z1/nutrient-solution/current</p>
+<p>pf://site-a/zones/z1/actuators/current</p>
+<p>pf://site-a/batches/b17/crop-state/current</p>
+<p>pf://site-a/batches/b17/recipe/current</p>
+<p>pf://site-a/digital-twin/state</p>
+<p>pf://site-a/logs/parameter-update/2026-05-04</p>
+</blockquote>
+<h3 id="paper-2026-p05-resource-categories">7.3 Resource categories</h3>
+<p><strong>Table 4. Proposed MCP resource categories for plant
+factories.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Resource category</strong></th>
+<th><strong>Purpose</strong></th>
+<th><strong>Example URI</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Environment resources</td>
+<td>Air and climate context</td>
+<td>pf://site-a/zones/z1/environment/current</td>
+</tr>
+<tr>
+<td>Vision resources</td>
+<td>Crop images and image metadata</td>
+<td>pf://site-a/zones/z1/vision/rgb/latest</td>
+</tr>
+<tr>
+<td>Nutrient resources</td>
+<td>Root-zone and solution context</td>
+<td>pf://site-a/zones/z1/nutrient-solution/current</td>
+</tr>
+<tr>
+<td>Crop-state resources</td>
+<td>Growth stage and estimated traits</td>
+<td>pf://site-a/batches/b17/crop-state/current</td>
+</tr>
+<tr>
+<td>Recipe resources</td>
+<td>Crop-stage target ranges</td>
+<td>pf://site-a/batches/b17/recipe/current</td>
+</tr>
+<tr>
+<td>Parameter resources</td>
+<td>Current setpoints and schedules</td>
+<td>pf://site-a/zones/z1/parameters/current</td>
+</tr>
+<tr>
+<td>Digital-twin resources</td>
+<td>Virtual facility and simulation state</td>
+<td>pf://site-a/digital-twin/state</td>
+</tr>
+<tr>
+<td>Log resources</td>
+<td>Historical records and audit trails</td>
+<td>pf://site-a/logs/parameter-update/2026-05-04</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p05-resource-validation-rules">7.4 Resource validation rules</h3>
+<p>Resource servers should validate URI components:</p>
+<blockquote>
+<p>- site_id must be registered.</p>
+<p>- zone_id must exist.</p>
+<p>- crop_batch_id must match active cultivation records.</p>
+<p>- date values must follow ISO 8601 format.</p>
+<p>- image resources must declare MIME type.</p>
+<p>- nutrient resources must include timestamp and calibration
+metadata.</p>
+<p>- sensitive resources must require authorization.</p>
+<p>- stale resources must be marked with age or freshness metadata.</p>
+</blockquote>
+<h3 id="paper-2026-p05-resource-subscription-strategy">7.5 Resource subscription
+strategy</h3>
+<p>MCP resources can support subscription and list-change notifications
+[32]. In plant factories, subscriptions are useful for environment,
+nutrient, alarm, actuator-state, and parameter resources. However,
+high-frequency raw streams should be summarized by edge systems before
+being exposed to the AI agent. The agent does not need every sensor
+tick; it needs reliable context, trends, anomaly flags, and confidence
+indicators.</p>
+<h2 id="paper-2026-p05-mcp-tool-design-strategy">8. MCP Tool Design Strategy</h2>
+<h3 id="paper-2026-p05-tool-principles">8.1 Tool principles</h3>
+<p>MCP tools allow servers to expose callable functions to language
+models. Each tool is uniquely identified by a name and includes metadata
+describing its schema [33]. In plant factories, tools should be narrow,
+typed, bounded, auditable, and classified by operational risk.</p>
+<p>The most important design change in this strategy is that high-risk
+MCP tools should be formulated as parameter-update tools, not immediate
+actuator commands.</p>
+<p>Avoid:</p>
+<blockquote>
+<p>turn_on_pump()</p>
+<p>open_valve()</p>
+<p>inject_co2_now()</p>
+<p>activate_led()</p>
+</blockquote>
+<p>Prefer:</p>
+<blockquote>
+<p>update_lighting_setpoint_policy()</p>
+<p>update_hvac_setpoint_policy()</p>
+<p>update_irrigation_schedule_policy()</p>
+<p>update_nutrient_target_profile()</p>
+<p>submit_parameter_update_request()</p>
+<p>simulate_parameter_update()</p>
+<p>approve_parameter_update()</p>
+<p>write_operation_audit_log()</p>
+</blockquote>
+<h3 id="paper-2026-p05-risk-classification">8.2 Risk classification</h3>
+<p><strong>Table 5. Risk classification of MCP tools for plant-factory
+operation agents.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 20%"/>
+<col style="width: 29%"/>
+<col style="width: 19%"/>
+<col style="width: 19%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Risk level</strong></th>
+<th><strong>Tool category</strong></th>
+<th><strong>Example tools</strong></th>
+<th><strong>Physical implication</strong></th>
+<th><strong>Approval</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Level 0</td>
+<td>Read-only summarization</td>
+<td>summarize_environment, summarize_growth_log</td>
+<td>No physical effect</td>
+<td>Not required</td>
+</tr>
+<tr>
+<td>Level 1</td>
+<td>Diagnosis</td>
+<td>detect_tipburn, diagnose_nutrient_status</td>
+<td>No physical effect</td>
+<td>Not required</td>
+</tr>
+<tr>
+<td>Level 2</td>
+<td>Simulation</td>
+<td>simulate_lighting_policy, simulate_nutrient_profile_update</td>
+<td>No physical effect</td>
+<td>Not required</td>
+</tr>
+<tr>
+<td>Level 3</td>
+<td>Recommendation</td>
+<td>generate_parameter_update_plan</td>
+<td>No physical effect until approved</td>
+<td>Review recommended</td>
+</tr>
+<tr>
+<td>Level 4</td>
+<td>Bounded parameter update</td>
+<td>update_lighting_setpoint_policy,
+update_irrigation_schedule_policy</td>
+<td>Existing controller changes operation gradually</td>
+<td>Approval or policy-bound auto-approval</td>
+</tr>
+<tr>
+<td>Level 5</td>
+<td>High-risk parameter update</td>
+<td>update_co2_target_policy, update_nutrient_target_profile,
+update_hvac_setpoint_policy</td>
+<td>Facility controller may alter chemical or climate conditions</td>
+<td>Mandatory approval</td>
+</tr>
+</tbody>
+</table></div>
+<p>Even Level 4 and Level 5 tools are not direct actuator commands. They
+update parameters that existing controllers later execute.</p>
+<h3 id="paper-2026-p05-diagnostic-tools">8.3 Diagnostic tools</h3>
+<p>Examples:</p>
+<blockquote>
+<p>estimate_fresh_weight(zone_id, crop_batch_id, image_uri)</p>
+<p>detect_tipburn(zone_id, image_uri)</p>
+<p>classify_nutrient_deficiency(image_uri, crop_stage)</p>
+<p>diagnose_nutrient_status(nutrient_resource_uri)</p>
+<p>summarize_environment(environment_resource_uri, time_window)</p>
+</blockquote>
+<p>These tools can be based on machine-vision, hyperspectral, RGB-D,
+point-cloud, and multimodal studies [1-10,20-29].</p>
+<h3 id="paper-2026-p05-nutrient-intelligence-tools">8.4 Nutrient-intelligence
+tools</h3>
+<p>Examples:</p>
+<blockquote>
+<p>correct_ise_interference(raw_ise_resource_uri)</p>
+<p>remove_ise_artifacts(raw_ise_resource_uri)</p>
+<p>estimate_ion_balance(nutrient_resource_uri)</p>
+<p>simulate_nutrient_profile_update(current_solution_uri,
+target_recipe_uri)</p>
+<p>recommend_nutrient_target_profile(batch_id, nutrient_state_uri)</p>
+</blockquote>
+<p>These tools are informed by ISE correction, ODE nutrient modeling,
+artifact removal, and nutrient-solution management research [11-14].</p>
+<h3 id="paper-2026-p05-digital-twin-and-simulation-tools">8.5 Digital-twin and
+simulation tools</h3>
+<p>Examples:</p>
+<blockquote>
+<p>update_digital_twin(sensor_snapshot_uri)</p>
+<p>simulate_environment_policy_update(zone_id, control_candidate)</p>
+<p>simulate_growth_response(batch_id, parameter_update_plan)</p>
+<p>compare_parameter_update_scenarios(batch_id, objective)</p>
+</blockquote>
+<p>These tools support simulation before parameter update [16-18].</p>
+<h3 id="paper-2026-p05-parameter-update-tool-schema-examples">8.6 Parameter-update tool
+schema examples</h3>
+<p>MCP uses JSON Schema for validation throughout the protocol, and
+tools include inputSchema metadata [31,33]. Therefore, plant-factory MCP
+tools should force numerical, bounded, auditable arguments rather than
+accepting vague commands such as "increase light a little."</p>
+<h4 id="paper-2026-p05-example-1.-lighting-setpoint-policy-update">Example 1. Lighting
+setpoint policy update</h4>
+<blockquote>
+<p>{</p>
+<p>"name": "update_lighting_setpoint_policy",</p>
+<p>"description": "Update the lighting setpoint policy used by the
+existing automatic lighting controller.",</p>
+<p>"inputSchema": {</p>
+<p>"type": "object",</p>
+<p>"properties": {</p>
+<p>"site_id": { "type": "string" },</p>
+<p>"zone_id": { "type": "string" },</p>
+<p>"crop_batch_id": { "type": "string" },</p>
+<p>"target_ppfd": { "type": "number", "minimum": 50, "maximum": 350
+},</p>
+<p>"unit": { "type": "string", "enum": ["umol_m2_s"] },</p>
+<p>"photoperiod_hours": { "type": "number", "minimum": 6, "maximum": 24
+},</p>
+<p>"ramp_minutes": { "type": "integer", "minimum": 0, "maximum": 180
+},</p>
+<p>"effective_from": { "type": "string", "format": "date-time" },</p>
+<p>"duration_hours": { "type": "number", "minimum": 1, "maximum": 168
+},</p>
+<p>"simulation_id": { "type": "string" },</p>
+<p>"approval_id": { "type": "string" },</p>
+<p>"reason": { "type": "string" }</p>
+<p>},</p>
+<p>"required": [</p>
+<p>"site_id", "zone_id", "crop_batch_id", "target_ppfd", "unit",</p>
+<p>"photoperiod_hours", "effective_from", "duration_hours",</p>
+<p>"simulation_id", "approval_id", "reason"</p>
+<p>],</p>
+<p>"additionalProperties": false</p>
+<p>}</p>
+<p>}</p>
+</blockquote>
+<p>This tool does not switch LEDs directly. It updates the target PPFD,
+photoperiod, ramp time, and effective period used by the existing
+lighting controller.</p>
+<h4 id="paper-2026-p05-example-2.-nutrient-target-profile-update">Example 2. Nutrient
+target profile update</h4>
+<blockquote>
+<p>{</p>
+<p>"name": "update_nutrient_target_profile",</p>
+<p>"description": "Update the nutrient target profile used by the
+existing nutrient-solution management controller.",</p>
+<p>"inputSchema": {</p>
+<p>"type": "object",</p>
+<p>"properties": {</p>
+<p>"site_id": { "type": "string" },</p>
+<p>"zone_id": { "type": "string" },</p>
+<p>"tank_id": { "type": "string" },</p>
+<p>"crop_batch_id": { "type": "string" },</p>
+<p>"target_ph": { "type": "number", "minimum": 4.5, "maximum": 7.5
+},</p>
+<p>"target_ec": { "type": "number", "minimum": 0.2, "maximum": 4.0
+},</p>
+<p>"ion_targets_mg_l": {</p>
+<p>"type": "object",</p>
+<p>"properties": {</p>
+<p>"NO3": { "type": "number", "minimum": 0, "maximum": 300 },</p>
+<p>"K": { "type": "number", "minimum": 0, "maximum": 300 },</p>
+<p>"Ca": { "type": "number", "minimum": 0, "maximum": 250 },</p>
+<p>"Mg": { "type": "number", "minimum": 0, "maximum": 100 }</p>
+<p>},</p>
+<p>"additionalProperties": false</p>
+<p>},</p>
+<p>"effective_from": { "type": "string", "format": "date-time" },</p>
+<p>"simulation_id": { "type": "string" },</p>
+<p>"approval_id": { "type": "string" },</p>
+<p>"reason": { "type": "string" }</p>
+<p>},</p>
+<p>"required": [</p>
+<p>"site_id", "zone_id", "tank_id", "crop_batch_id", "target_ph",
+"target_ec",</p>
+<p>"ion_targets_mg_l", "effective_from", "simulation_id", "approval_id",
+"reason"</p>
+<p>],</p>
+<p>"additionalProperties": false</p>
+<p>}</p>
+<p>}</p>
+</blockquote>
+<p>This tool does not directly command dosing pumps. It updates the
+target nutrient profile that the existing nutrient-management controller
+will follow.</p>
+<h4 id="paper-2026-p05-example-3.-irrigation-schedule-policy-update">Example 3.
+Irrigation schedule policy update</h4>
+<blockquote>
+<p>{</p>
+<p>"name": "update_irrigation_schedule_policy",</p>
+<p>"description": "Update the irrigation schedule policy used by the
+existing irrigation controller.",</p>
+<p>"inputSchema": {</p>
+<p>"type": "object",</p>
+<p>"properties": {</p>
+<p>"site_id": { "type": "string" },</p>
+<p>"zone_id": { "type": "string" },</p>
+<p>"crop_batch_id": { "type": "string" },</p>
+<p>"irrigation_interval_minutes": { "type": "integer", "minimum": 10,
+"maximum": 720 },</p>
+<p>"irrigation_duration_seconds": { "type": "integer", "minimum": 5,
+"maximum": 600 },</p>
+<p>"active_window_start": { "type": "string", "pattern":
+"^([01][0-9]|2[0-3]):[0-5][0-9]$" },</p>
+<p>"active_window_end": { "type": "string", "pattern":
+"^([01][0-9]|2[0-3]):[0-5][0-9]$" },</p>
+<p>"effective_from": { "type": "string", "format": "date-time" },</p>
+<p>"simulation_id": { "type": "string" },</p>
+<p>"approval_id": { "type": "string" },</p>
+<p>"reason": { "type": "string" }</p>
+<p>},</p>
+<p>"required": [</p>
+<p>"site_id", "zone_id", "crop_batch_id",
+"irrigation_interval_minutes",</p>
+<p>"irrigation_duration_seconds", "active_window_start",
+"active_window_end",</p>
+<p>"effective_from", "simulation_id", "approval_id", "reason"</p>
+<p>],</p>
+<p>"additionalProperties": false</p>
+<p>}</p>
+<p>}</p>
+</blockquote>
+<p>This tool updates the irrigation schedule policy. Pump operation
+remains the responsibility of the irrigation controller.</p>
+<h3 id="paper-2026-p05-error-handling-and-rejection-logic">8.7 Error handling and
+rejection logic</h3>
+<p>MCP tools support protocol-level errors and tool-execution errors
+[33]. Plant-factory parameter-update tools should reject:</p>
+<blockquote>
+<p>- values outside schema limits</p>
+<p>- missing approval_id for high-risk updates</p>
+<p>- missing simulation_id when simulation is required</p>
+<p>- stale sensor resources</p>
+<p>- inactive crop_batch_id</p>
+<p>- zone_id not controlled by the server</p>
+<p>- parameter changes conflicting with facility interlocks</p>
+<p>- requests made by unauthorized roles</p>
+</blockquote>
+<p>Error messages should be actionable so that the agent can revise the
+proposal rather than bypass the restriction.</p>
+<figure class="paper-figure"><img alt="Figure 3. Parameter-oriented closed-loop workflow for plant-factory operation AI agents. The agent observes context, interprets state, simulates candidate changes, recommends a parameter update, requests approval, updates supervisory parameters, and audits outcomes while existing controllers perform continuous physical control." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p05/figure-3.webp"/><figcaption>Figure 3. <em>Parameter-oriented closed-loop workflow for
+plant-factory operation AI agents. The agent observes context,
+interprets state, simulates candidate changes, recommends a parameter
+update, requests approval, updates supervisory parameters, and audits
+outcomes while existing controllers perform continuous physical
+control.</em></figcaption></figure>
+
+<h2 id="paper-2026-p05-mcp-prompt-design-strategy">9. MCP Prompt Design Strategy</h2>
+<h3 id="paper-2026-p05-sop-prompts-as-workflow-templates">9.1 SOP prompts as workflow
+templates</h3>
+<p>MCP prompts provide structured messages and instructions for
+interacting with language models, and they are designed to be
+user-controlled [34]. In this paper, MCP prompts are not treated as
+autonomous execution commands. They are treated as user-selectable or
+policy-selectable workflow templates that guide the operation agent in
+choosing relevant resources and permitted tools.</p>
+<p>For example, a nutrient-imbalance diagnosis prompt may allow the
+agent to read nutrient resources, call ISE-correction tools, and run
+nutrient-profile simulations. It should not permit direct modification
+of nutrient target profiles unless a separate approval workflow is
+completed.</p>
+<h3 id="paper-2026-p05-proposed-prompt-library">9.2 Proposed prompt library</h3>
+<p><strong>Table 6. SOP-style MCP prompts for plant-factory
+operation.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Prompt name</strong></th>
+<th><strong>Purpose</strong></th>
+<th><strong>Required resources</strong></th>
+<th><strong>Allowed tools</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>daily_operation_report</td>
+<td>Summarize facility state</td>
+<td>Environment, crop, nutrient, parameter, log resources</td>
+<td>Summarization tools</td>
+</tr>
+<tr>
+<td>tipburn_risk_triage</td>
+<td>Diagnose tip-burn risk</td>
+<td>RGB image, humidity, VPD, crop stage</td>
+<td>Vision and environment tools</td>
+</tr>
+<tr>
+<td>nutrient_imbalance_diagnosis</td>
+<td>Interpret nutrient imbalance</td>
+<td>pH, EC, ISE, recipe, history</td>
+<td>ISE correction, nutrient simulation</td>
+</tr>
+<tr>
+<td>harvest_readiness_check</td>
+<td>Assess harvest timing</td>
+<td>Crop images, growth estimates, schedule</td>
+<td>Fresh-weight estimation</td>
+</tr>
+<tr>
+<td>control_action_review</td>
+<td>Review proposed parameter update</td>
+<td>Current state, simulation result, recipe</td>
+<td>Simulation and risk tools</td>
+</tr>
+<tr>
+<td>postharvest_quality_report</td>
+<td>Grade harvested products</td>
+<td>Product images, batch info</td>
+<td>Classification and segmentation tools</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p05-prompt-resource-tool-binding">9.3 Prompt-resource-tool
+binding</h3>
+<p>Each prompt should specify allowed resources and tools. For
+example:</p>
+<blockquote>
+<p>Prompt: nutrient_imbalance_diagnosis</p>
+<p>Goal:</p>
+<p>Diagnose whether the nutrient solution deviates from the crop-stage
+recipe.</p>
+<p>Required resources:</p>
+<p>- current nutrient-solution resource</p>
+<p>- crop-stage recipe resource</p>
+<p>- last 7 days of nutrient logs</p>
+<p>Allowed tools:</p>
+<p>- correct_ise_interference</p>
+<p>- remove_ise_artifacts</p>
+<p>- estimate_ion_balance</p>
+<p>- simulate_nutrient_profile_update</p>
+<p>Forbidden tools:</p>
+<p>- update_nutrient_target_profile</p>
+<p>- update_lighting_setpoint_policy</p>
+<p>- update_hvac_setpoint_policy</p>
+<p>Output:</p>
+<p>- diagnosis</p>
+<p>- confidence</p>
+<p>- likely causes</p>
+<p>- recommended simulation</p>
+<p>- whether human review is required</p>
+</blockquote>
+<p>Prompt-resource-tool binding reduces workflow drift and prevents an
+agent from using unrelated high-risk tools during a diagnostic task.</p>
+<h2 id="paper-2026-p05-parameter-oriented-closed-loop-workflow">10. Parameter-Oriented
+Closed-Loop Workflow</h2>
+<p>A plant-factory operation agent should follow a structured workflow
+that separates observation, interpretation, simulation, recommendation,
+approval, parameter update, automatic control, and audit.</p>
+<h3 id="paper-2026-p05-observe">10.1 Observe</h3>
+<p>The agent reads MCP resources:</p>
+<blockquote>
+<p>environment/current</p>
+<p>vision/rgb/latest</p>
+<p>vision/depth/latest</p>
+<p>nutrient-solution/current</p>
+<p>crop-state/current</p>
+<p>parameters/current</p>
+<p>actuators/current</p>
+<p>digital-twin/state</p>
+</blockquote>
+<p>This step is read-only.</p>
+<h3 id="paper-2026-p05-interpret">10.2 Interpret</h3>
+<p>The agent calls diagnostic tools:</p>
+<blockquote>
+<p>estimate_fresh_weight()</p>
+<p>detect_tipburn()</p>
+<p>diagnose_nutrient_status()</p>
+<p>summarize_environment()</p>
+</blockquote>
+<p>Outputs should include confidence, uncertainty, and resource
+timestamps.</p>
+<h3 id="paper-2026-p05-simulate">10.3 Simulate</h3>
+<p>Before parameter updates, the agent calls simulation tools:</p>
+<blockquote>
+<p>simulate_lighting_policy()</p>
+<p>simulate_hvac_setpoint_policy()</p>
+<p>simulate_nutrient_profile_update()</p>
+<p>simulate_irrigation_schedule_policy()</p>
+<p>simulate_growth_response()</p>
+</blockquote>
+<p>The simulation result should produce a simulation_id.</p>
+<h3 id="paper-2026-p05-recommend">10.4 Recommend</h3>
+<p>The agent generates a bounded parameter-update plan:</p>
+<blockquote>
+<p>Recommended parameter update:</p>
+<p>- Zone: Z1</p>
+<p>- Parameter: target_ppfd</p>
+<p>- Current value: 180 umol m-2 s-1</p>
+<p>- Proposed value: 210 umol m-2 s-1</p>
+<p>- Duration: 48 hours</p>
+<p>- Ramp: 60 minutes</p>
+<p>- Reason: predicted biomass is below schedule, no current tip-burn
+signal, nutrient status stable</p>
+<p>- Required approval: manager</p>
+</blockquote>
+<h3 id="paper-2026-p05-approve">10.5 Approve</h3>
+<p>A human operator or predefined governance policy approves the
+proposed parameter update. The approval creates an approval_id.</p>
+<h3 id="paper-2026-p05-update-parameters">10.6 Update parameters</h3>
+<p>The agent calls a parameter-update MCP tool such as:</p>
+<blockquote>
+<p>update_lighting_setpoint_policy()</p>
+<p>update_nutrient_target_profile()</p>
+<p>update_irrigation_schedule_policy()</p>
+<p>update_hvac_setpoint_policy()</p>
+</blockquote>
+<h3 id="paper-2026-p05-automatic-control">10.7 Automatic control</h3>
+<p>The facility automatic control system continuously executes the
+updated parameters through its own control loops. MCP does not replace
+this layer.</p>
+<h3 id="paper-2026-p05-audit">10.8 Audit</h3>
+<p>All resources, diagnostics, simulations, recommendations, approvals,
+parameter updates, and post-update states are logged.</p>
+<blockquote>
+<p>resources_read</p>
+<p>tools_called</p>
+<p>prompt_used</p>
+<p>simulation_id</p>
+<p>recommendation</p>
+<p>approval_id</p>
+<p>parameter_update_request</p>
+<p>controller_acknowledgement</p>
+<p>post_update_state</p>
+</blockquote>
+<h2 id="paper-2026-p05-reference-mcp-server-architecture">11. Reference MCP Server
+Architecture</h2>
+<p>A plant-factory MCP system should be modular rather than
+monolithic.</p>
+<p><strong>Table 7. Proposed MCP server modules.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>MCP server</strong></th>
+<th><strong>Main function</strong></th>
+<th><strong>MCP primitives</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sensor Resource Server</td>
+<td>Expose climate, nutrient, and device states</td>
+<td>Resources</td>
+</tr>
+<tr>
+<td>Vision Analysis Server</td>
+<td>Estimate traits and detect visual disorders</td>
+<td>Tools</td>
+</tr>
+<tr>
+<td>Nutrient Intelligence Server</td>
+<td>Correct ISE data and simulate nutrient profiles</td>
+<td>Resources, tools</td>
+</tr>
+<tr>
+<td>Digital Twin Server</td>
+<td>Provide virtual state and simulations</td>
+<td>Resources, tools</td>
+</tr>
+<tr>
+<td>Parameter Update Server</td>
+<td>Update setpoints, recipes, schedules, and thresholds</td>
+<td>Tools</td>
+</tr>
+<tr>
+<td>SOP Prompt Server</td>
+<td>Provide operation workflow templates</td>
+<td>Prompts</td>
+</tr>
+<tr>
+<td>Audit Log Server</td>
+<td>Record all actions and outcomes</td>
+<td>Resources, tools</td>
+</tr>
+</tbody>
+</table></div>
+<p>The architecture can be summarized as:</p>
+<blockquote>
+<p>Physical Plant Factory</p>
+<p>├─ Cameras</p>
+<p>├─ Climate Sensors</p>
+<p>├─ Nutrient Sensors</p>
+<p>├─ Automatic Controllers</p>
+<p>└─ Digital Twin</p>
+<p>↓</p>
+<p>MCP Servers</p>
+<p>├─ Sensor Resource Server</p>
+<p>├─ Vision Analysis Server</p>
+<p>├─ Nutrient Intelligence Server</p>
+<p>├─ Digital Twin Server</p>
+<p>├─ Parameter Update Server</p>
+<p>├─ SOP Prompt Server</p>
+<p>└─ Audit Log Server</p>
+<p>↓</p>
+<p>Plant-Factory Operation AI Agent</p>
+<p>↓</p>
+<p>Recommendation → Simulation → Approval → Parameter Update → Audit</p>
+</blockquote>
+<p>During initialization, MCP clients and servers establish protocol
+compatibility, exchange capabilities, and share implementation details.
+Capability negotiation can declare whether a server provides resources,
+prompts, tools, subscriptions, list-change notifications, or logging
+[35]. In plant factories, capability metadata should also disclose
+whether a server is read-only, diagnostic, simulation-capable, or
+parameter-update-capable.</p>
+<p>Example domain-specific capability metadata:</p>
+<blockquote>
+<p>{</p>
+<p>"server_role": "parameter_update",</p>
+<p>"supported_zones": ["Z1", "Z2"],</p>
+<p>"parameter_domains": ["lighting", "irrigation", "nutrient"],</p>
+<p>"risk_levels": [3, 4, 5],</p>
+<p>"requires_human_approval": true,</p>
+<p>"supports_simulation_reference": true,</p>
+<p>"writes_audit_log": true</p>
+<p>}</p>
+</blockquote>
+<h2 id="paper-2026-p05-case-scenarios">12. Case Scenarios</h2>
+<h3 id="paper-2026-p05-lettuce-growth-monitoring-and-lighting-policy-update">12.1
+Lettuce growth monitoring and lighting policy update</h3>
+<p><strong>Table 8. MCP workflow for growth monitoring and lighting
+policy update.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Step</strong></th>
+<th><strong>MCP primitive</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Observe</td>
+<td>Resource</td>
+<td>pf://site-a/zones/z1/vision/rgb/latest</td>
+</tr>
+<tr>
+<td>Estimate</td>
+<td>Tool</td>
+<td>estimate_fresh_weight(image_uri)</td>
+</tr>
+<tr>
+<td>Context check</td>
+<td>Resource</td>
+<td>environment/current, nutrient-solution/current, recipe/current</td>
+</tr>
+<tr>
+<td>Simulate</td>
+<td>Tool</td>
+<td>simulate_lighting_policy(target_ppfd=210)</td>
+</tr>
+<tr>
+<td>Recommend</td>
+<td>Prompt</td>
+<td>control_action_review</td>
+</tr>
+<tr>
+<td>Approve</td>
+<td>Governance</td>
+<td>Human approval creates approval_id</td>
+</tr>
+<tr>
+<td>Update</td>
+<td>Tool</td>
+<td>update_lighting_setpoint_policy()</td>
+</tr>
+<tr>
+<td>Execute</td>
+<td>Existing controller</td>
+<td>Lighting controller follows new setpoint policy</td>
+</tr>
+<tr>
+<td>Audit</td>
+<td>Resource/tool</td>
+<td>write_operation_audit_log()</td>
+</tr>
+</tbody>
+</table></div>
+<p>The agent does not directly control LED hardware. It updates the
+lighting policy that the facility controller follows.</p>
+<h3 id="paper-2026-p05-tip-burn-risk-triage-and-climate-setpoint-review">12.2 Tip-burn
+risk triage and climate setpoint review</h3>
+<p><strong>Table 9. MCP workflow for tip-burn risk triage.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Step</strong></th>
+<th><strong>MCP primitive</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Observe</td>
+<td>Resource</td>
+<td>RGB image, humidity, VPD, airflow, crop stage</td>
+</tr>
+<tr>
+<td>Diagnose</td>
+<td>Tool</td>
+<td>detect_tipburn(image_uri)</td>
+</tr>
+<tr>
+<td>Context check</td>
+<td>Resource</td>
+<td>environment/current, growth-rate/history</td>
+</tr>
+<tr>
+<td>Simulate</td>
+<td>Tool</td>
+<td>simulate_hvac_setpoint_policy()</td>
+</tr>
+<tr>
+<td>Recommend</td>
+<td>Prompt</td>
+<td>tipburn_risk_triage</td>
+</tr>
+<tr>
+<td>Approve</td>
+<td>Governance</td>
+<td>Required for HVAC policy update</td>
+</tr>
+<tr>
+<td>Update</td>
+<td>Tool</td>
+<td>update_hvac_setpoint_policy()</td>
+</tr>
+<tr>
+<td>Execute</td>
+<td>Existing controller</td>
+<td>HVAC controller follows updated setpoint policy</td>
+</tr>
+<tr>
+<td>Audit</td>
+<td>Resource/tool</td>
+<td>Record diagnosis, simulation, approval, update</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p05-nutrient-imbalance-diagnosis-and-target-profile-update">12.3
+Nutrient imbalance diagnosis and target-profile update</h3>
+<p><strong>Table 10. MCP workflow for nutrient target-profile
+update.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Step</strong></th>
+<th><strong>MCP primitive</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Observe</td>
+<td>Resource</td>
+<td>pH, EC, ISE, tank status, nutrient history</td>
+</tr>
+<tr>
+<td>Correct</td>
+<td>Tool</td>
+<td>correct_ise_interference()</td>
+</tr>
+<tr>
+<td>Diagnose</td>
+<td>Tool</td>
+<td>estimate_ion_balance()</td>
+</tr>
+<tr>
+<td>Simulate</td>
+<td>Tool</td>
+<td>simulate_nutrient_profile_update()</td>
+</tr>
+<tr>
+<td>Recommend</td>
+<td>Prompt</td>
+<td>nutrient_imbalance_diagnosis</td>
+</tr>
+<tr>
+<td>Approve</td>
+<td>Governance</td>
+<td>Mandatory approval for target-profile update</td>
+</tr>
+<tr>
+<td>Update</td>
+<td>Tool</td>
+<td>update_nutrient_target_profile()</td>
+</tr>
+<tr>
+<td>Execute</td>
+<td>Existing controller</td>
+<td>Nutrient controller computes and performs dosing</td>
+</tr>
+<tr>
+<td>Audit</td>
+<td>Resource/tool</td>
+<td>Record target profile, simulation, approval, controller
+acknowledgement</td>
+</tr>
+</tbody>
+</table></div>
+<p>This scenario shows why parameter-oriented MCP is safer than direct
+dosing. The MCP tool updates the target profile; the existing nutrient
+controller handles dosing, mixing, pH/EC cutoffs, and device-level
+safety.</p>
+<h3 id="paper-2026-p05-digital-twin-based-remote-operation">12.4 Digital-twin-based
+remote operation</h3>
+<p>The agent updates a digital twin using sensor resources and image
+data [16-18]. It compares parameter-update scenarios and presents
+predicted effects to the operator. The operator approves one plan
+through a dashboard or mixed-reality interface. The MCP layer then sends
+bounded parameter updates to the appropriate server.</p>
+<h3 id="paper-2026-p05-postharvest-product-inspection">12.5 Postharvest product
+inspection</h3>
+<p>After harvest, the agent reads product-image resources and calls
+inspection tools. Dataset-driven methods such as classification,
+segmentation, and physical measurement can support grading and quality
+reports [19]. This expands MCP-mediated operation beyond cultivation
+into postharvest workflow management.</p>
+<h2 id="paper-2026-p05-safety-security-and-governance">13. Safety, Security, and
+Governance</h2>
+<h3 id="paper-2026-p05-safety-risks-and-mitigations">13.1 Safety risks and
+mitigations</h3>
+<p><strong>Table 11. Safety risks and mitigations in parameter-oriented
+MCP control.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Risk</strong></th>
+<th><strong>Example</strong></th>
+<th><strong>MCP-level mitigation</strong></th>
+<th><strong>Facility-level mitigation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excessive lighting target</td>
+<td>Agent proposes too high PPFD</td>
+<td>Schema max, crop-stage recipe check, simulation ID</td>
+<td>Lighting controller upper bound</td>
+</tr>
+<tr>
+<td>Nutrient target error</td>
+<td>Wrong ion target profile</td>
+<td>ISE correction, ODE simulation, approval token</td>
+<td>Dosing controller limit, mixing delay, EC/pH cutoff</td>
+</tr>
+<tr>
+<td>Irrigation over-adjustment</td>
+<td>Too frequent irrigation schedule</td>
+<td>Minimum interval schema, policy validation</td>
+<td>Pump runtime limit, drain/overflow sensor</td>
+</tr>
+<tr>
+<td>HVAC policy conflict</td>
+<td>Heating and cooling conflict</td>
+<td>Scenario simulation, policy consistency check</td>
+<td>PLC/SCADA interlock</td>
+</tr>
+<tr>
+<td>CO2 target risk</td>
+<td>Excessive CO2 target</td>
+<td>High-risk approval, target upper bound</td>
+<td>CO2 controller hard limit, ventilation interlock</td>
+</tr>
+<tr>
+<td>Sensor drift</td>
+<td>Wrong resource values drive wrong update</td>
+<td>Sensor confidence resource, calibration log</td>
+<td>Manual calibration, redundant sensors</td>
+</tr>
+<tr>
+<td>Prompt injection</td>
+<td>Malicious instruction in logs or notes</td>
+<td>Prompt-tool binding, tool allowlist</td>
+<td>Operator confirmation</td>
+</tr>
+<tr>
+<td>Unauthorized parameter update</td>
+<td>Wrong user changes recipe</td>
+<td>Authorization, role-based approval</td>
+<td>Facility account control, physical lockout</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p05-authorization-and-role-based-access">13.2 Authorization and
+role-based access</h3>
+<p>MCP provides authorization capabilities at the transport level for
+HTTP-based transports, and authorization is optional for MCP
+implementations [36]. This means MCP authorization can support
+restricted access, but it is not sufficient as a plant-factory safety
+mechanism by itself. Role-based access, approval workflows,
+actuator-level limits, and emergency interlocks must be implemented
+outside or below the MCP layer.</p>
+<p><strong>Table 12. Suggested access roles for plant-factory MCP
+deployments.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Role</strong></th>
+<th><strong>Resource access</strong></th>
+<th><strong>Tool access</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Researcher</td>
+<td>Read crop and environment data</td>
+<td>Analysis and simulation tools only</td>
+</tr>
+<tr>
+<td>Operator</td>
+<td>Read facility state</td>
+<td>Recommendation and low-risk parameter tools</td>
+</tr>
+<tr>
+<td>Manager</td>
+<td>Read all operational data</td>
+<td>Approve high-risk parameter updates</td>
+</tr>
+<tr>
+<td>Technician</td>
+<td>Read device state</td>
+<td>Maintenance tools</td>
+</tr>
+<tr>
+<td>Safety system</td>
+<td>Independent access</td>
+<td>Override and emergency stop outside MCP</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p05-separation-of-recommendation-and-parameter-update">13.3
+Separation of recommendation and parameter update</h3>
+<p>The agent should produce recommendations before updating parameters.
+Execution should be a separate, approved step. This separation is
+necessary because language models may be uncertain, may misinterpret
+context, or may be affected by malicious resource content.</p>
+<h3 id="paper-2026-p05-prompt-injection-and-tool-misuse">13.4 Prompt injection and tool
+misuse</h3>
+<p>Plant-factory MCP systems may expose images, logs, documents, and
+operator notes as resources. These resources may contain misleading or
+adversarial text. Therefore, tools should not trust arbitrary resource
+content. Servers must validate inputs independently of the agent
+reasoning. Prompt templates should define allowed resources and allowed
+tools.</p>
+<h3 id="paper-2026-p05-audit-and-accountability">13.5 Audit and accountability</h3>
+<p>Every high-risk parameter update should be explainable after the
+fact. The audit log should answer:</p>
+<blockquote>
+<p>What did the agent observe?</p>
+<p>Which resources were read?</p>
+<p>Which tools were called?</p>
+<p>What simulation was performed?</p>
+<p>What parameter update was recommended?</p>
+<p>Who approved it?</p>
+<p>What parameter was changed?</p>
+<p>Did the controller acknowledge it?</p>
+<p>What changed afterward?</p>
+</blockquote>
+<p>Auditability is required for debugging, operator trust, insurance,
+regulatory compliance, and incident analysis.</p>
+<h2 id="paper-2026-p05-discussion">14. Discussion</h2>
+<h3 id="paper-2026-p05-why-parameter-oriented-mcp-is-appropriate-for-plant-factories">14.1
+Why parameter-oriented MCP is appropriate for plant factories</h3>
+<p>Plant-factory operation is not mostly about instantaneous control
+decisions. Many operational decisions concern target ranges, recipes,
+schedules, and trajectories over hours or days. This makes MCP suitable
+as a supervisory operation layer. The agent can interpret rich context,
+reason over crop-stage goals, simulate candidate changes, and update
+parameters that existing controllers execute continuously.</p>
+<h3 id="paper-2026-p05-why-mcp-should-not-replace-automatic-control-systems">14.2 Why
+MCP should not replace automatic control systems</h3>
+<p>MCP is useful because it standardizes how an AI agent accesses
+resources, prompts, and tools. It should not be treated as a replacement
+for PLCs, SCADA systems, embedded controllers, safety relays, or
+facility automation software. The lower-level control system must retain
+responsibility for deterministic timing, hardware protection, fail-safe
+behavior, and emergency response.</p>
+<h3 id="paper-2026-p05-limitations-of-this-design-strategy-paper">14.3 Limitations of
+this design-strategy paper</h3>
+<p>This paper does not include a working MCP implementation, real
+plant-factory deployment, or crop-growth experiment. Therefore, it does
+not evaluate latency, server reliability, operator acceptance, or
+biological outcomes. The proposed architecture should be understood as a
+reference design. Future work should implement prototype MCP servers and
+evaluate them in simulated and real plant-factory environments.</p>
+<h3 id="paper-2026-p05-from-ai-monitoring-to-mcp-mediated-biological-manufacturing">14.4
+From AI monitoring to MCP-mediated biological manufacturing</h3>
+<p>Plant factories are not merely automated farms. They are biological
+manufacturing systems in which living crops respond to environmental,
+chemical, and temporal conditions. The role of an MCP-mediated operation
+agent is to connect perception, nutrient intelligence, digital twins,
+parameter-update tools, SOP prompts, and human governance. The goal is
+not unconstrained autonomy, but safe and auditable closed-loop
+cultivation support.</p>
+<h2 id="paper-2026-p05-conclusion">15. Conclusion</h2>
+<p>This paper proposed an MCP design strategy for plant-factory
+operation AI agents. The central argument is that MCP should serve as a
+supervisory parameter interface rather than a real-time physical
+controller. In the proposed strategy, MCP resources represent read-only
+plant-factory context, MCP tools represent diagnostic, simulation, and
+bounded parameter-update functions, and MCP prompts represent
+user-selectable standard operating procedure templates.</p>
+<p>Existing plant-factory AI studies provide the functional modules
+required by such agents: machine vision for crop-state perception, deep
+learning for stress detection, nutrient-solution intelligence for
+root-zone diagnosis, reinforcement learning for control-policy
+exploration, digital twins for simulation and remote operation, and
+product datasets for postharvest inspection [1-29]. MCP can connect
+these modules into an operation layer by allowing the agent to observe,
+interpret, simulate, recommend, obtain approval, update parameters, and
+audit outcomes.</p>
+<p>The proposed design deliberately separates AI reasoning from
+continuous physical control. The agent updates setpoints, recipes,
+schedules, thresholds, and policy parameters. Existing automatic control
+systems execute those parameters through their own control loops and
+safety mechanisms. This division is appropriate for plant-factory
+operation because many agronomic decisions occur over multi-hour, daily,
+or crop-stage timescales rather than sub-second cycles.</p>
+<p>Future work should implement prototype MCP servers for plant
+factories, including sensor resource servers, vision-analysis tool
+servers, nutrient-intelligence servers, digital-twin servers,
+parameter-update servers, SOP prompt servers, and audit-log servers.
+Evaluation should include not only model accuracy but also safety,
+auditability, operator trust, cross-facility generalization, failure
+recovery, and biological outcomes.</p>
+<h2 id="paper-2026-p05-references">References</h2>
+<p>[1] Tian, Z.; Ma, W.; Yang, Q.; Duan, F. Application Status and
+Challenges of Machine Vision in Plant Factory-A Review. Information
+Processing in Agriculture, 2022, 9, 195-211. doi:
+10.1016/j.inpa.2021.06.003.</p>
+<p>[2] Ojo, M. O.; Zahid, A. Deep Learning in Controlled Environment
+Agriculture: A Review of Recent Advancements, Challenges and Prospects.
+Sensors, 2022, 22, 7965. doi: 10.3390/s22207965.</p>
+<p>[3] Nagano, S.; Moriyuki, S.; Wakamori, K.; Mineno, H.; Fukuda, H.
+Leaf-Movement-Based Growth Prediction Model Using Optical Flow Analysis
+and Machine Learning in Plant Factory. Frontiers in Plant Science, 2019,
+10, 227. doi: 10.3389/fpls.2019.00227.</p>
+<p>[4] Lin, Z.; Fu, R.; Ren, G.; Zhong, R.; Ying, Y.; Lin, T. Automatic
+Monitoring of Lettuce Fresh Weight by Multi-Modal Fusion Based Deep
+Learning. Frontiers in Plant Science, 2022, 13, 980581. doi:
+10.3389/fpls.2022.980581.</p>
+<p>[5] Moon, T.; Choi, W.-J.; Jang, S.-H.; Choi, D.-S.; Oh, M.-M. Growth
+Analysis of Plant Factory-Grown Lettuce by Deep Neural Networks Based on
+Automated Feature Extraction. Horticulturae, 2022, 8, 1124. doi:
+10.3390/horticulturae8121124.</p>
+<p>[6] Tan, J.; Hou, J.; Xu, W.; Zheng, H.; Gu, S.; Zhou, Y.; Qi, L.;
+Ma, R. PosNet: Estimating Lettuce Fresh Weight in Plant Factory Based on
+Oblique Image. Computers and Electronics in Agriculture, 2023, 213,
+108263. doi: 10.1016/j.compag.2023.108263.</p>
+<p>[7] Kim, J. S. G.; Moon, S.; Park, J.; Kim, T.; Chung, S. Development
+of a Machine Vision-Based Weight Prediction System of Butterhead Lettuce
+Using Deep Learning Models for Industrial Plant Factory. Frontiers in
+Plant Science, 2024, 15, 1365266. doi: 10.3389/fpls.2024.1365266.</p>
+<p>[8] Hamidon, M. H.; Ahamed, T. Detection of Tip-Burn Stress on
+Lettuce Grown in an Indoor Environment Using Deep Learning Algorithms.
+Sensors, 2022, 22, 7251. doi: 10.3390/s22197251.</p>
+<p>[9] Kumaratenna, K. P. S.; Cho, Y. Y. Detection of Tipburn Stress on
+Lettuce Grown in a Plant Factory Using Artificial Intelligence Models.
+Horticultural Science and Technology, 2024, 42, 711-724.</p>
+<p>[10] Xie, J.; et al. Exploring Nutrient Deficiencies in Lettuce
+Crops: Utilizing Advanced Multidimensional Image Analysis for Precision
+Diagnosis. Sensors, 2025, 25, 1957. doi: 10.3390/s25071957.</p>
+<p>[11] Ban, B.; Ryu, D.; Lee, M. Machine Learning Approach to Remove
+Ion Interference Effect in Agricultural Nutrient Solutions.
+International Conference on Information and Communication Technology
+Convergence, 2019, 1156-1161. doi: 10.1109/ICTC46691.2019.8939812.</p>
+<p>[12] Ban, B.; Lee, M.; Ryu, D. ODE Network Model for Nonlinear and
+Complex Agricultural Nutrient Solution System. International Conference
+on Information and Communication Technology Convergence, 2019, 996-1001.
+doi: 10.1109/ICTC46691.2019.8939946.</p>
+<p>[13] Ban, B.; Ryu, D.; Lee, M. Deep Learning Method to Remove
+Chemical, Kinetic and Electric Artifacts on ISEs. International
+Conference on Information and Communication Technology Convergence,
+2020, 1242-1246; Preprints 2020, 2020050381. doi:
+10.20944/preprints202005.0381.v2.</p>
+<p>[14] Ban, B.; Lee, J.; Ryu, D.; Lee, M.; Eom, T. D. Nutrient Solution
+Management System for Smart Farms and Plant Factory. International
+Conference on Information and Communication Technology Convergence,
+2020, 1537-1542. doi: 10.1109/ICTC49870.2020.9289192.</p>
+<p>[15] Ban, B.; Kim, S. Control of Nonlinear, Complex and Black-Boxed
+Greenhouse System with Reinforcement Learning. International Conference
+on Information and Communication Technology Convergence, 2017, 913-918.
+doi: 10.1109/ICTC.2017.8190813.</p>
+<p>[16] Zhang, Z.; Zhu, Z.; Gao, G.; Qu, D.; Zhong, J.; Jia, D.; Du, X.;
+Yang, X.; Pan, S. Design and Research of Digital Twin System for
+Multi-Environmental Variable Mapping in Plant Factory. Computers and
+Electronics in Agriculture, 2023, 213, 108243. doi:
+10.1016/j.compag.2023.108243.</p>
+<p>[17] Chen, K.; Zhao, B.; Zhou, H.; Zhou, L.; Niu, K.; Jin, X.; Li,
+R.; Yuan, Y.; Zheng, Y. Digital Twins in Plant Factory: A
+Five-Dimensional Modeling Method for Plant Factory Transplanter Digital
+Twins. Agriculture, 2023, 13, 1336. doi:
+10.3390/agriculture13071336.</p>
+<p>[18] Ban, B. Mixed Reality Interface for Digital Twin of Plant
+Factory. arXiv, 2022, arXiv:2211.00597. doi:
+10.48550/arXiv.2211.00597.</p>
+<p>[19] Ban, B.; Ryu, D.; Hwang, S.-w. CongNaMul: A Dataset for Advanced
+Image Processing of Soybean Sprouts. International Conference on
+Information and Communication Technology Convergence, 2023, 1892-1897;
+arXiv:2308.15690.</p>
+<p>[20] Zhang, L.; Xu, Z.; Xu, D.; Ma, J.; Chen, Y.; Fu, Z. Growth
+Monitoring of Greenhouse Lettuce Based on a Convolutional Neural
+Network. Horticulture Research, 2020, 7, 124. doi:
+10.1038/s41438-020-00345-6.</p>
+<p>[21] Chang, C.-L.; Chung, S.-C.; Fu, W.-L.; Huang, C.-C. Artificial
+Intelligence Approaches to Predict Growth, Harvest Day, and Quality of
+Lettuce (Lactuca sativa L.) in an IoT-Enabled Greenhouse System.
+Biosystems Engineering, 2021, 212, 77-105. doi:
+10.1016/j.biosystemseng.2021.09.015.</p>
+<p>[22] Lou, M.; Lu, J.; Wang, L.; Jiang, H.; Zhou, M. Growth Parameter
+Acquisition and Geometric Point Cloud Completion of Lettuce. Frontiers
+in Plant Science, 2022, 13, 947690. doi: 10.3389/fpls.2022.947690.</p>
+<p>[23] Pandey, P.; Veazie, P.; Whipker, B. E.; Young, S. N. Predicting
+Foliar Nutrient Concentrations and Nutrient Deficiencies of Hydroponic
+Lettuce Using Hyperspectral Imaging. Biosystems Engineering, 2023, 230,
+458-469. doi: 10.1016/j.biosystemseng.2023.05.005.</p>
+<p>[24] Lu, J.; Peng, K.; Wang, Q.; Sun, C. Lettuce Plant
+Trace-Element-Deficiency Symptom Identification via Machine Vision
+Methods. Agriculture, 2023, 13, 1614. doi:
+10.3390/agriculture13081614.</p>
+<p>[25] Xu, D.; Chen, J.; Li, B.; Ma, J. Improving Lettuce Fresh Weight
+Estimation Accuracy through RGB-D Fusion. Agronomy, 2023, 13, 2617. doi:
+10.3390/agronomy13102617.</p>
+<p>[26] Ojo, M. O.; Zahid, A.; Masabni, J. G. Estimating Hydroponic
+Lettuce Phenotypic Parameters for Efficient Resource Allocation.
+Computers and Electronics in Agriculture, 2024, 218, 108642. doi:
+10.1016/j.compag.2024.108642.</p>
+<p>[27] Islam, S.; Reza, M. N.; Chowdhury, M.; Ahmed, S.; Lee, K.-H.;
+Ali, M.; Cho, Y. J.; Noh, D. H.; Chung, S.-O. Detection and Segmentation
+of Lettuce Seedlings from Seedling-Growing Tray Imagery Using an
+Improved Mask R-CNN Method. Smart Agricultural Technology, 2024, 8,
+100455. doi: 10.1016/j.atech.2024.100455.</p>
+<p>[28] Hosoda, Y.; Tada, T.; Goto, H. Lettuce Fresh Weight Prediction
+in a Plant Factory Using Plant Growth Models. IEEE Access, 2024, 12,
+97226-97234. doi: 10.1109/ACCESS.2024.3423455.</p>
+<p>[29] Hou, L.; Zhu, Y.; Wang, M.; Wei, N.; Dong, J.; Tao, Y.; Zhou,
+J.; Zhang, J. Multimodal Data Fusion for Precise Lettuce Phenotype
+Estimation Using Deep Learning Algorithms. Plants, 2024, 13, 3217. doi:
+10.3390/plants13223217.</p>
+<p>[30] Model Context Protocol. Specification. Version 2025-11-25, 2025.
+URL: https://modelcontextprotocol.io/specification/2025-11-25.</p>
+<p>[31] Model Context Protocol. Base Protocol: Overview. Version
+2025-11-25, 2025. URL:
+https://modelcontextprotocol.io/specification/2025-11-25/basic.</p>
+<p>[32] Model Context Protocol. Server Features: Resources. Version
+2025-11-25, 2025. URL:
+https://modelcontextprotocol.io/specification/2025-11-25/server/resources.</p>
+<p>[33] Model Context Protocol. Server Features: Tools. Version
+2025-11-25, 2025. URL:
+https://modelcontextprotocol.io/specification/2025-11-25/server/tools.</p>
+<p>[34] Model Context Protocol. Server Features: Prompts. Version
+2025-11-25, 2025. URL:
+https://modelcontextprotocol.io/specification/2025-11-25/server/prompts.</p>
+<p>[35] Model Context Protocol. Base Protocol: Lifecycle. Version
+2025-11-25, 2025. URL:
+https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle.</p>
+<p>[36] Model Context Protocol. Base Protocol: Authorization. Version
+2025-11-25, 2025. URL:
+https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization.</p>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">الاستشهاد</h2><p class="citation-help">اضغط على الصيغة لنسخ معلومات الاستشهاد.</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="نسخ بصيغة APA">نسخ APA</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة MLA">نسخ MLA</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة Chicago">نسخ بصيغة Chicago</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة IEEE">نسخ IEEE</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة BibTeX">نسخ BibTeX</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="نسخ بصيغة RIS">نسخ RIS</button></div><label for="citation-text" class="citation-preview-label">معاينة الاستشهاد · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B. (2026). MCP design strategy for plant-factory operation AI agents. ResearchGate. https://doi.org/10.13140/RG.2.2.29671.61608</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/plant-factory-mcp-agents-2026/citation.bib" download>ملف BibTeX</a><a href="/papers/plant-factory-mcp-agents-2026/citation.ris" download>ملف RIS</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B. (2026). MCP design strategy for plant-factory operation AI agents. ResearchGate. https://doi.org/10.13140/RG.2.2.29671.61608", "mla": "Ban, Byunghyun. “MCP Design Strategy for Plant-Factory Operation AI Agents.” ResearchGate, 2026. Preprint. https://doi.org/10.13140/RG.2.2.29671.61608.", "chicago": "Ban, Byunghyun. “MCP Design Strategy for Plant-Factory Operation AI Agents.” Preprint, ResearchGate, 2026. https://doi.org/10.13140/RG.2.2.29671.61608.", "ieee": "B. Ban, “MCP design strategy for plant-factory operation AI agents,” ResearchGate, preprint, 2026, doi: 10.13140/RG.2.2.29671.61608.", "bibtex": "@misc{ban2026_c0a302045a22,\n  author = {Ban, Byunghyun},\n  title = {{MCP Design Strategy for Plant-Factory Operation AI Agents}},\n  year = {2026},\n  doi = {10.13140/RG.2.2.29671.61608},\n  url = {https://www.researchgate.net/publication/404500785\\_MCP\\_Design\\_Strategy\\_for\\_Plant-Factory\\_Operation\\_AI\\_Agents},\n  note = {Preprint},\n  howpublished = {ResearchGate}\n}", "ris": "TY  - UNPB\nAU  - Ban, Byunghyun\nTI  - MCP Design Strategy for Plant-Factory Operation AI Agents\nPY  - 2026\nDO  - 10.13140/RG.2.2.29671.61608\nUR  - https://www.researchgate.net/publication/404500785_MCP_Design_Strategy_for_Plant-Factory_Operation_AI_Agents\nAB  - Plant factories are increasingly equipped with sensors, cameras, automatic controllers, digital twins, and artificial intelligence models. However, integrating these components into a practical operation AI agent requires a safe interface between AI reasoning and facility-level control. This paper proposes an MCP design strategy for plant-factory operation AI agents. The focus is not on implementing a new autonomous agent or replacing existing control systems, but on designing the Model Context Protocol layer through which an agent can read plant-factory context, call diagnostic and simulation tools, follow standard operating prompts, and update supervisory operation parameters. In the proposed strategy, MCP resources represent sensor data, crop images, nutrient states, recipes, actuator states, logs, and digital-twin states; MCP tools represent diagnosis, prediction, simulation, and bounded parameter-update functions; and MCP prompts represent user-selectable standard operating procedure templates. The key argument is that MCP should not be used as a deterministic real-time controller for plant factories. Instead, it should serve as a supervisory parameter interface that modifies setpoints, recipes, schedules, thresholds, and policy parameters used by existing 24-hour automatic control systems. This paper presents resource URI schemes, tool risk classification, parameter-update tool schemas, prompt-resource-tool binding, safety tables, and closed-loop operation workflows for MCP-mediated plant-factory operation.\nLA  - en\nM3  - Preprint\nER  -\n"}</script></section><a class="paper-back-link" href="/ar/papers/">← العودة إلى قائمة الأبحاث</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="جميع الصفحات"><a href="/ar/">Byunghyun Ban</a><a href="/ar/media/">البث والفيديو</a><a href="/ar/books/">الكتب</a><a href="/ar/lectures/">سجل المحاضرات</a><a href="/ar/courses/online/">دورات عبر الإنترنت</a><a href="/ar/courses/offline/">البرامج التعليمية الحضورية</a><a href="/ar/news/">التغطية الصحفية</a><a href="/ar/papers/">الأوراق العلمية والبحوث</a><a href="/ar/patents/">براءات الاختراع</a><a href="/ar/projects/">مشاريع التطوير</a><a href="/ar/activities/">المساهمات الاجتماعية</a><a href="/ar/memberships/">العضويات والأنشطة المهنية</a><a href="/ar/collections/">المقتنيات</a><a href="/ar/contact/">استفسارات المحاضرات والتعاون</a></nav>
+            <p><a href="/feed.xml">الاشتراك عبر RSS</a> · <a href="/feed.json">موجز JSON</a></p>
+            <p>© 2026 Byunghyun Ban. جميع الحقوق محفوظة.</p>
+            <p>NaNa Lab (رقم تسجيل النشاط: 269-08-02374)، الممثل: Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="الانتقال إلى الأعلى">↑</button>
+</body>
+</html>

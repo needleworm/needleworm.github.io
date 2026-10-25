@@ -14,6 +14,7 @@ from build_site import ROOT, Blocks, VOID, GROUPS, LECTURE_CATEGORIES, latest_da
 from paper_pages import load_records, plain
 from paper_citations import citation_formats
 from lecture_pages import load_lecture_records, link_lecture_cards
+from check_locales import LOCALES, check_locales, locale_path, locale_target
 
 
 class Document(HTMLParser):
@@ -169,6 +170,11 @@ def check_sitemap(config, require):
     lecture_records = load_lecture_records([lecture_source[a:b] for a, b in sorted(Blocks(lecture_source).cards)])
     for record in lecture_records.values():
         page_urls[config['url']+record['path']] = record['path'].lstrip('/')+'index.html'
+    original_pages = dict(page_urls)
+    for locale in LOCALES:
+        for url, target in original_pages.items():
+            route = url.removeprefix(config['url'])
+            page_urls[config['url'] + locale_path(locale, route)] = locale_target(locale, target)
     project_urls = {node.text for node in projects.findall('sm:url/sm:loc', ns)} - set(page_urls)
     expected_urls = set(page_urls) | project_urls
     urls = []
@@ -472,7 +478,8 @@ def main():
     sitemap_report = check_sitemap(config, require)
     feeds_report = check_feeds({'books':len(Blocks(sources['books']).cards), 'news':len(Blocks(sources['news']).cards),
                                 'lectures':len(lecture_records), 'papers':len(Blocks(sources['papers']).cards)}, require)
-    print(json.dumps({'pages':report,'paper_pages':paper_report,'lecture_pages':lecture_report,'redirects':config.get('redirects', []),'sitemap':sitemap_report,'feeds':feeds_report,'failures':failures},ensure_ascii=False,indent=2))
+    locale_report = check_locales(config, require)
+    print(json.dumps({'pages':report,'paper_pages':paper_report,'lecture_pages':lecture_report,'redirects':config.get('redirects', []),'sitemap':sitemap_report,'feeds':feeds_report,'locales':locale_report,'failures':failures},ensure_ascii=False,indent=2))
     return bool(failures)
 
 

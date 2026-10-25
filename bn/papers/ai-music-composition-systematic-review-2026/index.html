@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs | Byunghyun Ban</title>
+    <meta name="description" content="AI-based music composition has evolved rapidly, with research paradigms shifting from modeling local patterns to capturing global musical coherence. This paper examines how comp…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/ai-music-composition-systematic-review-2026/">
+<meta name="citation_doi" content="10.13140/RG.2.2.14616.35848">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/ai-music-composition-systematic-review-2026/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/bn/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="bn_BD">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs | Byunghyun Ban">
+    <meta property="og:description" content="AI-based music composition has evolved rapidly, with research paradigms shifting from modeling local patterns to capturing global musical coherence. This paper examines how comp…">
+    <meta property="og:url" content="https://bhban.kr/bn/papers/ai-music-composition-systematic-review-2026/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p12-first-page-9fe68307097b.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/bn/#website", "url": "https://bhban.kr/bn/", "name": "Byunghyun Ban", "inLanguage": "bn"}, {"@type": "WebPage", "@id": "https://bhban.kr/bn/papers/ai-music-composition-systematic-review-2026/#page", "url": "https://bhban.kr/bn/papers/ai-music-composition-systematic-review-2026/", "name": "A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs | Byunghyun Ban", "description": "AI-based music composition has evolved rapidly, with research paradigms shifting from modeling local patterns to capturing global musical coherence. This paper examines how comp…", "inLanguage": "bn", "mainEntity": {"@id": "https://bhban.kr/papers/ai-music-composition-systematic-review-2026/#article"}, "isPartOf": {"@id": "https://bhban.kr/bn/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/ai-music-composition-systematic-review-2026/#article", "url": "https://bhban.kr/papers/ai-music-composition-systematic-review-2026/", "name": "A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs", "headline": "A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs", "author": [{"@type": "Person", "name": "Byunghyun Ban"}], "datePublished": "2026", "inLanguage": "en", "abstract": "AI-based music composition has evolved rapidly, with research paradigms shifting from modeling local patterns to capturing global musical coherence. This paper examines how compositional AI has progressed from modeling local patterns to forming global musical ideas. Early machine learning models, based on state transition probabilities, were able to capture only local continuity between notes and chords, and thus failed to produce meaningful phrasing or large-scale musical structure. With the introduction of recurrent architectures, models began to incorporate temporal context, and transformer-based approaches further enabled the generation of musically coherent passages over longer spans. Nevertheless, these models still exhibit limitations in maintaining overall structural completeness and long-term musical direction. More recent approaches move beyond sequential prediction toward the simultaneous generation of musical structure and sonic characteristics. This shift reflects a transition from the accumulation of local decisions to the formation of a more holistic musical representation.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/ai-music-composition-systematic-review-2026/#page"}, "creativeWorkStatus": "Preprint", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.13140/RG.2.2.14616.35848"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/ai-music-composition-systematic-review-2026/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "মূল পৃষ্ঠা", "item": "https://bhban.kr/bn/"}, {"@type": "ListItem", "position": 2, "name": "গবেষণাপত্র", "item": "https://bhban.kr/bn/papers/"}, {"@type": "ListItem", "position": 3, "name": "A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs", "item": "https://bhban.kr/bn/papers/ai-music-composition-systematic-review-2026/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/ai-music-composition-systematic-review-2026/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/ai-music-composition-systematic-review-2026/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"মেনু খুলুন","menuClose":"মেনু বন্ধ করুন","submenuExpand":"{label}-এর উপমেনু খুলুন","submenuCollapse":"{label}-এর উপমেনু বন্ধ করুন","nextSwipeHint":"একেবারে নিচে এসে আরও একবার ওপরের দিকে সোয়াইপ করলে পরের অংশে যাবেন।","nextScrollHint":"একেবারে নিচে এসে আরও একবার নিচে স্ক্রল করলে পরের অংশে যাবেন।","lectureResults":"{category} {count}টি · সাম্প্রতিক বক্তৃতা আগে","categoryAll":"সব","categoryCompany":"ব্যবসা প্রতিষ্ঠান","categoryPublic":"সরকারি প্রতিষ্ঠান","categoryEducation":"শিক্ষা প্রতিষ্ঠান","categoryResearch":"গবেষণা প্রতিষ্ঠান","categoryConference":"সম্মেলন","listMedia":"ভিডিও","listNews":"সংবাদ প্রতিবেদন","listLectures":"বক্তৃতা","listCoursesOnline":"অনলাইন কোর্স","listCoursesOffline":"সশরীর কোর্স","listPapers":"গবেষণাপত্র","listPatents":"পেটেন্ট","listProjects":"প্রকল্প","listActivities":"কার্যক্রম","listMemberships":"সদস্যপদের কার্যক্রম","listCollections":"সংগ্রহের সামগ্রী","listDonations":"অনুদানের বিবরণ","listGeneric":"তালিকা","listStatus":"{total}টির মধ্যে {visible}টি দেখানো হচ্ছে","listMore":"আরও {label} দেখুন ({remaining}টি বাকি)","citationCopyLabel":"উদ্ধৃতির তথ্য কপি করুন","citationCopied":"উদ্ধৃতির তথ্য কপি করা হয়েছে।","citationError":"উদ্ধৃতির তথ্য কপি করা যায়নি। ব্রাউজারের ক্লিপবোর্ড সেটিংস দেখুন।","citationFormatCopied":"{label} উদ্ধৃতির তথ্য কপি করা হয়েছে।","citationManualCopy":"উদ্ধৃতিটি নির্বাচন করা হয়েছে। নিজে কপি করুন।","contactLoadError":"বার্তা পাঠানোর ব্যবস্থা লোড করা যায়নি। কিছুক্ষণ পরে আবার চেষ্টা করুন।","contactSent":"আপনার বার্তা গ্রহণ করা হয়েছে।","contactError":"একটি ত্রুটি হয়েছে। আবার চেষ্টা করুন।","contactSending":"পাঠানো হচ্ছে...","streamRetry":"আবার লোড করুন","streamError":"পরবর্তী বিষয়বস্তু লোড করা যায়নি। আবার চেষ্টা করুন অথবা উপরের লিংকে যান।","streamLoading":"{label}-এর পরবর্তী বিষয়বস্তু লোড হচ্ছে।"}</script>
+</head>
+<body data-locale="bn" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">মূল বিষয়বস্তুতে যান</a>
+    <nav class="navbar" aria-label="প্রধান মেনু"><div class="navbar-brand"><a href="/bn/" aria-label="Byunghyun Ban মূল পৃষ্ঠা"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/bn/" class="nav-link nav-main-link" data-nav-page="home">পরিচিতি</a></li><li data-nav-group="media"><a href="/bn/media/" class="nav-link nav-main-link" data-nav-page="media">মিডিয়া</a></li><li data-nav-group="books"><a href="/bn/books/" class="nav-link nav-main-link" data-nav-page="books">বই</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/bn/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">বক্তৃতা</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="বক্তৃতার উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="বক্তৃতার বিভাগ"><li><a href="/bn/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">সব</a></li><li><a href="/bn/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">ব্যবসা প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">সরকারি প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">শিক্ষা প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">গবেষণা প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">সম্মেলন</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/bn/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">কোর্স</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="কোর্স উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/bn/courses/online/" data-nav-page="courses-online">অনলাইন</a></li><li><a href="/bn/courses/offline/" data-nav-page="courses-offline">সশরীর</a></li></ul></li><li data-nav-group="news"><a href="/bn/news/" class="nav-link nav-main-link" data-nav-page="news">সংবাদ</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/bn/papers/" class="nav-link active nav-main-link" data-nav-page="papers">গবেষণা ও উন্নয়ন</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="গবেষণা ও উন্নয়নের উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/bn/papers/" data-nav-page="papers">গবেষণাপত্র</a></li><li><a href="/bn/patents/" data-nav-page="patents">পেটেন্ট</a></li><li><a href="/bn/projects/" data-nav-page="projects">প্রকল্প</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/bn/activities/" class="nav-link nav-main-link" data-nav-page="activities">অন্যান্য</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="অন্যান্য উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/bn/activities/" data-nav-page="activities">সামাজিক অবদান</a></li><li><a href="/bn/memberships/" data-nav-page="memberships">সদস্যপদ</a></li><li><a href="/bn/collections/" data-nav-page="collections">সংগ্রহ</a></li></ul></li><li data-nav-group="contact"><a href="/bn/contact/" class="btn-contact nav-main-link" data-nav-page="contact">যোগাযোগ</a></li></ul><details class="language-switcher"><summary aria-label="ভাষা নির্বাচন"><span aria-hidden="true">🌐</span> <span>বাংলা</span></summary><nav class="language-options" aria-label="ভাষা নির্বাচন"><a href="/papers/ai-music-composition-systematic-review-2026/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/ai-music-composition-systematic-review-2026/" hreflang="en" lang="en">English</a><a href="/zh/papers/ai-music-composition-systematic-review-2026/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/papers/ai-music-composition-systematic-review-2026/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/ai-music-composition-systematic-review-2026/" hreflang="es" lang="es">Español</a><a href="/ar/papers/ai-music-composition-systematic-review-2026/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/ai-music-composition-systematic-review-2026/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/ai-music-composition-systematic-review-2026/" hreflang="bn" lang="bn" aria-current="true">বাংলা</a><a href="/pt/papers/ai-music-composition-systematic-review-2026/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="মেনু খুলুন">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="বর্তমান অবস্থান"><a href="/bn/">মূল পৃষ্ঠা</a><span aria-hidden="true">/</span><a href="/bn/papers/">গবেষণাপত্র</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-2026-p12"><header><p class="paper-kind">প্রিপ্রিন্ট · পিয়ার রিভিউ হয়নি</p><h1 id="paper-title" lang="en">A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs</h1><p class="paper-authors">Byunghyun Ban</p><p class="paper-venue">2026</p><nav class="paper-reader-jumps" aria-label="গবেষণাপত্রে যান"><a href="#abstract-heading">সারসংক্ষেপ</a><a href="#full-text">পূর্ণপাঠ</a><a href="#citation-heading">উদ্ধৃতি দিন</a></nav><div class="gitIcons">
+                                <a href="/papers/ai-music-composition-systematic-review-2026/paper.pdf" target="_blank" rel="noreferrer" download aria-label="A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs সম্পূর্ণ প্রিপ্রিন্ট PDF ডাউনলোড" title="PDF ডাউনলোড"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg><span class="paper-action-label">PDF</span></a>
+                                <a href="https://doi.org/10.13140/RG.2.2.14616.35848" target="_blank" rel="noreferrer" aria-label="A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs DOI" title="DOI মূল প্রকাশনার তথ্য"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">DOI</span></a>
+                                <a href="https://www.researchgate.net/publication/404370528_A_Systematic_Review_of_AI-Based_Music_Composition_Limitations_and_Breakthroughs" target="_blank" rel="noreferrer" aria-label="A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs মূল প্রকাশনার তথ্য" title="গবেষণাপত্রের মূল প্রকাশনার তথ্য"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">উৎস</span></a>
+                                <span class="citation" data-citation="Byunghyun Ban. (2026). &quot;A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs.&quot; ResearchGate · Preprint (not peer-reviewed). https://doi.org/10.13140/RG.2.2.14616.35848" aria-label="উদ্ধৃতির তথ্য কপি করুন" title="উদ্ধৃতির তথ্য কপি করুন"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">উদ্ধৃতি দিন</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>সূচিপত্র</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-2026-p12-i.-introduction">I. Introduction</a></li><li class="toc-level-2"><a href="#paper-2026-p12-ii.-non-learning-algorithms">II. Non-learning Algorithms</a></li><li class="toc-level-3"><a href="#paper-2026-p12-rule-based-compositions">1. Rule-based compositions</a></li><li class="toc-level-3"><a href="#paper-2026-p12-limitations">2. Limitations</a></li><li class="toc-level-2"><a href="#paper-2026-p12-iii.-early-machine-learning-approaches">III. Early Machine Learning Approaches</a></li><li class="toc-level-3"><a href="#paper-2026-p12-the-need-for-stochastic-models">1. The Need for Stochastic Models</a></li><li class="toc-level-3"><a href="#paper-2026-p12-early-stochastic-models">2. Early Stochastic Models</a></li><li class="toc-level-3"><a href="#paper-2026-p12-markov-chain-models">3. Markov Chain Models</a></li><li class="toc-level-3"><a href="#paper-2026-p12-hidden-markov-models">4. Hidden Markov Models</a></li><li class="toc-level-3"><a href="#paper-2026-p12-higher-order-markov-models">5. Higher-order Markov Models</a></li><li class="toc-level-3"><a href="#paper-2026-p12-limitations-3">6. Limitations</a></li><li class="toc-level-2"><a href="#paper-2026-p12-iv.-artificial-neural-networks">IV. Artificial Neural Networks</a></li><li class="toc-level-3"><a href="#paper-2026-p12-feedforward-model">1. Feedforward Model</a></li><li class="toc-level-3"><a href="#paper-2026-p12-recurrent-model">2. Recurrent Model</a></li><li class="toc-level-2"><a href="#paper-2026-p12-v.-from-recurrent-memory-to-attention">V. From Recurrent Memory to Attention</a></li><li class="toc-level-3"><a href="#paper-2026-p12-attention-mechanism">1. Attention mechanism</a></li><li class="toc-level-3"><a href="#paper-2026-p12-transformer">2. Transformer</a></li><li class="toc-level-3"><a href="#paper-2026-p12-applications-2">3. Applications</a></li><li class="toc-level-3"><a href="#paper-2026-p12-limitations-5">4. Limitations</a></li><li class="toc-level-3"><a href="#paper-2026-p12-limitations-of-symbolic-prediction">1. Limitations of Symbolic Prediction</a></li><li class="toc-level-3"><a href="#paper-2026-p12-raw-waveform-modeling">2. Raw Waveform Modeling</a></li><li class="toc-level-3"><a href="#paper-2026-p12-spectrogram-and-latent-audio-representations">3. Spectrogram and Latent Audio Representations</a></li><li class="toc-level-3"><a href="#paper-2026-p12-full-audio-generation">4. Full Audio Generation</a></li><li class="toc-level-3"><a href="#paper-2026-p12-diffusion-based-audio-generation">5. Diffusion-based Audio Generation</a></li><li class="toc-level-3"><a href="#paper-2026-p12-flow-matching-and-rectified-flow">6. Flow Matching and Rectified Flow</a></li><li class="toc-level-3"><a href="#paper-2026-p12-hybrid-and-multimodal-approaches">7. Hybrid and Multimodal Approaches</a></li><li class="toc-level-2"><a href="#paper-2026-p12-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">সারসংক্ষেপ</h2><p class="abstract" lang="en">AI-based music composition has evolved rapidly, with research paradigms shifting from modeling local patterns to capturing global musical coherence. This paper examines how compositional AI has progressed from modeling local patterns to forming global musical ideas. Early machine learning models, based on state transition probabilities, were able to capture only local continuity between notes and chords, and thus failed to produce meaningful phrasing or large-scale musical structure. With the introduction of recurrent architectures, models began to incorporate temporal context, and transformer-based approaches further enabled the generation of musically coherent passages over longer spans. Nevertheless, these models still exhibit limitations in maintaining overall structural completeness and long-term musical direction. More recent approaches move beyond sequential prediction toward the simultaneous generation of musical structure and sonic characteristics. This shift reflects a transition from the accumulation of local decisions to the formation of a more holistic musical representation.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords">▪Keyword : compositional AI, AI-based composition, generative AI,
+pattern reconstruction</p><h2 id="paper-2026-p12-i.-introduction"><strong>I. Introduction</strong> </h2>
+<p>Algorithmic approaches to music composition have been studied much
+earlier than modern machine learning-based generative models. Over time,
+music generation techniques have evolved from rule-based systems to
+probabilistic models, and subsequently to deep learning-based
+approaches, progressively expanding from the generation of local
+patterns to the formation of global musical structure.</p>
+<p>This study surveys this technological evolution and analyzes how
+different approaches model musical structure. Based on this analysis, we
+discuss the extent to which AI-based composition exhibits structural
+similarities to human creative processes.</p>
+
+<h2 id="paper-2026-p12-ii.-non-learning-algorithms"><strong>II. Non-learning
+Algorithms</strong></h2>
+<h3 id="paper-2026-p12-rule-based-compositions"><strong>1. Rule-based
+compositions</strong> </h3>
+<p>The earliest known computer-generated musical score is the Illiac
+Suite, composed in 1957 [1]. The Illiac Suite represents a prototypical
+rule-based generative system, in which compositional rules are
+explicitly encoded in the program. Subsequently, a wide range of studies
+refined and extended algorithmic and rule-based approaches to music
+composition. While some works employed arbitrary or ad hoc rules,
+academically grounded approaches typically derived compositional
+patterns from established music theory, such as counterpoint and
+harmony, and used them as generative rules [2–5].</p>
+<h3 id="paper-2026-p12-limitations"><strong>2. Limitations</strong></h3>
+<p>However, due to the inherently hierarchical structure of music and
+its complex temporal dependencies, algorithms that directly formalize
+theoretical rules often produce outputs that are locally valid but fail
+to maintain coherent phrasing and large-scale structure. In addition,
+inconsistencies arising from incomplete or conflicting rule sets are
+frequently observed [6]. Although some studies attempted to address
+these limitations by introducing empirically designed rules [7–8], such
+approaches were unable to overcome the fundamental constraints of
+rule-based systems.</p>
+<p>Alternative methods, including evolutionary algorithms, were later
+proposed [9–11]. Nevertheless, these approaches remained limited in
+terms of model flexibility, representational capacity, and their ability
+to capture long-term temporal dependencies. As a result, data-driven
+machine learning approaches gradually emerged as the dominant paradigm
+in algorithmic composition.</p>
+<h2 id="paper-2026-p12-iii.-early-machine-learning-approaches"><strong>III. Early
+Machine Learning Approaches</strong></h2>
+<h3 id="paper-2026-p12-the-need-for-stochastic-models"><strong>1. The Need for
+Stochastic Models</strong></h3>
+<p>Despite their grounding in established music theory, rule-based
+approaches are inherently limited in their ability to model the
+variability and uncertainty present in musical composition. In practice,
+music is not strictly governed by deterministic rules; rather, it
+exhibits probabilistic patterns, in which multiple valid continuations
+may exist for a given musical context. Moreover, constructing
+comprehensive rule sets that adequately capture diverse musical styles
+proved to be highly labor-intensive.</p>
+<p>Furthermore, musical structure is inherently sequential and
+context-dependent, requiring models capable of representing transitions
+between states over time. Deterministic rule systems struggle to capture
+such temporal dependencies in a flexible manner, particularly when
+multiple competing constraints are involved.</p>
+<p>These limitations motivated the development of stochastic approaches,
+in which music is modeled as a probabilistic process. Within this
+framework, compositional decisions are not determined by fixed rules,
+but are instead governed by probability distributions over possible
+musical events, enabling more flexible and stylistically coherent
+generation.</p>
+<h3 id="paper-2026-p12-early-stochastic-models"><strong>2. Early Stochastic
+Models</strong></h3>
+<p>Early stochastic approaches to music composition were not yet fully
+developed generative models based on Bayesian learning, but were closer
+to frameworks that modeled transitions between musical elements. In
+1955, Caplin and Prinz [12] implemented a melody generation system
+inspired by probabilistic transitions, similar in spirit to Mozart’s
+dice game. In the early 1960s, Iannis Xenakis further explored
+stochastic approaches to composition, proposing models based on
+probabilistic transitions implemented with computational assistance
+[13].</p>
+<p>However, at that time, effective algorithms for learning transition
+probabilities directly from data had not yet been established, and
+computational resources were severely limited. As a result, transition
+probabilities were typically specified manually rather than learned from
+data. Consequently, these early systems can be understood as rule-driven
+stochastic models, combining deterministic design with probabilistic
+elements.</p>
+<figure class="paper-figure"><img alt="[Fig. 1] Conceptual comparison of Markov-based models for chord generation. Blue circles denote states, green circles denote hidden states, pink circles denote observations, and beige boxes denote generated chord outputs. Arrows indicate state transitions, and dashed arrows indicate observation or output generation. (a) A first-order Markov Chain model, in which the current state depends only on the immediately preceding state. (b) A Hidden Markov Chain model, in which latent hidden states generate observable chord events through emission probabilities. (c) A second-order Markov Chain model, in which the current state depends on the previous two states. (d) An n-th order Markov Chain model, in which the current state depends on the previous n states." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p12/figure-1.webp"/><figcaption>
+<p><strong>[Fig. 1] Conceptual comparison of Markov-based models for
+chord generation.</strong></p>
+<p>Blue circles denote states, green circles denote hidden states, pink
+circles denote observations, and beige boxes denote generated chord
+outputs. Arrows indicate state transitions, and dashed arrows indicate
+observation or output generation. (a) A first-order Markov Chain model,
+in which the current state depends only on the immediately preceding
+state. (b) A Hidden Markov Chain model, in which latent hidden states
+generate observable chord events through emission probabilities. (c) A
+second-order Markov Chain model, in which the current state depends on
+the previous two states. (d) An n-th order Markov Chain model, in which
+the current state depends on the previous n states.</p>
+</figcaption></figure>
+
+<h3 id="paper-2026-p12-markov-chain-models"><strong>3. Markov Chain Models</strong>
+</h3>
+<h4 id="paper-2026-p12-markov-chain"><strong>3.1 Markov Chain</strong></h4>
+<p>Markov chain is a stochastic process that evolves through a finite
+set of states in discrete time, assuming that the probability of the
+next state depends only on the current state. In algorithmic
+composition, this assumption allows musical generation to be formulated
+as a sequence of probabilistic state transitions, where musical events
+such as pitches, notes, or chords are encoded as discrete states.</p>
+<p>Many early Markov-based systems modeled only a single musical
+viewpoint, such as pitch, rhythm, or harmony. Accordingly, the
+transition probability matrix was estimated from a training corpus for
+one selected dimension, enabling the system to reproduce local
+statistical regularities while remaining limited in its ability to
+represent interactions among multiple musical parameters.</p>
+<h4 id="paper-2026-p12-applications"><strong>3.2 Applications</strong> </h4>
+<p>Pinkerton (1956) calculated transition probabilities between notes
+based on several dozen nursery tunes and implemented the Banal
+Tune-Maker using these probabilities [14]. Tipei (1975) introduced
+Markov chains as a component within a larger compositional system [15],
+while Ames and Domino (1992) employed Markov chains for rhythm
+generation in jazz and rock contexts [16]. These examples show that
+Markov chains can be applied not only to melody generation, but also to
+rhythm generation or harmonic progression, depending on whether the
+inferred states are defined as notes, chords, or rhythmic events.</p>
+<p>Attempts to compensate for the structural limitations of Markov chain
+models developed in two major directions. The first involved combining
+Markov-based generation with external structural constraints. Ponsford
+et al. (1999) proposed an algorithm that applied a rule-based template
+to Markov-generated output, thereby producing music that was more
+structurally acceptable [17]. The second direction involved applying
+Markov chains to musical domains in which local state transitions are
+particularly effective, such as jazz improvisation. Grachten (2001)
+proposed a Markov chain model for jazz improvisation [18], and Thom
+(2000) similarly developed an improvisation algorithm based on Markovian
+modeling of pitch, interval, and contour statistics [19].</p>
+<h4 id="paper-2026-p12-limitations-1"><strong>3.3 Limitations</strong> </h4>
+<p>Despite their early popularity, standard Markov chains exhibit
+fundamental structural limitations. Because these models rely strictly
+on single-state transitions, their outputs may be mathematically
+plausible within highly localized contexts, such as valid note-to-note
+or chord-to-chord transitions derived from corpus statistics. However,
+they struggle to learn or maintain overarching musical context.</p>
+<p>As a result, the generated output often sounds less like coherent
+music and more like an aimless sequence of states that merely follows
+short-term statistical regularities. To overcome these limitations,
+researchers sought models with greater flexibility and representational
+capacity, leading to the application of Hidden Markov Models to
+algorithmic composition.</p>
+<h3 id="paper-2026-p12-hidden-markov-models"><strong>4. Hidden Markov Models</strong>
+</h3>
+<h4 id="paper-2026-p12-hidden-markov-model"><strong>4.1 Hidden Markov
+Model</strong></h4>
+<p>Hidden Markov Models (HMMs) extend standard Markov chains by
+introducing latent, unobservable states. In a standard Markov chain, the
+states themselves are directly observed. In an HMM, however, the model
+assumes that the observed sequence is generated by an underlying
+sequence of hidden states.</p>
+<p>The hidden state refers to an internal condition that cannot be
+directly observed but is assumed to govern the generation process. The
+observable state refers to the actual event that appears in the data,
+such as a note, chord, or rhythmic pattern. The relationship between
+hidden and observable states is defined by emission probabilities, which
+specify how likely each hidden state is to generate a particular
+observable event.</p>
+<p>In musical applications, for example, a hidden state may represent an
+underlying chord or harmonic function, while the observable state may
+represent a surface-level pitch. In this case, the emission
+probabilities describe which pitches are likely to be generated under a
+given chord. Thus, if the hidden state corresponds to a C major chord,
+pitches such as C, E, or G would be expected to have higher emission
+probabilities than non-chord tones. In this way, HMMs can model the
+relationship between latent harmonic context and observable melodic
+events.</p>
+<p>Thus, an HMM consists of two probabilistic components: transition
+probabilities between hidden states, and emission probabilities from
+hidden states to observable outputs. HMMs have been widely used in
+domains where observable data reflect hidden processes, such as speech
+recognition, part-of-speech tagging, and genomic sequence analysis. In
+algorithmic composition, this structure is useful because musical
+surfaces, such as notes or chords, may reflect underlying harmonic,
+contrapuntal, or phrase-level contexts. Compared with standard Markov
+chains, HMMs therefore provide a more flexible framework for tasks such
+as harmonization, counterpoint generation, and accompaniment
+generation.</p>
+<h4 id="paper-2026-p12-applications-1"><strong>4.2 Applications</strong> </h4>
+<p>Biyikoglu (2003) applied HMMs to four-part chorale harmonization in
+the style of Johann Sebastian Bach, taking advantage of the model’s
+ability to infer globally optimized sequences of hidden states [20].
+Allan (2002) similarly employed HMMs for Bach-style chorale
+harmonization, but reduced the complexity of the task by decomposing the
+harmonization problem into three subtasks [21].</p>
+<p>A later commercial application can be found in Microsoft’s SongSmith.
+Morris et al. (2008) trained an HMM on approximately 300 lead sheets to
+generate chordal accompaniment for user-provided vocal melodies [22].
+The system was designed for non-expert users, enabling them to sing or
+input a melody and receive a real-time harmonic accompaniment generated
+by the model.</p>
+<p>These applications show that HMMs were particularly useful for tasks
+in which an observable musical sequence, such as a melody, must be
+mapped onto an underlying harmonic or contrapuntal structure. In this
+sense, HMMs were more suitable for harmonization and accompaniment
+generation than for fully autonomous composition.</p>
+<h4 id="paper-2026-p12-limitations-2"><strong>4.3 Limitations</strong> </h4>
+<p>Despite their greater flexibility, HMMs retain a fundamentally
+Markovian temporal structure: each hidden state typically depends only
+on the immediately preceding hidden state. As a result, they can enrich
+local generation by introducing latent musical contexts, but they do not
+inherently solve the problem of long-range musical coherence.</p>
+<p>In composition, this means that HMMs may generate more varied and
+context-sensitive outputs than simple Markov chains, yet still struggle
+to represent large-scale form, thematic development, or phrase-level
+planning. This limitation motivated later approaches, such as
+higher-order Markov models, which attempted to extend the temporal
+context by conditioning generation on multiple preceding states.</p>
+<h3 id="paper-2026-p12-higher-order-markov-models"><strong>5. Higher-order Markov
+Models</strong> </h3>
+<h4 id="paper-2026-p12-second-order-markov-models"><strong>5.1 Second order Markov
+Models</strong> </h4>
+<p>Second-order Markov models extend first-order Markov chains by
+conditioning the next state on the two immediately preceding states
+rather than only one. Formally, the probability of the current state is
+modeled as
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo form="prefix" stretchy="false">(</mo><msub><mi>s</mi><mi>t</mi></msub><mo>∣</mo><msub><mi>s</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>s</mi><mrow><mi>t</mi><mo>−</mo><mn>2</mn></mrow></msub><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(s_{t} \mid s_{t - 1},s_{t - 2})</annotation></semantics></math></span>,
+allowing the model to capture short contextual patterns that cannot be
+represented by single-state transitions.</p>
+<p>In algorithmic composition, this enables the model to learn more
+stable local phrases, since a note, chord, or rhythmic event can be
+generated with reference to a short preceding context. For example, in
+chord progression modeling, the next chord may depend not only on the
+current chord but also on the previous harmonic movement.</p>
+<p>Second-order Markov models can also be combined with hidden-state
+architectures. In a second-order Hidden Markov Model, the hidden state
+transition depends on the previous two hidden states, while observable
+musical events are still generated through emission probabilities. This
+allows the model to represent both latent musical context and
+short-range sequential dependency.</p>
+<p>Farbood and Schoner (2001) proposed a second-order Hidden Markov
+Model for generating Palestrina-style first-species counterpoint [23].
+The model was trained using rules derived from counterpoint pedagogy,
+allowing the system to combine hidden-state modeling with a broader
+short-term temporal context.</p>
+<h4 id="paper-2026-p12-higher-order-markov-models-1"><strong>5.2 Higher-order Markov
+Models</strong></h4>
+<p>Higher-order Markov models generalize this idea by conditioning the
+next state on the previous n states. In an n-th order Markov model, the
+transition probability is defined as
+<span class="paper-inline-math"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo form="prefix" stretchy="false">(</mo><msub><mi>s</mi><mi>t</mi></msub><mo>∣</mo><msub><mi>s</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>s</mi><mrow><mi>t</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mo>,</mo><msub><mi>s</mi><mrow><mi>t</mi><mo>−</mo><mi>n</mi></mrow></msub><mo form="postfix" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(s_{t} \mid s_{t - 1},s_{t - 2},...,s_{t - n})</annotation></semantics></math></span>.
+By expanding the length of the conditioning context, these models aim to
+capture longer musical dependencies and more coherent phrase-level
+patterns.</p>
+<p>In music composition, higher-order Markov models can better preserve
+recurring melodic, harmonic, or rhythmic sequences than first-order
+models. They are particularly useful when short motifs or phrase
+fragments need to be maintained over several consecutive events.</p>
+<p>However, a major limitation is that the order n is fixed in advance.
+If n is too small, the model remains unable to capture meaningful
+musical context. If n is too large, the number of possible state
+combinations increases rapidly, causing data sparsity and computational
+inefficiency. As a result, higher-order models often face a trade-off
+between contextual depth and statistical reliability.</p>
+<p>Ponsford et al. (1999) used third- and fourth-order Markov chains to
+generate Baroque sarabande-style pieces [17]. Their approach attempted
+to improve structural plausibility by combining higher-order transition
+modeling with additional structural annotations and post-processing
+constraints.</p>
+<h4 id="paper-2026-p12-variable-order-markov-models"><strong>5.3 Variable-order Markov
+Models</strong></h4>
+<p>Variable-order Markov models, also called mixed-order Markov models,
+were proposed to overcome the rigidity of fixed-order models. Instead of
+using a single predetermined context length, these models dynamically
+adjust the order depending on the available musical context and the
+statistical reliability of observed patterns.</p>
+<p>In this framework, frequently observed patterns can be modeled with
+longer contexts, while rare or uncertain patterns may fall back to
+shorter contexts. This allows the model to use detailed contextual
+information when sufficient data are available, without being forced to
+estimate unreliable high-dimensional transition probabilities for every
+possible state sequence.</p>
+<p>For algorithmic composition, variable-order models provide a more
+flexible way to balance local pattern preservation and generalization.
+They can reproduce longer motifs or stylistic patterns when those
+patterns are well represented in the training corpus, while still
+maintaining generative flexibility in less familiar contexts.</p>
+<p>Variable-order Markov models subsequently became an important
+methodology in algorithmic composition from the mid-1990s onward.
+Conklin and Witten (1995) implemented a variable-order Markov model and
+proposed a multiple viewpoint system, in which different musical
+features, such as pitch, duration, and contour, were modeled as separate
+viewpoints and combined in parallel [24]. Rather than encoding all
+musical information into a single state sequence, this approach modeled
+multiple structural dimensions of music independently and then
+integrated them during prediction.</p>
+<p>Various applications of variable-order models were later proposed
+[25–28]. These studies continued to explore modeling strategies in which
+different musical layers, such as chord, rhythm, and pitch, were
+represented separately and subsequently combined. At the same time,
+researchers also sought to reduce computational and memory complexity
+for real-time generation and improvisation. Representative examples
+include Prediction Suffix Trees, which combine variable-order Markov
+modeling with predictive tree structures [29], and Factor Oracles, which
+provide a more space-efficient representation for sequence modeling
+[30].</p>
+<h3 id="paper-2026-p12-limitations-3"><strong>6. Limitations</strong> </h3>
+<p>Although higher-order and variable-order Markov models improved the
+ability to model short- and mid-range musical context, they did not
+fully solve the problem of global musical coherence. Increasing the
+order of the model substantially raises computational complexity and
+expands the number of possible state combinations. This often leads to
+data sparsity, especially when the training corpus is limited.</p>
+<p>A related problem is weak generalization over rare transitions.
+Frequently occurring progressions or melodic patterns may be learned
+effectively, but less common yet musically important events—such as
+modulations, cadential gestures, or extended dominant structures—are
+less reliably modeled. As a result, the generated music may overuse
+statistically common patterns and avoid structurally important but
+infrequent transitions, leading to outputs that sound repetitive or
+stylistically flat.</p>
+<p>Furthermore, even when longer contexts are considered, the model
+still predicts the next event based on preceding states. It does not
+inherently plan large-scale musical form, thematic development, or
+narrative structure. In other words, higher-order Markov models can
+extend local continuity, but they do not naturally generate a sense of
+beginning, development, climax, and resolution.</p>
+<p>These models also face a trade-off between underfitting and
+overfitting. If the model order or complexity is too low, the generated
+sequence may drift aimlessly due to insufficient contextual information.
+If the model order is too high, the system may become trapped in
+memorized patterns from the training corpus or fail to generalize to
+unseen transitions. Thus, while higher-order Markov models represent an
+important step toward context-aware music generation, they still lack a
+deeper understanding of musical structure.</p>
+<p>These limitations motivated the development of models with greater
+representational capacity and more flexible contextual modeling, paving
+the way for neural network-based approaches to algorithmic
+composition.</p>
+<h2 id="paper-2026-p12-iv.-artificial-neural-networks"><strong>IV. Artificial Neural
+Networks</strong></h2>
+<h3 id="paper-2026-p12-feedforward-model"><strong>1. Feedforward Model</strong> </h3>
+<p>Feedforward neural networks represent one of the earliest and
+simplest ways of applying artificial neural networks to algorithmic
+composition. From an application-oriented perspective, their main role
+was to replace explicitly defined transition tables or rule sets with
+learned input-output mappings. A musical context is encoded as a
+fixed-size input vector, and the network produces one or more musical
+outputs, such as a pitch, chord, voice-leading decision, or
+harmonization label.</p>
+<p>Unlike Markovian models, which explicitly estimate transition
+probabilities between symbolic states, feedforward networks learn
+nonlinear relationships between musical inputs and outputs through
+weighted connections. This made them useful for localized prediction and
+harmonization tasks, especially when the target output could be
+formulated as a bounded classification or regression problem.</p>
+
+<h4 id="paper-2026-p12-single-state-prediction"><strong>1.1 Single State
+Prediction</strong></h4>
+<p>In single-state prediction, the network receives a fixed
+representation of the preceding musical context and predicts one target
+event, such as the next note, chord, or harmonic label. This formulation
+is conceptually similar to next-state prediction in Markov models, but
+the relationship between input and output is learned through the network
+rather than stored as an explicit transition matrix.</p>
+<p>However, because feedforward networks lack internal memory, the
+temporal context must be manually encoded into the input vector. As a
+result, the model can only use the information explicitly provided
+within this fixed window, limiting its ability to represent longer
+musical dependencies.</p>
+<p>Shibata (1991) proposed a harmonization model that predicted chord
+values or note-scale associations for a given melody using a feedforward
+artificial neural network [31]. Verbeurgt et al. (2004) later combined a
+Markov chain algorithm with an artificial neural network [32]. In their
+approach, the Markov chain first generated a sequence of musical motifs,
+and the neural network then assigned concrete absolute pitches to these
+motifs one at a time.</p>
+<figure class="paper-figure"><img alt="[Fig. 2] Evolution of Neural Network based Music Generation Before Transformer Era. Standard RNNs encode previous musical events into a single hidden state, whereas LSTMs improve long-term memory through gated cell states. Attention-augmented recurrent models further allow the prediction step to selectively access relevant past states, improving the preservation of motifs, repeated patterns, and longer musical context." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p12/figure-2.webp"/><figcaption>
+<p><strong>[Fig. 2] Evolution of Neural Network based Music Generation
+Before Transformer Era.</strong></p>
+<p>Standard RNNs encode previous musical events into a single hidden
+state, whereas LSTMs improve long-term memory through gated cell states.
+Attention-augmented recurrent models further allow the prediction step
+to selectively access relevant past states, improving the preservation
+of motifs, repeated patterns, and longer musical context.</p>
+</figcaption></figure>
+
+<p>These examples illustrate the role of feedforward neural networks in
+localized musical prediction. Compared with explicit Markov transition
+tables, feedforward networks provide a more flexible nonlinear mapping
+between input features and output states. However, because they lack
+recurrent memory, temporal context must be manually encoded into the
+input representation. As a result, feedforward models remained limited
+in their ability to infer musical context across time, which led to a
+rapid shift toward recurrent neural network-based approaches.</p>
+<h4 id="paper-2026-p12-multi-state-prediction"><strong>1.2 Multi-state
+Prediction</strong> </h4>
+<p>Feedforward architectures can also be extended to multi-state
+prediction, in which the network produces several musical outputs
+simultaneously. This approach is useful for tasks such as harmonization,
+counterpoint, or multi-voice generation, where the system must determine
+multiple notes or voices at a given moment.</p>
+<p>Compared with single-state prediction, multi-state prediction allows
+the model to generate richer local musical structures. Nevertheless, the
+model still operates within a fixed input-output frame and does not
+dynamically accumulate temporal context across a sequence. Therefore,
+feedforward models remain most suitable for local prediction,
+harmonization, or refinement tasks rather than full-scale sequential
+composition.</p>
+<p>HARMONET [33] was designed to infer harmonic information for
+four-part chorale harmonization in the style of J. S. Bach, rather than
+predicting isolated pitch events. Although it was not an end-to-end
+model, it represents an early attempt to coordinate multiple types of
+musical information within a neural architecture. The system consisted
+of three components: the first ANN extracted harmonization-related
+information, a constraint-based system generated chords from this
+information, and a second ANN added ornaments to the generated harmonic
+structure.</p>
+<p>These approaches show that neural composition systems were not
+limited to single-state prediction. Some models attempted to infer
+multiple musical states or structural features in parallel, while others
+extended prediction along the temporal axis by generating multiple state
+transitions as a sequence. A patent-based implementation illustrates the
+latter direction. Ban (2017) proposed a modular neural composition
+method in which separate neural networks generate melody, rhythm, and
+chord sequences from seed inputs, and a post-processing network
+integrates these outputs into a final musical result [34]. Unlike
+single-state prediction models, this approach treats musical generation
+as the production of structured sequences, such as melody lines, rhythm
+patterns, and chord progressions, rather than the prediction of only one
+immediate next event.</p>
+<h3 id="paper-2026-p12-recurrent-model"><strong>2. Recurrent Model</strong></h3>
+<h4 id="paper-2026-p12-benefits-of-applying-nlp-algorithms-for-music-composition"><strong>2.1
+Benefits of Applying NLP Algorithms for Music Composition</strong></h4>
+<p>Recurrent models became attractive for algorithmic composition
+because music, like natural language, can be represented as an ordered
+sequence of symbolic events. In natural language processing, words or
+tokens form temporally ordered sequences governed by syntactic and
+semantic relationships. Similarly, in symbolic music generation, notes,
+chords, durations, dynamics, and rhythmic events can be encoded as
+tokens arranged over time.</p>
+<p>This structural similarity allowed sequence modeling techniques
+originally developed for language processing to be applied to music
+composition. In this framework, composition can be formulated as a
+prediction problem: given a preceding sequence of musical events, the
+model predicts the next event or generates a continuation. This approach
+differs from feedforward models, which require a fixed-size input
+window, because recurrent architectures update an internal hidden state
+as the sequence unfolds.</p>
+<p>From an application-oriented perspective, recurrent models provided a
+more natural framework for melody generation, accompaniment generation,
+and style imitation. Rather than predicting isolated musical events,
+they could process temporal sequences and preserve information from
+previous events through recurrent connections. This made them
+particularly suitable for tasks in which local continuity and short-term
+musical context are important.</p>
+<h4 id="paper-2026-p12-recurrent-neural-networks"><strong>2.2 Recurrent Neural
+Networks</strong></h4>
+<p>Recurrent Neural Networks (RNNs) are neural architectures designed to
+process sequential data by maintaining an internal hidden state. At each
+time step, the model receives an input event and updates its hidden
+state based on both the current input and the previous hidden state. The
+updated hidden state is then used to predict the next output. In this
+way, RNNs can model temporal dependencies without requiring all
+preceding information to be explicitly encoded in a fixed input
+vector.</p>
+<p>In algorithmic composition, RNNs enabled a shift from fixed-window
+prediction to sequential generation. A musical sequence could be
+processed one event at a time, allowing the model to generate melodies,
+rhythms, or improvisational phrases by repeatedly predicting the next
+musical event. Early applications of recurrent neural networks
+demonstrated that neural models could learn stylistic tendencies from
+musical corpora and generate outputs that were more temporally
+continuous than those produced by simple feedforward models.</p>
+<p>However, standard RNNs have important limitations. Because the hidden
+state is continuously overwritten as new inputs arrive, information from
+distant past events tends to be weakened or lost. This makes it
+difficult for RNNs to preserve long-term musical context, such as
+phrase-level structure, thematic recurrence, or harmonic direction over
+an extended passage. As a result, RNN-based music generation can produce
+locally coherent melodic fragments, but often struggles to maintain
+larger-scale musical organization.</p>
+<p>Todd (1989) applied a three-layer recurrent neural network to the
+generation of monophonic melodic sequences [35]. In the same year, Duff
+(1989) proposed a two-layer recurrent model for generating Bach-style
+music. These early RNN-based approaches attempted to overcome the
+limitations of Markov models by learning state transitions with temporal
+context. However, due to computational limitations and the difficulty of
+training recurrent architectures at the time, these systems remained
+relatively small, typically employing shallow networks with only a few
+layers.</p>
+<p>Franklin (2001) later proposed an RNN-based model for jazz
+improvisation, in which the system received a four-bar motif from a
+human performer and generated a four-bar improvised response [36]. The
+model was first trained on pre-specified examples and subsequently
+refined through reinforcement learning guided by heuristic rules. This
+paradigm, in which human-provided musical material is used as a seed for
+machine-generated continuation, influenced later approaches to neural
+music generation.</p>
+<p>Within this broader trajectory, Ban (2017) proposed a modular
+sequence-level neural generation model [37], and Ban, Park, and Jung
+(2017) proposed an RNN autoencoder-based multi-step chord generation
+model [38]. These approaches extended the idea of seed-based generation
+by treating musical output as structured sequences, such as melody
+lines, rhythm patterns, and chord progressions, rather than as isolated
+next-state predictions.</p>
+<h4 id="paper-2026-p12-long-short-term-memory"><strong>2.3 Long-Short Term
+Memory</strong></h4>
+<p>Long Short-Term Memory (LSTM) networks were introduced to address the
+short memory problem of standard RNNs. Unlike simple recurrent networks,
+LSTMs use gated memory cells that regulate the flow of information over
+time. These gates determine what information should be stored, updated,
+or forgotten, allowing the model to retain relevant information across
+longer sequences.</p>
+<p>In algorithmic composition, LSTMs improved the ability of recurrent
+models to generate longer and more coherent musical passages. By
+maintaining information over extended time spans, LSTM-based systems
+became better suited for modeling melodic continuity, harmonic
+progression, and stylistic consistency. This made them useful for tasks
+such as melody generation, folk tune generation, accompaniment
+generation, and style imitation.</p>
+<p>Nevertheless, LSTMs do not fully solve the problem of global musical
+structure. Their generation process remains sequential and
+autoregressive: each new event is generated based on previous events,
+without an explicit representation of the entire composition. As a
+result, LSTM-based systems may produce convincing short- or mid-length
+passages, but they often struggle to plan large-scale form, thematic
+development, or long-term dramatic progression. In this sense, LSTMs
+extend the effective memory of recurrent models, but they do not
+fundamentally transform sequential prediction into holistic musical
+planning.</p>
+<p>In 2002, Eck and Schmidhuber proposed an LSTM-based approach to blues
+music generation [39]. Their model was trained to learn the long-term
+structure of blues music and successfully generated blues-style
+melodies. They argued that previous RNN-based approaches tended to focus
+on local representations and therefore lacked global musical structure,
+whereas the long-term memory mechanism of LSTMs enabled the model to
+capture such structure to some extent.</p>
+<p>Subsequent studies attempted to improve performance by increasing
+model capacity and architectural complexity. In 2016, Sturm et al.
+trained LSTM models on folk music data and successfully generated new
+transcriptions, demonstrating the usefulness of LSTM-based systems as
+tools for compositional ideation [40]. In the same year, Colombo et al.
+also proposed an LSTM-based composition model to address the problem of
+long-range temporal dependency in melody generation [41].</p>
+<p>Oore et al. (2017) extended recurrent music generation from symbolic
+score generation toward expressive piano performance generation [45].
+Their model predicted not only the notes to be played, but also
+expressive timing and dynamics, thereby treating music generation as the
+production of performance-like sequences rather than grid-aligned
+symbolic scores. Although the generated samples were reported to sound
+close to human piano performance, the authors also noted that the model
+still lacked high-level musical structure.</p>
+<p>The introduction of LSTM networks demonstrated that neural
+composition models could learn both local musical patterns and longer
+contextual flows within a single sequential framework. This
+significantly influenced later developments in AI-based music
+composition, particularly models designed to capture longer-range
+musical dependencies.</p>
+
+<h4 id="paper-2026-p12-limitations-4"><strong>2.4 Limitations</strong></h4>
+<p>Recurrent models marked an important step beyond feedforward
+architectures by allowing musical sequences to be processed over time.
+However, their reliance on sequential prediction also introduced several
+limitations. First, the generation process remains inherently local:
+even when previous events are stored in a hidden state, the model
+predicts the next event step by step rather than designing the overall
+structure of the piece.</p>
+<p>Second, recurrent models are sensitive to the accumulation of errors.
+A locally inappropriate prediction can influence subsequent predictions,
+causing the generated sequence to gradually drift away from the intended
+musical style or structure. This problem becomes more severe as the
+generated passage becomes longer.</p>
+<p>Third, although LSTMs can retain longer contextual information than
+standard RNNs, they still do not explicitly model hierarchical musical
+form. Musical structure often involves relationships between motives,
+phrases, sections, and large-scale formal functions. These relationships
+are difficult to capture through a single sequential hidden state
+alone.</p>
+<p>Therefore, recurrent models improved the continuity and stylistic
+plausibility of AI-generated music, but they remained limited in their
+ability to represent global form and long-range structural planning.
+These limitations motivated the development of attention-based
+architectures, especially Transformer models, which allow the model to
+directly access multiple positions in a sequence rather than relying
+solely on compressed recurrent memory.</p>
+<h2 id="paper-2026-p12-v.-from-recurrent-memory-to-attention"><strong>V. From Recurrent
+Memory to Attention</strong></h2>
+<h3 id="paper-2026-p12-attention-mechanism"><strong>1. Attention mechanism</strong>
+</h3>
+<p>Attention mechanisms [42] were introduced to address a key limitation
+of recurrent architectures: the need to compress past information into a
+single hidden state. In RNNs and LSTMs, information from earlier time
+steps must be carried forward sequentially, which makes it difficult to
+preserve distant contextual information over long sequences. Attention
+provides an alternative mechanism by allowing the model to directly
+compare the current position with multiple previous positions and assign
+different weights to them according to relevance.</p>
+<p>In music composition, this mechanism is particularly important
+because musical coherence often depends on non-adjacent relationships. A
+motif introduced in an earlier phrase may return later in varied form, a
+harmonic pattern may reappear after an intervening section, and rhythmic
+figures may structure larger formal units. By selectively attending to
+relevant past events, attention enables the model to capture long-range
+dependencies more effectively than recurrent memory alone.</p>
+<p>Before the widespread adoption of full Transformer architectures,
+attention was often used as an auxiliary mechanism in recurrent music
+generation models. In such systems, an RNN or LSTM generated musical
+events sequentially, while the attention module helped the model
+retrieve relevant information from previous parts of the sequence. This
+improved the ability of recurrent models to preserve motifs, repeated
+patterns, and accompaniment relationships over longer contexts.</p>
+<h3 id="paper-2026-p12-transformer"><strong>2. Transformer</strong></h3>
+<p>The Transformer [43] architecture extended this idea by making
+self-attention the central mechanism for sequence modeling. Unlike
+recurrent models, which process sequences step by step, Transformers
+compute relationships among multiple positions in a sequence through
+self-attention. This allows the model to directly access distant events
+without passing information through a chain of recurrent hidden
+states.</p>
+<p>This property is highly relevant to music generation. Musical
+structure relies heavily on repetition, variation, and self-reference
+across multiple temporal scales, from motives and phrases to sectional
+returns. Transformer-based models can therefore represent relationships
+between distant musical events more directly than RNNs or LSTMs. In
+addition, because self-attention supports parallel computation during
+training, Transformers can be scaled more effectively than recurrent
+architectures.</p>
+<h3 id="paper-2026-p12-applications-2"><strong>3. Applications</strong></h3>
+<figure class="paper-figure"><img alt="[Fig. 3] From recurrent memory to self-attention in neural music generation. RNN and LSTM models encode previous musical events into compressed hidden states, whereas attention mechanisms allow the model to retrieve relevant past information directly. Transformer architectures generalize this idea through self-attention, enabling global context modeling across the entire sequence and improving long-range musical coherence." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p12/figure-3.webp"/><figcaption>
+<p><strong>[Fig. 3] From recurrent memory to self-attention in neural
+music generation.</strong></p>
+<p>RNN and LSTM models encode previous musical events into compressed
+hidden states, whereas attention mechanisms allow the model to retrieve
+relevant past information directly. Transformer architectures generalize
+this idea through self-attention, enabling global context modeling
+across the entire sequence and improving long-range musical
+coherence.</p>
+</figcaption></figure>
+
+<p>A representative example is Google Magenta’s Melody RNN and Attention
+RNN, where attention was used to improve recurrent melody generation by
+enabling the model to refer to earlier musical contexts [45]. Even after
+the introduction of the Transformer architecture, attention-augmented
+LSTM models continued to be explored in music composition research. For
+example, a jazz composition model combining bidirectional LSTM with
+attention was proposed in 2022 [46].</p>
+<p>Music Transformer [47] is one of the most representative studies
+applying Transformer architectures to symbolic music generation.
+Motivated by the repetitive and self-referential nature of music across
+multiple temporal scales, such as motifs, phrases, and larger formal
+structures, the model introduced a memory-efficient relative
+self-attention mechanism for long musical sequences. It successfully
+generated minute-long piano compositions, motif continuations, and
+melody-conditioned accompaniments, demonstrating the potential of
+Transformers for long-context music generation.</p>
+<p>OpenAI’s MuseNet (2019) is another influential example of
+Transformer-based music generation [48]. Using a GPT-2-style
+architecture trained on hundreds of thousands of MIDI files, MuseNet
+generated music through next-token prediction, producing compositions up
+to four minutes long with up to ten instruments and multiple styles.
+This demonstrated that large-scale Transformer models could handle
+longer symbolic musical sequences and multi-instrumental textures.</p>
+<p>Subsequent studies further refined Transformer-based music generation
+by improving musical representation and attention mechanisms. Pop Music
+Transformer (2020), for example, introduced a revised event
+representation designed to encode metrical information such as beats and
+bars, enabling the generation of more rhythmically coherent and
+expressive pop piano compositions [49]. Yu et al. later proposed
+Museformer, focusing on the inefficiency of full attention for long
+musical sequences and the difficulty of generating repetition
+structures. By combining fine-grained and coarse-grained attention,
+Museformer aimed to better capture repetition and long-range structure
+in symbolic music generation [50].</p>
+<h3 id="paper-2026-p12-limitations-5"><strong>4. Limitations</strong></h3>
+<figure class="paper-figure"><img alt="[Fig. 4] Transition from symbolic prediction to audio-level generation in AI-based music composition. Early symbolic models generate abstract musical events, such as notes, chords, MIDI piano-rolls, or event tokens. Waveform modeling shifts the target from symbolic structure to audio signals, allowing the model to represent sound directly. Later audio-generation approaches further incorporate waveform, spectrogram, timbre, instrumentation, and playback-level information, moving AI-based composition from score-like prediction toward the generation of music as sound itself." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p12/figure-4.webp"/><figcaption>
+<p><strong>[Fig. 4] Transition from symbolic prediction to audio-level
+generation in AI-based music composition.</strong></p>
+<p>Early symbolic models generate abstract musical events, such as
+notes, chords, MIDI piano-rolls, or event tokens. Waveform modeling
+shifts the target from symbolic structure to audio signals, allowing the
+model to represent sound directly. Later audio-generation approaches
+further incorporate waveform, spectrogram, timbre, instrumentation, and
+playback-level information, moving AI-based composition from score-like
+prediction toward the generation of music as sound itself.</p>
+</figcaption></figure>
+
+<p>Despite their success in long-context symbolic music generation,
+attention- and Transformer-based models still inherit several
+limitations of symbolic prediction. Most Transformer-based music systems
+generate symbolic event sequences, such as MIDI notes, durations,
+velocities, instruments, chords, or metrical tokens. While such
+representations are effective for modeling pitch, rhythm, and formal
+relationships, they do not directly represent the acoustic properties of
+music, such as timbre, spectral texture, spatial impression, or the
+physical characteristics of sound.</p>
+<p>Moreover, many Transformer-based music models remain fundamentally
+autoregressive. Although self-attention allows the model to access
+distant previous events, the generation process is still typically
+formulated as next-token prediction. Therefore, the model can preserve
+longer contextual dependencies, but it does not necessarily plan the
+global structure of an entire composition in advance.</p>
+<p>This limitation is particularly important in music, where coherence
+is not only a matter of local continuity but also of large-scale formal
+organization. Motif recurrence, harmonic direction, modulation, climax,
+and resolution often require structural planning across an entire piece.
+Transformer models can learn statistical regularities associated with
+these phenomena, but they do not explicitly guarantee a coherent
+beginning, development, climax, and conclusion.</p>
+<p>Another practical limitation is computational cost. Self-attention
+becomes increasingly expensive as sequence length grows, and symbolic
+music often produces very long token sequences, especially when multiple
+instruments, expressive timing, and performance details are encoded. As
+a result, many Transformer-based models require architectural
+modifications, compressed representations, or attention approximations
+to handle long musical sequences efficiently.</p>
+<p>These limitations suggest that Transformer-based models substantially
+improved long-context dependency modeling, but they still treated music
+primarily as a sequence of symbolic events. The next major shift
+occurred when music generation began to move beyond symbolic prediction
+toward audio-level or spectrogram-level modeling, where structure,
+timbre, and texture could be generated more directly.</p>
+<p>In other words, Transformer-based models improved the memory of
+symbolic composition, but they did not yet solve the problem of
+generating music as sound itself.</p>
+<p><strong>VI. Toward Waveform Generation</strong></p>
+<h3 id="paper-2026-p12-limitations-of-symbolic-prediction"><strong>1. Limitations of
+Symbolic Prediction</strong> </h3>
+<p>Although attention- and Transformer-based models substantially
+improved long-context symbolic music generation, they still operate
+primarily on symbolic representations. In these models, music is
+typically represented as a sequence of discrete events, such as notes,
+chords, durations, velocities, instruments, or metrical tokens. This
+representation is effective for modeling musical structure, but it does
+not directly encode the acoustic substance of music itself.</p>
+<p>The limitation is that symbolic prediction treats music as an
+abstract score-like sequence rather than as sound. Even when a model
+successfully generates coherent pitch and rhythm patterns, the resulting
+output still requires a separate synthesis or rendering process to
+become audible music. As a result, important musical qualities such as
+timbre, articulation, spectral texture, spatial impression, vocal
+quality, and recording-like sound characteristics remain outside the
+direct scope of symbolic generation.</p>
+<p>This distinction is crucial because human musical experience is not
+limited to symbolic structure. A listener does not perceive only pitch
+classes, note durations, or chord labels; rather, music is experienced
+as an integrated auditory phenomenon. The same melody can produce
+entirely different impressions depending on instrumentation, performance
+nuance, tone color, reverberation, and sound production. Symbolic models
+can describe what notes should occur, but they do not fully determine
+how those notes should sound.</p>
+<p>Moreover, symbolic representations often separate composition,
+performance, and sound synthesis into different stages. A model may
+generate a MIDI sequence, but the expressive timing, dynamics, timbre,
+and audio rendering must be handled by additional systems or human
+intervention. This separation limits the ability of the model to
+generate music as a unified artistic object.</p>
+<p>These limitations motivated a shift from symbolic event prediction
+toward audio-level generation. Instead of predicting only musical
+symbols, later models attempted to generate waveform, spectrogram, or
+latent audio representations directly. This transition allowed AI-based
+music generation to move closer to the generation of sound itself,
+incorporating not only musical structure but also timbre, texture, and
+acoustic detail.</p>
+<h3 id="paper-2026-p12-raw-waveform-modeling"><strong>2. Raw Waveform Modeling</strong>
+</h3>
+<p>Raw waveform modeling marked an important transition from symbolic
+music generation to audio-level generation. Unlike symbolic models,
+which generate abstract musical events such as notes, chords, or MIDI
+tokens, waveform models attempt to generate the audio signal itself. In
+this framework, music is represented as a sequence of amplitude values
+sampled at very high temporal resolution, often tens of thousands of
+samples per second. This allows the model to directly capture acoustic
+properties such as timbre, articulation, texture, and sound quality.</p>
+<p>A representative milestone is WaveNet, proposed by van den Oord et
+al. (2016) [51]. WaveNet is a fully probabilistic autoregressive model
+that generates raw audio waveforms sample by sample, conditioning each
+sample on previous samples. Although the model was originally introduced
+in the context of speech synthesis, the authors also demonstrated that
+the same architecture could be applied to music audio generation,
+producing novel and realistic musical fragments. This showed that deep
+generative models could move beyond symbolic representations and
+directly model the physical waveform of sound.</p>
+<p>Another important approach is SampleRNN, proposed by Mehri et al.
+(2016) [52]. SampleRNN also generates audio one sample at a time, but
+uses a hierarchical architecture combining recurrent neural networks and
+autoregressive multilayer perceptrons. This hierarchy allows the model
+to capture temporal patterns at multiple timescales, making it suitable
+for unconditional audio generation over relatively long spans. Compared
+with symbolic composition models, SampleRNN illustrates a stronger
+commitment to end-to-end audio generation, where the model learns
+directly from raw acoustic sequences rather than from symbolic musical
+annotations.</p>
+<p>The main advantage of raw waveform modeling is that it treats music
+as sound rather than as notation. It can, at least in principle, learn
+timbre, performance nuance, noise characteristics, and acoustic texture
+directly from data. This is a significant conceptual shift: the model no
+longer needs a separate synthesizer or rendering engine to translate
+symbolic events into audible music. Instead, the generation target is
+already an audio signal.</p>
+<p>However, raw waveform modeling also introduces severe computational
+challenges. Because audio signals are sampled at extremely high rates,
+even a few seconds of sound correspond to tens or hundreds of thousands
+of sequential prediction steps. Autoregressive waveform models must
+therefore generate audio sample by sample, making inference slow and
+making long-range musical structure difficult to control. Later models
+such as WaveRNN attempted to improve the efficiency of neural audio
+synthesis, but the basic difficulty of modeling long-form music directly
+at the waveform level remained significant [53].</p>
+<p>For this reason, raw waveform modeling served as a crucial but
+transitional stage. It demonstrated that neural networks could generate
+sound itself, but also revealed the difficulty of modeling music
+simultaneously at the sample level and at the structural level. These
+limitations motivated later approaches that use intermediate
+representations, such as spectrograms or compressed audio latents, to
+reduce sequence length while preserving essential acoustic
+information.</p>
+<h3 id="paper-2026-p12-spectrogram-and-latent-audio-representations"><strong>3.
+Spectrogram and Latent Audio Representations</strong> </h3>
+<p>Direct raw waveform modeling demonstrated that neural networks could
+generate sound itself, but it also revealed the difficulty of working
+with extremely long sample-level sequences. To reduce this complexity,
+later approaches began to use intermediate audio representations, such
+as spectrograms or latent audio embeddings. These representations
+preserve essential acoustic information while making the generation
+problem more tractable.</p>
+<p>A spectrogram represents sound as a two-dimensional time–frequency
+structure. Unlike symbolic representations, which encode discrete
+musical events such as notes or chords, spectrograms capture acoustic
+properties such as frequency distribution, harmonic content, attack
+characteristics, and timbral texture. This made it possible to treat
+audio generation partly as an image-like modeling problem, where
+convolutional and generative models could learn local time–frequency
+patterns.</p>
+<p>NSynth is an important example of this transition [54]. Engel et al.
+proposed a WaveNet-style autoencoder trained on a large dataset of
+individual musical notes. Rather than generating symbolic notes, the
+model learned temporal embeddings directly from raw audio waveforms and
+used them to synthesize realistic musical note sounds. More importantly,
+the learned latent space enabled interpolation between instrumental
+timbres, allowing the model to generate hybrid sounds between different
+instruments. This demonstrated that neural music generation could move
+beyond pitch and rhythm prediction toward the modeling of timbre and
+sound identity.</p>
+<p>Another line of work modeled audio in the spectral domain. GANSynth
+applied generative adversarial networks to neural audio synthesis by
+modeling log magnitudes and instantaneous frequencies in a
+spectrogram-like representation [55]. This approach addressed a key
+limitation of raw waveform GANs: while GANs allow efficient parallel
+generation, they often struggle to maintain local waveform coherence. By
+generating high-resolution spectral representations instead of raw
+samples directly, GANSynth achieved more coherent audio synthesis and
+substantially faster generation than autoregressive waveform models.</p>
+<p>Latent representation learning also became important for audio
+generation. Vector Quantised Variational Autoencoders (VQ-VAE)
+introduced a method for learning discrete latent codes from
+high-dimensional data [56]. Although originally proposed as a general
+generative modeling framework, this idea later became important in music
+generation because audio can be compressed into shorter discrete or
+continuous latent sequences. Once compressed, a separate generative
+model can learn the distribution of latent codes rather than directly
+modeling every waveform sample.</p>
+<p>These approaches shifted the target of music generation from symbolic
+event sequences to learned acoustic representations. Spectrograms made
+it possible to model sound as a time–frequency image, while
+autoencoder-based methods provided compact latent spaces for timbre,
+texture, and audio reconstruction. However, these methods also
+introduced new limitations. Spectrogram-based generation depends on
+accurate reconstruction of waveform phase or the use of neural vocoders,
+and latent models may lose fine acoustic detail during compression. As a
+result, spectrogram and latent audio representations served as an
+important intermediate stage between raw waveform modeling and later
+full audio-generation systems.</p>
+<h3 id="paper-2026-p12-full-audio-generation"><strong>4. Full Audio Generation</strong>
+</h3>
+<p>While raw waveform models and neural synthesis systems demonstrated
+that deep networks could model sound directly, many of them remained
+limited to short audio fragments, isolated notes, or local timbral
+synthesis. Full audio generation aimed to extend this direction from
+sound synthesis to complete musical audio, including longer temporal
+structure, instrumentation, vocal texture, genre characteristics, and
+recording-like acoustic detail.</p>
+<p>One important precursor to full audio generation was the Sparse
+Transformer proposed by Child et al. (2019) [57]. Because raw audio
+sequences are extremely long, applying full self-attention directly to
+waveform samples is computationally prohibitive. Sparse Transformer
+addressed this issue by restricting attention patterns, enabling
+Transformer-based models to handle much longer sequences more
+efficiently. Although not exclusively a music generation model, it
+demonstrated that Transformer architectures could be scaled to long raw
+audio sequences, providing an important technical foundation for later
+full-audio music generation systems.</p>
+<p>A representative milestone is OpenAI’s Jukebox, proposed by Dhariwal
+et al. (2020) [58]. Jukebox generates music directly in the raw audio
+domain, including rudimentary singing, conditioned on genre, artist
+style, and lyrics. Instead of generating symbolic events such as MIDI
+notes or chord progressions, the model attempts to generate the final
+audio signal of a song. This marked an important shift from score-level
+composition to audio-level music generation, where vocal timbre,
+instrumental texture, and production-like sound characteristics become
+part of the generative target.</p>
+<p>The key technical challenge in full audio generation is the extremely
+long context of raw audio. A few minutes of music correspond to millions
+of waveform samples, making direct autoregressive modeling impractical.
+Jukebox addressed this problem by using a multi-scale VQ-VAE to compress
+raw audio into discrete latent codes, and then trained autoregressive
+Transformer models to generate these compressed codes. The generated
+latent codes were subsequently decoded back into raw audio. In this
+sense, Jukebox did not model raw waveform samples directly at the
+original sampling rate; rather, it modeled compressed audio
+representations that could later be reconstructed into waveform
+audio.</p>
+<p>This architecture allowed the model to generate more coherent
+full-song audio than earlier raw waveform models. By conditioning
+generation on artist, genre, and lyrics, Jukebox also demonstrated a new
+level of controllability in audio-level music generation. Unlike
+symbolic systems, which require separate synthesis or rendering stages,
+Jukebox attempted to generate musical structure and acoustic realization
+within a unified framework.</p>
+<p>However, full audio generation also introduced new limitations.
+First, the generated audio was difficult to edit or control at a fine
+musical level. Unlike symbolic representations, where notes, chords, or
+rhythms can be directly modified, compressed audio latents are less
+interpretable to human composers. Second, audio-level models require
+enormous computational resources because they must learn both long-range
+musical structure and short-range acoustic detail. Third, although
+Jukebox could generate multi-minute audio with recognizable style and
+singing, the resulting music still showed limitations in precise musical
+planning, lyrical alignment, and high-fidelity production quality.</p>
+<p>Thus, full audio generation represented a major conceptual advance,
+but it also revealed the difficulty of generating music simultaneously
+as structure, performance, and sound. These limitations motivated later
+approaches based on diffusion and flow-based generation, which attempted
+to improve audio fidelity, sampling efficiency, and controllability.</p>
+<h3 id="paper-2026-p12-diffusion-based-audio-generation"><strong>5. Diffusion-based
+Audio Generation</strong></h3>
+<p>Diffusion-based models introduced a major shift in audio generation
+by replacing autoregressive sample-by-sample prediction with iterative
+denoising. Instead of generating audio sequentially from left to right,
+a diffusion model begins with random noise and gradually transforms it
+into structured audio through a learned reverse process. This made
+diffusion particularly attractive for audio generation, where raw
+waveform sequences are extremely long and autoregressive generation can
+be computationally expensive.</p>
+<figure class="paper-figure"><img alt="[Fig. 5] Diffusion Model for Music Generation: From Noise to Music Diffusion Models learn to reverse a gradual noising process and transform random noise into coherent musical sequences." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p12/figure-5.webp"/><figcaption>
+<p><strong>[Fig. 5] Diffusion Model for Music Generation: From Noise to
+Music</strong></p>
+<p>Diffusion Models learn to reverse a gradual noising process and
+transform random noise into coherent musical sequences.</p>
+</figcaption></figure>
+
+<p>One early representative example is DiffWave, proposed by Kong et al.
+(2020) [59]. DiffWave is a non-autoregressive diffusion probabilistic
+model for waveform generation. It converts white noise into structured
+waveforms through a fixed number of denoising steps and can be used for
+both conditional and unconditional audio generation. In particular,
+DiffWave demonstrated high-quality waveform synthesis while being
+significantly faster than autoregressive WaveNet-style models, showing
+that diffusion could serve as an effective alternative to sample-level
+autoregressive audio generation.</p>
+<p>Diffusion-based audio generation can operate at several
+representational levels. Some models apply diffusion directly to
+waveform samples, while others generate spectrograms or compressed audio
+latent representations. Spectrogram diffusion treats audio as a
+time–frequency image, generating a mel-spectrogram or related spectral
+representation that is later converted into waveform audio by a vocoder.
+Latent diffusion further reduces computational cost by applying the
+diffusion process in a compressed audio representation space rather than
+directly in waveform or spectrogram space.</p>
+<p>AudioLDM is a representative example of latent diffusion for
+text-to-audio generation [60]. It learns continuous audio
+representations in a latent space and conditions generation on
+text-aligned audio embeddings. By operating in latent space rather than
+directly on waveform samples, AudioLDM improves computational efficiency
+while enabling text-guided audio synthesis. Although AudioLDM is a
+general text-to-audio model rather than a music-only composition system,
+it is important because it demonstrates how natural language prompts can
+condition audio-level generative models.</p>
+<p>For music-specific generation, Moûsai extended latent diffusion to
+long-context text-to-music generation [61]. It uses a cascading
+two-stage latent diffusion architecture to generate high-quality stereo
+music from text descriptions. Compared with earlier symbolic or
+waveform-level models, Moûsai illustrates how diffusion can be applied
+to longer musical audio by operating on compressed representations and
+by separating coarse and fine generation stages.</p>
+<p>The strength of diffusion-based audio generation lies in its ability
+to model sound as a whole acoustic object rather than as a symbolic
+event sequence. Diffusion models can capture timbre, spectral texture,
+noise characteristics, and production-like sound qualities more directly
+than symbolic models. Moreover, because they can be conditioned on text,
+audio embeddings, or other control signals, they opened the way for
+prompt-based music and audio generation.</p>
+<p>However, diffusion-based audio generation also has important
+limitations. First, iterative denoising typically requires multiple
+sampling steps, which can make generation slower than one-step or
+few-step models. Second, while diffusion models improve local audio
+fidelity, long-term musical structure and compositional planning remain
+difficult. A model may generate convincing sound textures while still
+failing to maintain coherent form, thematic development, or large-scale
+harmonic direction. Third, controllability remains limited: text prompts
+can specify broad style, mood, or instrumentation, but they often
+struggle to precisely control musical events over time.</p>
+<p>Thus, diffusion-based audio generation represented a major advance
+from symbolic prediction and autoregressive waveform modeling toward
+holistic audio synthesis. Yet it did not fully solve the problems of
+long-range musical organization, fine-grained editability, and efficient
+sampling. These limitations motivated later approaches based on flow
+matching, rectified flow, and hybrid architectures that attempt to
+combine efficient generation with stronger structural control.</p>
+<h3 id="paper-2026-p12-flow-matching-and-rectified-flow"><strong>6. Flow Matching and
+Rectified Flow</strong></h3>
+<p>Although diffusion-based audio generation substantially improved
+audio quality, its iterative denoising process often requires many
+sampling steps. This creates a practical limitation for music
+generation, where long audio duration and high sampling rates already
+impose a heavy computational burden. Flow matching and rectified flow
+approaches emerged as attempts to preserve the generative quality of
+diffusion-like models while improving sampling efficiency.</p>
+<p>Flow matching reformulates generation as the learning of a continuous
+vector field that transports samples from a simple noise distribution to
+the data distribution. Instead of explicitly learning a step-by-step
+denoising process, the model learns the velocity field that defines how
+noise should move toward realistic data. In this sense, flow matching
+provides a broader continuous-time framework for generative modeling, in
+which diffusion-like trajectories can be treated as one possible
+transport path.</p>
+<p>MusicFlow is a representative application of flow matching to
+text-guided music generation [62]. Prajwal et al. proposed a cascaded
+flow-matching architecture that maps text descriptions to music audio
+through two stages: one flow-matching network models semantic features,
+and another models decodable acoustic features. The model also uses a
+masked prediction objective, allowing it to generalize to related tasks
+such as music infilling and continuation. Compared with prior
+text-to-music systems, MusicFlow achieved competitive or superior
+quality and text coherence while using a smaller model and fewer
+iterative steps.</p>
+<p>Another related approach is MelodyFlow, which applies single-stage
+flow matching to high-fidelity text-guided music generation and editing
+[63]. Rather than operating on symbolic tokens or discrete audio codes,
+MelodyFlow works on continuous latent representations produced by a
+low-frame-rate 48 kHz stereo variational autoencoder codec. This allows
+the model to generate and edit high-quality stereo music samples of
+variable duration using text descriptions. Its emphasis on editing is
+particularly important because it shifts the goal from merely generating
+audio to modifying existing musical material in a controllable way.</p>
+<p>Rectified flow further develops the same general direction by
+attempting to make the transport path from noise to data as straight as
+possible. The motivation is that straighter trajectories can be
+simulated with fewer numerical integration steps, enabling faster
+generation. In audio generation, this is especially important because
+sampling speed strongly affects practical usability. Rectified flow can
+therefore be understood as part of the broader post-diffusion effort to
+reduce sampling cost while maintaining audio fidelity.</p>
+<p>FlashAudio is a representative rectified-flow-based text-to-audio
+model [64]. Liu et al. proposed a rectified flow framework for fast and
+high-fidelity text-to-audio generation, addressing the computational
+cost of latent diffusion models. By learning straighter flow
+trajectories and improving sampling efficiency, FlashAudio demonstrated
+that rectified flow can achieve high-quality audio generation with far
+fewer sampling steps than conventional diffusion-based methods.</p>
+<p>The main advantage of flow matching and rectified flow is efficiency.
+These methods attempt to retain the expressive power of diffusion-like
+generative modeling while reducing the number of iterative sampling
+steps. They also provide a flexible framework for text-conditioned
+generation, music continuation, infilling, and editing. In this respect,
+they represent a shift from simply generating complete audio clips
+toward more interactive and controllable music-generation workflows.</p>
+<p>However, these approaches do not by themselves solve the problem of
+musical structure. Faster sampling improves usability, but it does not
+guarantee long-term form, thematic development, or compositional
+intentionality. Like diffusion models, flow-based audio models may
+generate high-quality local sound textures while still requiring
+additional mechanisms for global planning and fine-grained musical
+control. Thus, flow matching and rectified flow should be understood not
+as a final solution to AI composition, but as an important step toward
+efficient, controllable audio-level generation.</p>
+<h3 id="paper-2026-p12-hybrid-and-multimodal-approaches"><strong>7. Hybrid and
+Multimodal Approaches</strong></h3>
+<p>As audio-level generative models developed, it became increasingly
+clear that no single architecture fully solved the two central
+requirements of music generation: global musical coherence and local
+audio fidelity. Autoregressive models are relatively strong at modeling
+long-range symbolic or semantic structure, but they often struggle with
+high-fidelity audio detail. Diffusion and flow-based models, in
+contrast, are effective at generating realistic acoustic texture, but
+they do not inherently guarantee large-scale musical form. This
+motivated hybrid approaches that combine the structural planning ability
+of autoregressive models with the acoustic refinement ability of
+diffusion or flow-based models.</p>
+<p>A representative example is SongBloom, proposed by Yang et al. (2025)
+[65]. SongBloom was designed for coherent full-length song generation
+and explicitly addressed the difficulty of balancing global coherence
+with local fidelity. The model uses an interleaved paradigm of
+autoregressive sketching and diffusion-based refinement: it gradually
+extends a musical sketch from short to long, while refining acoustic
+details from coarse to fine. This framework integrates semantic and
+acoustic context during generation, attempting to overcome the common
+failure modes of previous language-model and diffusion-based music
+systems, such as incoherent progression, mismatched lyrics, or locally
+realistic but structurally weak outputs.</p>
+<p>This hybrid direction is important because it reflects a broader
+recognition that music generation is not a single-level problem. A
+complete song requires high-level structure, mid-level arrangement,
+low-level acoustic detail, and alignment between vocal, instrumental,
+and lyrical elements. Hybrid models attempt to distribute these tasks
+across complementary generative mechanisms. In this sense, they
+represent a movement from monolithic music generation toward layered
+generation, where musical form and sound realization are modeled at
+different levels and then integrated.</p>
+<p>At the same time, music generation has also moved toward multimodal
+conditioning. Earlier systems were primarily conditioned on symbolic
+seeds, MIDI events, or text prompts. More recent systems attempt to
+generate music from other modalities, such as video, dance movement,
+images, humming, or reference audio. For example, Dance2Music-Diffusion
+uses a latent diffusion model to generate music from dance videos,
+demonstrating how visual motion can serve as a conditioning signal for
+music generation [66]. This direction is particularly relevant because
+musical creation is often linked to bodily movement, visual imagery,
+narrative scenes, or emotional context rather than text alone.</p>
+<p>A related post-diffusion direction is multimodal rectified flow.
+OmniFlow extends rectified flow to any-to-any multimodal generation,
+including text-to-audio and audio-to-image synthesis [67]. Although
+OmniFlow is not limited to music composition, it demonstrates how
+rectified flow can be generalized to joint multimodal distributions.
+Such models suggest a future in which music generation may not be
+restricted to text-to-audio prompting, but may instead integrate
+multiple forms of input and output across text, sound, image, video, and
+gesture.</p>
+<p>The main advantage of hybrid and multimodal approaches is that they
+more closely resemble the multi-layered nature of human musical
+creation. Human composers do not merely predict the next note or
+generate sound texture in isolation; they often work from a combination
+of musical memory, bodily rhythm, imagined timbre, visual imagery,
+emotional intention, and structural planning. Hybrid and multimodal
+models attempt to approximate this complexity by combining multiple
+representational levels and conditioning sources.</p>
+<p>However, these approaches also introduce new challenges. First,
+integrating multiple modules or modalities increases system complexity
+and makes model behavior harder to interpret. Second, alignment between
+modalities remains difficult: lyrics, melody, rhythm, motion, and audio
+texture must be synchronized over time. Third, controllability and
+editability remain unresolved problems. Even if a model can generate
+realistic music from rich multimodal input, it may still be difficult
+for composers to specify precise musical intentions or revise generated
+results at a fine level. Finally, as models become increasingly
+multimodal and data-intensive, issues of copyright, dataset
+transparency, and authorship become more significant.</p>
+<p>Thus, hybrid and multimodal approaches represent the current frontier
+of AI-based music composition. They move beyond the idea of music
+generation as a single prediction task and instead frame it as the
+coordinated generation of structure, performance, sound, and multimodal
+meaning. This development brings AI composition closer to human creative
+processes, but also makes the problem more complex: the goal is no
+longer merely to generate plausible music, but to generate music that is
+structurally coherent, acoustically convincing, controllable, and
+meaningfully connected to human intention.</p>
+<p><strong>VII. Discussion</strong></p>
+<p>The technological history reviewed in this paper suggests that
+AI-based music composition has gradually moved from local pattern
+prediction toward increasingly holistic forms of musical representation.
+This progression can be interpreted not only as a sequence of technical
+improvements, but also as a gradual approximation of certain structural
+aspects of human compositional thinking.</p>
+<p>Early stochastic models, such as Markov chains and Hidden Markov
+Models, primarily operated at the level of local pattern recognition.
+They modeled transitions between notes, chords, or rhythmic states,
+producing outputs that were statistically plausible within short
+contexts. In this sense, these models resemble the most localized aspect
+of composition: choosing the next note, chord, or rhythmic event based
+on what has immediately preceded it. However, they lacked a broader
+understanding of musical direction, thematic development, or formal
+structure.</p>
+<p>Recurrent neural networks introduced a more context-sensitive mode of
+generation. By maintaining hidden states over time, RNNs and LSTMs
+attempted to preserve musical information across longer sequences. This
+can be interpreted as a move toward a more human-like consideration of
+musical context, where each new event is not selected in isolation but
+shaped by a remembered musical past. Nevertheless, recurrent models
+still compressed this past into a limited internal state, making it
+difficult to sustain large-scale formal coherence.</p>
+<p>Transformer-based models further changed this relationship to musical
+memory. By using self-attention, they allowed the model to directly
+refer to multiple previous events in the sequence. This made it possible
+to model repetition, variation, motivic recurrence, and long-range
+dependencies more effectively than recurrent architectures. From the
+perspective of compositional cognition, this represents a shift from
+merely remembering the previous flow to comparing and organizing
+multiple points in musical time. In other words, Transformer-based
+models began to approximate the structural logic of musical development
+more explicitly.</p>
+<p>The transition toward waveform, spectrogram, and latent audio
+generation marks an even more significant conceptual shift. Symbolic
+models generate instructions for music: notes, chords, rhythms, or MIDI
+events. Audio-level models, by contrast, attempt to generate music as
+sound itself. This shift is important because human composers do not
+necessarily begin with fully notated symbolic structures. In many cases,
+musical ideas first appear as internal auditory images: an imagined
+sound world that may include melody, harmony, rhythm, instrumentation,
+timbre, texture, and expressive atmosphere before being translated into
+notation or performance.</p>
+<p>From this viewpoint, audio-level generation can be interpreted as a
+movement closer to the pre-notational stage of human musical
+imagination. A composer may internally hear the overall character of a
+passage, the color of instruments, the density of texture, or the
+dramatic direction of a section before writing it down. Similarly,
+modern audio-level models attempt to infer not only symbolic structure
+but also timbre, spectral texture, vocal quality, and acoustic
+realization. They do not merely automate the act of writing notes; they
+increasingly model the formation of a musical sound image.</p>
+<p>This does not mean that current AI systems possess intention,
+consciousness, or artistic agency in the human sense. The analogy should
+not be overstated. Human composition involves embodied experience,
+cultural memory, aesthetic judgment, emotion, and intentional
+communication. Current models remain statistical systems trained on
+data, and their outputs are shaped by learned distributions rather than
+subjective purpose. However, the direction of technological development
+is notable: AI composition systems have evolved from automating
+peripheral or mechanical aspects of composition toward modeling
+increasingly central components of the creative process.</p>
+<p>In this sense, the history of AI-based music composition can be
+understood as a gradual shift from the automation of notation-like
+procedures to the modeling of musical ideation. Earlier systems
+attempted to determine which musical event should come next. Later
+systems attempted to preserve context, organize long-range dependencies,
+and eventually generate audio-level representations of musical sound.
+This progression suggests that the central question is no longer simply
+whether AI can compose music, but which layer of the compositional
+process it is modeling: local decision-making, contextual memory, formal
+organization, or the emergence of an internal auditory image.</p>
+<p>Therefore, the history of AI-based music composition may be read as a
+movement from the automation of compositional labor toward the
+simulation of compositional thought. Early systems automated local
+decisions; modern systems increasingly attempt to generate the auditory
+image itself. Whether this should be regarded as creativity remains open
+to debate, but the direction of development suggests that AI music
+systems are no longer merely tools for writing music. They are becoming
+models of how musical ideas can emerge, develop, and become sound.</p>
+<p><strong>IIX. Conclusion</strong></p>
+<p>This paper reviewed the technological evolution of AI-based music
+composition, from early rule-based systems and stochastic models to
+neural sequence models, Transformer architectures, and recent
+audio-level generative approaches. Across this history, a clear
+progression can be observed: models have gradually expanded from local
+event prediction to contextual modeling, long-range dependency modeling,
+and finally to the generation of audio-level representations.</p>
+<p>Early algorithmic systems focused primarily on local musical
+decisions, such as note-to-note or chord-to-chord transitions. Recurrent
+neural networks introduced temporal memory, allowing models to preserve
+musical context over longer sequences. Transformer-based approaches
+further improved long-context modeling by enabling direct reference to
+distant musical events through self-attention. More recent waveform,
+spectrogram, latent audio, diffusion, and flow-based models moved beyond
+symbolic prediction and began to generate music as sound itself.</p>
+<p>This development suggests that AI-based composition has gradually
+shifted from modeling the external procedures of composition toward
+modeling more central aspects of musical ideation. Earlier systems
+automated the selection or arrangement of musical symbols. Later systems
+increasingly attempt to infer context, structure, timbre, texture, and
+acoustic realization. In this sense, the evolution of AI composition can
+be interpreted as a movement from symbolic manipulation toward the
+generation of holistic musical representations.</p>
+<p>However, this does not imply that current AI systems possess
+human-like creativity or artistic intention. Human composition remains
+deeply connected to embodied experience, cultural meaning, aesthetic
+judgment, and communicative purpose. Current generative models still
+rely on statistical learning from existing data and remain limited in
+long-term formal planning, fine-grained controllability, authorship, and
+interpretability.</p>
+<p>Nevertheless, the trajectory is significant. The central question is
+no longer simply whether AI can generate plausible music, but which
+layer of the compositional process it is beginning to model. As AI
+systems move from local pattern prediction toward audio-level and
+multimodal generation, they increasingly approximate the structural
+pathway through which musical ideas are formed, organized, and
+externalized as sound. Future research should therefore focus not only
+on improving generation quality, but also on developing models that
+better support musical intention, structural control, editability, and
+meaningful human–AI collaboration.</p>
+<p><strong>AI Assistance Notice</strong></p>
+<p>The figures on this papers are generated with AI.</p>
+
+
+<h2 id="paper-2026-p12-references">References</h2>
+<p>[1] HILLER, L. "Musical Composition with a High-Speed Digital
+Computer." Machines Models of Music (1958): 9-21.</p>
+<p>[2] Gill, Stanley. "A Technique for the Composition of Music in a
+Computer." The Computer Journal 6.2 (1963): 129-133.</p>
+<p>[3] Rothgeb, John Edward. “Harmonizing the unfigured bass: A
+computational study. Yale University, 1968.</p>
+<p>[4] Thomas, Marilyn Taft. Vivace: A Rule Based Al System for
+Composition. Ann Arbor, MI: Michigan Publishing, University of Michigan
+Library, 1985.</p>
+<p>[5] Löthe, Mathis. "Knowledge based automatic composition and
+variation of melodies for minuets in early classical style." Annual
+Conference on Artificial Intelligence. Berlin, Heidelberg: Springer
+Berlin Heidelberg, 1999.</p>
+<p>[6] Fernández, Jose D., and Francisco Vico. "AI methods in
+algorithmic composition: A comprehensive survey." Journal of Artificial
+Intelligence Research 48 (2013): 513-582.</p>
+<p>[7] Ebcioğlu, Kemal. Computer counterpoint. Ann Arbor, MI: Michigan
+Publishing, University of Michigan Library, 1980.</p>
+<p>[8] Shottstaedt, William. "Automatic counterpoint." Current
+directions in computer music research. 1989. 199-214.</p>
+<p>[9] Horner, Andrew, and David E. Goldberg. "Genetic algorithms and
+computer-assisted music composition." Vol. 51. Ann Arbor, MI: Michigan
+Publishing, University of Michigan Library, 1991.</p>
+<p>[10] Biles, John. "GenJam: A genetic algorithm for generating jazz
+solos." ICMC. Vol. 94. 1994.</p>
+<p>[11] McIntyre, Ryan A. "Bach in a box: The evolution of four part
+baroque harmony using the genetic algorithm." Proceedings of the first
+ieee conference on evolutionary computation. ieee world congress on
+computational intelligence. IEEE, 1994.</p>
+<p>[12] Ariza, Christopher. "Two pioneering projects from the early
+history of computer-aided algorithmic composition." Computer Music
+Journal 35.3 (2011): 40-56.</p>
+<p>[13] Ames, Charles. "Automated composition in retrospect: 1956-1986."
+Leonardo (1987): 169-185.</p>
+<p>[14] Pinkerton, Richard C. "Information theory and melody."
+Scientific American 194.2 (1956): 77-87.</p>
+<p>[15] Tipei, Sever. MP1: a computer program for music composition. Ann
+Arbor, MI: Michigan Publishing, University of Michigan Library,
+1975.</p>
+<p>[16] Ames, Charles, and Michael Domino. "Cybernetic Composer: an
+overview." Understanding Music with AI: Perspectives on Music Cognition
+(1992): 186-205.</p>
+<p>[17] Ponsford, Dan, Geraint Wiggins, and Chris Mellish. "Statistical
+learning of harmonic movement." Journal of New Music Research 28.2
+(1999): 150-177.</p>
+<p>[18] Grachten, Maarten. "JIG: Jazz improvisation generator."
+Proceedings of the MOSART Workshop on Current Research Directions in
+Computer Music. Barcelona, Spain: Pompeu Fabra University Publishers,
+2001.</p>
+<p>[19] Thom, Belinda. "BoB: an interactive improvisational music
+companion." Proceedings of the fourth international conference on
+Autonomous agents. 2000.</p>
+<p>[20] Biyikoglu, Kaan M. "A Markov model for chorale harmonization."
+Preceedings of the 5 th Triennial ESCOM Conference. 2003.</p>
+<p>[21] Allan, Moray. "Harmonising chorales in the style of Johann
+Sebastian Bach." Master's Thesis, School of Informatics, University of
+Edinburgh (2002).</p>
+<p>[22] Morris, Dan, Ian Simon, and Sumit Basu. "Exposing parameters of
+a trained dynamic model for interactive music creation." AAAI'08
+Proceedings of the 23rd national conference on Artificial
+intelligence-Volume 2. 2008.</p>
+<p>[23] Farbood, Mary, and Bernd Schöner. "Analysis and synthesis of
+Palestrina-style counterpoint using Markov chains." ICMC. 2001</p>
+<p>[24] Conklin, Darrell, and Ian H. Witten. "Multiple viewpoint systems
+for music prediction." Journal of New Music Research 24.1 (1995):
+51-73.</p>
+<p>[25] Pachet, François. "Interacting with a musical learning system:
+The continuator." International conference on music and artificial
+intelligence. Berlin, Heidelberg: Springer Berlin Heidelberg, 2002.</p>
+<p>[26] Schulze, Walter. A formal language theory approach to music
+generation. Diss. Stellenbosch: University of Stellenbosch, 2010.</p>
+<p>[27] Pasquier, Philippe. "Realtime generation of harmonic
+progressions using controlled Markov selection." Proceedings of
+ICCC-X-computational creativity conference. 2010.</p>
+<p>[28] Martin, Aengus, Craig T. Jin, and Oliver Bown. "Implementation
+of a real-time musical decision-maker." Proceedings of the Australasian
+Computer Music Conference. 2012.</p>
+<p>[29] Dubnov, Shlomo, et al. "Using machine-learning methods for
+musical style modeling." Computer 36.10 (2003): 73-80.</p>
+<p>[30] Assayag, Gérard, and Shlomo Dubnov. "Using factor oracles for
+machine improvisation." Soft Computing 8.9 (2004)</p>
+<p>[31] Shibata, N. "A neural network-based method for chord/note scale
+association with melodies." NEC research &amp; development 32.3 (1991):
+453-459.</p>
+<p>[32] Verbeurgt, K., Fayer, M., &amp; Dinolfo, M. (2004). A hybrid
+Neural-Markov approach for learning to compose music by example. In
+Proceedings of the Canadian Conference on Advances in Artificial
+Intelligence, pp. 480–484</p>
+<p>[33] Hild, Hermann, Johannes Feulner, and Wolfram Menzel. "HARMONET:
+A neural net for harmonizing chorales in the style of JS Bach." Advances
+in neural information processing systems 4 (1991).</p>
+<p>[34] Ban, B. H. (2017). Method for composing music using deep
+reinforcement learning. Korean Patent Application No. 10-2017-0024223,
+filed February 23, 2017; published as KR10-2017-0128073A, November 22,
+2017.</p>
+<p>[35] Todd, Peter M. "A connectionist approach to algorithmic
+composition." Computer Music Journal 13.4 (1989): 27-43.</p>
+<p>[36] Franklin, Judy A. "Multi-phase learning for jazz improvisation
+and interaction." Proceedings of the Eight Biennial Symposium on Art and
+Technology. 2001.</p>
+<p>[37] B. H. Ban, “Method for composing music using deep reinforcement
+learning,” Korean Patent Application No. 10-2017-0024223, filed Feb. 23,
+2017, published as KR10-2017-0128073A, Nov. 22, 2017.</p>
+<p>[38] B. H. Ban, J. H. Park, and Y. E. Jung, “Method for composing
+music based on recurrent neural networks,” Korean Patent Application No.
+10-2017-0022493, filed Feb. 20, 2017, published as KR10-2017-0128070A,
+Nov. 22, 2017.</p>
+<p>[39] Eck, Douglas, and Jürgen Schmidhuber. "Learning the long-term
+structure of the blues." International Conference on Artificial Neural
+Networks. Berlin, Heidelberg: Springer Berlin Heidelberg, 2002.</p>
+<p>[40] Sturm, Bob L., et al. "Music transcription modelling and
+composition using deep learning." arXiv preprint arXiv:1604.08723
+(2016).</p>
+<p>[41] Colombo, Florian, et al. "Algorithmic composition of melodies
+with deep recurrent neural networks." arXiv preprint arXiv:1606.07251
+(2016).</p>
+<p>[42] Bahdanau, Dzmitry, Kyunghyun Cho, and Yoshua Bengio. "Neural
+machine translation by jointly learning to align and translate." arXiv
+preprint arXiv:1409.0473 (2014).</p>
+<p>[43] Vaswani, Ashish, et al. "Attention is all you need." Advances in
+neural information processing systems 30 (2017).</p>
+<p>[44] Oore, Sageev, et al. "Learning to create piano performances."
+NIPS 2017 Workshop on Machine Learning for Creativity and Design.
+2017.</p>
+<p>[45] Goolge Magenta, https://magenta.tensorflow.org</p>
+<p>[46] Keerti, Gullapalli, et al. "Attentional networks for music
+generation." Multimedia Tools and Applications 81.4 (2022)</p>
+<p>[47] Huang, Cheng-Zhi Anna, et al. "Music transformer." arXiv
+preprint arXiv:1809.04281 (2018).</p>
+<p>[48] Payne, C. (2019). MuseNet. OpenAI.</p>
+<p>[49] Huang, Yu-Siang, and Yi-Hsuan Yang. "Pop music transformer:
+Beat-based modeling and generation of expressive pop piano
+compositions." Proceedings of the 28th ACM international conference on
+multimedia. 2020.</p>
+<p>[50] Yu, Botao, et al. "Museformer: Transformer with fine-and
+coarse-grained attention for music generation." Advances in neural
+information processing systems 35 (2022): 1376-1388.</p>
+<p>[51] Oord, Aaron van den, et al. "Wavenet: A generative model for raw
+audio." arXiv preprint arXiv:1609.03499 (2016).</p>
+<p>[52] Mehri, Soroush, et al. "SampleRNN: An unconditional end-to-end
+neural audio generation model." arXiv preprint arXiv:1612.07837
+(2016).</p>
+<p>[53] Kalchbrenner, Nal, et al. "Efficient neural audio synthesis."
+International Conference on Machine Learning. PMLR, 2018.</p>
+<p>[54] Engel, Jesse, et al. "Neural audio synthesis of musical notes
+with wavenet autoencoders." International conference on machine
+learning. PMLR, 2017.</p>
+<p>[55] Engel, Jesse, et al. "Gansynth: Adversarial neural audio
+synthesis." arXiv preprint arXiv:1902.08710 (2019).</p>
+<p>[56] Van Den Oord, Aaron, and Oriol Vinyals. "Neural discrete
+representation learning." Advances in neural information processing
+systems 30 (2017).</p>
+<p>[57] Child, Rewon, et al. "Generating long sequences with sparse
+transformers." arXiv preprint arXiv:1904.10509 (2019).</p>
+<p>[58] Dhariwal, Prafulla, et al. "Jukebox: A generative model for
+music." arXiv preprint arXiv:2005.00341 (2020).</p>
+<p>[59] [60] H. Liu, Z. Chen, Y. Yuan, X. Mei, X. Liu, D. P. Mandic, W.
+Wang, and M. D. Plumbley, “AudioLDM: Text-to-audio generation with
+latent diffusion models,” in Proceedings of the 40th International
+Conference on Machine Learning (ICML), pp. 21450–21474, 2023.</p>
+<p>[60] Liu, Haohe, et al. "Audioldm: Text-to-audio generation with
+latent diffusion models." arXiv:2301.12503 (2023).</p>
+<p>[61] Schneider, Flavio, et al. "Mo\^ usai: Text-to-music generation
+with long-context latent diffusion." arXiv preprint arXiv:2301.11757
+(2023).</p>
+<p>[62] Prajwal, K. R., et al. "MusicFlow: Cascaded flow matching for
+text guided music generation." arXiv preprint arXiv:2410.20478
+(2024).</p>
+<p>[63] Lan, Gael Le, et al. "High fidelity text-guided music editing
+via single-stage flow matching." arXiv preprint arXiv:2407.03648
+(2024).</p>
+<p>[64] Liu, Huadai, et al. "Flashaudio: Rectified flow for fast and
+high-fidelity text-to-audio generation." Proceedings of the 63rd Annual
+Meeting of the Association for Computational Linguistics (Volume 1: Long
+Papers). 2025.</p>
+<p>[65] Yang, Chenyu, et al. "Songbloom: Coherent song generation via
+interleaved autoregressive sketching and diffusion refinement." arXiv
+preprint arXiv:2506.07634 (2025).</p>
+<p>[66] Zhang, Chaoyang, and Yan Hua. "Dance2Music-Diffusion: leveraging
+latent diffusion models for music generation from dance videos." EURASIP
+Journal on Audio, Speech, and Music Processing 2024.1 (2024): 48.</p>
+<p>[67] Li, Shufan, et al. "Omniflow: Any-to-any generation with
+multi-modal rectified flows." Proceedings of the Computer Vision and
+Pattern Recognition Conference. 2025.</p>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">উদ্ধৃতি</h2><p class="citation-help">কোনো বিন্যাসে ক্লিক করলে উদ্ধৃতির তথ্য কপি হবে।</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="APA বিন্যাস কপি করুন">APA কপি করুন</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="MLA বিন্যাস কপি করুন">MLA কপি করুন</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="Chicago বিন্যাস কপি করুন">Chicago কপি করুন</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="IEEE বিন্যাস কপি করুন">IEEE কপি করুন</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="BibTeX বিন্যাস কপি করুন">BibTeX কপি করুন</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="RIS বিন্যাস কপি করুন">RIS কপি করুন</button></div><label for="citation-text" class="citation-preview-label">উদ্ধৃতির প্রিভিউ · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B. (2026). A systematic review of AI-based music composition: Limitations and breakthroughs. ResearchGate. https://doi.org/10.13140/RG.2.2.14616.35848</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/ai-music-composition-systematic-review-2026/citation.bib" download>BibTeX ফাইল</a><a href="/papers/ai-music-composition-systematic-review-2026/citation.ris" download>RIS ফাইল</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B. (2026). A systematic review of AI-based music composition: Limitations and breakthroughs. ResearchGate. https://doi.org/10.13140/RG.2.2.14616.35848", "mla": "Ban, Byunghyun. “A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs.” ResearchGate, 2026. Preprint. https://doi.org/10.13140/RG.2.2.14616.35848.", "chicago": "Ban, Byunghyun. “A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs.” Preprint, ResearchGate, 2026. https://doi.org/10.13140/RG.2.2.14616.35848.", "ieee": "B. Ban, “A systematic review of AI-based music composition: Limitations and breakthroughs,” ResearchGate, preprint, 2026, doi: 10.13140/RG.2.2.14616.35848.", "bibtex": "@misc{ban2026_9bd500fb9d8b,\n  author = {Ban, Byunghyun},\n  title = {{A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs}},\n  year = {2026},\n  doi = {10.13140/RG.2.2.14616.35848},\n  url = {https://www.researchgate.net/publication/404370528\\_A\\_Systematic\\_Review\\_of\\_AI-Based\\_Music\\_Composition\\_Limitations\\_and\\_Breakthroughs},\n  note = {Preprint},\n  howpublished = {ResearchGate}\n}", "ris": "TY  - UNPB\nAU  - Ban, Byunghyun\nTI  - A Systematic Review of AI-Based Music Composition: Limitations and Breakthroughs\nPY  - 2026\nDO  - 10.13140/RG.2.2.14616.35848\nUR  - https://www.researchgate.net/publication/404370528_A_Systematic_Review_of_AI-Based_Music_Composition_Limitations_and_Breakthroughs\nAB  - AI-based music composition has evolved rapidly, with research paradigms shifting from modeling local patterns to capturing global musical coherence. This paper examines how compositional AI has progressed from modeling local patterns to forming global musical ideas. Early machine learning models, based on state transition probabilities, were able to capture only local continuity between notes and chords, and thus failed to produce meaningful phrasing or large-scale musical structure. With the introduction of recurrent architectures, models began to incorporate temporal context, and transformer-based approaches further enabled the generation of musically coherent passages over longer spans. Nevertheless, these models still exhibit limitations in maintaining overall structural completeness and long-term musical direction. More recent approaches move beyond sequential prediction toward the simultaneous generation of musical structure and sonic characteristics. This shift reflects a transition from the accumulation of local decisions to the formation of a more holistic musical representation.\nLA  - en\nM3  - Preprint\nER  -\n"}</script></section><a class="paper-back-link" href="/bn/papers/">← গবেষণাপত্রের তালিকায় ফিরুন</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="সব পৃষ্ঠা"><a href="/bn/">Byunghyun Ban</a><a href="/bn/media/">সম্প্রচার ও ভিডিও</a><a href="/bn/books/">প্রকাশিত বই</a><a href="/bn/lectures/">বক্তৃতা ও প্রশিক্ষণের অভিজ্ঞতা</a><a href="/bn/courses/online/">অনলাইন কোর্স</a><a href="/bn/courses/offline/">সশরীর কোর্স</a><a href="/bn/news/">সংবাদ প্রতিবেদন</a><a href="/bn/papers/">গবেষণাপত্র ও গবেষণা</a><a href="/bn/patents/">পেটেন্ট</a><a href="/bn/projects/">উন্নয়ন প্রকল্প</a><a href="/bn/activities/">সামাজিক অবদান</a><a href="/bn/memberships/">সদস্যপদ ও পেশাগত কার্যক্রম</a><a href="/bn/collections/">সংগ্রহের সামগ্রী</a><a href="/bn/contact/">বক্তৃতা ও সহযোগিতার জন্য যোগাযোগ</a></nav>
+            <p><a href="/feed.xml">RSS সাবস্ক্রাইব করুন</a> · <a href="/feed.json">JSON ফিড</a></p>
+            <p>© 2026 Byunghyun Ban. সর্বস্বত্ব সংরক্ষিত।</p>
+            <p>NaNa Lab (ব্যবসা নিবন্ধন নম্বর:269-08-02374), প্রতিনিধি Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="একেবারে ওপরে যান">↑</button>
+</body>
+</html>

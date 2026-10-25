@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing | Byunghyun Ban</title>
+    <meta name="description" content="This technical report presents TechNews, a registered automated science news portal that transforms newly released scientific papers into publishable science news articles throu…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/technews-agentic-publishing-2026/">
+<meta name="citation_doi" content="10.13140/RG.2.2.35963.07201">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/technews-agentic-publishing-2026/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/zh/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing | Byunghyun Ban">
+    <meta property="og:description" content="This technical report presents TechNews, a registered automated science news portal that transforms newly released scientific papers into publishable science news articles throu…">
+    <meta property="og:url" content="https://bhban.kr/zh/papers/technews-agentic-publishing-2026/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p08-first-page-80511ece05f6.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/zh/#website", "url": "https://bhban.kr/zh/", "name": "Byunghyun Ban", "inLanguage": "zh"}, {"@type": "WebPage", "@id": "https://bhban.kr/zh/papers/technews-agentic-publishing-2026/#page", "url": "https://bhban.kr/zh/papers/technews-agentic-publishing-2026/", "name": "TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing | Byunghyun Ban", "description": "This technical report presents TechNews, a registered automated science news portal that transforms newly released scientific papers into publishable science news articles throu…", "inLanguage": "zh", "mainEntity": {"@id": "https://bhban.kr/papers/technews-agentic-publishing-2026/#article"}, "isPartOf": {"@id": "https://bhban.kr/zh/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/technews-agentic-publishing-2026/#article", "url": "https://bhban.kr/papers/technews-agentic-publishing-2026/", "name": "TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing", "headline": "TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing", "author": [{"@type": "Person", "name": "Byunghyun Ban"}], "datePublished": "2026", "inLanguage": "en", "abstract": "This technical report presents TechNews, a registered automated science news portal that transforms newly released scientific papers into publishable science news articles through an agentic production workflow. (https://technews.ai.kr) Rather than treating automated journalism as a single text-generation task, TechNews decomposes human content-production work into persistent stages: source collection, freshness filtering, article drafting, translation, formatting, thumbnail generation, publication upload, backend monitoring, and operational maintenance. The system is organized around two agentic components. The first is a reporter agent, Persica, which performs source collection, article generation, translation, formatting, thumbnail handling, upload preparation, and operational reporting. The second is a backend operations agent that maintains service awareness across the publishing backend, including API behavior, database state, media storage, deployment assumptions, diagnostic routines, and operational failure modes. Together, these agents form an agent-operated publishing infrastructure rather than a one-shot article generator. TechNews operates as a registered internet newspaper in the Republic of Korea under registration number 경북아 00881.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/technews-agentic-publishing-2026/#page"}, "creativeWorkStatus": "Preprint", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.13140/RG.2.2.35963.07201"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/technews-agentic-publishing-2026/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://bhban.kr/zh/"}, {"@type": "ListItem", "position": 2, "name": "论文", "item": "https://bhban.kr/zh/papers/"}, {"@type": "ListItem", "position": 3, "name": "TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing", "item": "https://bhban.kr/zh/papers/technews-agentic-publishing-2026/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/technews-agentic-publishing-2026/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/technews-agentic-publishing-2026/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"打开菜单","menuClose":"关闭菜单","submenuExpand":"展开{label}子菜单","submenuCollapse":"收起{label}子菜单","nextSwipeHint":"滚动到底部后，再向上滑动一次即可前往。","nextScrollHint":"滚动到底部后，再向下滚动一次即可前往。","lectureResults":"{category} {count}项 · 按最新讲座排序","categoryAll":"全部","categoryCompany":"企业","categoryPublic":"公共机构","categoryEducation":"教育机构","categoryResearch":"研究机构","categoryConference":"会议","listMedia":"视频","listNews":"新闻报道","listLectures":"讲座","listCoursesOnline":"在线课程","listCoursesOffline":"线下培训课程","listPapers":"论文","listPatents":"专利","listProjects":"项目","listActivities":"活动","listMemberships":"会员活动","listCollections":"收藏品","listDonations":"捐赠记录","listGeneric":"列表","listStatus":"共{total}项，显示{visible}项","listMore":"查看更多{label}（还剩{remaining}项）","citationCopyLabel":"复制引用信息","citationCopied":"已复制引用信息。","citationError":"无法复制引用信息，请检查浏览器的剪贴板设置。","citationFormatCopied":"已复制{label}引用信息。","citationManualCopy":"已选中引用文本，请手动复制。","contactLoadError":"无法加载咨询发送功能。请稍后重试。","contactSent":"已收到您的咨询。","contactError":"发生错误，请重试。","contactSending":"发送中……","streamRetry":"重新加载","streamError":"无法加载后续内容。请重试，或点击上方链接前往。","streamLoading":"正在继续加载{label}内容。"}</script>
+</head>
+<body data-locale="zh" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">跳转至正文</a>
+    <nav class="navbar" aria-label="主菜单"><div class="navbar-brand"><a href="/zh/" aria-label="Byunghyun Ban 首页"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/zh/" class="nav-link nav-main-link" data-nav-page="home">关于</a></li><li data-nav-group="media"><a href="/zh/media/" class="nav-link nav-main-link" data-nav-page="media">媒体</a></li><li data-nav-group="books"><a href="/zh/books/" class="nav-link nav-main-link" data-nav-page="books">书籍</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/zh/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">讲座</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="展开讲座子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="讲座分类"><li><a href="/zh/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">全部</a></li><li><a href="/zh/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">企业</a></li><li><a href="/zh/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">公共机构</a></li><li><a href="/zh/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">教育机构</a></li><li><a href="/zh/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">研究机构</a></li><li><a href="/zh/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">会议</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/zh/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">课程</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="展开课程子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/zh/courses/online/" data-nav-page="courses-online">在线</a></li><li><a href="/zh/courses/offline/" data-nav-page="courses-offline">线下</a></li></ul></li><li data-nav-group="news"><a href="/zh/news/" class="nav-link nav-main-link" data-nav-page="news">新闻</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/zh/papers/" class="nav-link active nav-main-link" data-nav-page="papers">研发</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="展开研发子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/zh/papers/" data-nav-page="papers">论文</a></li><li><a href="/zh/patents/" data-nav-page="patents">专利</a></li><li><a href="/zh/projects/" data-nav-page="projects">项目</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/zh/activities/" class="nav-link nav-main-link" data-nav-page="activities">其他</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="展开其他子菜单" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/zh/activities/" data-nav-page="activities">社会贡献</a></li><li><a href="/zh/memberships/" data-nav-page="memberships">会员活动</a></li><li><a href="/zh/collections/" data-nav-page="collections">收藏</a></li></ul></li><li data-nav-group="contact"><a href="/zh/contact/" class="btn-contact nav-main-link" data-nav-page="contact">联系</a></li></ul><details class="language-switcher"><summary aria-label="选择语言"><span aria-hidden="true">🌐</span> <span>简体中文</span></summary><nav class="language-options" aria-label="选择语言"><a href="/papers/technews-agentic-publishing-2026/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/technews-agentic-publishing-2026/" hreflang="en" lang="en">English</a><a href="/zh/papers/technews-agentic-publishing-2026/" hreflang="zh" lang="zh" aria-current="true">简体中文</a><a href="/hi/papers/technews-agentic-publishing-2026/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/technews-agentic-publishing-2026/" hreflang="es" lang="es">Español</a><a href="/ar/papers/technews-agentic-publishing-2026/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/technews-agentic-publishing-2026/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/technews-agentic-publishing-2026/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/papers/technews-agentic-publishing-2026/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="打开菜单">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="当前位置"><a href="/zh/">首页</a><span aria-hidden="true">/</span><a href="/zh/papers/">论文</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-2026-p08"><header><p class="paper-kind">预印本 · 未经同行评审</p><h1 id="paper-title" lang="en">TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing</h1><p class="paper-authors">Byunghyun Ban</p><p class="paper-venue">2026</p><nav class="paper-reader-jumps" aria-label="前往论文"><a href="#abstract-heading">摘要</a><a href="#full-text">全文</a><a href="#citation-heading">引用</a></nav><div class="gitIcons">
+                                <a href="/papers/technews-agentic-publishing-2026/paper.pdf" target="_blank" rel="noreferrer" download aria-label="TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing 预印本完整 PDF 下载" title="下载 PDF"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg><span class="paper-action-label">PDF</span></a>
+                                <a href="https://doi.org/10.13140/RG.2.2.35963.07201" target="_blank" rel="noreferrer" aria-label="TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing DOI" title="DOI 原文信息"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">DOI</span></a>
+                                <a href="https://www.researchgate.net/publication/404500998_TechNews_A_Technical_Report_on_Agentic_Workflow_Automation_for_Science_News_Publishing" target="_blank" rel="noreferrer" aria-label="TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing 原文信息" title="论文原文信息"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">来源</span></a>
+                                <span class="citation" data-citation="Byunghyun Ban. (2026). &quot;TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing.&quot; ResearchGate · Preprint (not peer-reviewed). https://doi.org/10.13140/RG.2.2.35963.07201" aria-label="复制引用信息" title="复制引用信息"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">引用</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>目录 · Contents</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-2026-p08-introduction">1. Introduction</a></li><li class="toc-level-2"><a href="#paper-2026-p08-background-and-positioning">2. Background and Positioning</a></li><li class="toc-level-3"><a href="#paper-2026-p08-automated-journalism">2.1 Automated journalism</a></li><li class="toc-level-3"><a href="#paper-2026-p08-llm-agents-and-workflow-automation">2.2 LLM agents and workflow automation</a></li><li class="toc-level-3"><a href="#paper-2026-p08-grounding-and-science-news-risk">2.3 Grounding and science-news risk</a></li><li class="toc-level-2"><a href="#paper-2026-p08-system-context">3. System Context</a></li><li class="toc-level-3"><a href="#paper-2026-p08-registered-science-news-portal">3.1 Registered science news portal</a></li><li class="toc-level-3"><a href="#paper-2026-p08-freshness-criterion">3.2 Freshness criterion</a></li><li class="toc-level-3"><a href="#paper-2026-p08-human-governed-automation">3.3 Human-governed automation</a></li><li class="toc-level-2"><a href="#paper-2026-p08-overall-architecture">4. Overall Architecture</a></li><li class="toc-level-2"><a href="#paper-2026-p08-agentic-content-production-workflow">5. Agentic Content-Production Workflow</a></li><li class="toc-level-3"><a href="#paper-2026-p08-source-collection-and-filtering">5.1 Source collection and filtering</a></li><li class="toc-level-3"><a href="#paper-2026-p08-article-drafting-translation-and-formatting">5.2 Article drafting, translation, and formatting</a></li><li class="toc-level-3"><a href="#paper-2026-p08-thumbnail-generation-and-media-handling">5.3 Thumbnail generation and media handling</a></li><li class="toc-level-3"><a href="#paper-2026-p08-publication-upload">5.4 Publication upload</a></li><li class="toc-level-2"><a href="#paper-2026-p08-operations-observability-and-reliability">6. Operations, Observability, and Reliability</a></li><li class="toc-level-3"><a href="#paper-2026-p08-database-backed-state-and-observable-transitions">6.1 Database-backed state and observable transitions</a></li><li class="toc-level-3"><a href="#paper-2026-p08-scheduling-and-worker-execution">6.2 Scheduling and worker execution</a></li><li class="toc-level-3"><a href="#paper-2026-p08-reliability-risks">6.3 Reliability risks</a></li><li class="toc-level-3"><a href="#paper-2026-p08-design-lesson">6.4 Design lesson</a></li><li class="toc-level-2"><a href="#paper-2026-p08-governance-and-limitations">7. Governance and Limitations</a></li><li class="toc-level-3"><a href="#paper-2026-p08-editorial-responsibility">7.1 Editorial responsibility</a></li><li class="toc-level-3"><a href="#paper-2026-p08-disclosure-and-representation-boundaries">7.2 Disclosure and representation boundaries</a></li><li class="toc-level-3"><a href="#paper-2026-p08-limitations">7.3 Limitations</a></li><li class="toc-level-2"><a href="#paper-2026-p08-discussion-and-conclusion">8. Discussion and Conclusion</a></li><li class="toc-level-2"><a href="#paper-2026-p08-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">摘要</h2><p class="abstract" lang="en">This technical report presents TechNews, a registered automated science news portal that transforms newly released scientific papers into publishable science news articles through an agentic production workflow. (https://technews.ai.kr) Rather than treating automated journalism as a single text-generation task, TechNews decomposes human content-production work into persistent stages: source collection, freshness filtering, article drafting, translation, formatting, thumbnail generation, publication upload, backend monitoring, and operational maintenance. The system is organized around two agentic components. The first is a reporter agent, Persica, which performs source collection, article generation, translation, formatting, thumbnail handling, upload preparation, and operational reporting. The second is a backend operations agent that maintains service awareness across the publishing backend, including API behavior, database state, media storage, deployment assumptions, diagnostic routines, and operational failure modes. Together, these agents form an agent-operated publishing infrastructure rather than a one-shot article generator. TechNews operates as a registered internet newspaper in the Republic of Korea under registration number 경북아 00881.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><h2 id="paper-2026-p08-introduction">1. Introduction</h2>
+<p>Large language models have made it increasingly easy to generate
+fluent article-like text. However, news production is not only a writing
+task. A functioning news publication must monitor sources, select timely
+items, interpret source material, prepare headlines and article bodies,
+handle multilingual formatting, attach visual material, publish through
+a backend or content-management system, and verify that published
+content appears correctly.</p>
+<p>This report presents TechNews as a case study of transforming this
+human content-production workflow into an agentic publishing system.
+TechNews is designed to collect scientific papers whose public release
+timestamps fall within the previous 24 hours, convert selected sources
+into science news articles, generate or attach editorial thumbnails, and
+publish the resulting content through a live production backend.</p>
+<p>The novelty of TechNews is not that a model can write article text.
+Prior work on automated journalism has already examined algorithmic news
+generation, robotic reporting, and the implications of automation for
+journalistic labor and authority [1-3]. TechNews extends this discussion
+from text generation to agentic workflow automation. The system
+automates not only writing, but the broader path from source discovery
+to public publication.</p>
+<p>This report is therefore best read as a systems white paper and case
+study rather than as a new-model paper. It does not propose a new
+language model or benchmark. Instead, it documents how human
+content-production labor can be decomposed into agent-executable stages
+and operated in a registered publication environment.</p>
+<h2 id="paper-2026-p08-background-and-positioning">2. Background and Positioning</h2>
+<h3 id="paper-2026-p08-automated-journalism">2.1 Automated journalism</h3>
+<p>Automated journalism is usually discussed in relation to
+algorithmically generated stories, particularly in domains where
+structured data are abundant. Earlier research emphasized the potential
+for automated systems to generate news at scale, reduce production cost,
+and support multilingual output, while also raising questions about
+labor, editorial authority, transparency, and accountability [1-3].</p>
+<p>TechNews is related to automated journalism, but it is positioned
+differently. Many automated journalism systems focus on producing a
+story from a data input. TechNews focuses on the full production
+workflow: source monitoring, article transformation, visual preparation,
+publication, and operational support. The unit of automation is not only
+the generated article, but the path by which a source becomes a
+published media artifact.</p>
+<h3 id="paper-2026-p08-llm-agents-and-workflow-automation">2.2 LLM agents and workflow
+automation</h3>
+<p>TechNews also relates to recent work on LLM-based agents. Tool-using
+and action-oriented LLM frameworks show that language models can be
+embedded in workflows where they interact with external environments,
+tools, or state [4]. Surveys of LLM-based agents frame agents as systems
+that perceive environments, make decisions, and act through tools or
+interfaces [5].</p>
+<p>This framing is important for TechNews. The reporter agent does not
+merely receive a prompt and return an article. It interacts with
+internal databases, staging records, scheduling logic, media services,
+upload routines, logs, and backend state. The backend operations agent
+similarly maintains contextual knowledge about the production service
+rather than merely answering generic questions about it.</p>
+<h3 id="paper-2026-p08-grounding-and-science-news-risk">2.3 Grounding and science-news
+risk</h3>
+<p>Automated science news production is especially sensitive to
+grounding. A system that transforms scientific papers into public-facing
+articles must avoid making claims unsupported by the source paper.
+Retrieval-augmented generation combines model knowledge with retrieved
+evidence and has been shown to improve specificity and factuality in
+knowledge-intensive generation [6]. Self-RAG extends this idea with
+adaptive retrieval and self-reflection for improving factuality and
+citation behavior [7].</p>
+<p>The need for grounding is reinforced by the broader hallucination
+problem in natural language generation [8]. It is also reinforced by
+evidence from science communication research: health and science news
+can be distorted by exaggeration, loss of caveats, and overconfident
+presentation of uncertain findings [9,10]. For an automated science news
+portal, source traceability is therefore not a cosmetic feature; it is
+an editorial requirement.</p>
+<h2 id="paper-2026-p08-system-context">3. System Context</h2>
+<h3 id="paper-2026-p08-registered-science-news-portal">3.1 Registered science news
+portal</h3>
+<p>TechNews is not only a prototype pipeline. It operates as a
+registered internet newspaper in the Republic of Korea under
+registration number Gyeongbuk A00881. The public TechNews site displays
+required publication information such as the title, registration number,
+registration date, publication date, publisher, editor, and related
+publication metadata [11].</p>
+<p>Korean newspaper law establishes a registration framework for
+newspapers and internet newspapers, and it also requires internet
+newspaper operators to publish certain necessary information such as the
+title, registration number, registration date, publisher, and editor
+[12]. This regulatory context distinguishes TechNews from a
+laboratory-only demonstration. However, registration should not be
+interpreted as governmental certification of the AI system's accuracy,
+editorial quality, factuality, or reliability.</p>
+<h3 id="paper-2026-p08-freshness-criterion">3.2 Freshness criterion</h3>
+<p>TechNews uses a freshness criterion based on public release time. A
+scientific paper is eligible for collection when its public release
+timestamp falls within the 24-hour window preceding the collector
+execution time. In this report, a “24-hour paper” refers to this
+operational collection rule, not necessarily to a formal journal
+publication date.</p>
+<p>This distinction matters because many scientific sources expose new
+papers through public feeds, preprint servers, or API timestamps before
+conventional journal publication. For example, arXiv provides API and
+RSS/Atom feed mechanisms for programmatic or feed-based access, while
+bioRxiv and medRxiv provide API endpoints for retrieving records by date
+interval or recent-post criteria [13-15].</p>
+<figure class="paper-figure"><img alt="Figure 1. TechNews workflow overview" decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p08/figure-1.webp"/><figcaption>Figure 1. TechNews workflow overview</figcaption></figure>
+
+<h3 id="paper-2026-p08-human-governed-automation">3.3 Human-governed automation</h3>
+<p>TechNews is automated at the workflow level, but it should not be
+described as ungoverned. The system automates collection, drafting,
+translation, thumbnail handling, publication upload, and backend
+monitoring, while the human operator remains responsible for policy,
+correction, intervention, and publication accountability.</p>
+<p>This distinction is consistent with broader newsroom guidance on AI.
+The Associated Press states that AI is not a replacement for journalists
+and emphasizes human responsibility for accuracy and fairness, while
+Reuters states that primarily or solely AI-generated news content should
+be transparently disclosed with context about the role of AI
+[16,17].</p>
+<h2 id="paper-2026-p08-overall-architecture">4. Overall Architecture</h2>
+<p>TechNews consists of three interacting layers: the public news
+service, the reporter-agent workflow, and the backend operations-agent
+workflow. Figure 2 summarizes this dual-agent publishing
+architecture.</p>
+<p>The public news service is the publication surface. It serves
+articles, sections, media, and user-facing pages. The backend
+environment is treated as a production service stack composed of a web
+frontend, an API layer, article databases, media storage, and
+operational routines. Implementation details are intentionally
+abstracted in this report; the important point is that publication
+requires a persistent service environment rather than merely a
+text-generation endpoint.</p>
+<p>The reporter agent, Persica, is the editorial production component.
+It collects source materials, creates article drafts, translates and
+formats content, generates or reconciles thumbnails, and prepares
+completed articles for publication. Its specification describes it as a
+persistent research-and-publishing agent with scheduled work, staged
+processing, model-assisted generation, thumbnail handling, guarded
+publication workflows, and operational observability [18].</p>
+<p>The backend operations agent is the infrastructure-awareness
+component. It maintains knowledge about the publishing backend,
+deployment assumptions, database behavior, service routing, operational
+scripts, and failure diagnosis procedures. Its specification describes a
+digital operations assistant that combines long-term memory, tool-based
+execution, safety rules, service diagnosis, and backend orchestration
+[19].</p>
+<p>This architecture reflects a central design principle: the article is
+the output, but the workflow is the system. The generated article
+matters, but so do the state transitions that lead to it: collection,
+filtering, drafting, translation, media preparation, upload, logging,
+and monitoring.</p>
+<figure class="paper-figure"><img alt="Figure 2. Dual-agent publishing architecture" decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p08/figure-2.webp"/><figcaption>Figure 2. Dual-agent publishing architecture</figcaption></figure>
+
+<h2 id="paper-2026-p08-agentic-content-production-workflow">5. Agentic
+Content-Production Workflow</h2>
+<p>Science news production is traditionally a human-centered workflow. A
+human reporter or editor monitors newly released papers, selects
+potentially relevant items, interprets source material, writes an
+article, prepares a headline, attaches visual material, publishes the
+story, and verifies publication state. TechNews decomposes this work
+into agent-executable stages. Figure 3 frames this transformation from
+human editorial labor to an agentic workflow.</p>
+<p class="paper-table-caption" id="paper-2026-p08-table-2.-human-editorial-labor-mapped-to-technews-workflow-stages.">Table
+2. Human editorial labor mapped to TechNews workflow stages.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:47%;">
+<colgroup>
+<col style="width: 21%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Human content-production
+task</strong></th>
+<th style="text-align: center;"><strong>Agentic workflow
+stage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Monitoring newly released papers</td>
+<td style="text-align: center;">24-hour source collection</td>
+</tr>
+<tr>
+<td style="text-align: center;">Selecting relevant items</td>
+<td style="text-align: center;">Freshness and category filtering</td>
+</tr>
+<tr>
+<td style="text-align: center;">Drafting the article</td>
+<td style="text-align: center;">Model-assisted article drafting</td>
+</tr>
+<tr>
+<td style="text-align: center;">Editing and formatting</td>
+<td style="text-align: center;">Translation and HTML formatting</td>
+</tr>
+<tr>
+<td style="text-align: center;">Preparing visuals</td>
+<td style="text-align: center;">Thumbnail generation or
+reconciliation</td>
+</tr>
+<tr>
+<td style="text-align: center;">Publishing through CMS or backend</td>
+<td style="text-align: center;">API-based publication upload</td>
+</tr>
+<tr>
+<td style="text-align: center;">Checking publication state</td>
+<td style="text-align: center;">Logs, ledgers, and monitoring
+records</td>
+</tr>
+<tr>
+<td style="text-align: center;">Handling operational issues</td>
+<td style="text-align: center;">Backend operations-agent diagnosis and
+support</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p08-source-collection-and-filtering">5.1 Source collection and
+filtering</h3>
+<p>The collection stage ingests candidate source items from scientific
+and policy sources. The system applies the public-release freshness
+criterion, assigns categories, normalizes links, records metadata, and
+removes duplicates. The output of this stage is not a finished article.
+It is a structured source record stored in the internal source
+database.</p>
+<p class="paper-table-caption" id="paper-2026-p08-table-1.-core-system-components.">Table 1. Core system
+components.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:98%;">
+<colgroup>
+<col style="width: 21%"/>
+<col style="width: 24%"/>
+<col style="width: 51%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Role</strong></th>
+<th><strong>Key responsibility</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reporter agent</td>
+<td>Editorial production</td>
+<td>Collect sources, draft articles, translate, format, prepare
+thumbnails, and hand off content for upload.</td>
+</tr>
+<tr>
+<td>Backend operations agent</td>
+<td>Operational support</td>
+<td>Maintain service awareness, diagnose backend issues, and support
+publication infrastructure.</td>
+</tr>
+<tr>
+<td>Article databases</td>
+<td>Persistent content state</td>
+<td>Store source metadata, article drafts, translations, publication
+metadata, and status information.</td>
+</tr>
+<tr>
+<td>Media storage</td>
+<td>Visual assets</td>
+<td>Store editorial thumbnails and related media assets.</td>
+</tr>
+<tr>
+<td>Human operator</td>
+<td>Governance</td>
+<td>Set policy, intervene in failures, supervise publication boundaries,
+and manage accountability.</td>
+</tr>
+</tbody>
+</table></div>
+<p>This separation is important because collection and writing are
+different forms of work. Collection asks whether a source is eligible
+and relevant. Writing asks how that source should be transformed into
+public-facing explanation. Treating them as separate stages makes the
+system more inspectable and easier to intervene in.</p>
+<h3 id="paper-2026-p08-article-drafting-translation-and-formatting">5.2 Article
+drafting, translation, and formatting</h3>
+<p>The drafting stage transforms selected source records into Korean
+science news article drafts. The translation and formatting stage then
+prepares a bilingual article representation and web-ready body
+structure. In the abstracted architecture, these intermediate outputs
+are persisted in the article database, where drafting, translation,
+formatting, and publication status can be inspected independently.</p>
+<p>This design prevents article generation, translation, and
+presentation logic from collapsing into one monolithic process. It also
+makes failures easier to localize. If a source is collected but not
+drafted, the failure is different from a translation failure or a
+publication-upload failure.</p>
+<h3 id="paper-2026-p08-thumbnail-generation-and-media-handling">5.3 Thumbnail
+generation and media handling</h3>
+<p>Science news articles often require visual material, but newly
+released papers may not provide clean, usable publication thumbnails.
+Some sources have no image, only small icons, malformed URLs, or figures
+unsuitable for editorial display. TechNews handles this through a media
+workflow that generates or attaches editorial thumbnails and stores them
+in media storage.</p>
+<p>Generated images are treated as editorial thumbnails, not as
+scientific figures or experimental evidence from the original papers.
+This distinction is essential. A generated thumbnail may make an article
+more readable, but it must not be presented as a figure from the paper
+or as evidence of the paper's experimental results. Responsible
+synthetic media practices also emphasize the need for clear disclosure,
+provenance, and responsible publishing norms for AI-generated media
+[20].</p>
+<h3 id="paper-2026-p08-publication-upload">5.4 Publication upload</h3>
+<p>The upload stage is the publication boundary. Before upload,
+generated content is an internal artifact. After upload, it becomes a
+public media product. For that reason, publication is separated from
+drafting, translation, and thumbnail generation.</p>
+<figure class="paper-figure"><img alt="Figure 3. From human editorial labor to agentic workflow" decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p08/figure-3.webp"/><figcaption>Figure 3. From human editorial labor to agentic workflow</figcaption></figure>
+
+<p>At this boundary, the system packages the article, metadata,
+translations, and media references into a publication payload.
+Successful publication updates publication records, while failures are
+retained as operational evidence for later diagnosis. This boundary is
+the highest-risk point in the workflow because an internal generation
+becomes public content.</p>
+<h2 id="paper-2026-p08-operations-observability-and-reliability">6. Operations,
+Observability, and Reliability</h2>
+<h3 id="paper-2026-p08-database-backed-state-and-observable-transitions">6.1
+Database-backed state and observable transitions</h3>
+<p>TechNews treats workflow state as an externalized operational
+artifact. In this report, those artifacts are described as internal
+databases, staging records, and storage layers. Source records, draft
+articles, translated articles, media assets, upload status, failure
+records, and operational summaries should all be inspectable without
+relying on the model's conversational memory.</p>
+<p>This design makes automation auditable. Instead of asking whether an
+agent claims to have completed a task, the operator can inspect durable
+state transitions: source collected, article drafted, translation
+completed, thumbnail attached, payload uploaded, publication confirmed,
+or failure recorded.</p>
+<h3 id="paper-2026-p08-scheduling-and-worker-execution">6.2 Scheduling and worker
+execution</h3>
+<p>TechNews is a scheduled workflow system. Source collection, article
+drafting, translation, thumbnail generation, upload, and reporting can
+be triggered by scheduled workers. This is a major difference from
+one-shot chatbot use. The agentic system must continue to operate across
+time, not merely respond in a single conversation.</p>
+<p>Scheduling creates operational challenges. Long-running jobs can be
+ambiguous if logs are delayed or if a worker is terminated. Shorter,
+staged workers improve observability because each execution has a
+smaller scope and clearer expected outcome. The Persica specification
+records several operational changes motivated by this issue, including
+replacing long draining runs with shorter repeated runs and adding
+stronger status reporting [18].</p>
+<h3 id="paper-2026-p08-reliability-risks">6.3 Reliability risks</h3>
+<p>Automated publishing reliability is not only a model-quality problem.
+It is also a workflow, state, scheduling, and operations problem.
+Representative risks include duplicate ingestion, source
+misclassification, stale worker state, overlapping scheduled tasks,
+partial media generation, upload failures, and backend drift.</p>
+<p>A particularly important class of failures occurs at the publication
+boundary. If a system treats an upload as successful before durable
+confirmation, an article may be lost or duplicated. If an upload limiter
+is misconfigured, a small manual test can accidentally become a batch
+publication. The Persica specification records this type of operational
+bug and its remediation as a concrete lesson from live use [18].</p>
+<p>Backend drift is another risk. A publishing workflow depends on
+routes, database schema, media paths, frontend rendering, and deployment
+state. The backend operations-agent specification emphasizes that a
+production publishing system may have multiple article tables, views,
+service routes, and deployment paths that must be understood as an
+operational whole [19].</p>
+<h3 id="paper-2026-p08-design-lesson">6.4 Design lesson</h3>
+<p>The design lesson is that agentic media automation must make state
+transitions visible. Logs, database records, media objects, run
+receipts, and failure records are not peripheral. They are the evidence
+that the workflow actually occurred. A fluent report from an agent is
+weaker evidence than a traceable state transition.</p>
+<h2 id="paper-2026-p08-governance-and-limitations">7. Governance and Limitations</h2>
+<h3 id="paper-2026-p08-editorial-responsibility">7.1 Editorial responsibility</h3>
+<p>TechNews demonstrates that substantial content-production work can be
+automated, but automation does not remove responsibility. A registered
+news portal must remain accountable for the content it publishes.
+Automated source selection, article drafting, translation, and visual
+generation all require policy constraints and human-governed
+oversight.</p>
+<p>For science news, this responsibility is especially important.
+Scientific papers, particularly preprints, may be preliminary,
+domain-specific, uncertain, or not yet peer reviewed. Automated articles
+should avoid overstating findings, presenting generated thumbnails as
+scientific evidence, or implying certainty not supported by the
+source.</p>
+<h3 id="paper-2026-p08-disclosure-and-representation-boundaries">7.2 Disclosure and
+representation boundaries</h3>
+<p>The report treats three boundaries as central: source-grounding,
+synthetic-media representation, and publication. Source-grounding
+concerns whether article claims remain attributable to the source
+material. Synthetic-media representation concerns whether generated
+thumbnails are clearly understood as editorial illustrations rather than
+scientific figures. Publication concerns the moment at which internal
+content becomes public media.</p>
+<p>These boundaries are not solved by automation alone. They require
+editorial policy, disclosure norms, correction processes, and human
+accountability. This is consistent with guidance from news organizations
+that AI may assist newsroom processes but does not remove responsibility
+for accuracy, fairness, and transparency [16,17].</p>
+<h3 id="paper-2026-p08-limitations">7.3 Limitations</h3>
+<ul>
+<li><p>This is a single-system technical report. It does not claim that
+TechNews is the only or best architecture for automated science news
+publishing.</p></li>
+<li><p>This draft does not yet include quantitative operational
+evaluation, such as average daily source count, publication rate,
+failure rate, latency from source release to publication, or correction
+rate.</p></li>
+<li><p>The system's reliability depends on source quality, model
+quality, backend stability, and the quality of operational
+guardrails.</p></li>
+<li><p>Registration as an internet newspaper establishes a legal
+publication context, but it does not certify the accuracy, factuality,
+reliability, or quality of the automated system.</p></li>
+<li><p>Future versions should include stronger source-grounding checks,
+claim-level attribution, durable event logs, editorial review
+dashboards, and post-publication correction workflows.</p></li>
+</ul>
+<h2 id="paper-2026-p08-discussion-and-conclusion">8. Discussion and Conclusion</h2>
+<p>TechNews shows that automated science news publishing should be
+understood as agentic workflow automation rather than article generation
+alone. The visible product is a published article, but the system's real
+contribution is the observable workflow that converts newly released
+scientific sources into public media artifacts.</p>
+<p>This distinction changes how automated journalism should be
+evaluated. A model-generated article can be judged by fluency, accuracy,
+and readability. A publishing workflow must also be judged by source
+traceability, state management, upload control, failure recovery,
+observability, backend reliability, correction mechanisms, and
+governance.</p>
+<p>TechNews also shows why backend awareness matters. A publishing agent
+that writes articles but does not understand the publication
+infrastructure can fail at the moment generated text becomes public
+content. By combining a reporter agent with a backend operations agent,
+TechNews treats publishing as both an editorial and operational
+process.</p>
+<p>The broader lesson is that future AI media systems may not take the
+form of a single artificial reporter. They may instead become agentic
+production environments: systems in which collection, writing,
+translation, image handling, upload, monitoring, and infrastructure
+maintenance are coordinated through persistent agents.</p>
+<h2 id="paper-2026-p08-references">References</h2>
+<p>[1] A. Graefe, Guide to Automated Journalism. Tow Center for Digital
+Journalism, Columbia Journalism School, 2016.</p>
+<p>[2] M. Carlson, “The Robotic Reporter: Automated journalism and the
+redefinition of labor, compositional forms, and journalistic authority,”
+Digital Journalism, vol. 3, no. 3, pp. 416-431, 2015.</p>
+<p>[3] N. Diakopoulos, Automating the News: How Algorithms Are Rewriting
+the Media. Harvard University Press, 2019.</p>
+<p>[4] S. Yao et al., “ReAct: Synergizing Reasoning and Acting in
+Language Models,” arXiv:2210.03629, 2022.</p>
+<p>[5] Z. Xi et al., “The Rise and Potential of Large Language Model
+Based Agents: A Survey,” arXiv:2309.07864, 2023.</p>
+<p>[6] P. Lewis et al., “Retrieval-Augmented Generation for
+Knowledge-Intensive NLP Tasks,” NeurIPS, 2020.</p>
+<p>[7] A. Asai et al., “Self-RAG: Learning to Retrieve, Generate, and
+Critique through Self-Reflection,” arXiv:2310.11511, 2023.</p>
+<p>[8] Z. Ji et al., “Survey of Hallucination in Natural Language
+Generation,” ACM Computing Surveys, 2023.</p>
+<p>[9] P. Sumner et al., “The association between exaggeration in health
+related science news and academic press releases,” BMJ, 2014.</p>
+<p>[10] F. van Schalkwyk et al., “Reporting preprints in the media
+during the COVID-19 pandemic,” Public Understanding of Science,
+2022.</p>
+<p>[11] TechNews public site, required publication information, accessed
+May 2026.</p>
+<p>[12] Republic of Korea, Act on the Promotion of Newspapers, etc.,
+Articles 9 and 21.</p>
+<p>[13] arXiv, arXiv API User’s Manual.</p>
+<p>[14] arXiv, RSS and Atom feed documentation.</p>
+<p>[15] bioRxiv/medRxiv API documentation.</p>
+<p>[16] Associated Press, “Standards around generative AI,” 2023.</p>
+<p>[17] Reuters, “Reuters and AI,” accessed May 2026.</p>
+<p>[18] Author’s internal technical specification, Persica reporter
+agent system, 2026.</p>
+<p>[19] Author’s internal technical specification, backend operations
+agent system, 2026.</p>
+<p>[20] Partnership on AI, Responsible Practices for Synthetic Media: A
+Framework for Collective Action, 2023.</p>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">引用</h2><p class="citation-help">点击格式即可复制引用信息。</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="复制 APA 格式">复制 APA</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="复制 MLA 格式">复制 MLA</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="复制 Chicago 格式">复制 Chicago</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="复制 IEEE 格式">复制 IEEE</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="复制 BibTeX 格式">复制 BibTeX</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="复制 RIS 格式">复制 RIS</button></div><label for="citation-text" class="citation-preview-label">引用预览 · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B. (2026). TechNews: A technical report on agentic workflow automation for science news publishing. ResearchGate. https://doi.org/10.13140/RG.2.2.35963.07201</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/technews-agentic-publishing-2026/citation.bib" download>BibTeX 文件</a><a href="/papers/technews-agentic-publishing-2026/citation.ris" download>RIS 文件</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B. (2026). TechNews: A technical report on agentic workflow automation for science news publishing. ResearchGate. https://doi.org/10.13140/RG.2.2.35963.07201", "mla": "Ban, Byunghyun. “TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing.” ResearchGate, 2026. Preprint. https://doi.org/10.13140/RG.2.2.35963.07201.", "chicago": "Ban, Byunghyun. “TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing.” Preprint, ResearchGate, 2026. https://doi.org/10.13140/RG.2.2.35963.07201.", "ieee": "B. Ban, “TechNews: A technical report on agentic workflow automation for science news publishing,” ResearchGate, preprint, 2026, doi: 10.13140/RG.2.2.35963.07201.", "bibtex": "@misc{ban2026_3385658e6cc7,\n  author = {Ban, Byunghyun},\n  title = {{TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing}},\n  year = {2026},\n  doi = {10.13140/RG.2.2.35963.07201},\n  url = {https://www.researchgate.net/publication/404500998\\_TechNews\\_A\\_Technical\\_Report\\_on\\_Agentic\\_Workflow\\_Automation\\_for\\_Science\\_News\\_Publishing},\n  note = {Preprint},\n  howpublished = {ResearchGate}\n}", "ris": "TY  - UNPB\nAU  - Ban, Byunghyun\nTI  - TechNews: A Technical Report on Agentic Workflow Automation for Science News Publishing\nPY  - 2026\nDO  - 10.13140/RG.2.2.35963.07201\nUR  - https://www.researchgate.net/publication/404500998_TechNews_A_Technical_Report_on_Agentic_Workflow_Automation_for_Science_News_Publishing\nAB  - This technical report presents TechNews, a registered automated science news portal that transforms newly released scientific papers into publishable science news articles through an agentic production workflow. (https://technews.ai.kr) Rather than treating automated journalism as a single text-generation task, TechNews decomposes human content-production work into persistent stages: source collection, freshness filtering, article drafting, translation, formatting, thumbnail generation, publication upload, backend monitoring, and operational maintenance. The system is organized around two agentic components. The first is a reporter agent, Persica, which performs source collection, article generation, translation, formatting, thumbnail handling, upload preparation, and operational reporting. The second is a backend operations agent that maintains service awareness across the publishing backend, including API behavior, database state, media storage, deployment assumptions, diagnostic routines, and operational failure modes. Together, these agents form an agent-operated publishing infrastructure rather than a one-shot article generator. TechNews operates as a registered internet newspaper in the Republic of Korea under registration number 경북아 00881.\nLA  - en\nM3  - Preprint\nER  -\n"}</script></section><a class="paper-back-link" href="/zh/papers/">← 返回论文列表</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="全部页面"><a href="/zh/">Byunghyun Ban</a><a href="/zh/media/">广播与视频</a><a href="/zh/books/">著作</a><a href="/zh/lectures/">讲座与授课经历</a><a href="/zh/courses/online/">在线课程</a><a href="/zh/courses/offline/">线下培训课程</a><a href="/zh/news/">新闻报道</a><a href="/zh/papers/">论文与研究</a><a href="/zh/patents/">专利</a><a href="/zh/projects/">开发项目</a><a href="/zh/activities/">社会贡献</a><a href="/zh/memberships/">会员与专业活动</a><a href="/zh/collections/">收藏品</a><a href="/zh/contact/">讲座与合作咨询</a></nav>
+            <p><a href="/feed.xml">订阅 RSS</a> · <a href="/feed.json">JSON Feed</a></p>
+            <p>© 2026 Byunghyun Ban. 版权所有。</p>
+            <p>NaNa Lab（营业登记号：269-08-02374）负责人 Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="回到顶部">↑</button>
+</body>
+</html>

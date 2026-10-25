@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts | Byunghyun Ban</title>
+    <meta name="description" content="We present &#x27;CongNaMul&#x27;, a comprehensive dataset designed for various tasks in soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks such as image…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_author" content="Donghun Ryu">
+<meta name="citation_author" content="Su-won Hwang">
+<meta name="citation_publication_date" content="2023">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/congnamul-dataset-2023/">
+<meta name="citation_conference_title" content="2023 14th International Conference on Information and Communication Technology Convergence (ICTC)">
+<meta name="citation_firstpage" content="1892">
+<meta name="citation_lastpage" content="1897">
+<meta name="citation_doi" content="10.1109/ictc58733.2023.10393217">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/congnamul-dataset-2023/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/es/papers/congnamul-dataset-2023/">
+    <link rel="alternate" type="application/rss+xml" title="RSS de Byunghyun Ban" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="JSON Feed de Byunghyun Ban" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts | Byunghyun Ban">
+    <meta property="og:description" content="We present &#x27;CongNaMul&#x27;, a comprehensive dataset designed for various tasks in soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks such as image…">
+    <meta property="og:url" content="https://bhban.kr/es/papers/congnamul-dataset-2023/">
+    <meta property="og:image" content="https://bhban.kr/src/images/papers/13.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/es/#website", "url": "https://bhban.kr/es/", "name": "Byunghyun Ban", "inLanguage": "es"}, {"@type": "WebPage", "@id": "https://bhban.kr/es/papers/congnamul-dataset-2023/#page", "url": "https://bhban.kr/es/papers/congnamul-dataset-2023/", "name": "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts | Byunghyun Ban", "description": "We present 'CongNaMul', a comprehensive dataset designed for various tasks in soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks such as image…", "inLanguage": "es", "mainEntity": {"@id": "https://bhban.kr/papers/congnamul-dataset-2023/#article"}, "isPartOf": {"@id": "https://bhban.kr/es/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/congnamul-dataset-2023/#article", "url": "https://bhban.kr/papers/congnamul-dataset-2023/", "name": "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts", "headline": "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts", "author": [{"@type": "Person", "name": "Byunghyun Ban"}, {"@type": "Person", "name": "Donghun Ryu"}, {"@type": "Person", "name": "Su-won Hwang"}], "datePublished": "2023", "inLanguage": "en", "abstract": "We present 'CongNaMul', a comprehensive dataset designed for various tasks in soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks such as image classification, semantic segmentation, decomposition, and measurement of length and weight. The classification task provides four classes to determine the quality of soybean sprouts: normal, broken, spotted, and broken and spotted, for the development of AI-aided automatic quality inspection technology. For semantic segmentation, images with varying complexity, from single sprout images to images with multiple sprouts, along with human-labelled mask images, are included. The label has 4 different classes: background, head, body, tail. The dataset also provides images and masks for the image decomposition task, including two separate sprout images and their combined form. Lastly, 5 physical features of sprouts (head length, body length, body thickness, tail length, weight) are provided for image-based measurement tasks. This dataset is expected to be a valuable resource for a wide range of research and applications in the advanced analysis of images of soybean sprouts. Also, we hope that this dataset can assist researchers studying classification, semantic segmentation, decomposition, and physical feature measurement in other industrial fields, in evaluating their models. The dataset is available at the authors’ repository (https://bhban.kr/data).", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/congnamul-dataset-2023/#page"}, "isPartOf": {"@type": "CreativeWork", "name": "2023 14th International Conference on Information and Communication Technology Convergence (ICTC)"}, "pageStart": "1892", "pageEnd": "1897", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.1109/ictc58733.2023.10393217"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/congnamul-dataset-2023/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://bhban.kr/es/"}, {"@type": "ListItem", "position": 2, "name": "Publicaciones", "item": "https://bhban.kr/es/papers/"}, {"@type": "ListItem", "position": 3, "name": "CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts", "item": "https://bhban.kr/es/papers/congnamul-dataset-2023/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/congnamul-dataset-2023/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/congnamul-dataset-2023/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/congnamul-dataset-2023/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/congnamul-dataset-2023/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/congnamul-dataset-2023/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/congnamul-dataset-2023/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/congnamul-dataset-2023/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/congnamul-dataset-2023/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/congnamul-dataset-2023/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/congnamul-dataset-2023/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"Abrir menú","menuClose":"Cerrar menú","submenuExpand":"Desplegar submenú de {label}","submenuCollapse":"Contraer submenú de {label}","nextSwipeHint":"Al llegar al final, deslice una vez más hacia arriba para continuar.","nextScrollHint":"Al llegar al final, desplácese una vez más hacia abajo para continuar.","lectureResults":"{category}: {count} · Conferencias más recientes primero","categoryAll":"Todo","categoryCompany":"Empresas","categoryPublic":"Instituciones públicas","categoryEducation":"Instituciones educativas","categoryResearch":"Instituciones de investigación","categoryConference":"Conferencias profesionales","listMedia":"vídeos","listNews":"noticias","listLectures":"conferencias","listCoursesOnline":"cursos en línea","listCoursesOffline":"cursos presenciales","listPapers":"publicaciones","listPatents":"patentes","listProjects":"proyectos","listActivities":"actividades","listMemberships":"afiliaciones","listCollections":"obras de la colección","listDonations":"donaciones","listGeneric":"elementos","listStatus":"De {total}, se muestran {visible}","listMore":"Ver más {label} ({remaining} restantes)","citationCopyLabel":"Copiar cita","citationCopied":"Se ha copiado la cita.","citationError":"No se pudo copiar la cita. Compruebe la configuración del portapapeles del navegador.","citationFormatCopied":"Se ha copiado la cita en formato {label}.","citationManualCopy":"La cita está seleccionada. Cópiela manualmente.","contactLoadError":"No se pudo cargar la función de envío. Inténtelo de nuevo más tarde.","contactSent":"Su consulta ha sido recibida.","contactError":"Se ha producido un error. Inténtelo de nuevo.","contactSending":"Enviando…","streamRetry":"Volver a cargar","streamError":"No se pudo cargar el siguiente contenido. Inténtelo de nuevo o utilice el enlace anterior.","streamLoading":"Cargando más contenido de {label}."}</script>
+</head>
+<body data-locale="es" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">Ir al contenido principal</a>
+    <nav class="navbar" aria-label="Menú principal"><div class="navbar-brand"><a href="/es/" aria-label="Inicio de Byunghyun Ban"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/es/" class="nav-link nav-main-link" data-nav-page="home">Acerca de</a></li><li data-nav-group="media"><a href="/es/media/" class="nav-link nav-main-link" data-nav-page="media">Medios</a></li><li data-nav-group="books"><a href="/es/books/" class="nav-link nav-main-link" data-nav-page="books">Libros</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/es/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">Conferencias</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="Desplegar submenú de Conferencias" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="Categorías de conferencias"><li><a href="/es/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">Todo</a></li><li><a href="/es/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">Empresas</a></li><li><a href="/es/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">Instituciones públicas</a></li><li><a href="/es/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">Instituciones educativas</a></li><li><a href="/es/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">Instituciones de investigación</a></li><li><a href="/es/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">Conferencias profesionales</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/es/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">Cursos</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="Desplegar submenú de Cursos" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/es/courses/online/" data-nav-page="courses-online">En línea</a></li><li><a href="/es/courses/offline/" data-nav-page="courses-offline">Presenciales</a></li></ul></li><li data-nav-group="news"><a href="/es/news/" class="nav-link nav-main-link" data-nav-page="news">Noticias</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/es/papers/" class="nav-link active nav-main-link" data-nav-page="papers">I+D</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="Desplegar submenú de I+D" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/es/papers/" data-nav-page="papers">Publicaciones</a></li><li><a href="/es/patents/" data-nav-page="patents">Patentes</a></li><li><a href="/es/projects/" data-nav-page="projects">Proyectos</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/es/activities/" class="nav-link nav-main-link" data-nav-page="activities">Otros</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="Desplegar submenú de Otros" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/es/activities/" data-nav-page="activities">Contribución social</a></li><li><a href="/es/memberships/" data-nav-page="memberships">Afiliaciones</a></li><li><a href="/es/collections/" data-nav-page="collections">Colecciones</a></li></ul></li><li data-nav-group="contact"><a href="/es/contact/" class="btn-contact nav-main-link" data-nav-page="contact">Contacto</a></li></ul><details class="language-switcher"><summary aria-label="Seleccionar idioma"><span aria-hidden="true">🌐</span> <span>Español</span></summary><nav class="language-options" aria-label="Seleccionar idioma"><a href="/papers/congnamul-dataset-2023/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/congnamul-dataset-2023/" hreflang="en" lang="en">English</a><a href="/zh/papers/congnamul-dataset-2023/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/papers/congnamul-dataset-2023/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/congnamul-dataset-2023/" hreflang="es" lang="es" aria-current="true">Español</a><a href="/ar/papers/congnamul-dataset-2023/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/congnamul-dataset-2023/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/congnamul-dataset-2023/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/papers/congnamul-dataset-2023/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="Ubicación actual"><a href="/es/">Inicio</a><span aria-hidden="true">/</span><a href="/es/papers/">Publicaciones</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-13"><header><p class="paper-kind">Investigaciones publicadas</p><h1 id="paper-title" lang="en">CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts</h1><p class="paper-authors">Byunghyun Ban, Donghun Ryu, Su-won Hwang</p><p class="paper-venue">2023 · 2023 14th International Conference on Information and Communication Technology Convergence (ICTC) · 1892–1897</p><nav class="paper-reader-jumps" aria-label="Ir al artículo"><a href="#abstract-heading">Resumen</a><a href="#full-text">Texto completo</a><a href="#citation-heading">Citar</a></nav><div class="gitIcons">
+                                <a href="https://doi.org/10.1109/ICTC58733.2023.10393217" target="_blank" rel="noreferrer" aria-label="DOI del artículo CongNaMul de ICTC" title="Información del original mediante DOI"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">DOI</span></a>
+                                <a href="/papers/congnamul-dataset-2023/paper.pdf" target="_blank" rel="noreferrer" download aria-label="Descargar PDF del preprint" title="Descargar PDF del preprint"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg></a>
+                                <a href="https://arxiv.org/abs/2308.15690" target="_blank" rel="noreferrer" aria-label="Información del original en arXiv" title="Información del original en arXiv"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg></a>
+                                <a href="https://bhban.kr/data/" target="_blank" rel="noreferrer" aria-label="Información del artículo original" title="Información del artículo original"><i aria-hidden="true" class="fab fa-github"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg></a>
+                                <span class="citation"
+                                    data-citation="Ban, Byunghyun, Donghun Ryu, and Su-won Hwang. (2023). &quot;CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts.&quot; 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 1892-1897. https://doi.org/10.1109/ICTC58733.2023.10393217" aria-label="Copiar cita" title="Copiar cita"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">Citar</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>Índice</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-13-introduction">Introduction</a></li><li class="toc-level-3"><a href="#paper-13-massproduction-of-soybean-sprout">Massproduction of Soybean Sprout</a></li><li class="toc-level-3"><a href="#paper-13-differences-from-plant-factory-systems">Differences from Plant Factory Systems</a></li><li class="toc-level-3"><a href="#paper-13-automated-quality-control-technology-required">Automated Quality Control Technology Required</a></li><li class="toc-level-3"><a href="#paper-13-the-absence-of-soybean-sprouts-datasets">The Absence of Soybean Sprouts Datasets</a></li><li class="toc-level-3"><a href="#paper-13-necessity-of-new-dataset-for-advanced-analysis">Necessity of New Dataset for Advanced Analysis</a></li><li class="toc-level-2"><a href="#paper-13-method">Method</a></li><li class="toc-level-3"><a href="#paper-13-raw-image-and-physical-features-acquisition">Raw Image and Physical Features Acquisition</a></li><li class="toc-level-3"><a href="#paper-13-semantic-segmentation-dataset-production">Semantic Segmentation Dataset Production</a></li><li class="toc-level-3"><a href="#paper-13-image-cropping-with-segmentation-mask-analysis">Image Cropping with Segmentation Mask Analysis</a></li><li class="toc-level-3"><a href="#paper-13-image-decomposition-dataset-production">Image Decomposition Dataset Production</a></li><li class="toc-level-3"><a href="#paper-13-classification-dataset-production">Classification Dataset Production</a></li><li class="toc-level-3"><a href="#paper-13-for-physical-features-prediction-task">For Physical Features Prediction Task</a></li><li class="toc-level-2"><a href="#paper-13-dataset-statistics">Dataset Statistics</a></li><li class="toc-level-2"><a href="#paper-13-application-strategies">Application Strategies</a></li><li class="toc-level-2"><a href="#paper-13-conclusion">Conclusion</a></li><li class="toc-level-2"><a href="#paper-13-acknowledgment">Acknowledgment</a></li><li class="toc-level-2"><a href="#paper-13-supplement-data">Supplement Data</a></li><li class="toc-level-2"><a href="#paper-13-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">Resumen</h2><p class="abstract" lang="en">We present &#x27;CongNaMul&#x27;, a comprehensive dataset designed for various tasks in soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks such as image classification, semantic segmentation, decomposition, and measurement of length and weight. The classification task provides four classes to determine the quality of soybean sprouts: normal, broken, spotted, and broken and spotted, for the development of AI-aided automatic quality inspection technology. For semantic segmentation, images with varying complexity, from single sprout images to images with multiple sprouts, along with human-labelled mask images, are included. The label has 4 different classes: background, head, body, tail. The dataset also provides images and masks for the image decomposition task, including two separate sprout images and their combined form. Lastly, 5 physical features of sprouts (head length, body length, body thickness, tail length, weight) are provided for image-based measurement tasks. This dataset is expected to be a valuable resource for a wide range of research and applications in the advanced analysis of images of soybean sprouts. Also, we hope that this dataset can assist researchers studying classification, semantic segmentation, decomposition, and physical feature measurement in other industrial fields, in evaluating their models. The dataset is available at the authors’ repository (https://bhban.kr/data).</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords">Keywords—soybean sprout, image processing, image classification,
+semantic segmentation, image decomposition, physical feature
+measurement</p><h2 id="paper-13-introduction">Introduction</h2>
+<h3 id="paper-13-massproduction-of-soybean-sprout">Massproduction of Soybean
+Sprout</h3>
+<p>The traditional cultivation method of soybean sprouts proceeds as
+follows. First, the soybeans are washed and soaked in water for more
+than three days. The soaked beans are then placed in a ceramic jar known
+as a "Siru" and covered with water. The bottom of the Siru is perforated
+with numerous small holes, allowing water to drain easily and preventing
+the beans from rotting. The Siru is equipped with a lid that prevents
+the beans from receiving direct light. In this state, water is added
+daily, and the beans are cultivated for more than seven days, which is
+the traditional method of producing soybean sprouts.</p>
+<p>Due to the high consumption and preference for soybean sprouts among
+Koreans, various processes for mass production of soybean sprouts have
+been researched for decades. Some factories use large rubber bowls as a
+substitute for the Siru, while others use massive stainless steel tanks.
+In large-scale facilities, the key to the automated production process
+of soybean sprouts is to periodically add water using automated machines
+while blocking light.</p>
+<h3 id="paper-13-differences-from-plant-factory-systems">Differences from Plant
+Factory Systems</h3>
+<p>The term "plant factory" is often used interchangeably with "vertical
+farm". The core concept of a plant factory is to artificially create an
+environment similar to nature, enabling optimal growth conditions for
+plants. For instance, using LEDs to provide artificial light allows
+plants to photosynthesize as if they were outdoors, and precisely
+controlling air factors such as temperature, humidity, and CO2
+concentration enables plants to grow well. This is the core philosophy
+of a plant factory. Furthermore, the ability to automatically perform
+such environmental controls is essential in a plant factory, leading to
+research into technologies for precise control within the plant factory
+[2] and technologies that allow real-time monitoring of the plant
+factory from remote locations [3].</p>
+<p>In contrast, soybean sprouts have a short cultivation period and do
+not require light or CO2 as they do not photosynthesize. They can be
+cultivated by merely controlling water temperature and ambient
+temperature. Therefore, anyone can cultivate soybean sprouts with
+relatively low technical costs, making it difficult to find publicly
+available research materials on automated cultivation systems.</p>
+<p>Moreover, the anatomy of plants grown in a plant factory is generally
+more complex than that of soybean sprouts. While soybean sprouts consist
+only of seeds and roots, most crops grown in plant factories have roots,
+stems, and leaves, and in some cases, flowers and fruits. Therefore, the
+nutrient ion control technology required for fertilization in a plant
+factory is generally of a very high standard [4]. Interactions between
+various ions can distort the voltage value of the Ion Selective
+Electrode by up to 40%, leading to research into machine learning
+technology for correction [5, 6]. Additionally, technologies for
+analyzing the chemical complex in the nutrient solution [7] and complex
+system technologies analyzing the interaction between the nutrient
+solution and the plant system are also being researched [8].</p>
+<h3 id="paper-13-automated-quality-control-technology-required">Automated Quality
+Control Technology Required</h3>
+<p>The ease of mass production has led to a situation where the level of
+quality control becomes a competitive edge for the product. Not only is
+it important to use good raw materials to maintain a high level of
+quality uniformly, but it is also crucial to meticulously review the
+production and packaging processes to produce better products. This is
+the direction of competition that the modern soybean sprouts industry
+should take. Since the cultivation period of soybean sprouts is very
+short, only 7 days, it is easy to monitor the entire process of each
+cultivation cycle, and the results of cultivation can be quantitatively
+analyzed to quickly repeat the process of improving the cultivation
+environment.</p>
+<p>However, it is physically impossible to measure each of the millions
+of soybean sprouts individually, and even sampling surveys take a
+considerable amount of time. It took us about six hours to measure the
+weight of 500g of soybean sprouts and the head length, body length, body
+thickness, and tail length for the creation of the dataset. It is nearly
+impossible to measure these on an industrial site every day. Therefore,
+the development of technology to automatically measure the results of
+soybean sprout cultivation is absolutely necessary.</p>
+<h3 id="paper-13-the-absence-of-soybean-sprouts-datasets">The Absence of Soybean
+Sprouts Datasets</h3>
+<p>There were no data-driven analyses or available datasets related to
+the cultivation of soybean sprouts. Various studies have been conducted
+on soybeans themselves. For instance, Yang et al. [9] proposed a dataset
+for semantic segmentation on soybean pods and suggested an analysis
+technique using this dataset. Wang et al. [10] proposed a cultivar
+recognition technology through pattern analysis of soybean leaf image
+data. Abade et al. [11] proposed an AI model that distinguishes
+nematodes that infect soybeans, and Griera et al. [12] proposed a deep
+learning technology to estimate soybean production. Such various cases
+of research on the cultivation process of soybeans, a major crop, are
+being reported worldwide. These cases also provide important resources
+by disclosing the datasets used in the research, allowing other
+researchers to refer to them and train AI models.</p>
+<p>However, there are no sophisticated datasets related to soybean
+sprouts, leaving industry practitioners without resources to reference
+for research. It makes AI based approach on soybean sprout production
+much more difficult.</p>
+<h3 id="paper-13-necessity-of-new-dataset-for-advanced-analysis">Necessity of New
+Dataset for Advanced Analysis </h3>
+<p>Considering the substantial demand for soybean sprouts in Korea and
+the global consumption of mung bean sprouts, which can be cultivated
+similarly, there is an undeniable advantage to applying advanced
+analysis to soybean sprout images. Therefore, the creation of a
+sophisticated image dataset using soybean sprouts is crucial. We have
+constructed a fundamental dataset by photographing soybean sprouts on a
+large scale and through manual labeling. We then generated a significant
+number of augmented images and mask labels through the combination of
+each image.</p>
+<p>Our dataset, CongNaMul, supports the classification task that can
+distinguish whether there are diseases or spots, or whether the stem is
+broken for the quality control of produced soybean sprouts. It also
+encourages precise analysis using semantic segmentation and image
+decomposition and provides a dataset for automated physical feature
+measurement. This dataset can contribute to the development of
+technology for automated quality control at the soybean sprout factory.
+This paper provides a description of this dataset.</p>
+<figure class="paper-figure" id="paper-13-figure-1">
+<img alt="Fig. 1. Raw image samples." decoding="async" loading="lazy" src="/src/images/paper-body/paper-13/figure-1.png"/>
+<figcaption><p>Fig. 1. Raw image samples.</p></figcaption>
+</figure>
+<h2 id="paper-13-method">Method</h2>
+<h3 id="paper-13-raw-image-and-physical-features-acquisition">Raw Image and
+Physical Features Acquisition</h3>
+<p>To maintain a uniform scale in all images, we standardized the
+shooting conditions and camera. All photos were taken using the default
+camera app on the Samsung Galaxy S22, resulting in 3,024x3,024 JPEG
+format images. All photos were taken with the bean sprouts placed on the
+ground, with the camera lens surface fixed at a height of 30.5cm from
+the ground.</p>
+<p>Photos were taken against three types of backgrounds, as can be seen
+in Figure 1. (a). We decided to take photos against green and white
+checkered backgrounds in addition to a clear background, anticipating
+that it would be difficult to create a robust model with data from a
+clear background alone. Green is a color applied to many industrial
+conveyor belts in Korea and contrasts with the color of the bean
+sprouts, making them stand out clearly. White is a color commonly
+applied to food conveyor belts in Korea, and since the body of the bean
+sprouts is also white, it is relatively difficult to distinguish
+compared to green.</p>
+<p>The green and white backgrounds have a distinct grid of a different
+color. Each grid is arranged at 5mm intervals in each cell. This grid
+pattern serves as a kind of interference factor, making AI learning a
+little more difficult and expected to help it operate more robustly even
+in real backgrounds with foreign substances. In addition, if you are
+developing a length measurement technology based on simple pixel
+analysis rather than a neural network-based model, the pattern of the
+grid arranged at a constant interval will help develop the measurement
+algorithm.</p>
+<p>Each bean sprout was re-photographed against three different
+backgrounds. An example of a single sample image can be seen in Figure
+1. (b). In addition, for more complex tasks, multiple sample images were
+taken with five bean sprouts randomly placed in one shot, which can be
+seen in Figure 1. (c). After taking the photo, the physical features of
+the bean sprout were measured. The weight was measured using an
+electronic scale, and then the researcher meticulously measured the
+length of each part using a vernier caliper. Length measurements were
+performed targeting the head length, body length, body thickness, and
+tail length, and the criteria for dividing each part can be seen in
+Figure 2.</p>
+<figure class="paper-figure" id="paper-13-figure-2">
+<img alt="Fig. 2. (a) head length, (b) body length, (c) body thickness, (d) tail length" decoding="async" loading="lazy" src="/src/images/paper-body/paper-13/figure-2.png"/>
+<figcaption>Fig. 2. (a) head length, (b) body length, (c) body thickness, (d)
+tail length</figcaption></figure>
+<figure class="paper-figure" id="paper-13-figure-3"><img alt="Fig. 3. Mask images for semantic segmentation task" decoding="async" loading="lazy" src="/src/images/paper-body/paper-13/figure-3.png"/><figcaption>Fig. 3. Mask images for semantic segmentation task</figcaption></figure>
+<p>A total of 205 bean sprouts were photographed, and of these, 45 bean
+sprouts were missing weight measurements. Since each of the 205 bean
+sprouts was photographed on three separate backgrounds, a total of 615
+single bean sprout photos were collected. For multiple sample images,
+five bean sprouts were collected at a time, randomly scattered each
+time, and photographed 10 times on three types of backgrounds.
+Therefore, a total of 3,690 multi-sample images were collected. To
+improve the quality of the dataset, images with shaky focus were removed
+from the collected photos. As a result, a total of 604 single samples
+were collected, and a total of 1,030 multiple samples were collected,
+and physical features were collected for all these photos.</p>
+<p>Subsequently, photos were taken in the same way for the production of
+the classification dataset, but physical features were not measured at
+this time. Detailed explanations will be provided in the classification
+dataset section.</p>
+<figure class="paper-figure" id="paper-13-figure-4"><img alt="Fig. 4. Image decomposition dataset overview." decoding="async" loading="lazy" src="/src/images/paper-body/paper-13/figure-4.png"/><figcaption>Fig. 4. Image decomposition dataset overview.</figcaption></figure>
+<h3 id="paper-13-semantic-segmentation-dataset-production">Semantic Segmentation
+Dataset Production</h3>
+<p>We utilized the Labelme [13] to segment the captured images. Using
+the software, we distinguished the objects in the photo into three
+classes (head, body, tail), and the remaining areas were automatically
+labeled as _background by Labelme. The labeling results were output in
+JSON format, defining polygons and their coordinates for each class.</p>
+<p>While the JSON format can efficiently store the coordinates of each
+point and reduce capacity, palette mode PNG files can be directly input
+as labels for semantic segmentation. Considering the convenience of
+training, we converted all images to palette mode PNG files. These PNG
+files only contain four unsigned int values: 0, 1, 2, 3. You can
+download and use the data that suits your situation from either the JSON
+format mask or the PNG format mask. If you are conducting training with
+TensorFlow, it is convenient to input the PNG file in Numpy array format
+and use a loss function such as sparse_categorical_crossentropy(), which
+substitutes for the one-hot conversion of data.</p>
+<p>The labeling results for segmentation are represented in Figure
+3.</p>
+<h3 id="paper-13-image-cropping-with-segmentation-mask-analysis">Image Cropping
+with Segmentation Mask Analysis</h3>
+<p>The human-labeled segmentation mask contains precise information
+about the location and size of the soybean sprouts. Therefore, by
+analyzing the pixel distribution of the labeled mask, it is possible to
+crop the image to the smallest size while ensuring that the entire
+appearance of the soybean sprout is fully represented in the photo.</p>
+<p>We analyzed the mask and discovered that the image of the longest
+soybean sprout occupies 2,016px in one direction. Based on this, we
+cropped the 3024x3024px size image to convert it into a 2,016x2,016px
+size image. We also analyzed the mask of each photo to calculate the
+starting and ending points of cropping so that the soybean sprout is
+always located in the center of the photo, and cropped the image at the
+same coordinates. Multiple sample images were cropped into 2,675x2,675px
+images with same procedure.</p>
+<figure class="paper-figure" id="paper-13-figure-5"><img alt="Fig. 5. Array building strategies. (a) raw images and masks to merge, (b) sort the data by non-zero area of mask, (c) the array format and dimensions of training-ready data for images and masks." decoding="async" loading="lazy" src="/src/images/paper-body/paper-13/figure-5.png"/><figcaption>Fig. 5. Array building strategies. (a) raw images and masks to merge,
+(b) sort the data by non-zero area of mask, (c) the array format and
+dimensions of training-ready data for images and masks.</figcaption></figure>
+<p>This was done to eliminate areas unnecessary for training, thereby
+enhancing the efficiency of training and optimizing the VRAM capacity
+consumed during training. If you wish for more robust model training,
+you can still download the uncropped original images.</p>
+<h3 id="paper-13-image-decomposition-dataset-production">Image Decomposition
+Dataset Production</h3>
+<p>In industrial situations, there are hardly any processes that check
+soybean sprouts individually. In most automated factories, hundreds of
+thousands of soybean sprouts are transported at once through conveyor
+belts or other automated devices. Even in production factories where
+automation has not been introduced, it is common to harvest, wash, or
+bag soybean sprouts in hundreds of grams at a time, and there is no
+process to check them one by one. Therefore, it is impossible to
+photograph each soybean sprout one by one and input it into an AI model
+in the actual production process. Most of the photos that can be
+collected in the factory are in the form where multiple soybean sprouts
+are photographed in one photo at the same time. In fact, most of them
+are even tangled or overlapped with each other.</p>
+<p>Therefore, it is necessary to develop a model that takes a single
+photo with multiple tangled soybean sprouts as input and decomposes it
+into multiple photos with a single soybean sprout. To develop an
+artificial intelligence model that can perform such tasks, we have
+created an Image Decomposition Dataset.</p>
+<p>We processed the images by combining two images to create a new
+single image. The synthesis result can be seen in Figure 4.</p>
+<p>Firstly, preprocessing was performed to easily combine photos taken
+in slightly different environments. The contrast limited adaptive
+histogram equalization [14] technique was applied to all images to
+equalize the distribution of pixel values. The preprocessing result is
+in Figure 4. (a). As a result of preprocessing, bright backgrounds and
+areas of light reflection have become somewhat darker.</p>
+<p>Secondly, mask synthesis was performed. Two masks were loaded as
+Numpy arrays of size (2016, 2016). Since the masks were made as palette
+type PNG, there is no separate color channel. A new array of size (2016,
+2016) initialized with all values as 0 was created, and the values of
+each coordinate of the two mask arrays were analyzed to create a new
+mask with two soybean sprouts drawn. The pixel comparison algorithm is
+very simple. By analyzing the pixel values of the two arrays, the larger
+value of the two was recorded in the new array. However, there is a
+limitation that class 3 always covers class 1, 2, and class 2 covers
+class 1. The creation result is in Figure 4. (b).</p>
+<p>Thirdly, image synthesis was performed. Generally, pixel values of
+image files are represented as uint8 type data, but we converted this
+data to float32. A new image was created by calculating the average of
+the pixel values of the two images. Figure 4. (c) shows the result of
+this work.</p>
+<p>In the process of selecting the two photos to be synthesized, only
+images taken from the same background pattern were selected to maintain
+the advantage of providing three distinct types of backgrounds for
+robust learning. 200 clear background images, 204 green checkered
+background images, and 200 white checkered background images were used.
+Two photos were selected at once and synthesized without duplication,
+and this process exactly followed the combination
+<sub>n</sub>C<sub>2</sub>. The number of synthesized images produced is
+19,900 for white and clear backgrounds, and 20,706 for green
+backgrounds. Therefore, the total number of this dataset is 60,506.</p>
+<p>Since the result of the combination operation increases in a
+nonlinear scale, the size of this dataset is too big for an open storage
+service. So we provide this dataset as source image files and generator
+source codes, ot raw files. The generator code produces separately
+organized .npy file format Numpy binary data. The structure of this data
+is represented in Figure 5. (c). The binary file containing images is in
+the form of (width, height, RGB, 3 images), and the binary file
+containing masks is in the format of (width, height, 3 masks). We
+analyzed the masks used in the synthesis to calculate the area of the
+bean sprouts marked on each mask, and sorted the images and masks in
+order of increasing mask area. And the image with a smaller mask area
+was placed in the front channel of the result array, and the image with
+a larger mask area was placed in the back channel of the result array.
+And the synthesized image was attached to the last channel.</p>
+<p>Figure 5. shows the case of creating a dataset by synthesizing 2
+images. The last channel indices 0 and 1 of this result array correspond
+to the ground truth of the decomposed image that the model needs to
+infer, and the index -1 (or index 2 in this case) value is the data
+given as the input of the model. Researchers can use this binary file to
+always perform end-to-end learning so that the model divides multiple
+decomposed images from smaller to larger areas, which is also a way to
+solve the problem of the operation time of the loss function increasing
+by O(n!).</p>
+<h3 id="paper-13-classification-dataset-production">Classification Dataset
+Production</h3>
+<p>We performed the task of directly classifying 615 single bean sprout
+photos into four categories. For the increase in dataset volume and
+balance between classes, we additionally photographed and classified
+1,385 photos. Each class consists of 500 photos, and the classification
+results are shown in Figure 7. All photos are 3024x3024px JPEG files and
+no preprocessing was performed.</p>
+<p>The first class, "Normal", is a bean sprout photo of the highest
+quality without any damage.</p>
+<p>The second class, Broken, is a bean sprout individual with a broken
+body (hypocotyl). Broken class samples mainly occur during the stages of
+harvesting, washing, and packaging the grown bean sprouts. Industrially,
+it is not fatal if the tail (root) is broken, and some restaurants even
+remove the tail of the bean sprouts before using them in cooking. On the
+other hand, if the body is broken, it is not a welcome state
+industrially and is an example of low quality. Reflecting such
+industrial standards, we classified only samples with damaged body parts
+as the broken class.</p>
+<p>The third class is spotted-head. This is an individual with spots on
+the head (cotyledon, leaf) of the bean sprout. Good quality bean sprouts
+have a smooth and glossy yellow head. However, some individuals may have
+black spots due to various physiological influences such as low quality
+of raw beans, infection during cultivation, and failure to control
+environmental factors. Such spots are the most fatal defect factor
+because they stand out even after cooking.</p>
+<p>The fourth class includes bean sprouts that fall under both broken
+body and spotted head.</p>
+<h3 id="paper-13-for-physical-features-prediction-task">For Physical Features
+Prediction Task</h3>
+<p>Inferring the size of each part of an object solely from photos is a
+demand that would exist in any industry. In the horticultural industry,
+measuring the physical features of harvested crops greatly aids in
+achieving optimal cultivation conditions. In the case of the bean sprout
+cultivation industry, with a very short growth cycle of 7 days, frequent
+optimization is possible, making the task of measuring individual
+information even more valuable.</p>
+<p>To aid in the creation of a dataset that performs this, we provide
+length information for all bean sprout individuals included in the
+Semantic Segmentation Dataset and Image Decomposition Dataset. This
+information is provided in json format, and researchers can easily check
+the physical characteristic values by searching for individual file
+names in the json data. The format of the json file is as follows.</p>
+<p>{</p>
+<p>&lt;filename&gt;: {</p>
+<p>"length_head": &lt;Number&gt;,</p>
+<p>"thickness_body": &lt;Number&gt;,</p>
+<p>"length_body": &lt;Number&gt;,</p>
+<p>"length_tail": &lt;Number&gt;,</p>
+<p>"weight": &lt;Number&gt;</p>
+<p>},</p>
+<p>...</p>
+<p>}</p>
+<p>All length information is expressed in millimeters (mm) as a float,
+and weight is in milligrams (mg). However, for samples where weight
+measurement was omitted during the raw data measurement stage, the
+"weight" value is marked as -1.</p>
+<p>For the multiple samples in the Semantic Segmentation dataset,
+physical feature information for the five bean sprouts included in the
+photo is provided all at once, and it is not provided which bean sprout
+object depicted in the photo corresponds to which value in the json.</p>
+<h2 id="paper-13-dataset-statistics">Dataset Statistics</h2>
+<p>The statistics of the entire dataset are summarized in Table 1. The
+data shown in this table are without any separate augmentation, so a
+researcher can apply various augmentation methods to establish a larger
+dataset for training. For a simple and basic example, simple vertical
+and horizontal flips can inflate the data by four times, and adding a
+few more 90-degree rotations can easily increase the number of data.</p>
+<p>The Semantic Segmentation dataset is composed of 615 single sample
+cases and 1,030 multiple sample cases. If the purpose is to perform
+simple segmentation tasks, it is recommended to mix all of them and
+perform training on 1,675 cases. If the purpose is to measure the length
+of a single object, it is recommended to take only the Single sample
+dataset and use it for augmentation.</p>
+<p>The Decomposition dataset was created only for cropped images. The
+dataset's capacity was too large, so data cropping was done to reduce
+the capacity a bit. Using the dataset production code we provide to
+directly create images of the size needed by the researcher is also a
+good option.</p>
+<p>The Classification dataset simply provides four folders with 500
+images each. Each folder represents the class of the soybean sprout.</p>
+<h2 id="paper-13-application-strategies">Application Strategies</h2>
+<p>To measure the size of each part of a bean sprout, it is first
+necessary to distinguish which area in the picture corresponds to which
+part. Therefore, training a preprocessing model that performs semantic
+segmentation may be necessary for such a task. The Semantic Segmentation
+Dataset can be used for training such a model. Also, because physical
+features are provided, it can be used for training a model that learns
+the length of bean sprouts in an end-to-end manner, or a model that
+predicts the physical characteristics of bean sprouts by receiving the
+pixel distribution of an AI-predicted mask.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-13-table-1"><caption>Table 2. Dataset statistics overview.</caption>
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 23%"/>
+<col style="width: 23%"/>
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th colspan="2"><strong>Semantic Segmentation Dataset</strong></th>
+<th><strong>Decomposition Dataset</strong></th>
+<th><strong>Classification Dataset</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type</strong></td>
+<td>Single Sample</td>
+<td>Multiple Samples</td>
+<td>Two samples</td>
+<td>Single Sample</td>
+</tr>
+<tr>
+<td><strong>Number</strong></td>
+<td>604</td>
+<td>1,030</td>
+<td>60,506</td>
+<td>2,000</td>
+</tr>
+<tr>
+<td><strong>Size 1</strong></td>
+<td>3,024 x 3,024<br/>
+(2,016 x 2,016 cropped)</td>
+<td><p>3,024 x 3,024</p>
+<p>(2,675 x 2,675 cropped)</p></td>
+<td rowspan="4"><p>Image: (Xdim, Ydim, 3, 3)<br/>
+Mask: (Xdim, Ydim, 3)</p>
+<p>Free Resizing Available</p></td>
+<td>3,024 x 3,024</td>
+</tr>
+<tr>
+<td><strong>Size 2</strong></td>
+<td><p>1,024 x 1,024</p>
+<p>(cropped)</p></td>
+<td><p>1,359 x 1,359</p>
+<p>(cropped)</p></td>
+<td>1,024 x 1,024</td>
+</tr>
+<tr>
+<td><strong>Size 3</strong></td>
+<td><p>512 x 512</p>
+<p>(cropped)</p></td>
+<td><p>679 x 679</p>
+<p>(cropped)</p></td>
+<td>512 x 512</td>
+</tr>
+<tr>
+<td><strong>Size 4</strong></td>
+<td><p>256 x 256</p>
+<p>(cropped)</p></td>
+<td><p>340 x 340</p>
+<p>(cropped)</p></td>
+<td>256 x 256</td>
+</tr>
+<tr>
+<td><strong>Format</strong></td>
+<td colspan="2">Image: JPEG<br/>
+MASK: PNG (palette)</td>
+<td><p>Generator Source Code</p>
+<p>(.py script)</p></td>
+<td>JPEG</td>
+</tr>
+<tr>
+<td><strong>Physical Features</strong></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Classes</strong></td>
+<td colspan="2">4</td>
+<td>-</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>The Decomposition Dataset is essential for developing advanced
+analysis models of bean sprouts that can be used in real industrial
+environments. It is impossible to take pictures of individual bean
+sprouts and collect them on a large scale in a bean sprout factory.
+Therefore, a process that decomposes a single picture, in which a large
+number of bean sprout entities are photographed together, into multiple
+pictures of individual bean sprouts must be performed. The Decomposition
+Dataset can contribute to the training of such a model.</p>
+<p>Finally, the Classification Dataset can be used to develop a model
+that investigates the quality of bean sprouts simply using a classical
+CNN-based classifier. With simple augmentation, it is expected that an
+efficient-sized AI that can be mounted on a mobile device can be
+trained.</p>
+<h2 id="paper-13-conclusion">Conclusion</h2>
+<p>The CongNaMul dataset provides several types of datasets that can
+facilitate the development of various AI technologies needed in the
+production field of bean sprouts. By utilizing this dataset, various
+models that can be used for quality control of bean sprouts can be
+trained.</p>
+<p>However, the size of the dataset could be a limitation. Although the
+Decomposition dataset is sufficiently large, the single sample
+segmentation data is small in size and requires augmentation during the
+training process. We hope for the development of a larger dataset that
+overcomes these limitations in the future.</p>
+<p>But the high accuracy of the data is a significant advantage of this
+dataset. Not only does it contain conventional human-labeled
+segmentation masks, but it also includes physical features measured
+directly by human researchers. Models trained by researchers with
+reliable data will likewise become reliable AI technologies.</p>
+<h2 id="paper-13-acknowledgment">Acknowledgment</h2>
+<p>We would like to express our deepest gratitude to Seung Yeop Jang,
+Tae Dong Eom, Changyul Lee, Minwoo Lee, Yeongbeom Kwon, and Junsan Kim
+for their invaluable assistance in the semantic segmentation labeling of
+soybean sprout images. Their contributions were crucial in the
+development of the 'CongNaMul' dataset.</p>
+<h2 id="paper-13-supplement-data">Supplement Data</h2>
+<p>Dataset and overlapping code are available at <a href="https://bhban.kr/data" rel="noopener noreferrer">https://bhban.kr/data</a>.</p>
+<h2 id="paper-13-references">References</h2>
+<ol type="1">
+<li><p>Ban, Byunghyun, and Soobin Kim. "Control of nonlinear, complex
+and black-boxed greenhouse system with reinforcement learning." 2017
+International Conference on Information and Communication Technology
+Convergence (ICTC). IEEE, 2017.</p></li>
+<li><p>Ban, Byunghyun. "Mixed Reality Interface for Digital Twin of
+Plant Factory." arXiv preprint arXiv:2211.00597 (2022).</p></li>
+<li><p>Ban, Byunghyun, et al. "Nutrient solution management system for
+smart farms and plant factory." 2020 international conference on
+information and communication technology convergence (ICTC). IEEE,
+2020.</p></li>
+<li><p>Ban, Byunghyun, Donghun Ryu, and Minwoo Lee. "Machine learning
+approach to remove ion interference effect in agricultural nutrient
+solutions." 2019 International Conference on Information and
+Communication Technology Convergence (ICTC). IEEE, 2019.</p></li>
+<li><p>Ban, Byunghyun. "Deep learning method to remove chemical, kinetic
+and electric artifacts on ISEs." 2020 International Conference on
+Information and Communication Technology Convergence (ICTC). IEEE,
+2020.</p></li>
+<li><p>Ban, Byunghyun, Minwoo Lee, and Donghun Ryu. "ODE network model
+for nonlinear and complex agricultural nutrient solution system." 2019
+International Conference on Information and Communication Technology
+Convergence (ICTC). IEEE, 2019.</p></li>
+<li><p>Ban, Byunghyun. "Mathematical Model and Simulation for
+Nutrient-Plant Interaction Analysis." 2020 International Conference on
+Information and Communication Technology Convergence (ICTC). IEEE,
+2020.</p></li>
+<li><p>Yang, Si, et al. "Transfer learning from synthetic in-vitro
+soybean pods dataset for in-situ segmentation of on-branch soybean
+pods." Proceedings of the IEEE/CVF Conference on Computer Vision and
+Pattern Recognition. 2022.</p></li>
+<li><p>Wang, Bin, et al. "From species to cultivar: Soybean cultivar
+recognition using joint leaf image patterns by multiscale sliding chord
+matching." biosystems engineering 194 (2020): 99-111.</p></li>
+<li><p>Abade, Andre da Silva, et al. "Nemanet: A convolutional neural
+network model for identification of nematodes soybean crop in brazil."
+arXiv preprint arXiv:2103.03717 (2021).</p></li>
+<li><p>Riera, Luis G., et al. "Deep multiview image fusion for soybean
+yield estimation in breeding applications." Plant Phenomics
+(2021).</p></li>
+<li><p>Kentaro Wada, “Labelme: Image Polygonal Annotation with Python.
+Version 5.2.1” <a href="https://github.com/wkentaro/labelme" rel="noopener noreferrer">https://github.com/wkentaro/labelme</a>.</p></li>
+<li><p>Reza, Ali M. "Realization of the contrast limited adaptive
+histogram equalization (CLAHE) for real-time image enhancement." Journal
+of VLSI signal processing systems for signal, image and video technology
+38 (2004): 35-44.</p></li>
+</ol>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">Cita</h2><p class="citation-help">Pulse un formato para copiar la cita.</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="Copiar formato APA">Copiar APA</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="Copiar formato MLA">Copiar MLA</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="Copiar formato Chicago">Copiar Chicago</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="Copiar formato IEEE">Copiar IEEE</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="Copiar formato BibTeX">Copiar BibTeX</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="Copiar formato RIS">Copiar RIS</button></div><label for="citation-text" class="citation-preview-label">Vista previa de cita · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B., Ryu, D., &amp; Hwang, S.-W. (2023). CongNaMul: A dataset for advanced image processing of soybean sprouts. In 2023 14th International Conference on Information and Communication Technology Convergence (ICTC) (pp. 1892–1897). https://doi.org/10.1109/ictc58733.2023.10393217</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/congnamul-dataset-2023/citation.bib" download>Archivo BibTeX</a><a href="/papers/congnamul-dataset-2023/citation.ris" download>Archivo RIS</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B., Ryu, D., & Hwang, S.-W. (2023). CongNaMul: A dataset for advanced image processing of soybean sprouts. In 2023 14th International Conference on Information and Communication Technology Convergence (ICTC) (pp. 1892–1897). https://doi.org/10.1109/ictc58733.2023.10393217", "mla": "Ban, Byunghyun, et al. “CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts.” 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023, pp. 1892-97. https://doi.org/10.1109/ictc58733.2023.10393217.", "chicago": "Ban, Byunghyun, Donghun Ryu, and Su-won Hwang. “CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts.” In 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 1892–97. 2023. https://doi.org/10.1109/ictc58733.2023.10393217.", "ieee": "B. Ban, D. Ryu, and S.-W. Hwang, “CongNaMul: A dataset for advanced image processing of soybean sprouts,” in 2023 14th International Conference on Information and Communication Technology Convergence (ICTC), 2023, pp. 1892–1897, doi: 10.1109/ictc58733.2023.10393217.", "bibtex": "@inproceedings{ban2023_95a896ac6ef9,\n  author = {Ban, Byunghyun and Ryu, Donghun and Hwang, Su-won},\n  title = {{CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts}},\n  year = {2023},\n  booktitle = {2023 14th International Conference on Information and Communication Technology Convergence (ICTC)},\n  pages = {1892--1897},\n  doi = {10.1109/ictc58733.2023.10393217},\n  url = {https://doi.org/10.1109/ictc58733.2023.10393217}\n}", "ris": "TY  - CONF\nAU  - Ban, Byunghyun\nAU  - Ryu, Donghun\nAU  - Hwang, Su-won\nTI  - CongNaMul: A Dataset for Advanced Image Processing of Soybean Sprouts\nPY  - 2023\nT2  - 2023 14th International Conference on Information and Communication Technology Convergence (ICTC)\nSP  - 1892\nEP  - 1897\nDO  - 10.1109/ictc58733.2023.10393217\nUR  - https://doi.org/10.1109/ictc58733.2023.10393217\nAB  - We present 'CongNaMul', a comprehensive dataset designed for various tasks in soybean sprouts image analysis. The CongNaMul dataset is curated to facilitate tasks such as image classification, semantic segmentation, decomposition, and measurement of length and weight. The classification task provides four classes to determine the quality of soybean sprouts: normal, broken, spotted, and broken and spotted, for the development of AI-aided automatic quality inspection technology. For semantic segmentation, images with varying complexity, from single sprout images to images with multiple sprouts, along with human-labelled mask images, are included. The label has 4 different classes: background, head, body, tail. The dataset also provides images and masks for the image decomposition task, including two separate sprout images and their combined form. Lastly, 5 physical features of sprouts (head length, body length, body thickness, tail length, weight) are provided for image-based measurement tasks. This dataset is expected to be a valuable resource for a wide range of research and applications in the advanced analysis of images of soybean sprouts. Also, we hope that this dataset can assist researchers studying classification, semantic segmentation, decomposition, and physical feature measurement in other industrial fields, in evaluating their models. The dataset is available at the authors’ repository (https://bhban.kr/data).\nLA  - en\nER  -\n"}</script></section><a class="paper-back-link" href="/es/papers/">← Volver a la lista de publicaciones</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="Todas las páginas"><a href="/es/">Byunghyun Ban</a><a href="/es/media/">Medios y vídeos</a><a href="/es/books/">Libros</a><a href="/es/lectures/">Historial de conferencias y docencia</a><a href="/es/courses/online/">cursos en línea</a><a href="/es/courses/offline/">cursos presenciales</a><a href="/es/news/">noticias</a><a href="/es/papers/">Artículos e investigación</a><a href="/es/patents/">patentes</a><a href="/es/projects/">Proyectos de desarrollo</a><a href="/es/activities/">Contribución social</a><a href="/es/memberships/">Afiliaciones y actividad profesional</a><a href="/es/collections/">obras de la colección</a><a href="/es/contact/">Consultas sobre conferencias y colaboración</a></nav>
+            <p><a href="/feed.xml">Suscribirse por RSS</a> · <a href="/feed.json">JSON Feed</a></p>
+            <p>© 2026 Byunghyun Ban. Todos los derechos reservados.</p>
+            <p>NaNa Lab (registro de empresa: 269-08-02374), representante: Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="Volver arriba">↑</button>
+</body>
+</html>

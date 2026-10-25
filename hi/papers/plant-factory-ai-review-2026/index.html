@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins | Byunghyun Ban</title>
+    <meta name="description" content="Plant factories have evolved from automated cultivation facilities into data-driven crop production systems. Over the last decade, artificial intelligence has been applied to no…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/plant-factory-ai-review-2026/">
+<meta name="citation_doi" content="10.20944/preprints202605.0438.v1">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/plant-factory-ai-review-2026/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/hi/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="hi_IN">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins | Byunghyun Ban">
+    <meta property="og:description" content="Plant factories have evolved from automated cultivation facilities into data-driven crop production systems. Over the last decade, artificial intelligence has been applied to no…">
+    <meta property="og:url" content="https://bhban.kr/hi/papers/plant-factory-ai-review-2026/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p03-first-page-bac33b970068.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/hi/#website", "url": "https://bhban.kr/hi/", "name": "Byunghyun Ban", "inLanguage": "hi"}, {"@type": "WebPage", "@id": "https://bhban.kr/hi/papers/plant-factory-ai-review-2026/#page", "url": "https://bhban.kr/hi/papers/plant-factory-ai-review-2026/", "name": "Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins | Byunghyun Ban", "description": "Plant factories have evolved from automated cultivation facilities into data-driven crop production systems. Over the last decade, artificial intelligence has been applied to no…", "inLanguage": "hi", "mainEntity": {"@id": "https://bhban.kr/papers/plant-factory-ai-review-2026/#article"}, "isPartOf": {"@id": "https://bhban.kr/hi/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/plant-factory-ai-review-2026/#article", "url": "https://bhban.kr/papers/plant-factory-ai-review-2026/", "name": "Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins", "headline": "Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins", "author": [{"@type": "Person", "name": "Byunghyun Ban"}], "datePublished": "2026", "inLanguage": "en", "abstract": "Plant factories have evolved from automated cultivation facilities into data-driven crop production systems. Over the last decade, artificial intelligence has been applied to non-destructive crop monitoring, sensor correction, nutrient-solution diagnosis, growth prediction, environmental control, digital twins, and product-level inspection. This review summarizes AI technologies for plant factories, focusing on machine vision, deep learning, nutrient-solution intelligence, reinforcement learning, and digital-twin interfaces. The main argument is that plant-factory AI should not be understood only as image-based phenotyping; practical systems require an integrated intelligence stack connecting visual perception, sensor calibration, nutrient modeling, control, remote operation, and industrial inspection. Remaining challenges include dataset scarcity, model generalization, sensor drift, explainability, energy-aware control, and closed-loop decision-making.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/plant-factory-ai-review-2026/#page"}, "creativeWorkStatus": "Preprint", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.20944/preprints202605.0438.v1"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/plant-factory-ai-review-2026/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "मुखपृष्ठ", "item": "https://bhban.kr/hi/"}, {"@type": "ListItem", "position": 2, "name": "शोधपत्र", "item": "https://bhban.kr/hi/papers/"}, {"@type": "ListItem", "position": 3, "name": "Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins", "item": "https://bhban.kr/hi/papers/plant-factory-ai-review-2026/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/plant-factory-ai-review-2026/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/plant-factory-ai-review-2026/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"मेनू खोलें","menuClose":"मेनू बंद करें","submenuExpand":"{label} उपमेनू खोलें","submenuCollapse":"{label} उपमेनू बंद करें","nextSwipeHint":"अंत तक पहुँचने के बाद एक बार और ऊपर स्वाइप करने से आगे जाएँगे।","nextScrollHint":"अंत तक पहुँचने के बाद एक बार और नीचे स्क्रॉल करने से आगे जाएँगे।","lectureResults":"{category} {count} · नवीनतम व्याख्यान पहले","categoryAll":"सभी","categoryCompany":"कंपनियाँ","categoryPublic":"सार्वजनिक संस्थान","categoryEducation":"शिक्षण संस्थान","categoryResearch":"शोध संस्थान","categoryConference":"सम्मेलन","listMedia":"वीडियो","listNews":"मीडिया समाचार","listLectures":"व्याख्यान","listCoursesOnline":"ऑनलाइन पाठ्यक्रम","listCoursesOffline":"ऑफलाइन प्रशिक्षण पाठ्यक्रम","listPapers":"शोधपत्र","listPatents":"पेटेंट","listProjects":"परियोजनाएँ","listActivities":"गतिविधियाँ","listMemberships":"सदस्य गतिविधियाँ","listCollections":"संग्रह","listDonations":"दान रिकॉर्ड","listGeneric":"सूची","listStatus":"{total} में से {visible} दिखाए गए","listMore":"{label} और देखें ({remaining} शेष)","citationCopyLabel":"उद्धरण जानकारी कॉपी करें","citationCopied":"उद्धरण जानकारी कॉपी की गई।","citationError":"उद्धरण जानकारी कॉपी नहीं हो सकी। ब्राउज़र की क्लिपबोर्ड सेटिंग जाँचें।","citationFormatCopied":"{label} उद्धरण जानकारी कॉपी की गई।","citationManualCopy":"उद्धरण चुन लिया गया है। कृपया स्वयं कॉपी करें।","contactLoadError":"संदेश भेजने की सुविधा लोड नहीं हो सकी। थोड़ी देर बाद फिर प्रयास करें।","contactSent":"आपका संदेश प्राप्त हो गया है।","contactError":"त्रुटि हुई। फिर प्रयास करें।","contactSending":"भेजा जा रहा है...","streamRetry":"फिर लोड करें","streamError":"अगली सामग्री लोड नहीं हो सकी। दोबारा प्रयास करें या ऊपर दिए लिंक पर जाएँ।","streamLoading":"{label} की आगे की सामग्री लोड हो रही है।"}</script>
+</head>
+<body data-locale="hi" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <nav class="navbar" aria-label="मुख्य मेनू"><div class="navbar-brand"><a href="/hi/" aria-label="Byunghyun Ban का मुखपृष्ठ"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/hi/" class="nav-link nav-main-link" data-nav-page="home">परिचय</a></li><li data-nav-group="media"><a href="/hi/media/" class="nav-link nav-main-link" data-nav-page="media">मीडिया</a></li><li data-nav-group="books"><a href="/hi/books/" class="nav-link nav-main-link" data-nav-page="books">पुस्तकें</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/hi/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">व्याख्यान</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="व्याख्यान उपमेनू खोलें" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="व्याख्यान की श्रेणियाँ"><li><a href="/hi/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">सभी</a></li><li><a href="/hi/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">कंपनियाँ</a></li><li><a href="/hi/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">सार्वजनिक संस्थान</a></li><li><a href="/hi/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">शिक्षण संस्थान</a></li><li><a href="/hi/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">अनुसंधान संस्थान</a></li><li><a href="/hi/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">सम्मेलन</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/hi/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">पाठ्यक्रम</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="Courses उपमेन्यू खोलें" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/hi/courses/online/" data-nav-page="courses-online">ऑनलाइन</a></li><li><a href="/hi/courses/offline/" data-nav-page="courses-offline">ऑफलाइन</a></li></ul></li><li data-nav-group="news"><a href="/hi/news/" class="nav-link nav-main-link" data-nav-page="news">समाचार</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/hi/papers/" class="nav-link active nav-main-link" data-nav-page="papers">अनुसंधान और विकास</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="R&amp;D उपमेनू खोलें" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/hi/papers/" data-nav-page="papers">शोधपत्र</a></li><li><a href="/hi/patents/" data-nav-page="patents">पेटेंट</a></li><li><a href="/hi/projects/" data-nav-page="projects">परियोजनाएँ</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/hi/activities/" class="nav-link nav-main-link" data-nav-page="activities">अन्य</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="ETC उपमेन्यू खोलें" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/hi/activities/" data-nav-page="activities">सामाजिक योगदान</a></li><li><a href="/hi/memberships/" data-nav-page="memberships">सदस्यताएँ</a></li><li><a href="/hi/collections/" data-nav-page="collections">संग्रह</a></li></ul></li><li data-nav-group="contact"><a href="/hi/contact/" class="btn-contact nav-main-link" data-nav-page="contact">संपर्क</a></li></ul><details class="language-switcher"><summary aria-label="भाषा चुनें"><span aria-hidden="true">🌐</span> <span>हिन्दी</span></summary><nav class="language-options" aria-label="भाषा चुनें"><a href="/papers/plant-factory-ai-review-2026/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/plant-factory-ai-review-2026/" hreflang="en" lang="en">English</a><a href="/zh/papers/plant-factory-ai-review-2026/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/papers/plant-factory-ai-review-2026/" hreflang="hi" lang="hi" aria-current="true">हिन्दी</a><a href="/es/papers/plant-factory-ai-review-2026/" hreflang="es" lang="es">Español</a><a href="/ar/papers/plant-factory-ai-review-2026/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/plant-factory-ai-review-2026/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/plant-factory-ai-review-2026/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/papers/plant-factory-ai-review-2026/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="मेनू खोलें">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="वर्तमान स्थान"><a href="/hi/">मुखपृष्ठ</a><span aria-hidden="true">/</span><a href="/hi/papers/">शोधपत्र</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-2026-p03"><header><p class="paper-kind">प्रीप्रिंट · सहकर्मी समीक्षा नहीं हुई</p><h1 id="paper-title" lang="en">Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins</h1><p class="paper-authors">Byunghyun Ban</p><p class="paper-venue">2026</p><nav class="paper-reader-jumps" aria-label="शोधपत्र देखें"><a href="#abstract-heading">सारांश</a><a href="#full-text">पूरा पाठ</a><a href="#citation-heading">उद्धृत करें</a></nav><div class="gitIcons">
+                                <a href="/papers/plant-factory-ai-review-2026/paper.pdf" target="_blank" rel="noreferrer" download aria-label="Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins — प्रीप्रिंट का पूरा PDF डाउनलोड करें" title="PDF डाउनलोड करें"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg><span class="paper-action-label">PDF</span></a>
+                                <a href="https://doi.org/10.20944/preprints202605.0438.v1" target="_blank" rel="noreferrer" aria-label="Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins DOI" title="DOI पर मूल शोधपत्र की जानकारी"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">DOI</span></a>
+                                <a href="https://www.preprints.org/manuscript/202605.0438" target="_blank" rel="noreferrer" aria-label="Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins मूल स्रोत की जानकारी" title="मूल शोधपत्र की जानकारी"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">स्रोत</span></a>
+                                <span class="citation" data-citation="Byunghyun Ban. (2026). &quot;Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins.&quot; Preprints.org · Preprint (not peer-reviewed). https://doi.org/10.20944/preprints202605.0438.v1" aria-label="उद्धरण जानकारी कॉपी करें" title="उद्धरण जानकारी कॉपी करें"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">उद्धृत करें</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>विषय सूची · Contents</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-2026-p03-introduction">1. Introduction</a></li><li class="toc-level-2"><a href="#paper-2026-p03-ai-technology-stack-for-plant-factories">2. AI Technology Stack for Plant Factories</a></li><li class="toc-level-2"><a href="#paper-2026-p03-machine-vision-and-deep-learning-for-crop-monitoring">3. Machine Vision and Deep Learning for Crop Monitoring</a></li><li class="toc-level-2"><a href="#paper-2026-p03-nutrient-solution-intelligence-and-sensor-correction">4. Nutrient-Solution Intelligence and Sensor Correction</a></li><li class="toc-level-2"><a href="#paper-2026-p03-ai-based-environmental-control">5. AI-Based Environmental Control</a></li><li class="toc-level-2"><a href="#paper-2026-p03-digital-twins-and-mixed-reality-operation">6. Digital Twins and Mixed-Reality Operation</a></li><li class="toc-level-2"><a href="#paper-2026-p03-dataset-driven-product-inspection">7. Dataset-Driven Product Inspection</a></li><li class="toc-level-2"><a href="#paper-2026-p03-challenges-and-future-directions">8. Challenges and Future Directions</a></li><li class="toc-level-2"><a href="#paper-2026-p03-conclusion">9. Conclusion</a></li><li class="toc-level-2"><a href="#paper-2026-p03-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">सारांश</h2><p class="abstract" lang="en">Plant factories have evolved from automated cultivation facilities into data-driven crop production systems. Over the last decade, artificial intelligence has been applied to non-destructive crop monitoring, sensor correction, nutrient-solution diagnosis, growth prediction, environmental control, digital twins, and product-level inspection. This review summarizes AI technologies for plant factories, focusing on machine vision, deep learning, nutrient-solution intelligence, reinforcement learning, and digital-twin interfaces. The main argument is that plant-factory AI should not be understood only as image-based phenotyping; practical systems require an integrated intelligence stack connecting visual perception, sensor calibration, nutrient modeling, control, remote operation, and industrial inspection. Remaining challenges include dataset scarcity, model generalization, sensor drift, explainability, energy-aware control, and closed-loop decision-making.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords"><strong>Keywords:</strong> plant factory, artificial intelligence,
+PFAL, vertical farming, machine vision, deep learning, nutrient
+solution, ion-selective electrode, digital twin, reinforcement
+learning</p><h2 id="paper-2026-p03-introduction">1. Introduction</h2>
+<p>Plant factories are controlled-environment agricultural systems in
+which crop growth is managed through artificial regulation of light,
+temperature, humidity, carbon dioxide, airflow, water, and nutrient
+solution. In plant factories with artificial lighting, crop production
+can be separated from external weather conditions and arranged in
+multilayer cultivation systems. Because environmental variables are
+measurable and controllable, plant factories provide a suitable platform
+for artificial intelligence applications.</p>
+<p>The technological focus of plant factories has changed during the
+last decade. Early systems emphasized hardware automation, environmental
+sensors, hydroponics, and rule-based control. Recent systems
+increasingly rely on cameras, sensor networks, embedded processors,
+cloud platforms, deep-learning models, and digital twins. This shift
+changes the role of AI from a supplementary monitoring tool to an
+operational layer that supports perception, prediction, diagnosis,
+optimization, and decision-making.</p>
+<p>In this review, AI technologies are defined broadly as computational
+methods that support data-driven or model-assisted perception,
+prediction, diagnosis, control, or operation in plant-factory systems.
+This includes machine learning, deep learning, computer vision,
+reinforcement learning, sensor-signal correction, hybrid mathematical
+modeling, and digital-twin-based simulation. The review focuses only on
+technologies directly connected to AI or intelligent data processing;
+purely physiological, lighting, or cultivation studies without
+AI-related components are not discussed.</p>
+<p>The main contribution of this review is to organize plant-factory AI
+as a multilayer intelligence system. Previous reviews have discussed
+machine vision in plant factories or deep learning in
+controlled-environment agriculture [1,2]. This paper narrows the focus
+to plant factories and connects four major AI layers: visual
+phenotyping, nutrient-solution intelligence, environmental control, and
+digital twins. Product-level inspection datasets are also discussed
+because industrial plant factories require not only cultivation
+monitoring but also automated grading and quality assessment.</p>
+<h2 id="paper-2026-p03-ai-technology-stack-for-plant-factories">2. AI Technology Stack
+for Plant Factories</h2>
+<p>AI in plant factories can be organized as a stack of interconnected
+layers. The first layer is the sensing layer, which includes RGB
+cameras, RGB-D cameras, environmental sensors, pH and EC sensors,
+ion-selective electrodes, and energy meters. The second layer is the
+perception layer, where image segmentation, object detection, feature
+extraction, and sensor correction are performed. The third layer is the
+prediction layer, where models estimate fresh weight, growth stage,
+stress symptoms, nutrient imbalance, or future environmental states. The
+fourth layer is the decision layer, where control algorithms determine
+lighting, climate, irrigation, or nutrient-supply actions. The final
+layer is the operation layer, where digital twins, mixed-reality
+interfaces, and dashboards allow operators to monitor and control plant
+factories remotely.</p>
+<p>This stack-based view is useful because plant-factory AI is often
+mistaken for camera-based crop measurement alone. In practice, visual AI
+cannot operate reliably without calibrated sensors, stable
+nutrient-solution information, environmental-control logic, and usable
+interfaces. Therefore, the maturity of plant-factory AI depends on the
+integration of multiple intelligent subsystems rather than the
+performance of a single deep-learning model.</p>
+<p class="paper-table-caption" id="paper-2026-p03-table-1.-multilayer-ai-stack-for-plant-factories">Table 1.
+Multilayer AI stack for plant factories</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Layer</strong></th>
+<th><strong>Data or input</strong></th>
+<th><strong>Representative methods</strong></th>
+<th><strong>Operational role</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sensing</td>
+<td>Images, climate data, pH/EC/ISE, energy data</td>
+<td>Sensor networks, calibration</td>
+<td>Acquire crop and facility states</td>
+</tr>
+<tr>
+<td>Perception</td>
+<td>RGB/RGB-D images, ISE signals</td>
+<td>CNN, U-Net, YOLO, artifact correction</td>
+<td>Extract crop traits and reliable sensor values</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>Time-series and multimodal data</td>
+<td>ML, DL, growth models, ODE networks</td>
+<td>Estimate growth, stress, nutrients, and future states</td>
+</tr>
+<tr>
+<td>Decision</td>
+<td>Predicted states and constraints</td>
+<td>RL, optimization, hybrid control</td>
+<td>Determine environment and nutrient actions</td>
+</tr>
+<tr>
+<td>Operation</td>
+<td>Facility model and user interface</td>
+<td>Digital twin, mixed reality</td>
+<td>Support remote monitoring and control</td>
+</tr>
+</tbody>
+</table></div>
+<figure class="paper-figure">
+<img alt="Figure 1. Multilayer AI technology stack for plant factories, connecting sensing, perception, prediction, decision-making, and operation." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p03/figure-1.webp"/>
+<figcaption><p><em>Figure 1. Multilayer AI technology stack for plant
+factories, connecting sensing, perception, prediction, decision-making,
+and operation.</em></p></figcaption>
+</figure>
+<h2 id="paper-2026-p03-machine-vision-and-deep-learning-for-crop-monitoring">3. Machine
+Vision and Deep Learning for Crop Monitoring</h2>
+<p>Machine vision is one of the most active areas of plant-factory AI.
+Compared with open-field agriculture, plant factories provide relatively
+stable backgrounds, lighting structures, camera positions, and crop
+arrangements. These conditions make them suitable for automated image
+analysis. However, plant-factory images still contain difficult problems
+such as leaf overlap, dense canopies, LED-induced color distortion,
+variable plant size, and occlusion in multilayer racks.</p>
+<p>Tian et al. reviewed the application status and challenges of machine
+vision in plant factories and identified crop growth monitoring, stress
+detection, robot operation, and product quality inspection as major
+application areas [1]. Ojo and Zahid similarly showed that deep learning
+in controlled-environment agriculture has been applied to crop
+monitoring, stress detection, irrigation, microclimate prediction,
+energy-efficient controls, and crop growth prediction [2].</p>
+<p>Early plant-factory vision studies often relied on manually designed
+image features. A notable transition appeared in the work of Nagano et
+al., who used optical-flow analysis and machine learning to predict
+lettuce growth from leaf movement [3]. This study was important because
+it treated plant growth as a dynamic process rather than a static
+image-measurement problem.</p>
+<p>Recent studies increasingly use deep learning and multimodal sensing.
+Lin et al. proposed a multimodal deep-learning model for automatic
+lettuce fresh-weight estimation using RGB-D images [4]. Moon et al.
+applied deep neural networks to analyze the growth of
+plant-factory-grown lettuce using automated feature extraction [5]. Tan
+et al. proposed PosNet, which estimates lettuce fresh weight from
+oblique images rather than relying only on top-view images [6]. Kim et
+al. developed a machine-vision-based fresh-weight prediction system for
+butterhead lettuce in an industrial plant factory [7]. These studies
+show that plant-factory vision has moved from simple image analysis
+toward production-oriented, non-destructive crop measurement.</p>
+<p>Stress and disorder detection are also important applications. Tip
+burn in lettuce is a representative physiological disorder in controlled
+environments. Hamidon and Ahamed used deep-learning models to detect
+tip-burn stress in indoor-grown lettuce [8], and Kumaratenna and Cho
+studied AI-based tipburn detection in plant-factory-grown lettuce [9].
+More recent work has extended image-based diagnosis to
+nutrient-deficiency symptoms [10].</p>
+<p>This trajectory is further supported by CNN, IoT-enabled AI, RGB-D
+fusion, 3D point-cloud completion, improved Mask R-CNN,
+plant-growth-model prediction, and multimodal-fusion studies for lettuce
+growth monitoring, fresh-weight estimation, seedling segmentation, and
+phenotype extraction in greenhouse, hydroponic, and plant-factory
+settings [20-22,25-29].</p>
+<h2 id="paper-2026-p03-nutrient-solution-intelligence-and-sensor-correction">4.
+Nutrient-Solution Intelligence and Sensor Correction</h2>
+<p>Nutrient-solution management is a central but less visible part of
+plant-factory AI. Many plant factories use hydroponic systems, where
+crop growth depends on pH, electrical conductivity, dissolved oxygen,
+water temperature, and individual ion concentrations. Traditional
+nutrient management often relies on pH and EC, but these variables
+cannot fully describe the balance of individual ions. In closed
+hydroponic systems, plants absorb ions at different rates, which can
+cause ion imbalance even when EC appears normal.</p>
+<p>Ion-selective electrodes can measure individual ions, but they are
+affected by ion interference, calibration drift, kinetic artifacts, and
+electrical artifacts. Therefore, nutrient-solution AI must address not
+only control decisions but also sensor reliability. Ban, Ryu, and Lee
+proposed a machine-learning method to remove ion interference effects
+from agricultural nutrient-solution measurements [11]. The study used
+machine learning to correct ISE data distorted by ion interference and
+suggested that the corrected data could be used in real time.</p>
+<p>Nutrient solution is not only a sensing problem but also a nonlinear
+chemical system. Ban, Lee, and Ryu proposed an ordinary differential
+equation network model for nonlinear and complex agricultural
+nutrient-solution systems [12]. The model represented nutrient-solution
+reactions as differential equations and predicted ion concentrations and
+total dissolved solids. This approach is relevant to plant factories
+because closed hydroponic systems require repeated readjustment of
+nutrient composition, and empirical EC-based supplementation cannot
+predict the chemical consequences of control inputs.</p>
+<p>Later work extended this direction to deep-learning-based artifact
+removal from ion-selective electrodes [13] and an automated
+nutrient-solution management system for smart farms and plant factories
+[14]. These studies indicate that nutrient intelligence has two roles in
+plant factories. First, it improves the reliability of chemical sensing.
+Second, it provides the foundation for model-based nutrient control.
+Beyond root-zone sensing, hyperspectral imaging and machine-vision
+studies have also estimated foliar nutrient concentrations and
+classified lettuce nutrient-deficiency symptoms, suggesting that
+nutrient intelligence can combine chemical sensors with image-based
+diagnosis [23,24].</p>
+<p>For practical plant factories, AI-based phenotyping above the canopy
+and AI-based diagnosis below the root zone should be integrated rather
+than treated as separate systems. This is particularly important because
+visual symptoms often appear after physiological imbalance has already
+progressed, whereas nutrient-solution and sensor-level intelligence may
+allow earlier intervention. Figure 2 illustrates how sensing,
+prediction, and actuator control can be connected as a closed-loop AI
+operation system.</p>
+<figure class="paper-figure">
+<img alt="Figure 2. Closed-loop AI operation for plant factories, integrating above-canopy sensing, root-zone nutrient sensing, climate sensing, AI modules, and actuator control." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p03/figure-2.webp"/>
+<figcaption><p><em>Figure 2. Closed-loop AI operation for plant
+factories, integrating above-canopy sensing, root-zone nutrient sensing,
+climate sensing, AI modules, and actuator control.</em></p></figcaption>
+</figure>
+<h2 id="paper-2026-p03-ai-based-environmental-control">5. AI-Based Environmental
+Control</h2>
+<p>Environmental control in plant factories is a multivariable and
+nonlinear problem. Light, temperature, humidity, vapor pressure deficit,
+carbon dioxide, airflow, irrigation, and nutrient solution interact with
+one another. A control input that improves one objective may worsen
+another. For example, increased lighting may accelerate growth but also
+increase energy demand and thermal load. Therefore, plant-factory
+control requires predictive and adaptive methods rather than independent
+threshold rules.</p>
+<p>Reinforcement learning is suitable for this type of problem because
+it can learn policies for long-term reward under complex system
+dynamics. Ban and Kim applied an actor-critic reinforcement-learning
+approach to a nonlinear, complex, black-boxed greenhouse system [15].
+Although greenhouse systems are not identical to plant factories, the
+methodological problem is transferable: both involve multivariable
+environmental control, actuator side effects, and incomplete knowledge
+of system dynamics.</p>
+<p>Future plant-factory control systems should combine reinforcement
+learning, crop-growth models, sensor uncertainty, and operational
+constraints. The goal should not be simply to maintain fixed setpoints,
+but to optimize crop growth, product quality, resource use, and
+production schedules simultaneously. In this sense, AI-based
+environmental control is a bridge between crop monitoring and autonomous
+plant-factory operation.</p>
+<h2 id="paper-2026-p03-digital-twins-and-mixed-reality-operation">6. Digital Twins and
+Mixed-Reality Operation</h2>
+<p>Digital twins provide a framework for integrating sensors, crop
+models, facility states, and control logic into a virtual representation
+of a plant factory. In AI-based plant factories, digital twins can
+support monitoring, simulation, fault detection, remote operation, and
+decision-making. Unlike ordinary dashboards, digital twins can connect
+real-time data with predictive models and spatial interfaces.</p>
+<p>Zhang et al. designed a digital twin system for
+multi-environmental-variable mapping in a plant factory [16]. Chen et
+al. proposed a five-dimensional digital-twin modeling method for
+plant-factory transplanters [17]. These studies show that digital twins
+are expanding from environmental visualization to equipment modeling and
+production-process integration.</p>
+<p>A mixed-reality interface for a digital twin of a plant factory was
+proposed to make remote operation more intuitive [18]. In this approach,
+a real-time camera scene from the plant factory is combined with an
+interactive interface, allowing users to monitor and control remote
+facilities through an HMD or a 2D display. This direction is important
+because commercial plant factories require not only accurate models but
+also operator-centered interfaces. If digital twins are to become
+practical operating systems, they must connect AI predictions with
+human-understandable spatial information.</p>
+<p>Digital twins can also connect the other AI layers discussed in this
+review. Machine-vision models can estimate crop status, nutrient models
+can estimate root-zone conditions, control models can simulate actuator
+strategies, and operator interfaces can present these results in an
+integrated environment. Therefore, digital twins are likely to become
+the operational core of future plant-factory AI. Figure 3 illustrates
+how digital twins and mixed-reality interfaces can connect physical
+plant factories, AI models, and remote operators.</p>
+<figure class="paper-figure">
+<img alt="Figure 3. Digital-twin and mixed-reality interface for plant-factory AI, linking physical cultivation systems, virtual simulation, remote monitoring, and control commands." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p03/figure-3.webp"/>
+<figcaption><p><em>Figure 3. Digital-twin and mixed-reality interface
+for plant-factory AI, linking physical cultivation systems, virtual
+simulation, remote monitoring, and control
+commands.</em></p></figcaption>
+</figure>
+<h2 id="paper-2026-p03-dataset-driven-product-inspection">7. Dataset-Driven Product
+Inspection</h2>
+<p>Plant-factory AI should include not only cultivation-stage monitoring
+but also product-level inspection. Commercial plant factories must
+grade, sort, measure, and package crops after harvest. This requires
+datasets designed for classification, segmentation, defect detection,
+and physical measurement.</p>
+<p>The CongNaMul dataset provides an example of dataset-driven AI for
+factory-style crop-product inspection [19]. It was designed for advanced
+image processing of soybean sprouts and includes tasks such as quality
+classification, semantic segmentation, decomposition, and physical
+feature measurement. Although soybean sprouts are different from leafy
+vegetables commonly used in PFAL studies, they are highly relevant to
+automated crop production and industrial inspection. This dataset
+demonstrates how plant-factory AI can extend from growth monitoring to
+post-harvest quality assessment.</p>
+<p>Dataset construction remains a major bottleneck in plant-factory AI.
+Models trained in one facility often fail in another because of
+differences in crop variety, camera position, LED spectrum, background,
+cultivation density, and growth stage. Therefore, future datasets should
+include multiple facilities, imaging conditions, cultivars, and
+annotation types. Without standardized datasets, plant-factory AI will
+remain difficult to compare and difficult to commercialize.</p>
+<h2 id="paper-2026-p03-challenges-and-future-directions">8. Challenges and Future
+Directions</h2>
+<p>The first challenge is generalization. Many AI models report good
+performance under controlled experimental conditions, but plant
+factories differ in hardware, lighting, crop spacing, sensor placement,
+and cultivation protocols. Future research should emphasize
+cross-facility validation, transfer learning, domain adaptation, and
+uncertainty estimation.</p>
+<p>The second challenge is sensor reliability. AI models depend on
+sensor data, but plant-factory sensors are exposed to humidity, nutrient
+solution, electrical noise, drift, and contamination. ISE-related
+studies show that signal correction and artifact removal are not minor
+preprocessing steps but central requirements for intelligent nutrient
+management [11-14].</p>
+<p>The third challenge is explainability. Deep-learning models can
+estimate fresh weight or detect disorders, but plant-factory operators
+need to understand why a disorder occurred and what action should be
+taken. Hybrid models that combine crop physiology, mechanistic
+equations, and machine learning may be more useful than purely black-box
+models.</p>
+<p>The fourth challenge is closed-loop decision-making. Many current
+studies focus on monitoring: estimating fresh weight, detecting stress,
+or visualizing environmental variables. Fewer studies complete the loop
+by automatically adjusting environmental or nutrient conditions based on
+AI predictions. The next stage of plant-factory AI should connect
+sensing, prediction, control, and operator feedback.</p>
+<p>The fifth challenge is energy-aware intelligence. Energy is not
+discussed here as a general plant-factory engineering topic, but it
+remains an important objective for AI control. Future control models
+should optimize biological output and resource cost together, rather
+than maximizing growth alone.</p>
+<h2 id="paper-2026-p03-conclusion">9. Conclusion</h2>
+<p>Over the last decade, AI technologies for plant factories have
+developed from simple image processing and rule-based automation into
+integrated intelligent systems. Machine vision and deep learning now
+support non-destructive estimation of growth, fresh weight, stress
+symptoms, and product quality. Nutrient-solution intelligence improves
+the reliability of ion sensing and enables model-based management of
+hydroponic systems. Reinforcement learning and hybrid control models
+provide a path toward adaptive environmental regulation. Digital twins
+and mixed-reality interfaces connect physical plant factories with
+virtual operating environments.</p>
+<p>The central argument of this review is that plant-factory AI should
+be understood as a multilayer system rather than a single model
+category. Visual phenotyping, nutrient sensing, environmental control,
+digital twins, and product inspection must be integrated to make plant
+factories practically intelligent. The next stage of plant-factory AI
+will therefore not be defined by a single neural-network architecture,
+but by the integration of perception, chemical sensing, crop modeling,
+energy-aware control, and operator-centered digital twins. Future plant
+factories should be understood not merely as automated farms, but as
+AI-mediated biological manufacturing systems.</p>
+<h2 id="paper-2026-p03-references">References</h2>
+<p>[1] Tian, Z.; Ma, W.; Yang, Q.; Duan, F. Application Status and
+Challenges of Machine Vision in Plant Factory-A Review. Information
+Processing in Agriculture, 2022, 9, 195-211. doi:
+10.1016/j.inpa.2021.06.003.</p>
+<p>[2] Ojo, M. O.; Zahid, A. Deep Learning in Controlled Environment
+Agriculture: A Review of Recent Advancements, Challenges and Prospects.
+Sensors, 2022, 22, 7965. doi: 10.3390/s22207965.</p>
+<p>[3] Nagano, S.; Moriyuki, S.; Wakamori, K.; Mineno, H.; Fukuda, H.
+Leaf-Movement-Based Growth Prediction Model Using Optical Flow Analysis
+and Machine Learning in Plant Factory. Frontiers in Plant Science, 2019,
+10, 227. doi: 10.3389/fpls.2019.00227.</p>
+<p>[4] Lin, Z.; Fu, R.; Ren, G.; Zhong, R.; Ying, Y.; Lin, T. Automatic
+Monitoring of Lettuce Fresh Weight by Multi-Modal Fusion Based Deep
+Learning. Frontiers in Plant Science, 2022, 13, 980581. doi:
+10.3389/fpls.2022.980581.</p>
+<p>[5] Moon, T.; Choi, W.-J.; Jang, S.-H.; Choi, D.-S.; Oh, M.-M. Growth
+Analysis of Plant Factory-Grown Lettuce by Deep Neural Networks Based on
+Automated Feature Extraction. Horticulturae, 2022, 8, 1124. doi:
+10.3390/horticulturae8121124.</p>
+<p>[6] Tan, J.; Hou, J.; Xu, W.; Zheng, H.; Gu, S.; Zhou, Y.; Qi, L.;
+Ma, R. PosNet: Estimating Lettuce Fresh Weight in Plant Factory Based on
+Oblique Image. Computers and Electronics in Agriculture, 2023, 213,
+108263. doi: 10.1016/j.compag.2023.108263.</p>
+<p>[7] Kim, J. S. G.; Moon, S.; Park, J.; Kim, T.; Chung, S. Development
+of a Machine Vision-Based Weight Prediction System of Butterhead Lettuce
+Using Deep Learning Models for Industrial Plant Factory. Frontiers in
+Plant Science, 2024, 15, 1365266. doi: 10.3389/fpls.2024.1365266.</p>
+<p>[8] Hamidon, M. H.; Ahamed, T. Detection of Tip-Burn Stress on
+Lettuce Grown in an Indoor Environment Using Deep Learning Algorithms.
+Sensors, 2022, 22, 7251. doi: 10.3390/s22197251.</p>
+<p>[9] Kumaratenna, K. P. S.; Cho, Y. Y. Detection of Tipburn Stress on
+Lettuce Grown in a Plant Factory Using Artificial Intelligence Models.
+Horticultural Science and Technology, 2024, 42, 711-724.</p>
+<p>[10] Xie, J.; et al. Exploring Nutrient Deficiencies in Lettuce
+Crops: Utilizing Advanced Multidimensional Image Analysis for Precision
+Diagnosis. Sensors, 2025, 25, 1957. doi: 10.3390/s25071957.</p>
+<p>[11] Ban, B.; Ryu, D.; Lee, M. Machine Learning Approach to Remove
+Ion Interference Effect in Agricultural Nutrient Solutions.
+International Conference on Information and Communication Technology
+Convergence, 2019, 1156-1161. doi: 10.1109/ICTC46691.2019.8939812.</p>
+<p>[12] Ban, B.; Lee, M.; Ryu, D. ODE Network Model for Nonlinear and
+Complex Agricultural Nutrient Solution System. International Conference
+on Information and Communication Technology Convergence, 2019, 996-1001.
+doi: 10.1109/ICTC46691.2019.8939946.</p>
+<p>[13] Ban, B.; Ryu, D.; Lee, M. Deep Learning Method to Remove
+Chemical, Kinetic and Electric Artifacts on ISEs. International
+Conference on Information and Communication Technology Convergence,
+2020, 1242-1246; Preprints 2020, 2020050381. doi:
+10.20944/preprints202005.0381.v2.</p>
+<p>[14] Ban, B.; Lee, J.; Ryu, D.; Lee, M.; Eom, T. D. Nutrient Solution
+Management System for Smart Farms and Plant Factory. International
+Conference on Information and Communication Technology Convergence,
+2020, 1537-1542. doi: 10.1109/ICTC49870.2020.9289192.</p>
+<p>[15] Ban, B.; Kim, S. Control of Nonlinear, Complex and Black-Boxed
+Greenhouse System with Reinforcement Learning. International Conference
+on Information and Communication Technology Convergence, 2017, 913-918.
+doi: 10.1109/ICTC.2017.8190813.</p>
+<p>[16] Zhang, Z.; Zhu, Z.; Gao, G.; Qu, D.; Zhong, J.; Jia, D.; Du, X.;
+Yang, X.; Pan, S. Design and Research of Digital Twin System for
+Multi-Environmental Variable Mapping in Plant Factory. Computers and
+Electronics in Agriculture, 2023, 213, 108243. doi:
+10.1016/j.compag.2023.108243.</p>
+<p>[17] Chen, K.; Zhao, B.; Zhou, H.; Zhou, L.; Niu, K.; Jin, X.; Li,
+R.; Yuan, Y.; Zheng, Y. Digital Twins in Plant Factory: A
+Five-Dimensional Modeling Method for Plant Factory Transplanter Digital
+Twins. Agriculture, 2023, 13, 1336. doi:
+10.3390/agriculture13071336.</p>
+<p>[18] Ban, B. Mixed Reality Interface for Digital Twin of Plant
+Factory. arXiv, 2022, arXiv:2211.00597. doi:
+10.48550/arXiv.2211.00597.</p>
+<p>[19] Ban, B.; Ryu, D.; Hwang, S.-w. CongNaMul: A Dataset for Advanced
+Image Processing of Soybean Sprouts. International Conference on
+Information and Communication Technology Convergence, 2023, 1892-1897;
+arXiv:2308.15690.</p>
+<p>[20] Zhang, L.; Xu, Z.; Xu, D.; Ma, J.; Chen, Y.; Fu, Z. Growth
+Monitoring of Greenhouse Lettuce Based on a Convolutional Neural
+Network. Horticulture Research, 2020, 7, 124. doi:
+10.1038/s41438-020-00345-6.</p>
+<p>[21] Chang, C.-L.; Chung, S.-C.; Fu, W.-L.; Huang, C.-C. Artificial
+Intelligence Approaches to Predict Growth, Harvest Day, and Quality of
+Lettuce (Lactuca sativa L.) in an IoT-Enabled Greenhouse System.
+Biosystems Engineering, 2021, 212, 77-105. doi:
+10.1016/j.biosystemseng.2021.09.015.</p>
+<p>[22] Lou, M.; Lu, J.; Wang, L.; Jiang, H.; Zhou, M. Growth Parameter
+Acquisition and Geometric Point Cloud Completion of Lettuce. Frontiers
+in Plant Science, 2022, 13, 947690. doi: 10.3389/fpls.2022.947690.</p>
+<p>[23] Pandey, P.; Veazie, P.; Whipker, B. E.; Young, S. N. Predicting
+Foliar Nutrient Concentrations and Nutrient Deficiencies of Hydroponic
+Lettuce Using Hyperspectral Imaging. Biosystems Engineering, 2023, 230,
+458-469. doi: 10.1016/j.biosystemseng.2023.05.005.</p>
+<p>[24] Lu, J.; Peng, K.; Wang, Q.; Sun, C. Lettuce Plant
+Trace-Element-Deficiency Symptom Identification via Machine Vision
+Methods. Agriculture, 2023, 13, 1614. doi:
+10.3390/agriculture13081614.</p>
+<p>[25] Xu, D.; Chen, J.; Li, B.; Ma, J. Improving Lettuce Fresh Weight
+Estimation Accuracy through RGB-D Fusion. Agronomy, 2023, 13, 2617. doi:
+10.3390/agronomy13102617.</p>
+<p>[26] Ojo, M. O.; Zahid, A.; Masabni, J. G. Estimating Hydroponic
+Lettuce Phenotypic Parameters for Efficient Resource Allocation.
+Computers and Electronics in Agriculture, 2024, 218, 108642. doi:
+10.1016/j.compag.2024.108642.</p>
+<p>[27] Islam, S.; Reza, M. N.; Chowdhury, M.; Ahmed, S.; Lee, K.-H.;
+Ali, M.; Cho, Y. J.; Noh, D. H.; Chung, S.-O. Detection and Segmentation
+of Lettuce Seedlings from Seedling-Growing Tray Imagery Using an
+Improved Mask R-CNN Method. Smart Agricultural Technology, 2024, 8,
+100455. doi: 10.1016/j.atech.2024.100455.</p>
+<p>[28] Hosoda, Y.; Tada, T.; Goto, H. Lettuce Fresh Weight Prediction
+in a Plant Factory Using Plant Growth Models. IEEE Access, 2024, 12,
+97226-97234. doi: 10.1109/ACCESS.2024.3423455.</p>
+<p>[29] Hou, L.; Zhu, Y.; Wang, M.; Wei, N.; Dong, J.; Tao, Y.; Zhou,
+J.; Zhang, J. Multimodal Data Fusion for Precise Lettuce Phenotype
+Estimation Using Deep Learning Algorithms. Plants, 2024, 13, 3217. doi:
+10.3390/plants13223217.</p>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">उद्धरण</h2><p class="citation-help">किसी शैली पर क्लिक करने से उद्धरण जानकारी कॉपी होती है।</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="APA शैली कॉपी करें">APA कॉपी करें</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="MLA शैली कॉपी करें">MLA कॉपी करें</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="Chicago शैली कॉपी करें">Chicago कॉपी करें</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="IEEE शैली कॉपी करें">IEEE कॉपी करें</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="BibTeX प्रारूप कॉपी करें">BibTeX कॉपी करें</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="RIS प्रारूप कॉपी करें">RIS कॉपी करें</button></div><label for="citation-text" class="citation-preview-label">उद्धरण पूर्वावलोकन · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B. (2026). Artificial intelligence technologies in plant factories over the last decade: Machine vision, nutrient intelligence, control, and digital twins. Preprints.org. https://doi.org/10.20944/preprints202605.0438.v1</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/plant-factory-ai-review-2026/citation.bib" download>BibTeX फ़ाइल</a><a href="/papers/plant-factory-ai-review-2026/citation.ris" download>RIS फ़ाइल</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B. (2026). Artificial intelligence technologies in plant factories over the last decade: Machine vision, nutrient intelligence, control, and digital twins. Preprints.org. https://doi.org/10.20944/preprints202605.0438.v1", "mla": "Ban, Byunghyun. “Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins.” Preprints.org, 2026. Preprint. https://doi.org/10.20944/preprints202605.0438.v1.", "chicago": "Ban, Byunghyun. “Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins.” Preprint, Preprints.org, 2026. https://doi.org/10.20944/preprints202605.0438.v1.", "ieee": "B. Ban, “Artificial intelligence technologies in plant factories over the last decade: Machine vision, nutrient intelligence, control, and digital twins,” Preprints.org, preprint, 2026, doi: 10.20944/preprints202605.0438.v1.", "bibtex": "@misc{ban2026_e928b91deae8,\n  author = {Ban, Byunghyun},\n  title = {{Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins}},\n  year = {2026},\n  doi = {10.20944/preprints202605.0438.v1},\n  url = {https://www.preprints.org/manuscript/202605.0438},\n  note = {Preprint},\n  howpublished = {Preprints.org}\n}", "ris": "TY  - UNPB\nAU  - Ban, Byunghyun\nTI  - Artificial Intelligence Technologies in Plant Factories over the Last Decade: Machine Vision, Nutrient Intelligence, Control, and Digital Twins\nPY  - 2026\nDO  - 10.20944/preprints202605.0438.v1\nUR  - https://www.preprints.org/manuscript/202605.0438\nAB  - Plant factories have evolved from automated cultivation facilities into data-driven crop production systems. Over the last decade, artificial intelligence has been applied to non-destructive crop monitoring, sensor correction, nutrient-solution diagnosis, growth prediction, environmental control, digital twins, and product-level inspection. This review summarizes AI technologies for plant factories, focusing on machine vision, deep learning, nutrient-solution intelligence, reinforcement learning, and digital-twin interfaces. The main argument is that plant-factory AI should not be understood only as image-based phenotyping; practical systems require an integrated intelligence stack connecting visual perception, sensor calibration, nutrient modeling, control, remote operation, and industrial inspection. Remaining challenges include dataset scarcity, model generalization, sensor drift, explainability, energy-aware control, and closed-loop decision-making.\nLA  - en\nM3  - Preprint\nER  -\n"}</script></section><a class="paper-back-link" href="/hi/papers/">← शोधपत्र सूची पर लौटें</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="पूरा पृष्ठ"><a href="/hi/">Byunghyun Ban</a><a href="/hi/media/">प्रसारण और वीडियो</a><a href="/hi/books/">पुस्तकें</a><a href="/hi/lectures/">व्याख्यान और शिक्षण रिकॉर्ड</a><a href="/hi/courses/online/">ऑनलाइन पाठ्यक्रम</a><a href="/hi/courses/offline/">ऑफलाइन प्रशिक्षण पाठ्यक्रम</a><a href="/hi/news/">मीडिया समाचार</a><a href="/hi/papers/">शोधपत्र और अनुसंधान</a><a href="/hi/patents/">पेटेंट</a><a href="/hi/projects/">विकास परियोजनाएँ</a><a href="/hi/activities/">सामाजिक योगदान</a><a href="/hi/memberships/">सदस्यता और पेशेवर गतिविधियाँ</a><a href="/hi/collections/">संग्रह</a><a href="/hi/contact/">व्याख्यान और सहयोग संबंधी पूछताछ</a></nav>
+            <p><a href="/feed.xml">RSS सदस्यता</a> · <a href="/feed.json">JSON Feed</a></p>
+            <p>© 2026 Byunghyun Ban. सर्वाधिकार सुरक्षित।</p>
+            <p>NaNa Lab (व्यवसाय पंजीकरण संख्या: 269-08-02374), प्रतिनिधि Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="ऊपर जाएँ">↑</button>
+</body>
+</html>

@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>A Survey on Awesome Korean NLP Datasets | Byunghyun Ban</title>
+    <meta name="description" content="English based datasets are commonly available from Kaggle, GitHub, or recently published papers. Although benchmark tests with English datasets are sufficient to show off the pe…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="A Survey on Awesome Korean NLP Datasets">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_publication_date" content="2022">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/korean-nlp-datasets-2022/">
+<meta name="citation_conference_title" content="2022 13th International Conference on Information and Communication Technology Convergence (ICTC)">
+<meta name="citation_firstpage" content="1615">
+<meta name="citation_lastpage" content="1620">
+<meta name="citation_doi" content="10.1109/ictc55196.2022.9952930">
+    <link rel="canonical" href="https://bhban.kr/hi/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="hi_IN">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="A Survey on Awesome Korean NLP Datasets | Byunghyun Ban">
+    <meta property="og:description" content="English based datasets are commonly available from Kaggle, GitHub, or recently published papers. Although benchmark tests with English datasets are sufficient to show off the pe…">
+    <meta property="og:url" content="https://bhban.kr/hi/papers/korean-nlp-datasets-2022/">
+    <meta property="og:image" content="https://bhban.kr/src/images/papers/9.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/hi/#website", "url": "https://bhban.kr/hi/", "name": "Byunghyun Ban", "inLanguage": "hi"}, {"@type": "WebPage", "@id": "https://bhban.kr/hi/papers/korean-nlp-datasets-2022/#page", "url": "https://bhban.kr/hi/papers/korean-nlp-datasets-2022/", "name": "A Survey on Awesome Korean NLP Datasets | Byunghyun Ban", "description": "English based datasets are commonly available from Kaggle, GitHub, or recently published papers. Although benchmark tests with English datasets are sufficient to show off the pe…", "inLanguage": "hi", "mainEntity": {"@id": "https://bhban.kr/papers/korean-nlp-datasets-2022/#article"}, "isPartOf": {"@id": "https://bhban.kr/hi/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/korean-nlp-datasets-2022/#article", "url": "https://bhban.kr/papers/korean-nlp-datasets-2022/", "name": "A Survey on Awesome Korean NLP Datasets", "headline": "A Survey on Awesome Korean NLP Datasets", "author": [{"@type": "Person", "name": "Byunghyun Ban"}], "datePublished": "2022", "inLanguage": "en", "abstract": "English based datasets are commonly available from Kaggle, GitHub, or recently published papers. Although benchmark tests with English datasets are sufficient to show off the performances of new models and methods, still a researcher need to train and validate the models on Korean based datasets to produce a technology or product, suitable for Korean processing. This paper introduces 15 popular Korean based NLP datasets with summarized details such as volume, license, repositories, and other research results inspired by the datasets. Also, I provide high-resolution instructions with sample or statistics of datasets. The main characteristics of datasets are presented on a single table to provide a rapid summarization of datasets for researchers.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/korean-nlp-datasets-2022/#page"}, "isPartOf": {"@type": "CreativeWork", "name": "2022 13th International Conference on Information and Communication Technology Convergence (ICTC)"}, "pageStart": "1615", "pageEnd": "1620", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.1109/ictc55196.2022.9952930"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "मुखपृष्ठ", "item": "https://bhban.kr/hi/"}, {"@type": "ListItem", "position": 2, "name": "शोधपत्र", "item": "https://bhban.kr/hi/papers/"}, {"@type": "ListItem", "position": 3, "name": "A Survey on Awesome Korean NLP Datasets", "item": "https://bhban.kr/hi/papers/korean-nlp-datasets-2022/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/korean-nlp-datasets-2022/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/korean-nlp-datasets-2022/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"मेनू खोलें","menuClose":"मेनू बंद करें","submenuExpand":"{label} उपमेनू खोलें","submenuCollapse":"{label} उपमेनू बंद करें","nextSwipeHint":"अंत तक पहुँचने के बाद एक बार और ऊपर स्वाइप करने से आगे जाएँगे।","nextScrollHint":"अंत तक पहुँचने के बाद एक बार और नीचे स्क्रॉल करने से आगे जाएँगे।","lectureResults":"{category} {count} · नवीनतम व्याख्यान पहले","categoryAll":"सभी","categoryCompany":"कंपनियाँ","categoryPublic":"सार्वजनिक संस्थान","categoryEducation":"शिक्षण संस्थान","categoryResearch":"शोध संस्थान","categoryConference":"सम्मेलन","listMedia":"वीडियो","listNews":"मीडिया समाचार","listLectures":"व्याख्यान","listCoursesOnline":"ऑनलाइन पाठ्यक्रम","listCoursesOffline":"ऑफलाइन प्रशिक्षण पाठ्यक्रम","listPapers":"शोधपत्र","listPatents":"पेटेंट","listProjects":"परियोजनाएँ","listActivities":"गतिविधियाँ","listMemberships":"सदस्य गतिविधियाँ","listCollections":"संग्रह","listDonations":"दान रिकॉर्ड","listGeneric":"सूची","listStatus":"{total} में से {visible} दिखाए गए","listMore":"{label} और देखें ({remaining} शेष)","citationCopyLabel":"उद्धरण जानकारी कॉपी करें","citationCopied":"उद्धरण जानकारी कॉपी की गई।","citationError":"उद्धरण जानकारी कॉपी नहीं हो सकी। ब्राउज़र की क्लिपबोर्ड सेटिंग जाँचें।","citationFormatCopied":"{label} उद्धरण जानकारी कॉपी की गई।","citationManualCopy":"उद्धरण चुन लिया गया है। कृपया स्वयं कॉपी करें।","contactLoadError":"संदेश भेजने की सुविधा लोड नहीं हो सकी। थोड़ी देर बाद फिर प्रयास करें।","contactSent":"आपका संदेश प्राप्त हो गया है।","contactError":"त्रुटि हुई। फिर प्रयास करें।","contactSending":"भेजा जा रहा है...","streamRetry":"फिर लोड करें","streamError":"अगली सामग्री लोड नहीं हो सकी। दोबारा प्रयास करें या ऊपर दिए लिंक पर जाएँ।","streamLoading":"{label} की आगे की सामग्री लोड हो रही है।"}</script>
+</head>
+<body data-locale="hi" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+    <nav class="navbar" aria-label="मुख्य मेनू"><div class="navbar-brand"><a href="/hi/" aria-label="Byunghyun Ban का मुखपृष्ठ"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/hi/" class="nav-link nav-main-link" data-nav-page="home">परिचय</a></li><li data-nav-group="media"><a href="/hi/media/" class="nav-link nav-main-link" data-nav-page="media">मीडिया</a></li><li data-nav-group="books"><a href="/hi/books/" class="nav-link nav-main-link" data-nav-page="books">पुस्तकें</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/hi/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">व्याख्यान</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="व्याख्यान उपमेनू खोलें" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="व्याख्यान की श्रेणियाँ"><li><a href="/hi/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">सभी</a></li><li><a href="/hi/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">कंपनियाँ</a></li><li><a href="/hi/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">सार्वजनिक संस्थान</a></li><li><a href="/hi/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">शिक्षण संस्थान</a></li><li><a href="/hi/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">अनुसंधान संस्थान</a></li><li><a href="/hi/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">सम्मेलन</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/hi/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">पाठ्यक्रम</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="Courses उपमेन्यू खोलें" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/hi/courses/online/" data-nav-page="courses-online">ऑनलाइन</a></li><li><a href="/hi/courses/offline/" data-nav-page="courses-offline">ऑफलाइन</a></li></ul></li><li data-nav-group="news"><a href="/hi/news/" class="nav-link nav-main-link" data-nav-page="news">समाचार</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/hi/papers/" class="nav-link active nav-main-link" data-nav-page="papers">अनुसंधान और विकास</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="R&amp;D उपमेनू खोलें" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/hi/papers/" data-nav-page="papers">शोधपत्र</a></li><li><a href="/hi/patents/" data-nav-page="patents">पेटेंट</a></li><li><a href="/hi/projects/" data-nav-page="projects">परियोजनाएँ</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/hi/activities/" class="nav-link nav-main-link" data-nav-page="activities">अन्य</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="ETC उपमेन्यू खोलें" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/hi/activities/" data-nav-page="activities">सामाजिक योगदान</a></li><li><a href="/hi/memberships/" data-nav-page="memberships">सदस्यताएँ</a></li><li><a href="/hi/collections/" data-nav-page="collections">संग्रह</a></li></ul></li><li data-nav-group="contact"><a href="/hi/contact/" class="btn-contact nav-main-link" data-nav-page="contact">संपर्क</a></li></ul><details class="language-switcher"><summary aria-label="भाषा चुनें"><span aria-hidden="true">🌐</span> <span>हिन्दी</span></summary><nav class="language-options" aria-label="भाषा चुनें"><a href="/papers/korean-nlp-datasets-2022/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/korean-nlp-datasets-2022/" hreflang="en" lang="en">English</a><a href="/zh/papers/korean-nlp-datasets-2022/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/papers/korean-nlp-datasets-2022/" hreflang="hi" lang="hi" aria-current="true">हिन्दी</a><a href="/es/papers/korean-nlp-datasets-2022/" hreflang="es" lang="es">Español</a><a href="/ar/papers/korean-nlp-datasets-2022/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/korean-nlp-datasets-2022/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/korean-nlp-datasets-2022/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/papers/korean-nlp-datasets-2022/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="मेनू खोलें">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="वर्तमान स्थान"><a href="/hi/">मुखपृष्ठ</a><span aria-hidden="true">/</span><a href="/hi/papers/">शोधपत्र</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-9"><header><p class="paper-kind">प्रकाशित शोध</p><h1 id="paper-title" lang="en">A Survey on Awesome Korean NLP Datasets</h1><p class="paper-authors">Byunghyun Ban</p><p class="paper-venue">2022 · 2022 13th International Conference on Information and Communication Technology Convergence (ICTC) · 1615–1620</p><nav class="paper-reader-jumps" aria-label="शोधपत्र देखें"><a href="#abstract-heading">सारांश</a><a href="#full-text">पूरा पाठ</a><a href="#citation-heading">उद्धृत करें</a></nav><div class="gitIcons">
+                                <a href="/src/paperPdf/9.pdf" target="_blank" rel="noreferrer" download aria-label="PDF डाउनलोड करें" title="PDF डाउनलोड करें"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg></a>
+                                <a href="https://ieeexplore.ieee.org/document/9952930" target="_blank" rel="noreferrer" aria-label="मूल शोधपत्र की जानकारी" title="मूल शोधपत्र की जानकारी"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg></a>
+                                <span class="citation"
+                                    data-citation='B. Ban, "A Survey on Awesome Korean NLP Datasets," 2022 13th International Conference on Information and Communication Technology Convergence (ICTC), 2022, pp. 1615-1620, doi: 10.1109/ICTC55196.2022.9952930.' aria-label="उद्धरण जानकारी कॉपी करें" title="उद्धरण जानकारी कॉपी करें"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">उद्धृत करें</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>विषय सूची · Contents</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-9-introduction">Introduction</a></li><li class="toc-level-2"><a href="#paper-9-related-works">Related Works</a></li><li class="toc-level-2"><a href="#paper-9-survey">Survey</a></li><li class="toc-level-3"><a href="#paper-9-chatbot_data">Chatbot_data</a></li><li class="toc-level-3"><a href="#paper-9-clovacall">ClovaCall</a></li><li class="toc-level-3"><a href="#paper-9-korquad">KorQuAD</a></li><li class="toc-level-3"><a href="#paper-9-song-ner">Song-NER</a></li><li class="toc-level-3"><a href="#paper-9-kmounlp-ner">KMOUNLP-NER</a></li><li class="toc-level-3"><a href="#paper-9-sci-news-sum-kr-50">Sci-News-Sum-Kr-50</a></li><li class="toc-level-3"><a href="#paper-9-sae4k">SAE4K</a></li><li class="toc-level-3"><a href="#paper-9-klue">KLUE</a></li><li class="toc-level-3"><a href="#paper-9-kornlu">KorNLU</a></li><li class="toc-level-3"><a href="#paper-9-parakqc">ParaKQC</a></li><li class="toc-level-3"><a href="#paper-9-nsmc">NSMC</a></li><li class="toc-level-3"><a href="#paper-9-toxic-comment">Toxic Comment</a></li><li class="toc-level-3"><a href="#paper-9-khatespeech">KHateSpeech</a></li><li class="toc-level-3"><a href="#paper-9-i4k">3i4K</a></li><li class="toc-level-3"><a href="#paper-9-kaist-corpus">KAIST Corpus</a></li><li class="toc-level-2"><a href="#paper-9-discussion">Discussion</a></li><li class="toc-level-2"><a href="#paper-9-conclusion">Conclusion</a></li><li class="toc-level-2"><a href="#paper-9-acknowledgment">Acknowledgment</a></li><li class="toc-level-2"><a href="#paper-9-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">सारांश</h2><p class="abstract" lang="en">English based datasets are commonly available from Kaggle, GitHub, or recently published papers. Although benchmark tests with English datasets are sufficient to show off the performances of new models and methods, still a researcher need to train and validate the models on Korean based datasets to produce a technology or product, suitable for Korean processing. This paper introduces 15 popular Korean based NLP datasets with summarized details such as volume, license, repositories, and other research results inspired by the datasets. Also, I provide high-resolution instructions with sample or statistics of datasets. The main characteristics of datasets are presented on a single table to provide a rapid summarization of datasets for researchers.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords">Keywords—natural language, NLP, Korean, dataset</p><h2 id="paper-9-introduction"><strong>Introduction</strong></h2>
+<p>Natural language processing, NLP, with various neural network models
+has recently received a large amount of interest from both linguists and
+AI engineers. NLP has benefited from LSTM [1-3] and RNN models, due to
+their high performances on sequential data.</p>
+<p>Although a CNN has hierarchical structures, YN Dauphin, et al. showed
+that application of CNN on natural languages outperformed traditional
+recurrent models [4]. Recent approaches on natural language processing
+utilize transformer architectures for language processing [5-8].</p>
+<p>Noble approaches and brand-new applications inspired the researchers
+all around the world, to reproduce such high-performance models trained
+with various languages. For example, H Zhuang, et al. [9] and Y Cui, et
+al. [10] introduced Chinese based model, and M Al-Smadi, et al. [11] and
+S Romeo, et al. [12] showed models for Arabic natural language. Also,
+various Korean based NLP models have been introduced on international
+conferences [13-16] and Journals [17-18].</p>
+<p>Researchers, who are working with non-English NLP technologies or
+multilanguage models, are highly interested in datasets in different
+languages. Even for researchers whose native language is a low-share
+language, the craving for datasets in their mother tongue langue would
+be much greater. The same goes for the industrial demands. NLP-related
+product holders are trying to research and develop models in official
+language of their country. Therefore, natural language processing
+researchers in Korea are very interested in Korean based NLP datasets.
+Not only academic institutions [19-20, 25] and individual researchers
+[21-22], but also large corporations [14, 23-24] are actively producing
+Korean based natural language datasets.</p>
+<h2 id="paper-9-related-works"><strong>Related Works</strong></h2>
+<p>Simon Ruffieux, et al. provided summarized details of human pose
+estimation datasets to introduce various useful resources to researchers
+[49]. They wanted to reduce the time which other researchers spend for
+exploring useful datasets, and to provide useful tips for dataset
+construction.</p>
+<p>Although there are several surveys on NLP technologies and algorithm
+themselves [26-28] or survey on Korean language processing technologies
+[29], an academic paper or comprehensive survey on Korean-based NLP
+dataset is not so many.</p>
+<p>Cho, Won Ik, et al. established <a href="https://github.com/ko-nlp/Open-korean-corpora" rel="noopener noreferrer">Open Korean
+Corpora</a> [40] to provide assorted Korean NLP datasets. They provide
+the summarized detail of 29 different datasets from text parsing and
+tagging area, sentence similarity, sentence classification and QA,
+parallel corpora, multilingual corpora, and speech corpora. They
+summarized the information of each dataset into a short paragraph of one
+or two sentences. Their work is suitable for rapid and brief exploration
+among various datasets. But their work is insufficient to present a
+rationale for selecting a dataset suitable for the research purpose.</p>
+<p>Yeongsook Song published a GitHub Repository named “<a href="https://github.com/songys/AwesomeKorean_Data" rel="noopener noreferrer">AwesomeKorean_data</a>”
+to provide information on various Korean datasets [30]. She introduced
+31 datasets with academic references, and 9 datasets by individual
+researchers, and 5 government driven datasets. AwesomeKorean_data
+provides summarized detailed of datasets in a table which is easy to
+read quickly. It also provides hyperlink to the original webpage of each
+dataset. However, it categorized the license of datasets into too simple
+format (commercially available or not) so a researcher should figure out
+additional information on restrictions related to indication of same
+origin and impossibility of reprocessing and manipulations. Also, it
+does not provide published applications of datasets.</p>
+<h2 id="paper-9-survey"><strong>Survey</strong></h2>
+<p>I selected 15 datasets which are famous among Korean research
+communities. Summarization over whole datasets are presented on Table 1.
+The table shows the name, category, domain and task, size, license,
+author, year, citation score and related research articles. This section
+also provides details of each dataset. For example, additional
+information such as repository URL, format, statistics of dataset or
+data sample, and application of the data.</p>
+<figure class="paper-figure" id="paper-9-table-summary"><img alt="TABLE II. Dataset Summarization" decoding="async" loading="lazy" src="/src/images/paper-body/paper-9/figure-1.png"/><figcaption>TABLE II. Dataset Summarization</figcaption></figure>
+<h3 id="paper-9-chatbot_data"><strong>Chatbot_data</strong></h3>
+<ol start="2" type="I">
+<li><p>Chatbot_data Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-1" style="width:52%;">
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 39%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Conversation (text)</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">11,876 Q&amp;A pairs</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">CSV</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">MIT</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/songys/Chatbot_data" rel="noopener noreferrer">https://github.com/songys/Chatbot_data</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Song, Youngsook</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Song, Youngsook, Chatbot_data.
+2018. Available at https://github.com/songys/Chatbot_data.</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="3" type="I">
+<li><p>Chatbot_data Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-2" style="width:52%;">
+<colgroup>
+<col style="width: 42%"/>
+<col style="width: 9%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Q&amp;A data pair sample</strong></th>
+<th style="text-align: center;"><strong>Label</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Q1. 12시 땡!</p>
+<p>A1. 하루가 또 가네요.</p></td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td><p>Q2. 3박 4일 정도 놀러가고 싶다</p>
+<p>A2. 여행은 언제나 좋죠</p></td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td><p>Q3. PPL 심하네</p>
+<p>A3. 눈살이 찌푸려지죠.</p></td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table></div>
+<p>Chatbot_data was published by Youngsook Song in 2018 [31]. The
+answers were composed of sentences that could comfort a person who has
+gone through a breakup with a lover. Answer sentences are labeled into 3
+classes; 0 for daily life dialogue, 1 for negative (breakup), and 2 for
+positive (love).</p>
+<p>This dataset has MIT license, which allows commercial use,
+modification, distribution and private use. However, the author is not
+responsible for any liability or warranty.</p>
+<p>Hyeonseo Yun has published a paper on transformer-based AI model to
+detect unethical sentences from given text data, with this dataset
+[39].</p>
+<h3 id="paper-9-clovacall"><strong>ClovaCall</strong></h3>
+<ol start="4" type="I">
+<li><p>ClovaCall Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-3" style="width:52%;">
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 41%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Conversation (Speech)</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;"><p>81,222 samples</p>
+<p>125 hours of raw data</p>
+<p>67 hours of clean data</p></td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">WAV &amp; JSON</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">Noncommercial use for AI Research
+only</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/clovaai/ClovaCall" rel="noopener noreferrer">https://github.com/clovaai/ClovaCall</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Jung-Woo Ha, et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Ha, Jung-Woo, et al.
+“ClovaCall: Korean goal-oriented dialog speech corpus for automatic
+speech recognition of contact centers.” arXiv preprint
+arXiv:2004.09367 (2020).</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="5" type="I">
+<li><p>ClovaCall Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-4" style="width:52%;">
+<colgroup>
+<col style="width: 51%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>ClovaCall data sample</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>[</p>
+<p>{</p>
+<p>“wav”: “42_0603_748_0_03319_00.wav”,</p>
+<p>“text”: “단체 할인이 가능한 시간대가 따로 있나요?”,</p>
+<p>“speaker_id” : “03319”</p>
+<p>},</p>
+<p>…,</p>
+<p>{</p>
+<p>“wav”: “42_0610_778_0_03607_01.wav”,</p>
+<p>“text”: "애기들이 놀만한 놀이방이 따로 있나요?",</p>
+<p>"speaker_id": "03607"</p>
+<p>}</p>
+<p>]</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>ClovaCall was provided by Jung-Woo Ha, et al. in 2020 [23]. It is a
+large scale Korean speech corpus dataset gathered from recorded phone
+calls, from more than 11,000 people under a given situation: restaurant
+reservation. License-free ASR related datasets are old fashioned and
+most of them are established with English. Therefore, the authors
+constructed a license-free Korean phone call dataset with baseline
+codes.</p>
+<p>Won Ik Cho, et al. included ClovaCall dataset in their work on Open
+Korean Corpora [40]. Jihwan Bang, et al. followed a variant version of
+LAS model proposed on ClovaCall paper [50]. As ClovaCall is recently
+released, a research article using ClovaCall for training or model
+validation could not be found yet. However, many recent works have
+mentioned ClovaCall as related recent works [51-54].</p>
+<h3 id="paper-9-korquad"><strong>KorQuAD</strong></h3>
+<ol start="6" type="I">
+<li><p>KorQuAD Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-5" style="width:52%;">
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 39%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Question Answering</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">102,960 Pairs</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">JSON</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">CC BY-ND 2.0 KR</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://korquad.github.io/" rel="noopener noreferrer">https://korquad.github.io/</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Seungyoung Lim, et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Lim, Seungyoung, Myungji Kim,
+and Jooyoul Lee. "KorQuAD1.0: Korean QA dataset for machine reading
+comprehension." arXiv preprint arXiv:1909.07005 (2019).</td>
+</tr>
+</tbody>
+</table></div>
+<p>KorQuAD dataset was published by Seungyoung Lim in 2019 [32]. This
+dataset is inspired by SQuAD [55], a reading comprehension based
+question answering dataset driven from Wikipedia articles. It is the
+largest Korean question answering dataset. The authors drove data from
+Wikipedia.</p>
+<ol start="7" type="I">
+<li><p>KorQuAD Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-6" style="width:51%;">
+<colgroup>
+<col style="width: 36%"/>
+<col style="width: 2%"/>
+<col style="width: 12%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2"><strong>KorQuAD Data Sample</strong></th>
+<th style="text-align: center;"><strong>Class</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Q. <u>외국인들을 위해 먹는 샘물이 일시 판매</u>되었던 년도는
+언제일까?</p>
+<p>A. (전략) 1988년 서울 올림픽 무렵 <u>외국인들을 위하여 일시
+판매</u>를 허용했던 적이 있으나, 다시 판매를 제한하였다. (후략)</p></td>
+<td colspan="2" style="text-align: center;"><p>Short Answer/</p>
+<p>Syntax Variation</p></td>
+</tr>
+<tr>
+<td colspan="2"><p>Q. 2009년 시즌 도중 <u>경질</u>된 지바 롯데의
+감독은?</p>
+<p>A. (전략) 시즌 도중에 바비 밸런타인 감독의 <u>해임</u>이 발표되자
+일부 팬들은 (후략)</p></td>
+<td style="text-align: center;"><p>Short Answer/</p>
+<p>Vocabulary</p>
+<p>Variation</p></td>
+</tr>
+<tr>
+<td colspan="2"><p>Q. 피터슨과 <u>노먼 그란츠</u>의 관계는 어떤 과정을
+통해 형성되었는가?</p>
+<p>Title. 오스카 피터슨 - #생애 - <u>#노먼 그란츠</u></p></td>
+<td style="text-align: center;"><p>Long Answer/</p>
+<p>Subheading</p>
+<p>Duplication</p></td>
+</tr>
+<tr>
+<td colspan="2"><p>Q. 이경직의 <u>가족 관계</u>는 어떻게 이루어져
+있는가?</p>
+<p>Title. 이경직 - <u>#가계</u></p></td>
+<td style="text-align: center;"><p>Long Answer/</p>
+<p>Subheading</p>
+<p>Variation</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>KorQuAD is actively applied on Korean NLP conferences. Dongheon Lee,
+et al. applied KorQuAD for benchmark test of reading comprehension model
+in 2019 [56]. Minho Kim, et al. has developed a machine reading
+comprehension-based question and answering system and applied KorQuAD
+for performance test in 2020 [57]. Seohyung Jeon, et al. applied KorQuAD
+dataset on BERT-based multilingual model for machine reading
+comprehension task in 2020 [58].</p>
+<h3 id="paper-9-song-ner"><strong>Song-NER</strong></h3>
+<ol start="8" type="I">
+<li><p>Song-NER Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-7" style="width:52%;">
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 39%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Named Entity Recognition</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;"><p>DT 272 LG 29,799</p>
+<p>PS 11,354 TI 48</p></td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">TSV</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">CC BY-SA 2.0</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/songys/entity" rel="noopener noreferrer">https://github.com/songys/entity</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Park, Hyewoong and Song, Youngsook</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">박혜웅, and 송영숙. "음절
+기반의 CNN을 이용한 개체명 인식." 한국어정보학회 학술대회 (2017):
+330-332.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Song_NER dataset was established by Hyewoong Park and Yeongsook Song
+in 2017 [33]. It consists of 4 categorical corpus; date(DT),
+location(LG), personal name(PS), time(TI). This dataset could be applied
+for named entity recognition model for chatbot system.</p>
+<ol start="9" type="I">
+<li><p>Song-NER Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-8" style="width:52%;">
+<colgroup>
+<col style="width: 41%"/>
+<col style="width: 10%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Corpus samples</strong></th>
+<th style="text-align: center;"><strong>Category</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가윗날, 가을, 가을밤, 가을봄, 가을철, 간밤, 개동</td>
+<td style="text-align: center;">DT</td>
+</tr>
+<tr>
+<td>고양, 광명, 광주, 구리, 구미, 군산, 군포, 김포</td>
+<td style="text-align: center;">LC</td>
+</tr>
+<tr>
+<td>가규, 가도, 가밀, 가사도, 가의, 가중명, 가충</td>
+<td style="text-align: center;">PS</td>
+</tr>
+<tr>
+<td>간밤, 그날밤, 그밤, 긴밤, 날낮, 날밤, 낮, 대낮</td>
+<td style="text-align: center;">TI</td>
+</tr>
+</tbody>
+</table></div>
+<p>A chatbot model trained with Song_NER could perform information
+extraction from user’s message. For example, a sentence “내일 저녁 7시에
+이태원 파스타집 5명 예약해줘 (Please make a reservation for 5 people at
+the pasta restaurant in Itaewon tomorrow at 7pm)” could processed as
+below;</p>
+<p>DT : tomorrow</p>
+<p>LC : Itaewon</p>
+<p>PS : 5 people</p>
+<p>TI : 7pm.</p>
+<p>Hyunjoong Kim, et al. has included this dataset on Korpora in 2019
+[42].</p>
+<h3 id="paper-9-kmounlp-ner"><strong>KMOUNLP-NER</strong></h3>
+<ol start="10" type="I">
+<li><p>KMOUNLP-NER Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-9" style="width:52%;">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 38%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Named Entity Recognition</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">23,964 corpuses</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">TEXT</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">Noncommercial Research Only</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/kmounlp/NER" rel="noopener noreferrer">https://github.com/kmounlp/NER</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Cheon, Minah</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">천민아, 다중 생성 단위의 관계
+점수를 이용한 학습 말뭉치 생성: 개체명 말뭉치를 중심으로, 한국해양대교
+대학원 컴퓨터공학과, 박사학위논문: 2021년 2월.</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="11" type="I">
+<li><p>KMOUNLP-NER Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-10" style="width:52%;">
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="4"><strong>Tokenized sentence sample</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4"><p>## 사라예보여인 이스라엘 정착</p>
+<p>## &lt;사라예보: LOC&gt;여인 &lt;이스라엘: ORG&gt; 정착</p></td>
+</tr>
+<tr>
+<td style="text-align: center;">사라예보</td>
+<td style="text-align: center;">사라예보</td>
+<td style="text-align: center;">NNP</td>
+<td style="text-align: center;">B-LOC</td>
+</tr>
+<tr>
+<td style="text-align: center;">여인</td>
+<td style="text-align: center;">여인</td>
+<td style="text-align: center;">NNG</td>
+<td style="text-align: center;">O</td>
+</tr>
+<tr>
+<td style="text-align: center;">_</td>
+<td style="text-align: center;">_</td>
+<td style="text-align: center;">_</td>
+<td style="text-align: center;">O</td>
+</tr>
+<tr>
+<td style="text-align: center;">이스라엘</td>
+<td style="text-align: center;">이스라엘</td>
+<td style="text-align: center;">NNP</td>
+<td style="text-align: center;">B-ORG</td>
+</tr>
+<tr>
+<td style="text-align: center;">_</td>
+<td style="text-align: center;">_</td>
+<td style="text-align: center;">_</td>
+<td style="text-align: center;">O</td>
+</tr>
+<tr>
+<td style="text-align: center;">정착</td>
+<td style="text-align: center;">정착</td>
+<td style="text-align: center;">NNG</td>
+<td style="text-align: center;">O</td>
+</tr>
+</tbody>
+</table></div>
+<p>KMOUNLP-NER was openly provided at GitHub since 2016, and was
+officially published by Minah Cheon in 2021 [20]. Her paper proposed a
+criteria and method for Korean sentence tokenization. KMOUNLP-NER
+dataset was processed with the tokenization method on Korean sentences
+from various resources such as news articles.</p>
+<p>Won Ik Cho, et al. cited KMOUNLP-NER on Open Korean Corpora in 2020
+[40]. So-Yeop Yoo and Jeong Ok-Ran applied BERT and knowledge graph
+method for Korean contextual information extraction, trained with
+KMOUNLP-NER for named entity recognition in 2020 [43]. Yeon-SOO You and
+Hyuk-Ro Park also used corpuses from this dataset to establish
+syllable-based Korean NER model [59]. The number of citations of
+KMOUNLP-NER is underestimated because the author has opened dataset for
+2 years without any citation request.</p>
+<h3 id="paper-9-sci-news-sum-kr-50"><strong>Sci-News-Sum-Kr-50</strong></h3>
+<ol start="12" type="I">
+<li><p>Sci-News-Sum-Kr-50 Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-11" style="width:52%;">
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 41%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Text Summarization</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">50 articles</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">JSON</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">Noncommercial Research only</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/theeluwin/sci-news-sum-kr-50" rel="noopener noreferrer">https://github.com/theeluwin/sci-news-sum-kr-50</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Seol, Jinsuk and Lee, Sang-gu</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">설진석, 이상구. "lexrankr:
+LexRank 기반 한국어 다중 문서 요약." 한국정보과학회
+학술발표논문집 (2016): 458-460.</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="13" type="I">
+<li><p>Sci-News-Sum-Kr-50 Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-12" style="width:52%;">
+<colgroup>
+<col style="width: 51%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Data JSON structure</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>{</p>
+<p>'title': "Title of the article",</p>
+<p>'source': "Resource URL",</p>
+<p>'slug': "can-be-used-as-unique-id",</p>
+<p>'length': 23,</p>
+<p>'summaries': [0, 1, 4, 7],</p>
+<p>'sentences': [</p>
+<p>"Sentence 1",</p>
+<p>"Sentence 2",</p>
+<p>...</p>
+<p>]</p>
+<p>}</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>Sci-News-Sum-Kr-50 dataset was proposed by Jinsuk Seol and Sang-gu
+Lee in 2016 [34]. They collected 50 news articles from IT and Science
+section of news curation service. Each article is attached with
+human-written summarization. As copyright of each raw article belongs to
+the press, this dataset is not available for commercial use. Although
+the size of this dataset is small, the reliability of this dataset is
+quite high because the summarized sentences are written by human,
+without any augmentation algorithm. This dataset was enlisted on Open
+Korean Corpora [40].</p>
+<h3 id="paper-9-sae4k"><strong>SAE4K</strong></h3>
+<ol start="14" type="I">
+<li><p>SAE4K Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-13" style="width:52%;">
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 41%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Text Summarization</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">30,837 raw and 50,837 augmented pairs</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">Text</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/warnikchow/sae4k" rel="noopener noreferrer">https://github.com/warnikchow/sae4k</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Cho, Won Ik, et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Cho, Won Ik, et al. "Discourse
+component to sentence (DC2S): An efficient human-aided construction of
+paraphrase and sentence similarity dataset." Proceedings of the 12th
+Language Resources and Evaluation Conference. 2020.</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="15" type="I">
+<li><p>SAE4K Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-14" style="width:52%;">
+<colgroup>
+<col style="width: 42%"/>
+<col style="width: 9%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Sample data pairs (original / summary)</strong></th>
+<th style="text-align: center;"><strong>Label</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>그 외에 다른 물품은 없나요</td>
+<td rowspan="2" style="text-align: center;">0</td>
+</tr>
+<tr>
+<td># 다른 물품 여부</td>
+</tr>
+<tr>
+<td>택시를 타는 것이 빠를까 지하철을 타는 것이 빠를까</td>
+<td rowspan="2" style="text-align: center;">1</td>
+</tr>
+<tr>
+<td># 택시와 지하철 중 빠른 것</td>
+</tr>
+<tr>
+<td>이번주 전체적인 일기예보가 어떻게 되니</td>
+<td rowspan="2" style="text-align: center;">2</td>
+</tr>
+<tr>
+<td># 이번주 일기예보</td>
+</tr>
+<tr>
+<td>후기 작성시 사용하셔도 됩니다. 악평 쓰실거면 사용하지마세요</td>
+<td rowspan="2" style="text-align: center;">3</td>
+</tr>
+<tr>
+<td># 후기 작성시 악평 쓰지 않기</td>
+</tr>
+<tr>
+<td>실적이 좋지 않으면 명예퇴직 일 순위라는 걸 명심해</td>
+<td rowspan="2" style="text-align: center;">4</td>
+</tr>
+<tr>
+<td># 실적 내기</td>
+</tr>
+<tr>
+<td>총무과에 묻지 말고 관리과에 물어보세요</td>
+<td rowspan="2" style="text-align: center;">5</td>
+</tr>
+<tr>
+<td># 관리과에 물어보기</td>
+</tr>
+</tbody>
+</table></div>
+<p>SAE4K dataset was published by Won Ik Cho, et al. in 2019 [36]. They
+opened SAE4K_v1 dataset with 30,837 raw sentence pairs and SAE4K_v2
+dataset with 50,837 augmented data. Each data pair has original sentence
+and extracted structured argument with sentence type label. The labels
+for sentence categorization and dataset statistics are described on
+Table XVI. This dataset was enlisted on Open Korean Corpora [40].</p>
+<ol start="16" type="I">
+<li><p>Labels of SAE4K_v1</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-15" style="width:52%;">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 8%"/>
+<col style="width: 9%"/>
+<col style="width: 9%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Description</strong></th>
+<th style="text-align: center;"><strong>Label</strong></th>
+<th style="text-align: center;"><strong>Volume</strong></th>
+<th style="text-align: center;"><strong>Portion</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Question</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><p>Yes / No</p>
+<p>Alternative</p>
+<p>Wh-</p></td>
+<td style="text-align: center;"><p>0</p>
+<p>1</p>
+<p>2</p></td>
+<td style="text-align: center;"><p>5,718</p>
+<p>227</p>
+<p>11,924</p></td>
+<td style="text-align: center;"><p>31.99%</p>
+<p>1.27%</p>
+<p>66.73%</p></td>
+</tr>
+<tr>
+<td><strong>Commands</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><p>Prohibition</p>
+<p>Requirement</p>
+<p>Strong requirement</p></td>
+<td style="text-align: center;"><p>3</p>
+<p>4</p>
+<p>5</p></td>
+<td style="text-align: center;"><p>477</p>
+<p>12,369</p>
+<p>122</p></td>
+<td style="text-align: center;"><p>3.67%</p>
+<p>95.38%</p>
+<p>0.94%</p></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-9-klue"><strong>KLUE</strong></h3>
+<ol start="17" type="I">
+<li><p>KLUE Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-16" style="width:52%;">
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 41%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Language Understanding Evaluation</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">8 Datasets, total 239k samples</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/KLUE-benchmark/KLUE" rel="noopener noreferrer">https://github.com/KLUE-benchmark/KLUE</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Park, Sungjoon, et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Park, Sungjoon, et al. (2021).
+KLUE: Korean Language Understanding Evaluation. In Thirty-fifth
+Conference on Neural Information Processing Systems Datasets and
+Benchmarks Track (Round 2).</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="18" type="I">
+<li><p>KLUE Subdataset Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-17" style="width:52%;">
+<colgroup>
+<col style="width: 12%"/>
+<col style="width: 22%"/>
+<col style="width: 17%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Name</strong></th>
+<th style="text-align: center;"><strong>Type</strong></th>
+<th style="text-align: center;"><p><strong>Size</strong></p>
+<p><strong>(Train/Dev/Test)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">KLUE-TC (YNAT)</td>
+<td style="text-align: center;">Topic Classification</td>
+<td style="text-align: center;">45k / 9k / 9k</td>
+</tr>
+<tr>
+<td style="text-align: center;">KLUE-STS</td>
+<td style="text-align: center;">Semantic Textual Similarity</td>
+<td style="text-align: center;">11k / 0.5k / 1k</td>
+</tr>
+<tr>
+<td style="text-align: center;">KLUE-NLI</td>
+<td style="text-align: center;">Natural Language Inference</td>
+<td style="text-align: center;">25k / 3k / 3k</td>
+</tr>
+<tr>
+<td style="text-align: center;">KLUE-NER</td>
+<td style="text-align: center;">Named Entity Recognition</td>
+<td style="text-align: center;">21k / 5k / 5k</td>
+</tr>
+<tr>
+<td style="text-align: center;">KLUE-RE</td>
+<td style="text-align: center;">Relation Extraction</td>
+<td style="text-align: center;">32k / 8k / 8k</td>
+</tr>
+<tr>
+<td style="text-align: center;">KLUE-DP</td>
+<td style="text-align: center;">Dependency Parsing</td>
+<td style="text-align: center;">10k / 2k / 2.5k</td>
+</tr>
+<tr>
+<td style="text-align: center;">KLUE-MRC</td>
+<td style="text-align: center;">Machine Reading Comprehension</td>
+<td style="text-align: center;">12k / 8k / 9k</td>
+</tr>
+<tr>
+<td style="text-align: center;">KLUE-DST (WoS)</td>
+<td style="text-align: center;">Dialogue State Tracking</td>
+<td style="text-align: center;">8k / 1k / 1k</td>
+</tr>
+</tbody>
+</table></div>
+<p>KLUE is the first Korean-based natural language understanding
+evaluation dataset. KLUE dataset was created through collaboration among
+academia and industry, and published by Sungjoon Park, et al. in
+2021.</p>
+<p>KLUE consists of 8 different large datasets for various NLP tasks.
+KLUE-TC is a topic classification dataset with 63k data, driven from
+news headlines. KLUE-STS dataset stands for semantic textual similarity
+task with 12.5k samples, whose source are news, review and query.
+KLUE-NLI dataset has 31k samples for natural language inference task,
+from news, Wikipedia and review. KLUE-NER is a collection of 31k named
+entity recognition data constructed with news and review articles.
+KLUE-RE is a relation extraction dataset with 48k datasets driven from
+Wikipedia and news articles. KLUE-DP dataset consists of 14.5k news and
+review data for dependency parsing task. KLUE-MRC is a dataset for
+machine reading comprehension task, with 29k data from Wikipedia and
+news articles. And the last dataset, KLUE-DST, is a dialogue state
+tracking dataset with 10k data driven from task oriented dialogue.</p>
+<p>As KLUE provides an amount benchmark data for various NLP tasks, it
+would provide a persuasive criteria for performance measurement on
+Korean language processing research area.</p>
+<p>Myeongjun Jang, et al. has applied KLUE-NLI and KLUE-STS on natural
+language inference and semantic text similarity experiment for analysis
+on language understanding models in 2021 [60]. Boseop Kim, et al. has
+shown the effect and efficiency of large-scale language models by
+experiments on KLUE-TC and KLUE-STS datasets in 2021 [61].</p>
+<h3 id="paper-9-kornlu"><strong>KorNLU</strong></h3>
+<ol start="19" type="I">
+<li><p>KorNLU Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-18" style="width:52%;">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 38%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;"><p>Natural Language Inference,</p>
+<p>Semantic Textual Similarity</p></td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">950k data for NLI, 8.6k data for STS</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">TSV</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><p><a href="https://github.com/kakaobrain/KorNLUDatasets" rel="noopener noreferrer">https://github.com/kakaobrain/</a></p>
+<p><a href="https://github.com/kakaobrain/KorNLUDatasets" rel="noopener noreferrer">KorNLUDatasets</a></p></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Ham, Jiyeon, et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Ham, Jiyeon, et al. "KorNLI
+and KorSTS: New Benchmark Datasets for Korean Natural Language
+Understanding." arXiv preprint arXiv:2004.03289 (2020).</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="20" type="I">
+<li><p>KorNLI Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-19" style="width:52%;">
+<colgroup>
+<col style="width: 38%"/>
+<col style="width: 13%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>KorNLI data example</strong></th>
+<th style="text-align: center;"><strong>Label</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>P: 저는, 그냥 알아내려고 거기 있었어요.</p>
+<p>H: 이해하려고 노력하고 있었어요.</p></td>
+<td style="text-align: center;">Entailment</td>
+</tr>
+<tr>
+<td><p>P: 저는, 그냥 알아내려고 거기 있었어요.</p>
+<p>H: 나는 처음부터 그것을 잘 이해했다.</p></td>
+<td style="text-align: center;">Contradiction</td>
+</tr>
+<tr>
+<td><p>P: 저는, 그냥 알아내려고 거기 있었어요.</p>
+<p>H: 나는 돈이 어디로 갔는지 이해하려고 했어요.</p></td>
+<td style="text-align: center;">Neutral</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="21" type="I">
+<li><p>KorSTS Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-20" style="width:52%;">
+<colgroup>
+<col style="width: 42%"/>
+<col style="width: 9%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>KorSTS data example</strong></th>
+<th style="text-align: center;"><strong>Label</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>S1. 한 남자가 음식을 먹고 있다.</p>
+<p>S2. 한 남자가 뭔가를 먹고 있다.</p></td>
+<td style="text-align: center;">4.2</td>
+</tr>
+<tr>
+<td><p>S1. 한 비행기가 착륙하고 있다.</p>
+<p>S2. 애니메이션화된 비행기 하나가 착륙하고 있다.</p></td>
+<td style="text-align: center;">2.8</td>
+</tr>
+<tr>
+<td><p>S1. 한 여성이 고기를 요리하고 있다.</p>
+<p>S2. 한 남자가 말하고 있다.</p></td>
+<td style="text-align: center;">0.0</td>
+</tr>
+</tbody>
+</table></div>
+<p>KorNLU was established by Jiyeon Ham, et al. in 2020 [14]. It
+consists of two sub-datasets; KorNLI for natural language inference and
+KorSTS for semantic textual similarity.</p>
+<p>KorNLI has 94k data for train, 2.5k data for development and 5k data
+for test, driven from SNLI [62], MNLI [63], and XNLI [64]. This dataset
+classifies the relationship between a pair of sentences into 3 classes:
+entailment, contradiction, neutral. KorSTS has 5.7k training data, 1.5k
+development data and 1.4 test data, and the source of KorSTS dataset is
+STS-B [65]. KorSTS provides a score between 0(dissimilar) and
+5(equivalent) for each pair of sentences.</p>
+<p>Myeongjun Jang applied KorNLI for experiments on language
+understanding models in 2021 [60]. Hyunjae Lee proposed a lite BERT
+model for Korean understanding with benchmark performance experiment on
+KorNLI and KorSTS [45]. Yongmin Yoo applied KorSTS for sentence
+similarity measurement in 2021 [66].</p>
+<h3 id="paper-9-parakqc"><strong>ParaKQC</strong></h3>
+<ol start="22" type="I">
+<li><p>ParaKQC Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-21" style="width:52%;">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 38%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Semantic Textual Similarity</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">545k utterances</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">Text</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/warnikchow/paraKQC" rel="noopener noreferrer">https://github.com/warnikchow/paraKQC</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Cho, Won Ik, et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Cho, Won Ik, et al. "Discourse
+component to sentence (DC2S): An efficient human-aided construction of
+paraphrase and sentence similarity dataset." Proceedings of the 12th
+Language Resources and Evaluation Conference. 2020.</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="23" type="I">
+<li><p>ParaKQC Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-22" style="width:52%;">
+<colgroup>
+<col style="width: 52%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Sentence set examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>S1. 메일을 다 비울까 아니면 안읽은 것만 지울까?</p>
+<p>S2. 메일 중에 안읽은 것만 지울까? 다 지울까?</p></td>
+</tr>
+<tr>
+<td><p>S1. 나한테 집안 습도 조정할 때 어떻게 해야하는 지 좀
+알려줄래?</p>
+<p>S2. 저기요 집안 습도 좀 조정할 수 있는 방법 좀 알려주세요</p></td>
+</tr>
+<tr>
+<td><p>S3. 오후 말고 밤에는 거실 무드등만 켜놓자</p>
+<p>S3. 아침에 말고 밤에 거실 무드등만 켜놓자</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>ParaKQC is a dataset for parallel Korean questions and commands,
+proposed by Won Ik Cho, et al. in 2020 [36]. It contains 10k utterances
+that consist with 1,000 sets of 10 similar sentences, provided with an
+augmentation script which make up whole corpus of 545k utterances.</p>
+<p>ParaKQC contributed as a resource of KLUE dataset [24]. Also it is
+enlisted on Open Korean Corpora [40]. Won Ik Cho, et al. applied the
+sentence classification scheme of ParaKQC for StyleKQC, a style-variant
+paraphrase corpus for Korean question and commands [67].</p>
+<h3 id="paper-9-nsmc"><strong>NSMC</strong></h3>
+<ol start="24" type="I">
+<li><p>NSMC Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-23" style="width:52%;">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 38%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Semantic Textual Analysis</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">20k reviews</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">Text</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">CC0 1.0</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/e9t/nsmc" rel="noopener noreferrer">https://github.com/e9t/nsmc</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Eunjeong Park</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Eunjeong Park, NSMC: Naver
+sentiment movie corpus v1.0. (2015). Available at
+https://github.com/e9t/nsmc</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="25" type="I">
+<li><p>NSMC Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-24" style="width:53%;">
+<colgroup>
+<col style="width: 45%"/>
+<col style="width: 7%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Movie review sample</strong></th>
+<th style="text-align: center;"><strong>Label</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>아 더빙.. 진짜 짜증나네요 목소리</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>흠...포스터보고 초딩영화줄....오버연기조차 가볍지 않구나</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td>너무재밓었다그래서보는것을추천한다</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>교도소 이야기구먼 ..솔직히 재미는 없다..평점 조정</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>사이몬페그의 익살스런 연기가 돋보였던 영화!스파이더맨에서
+늙어보이기만 했던 커스틴 던스트가 너무나도 이뻐보였다</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td>막 걸음마 뗀 3세부터 초등학교 1학년생인 8살용영화.ㅋㅋㅋ...별반개도
+아까움.</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>원작의 긴장감을 제대로 살려내지못했다.</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>액션이 없는데도 재미 있는 몇안되는 영화</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table></div>
+<p>NSMC dataset was constructed by Eunjeong Park in 2015, with sentences
+scrapped from Naver movie reviews [37]. Raw materials have user-written
+comments on the movie with score ratings between 1 (negative) to 10
+(positive). The sentences were classified into 3 categories by rating
+scores; negative (1 ~ 4 score), neutral (5 ~ 8 score), positive (9 ~ 10
+score). NSMC only contain the negative (label 0) and positive (label 1)
+sentences for semantic textual analysis task.</p>
+<p>Although NSMC is a highly attractive dataset for Korean NLP, the
+author has not published related paper or provided official citation
+request text. Therefore, the exact citation number is not known; search
+result on Google Scholar indicates that at least 50 papers has applied
+NSMC for experiment or benchmark test. Yong-Jun Lee, et al. Used NSMC
+dataset for experiment on Korean-specific emotion annotation model in
+2020 [46]. Sangwan Moon and Naoaki Okazaki applied NSMC to evaluate a
+just-in-time BERT model in 2020 [68]. Kyubong Park, et al. has analyzed
+the performance benchmark of various Korean NLP with NSMC dataset in
+2020 [69]. NSMC also contributed to KLUE [24] and Open Korean Corpora
+[40].</p>
+<h3 id="paper-9-toxic-comment"><strong>Toxic Comment</strong></h3>
+<ol start="26" type="I">
+<li><p>Toxic Comment Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-25" style="width:52%;">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 38%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Semantic Textual Analysis</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">20k sentences</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">CSV</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">MIT</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><p><a href="https://github.com/songys/Toxic_comment_data" rel="noopener noreferrer">https://github.com/songys/</a></p>
+<p><a href="https://github.com/songys/Toxic_comment_data" rel="noopener noreferrer">Toxic_comment_data</a></p></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Song, Youngsook</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Song, Youngsook, Toxic
+Comment. 2018. Available at
+https://github.com/songys/Toxic_comment_data.</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="27" type="I">
+<li><p>Toxic Comment Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-26" style="width:53%;">
+<colgroup>
+<col style="width: 42%"/>
+<col style="width: 9%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Movie review sample</strong></th>
+<th style="text-align: center;"><strong>Label</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>부패한 로마노프 왕조를 기리는 뭣 같은 영화… 온몸으로 항거했던 러시아
+민중들이 그저 폭도냐</td>
+<td style="text-align: center;">1,0,0,0,0</td>
+</tr>
+<tr>
+<td>빨갱이는 있따…</td>
+<td style="text-align: center;">1,0,1,0,0</td>
+</tr>
+<tr>
+<td>박찬욱 각본. 박찬욱의 흑역사네.</td>
+<td style="text-align: center;">1,0,0,1,0</td>
+</tr>
+<tr>
+<td>정일우의 발연기, 깨는 나레이션, 밋밋한 일드풍의 연출.. 화면 떄깔만
+좋더라!</td>
+<td style="text-align: center;">1,0,0,0,1</td>
+</tr>
+<tr>
+<td>마이클 더글러스의 여름날 신경질내기</td>
+<td style="text-align: center;">1,0,0,1,0</td>
+</tr>
+<tr>
+<td>조폭 살인범 형사놈들 나오는 영화는 예전이나 지금이나 한국영화
+단골손님들이구만 ㅉㅉㅉ</td>
+<td style="text-align: center;">1,0,0,0,1</td>
+</tr>
+<tr>
+<td>그냥 짜증나는 영화, 리암니슨영화는 대체적으로 오바가많은듯</td>
+<td style="text-align: center;">1,0,0,1,1</td>
+</tr>
+</tbody>
+</table></div>
+<p>Toxic Comment dataset is a collection of negative movie review
+sentences from NSMC datasets, with more specific emotional labels. The
+label of each sentence is a 5-dim vector, similar to one-hot expression.
+The parameters of label vector indicates toxic, obscene, threat, insult,
+and identity hate. Sentences has at least one ‘1’ indicate for those
+categories.</p>
+<h3 id="paper-9-khatespeech"><strong>KHateSpeech</strong></h3>
+<ol start="28" type="I">
+<li><p>KHateSpeech Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-27" style="width:52%;">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 38%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Semantic Textual Analysis</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">Labeled: 9.4k Unlabeled: 2m</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">TSV</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/kocohub/korean-hate-speech" rel="noopener noreferrer">https://github.com/kocohub/korean-hate-speech</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Moon, Jihyung, et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Moon, Jihyung, Won Ik Cho, and
+Junbum Lee. "BEEP! Korean Corpus of Online News Comments for Toxic
+Speech Detection." Proceedings of the Eighth International Workshop on
+Natural Language Processing for Social Media. 2020.</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="29" type="I">
+<li><p>KHateSpeech Sample</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-28" style="width:52%;">
+<colgroup>
+<col style="width: 36%"/>
+<col style="width: 15%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Comment samples</strong></th>
+<th style="text-align: center;"><p><strong>Gender Bias/</strong></p>
+<p><strong>Bias / Hate</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>송중기 시대극은 믿고본다. 첫회 신선하고 좋았다.</td>
+<td style="text-align: center;">False / None / None</td>
+</tr>
+<tr>
+<td>지현우 나쁜놈</td>
+<td style="text-align: center;">False / None / Offensive</td>
+</tr>
+<tr>
+<td>알바쓰고많이만들면되지 돈욕심없으면골 목식당왜나온겨 기댕기게나하고
+산에가서 팔어라</td>
+<td style="text-align: center;"><p>False / None /</p>
+<p>Hate</p></td>
+</tr>
+<tr>
+<td>설마 ㅈ현정 작가 아니지??</td>
+<td style="text-align: center;">True / Gender / Hate</td>
+</tr>
+</tbody>
+</table></div>
+<p>KHateSpeech dataset was published by Jihyung Moon, et al. in 2020
+[38]. They scrapped malicious replies from news articles from
+entertainment and celebrity sections, where the largest amount of
+negative comments are produced. This dataset provides 9,381
+human-labeled data with 2,033,893 unlabeled raw comments. Each comment
+is annotated on two aspect; existence of social bias and hate speech.
+And additional binary label has attached to indicate whether a comment
+contains gender bias or not.</p>
+<p>Chanhee Lee, et al. has applied KHateSpeech dataset to analyzed the
+data efficiency of cross-lingual post-training in pretrained language
+models in 2021 [70]. Seyoung Lee and Saerom Park used KHateSpeech
+dataset to proposed a hate speech classification algorithm using ordinal
+regression in 2021 [47]. Hyeonsang Lee, et al. proposed a CNN based
+model for toxic comments classification, trained with KHateSpeech
+dataset in 2020 [71].</p>
+<h3 id="paper-9-i4k"><strong>3i4K</strong></h3>
+<ol start="30" type="I">
+<li><p>3i4K Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-29" style="width:52%;">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 38%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Semantic Textual Analysis</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">19k corpuses, 61k texts, 7k speeches</td>
+</tr>
+<tr>
+<td>Format</td>
+<td style="text-align: left;">Text</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">CC BY-SA 4.0</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><a href="https://github.com/warnikchow/3i4k" rel="noopener noreferrer">https://github.com/warnikchow/3i4k</a></td>
+</tr>
+<tr>
+<td>Author</td>
+<td style="text-align: left;">Cho, Won Ik, et al.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Cho, Won Ik, et al. "Speech
+intention understanding in a head-final language: A disambiguation
+utilizing intonation-dependency." arXiv preprint arXiv:1811.04231
+(2018).</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="31" type="I">
+<li><p>3i4K Corpus Composition</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-30" style="width:52%;">
+<colgroup>
+<col style="width: 19%"/>
+<col style="width: 12%"/>
+<col style="width: 9%"/>
+<col style="width: 11%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Text-based Seiving</strong></th>
+<th style="text-align: center;"><strong>Intention</strong></th>
+<th style="text-align: center;"><strong>Label</strong></th>
+<th style="text-align: center;"><strong>Size</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Fragments</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">6,538</td>
+</tr>
+<tr>
+<td rowspan="5" style="text-align: center;">Clear-cut cases</td>
+<td style="text-align: center;">Statements</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">29,559</td>
+</tr>
+<tr>
+<td style="text-align: center;">Questions</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">18,418</td>
+</tr>
+<tr>
+<td style="text-align: center;">Commands</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">17,626</td>
+</tr>
+<tr>
+<td style="text-align: center;">RQ<sup>a</sup>s</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">3,312</td>
+</tr>
+<tr>
+<td style="text-align: center;">RC<sup>b</sup>s</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">1,818</td>
+</tr>
+<tr>
+<td style="text-align: center;">Intonation-dependent utterances</td>
+<td style="text-align: center;">unknown</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5,300</td>
+</tr>
+</tbody>
+</table></div>
+<p><sup>a</sup>Rhetorical Question</p>
+<p><sup>b</sup>Rhetorical Commands</p>
+<p>3i4K was published by Won Ik Cho, et al. in 2018 [25]. They collected
+corpus data from released works of SNU-SLP<a class="footnote-ref" href="#paper-9-fn1" id="paper-9-fnref1" role="doc-noteref"><sup>1</sup></a> and
+Natural Institute of Korean Language<a class="footnote-ref" href="#paper-9-fn2" id="paper-9-fnref2" role="doc-noteref"><sup>2</sup></a> to establish FCI
+(fragments, clear-cut cases, intonation-dependent utterances) dataset.
+They also manually created questions and commands for dataset.</p>
+<p>3i4K dataset is enlisted on Open Korean Corpora [40]. Won Ik Cho, et
+al. has applied 3i4K to investigate the effectiveness of character-level
+embedding in Korean sentence classification in 2019 [48].</p>
+<h3 id="paper-9-kaist-corpus"><strong>KAIST Corpus</strong></h3>
+<p>KAIST Corpus dataset is a collection of various corpus and machine
+translation datasets, constructed since 1997 to 2005, published by KAIST
+Semantic Web Research Center [72]. IT has over 70 million Korean text
+corpus, position annotated corpus, tree-annotated corpus, Korean-Chinese
+parallel corpus, Korean-English parallel corpus.</p>
+<ol start="32" type="I">
+<li><p>KAIST Corpus Overview</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-31" style="width:55%;">
+<colgroup>
+<col style="width: 14%"/>
+<col style="width: 40%"/>
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" style="text-align: left;"><strong>Dataset
+overview</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category</td>
+<td style="text-align: left;">Various Corpus and Machine
+Translation</td>
+</tr>
+<tr>
+<td>Size</td>
+<td style="text-align: left;">70 million corpuses</td>
+</tr>
+<tr>
+<td>License</td>
+<td style="text-align: left;">Noncommercial Research Only</td>
+</tr>
+<tr>
+<td>URL</td>
+<td style="text-align: left;"><p><a href="http://semanticweb.kaist.ac.kr/home/index.php/KAIST_Corpus" rel="noopener noreferrer">http://semanticweb.kaist.ac.kr/home/</a></p>
+<p><a href="http://semanticweb.kaist.ac.kr/home/index.php/KAIST_Corpus" rel="noopener noreferrer">index.php/KAIST_Corpus</a></p></td>
+</tr>
+<tr>
+<td>Provider</td>
+<td style="text-align: left;">Ki-sun Choi</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Citation
+text</strong></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;">Ki-sun Choi (2001), KAIST
+Language Resources 2001 edition. Result of the core software project
+from Ministry of Science and Technology, Korea.</td>
+</tr>
+</tbody>
+</table></div>
+<ol start="33" type="I">
+<li><p>KAIST Corpus – Qualifield Corpus</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-32" style="width:55%;">
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 14%"/>
+<col style="width: 7%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Dataset Title</strong></th>
+<th style="text-align: center;"><strong>Language</strong></th>
+<th style="text-align: center;"><strong>Size</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KAIST Raw corpus</td>
+<td rowspan="6" style="text-align: center;">Kor</td>
+<td style="text-align: center;">70m</td>
+</tr>
+<tr>
+<td>High quality morpho-syntactically annotated corpus</td>
+<td style="text-align: center;">1m</td>
+</tr>
+<tr>
+<td>Automatically Analyzed Large Scale KAIST Corpus</td>
+<td style="text-align: center;">40m</td>
+</tr>
+<tr>
+<td>Korean Tree-Tagging Corpus</td>
+<td style="text-align: center;">3k</td>
+</tr>
+<tr>
+<td>Tree-tagged Corpus 2</td>
+<td style="text-align: center;">30k</td>
+</tr>
+<tr>
+<td>Chinese-Tagged corpus</td>
+<td style="text-align: center;">10k</td>
+</tr>
+<tr>
+<td>Chinese-English-Korean Multilingual corpus</td>
+<td style="text-align: center;">Kor-Chn-Eng</td>
+<td style="text-align: center;">60k</td>
+</tr>
+<tr>
+<td>Chinese-English multilingual corpus</td>
+<td style="text-align: center;">Chn-Eng</td>
+<td style="text-align: center;">60k</td>
+</tr>
+<tr>
+<td>Chinese-Korean multilingual corpus</td>
+<td style="text-align: center;">Kor-Chn</td>
+<td style="text-align: center;">60k</td>
+</tr>
+<tr>
+<td>Newspaper Corpus (Hankyorh)</td>
+<td style="text-align: center;">Kor</td>
+<td style="text-align: center;"><p>620</p>
+<p>files</p></td>
+</tr>
+<tr>
+<td>Newspaper Corpus (Donga-Korean, English, Japanese, Chinese)</td>
+<td style="text-align: center;">Kor-Eng-Jpn-Chn</td>
+<td style="text-align: center;"><p>1,791</p>
+<p>files</p></td>
+</tr>
+</tbody>
+</table></div>
+<ol start="34" type="I">
+<li><p>KAIST Corpus – Processed Resources</p></li>
+</ol>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table id="paper-9-table-33" style="width:55%;">
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 14%"/>
+<col style="width: 7%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Dataset Title</strong></th>
+<th style="text-align: center;"><strong>Language</strong></th>
+<th style="text-align: center;"><strong>Size</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nouns Definition of General Vocabulary</td>
+<td rowspan="2" style="text-align: center;">Kor</td>
+<td style="text-align: center;">29k</td>
+</tr>
+<tr>
+<td>Noun Definition Corpus of General Vocabulary</td>
+<td style="text-align: center;">29k</td>
+</tr>
+<tr>
+<td>Co-occurrence data</td>
+<td style="text-align: center;">Kor-Eng</td>
+<td style="text-align: center;">47m</td>
+</tr>
+<tr>
+<td>Alignment Model for Extracting English-Korean Translation of Term
+Constituents</td>
+<td rowspan="12" style="text-align: center;">Kor</td>
+<td style="text-align: center;">24k</td>
+</tr>
+<tr>
+<td>Terminology corpus– medicine</td>
+<td style="text-align: center;">220k</td>
+</tr>
+<tr>
+<td>Terminology corpus– architectural engineering</td>
+<td style="text-align: center;">3.7k</td>
+</tr>
+<tr>
+<td>Terminology corpus– economics</td>
+<td style="text-align: center;">27.7k</td>
+</tr>
+<tr>
+<td>Terminology corpus– engineering</td>
+<td style="text-align: center;">13.6k</td>
+</tr>
+<tr>
+<td>Terminology corpus– physical metallurgy</td>
+<td style="text-align: center;">7.5k</td>
+</tr>
+<tr>
+<td>Terminology corpus- mechanical engineering</td>
+<td style="text-align: center;">50k</td>
+</tr>
+<tr>
+<td>Terminology corpus– physics</td>
+<td style="text-align: center;">107k</td>
+</tr>
+<tr>
+<td>Terminology corpus– biology</td>
+<td style="text-align: center;">84k</td>
+</tr>
+<tr>
+<td>Terminology corpus– electronic engineering</td>
+<td style="text-align: center;">13k</td>
+</tr>
+<tr>
+<td>Terminology corpus– computer science</td>
+<td style="text-align: center;">8.7k</td>
+</tr>
+<tr>
+<td>Terminology corpus– chemistry</td>
+<td style="text-align: center;">66.7k</td>
+</tr>
+<tr>
+<td>Terminology corpus– chemical engineering</td>
+<td rowspan="10" style="text-align: center;">Kor</td>
+<td style="text-align: center;">20k</td>
+</tr>
+<tr>
+<td>Terminology corpus– environmental engineering</td>
+<td style="text-align: center;">21k</td>
+</tr>
+<tr>
+<td>Terminology corpus– Adverbs and Frequency</td>
+<td style="text-align: center;">2.5k</td>
+</tr>
+<tr>
+<td>Terminology corpus– Nouns and Frequency</td>
+<td style="text-align: center;">4.3m</td>
+</tr>
+<tr>
+<td>Terminology corpus– Adjectives and Frequency</td>
+<td style="text-align: center;">1.7k</td>
+</tr>
+<tr>
+<td>Terminology corpus– Verbs and Frequency</td>
+<td style="text-align: center;">20k</td>
+</tr>
+<tr>
+<td>Terminology corpus– Verbal case Frames</td>
+<td style="text-align: center;">135k</td>
+</tr>
+<tr>
+<td>Terminology corpus– Co-occurrence</td>
+<td style="text-align: center;">16m</td>
+</tr>
+<tr>
+<td>One-syllable nouns</td>
+<td style="text-align: center;">1k</td>
+</tr>
+<tr>
+<td>Off-line Korean Handwriting Database (Image)</td>
+<td style="text-align: center;">1.2k</td>
+</tr>
+</tbody>
+</table></div>
+<p>KAIST corpus was established by Ki-sun Choi, and published in
+2001.[72]. KAIST corpus has various sub-datasets described on Table
+XXXIII and TABLE XXXIV.</p>
+<p>Qualified corpus has 7 Korean corpus datasets and 4 multilingual
+corpus datasets. Processed resources section provides 23 Korean corpus
+dataset and 1 Korean-English co-occurrence dataset, and an off-line
+Korean handwriting image dataset. KAIST corpus is also enlisted on Open
+Korean Corpora [40].</p>
+<p>Considering the year of publication, the number of citations of KAIS
+corpus dataset is very low. So it’s difficult to find a benchmark
+performance of recent algorithms tested with KAIST corpus. However, as
+the size of datasets are very large and the quality of each dataset is
+excellent, it still worth using for algorithm design and model
+training.</p>
+<h2 id="paper-9-discussion"><strong>Discussion</strong></h2>
+<p>As the interests and demands of companies on Korean language
+processing dataset has dramatically increased, fund and investment seems
+to be increased too. Therefore, great dataset such as KLUE has been
+published and accepted to Neural IPS this year. As described on Table 1,
+most of the datasets popular today were published within last 3 years.
+This reflects the recent advance in popularity of Korean NLP dataset
+construction.</p>
+<p>Since the datasets were recently published, I guess that many
+research projects using them are currently in progress, or have not yet
+published. This may explain the low citation scores of useful datasets.
+The number of citation is considered as a good indicator to evaluate a
+popularity of dataset. I agree that a dataset which are frequently cited
+is very useful to produce a reasonable benchmark result. However, many
+dataset papers are cited because of the novel method proposed by the
+authors, rather than the dataset itself.</p>
+<p>A researcher should not underestimate or overestimate a dataset by
+the paper’s citation score only. I suggest exploring various datasets to
+find one, best appropriate for your research purpose.</p>
+<h2 id="paper-9-conclusion"><strong>Conclusion</strong></h2>
+<p>This paper provided a survey of Korean-based natural language
+processing datasets. The survey section proposed brief and comprehensive
+summarization and detailed information. It covered conversation log,
+question answering, named entity recognition, text summarization,
+natural language understanding, semantic sentence similarity, semantic
+textual analysis, semantic speech analysis and machine translation. The
+discussion outlined a brief guide to consider when choosing a dataset.
+In conclusion, I hope this paper to help researchers’ to reduce time
+consuming works for dataset exploring and to choose appropriate dataset
+in Korean NLP area.</p>
+<h2 id="paper-9-acknowledgment"><strong>Acknowledgment</strong></h2>
+<p>This paper was inspired while writing the book <em>"142 datasets for
+AI researchers."</em> with Life &amp; Power Press Co., Ltd. I would like
+to express my gratitude to Jehoon Yoo for suggesting me collect various
+datasets to write such a book.</p>
+<h2 id="paper-9-references"><strong>References</strong></h2>
+<ol type="1">
+<li><p>Palangi, Hamid, et al. "Deep sentence embedding using long
+short-term memory networks: Analysis and application to information
+retrieval." <em>IEEE/ACM Transactions on Audio, Speech, and Language
+Processing</em> 24.4 (2016): 694-707.</p></li>
+<li><p>Luukkonen, Petri, Markus Koskela, and Patrik Floréen. "LSTM-based
+predictions for proactive information retrieval." <em>arXiv preprint
+arXiv:1606.06137</em> (2016).</p></li>
+<li><p>Palangi, Hamid, et al. "Semantic modelling with long-short-term
+memory for information retrieval." <em>arXiv preprint
+arXiv:1412.6629</em>(2014).</p></li>
+<li><p>Dauphin, Yann N., et al. "Language modeling with gated
+convolutional networks." <em>International conference on machine
+learning</em>. PMLR, 2017.</p></li>
+<li><p>Yang, Xi, et al. "Measurement of Semantic Textual Similarity in
+Clinical Texts: Comparison of Transformer-Based Models." JMIR medical
+informatics 8.11 (2020): e19735.</p></li>
+<li><p>Sun, Lichao, et al. "Mixup-Transformer: Dynamic Data Augmentation
+for NLP Tasks." <em>arXiv preprint arXiv:2010.02394</em>(2020).</p></li>
+<li><p>Wolf, Thomas, et al. "Huggingface's transformers:
+State-of-the-art natural language processing." <em>arXiv preprint
+arXiv:1910.03771</em> (2019).</p></li>
+<li><p>Gillioz, Anthony, et al. "Overview of the Transformer-based
+Models for NLP Tasks." <em>2020 15th Conference on Computer Science and
+Information Systems (FedCSIS)</em>. IEEE, 2020.</p></li>
+<li><p>Zhuang, Hang, et al. "Natural language processing service based
+on stroke-level convolutional networks for Chinese text
+classification." <em>2017 IEEE international conference on web services
+(ICWS)</em>. IEEE, 2017.</p></li>
+<li><p>Cui, Yiming, et al. "Revisiting pre-trained models for chinese
+natural language processing." <em>arXiv preprint
+arXiv:2004.13922</em>(2020).</p></li>
+<li><p>Al-Smadi, Mohammad, et al. "Transfer learning for Arabic named
+entity recognition with deep neural networks." <em>Ieee Access</em> 8
+(2020): 37736-37745.</p></li>
+<li><p>Romeo, Salvatore, et al. "Language processing and learning models
+for community question answering in arabic." Information Processing
+&amp; Management 56.2 (2019): 274-290.</p></li>
+<li><p>Yun, Hyungbin, Ghudae Sim, and Junhee Seok. "Stock prices
+prediction using the title of newspaper articles with korean natural
+language processing." <em>2019 International Conference on Artificial
+Intelligence in Information and Communication (ICAIIC)</em>. IEEE,
+2019.</p></li>
+<li><p>Ham, Jiyeon, et al. "KorNLI and KorSTS: New Benchmark Datasets
+for Korean Natural Language Understanding." <em>Proceedings of the 2020
+Conference on Empirical Methods in Natural Language Processing:
+Findings</em>. 2020.</p></li>
+<li><p>Stratos, Karl. "A Sub-Character Architecture for Korean Language
+Processing." Proceedings of the 2017 Conference on Empirical Methods in
+Natural Language Processing. 2017.</p></li>
+<li><p>Hwang, Myeong-Ha, et al. "KoRASA: Pipeline Optimization for
+Open-Source Korean Natural Language Understanding Framework Based on
+Deep Learning." <em>Mobile Information Systems</em> 2021
+(2021).</p></li>
+<li><p>Jung, Haemin, and Wooju Kim. "Automated conversion from natural
+language query to SPARQL query." <em>Journal of Intelligent Information
+Systems</em> (2020): 1-20.</p></li>
+<li><p>Kim, Hayan, et al. "Visual language approach to representing
+KBimCode-based Korea building code sentences for automated rule
+checking." <em>Journal of Computational Design and Engineering</em> 6.2
+(2019): 143-148.</p></li>
+<li><p>J.-H. Kim and G. C. Kim, Guideline on Building a Korean
+Part-of-Speech Tagged Corpus: KAIST Corpus, Technical Report
+CS-TR-95-99, Department of Computer Science, KAIST, 1995 (in
+Korean).</p></li>
+<li><p>천민아, 다중 생성 단위의 관계 점수를 이용한 학습 말뭉치 생성:
+개체명 말뭉치를 중심으로, 한국해양대교 대학원 컴퓨터공학과,
+박사학위논문: 134, 2021년 2월.</p></li>
+<li><p>Song, Youngsook, Toxic Comment. 2018. Available at
+https://github.com/songys/Toxic_comment_data.</p></li>
+<li><p>Alan Kang and Jieun Kim, Petition. 2017. Available at
+https://github.com/akngs/petitions.</p></li>
+<li><p>Ha, Jung-Woo, et al. "ClovaCall: Korean goal-oriented dialog
+speech corpus for automatic speech recognition of contact
+centers." arXiv preprint arXiv:2004.09367 (2020).</p></li>
+<li><p>Park, Sungjoon, et al. (2021). KLUE: Korean Language
+Understanding Evaluation. In Thirty-fifth Conference on Neural
+Information Processing Systems Datasets and Benchmarks Track (Round
+2).</p></li>
+<li><p>Cho, Won Ik, et al. "Speech intention understanding in a
+head-final language: A disambiguation utilizing intonation-dependency."
+arXiv preprint arXiv:1811.04231 (2018).</p></li>
+<li><p>Zeng, Zhiqiang, et al. "Survey of natural language processing
+techniques in bioinformatics." <em>Computational and mathematical
+methods in medicine</em> 2015 (2015).</p></li>
+<li><p>Otter, Daniel W., Julian R. Medina, and Jugal K. Kalita. "A
+survey of the usages of deep learning for natural language processing."
+IEEE Transactions on Neural Networks and Learning Systems 32.2 (2020):
+604-624.</p></li>
+<li><p>Oshikawa, Ray, Jing Qian, and William Yang Wang. "A survey on
+natural language processing for fake news detection." <em>arXiv preprint
+arXiv:1811.00770</em> (2018).</p></li>
+<li><p>Han, Manhui, et al. "Natural language processing on Korean
+language: A survey." <em>Processing of the Korean Information Science
+Society Conference.</em> (2016): pp 681-683.</p></li>
+<li><p>Song, Yeongsook. "Awesome Korean Data." Available on GitHub, at
+<a href="https://github.com/songys/AwesomeKorean_Data" rel="noopener noreferrer">https://github.com/songys/AwesomeKorean_Data</a>.</p></li>
+<li><p>Song, Youngsook, Chatbot_data. 2018. Available on GitHub at <a href="https://github.com/songys/Chatbot_data" rel="noopener noreferrer">https://github.com/songys/Chatbot_data</a>.</p></li>
+<li><p>Lim, Seungyoung, Myungji Kim, and Jooyoul Lee. "KorQuAD1. 0:
+Korean QA dataset for machine reading comprehension." arXiv preprint
+arXiv:1909.07005 (2019).</p></li>
+<li><p>박혜웅, 송영숙. "음절 기반의 CNN을 이용한 개체명
+인식." 한국어정보학회 학술대회 (2017): 330-332.</p></li>
+<li><p>설진석, 이상구. "lexrankr: LexRank 기반 한국어 다중 문서
+요약." 한국정보과학회 학술발표논문집 (2016): 458-460.</p></li>
+<li><p>Cho, Won Ik, et al. "Machines getting with the program:
+Understanding intent arguments of non-canonical directives." arXiv
+preprint arXiv:1912.00342 (2019).</p></li>
+<li><p>Cho, Won Ik, et al. "Discourse component to sentence (DC2S): An
+efficient human-aided construction of paraphrase and sentence similarity
+dataset." Proceedings of The 12th Language Resources and Evaluation
+Conference. 2020.</p></li>
+<li><p>Eunjeong Park, NSMC: Naver sentiment movie corpus v1.0. (2015).
+Available at <a href="https://github.com/e9t/nsmc" rel="noopener noreferrer">https://github.com/e9t/nsmc</a></p></li>
+<li><p>Moon, Jihyung, Won Ik Cho, and Junbum Lee. "BEEP! Korean Corpus
+of Online News Comments for Toxic Speech Detection." Proceedings of the
+Eighth International Workshop on Natural Language Processing for Social
+Media. 2020.</p></li>
+<li><p>Yun, Hyeonseo, and Sunyong Yoo. "Transformer-based Unethical
+Sentence Detection." Journal of Digital Contents Society 22.8 (2021):
+1289-1293.</p></li>
+<li><p>Cho, Won Ik, Sangwhan Moon, and Youngsook Song. "Open Korean
+Corpora: A Practical Report." arXiv preprint
+arXiv:2012.15621 (2020).</p></li>
+<li><p>Lee, Hanbum, Jahwan Koo, and Ung-Mo Kim. "A Study on Emotion
+Analysis on Sentence using BERT." Proceedings of the Korea Information
+Processing Society Conference. Korea Information Processing Society,
+2020.</p></li>
+<li><p>Hyunjoong Kim et al. Korpora:Korean Corpora Archives. 2019.
+Available at <a href="https://github.com/ko-nlp/Korpora" rel="noopener noreferrer">https://github.com/ko-nlp/Korpora</a></p></li>
+<li><p>Yoo, SoYeop, and OkRan Jeong. "Korean Contextual Information
+Extraction System using BERT and Knowledge Graph." Journal of Internet
+Computing and Services 21.3 (2020): 123-131.</p></li>
+<li><p>Kim, Boseop, et al. "What Changes Can Large-scale Language Models
+Bring? Intensive Study on HyperCLOVA: Billions-scale Korean Generative
+Pretrained Transformers." arXiv preprint
+arXiv:2109.04650 (2021).</p></li>
+<li><p>Lee, Hyunjae, et al. "KoreALBERT: Pretraining a Lite BERT Model
+for Korean Language Understanding." 2020 25th International Conference
+on Pattern Recognition (ICPR). IEEE, 2021.</p></li>
+<li><p>Lee, Young-Jun, Chae-Gyun Lim, and Ho-Jin Choi. "Korean-Specific
+Emotion Annotation Procedure Using N-Gram-Based Distant Supervision and
+Korean-Specific-Feature-Based Distant Supervision." Proceedings of The
+12th Language Resources and Evaluation Conference. 2020.</p></li>
+<li><p>Lee, Seyoung, and Saerom Park. "Hate Speech Classification Using
+Ordinal Regression." Proceedings of the Korean Society of Computer
+Information Conference. Korean Society of Computer Information,
+2021.</p></li>
+<li><p>Cho, Won Ik, Seok Min Kim, and Nam Soo Kim. "Investigating an
+effective character-level embedding in korean sentence classification."
+arXiv preprint arXiv:1905.13656 (2019).</p></li>
+<li><p>Ruffieux, Simon, et al. "A survey of datasets for human gesture
+recognition." International conference on human-computer interaction.
+Springer, Cham, 2014.</p></li>
+<li><p>Bang, Jihwan, et al. "Boosting Active Learning for Speech
+Recognition with Noisy Pseudo-labeled Samples." arXiv preprint
+arXiv:2006.11021 (2020).</p></li>
+<li><p>Cho, Won Ik, et al. "Kosp2e: Korean Speech to English Translation
+Corpus." arXiv preprint arXiv:2107.02875 (2021).</p></li>
+<li><p>Bang, Jeong-Uk, et al. "Ksponspeech: Korean spontaneous speech
+corpus for automatic speech recognition." Applied Sciences 10.19 (2020):
+6936.</p></li>
+<li><p>Lee, Sang-Woo, et al. "Carecall: a call-based active monitoring
+dialog agent for managing covid-19 pandemic." arXiv preprint
+arXiv:2007.02642 (2020).</p></li>
+<li><p>Hwang, Sewoong, and Jonghyuk Kim. "Toward a Chatbot for Financial
+Sustainability." Sustainability 13.6 (2021): 3173.</p></li>
+<li><p>Rajpurkar, Pranav, Robin Jia, and Percy Liang. "Know what you
+don't know: Unanswerable questions for SQuAD." arXiv preprint
+arXiv:1806.03822 (2018).</p></li>
+<li><p>이동헌, et al. "BERT 를 이용한 한국어 기계 독해." 한국정보과학회
+학술발표논문집 (2019): 557-559.</p></li>
+<li><p>Kim, Minho, et al. "Machine Reading Comprehension-based Question
+and Answering System for Search and Analysis of Safety Standards."
+Journal of Korea Multimedia Society 23.2 (2020): 351-360.</p></li>
+<li><p>정서형, and 곽노준. "BERT 를 이용한 한국어 질의응답 데이터
+셋에서의 기계 독해." 대한전자공학회 학술대회 (2020): 625-630.</p></li>
+<li><p>You, Yeon-Soo, and Hyuk-Ro Park. "Syllable-based Korean named
+entity recognition using convolutional neural
+network." 한국마린엔지니어링학회지 44.1 (2020): 68-74.</p></li>
+<li><p>Jang, Myeongjun, Deuk Sin Kwon, and Thomas Lukasiewicz.
+"Accurate, yet inconsistent? Consistency Analysis on Language
+Understanding Models." arXiv preprint arXiv:2108.06665 (2021).</p></li>
+<li><p>Kim, Boseop, et al. "What changes can large-scale language models
+bring? intensive study on hyperclova: Billions-scale korean generative
+pretrained transformers." arXiv preprint arXiv:2109.04650
+(2021).</p></li>
+<li><p>Bowman, Samuel R., et al. "A large annotated corpus for learning
+natural language inference." Conference on Empirical Methods in Natural
+Language Processing, EMNLP 2015. Association for Computational
+Linguistics (ACL), 2015.</p></li>
+<li><p>Williams, Adina, Nikita Nangia, and Samuel R. Bowman. "A
+Broad-Coverage Challenge Corpus for Sentence Understanding through
+Inference." NAACL-HLT. 2018.</p></li>
+<li><p>Conneau, Alexis, et al. "XNLI: Evaluating cross-lingual sentence
+representations." 2018 Conference on Empirical Methods in Natural
+Language Processing, EMNLP 2018. Association for Computational
+Linguistics, 2020.</p></li>
+<li><p>Cer, Daniel, et al. "SemEval-2017 Task 1: Semantic Textual
+Similarity Multilingual and Crosslingual Focused Evaluation."
+Proceedings of the 11th International Workshop on Semantic Evaluation
+(SemEval-2017). 2017.</p></li>
+<li><p>Yoo, Yongmin, et al. "A novel hybrid methodology of measuring
+sentence similarity." Symmetry 13.8 (2021): 1442.</p></li>
+<li><p>Cho, Won Ik, et al. "StyleKQC: A Style-Variant Paraphrase Corpus
+for Korean Questions and Commands." arXiv preprint arXiv:2103.13439
+(2021).</p></li>
+<li><p>Moon, Sangwhan, and Naoaki Okazaki. "PatchBERT: Just-in-Time,
+Out-of-Vocabulary Patching." Proceedings of the 2020 Conference on
+Empirical Methods in Natural Language Processing (EMNLP). 2020.</p></li>
+<li><p>Park, Kyubyong, et al. "An Empirical Study of Tokenization
+Strategies for Various Korean NLP Tasks." arXiv preprint
+arXiv:2010.02534 (2020).</p></li>
+<li><p>Lee, Chanhee, et al. "Exploring the Data Efficiency of
+Cross-Lingual Post-Training in Pretrained Language Models." Applied
+Sciences 11.5 (2021): 1974.</p></li>
+<li><p>이현상, 이희준, and 오세환. "딥러닝 기술을 활용한 악성댓글 분류:
+Highway Network 기반 CNN 모델링 연구." 한국경영학회 통합학술발표논문집
+(2020): 343-351.</p></li>
+<li><p>Ki-sun Choi (2001), KAIST Language Resources 2001 edition. Result
+of the core software project from Ministry of Science and Technology,
+Korea.</p></li>
+<li></li>
+</ol>
+<section class="footnotes footnotes-end-of-document" id="paper-9-footnotes" role="doc-endnotes">
+<hr/>
+<ol>
+<li id="paper-9-fn1"><p><a href="http://slp.snu.ac.kr" rel="noopener noreferrer">http://slp.snu.ac.kr</a>/<a class="footnote-back" href="#paper-9-fnref1" role="doc-backlink">↩︎</a></p></li>
+<li id="paper-9-fn2"><p><a href="https://krean.go.kr" rel="noopener noreferrer">https://krean.go.kr</a><a class="footnote-back" href="#paper-9-fnref2" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">उद्धरण</h2><p class="citation-help">किसी शैली पर क्लिक करने से उद्धरण जानकारी कॉपी होती है।</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="APA शैली कॉपी करें">APA कॉपी करें</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="MLA शैली कॉपी करें">MLA कॉपी करें</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="Chicago शैली कॉपी करें">Chicago कॉपी करें</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="IEEE शैली कॉपी करें">IEEE कॉपी करें</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="BibTeX प्रारूप कॉपी करें">BibTeX कॉपी करें</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="RIS प्रारूप कॉपी करें">RIS कॉपी करें</button></div><label for="citation-text" class="citation-preview-label">उद्धरण पूर्वावलोकन · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B. (2022). A survey on awesome Korean NLP datasets. In 2022 13th International Conference on Information and Communication Technology Convergence (ICTC) (pp. 1615–1620). https://doi.org/10.1109/ictc55196.2022.9952930</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/korean-nlp-datasets-2022/citation.bib" download>BibTeX फ़ाइल</a><a href="/papers/korean-nlp-datasets-2022/citation.ris" download>RIS फ़ाइल</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B. (2022). A survey on awesome Korean NLP datasets. In 2022 13th International Conference on Information and Communication Technology Convergence (ICTC) (pp. 1615–1620). https://doi.org/10.1109/ictc55196.2022.9952930", "mla": "Ban, Byunghyun. “A Survey on Awesome Korean NLP Datasets.” 2022 13th International Conference on Information and Communication Technology Convergence (ICTC), 2022, pp. 1615-20. https://doi.org/10.1109/ictc55196.2022.9952930.", "chicago": "Ban, Byunghyun. “A Survey on Awesome Korean NLP Datasets.” In 2022 13th International Conference on Information and Communication Technology Convergence (ICTC), 1615–20. 2022. https://doi.org/10.1109/ictc55196.2022.9952930.", "ieee": "B. Ban, “A survey on awesome Korean NLP datasets,” in 2022 13th International Conference on Information and Communication Technology Convergence (ICTC), 2022, pp. 1615–1620, doi: 10.1109/ictc55196.2022.9952930.", "bibtex": "@inproceedings{ban2022_4b97576709ba,\n  author = {Ban, Byunghyun},\n  title = {{A Survey on Awesome Korean NLP Datasets}},\n  year = {2022},\n  booktitle = {2022 13th International Conference on Information and Communication Technology Convergence (ICTC)},\n  pages = {1615--1620},\n  doi = {10.1109/ictc55196.2022.9952930},\n  url = {https://doi.org/10.1109/ictc55196.2022.9952930}\n}", "ris": "TY  - CONF\nAU  - Ban, Byunghyun\nTI  - A Survey on Awesome Korean NLP Datasets\nPY  - 2022\nT2  - 2022 13th International Conference on Information and Communication Technology Convergence (ICTC)\nSP  - 1615\nEP  - 1620\nDO  - 10.1109/ictc55196.2022.9952930\nUR  - https://doi.org/10.1109/ictc55196.2022.9952930\nAB  - English based datasets are commonly available from Kaggle, GitHub, or recently published papers. Although benchmark tests with English datasets are sufficient to show off the performances of new models and methods, still a researcher need to train and validate the models on Korean based datasets to produce a technology or product, suitable for Korean processing. This paper introduces 15 popular Korean based NLP datasets with summarized details such as volume, license, repositories, and other research results inspired by the datasets. Also, I provide high-resolution instructions with sample or statistics of datasets. The main characteristics of datasets are presented on a single table to provide a rapid summarization of datasets for researchers.\nLA  - en\nER  -\n"}</script></section><a class="paper-back-link" href="/hi/papers/">← शोधपत्र सूची पर लौटें</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="पूरा पृष्ठ"><a href="/hi/">Byunghyun Ban</a><a href="/hi/media/">प्रसारण और वीडियो</a><a href="/hi/books/">पुस्तकें</a><a href="/hi/lectures/">व्याख्यान और शिक्षण रिकॉर्ड</a><a href="/hi/courses/online/">ऑनलाइन पाठ्यक्रम</a><a href="/hi/courses/offline/">ऑफलाइन प्रशिक्षण पाठ्यक्रम</a><a href="/hi/news/">मीडिया समाचार</a><a href="/hi/papers/">शोधपत्र और अनुसंधान</a><a href="/hi/patents/">पेटेंट</a><a href="/hi/projects/">विकास परियोजनाएँ</a><a href="/hi/activities/">सामाजिक योगदान</a><a href="/hi/memberships/">सदस्यता और पेशेवर गतिविधियाँ</a><a href="/hi/collections/">संग्रह</a><a href="/hi/contact/">व्याख्यान और सहयोग संबंधी पूछताछ</a></nav>
+            <p><a href="/feed.xml">RSS सदस्यता</a> · <a href="/feed.json">JSON Feed</a></p>
+            <p>© 2026 Byunghyun Ban. सर्वाधिकार सुरक्षित।</p>
+            <p>NaNa Lab (व्यवसाय पंजीकरण संख्या: 269-08-02374), प्रतिनिधि Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="ऊपर जाएँ">↑</button>
+</body>
+</html>

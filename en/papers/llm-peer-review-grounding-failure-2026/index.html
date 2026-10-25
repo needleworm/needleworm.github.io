@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review | Byunghyun Ban</title>
+    <meta name="description" content="Maybe not. Large language models (LLMs) can produce fluent and plausible peer-review reports, but fluency is not scholarly judgment. This paper presents a case study of three fo…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/">
+<meta name="citation_doi" content="10.13140/RG.2.2.34160.83209">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/en/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review | Byunghyun Ban">
+    <meta property="og:description" content="Maybe not. Large language models (LLMs) can produce fluent and plausible peer-review reports, but fluency is not scholarly judgment. This paper presents a case study of three fo…">
+    <meta property="og:url" content="https://bhban.kr/en/papers/llm-peer-review-grounding-failure-2026/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p11-first-page-0feac38b4311.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/en/#website", "url": "https://bhban.kr/en/", "name": "Byunghyun Ban", "inLanguage": "en"}, {"@type": "WebPage", "@id": "https://bhban.kr/en/papers/llm-peer-review-grounding-failure-2026/#page", "url": "https://bhban.kr/en/papers/llm-peer-review-grounding-failure-2026/", "name": "Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review | Byunghyun Ban", "description": "Maybe not. Large language models (LLMs) can produce fluent and plausible peer-review reports, but fluency is not scholarly judgment. This paper presents a case study of three fo…", "inLanguage": "en", "mainEntity": {"@id": "https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/#article"}, "isPartOf": {"@id": "https://bhban.kr/en/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/#article", "url": "https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/", "name": "Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review", "headline": "Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review", "author": [{"@type": "Person", "name": "Byunghyun Ban"}], "datePublished": "2026", "inLanguage": "en", "abstract": "Maybe not. Large language models (LLMs) can produce fluent and plausible peer-review reports, but fluency is not scholarly judgment. This paper presents a case study of three formal peer-review reports received during an actual submission to a Korea Citation Index (KCI) candidate journal. One review claimed that key methodological and experimental details were missing, although the manuscript explicitly contained information about validation data, hardware, software frameworks, model configuration, parameter count, algorithmic procedure, and limitations. After the author reported these grounding failures to the editor, the problematic review was not relied upon in the final decision, and the manuscript was subsequently accepted and published. The case is compared with two more grounded human reviews and an exploratory source-grounded LLM-generated review. The source-grounded LLM review was more aligned with the manuscript, but still produced minor factual errors and overstatements. The case suggests that grounding improves LLM-assisted review, but does not eliminate hallucination or accountability gaps.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/#page"}, "creativeWorkStatus": "Preprint", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.13140/RG.2.2.34160.83209"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhban.kr/en/"}, {"@type": "ListItem", "position": 2, "name": "Papers", "item": "https://bhban.kr/en/papers/"}, {"@type": "ListItem", "position": 3, "name": "Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review", "item": "https://bhban.kr/en/papers/llm-peer-review-grounding-failure-2026/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/llm-peer-review-grounding-failure-2026/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/llm-peer-review-grounding-failure-2026/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"Open menu","menuClose":"Close menu","submenuExpand":"Expand {label} submenu","submenuCollapse":"Collapse {label} submenu","nextSwipeHint":"At the bottom, swipe up once more to continue.","nextScrollHint":"At the bottom, scroll down once more to continue.","lectureResults":"{category}: {count} items · Most recent lectures first","categoryAll":"All","categoryCompany":"Companies","categoryPublic":"Public Institutions","categoryEducation":"Educational Institutions","categoryResearch":"Research Institutions","categoryConference":"Conferences","listMedia":"Videos","listNews":"News Coverage","listLectures":"Lectures","listCoursesOnline":"Online Courses","listCoursesOffline":"In-Person Courses","listPapers":"Papers","listPatents":"Patents","listProjects":"Projects","listActivities":"Activities","listMemberships":"Membership Activities","listCollections":"Collections","listDonations":"Donation Records","listGeneric":"List","listStatus":"Total: {total} · Showing: {visible}","listMore":"Show more {label} ({remaining} remaining)","citationCopyLabel":"Copy citation","citationCopied":"Citation copied.","citationError":"Unable to copy the citation. Please check your browser's clipboard settings.","citationFormatCopied":"Copied the {label} citation.","citationManualCopy":"The citation has been selected. Please copy it manually.","contactLoadError":"Unable to load the inquiry submission service. Please try again shortly.","contactSent":"Your inquiry has been received.","contactError":"An error occurred. Please try again.","contactSending":"Sending...","streamRetry":"Reload","streamError":"Unable to load the next content. Please try again or follow the link above.","streamLoading":"Loading more {label} content."}</script>
+</head>
+<body data-locale="en" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="navbar" aria-label="Main menu"><div class="navbar-brand"><a href="/en/" aria-label="Byunghyun Ban Home"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/en/" class="nav-link nav-main-link" data-nav-page="home">About</a></li><li data-nav-group="media"><a href="/en/media/" class="nav-link nav-main-link" data-nav-page="media">Media</a></li><li data-nav-group="books"><a href="/en/books/" class="nav-link nav-main-link" data-nav-page="books">Books</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/en/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">Lectures</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="Expand Lectures submenu" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="Lecture categories"><li><a href="/en/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">All</a></li><li><a href="/en/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">Companies</a></li><li><a href="/en/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">Public Institutions</a></li><li><a href="/en/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">Educational Institutions</a></li><li><a href="/en/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">Research Institutions</a></li><li><a href="/en/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">Conferences</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/en/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">Courses</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="Expand Courses submenu" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/en/courses/online/" data-nav-page="courses-online">Online</a></li><li><a href="/en/courses/offline/" data-nav-page="courses-offline">Offline</a></li></ul></li><li data-nav-group="news"><a href="/en/news/" class="nav-link nav-main-link" data-nav-page="news">News</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/en/papers/" class="nav-link active nav-main-link" data-nav-page="papers">R&amp;D</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="Expand R&amp;D submenu" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/en/papers/" data-nav-page="papers">Papers</a></li><li><a href="/en/patents/" data-nav-page="patents">Patents</a></li><li><a href="/en/projects/" data-nav-page="projects">Projects</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/en/activities/" class="nav-link nav-main-link" data-nav-page="activities">ETC</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="Expand ETC submenu" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/en/activities/" data-nav-page="activities">Social Contribution</a></li><li><a href="/en/memberships/" data-nav-page="memberships">Memberships</a></li><li><a href="/en/collections/" data-nav-page="collections">Collections</a></li></ul></li><li data-nav-group="contact"><a href="/en/contact/" class="btn-contact nav-main-link" data-nav-page="contact">Contact</a></li></ul><details class="language-switcher"><summary aria-label="Select language"><span aria-hidden="true">🌐</span> <span>English</span></summary><nav class="language-options" aria-label="Select language"><a href="/papers/llm-peer-review-grounding-failure-2026/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/llm-peer-review-grounding-failure-2026/" hreflang="en" lang="en" aria-current="true">English</a><a href="/zh/papers/llm-peer-review-grounding-failure-2026/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/papers/llm-peer-review-grounding-failure-2026/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/llm-peer-review-grounding-failure-2026/" hreflang="es" lang="es">Español</a><a href="/ar/papers/llm-peer-review-grounding-failure-2026/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/llm-peer-review-grounding-failure-2026/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/llm-peer-review-grounding-failure-2026/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/papers/llm-peer-review-grounding-failure-2026/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="Current location"><a href="/en/">Home</a><span aria-hidden="true">/</span><a href="/en/papers/">Papers</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-2026-p11"><header><p class="paper-kind">Preprint · not peer-reviewed</p><h1 id="paper-title" lang="en">Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review</h1><p class="paper-authors">Byunghyun Ban</p><p class="paper-venue">2026</p><nav class="paper-reader-jumps" aria-label="Read paper"><a href="#abstract-heading">Abstract</a><a href="#full-text">Full text</a><a href="#citation-heading">Cite</a></nav><div class="gitIcons">
+                                <a href="/papers/llm-peer-review-grounding-failure-2026/paper.pdf" target="_blank" rel="noreferrer" download aria-label="Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review — download full preprint PDF" title="Download PDF"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg><span class="paper-action-label">PDF</span></a>
+                                <a href="https://doi.org/10.13140/RG.2.2.34160.83209" target="_blank" rel="noreferrer" aria-label="Can LLMs Review Scientific Papers? DOI" title="DOI Original Publication Information"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">DOI</span></a>
+                                <a href="https://www.researchgate.net/publication/404420655_Can_LLMs_Review_Scientific_Papers" target="_blank" rel="noreferrer" aria-label="Can LLMs Review Scientific Papers? — original publication information" title="Original Publication Information"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">Source</span></a>
+                                <span class="citation" data-citation="Byunghyun Ban. (2026). &quot;Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review.&quot; ResearchGate · Preprint (not peer-reviewed). https://doi.org/10.13140/RG.2.2.34160.83209" aria-label="Copy citation" title="Copy citation"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">Cite</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>Contents</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-2026-p11-introduction">1. Introduction</a></li><li class="toc-level-2"><a href="#paper-2026-p11-case-description">2. Case Description</a></li><li class="toc-level-3"><a href="#paper-2026-p11-review-context">2.1 Review context</a></li><li class="toc-level-3"><a href="#paper-2026-p11-the-three-reviews">2.2 The three reviews</a></li><li class="toc-level-3"><a href="#paper-2026-p11-editorial-follow-up">2.3 Editorial follow-up</a></li><li class="toc-level-2"><a href="#paper-2026-p11-analytical-framework">3. Analytical Framework</a></li><li class="toc-level-3"><a href="#paper-2026-p11-false-missing-content-claim">3.1 False missing-content claim</a></li><li class="toc-level-3"><a href="#paper-2026-p11-methodological-hallucination">3.2 Methodological hallucination</a></li><li class="toc-level-3"><a href="#paper-2026-p11-evaluative-hallucination">3.3 Evaluative hallucination</a></li><li class="toc-level-3"><a href="#paper-2026-p11-template-like-review-generation">3.4 Template-like review generation</a></li><li class="toc-level-3"><a href="#paper-2026-p11-accountability-failure">3.5 Accountability failure</a></li><li class="toc-level-2"><a href="#paper-2026-p11-methods">4. Methods</a></li><li class="toc-level-3"><a href="#paper-2026-p11-manual-claim-level-audit">4.1 Manual claim-level audit</a></li><li class="toc-level-3"><a href="#paper-2026-p11-review-comparison">4.2 Review comparison</a></li><li class="toc-level-3"><a href="#paper-2026-p11-exploratory-source-grounded-llm-review">4.3 Exploratory source-grounded LLM review</a></li><li class="toc-level-2"><a href="#paper-2026-p11-results">5. Results</a></li><li class="toc-level-3"><a href="#paper-2026-p11-comparison-of-the-three-formal-reviews">5.1 Comparison of the three formal reviews</a></li><li class="toc-level-3"><a href="#paper-2026-p11-false-missing-content-claims-in-review-b">5.2 False missing-content claims in Review B</a></li><li class="toc-level-3"><a href="#paper-2026-p11-source-grounded-llm-review-result">5.3 Source-grounded LLM review result</a></li><li class="toc-level-3"><a href="#paper-2026-p11-review-b-versus-source-grounded-llm-output">5.4 Review B versus source-grounded LLM output</a></li><li class="toc-level-2"><a href="#paper-2026-p11-discussion">6. Discussion</a></li><li class="toc-level-3"><a href="#paper-2026-p11-grounding-improves-review-validity">6.1 Grounding improves review validity</a></li><li class="toc-level-3"><a href="#paper-2026-p11-grounding-does-not-eliminate-hallucination">6.2 Grounding does not eliminate hallucination</a></li><li class="toc-level-3"><a href="#paper-2026-p11-the-central-problem-is-unverified-judgment">6.3 The central problem is unverified judgment</a></li><li class="toc-level-3"><a href="#paper-2026-p11-ai-assistance-versus-ai-delegation">6.4 AI assistance versus AI delegation</a></li><li class="toc-level-3"><a href="#paper-2026-p11-implications-for-editorial-policy">6.5 Implications for editorial policy</a></li><li class="toc-level-2"><a href="#paper-2026-p11-recommendations">7. Recommendations</a></li><li class="toc-level-2"><a href="#paper-2026-p11-limitations">8. Limitations</a></li><li class="toc-level-2"><a href="#paper-2026-p11-conclusion">9. Conclusion</a></li><li class="toc-level-2"><a href="#paper-2026-p11-ethics-and-confidentiality-statement">Ethics and Confidentiality Statement</a></li><li class="toc-level-2"><a href="#paper-2026-p11-ai-use-statement">AI-Use Statement</a></li><li class="toc-level-2"><a href="#paper-2026-p11-references">References</a></li><li class="toc-level-2"><a href="#paper-2026-p11-appendix-a.-anonymized-manuscript-evidence">Appendix A. Anonymized Manuscript Evidence</a></li><li class="toc-level-2"><a href="#paper-2026-p11-appendix-b.-fair-rewriting-of-review-b-comments">Appendix B. Fair Rewriting of Review B Comments</a></li><li class="toc-level-2"><a href="#paper-2026-p11-appendix-c.-prompt-used-for-the-source-grounded-llm-review">Appendix C. Prompt Used for the Source-Grounded LLM Review</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">Abstract</h2><p class="abstract" lang="en">Maybe not. Large language models (LLMs) can produce fluent and plausible peer-review reports, but fluency is not scholarly judgment. This paper presents a case study of three formal peer-review reports received during an actual submission to a Korea Citation Index (KCI) candidate journal. One review claimed that key methodological and experimental details were missing, although the manuscript explicitly contained information about validation data, hardware, software frameworks, model configuration, parameter count, algorithmic procedure, and limitations. After the author reported these grounding failures to the editor, the problematic review was not relied upon in the final decision, and the manuscript was subsequently accepted and published. The case is compared with two more grounded human reviews and an exploratory source-grounded LLM-generated review. The source-grounded LLM review was more aligned with the manuscript, but still produced minor factual errors and overstatements. The case suggests that grounding improves LLM-assisted review, but does not eliminate hallucination or accountability gaps.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords"><strong>Keywords:</strong> large language models, peer review,
+hallucination, grounding failure, research integrity,
+retrieval-augmented generation, AI-assisted review</p><h2 id="paper-2026-p11-introduction">1. Introduction</h2>
+<p>Artificial intelligence systems have shown increasing ability to
+perform specialized tasks across domains, including domain-specific
+prediction, classification, and decision-support tasks [9-13]. However,
+successful automation in constrained tasks does not imply that AI
+systems can safely perform responsibility-bearing scholarly judgments.
+Peer review is not merely a text-generation task. It is an act of
+scholarly judgment. A reviewer is expected to read a manuscript,
+understand its claims, evaluate its evidence, identify limitations, and
+provide justified criticism under their own responsibility. Large
+language models (LLMs), however, make it increasingly easy to generate
+fluent, formal, and plausible review reports with minimal engagement
+with the manuscript.</p>
+<p>This creates a serious problem for scholarly publishing. A review may
+sound professional while failing to remain grounded in the paper it
+evaluates. In such cases, the issue is not simply poor writing or harsh
+criticism. The issue is that an official editorial evaluation may
+contain claims that are unsupported by, or directly contradicted by, the
+manuscript.</p>
+<p>The problem is closely related to the broader issue of hallucination
+in LLMs. Prior work has shown that retrieval or grounding can improve
+factuality in knowledge-intensive generation. Retrieval-Augmented
+Generation (RAG) combines parametric model knowledge with retrieved
+non-parametric evidence and was shown to generate more specific and
+factual language than a parametric-only baseline on knowledge-intensive
+tasks [1]. Retrieval-enhanced language models such as RETRO similarly
+condition generation on retrieved text chunks from a large corpus,
+showing that external retrieval can improve language modeling
+performance and factual grounding while reducing reliance on model
+parameters alone [2]. Self-RAG further proposed adaptive retrieval and
+self-reflection to improve factuality and citation accuracy in long-form
+generation [3]. Browser-assisted systems such as WebGPT also emphasize
+that collecting references during generation can make factual accuracy
+easier to evaluate [4].</p>
+<p>This literature suggests a plausible hypothesis for peer review: if
+LLMs are used to assist review writing, grounding review claims in the
+source manuscript may reduce hallucination-like errors. A useful review
+should not merely say that “the experimental design is insufficient” or
+“the dataset is unclear.” It should identify what is missing, where the
+issue occurs, why it matters, and how the manuscript can be improved. In
+other words, peer-review criticism should be attributable to the
+manuscript.</p>
+<p>However, grounding is not a complete solution. Hallucinated citations
+and fabricated references have been empirically documented in academic
+contexts, and such outputs can appear legitimate at first glance [5].
+This is particularly concerning in peer review, because review reports
+can influence editorial decisions, publication timelines, and the
+scientific record.</p>
+<p>Publishers have also begun to treat AI use in peer review as an issue
+of confidentiality, ethics, and accountability. Nature Portfolio states
+that peer reviewers are accountable for the accuracy and views expressed
+in their reports and warns that generative AI tools can produce false
+information [6]. SAGE states that reviewers who inappropriately use
+generative AI tools to generate review reports will not be invited to
+review and that such reports will not be included in final decisions
+[7]. Recent case-based work has also begun to document first-person
+experiences with suspected AI-generated peer reviews [8].</p>
+<p>This paper presents a case study of hallucination-like and ungrounded
+evaluation in formal journal peer review. The case concerns three
+peer-review reports received during an actual submission to a Korea
+Citation Index (KCI) candidate journal. One review made multiple claims
+that important manuscript elements were missing, although the manuscript
+explicitly contained those elements. The author reported these concerns
+to the editor; after editorial consideration, the problematic review was
+not relied upon in the final decision, and the manuscript was
+subsequently accepted and published.</p>
+<p>The goal of this paper is not to prove that the problematic review
+was generated by an LLM. Rather, the goal is to analyze a failure mode
+that is highly relevant to LLM-assisted reviewing: fluent but ungrounded
+evaluation. This paper asks three questions:</p>
+<blockquote>
+<p>1. What kinds of grounding failures appeared in the problematic
+review?</p>
+<p>2. How did the problematic review differ from two more grounded
+reviews of the same manuscript?</p>
+<p>3. Does source-grounded LLM review reduce the same type of false
+missing-content claims?</p>
+</blockquote>
+<p>The central argument is that the issue is not merely whether AI was
+used. The issue is whether the review was grounded, verified, disclosed
+where required, and responsibly owned by the human reviewer.</p>
+<h2 id="paper-2026-p11-case-description">2. Case Description</h2>
+<h3 id="paper-2026-p11-review-context">2.1 Review context</h3>
+<p>This paper analyzes three formal peer-review reports received during
+an actual submission to a Korea Citation Index (KCI) candidate journal.
+The manuscript was a technical paper in applied artificial intelligence.
+To reduce identifiability, the journal name, manuscript title, system
+name, detailed application domain, author identity in the original
+submission, reviewer identities, editorial metadata, submission dates,
+publication date, volume, issue, page information, and bibliographic
+links are omitted.</p>
+<p>Not all technical information is omitted. In a technical case study,
+complete removal of experimental details would make the grounding
+analysis impossible to evaluate. Therefore, non-identifying
+methodological metadata are retained where necessary, including
+hardware, software frameworks, model configuration, parameter count, and
+evaluation design. The case is described only at the level necessary to
+analyze whether review comments were grounded in the manuscript’s own
+technical content.</p>
+<h3 id="paper-2026-p11-the-three-reviews">2.2 The three reviews</h3>
+<p>The manuscript received three independent reviews. They are referred
+to as Review A, Review B, and Review C.</p>
+<p><strong>Review A</strong> recommended publication after revision. It
+recognized the manuscript’s main contribution and requested additional
+comparative evaluation, broader test conditions, clearer visual
+explanation of results, and expanded discussion of limitations and
+applications. The comments were concise but directly connected to the
+manuscript.</p>
+<p><strong>Review B</strong> recommended revision and re-review. It
+summarized the manuscript in broad terms and requested revisions related
+to redundancy, experimental detail, data description, model parameters,
+computational setup, result analysis, comparison with previous methods,
+terminology, figures and tables, limitations, conclusion, references,
+and proofreading. Some of these requests were reasonable. However,
+several claims about missing methodological and experimental details
+were contradicted by the manuscript.</p>
+<p><strong>Review C</strong> recommended acceptance. It accurately
+summarized the manuscript’s motivation, contribution, and practical
+relevance. It also identified a concrete limitation that was actually
+discussed in the manuscript: the method can produce residual artifacts
+under certain conditions. Review C suggested that the manuscript would
+be strengthened by discussing this limitation and possible remedies more
+fully.</p>
+<h3 id="paper-2026-p11-editorial-follow-up">2.3 Editorial follow-up</h3>
+<p>After receiving the reviews, the author contacted the editor to
+report concerns that Review B appeared insufficiently grounded in the
+manuscript and potentially AI-generated or AI-assisted. The concern was
+not based solely on writing style. It was based on multiple review
+claims that contradicted explicit content in the manuscript, including
+claims about missing validation data description, computational
+environment, model configuration, and methodological details.</p>
+<p>Following editorial consideration, Review B was not relied upon in
+the final assessment. The manuscript was subsequently accepted and
+published. This outcome does not prove that Review B was generated by an
+LLM. However, it shows that the review was sufficiently unreliable to
+require editorial intervention. The case therefore illustrates not only
+a textual failure mode, but also the importance of editorial mechanisms
+for identifying and correcting ungrounded review reports.</p>
+<h2 id="paper-2026-p11-analytical-framework">3. Analytical Framework</h2>
+<p>This paper defines grounding as the degree to which a review claim is
+supported by specific evidence in the manuscript. A grounded review does
+not merely state that “the experimental details are insufficient.” It
+identifies what detail is missing, where the issue occurs, why the
+omission matters, and how the manuscript can be improved.</p>
+<p>The term hallucination is used in a functional sense. In this paper,
+a hallucinated review claim is a claim that is fluent and plausible but
+contradicted by the source manuscript. The term is not used as proof
+that the review was generated by an LLM.</p>
+<h3 id="paper-2026-p11-false-missing-content-claim">3.1 False missing-content
+claim</h3>
+<p>A false missing-content claim occurs when a review states that some
+information is absent even though the manuscript explicitly contains
+it.</p>
+<p>Example form: “The computational environment is not described.”</p>
+<p>This is a grounding failure if the manuscript explicitly states the
+hardware and software environment.</p>
+<h3 id="paper-2026-p11-methodological-hallucination">3.2 Methodological
+hallucination</h3>
+<p>A methodological hallucination occurs when a review misrepresents the
+method, claims that methodological components are absent when they are
+present, or criticizes the paper on the basis of an incorrect
+reconstruction of the proposed approach.</p>
+<h3 id="paper-2026-p11-evaluative-hallucination">3.3 Evaluative hallucination</h3>
+<p>An evaluative hallucination occurs when a review makes broad
+judgments such as “insufficient,” “unclear,” or “unsupported” without
+connecting the criticism to manuscript evidence. The claim may be
+plausible in generic terms but remains weak as peer review because it is
+not source-grounded.</p>
+<h3 id="paper-2026-p11-template-like-review-generation">3.4 Template-like review
+generation</h3>
+<p>Template-like review generation occurs when a review lists generic
+revision requests that could apply to many manuscripts: improve the
+abstract, define terminology, expand references, clarify figures,
+discuss limitations, and proofread. These comments may be reasonable
+individually, but if they are not tied to manuscript-specific evidence,
+they provide limited editorial value.</p>
+<h3 id="paper-2026-p11-accountability-failure">3.5 Accountability failure</h3>
+<p>An accountability failure occurs when a reviewer submits unverified
+generated or semi-generated evaluative text as an official peer-review
+report. This is not only a linguistic problem. It is a responsibility
+problem. A review submitted under a reviewer’s name is an official
+scholarly judgment, regardless of whether AI tools were used during
+drafting.</p>
+<h2 id="paper-2026-p11-methods">4. Methods</h2>
+<h3 id="paper-2026-p11-manual-claim-level-audit">4.1 Manual claim-level audit</h3>
+<p>The author manually compared the substantive claims in Review B
+against the manuscript. Each claim was classified as one of the
+following:</p>
+<blockquote>
+<p>1. Supported: clearly supported by the manuscript.</p>
+<p>2. Partially supported: has some basis, but is vague, overstated, or
+incomplete.</p>
+<p>3. Contradicted: claims something is missing or incorrect, although
+the manuscript explicitly contains the relevant information.</p>
+<p>4. Unsupported/generic: not clearly tied to the manuscript.</p>
+<p>5. Not assessable: cannot be evaluated from the manuscript alone.</p>
+</blockquote>
+<p>The manual audit was treated as the primary evidence in this
+paper.</p>
+<h3 id="paper-2026-p11-review-comparison">4.2 Review comparison</h3>
+<p>Reviews A, B, and C were compared on the following dimensions:</p>
+<ul>
+<li><p>manuscript grounding</p></li>
+<li><p>specificity</p></li>
+<li><p>factual accuracy</p></li>
+<li><p>actionability</p></li>
+<li><p>genericity</p></li>
+<li><p>false missing-content claims</p></li>
+<li><p>suitability as a basis for editorial decision-making</p></li>
+</ul>
+<h3 id="paper-2026-p11-exploratory-source-grounded-llm-review">4.3 Exploratory
+source-grounded LLM review</h3>
+<p>The author conducted an exploratory source-grounded LLM review using
+a manuscript-only prompt in a notebook-style source-grounded LLM system.
+The uploaded source consisted of the anonymized manuscript PDF only.
+Prior reviewer reports were not included in the notebook to avoid
+contamination.</p>
+<p>The prompt asked the system to act as a peer reviewer and evaluate
+the manuscript in terms of topic suitability, abstract clarity,
+literature review, methodology, experimental design and results,
+references, originality, and academic contribution. The output was then
+compared with Review B.</p>
+<p>This experiment was not designed to prove that a source-grounded LLM
+can replace a human reviewer. Rather, it was used to examine whether a
+source-grounded LLM output under a simple review prompt would reproduce
+the same type of false missing-content claims observed in Review B.</p>
+<h2 id="paper-2026-p11-results">5. Results</h2>
+<h3 id="paper-2026-p11-comparison-of-the-three-formal-reviews">5.1 Comparison of the
+three formal reviews</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:95%;">
+<caption><p>Table 1. Comparison of the three formal peer-review
+reports.</p></caption>
+<colgroup>
+<col style="width: 27%"/>
+<col style="width: 23%"/>
+<col style="width: 23%"/>
+<col style="width: 20%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Feature</strong></th>
+<th><strong>Review A</strong></th>
+<th><strong>Review B</strong></th>
+<th><strong>Review C</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommendation</td>
+<td>Revise and publish</td>
+<td>Revise and re-review</td>
+<td>Accept</td>
+</tr>
+<tr>
+<td>Manuscript-specific understanding</td>
+<td>High</td>
+<td>Low to medium</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Concrete technical feedback</td>
+<td>High</td>
+<td>Low to medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Generic/template-like phrasing</td>
+<td>Low</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>False missing-content claims</td>
+<td>None detected</td>
+<td>Multiple detected</td>
+<td>None detected</td>
+</tr>
+<tr>
+<td>Actionability</td>
+<td>High</td>
+<td>Mixed</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Recognition of actual limitations</td>
+<td>Yes</td>
+<td>Generic</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Editorial reliance after author report</td>
+<td>Retained</td>
+<td>Discounted / excluded</td>
+<td>Retained</td>
+</tr>
+</tbody>
+</table></div>
+<p>Review A was concise but grounded. It identified areas where the
+manuscript could be strengthened, including comparative evaluation,
+broader testing, clearer presentation of visual results, and expanded
+limitations.</p>
+<p>Review C was also grounded. It accurately captured the manuscript’s
+central contribution and identified a limitation that was actually
+present in the manuscript. Its recommendation was positive, but it still
+provided a concrete improvement request.</p>
+<p>Review B differed from the other two reviews. Although it was fluent
+and professionally formatted, several of its claims were contradicted by
+the manuscript.</p>
+<h3 id="paper-2026-p11-false-missing-content-claims-in-review-b">5.2 False
+missing-content claims in Review B</h3>
+<p>Table 2 summarizes the claim-level audit of Review B. The most
+serious grounding failures were false missing-content claims. Review B
+stated or implied that the manuscript lacked sufficient information
+about validation data, hardware, software frameworks, model parameters,
+and methodological details. However, as shown in Table 2 and Appendix A,
+the manuscript explicitly contained these elements.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:99%;">
+<caption><p>Table 2. Claim-level audit of Review B against the
+manuscript.</p></caption>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 42%"/>
+<col style="width: 22%"/>
+<col style="width: 10%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Review B claim</strong></th>
+<th><strong>Manuscript evidence</strong></th>
+<th><strong>Classification</strong></th>
+<th><strong>Severity</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The validation data source or characteristics were not clearly
+described.</td>
+<td>The manuscript explicitly described the source of the validation
+data and the types of test cases used. See Appendix A.</td>
+<td>Contradicted / false missing-content claim</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Hardware or computational specifications were needed for
+reproducibility.</td>
+<td>The manuscript specified the computational environment, including an
+NVIDIA RTX 3080 GPU, an Intel i9-13900K CPU, CPU/GPU usage conditions,
+Python, Torch, and OpenCV. See Appendix A.</td>
+<td>Contradicted / false missing-content claim</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Model parameters should be described.</td>
+<td>The manuscript reported model configuration, model weight size, and
+parameter count, including a 169.8 MB model weight file and
+approximately 44.4 million parameters. See Appendix A.</td>
+<td>Contradicted / false missing-content claim</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Methodological explanation was insufficient.</td>
+<td>The manuscript described the algorithmic pipeline, update rules,
+implementation logic, pseudocode, and output-generation procedure. See
+Appendix A.</td>
+<td>Partially supported but overstated</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Comparison with previous methods should be clearer.</td>
+<td>The manuscript included related work and a limited model-size
+comparison table, although broader empirical comparison could have
+strengthened the paper.</td>
+<td>Partially supported</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Limitations should be discussed.</td>
+<td>The manuscript discussed limitations, though mitigation strategies
+could have been expanded.</td>
+<td>Partially supported but overstated</td>
+<td>Low to medium</td>
+</tr>
+<tr>
+<td>Typographical or grammatical errors were present.</td>
+<td>The manuscript contained minor typographical and language
+errors.</td>
+<td>Supported</td>
+<td>Low</td>
+</tr>
+</tbody>
+</table></div>
+<p>The most serious issue was not that Review B gave negative feedback.
+Negative feedback is essential to peer review. The issue was that some
+negative feedback was based on claims of absence that were factually
+inconsistent with the manuscript. This is a high-risk review failure
+because the report appears reasonable while its factual premise is
+wrong.</p>
+<h3 id="paper-2026-p11-source-grounded-llm-review-result">5.3 Source-grounded LLM
+review result</h3>
+<p>The source-grounded LLM review was substantially more aligned with
+the manuscript than Review B. Unlike Review B, it recognized that the
+manuscript specified the validation data source, hardware environment,
+software frameworks, model configuration, algorithmic pipeline, and
+comparative model-size information. It did not claim that the validation
+data, computational environment, or model parameters were absent.</p>
+<p>Its major criticisms were mostly grounded in real weaknesses of the
+manuscript.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:95%;">
+<caption><p>Table 3. Assessment of major criticisms in the
+source-grounded LLM review.</p></caption>
+<colgroup>
+<col style="width: 30%"/>
+<col style="width: 45%"/>
+<col style="width: 19%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Source-grounded LLM criticism</strong></th>
+<th><strong>Manuscript-groundedness</strong></th>
+<th><strong>Assessment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lack of runtime benchmark despite practical performance claims</td>
+<td>The manuscript made practical performance claims but did not provide
+detailed FPS, latency, or throughput measurements.</td>
+<td>Valid</td>
+</tr>
+<tr>
+<td>Lack of quantitative evaluation</td>
+<td>The manuscript explained why one common evaluation approach was not
+applicable, but did not provide a strong alternative quantitative
+metric.</td>
+<td>Valid</td>
+</tr>
+<tr>
+<td>Use of non-standard validation data</td>
+<td>The manuscript specified the validation data source, but the data
+were not a standardized benchmark.</td>
+<td>Valid extension request</td>
+</tr>
+<tr>
+<td>Need to expand limitations</td>
+<td>The manuscript mentioned limitations, but mitigation strategies were
+limited.</td>
+<td>Partially valid</td>
+</tr>
+<tr>
+<td>Suggestion of quantitative quality metrics</td>
+<td>Potentially useful, but would require controlled data or a reliable
+reference condition.</td>
+<td>Valid but needs qualification</td>
+</tr>
+</tbody>
+</table></div>
+<p>However, the source-grounded LLM output was not error-free. It
+misreported the number of references and overstated one technical
+limitation. These errors were smaller than the false missing-content
+claims in Review B, but they show that grounding does not eliminate
+hallucination, counting errors, or interpretive overreach.</p>
+<h3 id="paper-2026-p11-review-b-versus-source-grounded-llm-output">5.4 Review B versus
+source-grounded LLM output</h3>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:95%;">
+<caption><p>Table 4. Comparison between Review B and the source-grounded
+LLM review.</p></caption>
+<colgroup>
+<col style="width: 31%"/>
+<col style="width: 28%"/>
+<col style="width: 34%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Criterion</strong></th>
+<th><strong>Review B</strong></th>
+<th><strong>Source-grounded LLM review</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recognized validation data source</td>
+<td>No; claimed it was unclear</td>
+<td>Yes; recognized that it was specified</td>
+</tr>
+<tr>
+<td>Recognized hardware/software environment</td>
+<td>No; requested it as if absent</td>
+<td>Yes; recognized it and requested runtime measurements instead</td>
+</tr>
+<tr>
+<td>Recognized model configuration and parameter information</td>
+<td>No; requested it as if absent</td>
+<td>Yes; recognized model-size information</td>
+</tr>
+<tr>
+<td>Method summary</td>
+<td>Generic</td>
+<td>Specific to the manuscript’s pipeline</td>
+</tr>
+<tr>
+<td>Main valid criticism</td>
+<td>Typographical errors and some broad revision requests</td>
+<td>Quantitative evaluation, runtime benchmark, standardized
+evaluation</td>
+</tr>
+<tr>
+<td>False missing-content claims</td>
+<td>Multiple</td>
+<td>None detected in major criticisms</td>
+</tr>
+<tr>
+<td>Minor hallucinations</td>
+<td>Several contradicted claims</td>
+<td>Incorrect reference count; overstated limitation</td>
+</tr>
+<tr>
+<td>Overall reliability</td>
+<td>Low to medium</td>
+<td>Higher, but still requires human verification</td>
+</tr>
+</tbody>
+</table></div>
+<p>Grounding changed the failure mode. Review B produced several false
+missing-content claims. The source-grounded LLM review did not reproduce
+those major errors, but still produced local inaccuracies and
+overstatements. This distinction is central to the paper’s argument.</p>
+<h2 id="paper-2026-p11-discussion">6. Discussion</h2>
+<h3 id="paper-2026-p11-grounding-improves-review-validity">6.1 Grounding improves
+review validity</h3>
+<p>The comparison suggests that grounding substantially improves the
+validity of LLM-assisted review. The source-grounded LLM review was more
+closely aligned with the manuscript than Review B. It recognized the
+validation data, hardware/software environment, model configuration,
+algorithmic procedure, and comparison information. Its major criticisms
+focused on genuine weaknesses such as missing runtime benchmarks,
+limited quantitative evaluation, and insufficient discussion of
+mitigation strategies.</p>
+<p>This finding is consistent with prior work on retrieval-augmented and
+source-grounded language generation. RAG was introduced to combine
+parametric knowledge with retrieved external evidence and improve
+factuality in knowledge-intensive generation [1]. Retrieval-enhanced
+models have similarly shown that retrieved text can improve language
+generation by providing external grounding beyond parametric memory [2].
+Self-RAG further showed that adaptive retrieval and self-reflection can
+improve factuality and citation accuracy [3]. In peer review, the
+equivalent principle is that substantive review claims should be
+auditable against the manuscript.</p>
+<h3 id="paper-2026-p11-grounding-does-not-eliminate-hallucination">6.2 Grounding does
+not eliminate hallucination</h3>
+<p>The same source-grounded output still contained factual errors and
+overstatements. The incorrect reference count is a small but clear
+hallucination. The overstated limitation also shows that a grounded
+system can still misinterpret or exaggerate source material.</p>
+<p>This is important because grounding can create a false sense of
+safety. A citation, source link, or manuscript reference does not
+automatically make a claim correct. A review can point to a relevant
+section while still misreading it. Therefore, grounding should be
+understood as a necessary but insufficient safeguard. This conclusion is
+consistent with prior evidence that LLM outputs can contain fabricated
+or erroneous academic citations even when the surrounding text appears
+plausible [5].</p>
+<h3 id="paper-2026-p11-the-central-problem-is-unverified-judgment">6.3 The central
+problem is unverified judgment</h3>
+<p>This case does not support a simple anti-AI conclusion. Rather, it
+shows that ungrounded or unverified review text is dangerous, whether
+written by a human, an LLM, or a human using an LLM. The central issue
+is not merely whether AI was used. The central issue is whether the
+review was grounded, verified, and responsibly owned.</p>
+<p>Review B was problematic because it inserted false claims into the
+editorial process. If such claims had been accepted without checking,
+the decision could have been influenced by information that was
+inconsistent with the manuscript. The author’s intervention and the
+editor’s decision to discount the problematic report prevented this
+failure from determining the final outcome.</p>
+<h3 id="paper-2026-p11-ai-assistance-versus-ai-delegation">6.4 AI assistance versus AI
+delegation</h3>
+<p>A distinction should be made between AI assistance and AI
+delegation.</p>
+<p>AI assistance may include language polishing, organizing reviewer
+notes, checking grammar, or helping formulate already-verified comments.
+AI delegation occurs when the reviewer transfers substantive scholarly
+judgment—novelty assessment, methodological criticism, rejection
+rationale, or revision requirements—to an AI system without
+verification.</p>
+<p>The latter is ethically problematic. Peer review is submitted under a
+reviewer’s authority. If a reviewer uses AI to help draft a report, the
+reviewer remains responsible for every claim. A model cannot answer
+author rebuttals, defend methodological criticisms, or accept
+accountability for false claims.</p>
+<h3 id="paper-2026-p11-implications-for-editorial-policy">6.5 Implications for
+editorial policy</h3>
+<p>This case suggests several practical safeguards.</p>
+<p>First, major criticisms should be required to cite specific
+manuscript sections, figures, tables, or passages. A review that claims
+“the computational environment is unclear” should identify where the
+relevant information should have been described and confirm that it is
+not described elsewhere.</p>
+<p>Second, editors should treat generic checklist-style reports as
+low-information unless they are supported by manuscript-specific
+evidence.</p>
+<p>Third, reviewers who use AI tools should disclose such use according
+to journal policy and should not upload confidential manuscripts into
+external tools unless permitted by the journal and compatible with
+confidentiality obligations. This aligns with publisher policies
+emphasizing reviewer accountability and confidentiality in relation to
+AI tools [6,7].</p>
+<p>Fourth, authors should be allowed to contest reviews at the claim
+level. The appropriate response to an ungrounded review is not merely
+“the review is unfair,” but “this review claim is contradicted by the
+following manuscript passage.”</p>
+<h2 id="paper-2026-p11-recommendations">7. Recommendations</h2>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:95%;">
+<caption><p>Table 5. Practical recommendations for responsible
+AI-assisted reviewing.</p></caption>
+<colgroup>
+<col style="width: 21%"/>
+<col style="width: 73%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Stakeholder</strong></th>
+<th><strong>Recommendation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reviewers</td>
+<td>Do not submit AI-generated or AI-assisted review text without
+verifying every substantive claim against the manuscript.</td>
+</tr>
+<tr>
+<td>Reviewers</td>
+<td>If AI is used, disclose it according to journal policy.</td>
+</tr>
+<tr>
+<td>Reviewers</td>
+<td>Do not claim that content is missing unless the full manuscript has
+been checked.</td>
+</tr>
+<tr>
+<td>Reviewers</td>
+<td>Separate “missing” from “present but insufficiently
+emphasized.”</td>
+</tr>
+<tr>
+<td>Editors</td>
+<td>Require evidence for major methodological criticisms.</td>
+</tr>
+<tr>
+<td>Editors</td>
+<td>Discount generic reports that lack manuscript-specific
+grounding.</td>
+</tr>
+<tr>
+<td>Editors</td>
+<td>Provide a mechanism for authors to report contradicted review
+claims.</td>
+</tr>
+<tr>
+<td>Journals</td>
+<td>Establish explicit AI-use policies for peer review, including
+confidentiality, disclosure, and reviewer accountability.</td>
+</tr>
+<tr>
+<td>Authors</td>
+<td>Respond to ungrounded reviews by mapping disputed claims to
+manuscript evidence.</td>
+</tr>
+<tr>
+<td>AI-tool developers</td>
+<td>Design review-assistance systems that force claim-level attribution
+and uncertainty reporting.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The findings of this case study suggest that responsible AI-assisted
+reviewing requires safeguards at multiple levels. The central issue is
+not only whether AI tools are used, but whether the resulting review
+claims are verified, attributable to the manuscript, and owned by the
+reviewer. Because peer review can influence editorial decisions and the
+scientific record, unsupported or generic criticism should not be
+treated as equivalent to manuscript-grounded scholarly evaluation.</p>
+<p>For reviewers, the most important requirement is verification.
+Reviewers should not submit AI-generated or AI-assisted review text
+unless every substantive claim has been checked against the manuscript.
+In particular, reviewers should avoid stating that information is
+missing unless they have examined the full manuscript and confirmed that
+the information is not present. A distinction should also be maintained
+between information that is genuinely absent and information that is
+present but insufficiently emphasized, poorly organized, or inadequately
+discussed. These categories require different forms of criticism and
+different revision requests.</p>
+<p>If reviewers use AI tools during the review process, such use should
+be disclosed according to the journal’s policy. AI tools may assist with
+language polishing, organization, or summarization of already verified
+notes, but they should not be used to delegate substantive scholarly
+judgment. The reviewer remains responsible for the accuracy, fairness,
+and implications of the submitted report.</p>
+<p>Editors also have an important gatekeeping role. Major methodological
+criticisms should be expected to refer to specific manuscript evidence,
+such as sections, figures, tables, experimental descriptions, or
+passages. Generic checklist-style reports should be treated as
+low-information unless they are supported by manuscript-specific
+observations. Editors should also provide a mechanism through which
+authors can report review claims that are contradicted by the
+manuscript. Such a process would help distinguish ordinary disagreement
+from factual review errors.</p>
+<p>Journals should establish explicit policies for AI use in peer
+review. These policies should address confidentiality, disclosure,
+reviewer accountability, and the permissibility of uploading manuscripts
+to external AI systems. Clear policies are necessary because the ethical
+risk lies not only in text generation itself, but also in the
+possibility that confidential manuscripts may be processed by tools
+outside the journal’s control.</p>
+<p>Authors, meanwhile, should respond to ungrounded reviews at the claim
+level. Rather than simply arguing that a review is unfair, authors
+should map disputed review claims to specific manuscript evidence. This
+makes the rebuttal more verifiable and allows editors to evaluate
+whether the review criticism is grounded or contradicted.</p>
+<p>Finally, AI-tool developers should design review-assistance systems
+that encourage claim-level attribution and uncertainty reporting. A
+responsible review-support system should not merely generate fluent
+criticism. It should make it easier to trace each criticism back to
+manuscript evidence, distinguish absence from insufficiency, and flag
+claims that require human verification.</p>
+<h2 id="paper-2026-p11-limitations">8. Limitations</h2>
+<p>This study has several limitations.</p>
+<p>First, it is based on a single manuscript and three reviews. It
+cannot estimate the prevalence of AI-generated or ungrounded peer
+review.</p>
+<p>Second, the study does not prove that Review B used an LLM. The
+analysis is based on manuscript-review mismatch and review quality, not
+forensic AI detection.</p>
+<p>Third, the reviewed manuscript itself had real weaknesses. For
+example, typographical errors were present, quantitative runtime
+benchmarks were absent, and limitations could have been expanded.
+Therefore, the purpose of this paper is not to argue that all criticism
+was invalid.</p>
+<p>Fourth, the source-grounded LLM experiment was exploratory. It used
+one manuscript, one tool, and one prompt condition. The result should be
+treated as an illustrative comparison, not as a general benchmark of LLM
+review quality.</p>
+<p>Fifth, anonymization limits external verifiability. To reduce
+identifiability, the journal name, manuscript title, detailed
+application domain, system name, bibliographic metadata, and editorial
+metadata are omitted. However, hardware, software framework, model-size,
+and parameter-count information are retained where necessary, because
+removing all technical details would make the grounding analysis
+unverifiable.</p>
+<h2 id="paper-2026-p11-conclusion">9. Conclusion</h2>
+<p>Can LLMs review scientific papers? Maybe not—at least not without
+grounding, verification, and human accountability.</p>
+<p>This case study shows that a peer review can appear polished and
+professional while making claims that are poorly grounded in the
+manuscript. The problematic review claimed that validation data,
+hardware/software environment, model configuration, and methodological
+details were missing or insufficient, although the manuscript explicitly
+contained several of these elements. In contrast, two other human
+reviews and an exploratory source-grounded LLM review were more closely
+aligned with the manuscript.</p>
+<p>The source-grounded LLM review provides an important nuance.
+Grounding improved the validity of the review-like output: it reduced
+severe false missing-content claims and focused criticism on genuine
+weaknesses. However, grounding did not eliminate hallucination. The
+output still contained a factual counting error and overstated a
+technical limitation.</p>
+<p>Therefore, the lesson is not simply “AI cannot review papers.” The
+better conclusion is: ungrounded and unverified AI-assisted review is
+dangerous, while grounded AI assistance may be useful only when
+constrained, audited, disclosed where required, and ethically governed.
+No grounding tool can transfer responsibility away from the reviewer. A
+peer-review report is an official scholarly judgment, and the person
+whose name is attached to it must verify its claims.</p>
+<h2 id="paper-2026-p11-ethics-and-confidentiality-statement">Ethics and Confidentiality
+Statement</h2>
+<p>This paper analyzes anonymized peer-review materials from a real
+journal submission. The journal was a Korea Citation Index (KCI)
+candidate journal at the time of the review process. This broad indexing
+status is disclosed only to clarify that the case arose from a formal
+scholarly peer-review process. To reduce identifiability, the journal
+title, manuscript title, detailed application domain, system name,
+author identity in the original submission, reviewer identities,
+editorial metadata, submission dates, publication date, volume, issue,
+page information, and bibliographic links are omitted.</p>
+<p>Selected technical metadata, including hardware, software frameworks,
+model configuration, model size, parameter count, and evaluation design,
+are retained because these details are necessary to analyze whether the
+review was grounded in the manuscript. The purpose of this paper is not
+to identify or accuse an individual reviewer, editor, or journal. The
+purpose is to analyze a failure mode in peer review and discuss
+safeguards for AI-assisted reviewing.</p>
+<h2 id="paper-2026-p11-ai-use-statement">AI-Use Statement</h2>
+<p>AI tools were used to assist drafting, organization, and language
+editing of this manuscript. The human author remains solely responsible
+for the factual accuracy, interpretation, argumentation, and conclusions
+of the paper. All factual claims, citations, and case interpretations
+should be verified by the human author before public release.</p>
+<h2 id="paper-2026-p11-references">References</h2>
+<p>[1] P. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N.
+Goyal, et al., “Retrieval-Augmented Generation for Knowledge-Intensive
+NLP Tasks,” Advances in Neural Information Processing Systems, 2020.
+URL: <a href="https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html" rel="noopener noreferrer"><u>https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html</u></a></p>
+<p>[2] S. Borgeaud, A. Mensch, J. Hoffmann, T. Cai, E. Rutherford, K.
+Millican, et al., “Improving Language Models by Retrieving from
+Trillions of Tokens,” Proceedings of the 39th International Conference
+on Machine Learning, PMLR 162:2206–2240, 2022. URL: <a href="https://proceedings.mlr.press/v162/borgeaud22a.html" rel="noopener noreferrer"><u>https://proceedings.mlr.press/v162/borgeaud22a.html</u></a></p>
+<p>[3] A. Asai, Z. Wu, Y. Wang, A. Sil, and H. Hajishirzi, “Self-RAG:
+Learning to Retrieve, Generate, and Critique through Self-Reflection,”
+International Conference on Learning Representations, 2024. URL: <a href="https://arxiv.org/abs/2310.11511" rel="noopener noreferrer"><u>https://arxiv.org/abs/2310.11511</u></a></p>
+<p>[4] R. Nakano, J. Hilton, S. Balaji, J. Wu, L. Ouyang, C. Kim, et
+al., “WebGPT: Browser-assisted question-answering with human feedback,”
+arXiv preprint, 2021. URL: <a href="https://arxiv.org/abs/2112.09332" rel="noopener noreferrer"><u>https://arxiv.org/abs/2112.09332</u></a></p>
+<p>[5] W. H. Walters and E. I. Wilder, “Fabrication and errors in the
+bibliographic citations generated by ChatGPT,” Scientific Reports, 13,
+14045, 2023. DOI: 10.1038/s41598-023-41032-5. URL: <a href="https://www.nature.com/articles/s41598-023-41032-5" rel="noopener noreferrer"><u>https://www.nature.com/articles/s41598-023-41032-5</u></a></p>
+<p>[6] Nature Portfolio, “Artificial Intelligence (AI),” Editorial
+Policies. URL: <a href="https://www.nature.com/nature-portfolio/editorial-policies/ai" rel="noopener noreferrer"><u>https://www.nature.com/nature-portfolio/editorial-policies/ai</u></a>.
+Accessed: May 4, 2026.</p>
+<p>[7] SAGE, “Artificial Intelligence Policy,” Publication Ethics
+Policies. URL: <a href="https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy" rel="noopener noreferrer"><u>https://www.sagepub.com/journals/publication-ethics-policies/artificial-intelligence-policy</u></a>.
+Accessed: May 4, 2026.</p>
+<p>[8] N. Lo Vecchio, “Personal experience with AI-generated peer
+reviews: a case study,” Research Integrity and Peer Review, 10, 4, 2025.
+DOI: 10.1186/s41073-025-00161-3. URL: <a href="https://link.springer.com/article/10.1186/s41073-025-00161-3" rel="noopener noreferrer"><u>https://link.springer.com/article/10.1186/s41073-025-00161-3</u></a></p>
+<p>[9] Ban, Byunghyun, Donghun Ryu, and Minwoo Lee. "Machine learning
+approach to remove ion interference effect in agricultural nutrient
+solutions." <em>2019 International Conference on Information and
+Communication Technology Convergence (ICTC)</em>. IEEE, 2019.</p>
+<p>[10] Ban, Byunghyun, et al. "Nutrient solution management system for
+smart farms and plant factory." <em>2020 international conference on
+information and communication technology convergence (ICTC)</em>. IEEE,
+2020.</p>
+<p>[11] Ban, Byunghyun, Minwoo Lee, and Donghun Ryu. "ODE network model
+for nonlinear and complex agricultural nutrient solution
+system." <em>2019 International Conference on Information and
+Communication Technology Convergence (ICTC)</em>. IEEE, 2019.</p>
+<p>[12] Choo, Sang-Mok, et al. "The phenotype control kernel of a
+biomolecular regulatory network." <em>BMC systems biology</em> 12.1
+(2018): 49.</p>
+<p>[13] Ban, Byunghyun. "Deep learning method to remove chemical,
+kinetic and electric artifacts on ISEs." <em>2020 International
+Conference on Information and Communication Technology Convergence
+(ICTC)</em>. IEEE, 2020.</p>
+<h2 id="paper-2026-p11-appendix-a.-anonymized-manuscript-evidence">Appendix A.
+Anonymized Manuscript Evidence</h2>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:95%;">
+<caption><p>Table A1. Anonymized evidence showing that disputed
+information was present in the manuscript.</p></caption>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 68%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Disputed issue</strong></th>
+<th><strong>Anonymized manuscript evidence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Validation data</td>
+<td>The manuscript stated the source of the validation data and
+described the types of test cases used for evaluation.</td>
+</tr>
+<tr>
+<td>Hardware environment</td>
+<td>The manuscript specified the use of an NVIDIA RTX 3080 GPU and an
+Intel i9-13900K CPU under different experimental conditions.</td>
+</tr>
+<tr>
+<td>Software frameworks</td>
+<td>The manuscript specified Python, Torch, and OpenCV as implementation
+tools.</td>
+</tr>
+<tr>
+<td>Model configuration</td>
+<td>The manuscript described the model configuration, backbone,
+pretraining source, model weight size, and parameter count.</td>
+</tr>
+<tr>
+<td>Parameter count</td>
+<td>The manuscript reported a 169.8 MB model weight file and
+approximately 44.4 million parameters.</td>
+</tr>
+<tr>
+<td>Algorithmic procedure</td>
+<td>The manuscript included a stepwise algorithmic procedure, update
+logic, and pseudocode for the main processing pipeline.</td>
+</tr>
+<tr>
+<td>Limitations</td>
+<td>The manuscript explicitly discussed limitations related to
+environmental assumptions and residual artifacts under certain
+conditions.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="paper-2026-p11-appendix-b.-fair-rewriting-of-review-b-comments">Appendix B.
+Fair Rewriting of Review B Comments</h2>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:95%;">
+<caption><p>Table B1. Fairer manuscript-grounded versions of Review B
+comments.</p></caption>
+<colgroup>
+<col style="width: 28%"/>
+<col style="width: 66%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Original Review B issue</strong></th>
+<th><strong>Fair manuscript-grounded version</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The validation data source is unclear.</td>
+<td>The manuscript identifies the validation data source, but should
+provide more details about sample size, selection criteria, and
+diversity of test cases.</td>
+</tr>
+<tr>
+<td>Hardware specifications are needed.</td>
+<td>The manuscript specifies the hardware environment, but should add
+runtime benchmarks such as FPS, latency, or throughput on each hardware
+condition.</td>
+</tr>
+<tr>
+<td>Model parameters are needed.</td>
+<td>The manuscript reports model configuration and parameter count, but
+should clarify how this relates to total system complexity.</td>
+</tr>
+<tr>
+<td>Methodology is insufficient.</td>
+<td>The methodology is described, but parameter choices, threshold
+sensitivity, and failure cases could be expanded.</td>
+</tr>
+<tr>
+<td>Limitations should be discussed.</td>
+<td>Limitations are present, but mitigation strategies and practical
+deployment constraints should be discussed more fully.</td>
+</tr>
+<tr>
+<td>Experimental results need deeper analysis.</td>
+<td>This is valid. The manuscript relies heavily on qualitative results
+and would benefit from stronger quantitative or standardized
+evaluation.</td>
+</tr>
+<tr>
+<td>Typographical errors exist.</td>
+<td>This is valid. The manuscript contains minor typographical and
+language errors.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="paper-2026-p11-appendix-c.-prompt-used-for-the-source-grounded-llm-review">Appendix
+C. Prompt Used for the Source-Grounded LLM Review</h2>
+<p>You are acting as a peer reviewer for a scientific manuscript.</p>
+<p>Please write a peer review report for the uploaded manuscript.
+Evaluate the manuscript in terms of:</p>
+<p>1. suitability of the research topic,</p>
+<p>2. clarity of the abstract,</p>
+<p>3. adequacy of the literature review,</p>
+<p>4. methodological soundness,</p>
+<p>5. experimental design and results,</p>
+<p>6. appropriateness of references and citations,</p>
+<p>7. originality,</p>
+<p>8. academic contribution.</p>
+<p>Please include:</p>
+<p>- a brief summary of the manuscript,</p>
+<p>- major strengths,</p>
+<p>- major weaknesses,</p>
+<p>- specific revision requests,</p>
+<p>- an overall recommendation.</p>
+<p>Use the style of a formal journal peer review report.</p>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">Citation</h2><p class="citation-help">Select a format to copy the citation.</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="Copy APA Citation">Copy APA Citation</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="Copy MLA Citation">Copy MLA Citation</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="Copy Chicago Citation">Copy Chicago Citation</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="Copy IEEE Citation">Copy IEEE Citation</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="Copy BibTeX">Copy BibTeX</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="Copy RIS">Copy RIS</button></div><label for="citation-text" class="citation-preview-label">Citation preview · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B. (2026). Can LLMs review scientific papers? A case of hallucination and grounding failure in journal peer review. ResearchGate. https://doi.org/10.13140/RG.2.2.34160.83209</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/llm-peer-review-grounding-failure-2026/citation.bib" download>BibTeX file</a><a href="/papers/llm-peer-review-grounding-failure-2026/citation.ris" download>RIS file</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B. (2026). Can LLMs review scientific papers? A case of hallucination and grounding failure in journal peer review. ResearchGate. https://doi.org/10.13140/RG.2.2.34160.83209", "mla": "Ban, Byunghyun. “Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review.” ResearchGate, 2026. Preprint. https://doi.org/10.13140/RG.2.2.34160.83209.", "chicago": "Ban, Byunghyun. “Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review.” Preprint, ResearchGate, 2026. https://doi.org/10.13140/RG.2.2.34160.83209.", "ieee": "B. Ban, “Can LLMs review scientific papers? A case of hallucination and grounding failure in journal peer review,” ResearchGate, preprint, 2026, doi: 10.13140/RG.2.2.34160.83209.", "bibtex": "@misc{ban2026_68c96eecacd6,\n  author = {Ban, Byunghyun},\n  title = {{Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review}},\n  year = {2026},\n  doi = {10.13140/RG.2.2.34160.83209},\n  url = {https://www.researchgate.net/publication/404420655\\_Can\\_LLMs\\_Review\\_Scientific\\_Papers},\n  note = {Preprint},\n  howpublished = {ResearchGate}\n}", "ris": "TY  - UNPB\nAU  - Ban, Byunghyun\nTI  - Can LLMs Review Scientific Papers? A Case of Hallucination and Grounding Failure in Journal Peer Review\nPY  - 2026\nDO  - 10.13140/RG.2.2.34160.83209\nUR  - https://www.researchgate.net/publication/404420655_Can_LLMs_Review_Scientific_Papers\nAB  - Maybe not. Large language models (LLMs) can produce fluent and plausible peer-review reports, but fluency is not scholarly judgment. This paper presents a case study of three formal peer-review reports received during an actual submission to a Korea Citation Index (KCI) candidate journal. One review claimed that key methodological and experimental details were missing, although the manuscript explicitly contained information about validation data, hardware, software frameworks, model configuration, parameter count, algorithmic procedure, and limitations. After the author reported these grounding failures to the editor, the problematic review was not relied upon in the final decision, and the manuscript was subsequently accepted and published. The case is compared with two more grounded human reviews and an exploratory source-grounded LLM-generated review. The source-grounded LLM review was more aligned with the manuscript, but still produced minor factual errors and overstatements. The case suggests that grounding improves LLM-assisted review, but does not eliminate hallucination or accountability gaps.\nLA  - en\nM3  - Preprint\nER  -\n"}</script></section><a class="paper-back-link" href="/en/papers/">← Back to papers</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="All Pages"><a href="/en/">Byunghyun Ban</a><a href="/en/media/">Broadcasts and Videos</a><a href="/en/books/">Books</a><a href="/en/lectures/">Lectures and Speaking Engagements</a><a href="/en/courses/online/">Online Courses</a><a href="/en/courses/offline/">In-Person Courses</a><a href="/en/news/">News Coverage</a><a href="/en/papers/">Papers and Research</a><a href="/en/patents/">Patents</a><a href="/en/projects/">Development Projects</a><a href="/en/activities/">Social Contribution</a><a href="/en/memberships/">Memberships and Professional Activities</a><a href="/en/collections/">Collections</a><a href="/en/contact/">Lecture and Collaboration Inquiries</a></nav>
+            <p><a href="/feed.xml">Subscribe via RSS</a> · <a href="/feed.json">JSON Feed</a></p>
+            <p>© 2026 Byunghyun Ban. All rights reserved.</p>
+            <p>NaNa Lab (Business Registration No. 269-08-02374), Representative: Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>

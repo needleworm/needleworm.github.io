@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>Agricultural AI Agents Can Learn from Chemical Complex System Models | Byunghyun Ban</title>
+    <meta name="description" content="Smart farms and plant factories increasingly use sensors, automatic controllers, digital twins, and artificial intelligence models. However, nutrient management remains difficul…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="Agricultural AI Agents Can Learn from Chemical Complex System Models">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/agricultural-ai-complex-systems-2026/">
+<meta name="citation_doi" content="10.13140/RG.2.2.10797.24808">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/agricultural-ai-complex-systems-2026/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/bn/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="bn_BD">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="Agricultural AI Agents Can Learn from Chemical Complex System Models | Byunghyun Ban">
+    <meta property="og:description" content="Smart farms and plant factories increasingly use sensors, automatic controllers, digital twins, and artificial intelligence models. However, nutrient management remains difficul…">
+    <meta property="og:url" content="https://bhban.kr/bn/papers/agricultural-ai-complex-systems-2026/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p07-first-page-1197a8d4ca91.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/bn/#website", "url": "https://bhban.kr/bn/", "name": "Byunghyun Ban", "inLanguage": "bn"}, {"@type": "WebPage", "@id": "https://bhban.kr/bn/papers/agricultural-ai-complex-systems-2026/#page", "url": "https://bhban.kr/bn/papers/agricultural-ai-complex-systems-2026/", "name": "Agricultural AI Agents Can Learn from Chemical Complex System Models | Byunghyun Ban", "description": "Smart farms and plant factories increasingly use sensors, automatic controllers, digital twins, and artificial intelligence models. However, nutrient management remains difficul…", "inLanguage": "bn", "mainEntity": {"@id": "https://bhban.kr/papers/agricultural-ai-complex-systems-2026/#article"}, "isPartOf": {"@id": "https://bhban.kr/bn/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/agricultural-ai-complex-systems-2026/#article", "url": "https://bhban.kr/papers/agricultural-ai-complex-systems-2026/", "name": "Agricultural AI Agents Can Learn from Chemical Complex System Models", "headline": "Agricultural AI Agents Can Learn from Chemical Complex System Models", "author": [{"@type": "Person", "name": "Byunghyun Ban"}], "datePublished": "2026", "inLanguage": "en", "abstract": "Smart farms and plant factories increasingly use sensors, automatic controllers, digital twins, and artificial intelligence models. However, nutrient management remains difficult because nutrient solutions are nonlinear chemical systems coupled with plant uptake dynamics. This paper proposes a simulation-first strategy for smart-farm nutrient management agents. The proposed strategy is grounded in previous studies on ion-selective electrode correction, ODE network modeling of nutrient solutions, plant-root ion transport, nutrient-plant interaction simulation, automated nutrient-solution management systems, and plant-factory digital twins. The paper further proposes a three-layer digital-twin interpretation consisting of facility-level, crop-level, and nutrient-control digital twins. The nutrient-control digital twin is positioned as a chemical-physiological playground inside a broader plant-factory digital twin. The proposed approach does not require sub-second real-time agent control because nutrient uptake and nutrient-related physiological responses are evaluated over multi-minute, hourly, daily, or crop-stage timescales. Therefore, nutrient management agents should be introduced as supervisory simulators and target-profile optimizers rather than direct dosing robots.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/agricultural-ai-complex-systems-2026/#page"}, "creativeWorkStatus": "Preprint", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.13140/RG.2.2.10797.24808"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/agricultural-ai-complex-systems-2026/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "মূল পৃষ্ঠা", "item": "https://bhban.kr/bn/"}, {"@type": "ListItem", "position": 2, "name": "গবেষণাপত্র", "item": "https://bhban.kr/bn/papers/"}, {"@type": "ListItem", "position": 3, "name": "Agricultural AI Agents Can Learn from Chemical Complex System Models", "item": "https://bhban.kr/bn/papers/agricultural-ai-complex-systems-2026/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/agricultural-ai-complex-systems-2026/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/agricultural-ai-complex-systems-2026/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"মেনু খুলুন","menuClose":"মেনু বন্ধ করুন","submenuExpand":"{label}-এর উপমেনু খুলুন","submenuCollapse":"{label}-এর উপমেনু বন্ধ করুন","nextSwipeHint":"একেবারে নিচে এসে আরও একবার ওপরের দিকে সোয়াইপ করলে পরের অংশে যাবেন।","nextScrollHint":"একেবারে নিচে এসে আরও একবার নিচে স্ক্রল করলে পরের অংশে যাবেন।","lectureResults":"{category} {count}টি · সাম্প্রতিক বক্তৃতা আগে","categoryAll":"সব","categoryCompany":"ব্যবসা প্রতিষ্ঠান","categoryPublic":"সরকারি প্রতিষ্ঠান","categoryEducation":"শিক্ষা প্রতিষ্ঠান","categoryResearch":"গবেষণা প্রতিষ্ঠান","categoryConference":"সম্মেলন","listMedia":"ভিডিও","listNews":"সংবাদ প্রতিবেদন","listLectures":"বক্তৃতা","listCoursesOnline":"অনলাইন কোর্স","listCoursesOffline":"সশরীর কোর্স","listPapers":"গবেষণাপত্র","listPatents":"পেটেন্ট","listProjects":"প্রকল্প","listActivities":"কার্যক্রম","listMemberships":"সদস্যপদের কার্যক্রম","listCollections":"সংগ্রহের সামগ্রী","listDonations":"অনুদানের বিবরণ","listGeneric":"তালিকা","listStatus":"{total}টির মধ্যে {visible}টি দেখানো হচ্ছে","listMore":"আরও {label} দেখুন ({remaining}টি বাকি)","citationCopyLabel":"উদ্ধৃতির তথ্য কপি করুন","citationCopied":"উদ্ধৃতির তথ্য কপি করা হয়েছে।","citationError":"উদ্ধৃতির তথ্য কপি করা যায়নি। ব্রাউজারের ক্লিপবোর্ড সেটিংস দেখুন।","citationFormatCopied":"{label} উদ্ধৃতির তথ্য কপি করা হয়েছে।","citationManualCopy":"উদ্ধৃতিটি নির্বাচন করা হয়েছে। নিজে কপি করুন।","contactLoadError":"বার্তা পাঠানোর ব্যবস্থা লোড করা যায়নি। কিছুক্ষণ পরে আবার চেষ্টা করুন।","contactSent":"আপনার বার্তা গ্রহণ করা হয়েছে।","contactError":"একটি ত্রুটি হয়েছে। আবার চেষ্টা করুন।","contactSending":"পাঠানো হচ্ছে...","streamRetry":"আবার লোড করুন","streamError":"পরবর্তী বিষয়বস্তু লোড করা যায়নি। আবার চেষ্টা করুন অথবা উপরের লিংকে যান।","streamLoading":"{label}-এর পরবর্তী বিষয়বস্তু লোড হচ্ছে।"}</script>
+</head>
+<body data-locale="bn" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">মূল বিষয়বস্তুতে যান</a>
+    <nav class="navbar" aria-label="প্রধান মেনু"><div class="navbar-brand"><a href="/bn/" aria-label="Byunghyun Ban মূল পৃষ্ঠা"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/bn/" class="nav-link nav-main-link" data-nav-page="home">পরিচিতি</a></li><li data-nav-group="media"><a href="/bn/media/" class="nav-link nav-main-link" data-nav-page="media">মিডিয়া</a></li><li data-nav-group="books"><a href="/bn/books/" class="nav-link nav-main-link" data-nav-page="books">বই</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/bn/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">বক্তৃতা</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="বক্তৃতার উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="বক্তৃতার বিভাগ"><li><a href="/bn/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">সব</a></li><li><a href="/bn/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">ব্যবসা প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">সরকারি প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">শিক্ষা প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">গবেষণা প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">সম্মেলন</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/bn/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">কোর্স</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="কোর্স উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/bn/courses/online/" data-nav-page="courses-online">অনলাইন</a></li><li><a href="/bn/courses/offline/" data-nav-page="courses-offline">সশরীর</a></li></ul></li><li data-nav-group="news"><a href="/bn/news/" class="nav-link nav-main-link" data-nav-page="news">সংবাদ</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/bn/papers/" class="nav-link active nav-main-link" data-nav-page="papers">গবেষণা ও উন্নয়ন</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="গবেষণা ও উন্নয়নের উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/bn/papers/" data-nav-page="papers">গবেষণাপত্র</a></li><li><a href="/bn/patents/" data-nav-page="patents">পেটেন্ট</a></li><li><a href="/bn/projects/" data-nav-page="projects">প্রকল্প</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/bn/activities/" class="nav-link nav-main-link" data-nav-page="activities">অন্যান্য</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="অন্যান্য উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/bn/activities/" data-nav-page="activities">সামাজিক অবদান</a></li><li><a href="/bn/memberships/" data-nav-page="memberships">সদস্যপদ</a></li><li><a href="/bn/collections/" data-nav-page="collections">সংগ্রহ</a></li></ul></li><li data-nav-group="contact"><a href="/bn/contact/" class="btn-contact nav-main-link" data-nav-page="contact">যোগাযোগ</a></li></ul><details class="language-switcher"><summary aria-label="ভাষা নির্বাচন"><span aria-hidden="true">🌐</span> <span>বাংলা</span></summary><nav class="language-options" aria-label="ভাষা নির্বাচন"><a href="/papers/agricultural-ai-complex-systems-2026/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/agricultural-ai-complex-systems-2026/" hreflang="en" lang="en">English</a><a href="/zh/papers/agricultural-ai-complex-systems-2026/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/papers/agricultural-ai-complex-systems-2026/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/agricultural-ai-complex-systems-2026/" hreflang="es" lang="es">Español</a><a href="/ar/papers/agricultural-ai-complex-systems-2026/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/agricultural-ai-complex-systems-2026/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/agricultural-ai-complex-systems-2026/" hreflang="bn" lang="bn" aria-current="true">বাংলা</a><a href="/pt/papers/agricultural-ai-complex-systems-2026/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="মেনু খুলুন">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="বর্তমান অবস্থান"><a href="/bn/">মূল পৃষ্ঠা</a><span aria-hidden="true">/</span><a href="/bn/papers/">গবেষণাপত্র</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-2026-p07"><header><p class="paper-kind">প্রিপ্রিন্ট · পিয়ার রিভিউ হয়নি</p><h1 id="paper-title" lang="en">Agricultural AI Agents Can Learn from Chemical Complex System Models</h1><p class="paper-authors">Byunghyun Ban</p><p class="paper-venue">2026</p><nav class="paper-reader-jumps" aria-label="গবেষণাপত্রে যান"><a href="#abstract-heading">সারসংক্ষেপ</a><a href="#full-text">পূর্ণপাঠ</a><a href="#citation-heading">উদ্ধৃতি দিন</a></nav><div class="gitIcons">
+                                <a href="/papers/agricultural-ai-complex-systems-2026/paper.pdf" target="_blank" rel="noreferrer" download aria-label="Agricultural AI Agents Can Learn from Chemical Complex System Models সম্পূর্ণ প্রিপ্রিন্ট PDF ডাউনলোড" title="PDF ডাউনলোড"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg><span class="paper-action-label">PDF</span></a>
+                                <a href="https://doi.org/10.13140/RG.2.2.10797.24808" target="_blank" rel="noreferrer" aria-label="Agricultural AI Agents Can Learn from Chemical Complex System Models DOI" title="DOI মূল প্রকাশনার তথ্য"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">DOI</span></a>
+                                <a href="https://www.researchgate.net/publication/404500889_Agricultural_AI_Agents_Can_Learn_from_Chemical_Complex_System_Models" target="_blank" rel="noreferrer" aria-label="Agricultural AI Agents Can Learn from Chemical Complex System Models মূল প্রকাশনার তথ্য" title="গবেষণাপত্রের মূল প্রকাশনার তথ্য"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">উৎস</span></a>
+                                <span class="citation" data-citation="Byunghyun Ban. (2026). &quot;Agricultural AI Agents Can Learn from Chemical Complex System Models.&quot; ResearchGate · Preprint (not peer-reviewed). https://doi.org/10.13140/RG.2.2.10797.24808" aria-label="উদ্ধৃতির তথ্য কপি করুন" title="উদ্ধৃতির তথ্য কপি করুন"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">উদ্ধৃতি দিন</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>সূচিপত্র</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-2026-p07-introduction">1. Introduction</a></li><li class="toc-level-2"><a href="#paper-2026-p07-related-work-nutrient-solution-and-digital-twin-research">2. Related Work: Nutrient-Solution and Digital-Twin Research</a></li><li class="toc-level-3"><a href="#paper-2026-p07-ise-correction-for-reliable-nutrient-observation">2.1 ISE correction for reliable nutrient observation</a></li><li class="toc-level-3"><a href="#paper-2026-p07-ode-network-model-for-nutrient-solution-complex-chemistry">2.2 ODE network model for nutrient-solution complex chemistry</a></li><li class="toc-level-3"><a href="#paper-2026-p07-mathematical-modeling-of-plant-root-ion-transport">2.3 Mathematical modeling of plant-root ion transport</a></li><li class="toc-level-3"><a href="#paper-2026-p07-nutrient-plant-interaction-simulation">2.4 Nutrient-plant interaction simulation</a></li><li class="toc-level-3"><a href="#paper-2026-p07-automated-nutrient-solution-management-system">2.5 Automated nutrient-solution management system</a></li><li class="toc-level-3"><a href="#paper-2026-p07-plant-factory-digital-twins">2.6 Plant-factory digital twins</a></li><li class="toc-level-2"><a href="#paper-2026-p07-clarifying-learning-from-chemical-complex-system-models">3. Clarifying “Learning from Chemical Complex System Models”</a></li><li class="toc-level-3"><a href="#paper-2026-p07-simulation-based-planning">3.1 Simulation-based planning</a></li><li class="toc-level-3"><a href="#paper-2026-p07-synthetic-trajectory-generation">3.2 Synthetic trajectory generation</a></li><li class="toc-level-3"><a href="#paper-2026-p07-risk-aware-recommendation">3.3 Risk-aware recommendation</a></li><li class="toc-level-2"><a href="#paper-2026-p07-biological-and-chemical-design-assumptions">4. Biological and Chemical Design Assumptions</a></li><li class="toc-level-3"><a href="#paper-2026-p07-nutrient-uptake-is-not-a-sub-second-control-problem">4.1 Nutrient uptake is not a sub-second control problem</a></li><li class="toc-level-3"><a href="#paper-2026-p07-fast-uptake-ions-and-recoverable-oversupply">4.2 Fast-uptake ions and recoverable oversupply</a></li><li class="toc-level-3"><a href="#paper-2026-p07-slow-uptake-ions-and-persistent-imbalance">4.3 Slow-uptake ions and persistent imbalance</a></li><li class="toc-level-3"><a href="#paper-2026-p07-ion-antagonism-and-transport-disruption-as-risk-factors">4.4 Ion antagonism and transport disruption as risk factors</a></li><li class="toc-level-2"><a href="#paper-2026-p07-three-layer-digital-twin-interpretation">5. Three-Layer Digital-Twin Interpretation</a></li><li class="toc-level-3"><a href="#paper-2026-p07-facility-level-digital-twin">5.1 Facility-level digital twin</a></li><li class="toc-level-3"><a href="#paper-2026-p07-crop-level-digital-twin">5.2 Crop-level digital twin</a></li><li class="toc-level-3"><a href="#paper-2026-p07-nutrient-control-digital-twin">5.3 Nutrient-control digital twin</a></li><li class="toc-level-2"><a href="#paper-2026-p07-chemical-complex-system-models-as-agent-playgrounds">6. Chemical Complex System Models as Agent Playgrounds</a></li><li class="toc-level-3"><a href="#paper-2026-p07-definition-of-a-nutrient-control-playground">6.1 Definition of a nutrient-control playground</a></li><li class="toc-level-3"><a href="#paper-2026-p07-state-variables">6.2 State variables</a></li><li class="toc-level-3"><a href="#paper-2026-p07-candidate-actions">6.3 Candidate actions</a></li><li class="toc-level-3"><a href="#paper-2026-p07-simulation-outputs">6.4 Simulation outputs</a></li><li class="toc-level-2"><a href="#paper-2026-p07-proposed-architecture-for-smart-farm-nutrient-management-agents">7. Proposed Architecture for Smart-Farm Nutrient Management Agents</a></li><li class="toc-level-3"><a href="#paper-2026-p07-observation-layer">7.1 Observation layer</a></li><li class="toc-level-3"><a href="#paper-2026-p07-simulation-layer">7.2 Simulation layer</a></li><li class="toc-level-3"><a href="#paper-2026-p07-decision-layer">7.3 Decision layer</a></li><li class="toc-level-3"><a href="#paper-2026-p07-controller-interface-layer">7.4 Controller interface layer</a></li><li class="toc-level-3"><a href="#paper-2026-p07-digital-twin-interface-layer">7.5 Digital-twin interface layer</a></li><li class="toc-level-2"><a href="#paper-2026-p07-risk-aware-nutrient-control-policy">8. Risk-Aware Nutrient Control Policy</a></li><li class="toc-level-3"><a href="#paper-2026-p07-ion-uptake-rate-classes">8.1 Ion uptake-rate classes</a></li><li class="toc-level-3"><a href="#paper-2026-p07-slow-ion-penalty">8.2 Slow-ion penalty</a></li><li class="toc-level-3"><a href="#paper-2026-p07-simulation-first-decision-rule">8.3 Simulation-first decision rule</a></li><li class="toc-level-2"><a href="#paper-2026-p07-agent-workflow">9. Agent Workflow</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-1.-observe-corrected-nutrient-state">Step 1. Observe corrected nutrient state</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-2.-diagnose-imbalance">Step 2. Diagnose imbalance</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-3.-generate-candidate-nutrient-control-inputs">Step 3. Generate candidate nutrient-control inputs</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-4.-simulate-chemical-response">Step 4. Simulate chemical response</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-5.-simulate-plant-uptake-response">Step 5. Simulate plant uptake response</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-6.-evaluate-risk">Step 6. Evaluate risk</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-7.-select-safe-target-profile">Step 7. Select safe target profile</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-8.-update-nutrient-controller-parameters">Step 8. Update nutrient controller parameters</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-9.-monitor-post-update-trajectory">Step 9. Monitor post-update trajectory</a></li><li class="toc-level-3"><a href="#paper-2026-p07-step-10.-audit-decision-and-outcome">Step 10. Audit decision and outcome</a></li><li class="toc-level-2"><a href="#paper-2026-p07-discussion">10. Discussion</a></li><li class="toc-level-3"><a href="#paper-2026-p07-why-simulation-first-control-is-safer-than-direct-nutrient-control">10.1 Why simulation-first control is safer than direct nutrient control</a></li><li class="toc-level-3"><a href="#paper-2026-p07-why-latency-is-acceptable">10.2 Why latency is acceptable</a></li><li class="toc-level-3"><a href="#paper-2026-p07-chemical-complex-models-as-learning-environments">10.3 Chemical complex models as learning environments</a></li><li class="toc-level-3"><a href="#paper-2026-p07-digital-twins-for-plant-growth-and-nutrient-control">10.4 Digital twins for plant growth and nutrient control</a></li><li class="toc-level-3"><a href="#paper-2026-p07-limitations">10.5 Limitations</a></li><li class="toc-level-2"><a href="#paper-2026-p07-conclusion">11. Conclusion</a></li><li class="toc-level-2"><a href="#paper-2026-p07-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">সারসংক্ষেপ</h2><p class="abstract" lang="en">Smart farms and plant factories increasingly use sensors, automatic controllers, digital twins, and artificial intelligence models. However, nutrient management remains difficult because nutrient solutions are nonlinear chemical systems coupled with plant uptake dynamics. This paper proposes a simulation-first strategy for smart-farm nutrient management agents. The proposed strategy is grounded in previous studies on ion-selective electrode correction, ODE network modeling of nutrient solutions, plant-root ion transport, nutrient-plant interaction simulation, automated nutrient-solution management systems, and plant-factory digital twins. The paper further proposes a three-layer digital-twin interpretation consisting of facility-level, crop-level, and nutrient-control digital twins. The nutrient-control digital twin is positioned as a chemical-physiological playground inside a broader plant-factory digital twin. The proposed approach does not require sub-second real-time agent control because nutrient uptake and nutrient-related physiological responses are evaluated over multi-minute, hourly, daily, or crop-stage timescales. Therefore, nutrient management agents should be introduced as supervisory simulators and target-profile optimizers rather than direct dosing robots.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords"><strong>Keywords:</strong> agricultural AI agent, nutrient
+management, smart farm, plant factory, chemical complex system, nutrient
+solution, ion-selective electrode, digital twin, plant uptake,
+simulation-first control</p><h2 id="paper-2026-p07-introduction">1. Introduction</h2>
+<p>Smart farms and plant factories are increasingly equipped with
+sensors, controllers, cameras, nutrient-solution management systems,
+digital twins, and artificial intelligence models. These systems can
+measure environmental variables, monitor crop growth, estimate plant
+status, detect stress, and control irrigation or nutrient supply.
+However, nutrient management remains one of the most difficult parts of
+smart-farm operation because the root-zone environment is both
+chemically complex and biologically coupled to plant uptake.</p>
+<p>Traditional hydroponic nutrient management often relies on pH and
+electrical conductivity (EC). When EC decreases, concentrated nutrient
+solution is added to recover total ionic strength. This method is simple
+but insufficient because EC cannot represent the balance of individual
+ions. Even if total EC appears normal, the ratio of nitrate, potassium,
+calcium, magnesium, ammonium, phosphate, and other ions may deviate from
+the desired composition. This is especially problematic in closed
+hydroponic systems, where plants absorb different ions at different
+rates and the remaining solution gradually changes composition.</p>
+<p>Previous studies have already shown the importance of individual ion
+monitoring and ion-specific management in closed hydroponic systems.
+ISE-based systems can measure individual ions such as nitrate,
+potassium, and calcium, and closed hydroponic nutrient management
+increasingly emphasizes ion balance rather than EC alone [8-10]. Ban and
+collaborators addressed this problem through a sequence of
+nutrient-solution studies: machine-learning correction of ion
+interference [1], ODE network modeling of nutrient-solution chemistry
+[2], mathematical modeling of root cation transport [3], nutrient-plant
+interaction simulation [4], deep-learning-based artifact removal for
+ISEs [5], and automated nutrient-solution management for smart farms and
+plant factories [6].</p>
+<p>This paper extends that research line by proposing a simulation-first
+nutrient management agent. The central argument is that an agricultural
+AI agent should not directly translate nutrient-sensor deviations into
+actuator commands. Instead, it should first correct sensor artifacts,
+estimate the nutrient state, simulate candidate interventions in a
+chemical-and-plant uptake playground, evaluate the risk of ion
+accumulation or uptake inhibition, and only then update the target
+profile of the real nutrient controller.</p>
+<p>The title phrase "AI agents can learn from chemical complex system
+models" is clarified as follows. In this paper, "learning" does not
+necessarily mean end-to-end neural training. It includes three
+operational modes:</p>
+<blockquote>
+<p>1. Simulation-based planning, where the agent tests candidate
+nutrient-control inputs before applying them.</p>
+<p>2. Synthetic trajectory generation, where the model produces
+state-action-outcome trajectories that can be used to train or evaluate
+decision policies.</p>
+<p>3. Risk-aware recommendation, where the agent uses simulated outcomes
+to avoid unsafe nutrient-control decisions.</p>
+</blockquote>
+<p>Thus, the proposed agent is not a direct dosing robot. It is a
+supervisory system that uses a chemical complex system model as a
+playground before updating nutrient-control parameters.</p>
+<h2 id="paper-2026-p07-related-work-nutrient-solution-and-digital-twin-research">2.
+Related Work: Nutrient-Solution and Digital-Twin Research</h2>
+<h3 id="paper-2026-p07-ise-correction-for-reliable-nutrient-observation">2.1 ISE
+correction for reliable nutrient observation</h3>
+<p>Ion-selective electrodes (ISEs) can estimate individual ion
+concentrations, but they are affected by ion interference, drift,
+kinetic artifacts, and electrical artifacts. Ban, Ryu, and Lee proposed
+a machine-learning approach to remove ion interference effects in
+agricultural nutrient solutions [1]. This work is important for nutrient
+management agents because an agent cannot safely reason about nutrient
+control if its input state is distorted by sensor artifacts.</p>
+<p>A later study extended this direction by using deep learning to
+remove chemical, kinetic, and electric artifacts on ISEs [5]. Chemical
+artifacts arise from ion interference in mixed solutions, kinetic
+artifacts can occur due to liquid movement, and electric artifacts can
+occur when multiple electrodes interact in the same solution. In an
+agent architecture, these studies form the sensor-correction layer. The
+agent should observe a corrected nutrient state rather than raw ISE
+readings.</p>
+<h3 id="paper-2026-p07-ode-network-model-for-nutrient-solution-complex-chemistry">2.2
+ODE network model for nutrient-solution complex chemistry</h3>
+<p>The ODE network model proposed by Ban, Lee, and Ryu is the core
+foundation for a simulation-first nutrient management agent [2]. In that
+work, nutrient solution is treated as a nonlinear complex system
+containing precipitation reactions and complicated interactions. The
+model describes chemical reactions through differential equations and
+predicts molar concentrations of chemical components and total dissolved
+solids. It can also calculate required chemical compound inputs from
+desired dissolved ion concentrations.</p>
+<p>This is the exact type of model that an agricultural AI agent can use
+as a playground. Instead of directly applying a nutrient-control input
+to a real tank, the agent can first simulate how the candidate input may
+change ion concentrations, EC, pH, total dissolved solids, precipitation
+risk, and long-term ion balance.</p>
+<h3 id="paper-2026-p07-mathematical-modeling-of-plant-root-ion-transport">2.3
+Mathematical modeling of plant-root ion transport</h3>
+<p>A nutrient solution does not evolve only through chemistry. It also
+changes because plants absorb ions. Ban’s mathematical model for
+secondary transport of cations at plant roots describes root-cell ion
+transport through active H+ emission, electrical gradient formation, and
+cation movement [3]. This work provides a conceptual bridge between the
+chemical state of the solution and the physiological uptake process of
+the plant.</p>
+<p>For a nutrient management agent, this is critical. If the agent only
+models solution chemistry, it may predict the immediate chemical
+consequence of dosing but fail to predict how the plant will gradually
+remove or fail to remove certain ions. Therefore, a simulation
+playground should include both nutrient-solution chemistry and plant
+uptake dynamics.</p>
+<h3 id="paper-2026-p07-nutrient-plant-interaction-simulation">2.4 Nutrient-plant
+interaction simulation</h3>
+<p>Ban’s nutrient-plant interaction simulation study combines
+differential-equation models of nutrient solution and plant interaction
+[4]. This work is especially relevant because it moves from
+solution-only modeling toward a coupled system in which nutrient state
+and plant uptake affect each other. In this paper, that coupled model is
+interpreted as a nutrient-control digital twin component. It does not
+need to represent every morphological detail of plant growth. Instead,
+it provides a dynamic simulation layer for root-zone nutrient behavior
+and plant uptake response.</p>
+<h3 id="paper-2026-p07-automated-nutrient-solution-management-system">2.5 Automated
+nutrient-solution management system</h3>
+<p>The Nutrient Solution Management System for Smart Farms and Plant
+Factory connects the modeling and sensing research line to practical
+management [6]. It proposes an automated nutrient solution system that
+measures individual ions, supports calibration, and adds insufficient
+nutrients rather than simply adding concentrated solution based on
+EC.</p>
+<p>In the present paper, this system represents the real controller
+layer. The AI agent does not need to directly actuate pumps. Instead, it
+can update the target ion profile, dosing policy, or control parameters
+that such a nutrient-management device follows.</p>
+<h3 id="paper-2026-p07-plant-factory-digital-twins">2.6 Plant-factory digital
+twins</h3>
+<p>Ban’s Mixed Reality Interface for Digital Twin of Plant Factory
+proposed an immersive and interactive mixed-reality interface for
+plant-factory digital twin models [7]. The paper describes a real-time
+camera-based background scene and an interface through which users can
+monitor and control remote plant factory facilities using an HMD or 2D
+display.</p>
+<p>This establishes that a digital-twin concept for plant-factory
+operation has already been proposed. However, the present paper does not
+claim that a nutrient chemical playground is identical to a full
+facility-level digital twin. Instead, it proposes that nutrient-solution
+chemistry and plant uptake dynamics can become a specialized
+nutrient-control digital twin module inside a broader smart-farm or
+plant-factory digital twin environment.</p>
+<h2 id="paper-2026-p07-clarifying-learning-from-chemical-complex-system-models">3.
+Clarifying “Learning from Chemical Complex System Models”</h2>
+<p>The expression “learning from chemical complex system models” can be
+interpreted in multiple ways. To avoid ambiguity, this paper defines
+three levels of model use.</p>
+<h3 id="paper-2026-p07-simulation-based-planning">3.1 Simulation-based planning</h3>
+<p>At the simplest level, the agent uses the chemical complex system
+model for planning. The agent generates candidate nutrient-control
+inputs, simulates them, compares predicted outcomes, and chooses a safer
+option. This does not require training a new neural network. It is
+model-based decision support.</p>
+<h3 id="paper-2026-p07-synthetic-trajectory-generation">3.2 Synthetic trajectory
+generation</h3>
+<p>At a stronger level, the model can generate synthetic trajectories.
+These trajectories may include:</p>
+<p>current nutrient state → candidate target profile → predicted ion
+trajectory → risk score → recommended action</p>
+<p>Such trajectories can be used to train, fine-tune, or benchmark
+nutrient-management policies. In this sense, the chemical complex system
+model becomes a data-generating environment for the agent.</p>
+<h3 id="paper-2026-p07-risk-aware-recommendation">3.3 Risk-aware recommendation</h3>
+<p>At the operational level, the agent learns which proposals are unsafe
+by repeatedly evaluating simulation outcomes. For example, if a
+candidate update repeatedly produces slow-ion accumulation, high osmotic
+load, or ion antagonism risk, the agent can learn to avoid such updates
+or request additional verification before recommending them.</p>
+<p>Thus, “learning” in this paper includes direct model-based planning,
+simulated experience generation, and risk-aware policy shaping. The core
+claim is not that the agent must be trained only by deep reinforcement
+learning. The core claim is that the agent should not make
+nutrient-control decisions without first consulting a
+chemical-physiological simulation environment.</p>
+<h2 id="paper-2026-p07-biological-and-chemical-design-assumptions">4. Biological and
+Chemical Design Assumptions </h2>
+<figure class="paper-figure"><img alt="Figure 1. Three-layer digital twin interpretation for plant-factory and nutrient-control systems." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p07/figure-1.webp"/><figcaption><strong>Figure 1. Three-layer digital twin interpretation for
+plant-factory and nutrient-control systems.</strong></figcaption></figure>
+
+<h3 id="paper-2026-p07-nutrient-uptake-is-not-a-sub-second-control-problem">4.1
+Nutrient uptake is not a sub-second control problem</h3>
+<p>Unlike low-level motor control, plant nutrient uptake is a relatively
+slow biological process. Changes in ion concentration, root-zone
+equilibrium, plant uptake, and physiological response usually occur over
+multi-minute, hourly, daily, or crop-stage timescales. Root ion uptake
+kinetics are known to vary across plant species, cultivars,
+developmental stages, root types, and environmental conditions [11].
+Therefore, a nutrient management agent does not need to operate as a
+sub-second real-time controller.</p>
+<p>This latency tolerance changes the role of the AI agent. The agent
+should not directly send immediate pump commands. Instead, it can afford
+to simulate several candidate nutrient-control strategies, compare their
+predicted outcomes, evaluate risks, and then update the target profile
+of an existing nutrient controller. The physical controller can continue
+to execute real-time or near-real-time dosing logic, while the agent
+changes the supervisory direction of nutrient management.</p>
+<h3 id="paper-2026-p07-fast-uptake-ions-and-recoverable-oversupply">4.2 Fast-uptake
+ions and recoverable oversupply</h3>
+<p>Different ions are absorbed at different rates, and these rates are
+not universal constants. They depend on crop species, cultivar, growth
+stage, root-zone condition, transporter activity, temperature, pH, and
+external ion concentration [11]. Therefore, this paper does not claim a
+fixed universal list of “fast” or “slow” ions.</p>
+<p>Instead, this paper proposes an agent design assumption: if an ion
+has a high estimated uptake rate under the current crop and root-zone
+condition, moderate oversupply may be more recoverable because plants
+can reduce the excess more quickly. This assumption must remain bounded
+by toxicity, antagonism, osmotic stress, and recipe constraints. It
+should be treated as a risk-aware policy heuristic, not as a universal
+physiological law.</p>
+<h3 id="paper-2026-p07-slow-uptake-ions-and-persistent-imbalance">4.3 Slow-uptake ions
+and persistent imbalance</h3>
+<p>For ions with low estimated uptake rates under the current condition,
+oversupply may persist in the nutrient solution. Persistent excess can
+increase ionic activity, ionic strength, osmotic pressure, and
+electrochemical imbalance. Elevated EC in the root environment can
+create osmotic stress and impede water uptake, and excessive nutrient
+concentration can negatively affect plant growth and metabolism
+[15].</p>
+<p>This is the key reason why simulation-first nutrient control is
+needed. A direct control system that simply reacts to current deficiency
+may add an ion without considering whether another slowly absorbed ion
+will accumulate and later disturb uptake balance. A chemical-and-plant
+uptake playground can evaluate this risk before the real nutrient
+controller is updated.</p>
+<h3 id="paper-2026-p07-ion-antagonism-and-transport-disruption-as-risk-factors">4.4 Ion
+antagonism and transport disruption as risk factors</h3>
+<p>Ion uptake is not independent. Nutrient interactions can be
+antagonistic or synergistic, and excessive supply of one nutrient may
+interfere with uptake or utilization of another [13,14]. For example,
+K-Mg antagonism is a well-known nutrient interaction, and K-induced Mg
+deficiency has been widely discussed in plant nutrition [13].</p>
+<p>This paper treats such interactions as risk factors rather than fully
+solved physiological equations. The proposed agent should not claim
+perfect causal knowledge of all transporter-level mechanisms. Instead,
+it should evaluate whether a candidate nutrient-profile update increases
+the risk of antagonism, osmotic imbalance, or transport disruption.</p>
+<p>Secondary active transport is also relevant because plant membrane
+transporters can be driven by proton motive force and electrochemical
+gradients [12]. If the nutrient solution becomes severely imbalanced,
+the agent should treat possible disruption of electrochemical conditions
+as a risk signal. This does not mean the model perfectly predicts every
+transporter event. It means the agent should avoid nutrient-control
+actions that push the root-zone state toward conditions known to be
+physiologically risky.</p>
+<h2 id="paper-2026-p07-three-layer-digital-twin-interpretation">5. Three-Layer
+Digital-Twin Interpretation</h2>
+<h3 id="paper-2026-p07-facility-level-digital-twin">5.1 Facility-level digital
+twin</h3>
+<p>A facility-level digital twin represents the physical plant factory
+or smart farm. It includes racks, tanks, pumps, sensors, cameras,
+controllers, lighting systems, HVAC systems, irrigation systems, and
+user interfaces. Ban’s mixed-reality plant-factory digital twin work
+belongs mainly to this level [7]. It supports remote monitoring and
+control through an interactive interface.</p>
+<h3 id="paper-2026-p07-crop-level-digital-twin">5.2 Crop-level digital twin</h3>
+<p>A crop-level digital twin represents plant state. It may include
+growth stage, biomass, canopy area, root status, stress risk, nutrient
+demand, and harvest readiness. In plant factories, this layer can be
+informed by machine vision, crop growth models, and environmental
+histories.</p>
+<h3 id="paper-2026-p07-nutrient-control-digital-twin">5.3 Nutrient-control digital
+twin</h3>
+<p>A nutrient-control digital twin represents root-zone chemistry and
+nutrient uptake dynamics. It includes ion concentrations, EC, pH, TDS,
+ion activity, precipitation risk, dosing history, uptake-rate
+parameters, and plant-nutrient interaction models.</p>
+<p>The present paper proposes this third layer. It does not replace the
+facility-level digital twin. Instead, it can be embedded inside a
+broader plant-factory digital twin as a chemical-physiological
+simulation module. In this sense, a chemical complex system model
+becomes a nutrient-control playground for agricultural AI agents.</p>
+<h2 id="paper-2026-p07-chemical-complex-system-models-as-agent-playgrounds">6. Chemical
+Complex System Models as Agent Playgrounds</h2>
+<h3 id="paper-2026-p07-definition-of-a-nutrient-control-playground">6.1 Definition of a
+nutrient-control playground</h3>
+<p>In this paper, a nutrient-control playground is defined as a
+simulation environment in which an agricultural AI agent can test
+candidate nutrient-control inputs before updating a real nutrient
+controller. The playground does not directly drive pumps or valves. It
+predicts possible outcomes of target-profile changes, recipe changes, or
+dosing-policy changes.</p>
+<p>The playground consists of three components:</p>
+<blockquote>
+<p>1. A corrected nutrient-state estimator.</p>
+<p>2. A chemical complex system model of nutrient solution.</p>
+<p>3. A plant uptake and nutrient-plant interaction model.</p>
+</blockquote>
+<p>Together, these components allow the agent to ask: “If I update the
+target nitrate, potassium, calcium, magnesium, or pH profile in this
+way, what chemical and physiological consequences are expected?”</p>
+<h3 id="paper-2026-p07-state-variables">6.2 State variables</h3>
+<p>A nutrient-control playground should include the following state
+variables:</p>
+<p>- pH</p>
+<p>- EC</p>
+<p>- total dissolved solids</p>
+<p>- individual ion concentrations</p>
+<p>- estimated ion activity</p>
+<p>- ionic strength</p>
+<p>- root-zone temperature</p>
+<p>- nutrient tank volume</p>
+<p>- recent dosing history</p>
+<p>- crop species</p>
+<p>- crop growth stage</p>
+<p>- estimated uptake-rate parameters</p>
+<p>- sensor calibration state</p>
+<p>- sensor confidence score</p>
+<p>- digital-twin state</p>
+<p>Sensor confidence is important because the agent should not treat all
+measurements equally. If ISE correction tools indicate low confidence,
+the agent should avoid aggressive target-profile updates.</p>
+<h3 id="paper-2026-p07-candidate-actions">6.3 Candidate actions</h3>
+<p>The agent can test candidate actions such as:</p>
+<p>- update nitrate target concentration</p>
+<p>- update potassium target concentration</p>
+<p>- update calcium target concentration</p>
+<p>- update magnesium target concentration</p>
+<p>- adjust pH target</p>
+<p>- adjust EC target</p>
+<p>- change dilution ratio</p>
+<p>- change dosing interval</p>
+<p>- change nutrient recipe by crop stage</p>
+<p>- change allowable deviation threshold</p>
+<p>These are not direct actuator commands. They are supervisory
+nutrient-control candidates that may later be translated into controller
+parameters.</p>
+<h3 id="paper-2026-p07-simulation-outputs">6.4 Simulation outputs</h3>
+<p>The playground should return outputs such as:</p>
+<p>- predicted ion concentration trajectory</p>
+<p>- predicted pH and EC trajectory</p>
+<p>- precipitation risk</p>
+<p>- slow-ion accumulation risk</p>
+<p>- ion antagonism risk</p>
+<p>- osmotic imbalance risk</p>
+<p>- secondary active transport disruption risk</p>
+<p>- target-profile feasibility</p>
+<p>- recommended safe update</p>
+<p>- uncertainty score</p>
+<p>These outputs allow the agent to compare candidate policies before
+interacting with the real nutrient-management device.</p>
+<h2 id="paper-2026-p07-proposed-architecture-for-smart-farm-nutrient-management-agents">7.
+Proposed Architecture for Smart-Farm Nutrient Management Agents</h2>
+<p>The proposed architecture is shown conceptually below.</p>
+<p>Raw nutrient sensing</p>
+<p>↓</p>
+<p>ISE correction and artifact removal</p>
+<p>↓</p>
+<p>Corrected nutrient-state estimation</p>
+<p>↓</p>
+<p>Chemical complex system playground</p>
+<p>↓</p>
+<p>Plant uptake simulator</p>
+<p>↓</p>
+<p>Risk evaluation</p>
+<p>↓</p>
+<p>Target-profile recommendation</p>
+<p>↓</p>
+<p>Human or policy approval</p>
+<p>↓</p>
+<p>Nutrient controller parameter update</p>
+<p>↓</p>
+<p>Physical dosing actuator</p>
+<p>↓</p>
+<p>Post-update monitoring and audit</p>
+<figure class="paper-figure"><img alt="Figure 2. Simulation-first architecture for nutrient management AI agents." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p07/figure-2.webp"/><figcaption><em><strong>Figure 2. Simulation-first architecture for nutrient
+management AI agents.</strong></em></figcaption></figure>
+
+<h3 id="paper-2026-p07-observation-layer">7.1 Observation layer</h3>
+<p>The observation layer collects pH, EC, ISE data, temperature, tank
+volume, dosing history, and crop-stage information. Raw ISE data are
+corrected using interference-removal and artifact-removal models
+[1,5].</p>
+<h3 id="paper-2026-p07-simulation-layer">7.2 Simulation layer</h3>
+<p>The simulation layer uses the ODE nutrient-solution model and plant
+uptake model [2-4]. Candidate target-profile updates are tested in this
+model before any real controller parameter is changed.</p>
+<h3 id="paper-2026-p07-decision-layer">7.3 Decision layer</h3>
+<p>The decision layer evaluates candidate actions using risk criteria.
+It should penalize slow-ion accumulation, ion antagonism, excessive
+osmotic pressure, and predicted disruption of root-zone electrochemical
+balance.</p>
+<h3 id="paper-2026-p07-controller-interface-layer">7.4 Controller interface layer</h3>
+<p>The agent does not directly actuate pumps. Instead, it updates the
+target profile or policy parameters of the nutrient controller. The
+controller then determines actual dosing amounts, pump timing, mixing,
+calibration, and safety cutoffs.</p>
+<h3 id="paper-2026-p07-digital-twin-interface-layer">7.5 Digital-twin interface
+layer</h3>
+<p>The chemical playground can be integrated into a broader
+plant-factory digital twin. Ban’s plant-factory digital twin interface
+already proposed that remote plant-factory facilities can be monitored
+and controlled through an interactive mixed-reality environment [7]. The
+nutrient-control playground can serve as a specialized
+chemical-physiological module inside such a digital twin.</p>
+<h2 id="paper-2026-p07-risk-aware-nutrient-control-policy">8. Risk-Aware Nutrient
+Control Policy</h2>
+<figure class="paper-figure"><img alt="Figure 3. Conceptual comparison between direct nutrient control and simulation-first nutrient control." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p07/figure-3.webp"/><figcaption><strong>Figure 3. Conceptual comparison between direct nutrient
+control and simulation-first nutrient control.</strong></figcaption></figure>
+
+<h3 id="paper-2026-p07-ion-uptake-rate-classes">8.1 Ion uptake-rate classes</h3>
+<p>A nutrient management agent should classify ions by estimated uptake
+behavior and persistence risk. This classification should not be fixed
+universally. It should be estimated for each crop species, cultivar,
+growth stage, root-zone condition, and sensor-confidence level.</p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:49%;">
+<colgroup>
+<col style="width: 16%"/>
+<col style="width: 15%"/>
+<col style="width: 16%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Ion class</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Agent policy</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fast-uptake under current condition</td>
+<td>Moderate excess is likely to be reduced relatively quickly by plant
+uptake</td>
+<td>Allow small temporary overshoot only within safe and
+non-antagonistic bounds</td>
+</tr>
+<tr>
+<td>Medium-uptake under current condition</td>
+<td>Correction requires controlled adjustment</td>
+<td>Simulate before updating target profile</td>
+</tr>
+<tr>
+<td>Slow-uptake under current condition</td>
+<td>Excess may persist and disturb ion balance</td>
+<td>Use strict upper bounds and accumulation penalties</td>
+</tr>
+<tr>
+<td>Antagonism-risk ion</td>
+<td>Excess may inhibit uptake of another ion</td>
+<td>Evaluate interaction risk before update</td>
+</tr>
+<tr>
+<td>Uncertain ion</td>
+<td>Sensor confidence or uptake parameter is uncertain</td>
+<td>Avoid aggressive updates and request verification</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="paper-2026-p07-slow-ion-penalty">8.2 Slow-ion penalty</h3>
+<p>A conceptual risk score can be defined as:</p>
+<p>Risk_slow_ion =</p>
+<p>accumulation_persistence</p>
+<p>× uptake_competition</p>
+<p>× osmotic_impact</p>
+<p>× electrochemical_imbalance</p>
+<p>× sensor_uncertainty</p>
+<p>This is not proposed as a final universal equation. It is a design
+principle for agentic nutrient control. The point is that a nutrient
+management agent should not only minimize instantaneous deviation from
+target concentration. It should minimize future risk caused by
+persistent imbalance.</p>
+<h3 id="paper-2026-p07-simulation-first-decision-rule">8.3 Simulation-first decision
+rule</h3>
+<p>A safe nutrient management agent should follow this rule:</p>
+<p>Do not update a real nutrient-controller target profile</p>
+<p>until candidate updates have been simulated</p>
+<p>for chemical feasibility, uptake dynamics,</p>
+<p>slow-ion accumulation, ion antagonism,</p>
+<p>and osmotic/electrochemical risk.</p>
+<p>This rule is especially important in closed hydroponic systems, where
+incorrect nutrient additions can remain in the system and affect later
+uptake.</p>
+<h2 id="paper-2026-p07-agent-workflow">9. Agent Workflow</h2>
+<p>The proposed nutrient management workflow is as follows.</p>
+<h3 id="paper-2026-p07-step-1.-observe-corrected-nutrient-state">Step 1. Observe
+corrected nutrient state</h3>
+<p>The agent reads corrected pH, EC, ISE-derived ion concentrations,
+sensor confidence, crop stage, and dosing history.</p>
+<h3 id="paper-2026-p07-step-2.-diagnose-imbalance">Step 2. Diagnose imbalance</h3>
+<p>The agent compares the current nutrient state with the crop-stage
+target profile.</p>
+<h3 id="paper-2026-p07-step-3.-generate-candidate-nutrient-control-inputs">Step 3.
+Generate candidate nutrient-control inputs</h3>
+<p>The agent proposes several candidate profile updates, not direct
+dosing commands.</p>
+<h3 id="paper-2026-p07-step-4.-simulate-chemical-response">Step 4. Simulate chemical
+response</h3>
+<p>The agent runs the ODE-based chemical complex system model to predict
+chemical trajectories.</p>
+<h3 id="paper-2026-p07-step-5.-simulate-plant-uptake-response">Step 5. Simulate plant
+uptake response</h3>
+<p>The agent evaluates how the plant may absorb or fail to absorb each
+ion over time.</p>
+<h3 id="paper-2026-p07-step-6.-evaluate-risk">Step 6. Evaluate risk</h3>
+<p>The agent estimates precipitation risk, slow-ion accumulation risk,
+osmotic imbalance, ion antagonism, and possible transport-disruption
+risk.</p>
+<h3 id="paper-2026-p07-step-7.-select-safe-target-profile">Step 7. Select safe target
+profile</h3>
+<p>The agent chooses a conservative target-profile update that minimizes
+both deficiency and long-term imbalance.</p>
+<h3 id="paper-2026-p07-step-8.-update-nutrient-controller-parameters">Step 8. Update
+nutrient controller parameters</h3>
+<p>After human or policy approval, the agent updates the target profile
+of the existing nutrient controller.</p>
+<h3 id="paper-2026-p07-step-9.-monitor-post-update-trajectory">Step 9. Monitor
+post-update trajectory</h3>
+<p>The agent checks whether measured ion concentrations follow the
+predicted trajectory.</p>
+<h3 id="paper-2026-p07-step-10.-audit-decision-and-outcome">Step 10. Audit decision and
+outcome</h3>
+<p>The agent records sensor state, simulation results, selected profile,
+approval, controller update, and post-update outcome.</p>
+<h2 id="paper-2026-p07-discussion">10. Discussion</h2>
+<h3 id="paper-2026-p07-why-simulation-first-control-is-safer-than-direct-nutrient-control">10.1
+Why simulation-first control is safer than direct nutrient control</h3>
+<p>Direct nutrient control is risky because nutrient solutions are
+nonlinear chemical systems and plant uptake is delayed. A sensor
+deviation does not necessarily imply that a simple dosing action is
+safe. The agent must consider precipitation, ion interaction, pH and EC
+drift, osmotic load, and uptake competition. Simulation-first control
+reduces the risk of making slow-to-correct changes to the nutrient
+solution.</p>
+<h3 id="paper-2026-p07-why-latency-is-acceptable">10.2 Why latency is acceptable</h3>
+<p>In many agricultural AI applications, latency is a weakness. In
+nutrient management, moderate decision latency can be acceptable because
+plant nutrient uptake and physiological responses are not sub-second
+processes. This makes it feasible for an agent to spend time correcting
+sensor data, simulating candidate actions, and comparing risk before
+updating the nutrient controller.</p>
+<h3 id="paper-2026-p07-chemical-complex-models-as-learning-environments">10.3 Chemical
+complex models as learning environments</h3>
+<p>Chemical complex system models can serve as learning environments for
+agricultural AI agents. The agent can learn which nutrient-control
+candidates are chemically feasible, which ones create persistent
+imbalance, and which ones are likely to be corrected by plant uptake.
+This learning can be explicit through simulation-based planning or
+implicit through training policies on simulated trajectories.</p>
+<h3 id="paper-2026-p07-digital-twins-for-plant-growth-and-nutrient-control">10.4
+Digital twins for plant growth and nutrient control</h3>
+<p>Plant-factory digital twins have already been proposed for remote
+monitoring and control [7]. The present paper extends that concept by
+emphasizing nutrient-solution chemistry and plant uptake dynamics as
+internal simulation modules of a digital twin. A plant-growth digital
+twin should not only display canopy images or environmental dashboards.
+It should also simulate root-zone chemistry, nutrient uptake, and the
+consequences of target-profile updates.</p>
+<h3 id="paper-2026-p07-limitations">10.5 Limitations</h3>
+<p>This paper is a design-strategy paper. It does not present a new
+calibrated crop-specific uptake model, a real deployment, or
+experimental validation. The proposed architecture depends on accurate
+sensor correction, reliable chemical modeling, cultivar-specific uptake
+parameters, and robust controller integration. Future work should
+evaluate the architecture in real smart-farm and plant-factory
+systems.</p>
+<h2 id="paper-2026-p07-conclusion">11. Conclusion</h2>
+<p>This paper proposed a simulation-first strategy for smart-farm
+nutrient management agents. The central argument is that agricultural AI
+agents can learn from chemical complex system models and use them as
+playgrounds before changing real nutrient-control parameters. Here,
+“learning” means simulation-based planning, synthetic trajectory
+generation, and risk-aware recommendation rather than necessarily
+end-to-end neural training.</p>
+<p>The agent should not directly translate pH, EC, or raw ISE deviations
+into actuator commands. Instead, it should correct sensor artifacts,
+estimate nutrient state, simulate candidate target-profile updates,
+evaluate chemical and physiological risks, and then update the nutrient
+controller only when the predicted outcome is safe.</p>
+<p>Previous researches on nutrient solution management and modeling
+provides a foundation for this strategy: ISE correction enables reliable
+observation, ODE network modeling provides a chemical complex system
+playground, root ion transport modeling explains plant uptake dynamics,
+nutrient-plant interaction simulation connects chemistry and physiology,
+and automated nutrient-solution management systems provide a real
+controller interface [1-6]. Ban’s plant-factory digital twin work
+further shows that smart-farm operation can be represented through
+digital-twin environments [7]. The present paper connects these ideas
+into a nutrient management agent architecture.</p>
+<p>The key practical implication is that nutrient management agents
+should be introduced as supervisory simulation systems, not as direct
+dosing robots. They should update target profiles, recipes, thresholds,
+and dosing policies after simulation and approval, while existing
+nutrient controllers perform the physical dosing and safety enforcement.
+This approach is particularly important for avoiding persistent
+accumulation of slow-uptake ions, which may disturb ionic activity,
+osmotic balance, electrochemical gradients, and nutrient uptake
+interactions.</p>
+<h2 id="paper-2026-p07-references">References</h2>
+<p>[1] Ban, B.; Ryu, D.; Lee, M. Machine Learning Approach to Remove Ion
+Interference Effect in Agricultural Nutrient Solutions. International
+Conference on Information and Communication Technology Convergence,
+2019, 1156-1161. doi: 10.1109/ICTC46691.2019.8939812.</p>
+<p>[2] Ban, B.; Lee, M.; Ryu, D. ODE Network Model for Nonlinear and
+Complex Agricultural Nutrient Solution System. International Conference
+on Information and Communication Technology Convergence, 2019, 996-1001.
+doi: 10.1109/ICTC46691.2019.8939946.</p>
+<p>[3] Ban, B. Mathematical Model for Secondary Transport of Cations at
+the Root of Plants. Preprints, 2019, 2019090219. doi:
+10.20944/preprints201909.0219.v1.</p>
+<p>[4] Ban, B. Mathematical Model and Simulation for Nutrient-Plant
+Interaction Analysis. International Conference on Information and
+Communication Technology Convergence, 2020, 1531-1536. doi:
+10.1109/ICTC49870.2020.9289083.</p>
+<p>[5] Ban, B.; Ryu, D.; Lee, M. Deep Learning Method to Remove
+Chemical, Kinetic and Electric Artifacts on ISEs. International
+Conference on Information and Communication Technology Convergence,
+2020, 1242-1246; Preprints, 2020, 2020050381. doi:
+10.20944/preprints202005.0381.v2.</p>
+<p>[6] Ban, B.; Lee, J.; Ryu, D.; Lee, M.; Eom, T. D. Nutrient Solution
+Management System for Smart Farms and Plant Factory. International
+Conference on Information and Communication Technology Convergence,
+2020, 1537-1542. doi: 10.1109/ICTC49870.2020.9289192.</p>
+<p>[7] Ban, B. Mixed Reality Interface for Digital Twin of Plant
+Factory. arXiv, 2022, arXiv:2211.00597. doi:
+10.48550/arXiv.2211.00597.</p>
+<p>[8] Cho, W.-J.; Kim, H.-J.; Jung, D.-H.; Kim, D.-W.; Ahn, T. I.; Son,
+J.-E. On-Site Ion Monitoring System for Precision Hydroponic Nutrient
+Management. Computers and Electronics in Agriculture, 2018, 146, 51-58.
+doi: 10.1016/j.compag.2018.01.019.</p>
+<p>[9] Richa, A.; Fizir, M.; Touil, S. Advanced Monitoring of Hydroponic
+Solutions Using Ion-Selective Electrodes and the Internet of Things: A
+Review. Environmental Chemistry Letters, 2021, 19, 3445-3463. doi:
+10.1007/s10311-021-01233-8.</p>
+<p>[10] Cho, W.-J.; Kim, H.-J.; Jung, D.-H.; et al. Decision-Tree-Based
+Ion-Specific Dosing Algorithm for Enhancing Closed Hydroponic Efficiency
+and Reducing Carbon Emissions. Frontiers in Plant Science, 2023, 14,
+1301490. doi: 10.3389/fpls.2023.1301490.</p>
+<p>[11] Griffiths, M.; York, L. M. Targeting Root Ion Uptake Kinetics to
+Increase Plant Productivity and Nutrient Use Efficiency. Plant
+Physiology, 2020, 182(4), 1854-1868. doi: 10.1104/pp.19.01496.</p>
+<p>[12] Andersen, C. G.; Bavnhøj, L.; Pedersen, B. P. May the Proton
+Motive Force Be with You: A Plant Transporter Review. Current Opinion in
+Structural Biology, 2023, 79, 102535. doi:
+10.1016/j.sbi.2023.102535.</p>
+<p>[13] Xie, K.; Cakmak, I.; Wang, S.; Zhang, F.; Guo, S. Synergistic
+and Antagonistic Interactions between Potassium and Magnesium in Higher
+Plants. The Crop Journal, 2021, 9(2), 249-256. doi:
+10.1016/j.cj.2020.10.005.</p>
+<p>[14] Rietra, R. P. J. J.; Heinen, M.; Dimkpa, C. O.; Bindraban, P. S.
+Effects of Nutrient Antagonism and Synergism on Yield and Fertilizer Use
+Efficiency. Communications in Soil Science and Plant Analysis, 2017,
+48(16), 1895-1920. doi: 10.1080/00103624.2017.1407429.</p>
+<p>[15] He, L.; et al. The Impact of Nutrient Solution Electrical
+Conductivity on Leaf Transcriptome Contributing to the Fruit Quality of
+Cucumber Grown in Coir Cultivation. International Journal of Molecular
+Sciences, 2024, 25, 11984. doi: 10.3390/ijms252211984.</p>
+<p>[16] Zhang, Z.; Zhu, Z.; Gao, G.; Qu, D.; Zhong, J.; Jia, D.; Du, X.;
+Yang, X.; Pan, S. Design and Research of Digital Twin System for
+Multi-Environmental Variable Mapping in Plant Factory. Computers and
+Electronics in Agriculture, 2023, 213, 108243. doi:
+10.1016/j.compag.2023.108243.</p>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">উদ্ধৃতি</h2><p class="citation-help">কোনো বিন্যাসে ক্লিক করলে উদ্ধৃতির তথ্য কপি হবে।</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="APA বিন্যাস কপি করুন">APA কপি করুন</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="MLA বিন্যাস কপি করুন">MLA কপি করুন</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="Chicago বিন্যাস কপি করুন">Chicago কপি করুন</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="IEEE বিন্যাস কপি করুন">IEEE কপি করুন</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="BibTeX বিন্যাস কপি করুন">BibTeX কপি করুন</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="RIS বিন্যাস কপি করুন">RIS কপি করুন</button></div><label for="citation-text" class="citation-preview-label">উদ্ধৃতির প্রিভিউ · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B. (2026). Agricultural AI agents can learn from chemical complex system models. ResearchGate. https://doi.org/10.13140/RG.2.2.10797.24808</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/agricultural-ai-complex-systems-2026/citation.bib" download>BibTeX ফাইল</a><a href="/papers/agricultural-ai-complex-systems-2026/citation.ris" download>RIS ফাইল</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B. (2026). Agricultural AI agents can learn from chemical complex system models. ResearchGate. https://doi.org/10.13140/RG.2.2.10797.24808", "mla": "Ban, Byunghyun. “Agricultural AI Agents Can Learn from Chemical Complex System Models.” ResearchGate, 2026. Preprint. https://doi.org/10.13140/RG.2.2.10797.24808.", "chicago": "Ban, Byunghyun. “Agricultural AI Agents Can Learn from Chemical Complex System Models.” Preprint, ResearchGate, 2026. https://doi.org/10.13140/RG.2.2.10797.24808.", "ieee": "B. Ban, “Agricultural AI agents can learn from chemical complex system models,” ResearchGate, preprint, 2026, doi: 10.13140/RG.2.2.10797.24808.", "bibtex": "@misc{ban2026_a1b55e9c66a6,\n  author = {Ban, Byunghyun},\n  title = {{Agricultural AI Agents Can Learn from Chemical Complex System Models}},\n  year = {2026},\n  doi = {10.13140/RG.2.2.10797.24808},\n  url = {https://www.researchgate.net/publication/404500889\\_Agricultural\\_AI\\_Agents\\_Can\\_Learn\\_from\\_Chemical\\_Complex\\_System\\_Models},\n  note = {Preprint},\n  howpublished = {ResearchGate}\n}", "ris": "TY  - UNPB\nAU  - Ban, Byunghyun\nTI  - Agricultural AI Agents Can Learn from Chemical Complex System Models\nPY  - 2026\nDO  - 10.13140/RG.2.2.10797.24808\nUR  - https://www.researchgate.net/publication/404500889_Agricultural_AI_Agents_Can_Learn_from_Chemical_Complex_System_Models\nAB  - Smart farms and plant factories increasingly use sensors, automatic controllers, digital twins, and artificial intelligence models. However, nutrient management remains difficult because nutrient solutions are nonlinear chemical systems coupled with plant uptake dynamics. This paper proposes a simulation-first strategy for smart-farm nutrient management agents. The proposed strategy is grounded in previous studies on ion-selective electrode correction, ODE network modeling of nutrient solutions, plant-root ion transport, nutrient-plant interaction simulation, automated nutrient-solution management systems, and plant-factory digital twins. The paper further proposes a three-layer digital-twin interpretation consisting of facility-level, crop-level, and nutrient-control digital twins. The nutrient-control digital twin is positioned as a chemical-physiological playground inside a broader plant-factory digital twin. The proposed approach does not require sub-second real-time agent control because nutrient uptake and nutrient-related physiological responses are evaluated over multi-minute, hourly, daily, or crop-stage timescales. Therefore, nutrient management agents should be introduced as supervisory simulators and target-profile optimizers rather than direct dosing robots.\nLA  - en\nM3  - Preprint\nER  -\n"}</script></section><a class="paper-back-link" href="/bn/papers/">← গবেষণাপত্রের তালিকায় ফিরুন</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="সব পৃষ্ঠা"><a href="/bn/">Byunghyun Ban</a><a href="/bn/media/">সম্প্রচার ও ভিডিও</a><a href="/bn/books/">প্রকাশিত বই</a><a href="/bn/lectures/">বক্তৃতা ও প্রশিক্ষণের অভিজ্ঞতা</a><a href="/bn/courses/online/">অনলাইন কোর্স</a><a href="/bn/courses/offline/">সশরীর কোর্স</a><a href="/bn/news/">সংবাদ প্রতিবেদন</a><a href="/bn/papers/">গবেষণাপত্র ও গবেষণা</a><a href="/bn/patents/">পেটেন্ট</a><a href="/bn/projects/">উন্নয়ন প্রকল্প</a><a href="/bn/activities/">সামাজিক অবদান</a><a href="/bn/memberships/">সদস্যপদ ও পেশাগত কার্যক্রম</a><a href="/bn/collections/">সংগ্রহের সামগ্রী</a><a href="/bn/contact/">বক্তৃতা ও সহযোগিতার জন্য যোগাযোগ</a></nav>
+            <p><a href="/feed.xml">RSS সাবস্ক্রাইব করুন</a> · <a href="/feed.json">JSON ফিড</a></p>
+            <p>© 2026 Byunghyun Ban. সর্বস্বত্ব সংরক্ষিত।</p>
+            <p>NaNa Lab (ব্যবসা নিবন্ধন নম্বর:269-08-02374), প্রতিনিধি Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="একেবারে ওপরে যান">↑</button>
+</body>
+</html>

@@ -7,6 +7,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const source = fs.readFileSync(path.join(__dirname, '..', 'continuous-scroll.js'), 'utf8');
+const runtime = fs.readFileSync(path.join(__dirname, '..', 'script.js'), 'utf8');
 
 function surface() {
     const handlers = new Map();
@@ -30,10 +31,12 @@ function element() {
         querySelector: () => null, querySelectorAll: () => [],
     });
 }
-function fixture({ mobile = true, home = false } = {}) {
+function fixture({ mobile = true, home = false, locale = null, messages = {} } = {}) {
     const raf = [], timers = new Map(), requests = [], enhanced = [];
     const body = element(), main = element(), panel = element(), label = element(), description = element(), hint = element(), link = element();
     body.dataset.page = home ? 'home' : 'books';
+    if (locale) body.dataset.locale = locale;
+    const prefix = locale && locale !== 'ko' ? '/' + locale : '';
     main.append(element());
     main.append = child => { main.children.push(child); panel.top += 6000; };
     panel.top = 10000;
@@ -44,7 +47,8 @@ function fixture({ mobile = true, home = false } = {}) {
     label.textContent = 'Media';
     const document = Object.assign(surface(), {
         body, visibilityState: 'visible',
-        getElementById: id => id === 'main-content' ? main : null,
+        baseURI: 'https://example.test' + prefix + '/', documentElement: { lang: locale || 'ko' },
+        getElementById: id => id === 'main-content' ? main : id === 'site-i18n' ? { textContent: JSON.stringify(messages) } : null,
         createElement: element, importNode: () => element(),
     });
     const media = { matches: mobile };
@@ -57,13 +61,13 @@ function fixture({ mobile = true, home = false } = {}) {
             const next = data.next ? element() : null;
             if (next) { next.href = data.next; next.querySelector = () => ({ textContent: data.next }); }
             return {
-                body: { dataset: { page: data.key } },
+                body: { dataset: { page: data.key, locale: data.locale || locale || 'ko' } },
                 getElementById: id => id === 'main-content' ? (data.invalid ? null : { children: [element()] }) : next,
             };
         };
     }
     const window = Object.assign(surface(), {
-        location: { href: home ? 'https://example.test/' : 'https://example.test/books/', origin: 'https://example.test' },
+        location: { href: 'https://example.test' + prefix + (home ? '/' : '/books/'), origin: 'https://example.test' },
         innerHeight: 844, fetch, DOMParser, IntersectionObserver,
         requestAnimationFrame(fn) { raf.push(fn); },
     });
@@ -75,6 +79,7 @@ function fixture({ mobile = true, home = false } = {}) {
         clearTimeout(id) { timers.delete(id); },
         link, panel, mobile: media, enhance: section => enhanced.push(section),
     });
+    if (locale) vm.runInContext(runtime, context);
     vm.runInContext(source, context);
     const controller = vm.runInContext('setupMobileContinuousScroll({link, panel, mobile, enhance})', context);
     async function flush() {
@@ -90,6 +95,31 @@ function fixture({ mobile = true, home = false } = {}) {
 
 const tests = [];
 const test = (name, run) => tests.push([name, run]);
+test('localized home appends the same language and preserves its address', async () => {
+    const f = fixture({ home: true, locale: 'en', messages: { streamLoading: 'Loading {label}…' } });
+    await f.near();
+    assert.equal(f.requests[0].url, 'https://example.test/en/books/');
+    assert.equal(f.hint.textContent, 'Loading Media…');
+    await f.respond({ key: 'books', next: '/lectures/' });
+    assert.equal(f.main.children.length, 2);
+    assert.equal(f.link.href, 'https://example.test/en/lectures/');
+    assert.equal(f.window.location.href, 'https://example.test/en/');
+});
+test('a fetched page in another language is rejected without appending', async () => {
+    const f = fixture({ locale: 'ar', messages: { streamError: 'تعذر تحميل المحتوى.' } });
+    await f.near();
+    assert.equal(f.requests[0].url, 'https://example.test/ar/media/');
+    await f.respond({ key: 'media', locale: 'ko', next: '/news/' });
+    assert.equal(f.main.children.length, 1);
+    assert.equal(f.hint.textContent, 'تعذر تحميل المحتوى.');
+    assert.equal(f.body.classList.contains('stream-pending'), false);
+});
+test('next-section links cannot silently switch the active language', async () => {
+    const f = fixture({ locale: 'bn' });
+    await f.near();
+    await f.respond({ key: 'media', next: '/en/news/' });
+    assert.equal(f.link.href, 'https://example.test/bn/news/');
+});
 test('desktop and distant mobile content do not fetch eagerly', async () => {
     const desktop = fixture({ mobile: false }); await desktop.near();
     assert.equal(desktop.requests.length, 0);

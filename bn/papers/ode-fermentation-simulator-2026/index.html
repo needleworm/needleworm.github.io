@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation | Byunghyun Ban</title>
+    <meta name="description" content="Fermentation is a slow chemical-biological process in which substrates, enzymes, yeast biomass, oxygen, pH, temperature, and metabolic products co-evolve. This paper presents an…">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+    <meta name="citation_title" content="An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation">
+<meta name="citation_author" content="Byunghyun Ban">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_language" content="en">
+<meta name="citation_abstract_html_url" content="https://bhban.kr/papers/ode-fermentation-simulator-2026/">
+<meta name="citation_doi" content="10.13140/RG.2.2.31603.28968">
+<meta name="citation_pdf_url" content="https://bhban.kr/papers/ode-fermentation-simulator-2026/paper.pdf">
+    <link rel="canonical" href="https://bhban.kr/bn/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" type="application/rss+xml" title="Byunghyun Ban RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="Byunghyun Ban JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="bn_BD">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation | Byunghyun Ban">
+    <meta property="og:description" content="Fermentation is a slow chemical-biological process in which substrates, enzymes, yeast biomass, oxygen, pH, temperature, and metabolic products co-evolve. This paper presents an…">
+    <meta property="og:url" content="https://bhban.kr/bn/papers/ode-fermentation-simulator-2026/">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@a19701f96fce64e799568b4073edfcdf60015f64/src/images/papers/2026-p02-first-page-8422f8f3b993.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=0fc7bf38a3a7">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/bn/#website", "url": "https://bhban.kr/bn/", "name": "Byunghyun Ban", "inLanguage": "bn"}, {"@type": "WebPage", "@id": "https://bhban.kr/bn/papers/ode-fermentation-simulator-2026/#page", "url": "https://bhban.kr/bn/papers/ode-fermentation-simulator-2026/", "name": "An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation | Byunghyun Ban", "description": "Fermentation is a slow chemical-biological process in which substrates, enzymes, yeast biomass, oxygen, pH, temperature, and metabolic products co-evolve. This paper presents an…", "inLanguage": "bn", "mainEntity": {"@id": "https://bhban.kr/papers/ode-fermentation-simulator-2026/#article"}, "isPartOf": {"@id": "https://bhban.kr/bn/#website"}}, {"@type": "ScholarlyArticle", "@id": "https://bhban.kr/papers/ode-fermentation-simulator-2026/#article", "url": "https://bhban.kr/papers/ode-fermentation-simulator-2026/", "name": "An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation", "headline": "An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation", "author": [{"@type": "Person", "name": "Byunghyun Ban"}], "datePublished": "2026", "inLanguage": "en", "abstract": "Fermentation is a slow chemical-biological process in which substrates, enzymes, yeast biomass, oxygen, pH, temperature, and metabolic products co-evolve. This paper presents an ODE-network-based chemical complex system simulator for multi-environment fermentation. A shared state-space was instantiated for bread dough, rice wine, beer wort, and malt mash/wort, and a one-command Python workflow generated 108 simulated conditions with CSV outputs. The sweep produced interpretable optima and failure modes that aligned semi-quantitatively with literature-reported fermentation ranges, supporting the model as a compact benchmark for fermentation design and future control studies.", "mainEntityOfPage": {"@id": "https://bhban.kr/papers/ode-fermentation-simulator-2026/#page"}, "creativeWorkStatus": "Preprint", "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.13140/RG.2.2.31603.28968"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://bhban.kr/papers/ode-fermentation-simulator-2026/paper.pdf", "encodingFormat": "application/pdf"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "মূল পৃষ্ঠা", "item": "https://bhban.kr/bn/"}, {"@type": "ListItem", "position": 2, "name": "গবেষণাপত্র", "item": "https://bhban.kr/bn/papers/"}, {"@type": "ListItem", "position": 3, "name": "An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation", "item": "https://bhban.kr/bn/papers/ode-fermentation-simulator-2026/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+    <script src="/paper-reader.js?v=f323f9f18c1a" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/ode-fermentation-simulator-2026/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/ode-fermentation-simulator-2026/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"মেনু খুলুন","menuClose":"মেনু বন্ধ করুন","submenuExpand":"{label}-এর উপমেনু খুলুন","submenuCollapse":"{label}-এর উপমেনু বন্ধ করুন","nextSwipeHint":"একেবারে নিচে এসে আরও একবার ওপরের দিকে সোয়াইপ করলে পরের অংশে যাবেন।","nextScrollHint":"একেবারে নিচে এসে আরও একবার নিচে স্ক্রল করলে পরের অংশে যাবেন।","lectureResults":"{category} {count}টি · সাম্প্রতিক বক্তৃতা আগে","categoryAll":"সব","categoryCompany":"ব্যবসা প্রতিষ্ঠান","categoryPublic":"সরকারি প্রতিষ্ঠান","categoryEducation":"শিক্ষা প্রতিষ্ঠান","categoryResearch":"গবেষণা প্রতিষ্ঠান","categoryConference":"সম্মেলন","listMedia":"ভিডিও","listNews":"সংবাদ প্রতিবেদন","listLectures":"বক্তৃতা","listCoursesOnline":"অনলাইন কোর্স","listCoursesOffline":"সশরীর কোর্স","listPapers":"গবেষণাপত্র","listPatents":"পেটেন্ট","listProjects":"প্রকল্প","listActivities":"কার্যক্রম","listMemberships":"সদস্যপদের কার্যক্রম","listCollections":"সংগ্রহের সামগ্রী","listDonations":"অনুদানের বিবরণ","listGeneric":"তালিকা","listStatus":"{total}টির মধ্যে {visible}টি দেখানো হচ্ছে","listMore":"আরও {label} দেখুন ({remaining}টি বাকি)","citationCopyLabel":"উদ্ধৃতির তথ্য কপি করুন","citationCopied":"উদ্ধৃতির তথ্য কপি করা হয়েছে।","citationError":"উদ্ধৃতির তথ্য কপি করা যায়নি। ব্রাউজারের ক্লিপবোর্ড সেটিংস দেখুন।","citationFormatCopied":"{label} উদ্ধৃতির তথ্য কপি করা হয়েছে।","citationManualCopy":"উদ্ধৃতিটি নির্বাচন করা হয়েছে। নিজে কপি করুন।","contactLoadError":"বার্তা পাঠানোর ব্যবস্থা লোড করা যায়নি। কিছুক্ষণ পরে আবার চেষ্টা করুন।","contactSent":"আপনার বার্তা গ্রহণ করা হয়েছে।","contactError":"একটি ত্রুটি হয়েছে। আবার চেষ্টা করুন।","contactSending":"পাঠানো হচ্ছে...","streamRetry":"আবার লোড করুন","streamError":"পরবর্তী বিষয়বস্তু লোড করা যায়নি। আবার চেষ্টা করুন অথবা উপরের লিংকে যান।","streamLoading":"{label}-এর পরবর্তী বিষয়বস্তু লোড হচ্ছে।"}</script>
+</head>
+<body data-locale="bn" class="static-site full-content content-page paper-detail-page" data-page="paper-detail">
+    <a class="skip-link" href="#main-content">মূল বিষয়বস্তুতে যান</a>
+    <nav class="navbar" aria-label="প্রধান মেনু"><div class="navbar-brand"><a href="/bn/" aria-label="Byunghyun Ban মূল পৃষ্ঠা"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/bn/" class="nav-link nav-main-link" data-nav-page="home">পরিচিতি</a></li><li data-nav-group="media"><a href="/bn/media/" class="nav-link nav-main-link" data-nav-page="media">মিডিয়া</a></li><li data-nav-group="books"><a href="/bn/books/" class="nav-link nav-main-link" data-nav-page="books">বই</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/bn/lectures/" class="nav-link nav-main-link" data-nav-page="lectures">বক্তৃতা</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="বক্তৃতার উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="বক্তৃতার বিভাগ"><li><a href="/bn/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">সব</a></li><li><a href="/bn/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">ব্যবসা প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">সরকারি প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">শিক্ষা প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">গবেষণা প্রতিষ্ঠান</a></li><li><a href="/bn/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">সম্মেলন</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/bn/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">কোর্স</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="কোর্স উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/bn/courses/online/" data-nav-page="courses-online">অনলাইন</a></li><li><a href="/bn/courses/offline/" data-nav-page="courses-offline">সশরীর</a></li></ul></li><li data-nav-group="news"><a href="/bn/news/" class="nav-link nav-main-link" data-nav-page="news">সংবাদ</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/bn/papers/" class="nav-link active nav-main-link" data-nav-page="papers">গবেষণা ও উন্নয়ন</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="গবেষণা ও উন্নয়নের উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/bn/papers/" data-nav-page="papers">গবেষণাপত্র</a></li><li><a href="/bn/patents/" data-nav-page="patents">পেটেন্ট</a></li><li><a href="/bn/projects/" data-nav-page="projects">প্রকল্প</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/bn/activities/" class="nav-link nav-main-link" data-nav-page="activities">অন্যান্য</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="অন্যান্য উপমেনু খুলুন" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/bn/activities/" data-nav-page="activities">সামাজিক অবদান</a></li><li><a href="/bn/memberships/" data-nav-page="memberships">সদস্যপদ</a></li><li><a href="/bn/collections/" data-nav-page="collections">সংগ্রহ</a></li></ul></li><li data-nav-group="contact"><a href="/bn/contact/" class="btn-contact nav-main-link" data-nav-page="contact">যোগাযোগ</a></li></ul><details class="language-switcher"><summary aria-label="ভাষা নির্বাচন"><span aria-hidden="true">🌐</span> <span>বাংলা</span></summary><nav class="language-options" aria-label="ভাষা নির্বাচন"><a href="/papers/ode-fermentation-simulator-2026/" hreflang="ko" lang="ko">한국어</a><a href="/en/papers/ode-fermentation-simulator-2026/" hreflang="en" lang="en">English</a><a href="/zh/papers/ode-fermentation-simulator-2026/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/papers/ode-fermentation-simulator-2026/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/papers/ode-fermentation-simulator-2026/" hreflang="es" lang="es">Español</a><a href="/ar/papers/ode-fermentation-simulator-2026/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/papers/ode-fermentation-simulator-2026/" hreflang="fr" lang="fr">Français</a><a href="/bn/papers/ode-fermentation-simulator-2026/" hreflang="bn" lang="bn" aria-current="true">বাংলা</a><a href="/pt/papers/ode-fermentation-simulator-2026/" hreflang="pt" lang="pt">Português</a></nav></details><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="মেনু খুলুন">☰</button></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="paper-breadcrumbs" aria-label="বর্তমান অবস্থান"><a href="/bn/">মূল পৃষ্ঠা</a><span aria-hidden="true">/</span><a href="/bn/papers/">গবেষণাপত্র</a></nav><article id="tab-papers" class="paper-detail" data-paper-id="paper-2026-p02"><header><p class="paper-kind">প্রিপ্রিন্ট · পিয়ার রিভিউ হয়নি</p><h1 id="paper-title" lang="en">An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation</h1><p class="paper-authors">Byunghyun Ban</p><p class="paper-venue">2026</p><nav class="paper-reader-jumps" aria-label="গবেষণাপত্রে যান"><a href="#abstract-heading">সারসংক্ষেপ</a><a href="#full-text">পূর্ণপাঠ</a><a href="#citation-heading">উদ্ধৃতি দিন</a></nav><div class="gitIcons">
+                                <a href="/papers/ode-fermentation-simulator-2026/paper.pdf" target="_blank" rel="noreferrer" download aria-label="An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation প্রিপ্রিন্টের সম্পূর্ণ PDF ডাউনলোড" title="PDF ডাউনলোড"><i aria-hidden="true" class="fas fa-file-pdf"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 15h8M8 18h5"/></svg><span class="paper-action-label">PDF</span></a>
+                                <a href="https://doi.org/10.13140/RG.2.2.31603.28968" target="_blank" rel="noreferrer" aria-label="An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation DOI" title="DOI মূল প্রকাশনার তথ্য"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">DOI</span></a>
+                                <a href="https://www.researchgate.net/publication/404682643_An_ODE-Network-Based_Chemical_Complex_System_Simulator_for_Multi-Environment_Fermentation" target="_blank" rel="noreferrer" aria-label="An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation মূল প্রকাশনার তথ্য" title="গবেষণাপত্রের মূল প্রকাশনার তথ্য"><i aria-hidden="true" class="fas fa-external-link-alt"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3h7v7M21 3l-11 11"/><path d="M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span class="paper-action-label">উৎস</span></a>
+                                <span class="citation" data-citation="Byunghyun Ban. (2026). &quot;An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation.&quot; ResearchGate · Preprint (not peer-reviewed). https://doi.org/10.13140/RG.2.2.31603.28968" aria-label="উদ্ধৃতির তথ্য কপি করুন" title="উদ্ধৃতির তথ্য কপি করুন"><i aria-hidden="true" class="far fa-clipboard"></i><svg class="paper-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/></svg><span class="paper-action-label">উদ্ধৃতি দিন</span></span>
+                            </div></header><div class="paper-reader-layout"><aside class="paper-sidebar"><details class="paper-toc" open><summary>সূচিপত্র</summary><nav aria-label="논문 목차"><ol><li><a href="#abstract-heading">Abstract</a></li><li class="toc-level-2"><a href="#paper-2026-p02-introduction">Introduction</a></li><li class="toc-level-2"><a href="#paper-2026-p02-methodology">Methodology</a></li><li class="toc-level-3"><a href="#paper-2026-p02-ode-network-simulator-design">ODE Network Simulator Design</a></li><li class="toc-level-3"><a href="#paper-2026-p02-environment-implementations">Environment Implementations</a></li><li class="toc-level-3"><a href="#paper-2026-p02-automated-experimental-workflow">Automated Experimental Workflow</a></li><li class="toc-level-3"><a href="#paper-2026-p02-code-to-graph-mapping">Code-to-graph mapping</a></li><li class="toc-level-2"><a href="#paper-2026-p02-results">Results</a></li><li class="toc-level-2"><a href="#paper-2026-p02-discussion">Discussion</a></li><li class="toc-level-2"><a href="#paper-2026-p02-limitation-and-future-work">Limitation and Future Work</a></li><li class="toc-level-2"><a href="#paper-2026-p02-conclusion">Conclusion</a></li><li class="toc-level-2"><a href="#paper-2026-p02-code-and-data-availability">Code and Data Availability</a></li><li class="toc-level-2"><a href="#paper-2026-p02-references">References</a></li><li><a href="#citation-heading">Citation</a></li></ol></nav></details></aside><div class="paper-reading-column"><section class="paper-abstract" aria-labelledby="abstract-heading"><h2 id="abstract-heading">সারসংক্ষেপ</h2><p class="abstract" lang="en">Fermentation is a slow chemical-biological process in which substrates, enzymes, yeast biomass, oxygen, pH, temperature, and metabolic products co-evolve. This paper presents an ODE-network-based chemical complex system simulator for multi-environment fermentation. A shared state-space was instantiated for bread dough, rice wine, beer wort, and malt mash/wort, and a one-command Python workflow generated 108 simulated conditions with CSV outputs. The sweep produced interpretable optima and failure modes that aligned semi-quantitatively with literature-reported fermentation ranges, supporting the model as a compact benchmark for fermentation design and future control studies.</p></section><section id="full-text" class="paper-fulltext" lang="en" aria-label="논문 전문"><p class="paper-keywords">Keywords— fermentation simulation; ODE network; chemical complex
+system; yeast; saccharification; beer; rice wine; bread dough; malt
+wort</p><h2 id="paper-2026-p02-introduction">Introduction </h2>
+<p>Fermentation processes are often described as recipes, but their
+internal dynamics are slow, partially observed chemical-biological
+systems. Substrates are released or consumed, yeast biomass grows and
+decays, oxygen availability changes, pH drifts under acid formation and
+buffering, ethanol accumulates as both product and inhibitor, and carbon
+dioxide either escapes or remains trapped depending on the physical
+environment.</p>
+<p>This work treats fermentation as a chemical complex system. Each
+meaningful chemical, biological, or environmental quantity is
+represented as a node, and each uptake, enzymatic conversion,
+inhibition, stress response, or product formation term is represented as
+a differential interaction. The goal is not to replace process-specific
+industrial digital twins, but to provide a reusable ODE-network scaffold
+that can be adapted across multiple fermentation environments while
+preserving interpretable state variables and failure modes.</p>
+<p>The motivation follows previous work on nonlinear agricultural
+nutrient-solution systems. ODE-network modeling represented nutrient
+solutions as interacting chemical components rather than a single
+electrical-conductivity value [2], while nutrient-plant interaction
+analysis added a coupled organism-environment layer [3].
+Nutrient-solution management and ion-sensor artifact removal studies
+further showed that chemically crowded media need explicit component
+modeling and data-processing layers [4]-[6]. The present paper transfers
+this modeling philosophy from nutrient environments to fermentation
+environments.</p>
+<p>The phenotype control kernel study treated biomolecular regulation as
+a network whose system-level behavior can be interpreted through compact
+control structures [1]. Although the present work uses fermentation
+chemistry rather than regulatory logic, the same systems view motivates
+node-level representation and interaction-level interpretation.</p>
+<p>In the agricultural nutrient-solution model, chemical states were
+updated through coupled differential equations [2]. The nutrient-plant
+interaction model then placed a biological component in contact with a
+chemical environment [3]. Yeast fermentation follows the same
+bidirectional logic: the environment supplies carbohydrate, nitrogen,
+oxygen, temperature, and pH conditions; yeast metabolism returns
+ethanol, CO2, acid, glycerol, acetate, biomass, and stress. This gives a
+direct conceptual bridge from plant-factory chemical complex systems to
+fermentation systems.</p>
+<p>The practical sensor-oriented studies [5], [6] are also relevant
+because fermentation media, like agricultural nutrient solutions, are
+chemically crowded and nonlinear. Aggregate readings such as Brix, pH,
+or final ethanol cannot explain whether a process was
+saccharification-limited, nitrogen-limited, acid-stressed,
+oxygen-limited, or ethanol-inhibited. The simulator therefore exports
+full time-series CSV files, condition-level summaries, and reconstructed
+network edge lists.</p>
+<h2 id="paper-2026-p02-methodology">Methodology</h2>
+<h3 id="paper-2026-p02-ode-network-simulator-design">ODE Network Simulator Design</h3>
+<p>The simulator represents each condition as a state vector containing
+carbohydrate pools, environmental resources, yeast physiology, and
+metabolic products. Carbohydrate states include starch, dextrin,
+maltose, maltotriose, glucose, and fructose. Resource and environmental
+states include assimilable nitrogen, dissolved oxygen, pH, temperature,
+enzyme activities, and gas retention. Biological and product states
+include yeast biomass, ethanol, total CO2, retained CO2, glycerol,
+acetate, acid, stress, and activity.</p>
+<p>The ODE network is not stored as a separate graph object in the code.
+Instead, it is encoded implicitly by the state vector and the
+right-hand-side flux equations. In implementation terms, STATE_NAMES
+defines the dynamic nodes, rhs() defines the fluxes and regulatory
+interactions, and euler_step() performs the synchronous update x(t +
+Delta t) = max(0, x(t) + Delta t f(x(t), theta, c)). For reporting and
+visualization, a directed structural graph was reconstructed from these
+state variables, regulatory factors, and flux terms.</p>
+<p>Enzymatic carbohydrate release is represented by a simplified chain
+from starch to dextrin, dextrin to maltose, and maltose to glucose,
+modulated by temperature and pH activity factors. Rice wine uses this
+module throughout fermentation to approximate simultaneous
+saccharification and fermentation. Malt mash/wort uses it during a
+pre-saccharification phase before yeast inoculation. Bread dough uses a
+weaker flour-derived release process, whereas beer wort starts from a
+saccharified wort-like state with maltose, maltotriose, glucose, and
+residual dextrin.</p>
+<p>Yeast uptake is modeled by saturation and preference terms over the
+available fermentable carbohydrates. Growth and product formation are
+modulated by nitrogen availability, oxygen availability, ethanol
+inhibition, acid stress, pH mismatch, temperature mismatch, and
+substrate inhibition. Fermentative flux generates ethanol and CO2, while
+side-product fluxes generate glycerol, acetate, and acid proxies. The
+equations are deliberately lightweight so that the model remains
+inspectable, portable, and suitable for automated parameter sweeps.</p>
+<h3 id="paper-2026-p02-environment-implementations">Environment Implementations</h3>
+<figure class="paper-figure"><img alt="Figure 1. Core ODE-network structure reconstructed from the simulator implementation. Dynamic state variables are represented as nodes, while enzymatic conversion, yeast uptake, product formation, inhibition, oxygen availability, acidification, and gas retention are represented as directed edges." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p02/figure-1.webp"/><figcaption>Figure 1. Core ODE-network structure reconstructed from the simulator
+implementation. Dynamic state variables are represented as nodes, while
+enzymatic conversion, yeast uptake, product formation, inhibition,
+oxygen availability, acidification, and gas retention are represented as
+directed edges.</figcaption></figure>
+
+<figure class="paper-figure"><img alt="Figure 2. Full structural ODE network reconstructed from STATE_NAMES and rhs()-level flux terms. This figure is included as a main-text implementation map; corresponding node and edge lists are listed as supplementary materials." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p02/figure-2.webp"/><figcaption>Figure 2. Full structural ODE network reconstructed from STATE_NAMES
+and rhs()-level flux terms. This figure is included as a main-text
+implementation map; corresponding node and edge lists are listed as
+supplementary materials.</figcaption></figure>
+
+<p>Four fermentation environments were instantiated from the shared
+model skeleton. Bread dough emphasizes short-window CO2 productivity and
+retained CO2, with ethanol treated as a secondary byproduct. Rice wine
+emphasizes starch-rich simultaneous saccharification and fermentation,
+in which saccharification strength and temperature strongly affect final
+ethanol and residual carbohydrate. Beer wort emphasizes
+maltose/maltotriose consumption, apparent attenuation, ethanol, pH,
+glycerol, acetate, and stuck-fermentation flags. Malt mash/wort uses a
+staged protocol in which a hot enzymatic mash phase is followed by
+cooled yeast fermentation.</p>
+<p><strong>Table 1. Best-ranked simulated conditions and
+literature-alignment anchors.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table style="width:100%;">
+<colgroup>
+<col style="width: 13%"/>
+<col style="width: 30%"/>
+<col style="width: 20%"/>
+<col style="width: 34%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Env.</strong></th>
+<th><strong>Best simulated condition</strong></th>
+<th><strong>Output</strong></th>
+<th><strong>Interpretation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bread</td>
+<td>baker-like, standard sugar, 30 C</td>
+<td>retained CO2 at 4 h = 2.69 g/L</td>
+<td>directionally aligned with 30 C CO2-production assays; conversion to
+mL CO2/10 g flour remains a calibration layer</td>
+</tr>
+<tr>
+<td>Rice wine</td>
+<td>stress-tolerant, strong-koji, 25 C</td>
+<td>87.82 g/L ethanol; 11.13% v/v</td>
+<td>matches reported makgeolli-like 25 C fermentation near 11%
+alcohol</td>
+</tr>
+<tr>
+<td>Beer wort</td>
+<td>ale-like, standard wort, low O2, 22 C</td>
+<td>49.18 g/L ethanol; 6.23% v/v</td>
+<td>ethanol aligns with ale-like fermentation; pH acidification remains
+under-calibrated</td>
+</tr>
+<tr>
+<td>Malt wort</td>
+<td>62 C mash, heavy grist, 25 C fermentation</td>
+<td>38.05 g/L ethanol; 4.82% v/v</td>
+<td>consistent with maltose-rest region and ordinary beer alcohol
+range</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>ABV is approximated as ethanol_g_L / 7.89 for coarse cross-study
+comparison.</em></p>
+<p>The different environments do not require different simulator code
+paths for basic yeast metabolism. Instead, each environment changes
+initial states, schedule parameters, enzyme activity, oxygen transfer,
+temperature, pH, substrate composition, retention, and objective
+function. This provides a practical test for the chemical-complex-system
+claim: the same ODE-network skeleton should generate distinct but
+interpretable dynamics when placed in different environmental
+regimes.</p>
+<p>A total of 108 conditions were generated. Bread conditions swept
+strain type, sugar condition, and temperature. Rice-wine conditions
+swept strain type, saccharification strength, and temperature. Beer
+conditions swept yeast type, wort gravity, oxygen regime, and
+temperature. Malt mash/wort conditions swept mash temperature, grist
+level, yeast physiology, and fermentation temperature.</p>
+<h3 id="paper-2026-p02-automated-experimental-workflow">Automated Experimental
+Workflow</h3>
+<p>The public repository contains a one-command Python workflow that
+generates the experimental design, runs the condition sweep, and exports
+CSV-only results. The default run writes experiment_conditions.csv,
+timeseries.csv, summary.csv, environment_rankings.csv,
+column_dictionary.csv, and manifest.csv. This design intentionally
+separates simulation from later analysis: users can run the model once,
+upload the CSV outputs, and analyze trajectories, rankings, or failure
+modes without rerunning the simulator.</p>
+<p>The primary outputs are time-series trajectories and condition-level
+summaries. Derived metrics include final ethanol, approximate ABV, final
+carbohydrate pools, retained CO2, pH, apparent attenuation,
+total-carbohydrate conversion, objective scores, and failure-mode
+labels. For rice wine and malt mash/wort, attenuation is interpreted
+carefully because fermentable sugars are released during the run;
+total-carbohydrate conversion is therefore a more appropriate measure
+than initial-sugar attenuation.</p>
+<p>Failure modes are rule-based labels intended to summarize the
+dominant bottleneck. Examples include completed, nitrogen_limited,
+mash_starch_conversion_limited, acidic_stress, and balanced_or_slow.
+These labels are not presented as diagnostic ground truth; they are
+designed to make the simulator useful as an interpretable benchmark and
+to indicate which model component should be calibrated or controlled in
+later experiments.</p>
+<h3 id="paper-2026-p02-code-to-graph-mapping">Code-to-graph mapping</h3>
+<p>The visual ODE network was generated from an explicit code-to-graph
+mapping rather than from a separate graph object. The state vector
+defines the dynamic nodes, while the right-hand-side function defines
+reaction, uptake, regulatory, and product-formation terms. This mirrors
+the original chemical complex system style: the simulation is numerical,
+but the interpretation remains graph-based because every update term
+corresponds to a directed interaction between state variables or between
+a regulatory factor and a flux.</p>
+<p>For reporting, the reconstructed network was divided into a core
+graph and a full graph. The core graph keeps only the major state
+variables and dominant flux families, making it suitable for the main
+conceptual figure. The full graph expands the same structure into
+implementation-level terms, including enzyme activity factors, pH and
+temperature gates, nitrogen and oxygen availability, ethanol inhibition,
+acid stress, substrate inhibition, gas escape, and retained CO2. The
+full graph is therefore closer to a code map than to a simplified
+conceptual diagram.</p>
+<p>The edge categories used in the visualization are enzymatic
+conversion, yeast uptake, biomass growth, product formation, inhibition
+or stress, environmental regulation, and physical transfer. This
+classification is useful for later model extension because a new process
+can be added by adding states and edge groups, rather than by rewriting
+the entire simulator. For example, bread-specific gas retention can be
+improved by adding physical dough-retention edges, while beer pH
+calibration can be improved by modifying acid-production and
+buffer-response edges.</p>
+<p>This code-to-graph mapping also clarifies the status of the present
+model. The simulator is not claiming that every edge has been
+independently fitted to experimental kinetic constants. Instead, the
+network is a transparent, semi-quantitative scaffold whose modules can
+be calibrated as data become available. The node and edge CSV files
+listed in the supplementary materials are included so that readers can
+inspect the structural assumptions behind Figures 1 and 2.</p>
+<h2 id="paper-2026-p02-results">Results</h2>
+<p>The condition sweep produced environment-specific optima rather than
+a single universal optimum. The best bread condition was a baker-like
+standard-sugar condition at 30 C, optimized for retained CO2 over the
+short proofing window. The best rice-wine condition was a
+stress-tolerant strong-koji setting at 25 C, producing 87.82 g/L
+ethanol, or approximately 11.13% v/v. The best beer-wort condition was
+an ale-like standard-wort setting at 22 C with low continuing oxygen
+transfer, producing 49.18 g/L ethanol, or approximately 6.23% v/v. The
+best malt mash/wort condition used a 62 C mash and produced 38.05 g/L
+ethanol, or approximately 4.82% v/v, while still exposing nitrogen
+limitation as the next bottleneck.</p>
+<figure class="paper-figure"><img alt="Figure 3. Ethanol trajectories of best-ranked conditions across fermentation environments." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p02/figure-3.webp"/><figcaption>Figure 3. Ethanol trajectories of best-ranked conditions across
+fermentation environments.</figcaption></figure>
+
+<figure class="paper-figure"><img alt="Figure 4. Fermentable-sugar trajectories of best-ranked conditions, showing depletion, release, and residual carbohydrate behavior." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p02/figure-4.webp"/><figcaption>Figure 4. Fermentable-sugar trajectories of best-ranked conditions,
+showing depletion, release, and residual carbohydrate behavior.</figcaption></figure>
+
+<p>The result trajectories show that the environments differ in dominant
+process behavior. Beer wort consumes fermentable sugars rapidly and
+gives a clean attenuation-like trajectory. Rice wine and malt mash/wort
+show carbohydrate-release dynamics because fermentable sugars appear
+through saccharification before or during fermentation. Bread dough is
+best interpreted through CO2 production and retention rather than final
+ethanol. These differences support the decision to define
+environment-specific objective functions rather than a single generic
+score.</p>
+<p>The failure-mode distribution further supports the interpretability
+of the model. Malt mash/wort conditions frequently become
+starch-conversion limited when the mash temperature is away from the
+effective saccharification region, whereas high-gravity conditions can
+become nitrogen-limited after sufficient carbohydrate is released. This
+staged bottleneck behavior is difficult to see from final ethanol alone
+but becomes visible when the full ODE-network state is exported.</p>
+<figure class="paper-figure"><img alt="Figure 8. Malt mash/wort objective score by mash temperature." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p02/figure-5.webp"/><figcaption>Figure 8. Malt mash/wort objective score by mash temperature.</figcaption></figure>
+
+<figure class="paper-figure"><img alt="Figure 5. Best objective score by environment from the 108-condition sweep." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p02/figure-6.webp"/><figcaption>Figure 5. Best objective score by environment from the 108-condition
+sweep.</figcaption></figure>
+
+<figure class="paper-figure"><img alt="Figure 6. Retained CO2 trajectories in bread-dough conditions, used as the bread-specific objective proxy." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p02/figure-7.webp"/><figcaption>Figure 6. Retained CO2 trajectories in bread-dough conditions, used
+as the bread-specific objective proxy.</figcaption></figure>
+
+<figure class="paper-figure"><img alt="Figure 7. Failure-mode counts aggregated over the condition sweep." decoding="async" loading="lazy" src="/src/images/paper-body/paper-2026-p02/figure-8.webp"/><figcaption>Figure 7. Failure-mode counts aggregated over the condition
+sweep.</figcaption></figure>
+
+<p>The simulator should be described as literature-aligned and
+semi-quantitative rather than as a fully validated industrial predictor.
+Nevertheless, several simulated optima overlap with reported
+fermentation ranges. The rice-wine preset predicted approximately 11.13%
+v/v ethanol near 25 C after an eight-day fermentation window, aligning
+with makgeolli-like reports around 25 C and near 11% alcohol [7],
+[12].</p>
+<p>The malt mash/wort preset selected the 62 C region as the best
+saccharification-centered setting. This is consistent with the
+conventional brewing interpretation of the maltose-rest region and with
+reported beer alcohol values near ordinary 4.8-4.9% v/v ranges under
+conventional mashing protocols [8], [13]. The model therefore captures
+an important qualitative and semi-quantitative feature: when
+saccharification is adequate, the next bottleneck can shift from starch
+conversion to nitrogen or yeast physiology.</p>
+<p>The ale-like beer result is plausible in ethanol terms, with 6.23%
+v/v in the representative standard-wort condition and rapid
+fermentable-sugar depletion. However, the beer final pH remains too high
+relative to typical finished beer expectations, so the beer
+acidification term should be calibrated before claiming process-level
+accuracy. Bread dough shows a directionally appropriate 30 C
+CO2-oriented optimum, but direct comparison with bread-yeast experiments
+requires conversion from g/L CO2 proxy to mL CO2 per 2 h per 10 g flour
+[10].</p>
+<h2 id="paper-2026-p02-discussion">Discussion</h2>
+<p>The main result is that a single ODE-network chemical complex system
+can generate plausible and interpretable trajectories across four
+fermentation environments. This supports the usefulness of an explicit
+state-space representation: the model does not merely estimate a final
+score but exposes intermediate variables, competing bottlenecks, and
+failure labels.</p>
+<p>The model also clarifies what should not yet be claimed. It is not a
+high-fidelity prediction engine for flavor, volatile aroma compounds,
+detailed microbial ecology, dough rheology, or calibrated industrial
+process control. The correct claim is narrower and stronger: the
+simulator is a compact, inspectable, literature-aligned benchmark that
+can be extended with environment-specific calibration layers.</p>
+<p>The implicit-network implementation should also be documented
+clearly. The graph is reconstructed from code-level flux terms; it is
+not a runtime graph object. This is acceptable for a lightweight
+simulator, but a future version could store the node and edge list as a
+first-class data structure so that equations, visualizations, and
+supplementary edge lists are generated from a single source of
+truth.</p>
+<h2 id="paper-2026-p02-limitation-and-future-work">Limitation and Future Work</h2>
+<p>Three improvements are most important. First, beer acidification
+should be calibrated against pH trajectories, not only final ethanol.
+Second, the bread model should add a physical gas-retention and
+unit-conversion layer so that CO2 can be compared directly with mL/2
+h/10 g flour assays. Third, the malt mash/wort module should support
+richer step-mash schedules, such as proteolysis rest, maltose rest, and
+saccharification rest, rather than relying on a small set of simplified
+mash-temperature presets.</p>
+<p>The simulator is also well suited for agentic control studies.
+Candidate actions include temperature scheduling, aeration, pH
+correction, nitrogen supplementation, sugar or starch feeding, and
+mash-rest scheduling. Candidate rewards can be defined per environment:
+retained CO2 for bread, ethanol and residual carbohydrate for rice wine,
+attenuation and byproduct penalties for beer, and saccharification
+efficiency plus fermentation completion for malt wort.</p>
+<h2 id="paper-2026-p02-conclusion">Conclusion</h2>
+<p><strong>Table 2. Supplementary result files referenced by the
+manuscript.</strong></p>
+<div aria-label="Source paper table" class="paper-table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 33%"/>
+<col style="width: 56%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>ID</strong></th>
+<th><strong>File</strong></th>
+<th><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>experiment_conditions.csv</td>
+<td>All 108 condition definitions and parameter settings.</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>timeseries.csv</td>
+<td>Recorded state trajectories for all conditions and time points.</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>summary.csv</td>
+<td>Condition-level final values, metrics, rankings, and failure
+labels.</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>environment_rankings.csv</td>
+<td>Environment-specific rankings used for objective comparisons.</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>column_dictionary.csv</td>
+<td>Definitions for output files and columns.</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>manifest.csv</td>
+<td>Run metadata, file counts, and script information.</td>
+</tr>
+<tr>
+<td>S7</td>
+<td>corrected_summary.csv</td>
+<td>Total-carbohydrate conversion metrics for rice-wine and malt-wort
+cases.</td>
+</tr>
+<tr>
+<td>S8</td>
+<td>top5_by_environment.csv</td>
+<td>Top-ranked conditions within each environment.</td>
+</tr>
+<tr>
+<td>S9</td>
+<td>failure_mode_counts.csv</td>
+<td>Aggregated failure-mode counts.</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>group_trends.csv</td>
+<td>Grouped trend summaries for figure preparation.</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>ode_network_core_edges.csv / ode_network_full_edges.csv</td>
+<td>Reconstructed edge lists used to visualize the implicit ODE
+network.</td>
+</tr>
+</tbody>
+</table></div>
+<p>This paper presented an ODE-network-based chemical complex system
+simulator for multi-environment fermentation. The simulator represents
+fermentation as a network of interacting substrates, enzymes, yeast
+physiology, environmental resources, and metabolic products. Across 108
+simulated conditions, it identified plausible optima and interpretable
+failure modes for bread dough, rice wine, beer wort, and malt mash/wort.
+Literature-aligned comparisons support the model as a semi-quantitative
+simulator and as a foundation for future calibration, visualization, and
+agentic control benchmarks.</p>
+<h2 id="paper-2026-p02-code-and-data-availability">Code and Data Availability</h2>
+<p>The simulator code is available in the public GitHub repository
+needleworm/fermentation_simul [15]. The repository is intended to
+contain the one-command Python implementation for generating condition
+definitions, time-series outputs, summaries, rankings, network
+visualizations, and metadata CSV files. Other Supplementary data is also
+available at the GitHub repository.</p>
+<h2 id="paper-2026-p02-references">References</h2>
+<p>[1] S. M. Choo, B. Ban, J. I. Joo, and K. H. Cho, "The phenotype
+control kernel of a biomolecular regulatory network," BMC Systems
+Biology, vol. 12, article 49, 2018. doi: 10.1186/s12918-018-0576-8.</p>
+<p>[2] B. Ban, M. Lee, and D. Ryu, "ODE Network Model for Nonlinear and
+Complex Agricultural Nutrient Solution System," in Proc. ICTC, 2019, pp.
+996-1001. doi: 10.1109/ICTC46691.2019.8939946.</p>
+<p>[3] B. Ban, "Mathematical Model and Simulation for Nutrient-Plant
+Interaction Analysis," in Proc. ICTC, 2020, pp. 1531-1536. doi:
+10.1109/ICTC49870.2020.9289083.</p>
+<p>[4] B. Ban, J. Lee, D. Ryu, M. Lee, and T. D. Eom, "Nutrient Solution
+Management System for Smart Farms and Plant Factory," in Proc. ICTC,
+2020, pp. 1537-1542. doi: 10.1109/ICTC49870.2020.9289192.</p>
+<p>[5] B. Ban, D. Ryu, and M. Lee, "Machine Learning Approach to Remove
+Ion Interference Effect in Agricultural Nutrient Solutions," in Proc.
+ICTC, 2019, pp. 1156-1161. doi: 10.1109/ICTC46691.2019.8939812.</p>
+<p>[6] B. Ban, "Deep learning method to remove chemical, kinetic and
+electric artifacts on ISEs," in Proc. ICTC, 2020, pp. 1242-1246. doi:
+10.1109/ICTC49870.2020.9289389.</p>
+<p>[7] D. R. Kim, B. M. Seo, M. H. Noh, and Y. W. Kim, "Comparison of
+temperature effects on brewing of Makgeolli using uncooked germinated
+black rice," Korean Society for Biotechnology and Bioengineering
+Journal, vol. 27, no. 4, pp. 251-256, 2012. doi:
+10.7841/ksbbj.2012.27.4.251.</p>
+<p>[8] F. Endres, F. Prowald, J. Wackerbauer, and M. Geiger, "Constant
+temperature mashing at 72 C for the production of beers with a reduced
+alcohol content in micro brewing systems," European Food Research and
+Technology, vol. 248, pp. 1457-1468, 2022. doi:
+10.1007/s00217-022-03968-2.</p>
+<p>[9] S. Q. Liu and A. Y. H. Quek, "Evaluation of beer fermentation
+with a novel yeast Williopsis saturnus var. mrakii NCYC 500," Food
+Technology and Biotechnology, vol. 54, no. 4, pp. 403-412, 2016.</p>
+<p>[10] D. Mikumo et al., "Improved leavening ability of a wild yeast
+Saccharomyces cerevisiae AK46 2-deoxyglucose resistant mutant," Food
+Science and Technology Research, vol. 21, no. 4, pp. 623-630, 2015.</p>
+<p>[11] J. De Roos, P. Vandamme, and L. De Vuyst, "Wort substrate
+consumption and metabolite production during lambic beer fermentation
+and maturation explain the successive growth of specific bacterial and
+yeast species," Frontiers in Microbiology, vol. 9, article 2763, 2018.
+doi: 10.3389/fmicb.2018.02763.</p>
+<p>[12] B. Wong et al., "Characterisation of Korean rice wine
+(makgeolli) prepared by different processing methods," Current Research
+in Food Science, vol. 6, article 100420, 2023. doi:
+10.1016/j.crfs.2022.100420.</p>
+<p>[13] D. E. Briggs, C. A. Boulton, P. A. Brookes, and R. Stevens,
+Brewing: Science and Practice. Cambridge, UK: Woodhead Publishing,
+2004.</p>
+<p>[14] E. J. Pires, J. A. Teixeira, T. Branyik, and A. A. Vicente,
+"Yeast: the soul of beer aroma - a review of flavour-active esters and
+higher alcohols produced by brewing yeast," Applied Microbiology and
+Biotechnology, vol. 98, pp. 1937-1949, 2014. doi:
+10.1007/s00253-013-5470-0.</p>
+<p>[15] B. Ban, "fermentation_simul: ODE-network benchmark for
+multi-environment fermentation," GitHub repository, 2026. Available:
+https://github.com/needleworm/fermentation_simul.</p>
+</section><section class="paper-citation" aria-labelledby="citation-heading"><h2 id="citation-heading">উদ্ধৃতি</h2><p class="citation-help">কোনো বিন্যাসে ক্লিক করলে উদ্ধৃতির তথ্য কপি হবে।</p><div class="citation-formats"><button type="button" data-citation-format="apa" aria-controls="citation-text" aria-pressed="true" title="APA বিন্যাস কপি করুন">APA কপি করুন</button><button type="button" data-citation-format="mla" aria-controls="citation-text" aria-pressed="false" title="MLA বিন্যাস কপি করুন">MLA কপি করুন</button><button type="button" data-citation-format="chicago" aria-controls="citation-text" aria-pressed="false" title="Chicago বিন্যাস কপি করুন">Chicago কপি করুন</button><button type="button" data-citation-format="ieee" aria-controls="citation-text" aria-pressed="false" title="IEEE বিন্যাস কপি করুন">IEEE কপি করুন</button><button type="button" data-citation-format="bibtex" aria-controls="citation-text" aria-pressed="false" title="BibTeX বিন্যাস কপি করুন">BibTeX কপি করুন</button><button type="button" data-citation-format="ris" aria-controls="citation-text" aria-pressed="false" title="RIS বিন্যাস কপি করুন">RIS কপি করুন</button></div><label for="citation-text" class="citation-preview-label">উদ্ধৃতির প্রিভিউ · <span id="citation-current-format">APA</span></label><textarea id="citation-text" rows="7" readonly spellcheck="false">Ban, B. (2026). An ODE-network-based chemical complex system simulator for multi-environment fermentation. ResearchGate. https://doi.org/10.13140/RG.2.2.31603.28968</textarea><p id="citation-status" class="citation-status" role="status" aria-live="polite"></p><p class="citation-downloads"><a href="/papers/ode-fermentation-simulator-2026/citation.bib" download>BibTeX ফাইল</a><a href="/papers/ode-fermentation-simulator-2026/citation.ris" download>RIS ফাইল</a></p><script type="application/json" id="citation-formats-data">{"apa": "Ban, B. (2026). An ODE-network-based chemical complex system simulator for multi-environment fermentation. ResearchGate. https://doi.org/10.13140/RG.2.2.31603.28968", "mla": "Ban, Byunghyun. “An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation.” ResearchGate, 2026. Preprint. https://doi.org/10.13140/RG.2.2.31603.28968.", "chicago": "Ban, Byunghyun. “An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation.” Preprint, ResearchGate, 2026. https://doi.org/10.13140/RG.2.2.31603.28968.", "ieee": "B. Ban, “An ODE-network-based chemical complex system simulator for multi-environment fermentation,” ResearchGate, preprint, 2026, doi: 10.13140/RG.2.2.31603.28968.", "bibtex": "@misc{ban2026_0496bada5725,\n  author = {Ban, Byunghyun},\n  title = {{An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation}},\n  year = {2026},\n  doi = {10.13140/RG.2.2.31603.28968},\n  url = {https://www.researchgate.net/publication/404682643\\_An\\_ODE-Network-Based\\_Chemical\\_Complex\\_System\\_Simulator\\_for\\_Multi-Environment\\_Fermentation},\n  note = {Preprint},\n  howpublished = {ResearchGate}\n}", "ris": "TY  - UNPB\nAU  - Ban, Byunghyun\nTI  - An ODE-Network-Based Chemical Complex System Simulator for Multi-Environment Fermentation\nPY  - 2026\nDO  - 10.13140/RG.2.2.31603.28968\nUR  - https://www.researchgate.net/publication/404682643_An_ODE-Network-Based_Chemical_Complex_System_Simulator_for_Multi-Environment_Fermentation\nAB  - Fermentation is a slow chemical-biological process in which substrates, enzymes, yeast biomass, oxygen, pH, temperature, and metabolic products co-evolve. This paper presents an ODE-network-based chemical complex system simulator for multi-environment fermentation. A shared state-space was instantiated for bread dough, rice wine, beer wort, and malt mash/wort, and a one-command Python workflow generated 108 simulated conditions with CSV outputs. The sweep produced interpretable optima and failure modes that aligned semi-quantitatively with literature-reported fermentation ranges, supporting the model as a compact benchmark for fermentation design and future control studies.\nLA  - en\nM3  - Preprint\nER  -\n"}</script></section><a class="paper-back-link" href="/bn/papers/">← গবেষণাপত্রের তালিকায় ফিরুন</a></div></div></article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="সব পৃষ্ঠা"><a href="/bn/">Byunghyun Ban</a><a href="/bn/media/">সম্প্রচার ও ভিডিও</a><a href="/bn/books/">প্রকাশিত বই</a><a href="/bn/lectures/">বক্তৃতা ও প্রশিক্ষণের অভিজ্ঞতা</a><a href="/bn/courses/online/">অনলাইন কোর্স</a><a href="/bn/courses/offline/">সশরীর কোর্স</a><a href="/bn/news/">সংবাদ প্রতিবেদন</a><a href="/bn/papers/">গবেষণাপত্র ও গবেষণা</a><a href="/bn/patents/">পেটেন্ট</a><a href="/bn/projects/">উন্নয়ন প্রকল্প</a><a href="/bn/activities/">সামাজিক অবদান</a><a href="/bn/memberships/">সদস্যপদ ও পেশাগত কার্যক্রম</a><a href="/bn/collections/">সংগ্রহের সামগ্রী</a><a href="/bn/contact/">বক্তৃতা ও সহযোগিতার জন্য যোগাযোগ</a></nav>
+            <p><a href="/feed.xml">RSS সাবস্ক্রাইব করুন</a> · <a href="/feed.json">JSON ফিড</a></p>
+            <p>© 2026 Byunghyun Ban. সর্বস্বত্ব সংরক্ষিত।</p>
+            <p>NaNa Lab (ব্যবসা নিবন্ধন নম্বর:269-08-02374), প্রতিনিধি Byunghyun Ban</p>
+        </div>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="একেবারে ওপরে যান">↑</button>
+</body>
+</html>

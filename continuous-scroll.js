@@ -7,9 +7,12 @@ function setupMobileContinuousScroll({ link, panel, mobile, enhance }) {
     const hint = panel.querySelector('.mobile-next-hint');
     const label = link.querySelector('.next-page-label');
     const description = panel.querySelector('.mobile-next-description');
+    const text = (key, fallback, values = {}) => typeof siteText === 'function'
+        ? siteText(key, fallback, values) : fallback.replace(/\{(\w+)\}/g, (token, name) => values[name] ?? token);
+    const localized = route => typeof siteLocalePath === 'function' ? siteLocalePath(route) : route;
     const visited = new Set([new URL(window.location.href).pathname.replace(/index\.html$/, '')]);
     // Home already includes Media on mobile.
-    if (document.body.dataset.page === 'home') visited.add('/media/');
+    if (document.body.dataset.page === 'home') visited.add(localized('/media/'));
     let appended = false;
     let loading = false;
     let failed = false;
@@ -21,7 +24,7 @@ function setupMobileContinuousScroll({ link, panel, mobile, enhance }) {
     const retry = document.createElement('button');
     retry.type = 'button';
     retry.className = 'stream-retry';
-    retry.textContent = '다시 불러오기';
+    retry.textContent = text('streamRetry', '다시 불러오기');
     retry.hidden = true;
     panel.append(retry);
     hint.setAttribute('role', 'status');
@@ -37,8 +40,8 @@ function setupMobileContinuousScroll({ link, panel, mobile, enhance }) {
         panel.hidden = finished;
         retry.hidden = !active || !failed;
         if (active) hint.textContent = failed
-            ? '다음 내용을 불러오지 못했습니다. 다시 시도하거나 위 링크로 이동해 주세요.'
-            : loading ? `${label.textContent} 내용을 이어 불러오는 중입니다.` : '';
+            ? text('streamError', '다음 내용을 불러오지 못했습니다. 다시 시도하거나 위 링크로 이동해 주세요.')
+            : loading ? text('streamLoading', '{label} 내용을 이어 불러오는 중입니다.', { label: label.textContent }) : '';
     }
 
     function check() {
@@ -58,6 +61,8 @@ function setupMobileContinuousScroll({ link, panel, mobile, enhance }) {
     function prepareSection(page, destination) {
         const source = page.getElementById('main-content');
         const key = page.body.dataset.page;
+        const receivedLocale = (page.body.dataset.locale || page.documentElement?.lang || 'ko').toLowerCase().split('-')[0];
+        if (typeof siteLocale === 'function' && receivedLocale !== siteLocale()) throw new Error('Page language mismatch');
         if (!source || !source.children.length || !/^[a-z-]+$/.test(key || '') || key === 'home') {
             throw new Error('Missing page content');
         }
@@ -110,7 +115,7 @@ function setupMobileContinuousScroll({ link, panel, mobile, enhance }) {
 
     async function loadNext() {
         if (!enabled() || loading || finished) return;
-        const destination = new URL(link.href, window.location.href);
+        const destination = new URL(localized(link.href), window.location.href);
         if (destination.origin !== window.location.origin || visited.has(destination.pathname)) {
             failed = true;
             render();
@@ -135,7 +140,7 @@ function setupMobileContinuousScroll({ link, panel, mobile, enhance }) {
             visited.add(destination.pathname);
             appended = true;
             if (next) {
-                link.href = new URL(next.getAttribute('href'), destination).href;
+                link.href = new URL(localized(new URL(next.getAttribute('href'), destination).href), destination).href;
                 label.textContent = next.querySelector('.next-page-label').textContent;
                 description.textContent = next.querySelector('.mobile-next-description').textContent;
             } else {
