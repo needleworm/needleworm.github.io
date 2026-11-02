@@ -15,7 +15,7 @@
     },
     "lectures": {
       "url": "https://bhban.kr/api/lectures.json",
-      "count": 231
+      "count": 236
     },
     "papers": {
       "url": "https://bhban.kr/api/papers.json",

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bhban.kr/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/" />
@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/lectures/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/" />
@@ -72,7 +72,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/courses/offline/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/courses/offline/" />
@@ -601,6 +601,76 @@
     <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/rag-as-a-service-2026/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/rag-as-a-service-2026/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/rag-as-a-service-2026/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/lectures/lecture-239/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-239/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/lectures/lecture-240/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-240/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/lectures/lecture-241/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-241/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/lectures/lecture-242/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-242/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/lectures/lecture-243/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/" />
   </url>
   <url>
     <loc>https://bhban.kr/lectures/lecture-237/</loc>
@@ -3838,7 +3908,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/en/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/" />
@@ -3852,7 +3922,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/zh/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/" />
@@ -3866,7 +3936,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/hi/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/" />
@@ -3880,7 +3950,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/es/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/" />
@@ -3894,7 +3964,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/ar/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/" />
@@ -3908,7 +3978,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/fr/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/" />
@@ -3922,7 +3992,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/bn/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/" />
@@ -3936,7 +4006,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/pt/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/" />
@@ -4174,7 +4244,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/en/lectures/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/" />
@@ -4188,7 +4258,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/zh/lectures/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/" />
@@ -4202,7 +4272,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/hi/lectures/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/" />
@@ -4216,7 +4286,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/es/lectures/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/" />
@@ -4230,7 +4300,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/ar/lectures/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/" />
@@ -4244,7 +4314,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/fr/lectures/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/" />
@@ -4258,7 +4328,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/bn/lectures/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/" />
@@ -4272,7 +4342,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/pt/lectures/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/" />
@@ -4398,7 +4468,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/en/courses/offline/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/courses/offline/" />
@@ -4412,7 +4482,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/zh/courses/offline/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/courses/offline/" />
@@ -4426,7 +4496,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/hi/courses/offline/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/courses/offline/" />
@@ -4440,7 +4510,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/es/courses/offline/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/courses/offline/" />
@@ -4454,7 +4524,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/ar/courses/offline/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/courses/offline/" />
@@ -4468,7 +4538,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/fr/courses/offline/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/courses/offline/" />
@@ -4482,7 +4552,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/bn/courses/offline/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/courses/offline/" />
@@ -4496,7 +4566,7 @@
   </url>
   <url>
     <loc>https://bhban.kr/pt/courses/offline/</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/courses/offline/" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/courses/offline/" />
@@ -8651,6 +8721,566 @@
     <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/papers/rag-as-a-service-2026/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/papers/rag-as-a-service-2026/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/papers/rag-as-a-service-2026/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/en/lectures/lecture-239/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-239/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/zh/lectures/lecture-239/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-239/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/hi/lectures/lecture-239/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-239/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/es/lectures/lecture-239/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-239/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/ar/lectures/lecture-239/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-239/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/fr/lectures/lecture-239/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-239/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/bn/lectures/lecture-239/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-239/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/pt/lectures/lecture-239/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-239/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-239/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/en/lectures/lecture-240/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-240/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/zh/lectures/lecture-240/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-240/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/hi/lectures/lecture-240/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-240/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/es/lectures/lecture-240/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-240/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/ar/lectures/lecture-240/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-240/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/fr/lectures/lecture-240/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-240/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/bn/lectures/lecture-240/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-240/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/pt/lectures/lecture-240/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-240/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-240/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/en/lectures/lecture-241/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-241/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/zh/lectures/lecture-241/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-241/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/hi/lectures/lecture-241/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-241/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/es/lectures/lecture-241/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-241/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/ar/lectures/lecture-241/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-241/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/fr/lectures/lecture-241/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-241/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/bn/lectures/lecture-241/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-241/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/pt/lectures/lecture-241/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-241/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-241/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/en/lectures/lecture-242/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-242/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/zh/lectures/lecture-242/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-242/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/hi/lectures/lecture-242/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-242/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/es/lectures/lecture-242/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-242/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/ar/lectures/lecture-242/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-242/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/fr/lectures/lecture-242/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-242/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/bn/lectures/lecture-242/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-242/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/pt/lectures/lecture-242/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-242/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-242/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/en/lectures/lecture-243/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/zh/lectures/lecture-243/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/hi/lectures/lecture-243/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/es/lectures/lecture-243/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/ar/lectures/lecture-243/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/fr/lectures/lecture-243/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/bn/lectures/lecture-243/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/" />
+  </url>
+  <url>
+    <loc>https://bhban.kr/pt/lectures/lecture-243/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/" />
   </url>
   <url>
     <loc>https://bhban.kr/en/lectures/lecture-237/</loc>

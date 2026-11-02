@@ -17,6 +17,26 @@
       "image": "https://bhban.kr/src/images/books/covers/35.webp"
     },
     {
+      "id": "lectures:lecture-239",
+      "url": "https://bhban.kr/lectures/lecture-239/",
+      "title": "프로젝트 설계 및 적용",
+      "content_html": "<p>강의 · 2026.10.29. · 경안고등학교</p><p>도서관 빈자리 찾기를 가상 사례로 삼아 프로젝트를 설계하는 방법을 다뤘습니다. 측정 가능한 질문과 성공 지표, 자료 수집·비교·평가 계획을 구체화하는 과정을 소개했습니다.</p><p><a href=\"https://bhban.kr/lectures/lecture-239/\">프로젝트 설계 및 적용</a></p>",
+      "tags": [
+        "강의"
+      ],
+      "image": "https://bhban.kr/src/images/lectures/gyeongan-20261029-cf20f83151ae.webp"
+    },
+    {
+      "id": "lectures:lecture-240",
+      "url": "https://bhban.kr/lectures/lecture-240/",
+      "title": "효율적인 생성형 AI 활용",
+      "content_html": "<p>강의 · 2026.10.27. · 경안고등학교</p><p>생성형 AI에게 맡길 일과 사람이 검증할 일을 구분하고, AI를 활용해 분석과 개선 아이디어를 구체화하는 방법을 다뤘습니다. 자료·계산·해석을 따로 확인하는 과정도 소개했습니다.</p><p><a href=\"https://bhban.kr/lectures/lecture-240/\">효율적인 생성형 AI 활용</a></p>",
+      "tags": [
+        "강의"
+      ],
+      "image": "https://bhban.kr/src/images/lectures/gyeongan-20261027-cc34a50b58fb.webp"
+    },
+    {
       "id": "lectures:lecture-236",
       "url": "https://bhban.kr/lectures/lecture-236/",
       "title": "Agentic AI의 활용 – AI 팀원들을 고용해 일 시키기",
@@ -35,6 +55,16 @@
         "강의"
       ],
       "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@746762abfe0481ceea9b7ba0171e1f3b4b154f85/src/images/lectures/234.webp"
+    },
+    {
+      "id": "lectures:lecture-241",
+      "url": "https://bhban.kr/lectures/lecture-241/",
+      "title": "데이터 분석 및 시각화",
+      "content_html": "<p>강의 · 2026.10.21. · 경안고등학교</p><p>평균과 중앙값, 집단별 비율, 데이터 분포와 그래프를 활용해 자료를 분석하는 방법을 다뤘습니다. 수업용 가상자료로 시각화의 주장과 한계를 함께 살펴봤습니다.</p><p><a href=\"https://bhban.kr/lectures/lecture-241/\">데이터 분석 및 시각화</a></p>",
+      "tags": [
+        "강의"
+      ],
+      "image": "https://bhban.kr/src/images/lectures/gyeongan-20261021-3d2ebe06c2a5.webp"
     },
     {
       "id": "lectures:lecture-233",
@@ -77,6 +107,16 @@
       "image": "https://bhban.kr/src/images/news/2026-10-16-astra-book-news.webp"
     },
     {
+      "id": "lectures:lecture-242",
+      "url": "https://bhban.kr/lectures/lecture-242/",
+      "title": "데이터 수집 및 전처리",
+      "content_html": "<p>강의 · 2026.10.16. · 경안고등학교</p><p>데이터 수집 계획을 세우고 원자료를 분석 가능한 표로 정리하는 방법을 다뤘습니다. 관찰 단위와 데이터 사전, 결측값·중복값·입력 오류의 구분, 수정 기록을 남기는 과정을 소개했습니다.</p><p><a href=\"https://bhban.kr/lectures/lecture-242/\">데이터 수집 및 전처리</a></p>",
+      "tags": [
+        "강의"
+      ],
+      "image": "https://bhban.kr/src/images/lectures/gyeongan-20261016-5a5f249ff555.webp"
+    },
+    {
       "id": "lectures:lecture-190-957592625c54edcb",
       "url": "https://bhban.kr/lectures/lecture-190-957592625c54edcb/",
       "title": "AI 이후의 인간 — 나보다 똑똑한 AI와 사는 법",
@@ -85,6 +125,16 @@
         "강의"
       ],
       "image": "https://cdn.jsdelivr.net/gh/needleworm/needleworm.github.io@fbf1d971da1543f8a3ef2167b2dc16ec01a9064a/src/images/lectures/190.webp"
+    },
+    {
+      "id": "lectures:lecture-243",
+      "url": "https://bhban.kr/lectures/lecture-243/",
+      "title": "데이터 기반 문제 해결의 이해",
+      "content_html": "<p>강의 · 2026.10.14. · 경안고등학교</p><p>경안고등학교 학생들을 대상으로 데이터 기반 문제 해결 과정을 소개했습니다. 생활 속 불편을 측정 가능한 질문으로 바꾸고, 자료 수집·분석·실행·평가를 설계하는 방법을 다뤘습니다.</p><p><a href=\"https://bhban.kr/lectures/lecture-243/\">데이터 기반 문제 해결의 이해</a></p>",
+      "tags": [
+        "강의"
+      ],
+      "image": "https://bhban.kr/src/images/lectures/gyeongan-20261014-631a1454b20f.webp"
     },
     {
       "id": "lectures:lecture-nhi-20261012",

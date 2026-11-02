@@ -22,6 +22,8 @@ jobs:
         run: python -m unittest discover -s scripts -p test_paper_citations.py -v
       - name: Verify public JSON catalogs and subscription feeds
         run: python -m unittest discover -s scripts -p test_site_feeds.py -v
+      - name: Verify course summaries preserve individual lectures
+        run: python -m unittest discover -s scripts -p test_course_summaries.py -v
       - name: Verify localized URLs and protected research links
         run: python -m unittest discover -s scripts -p test_site_locales.py -v
       - name: Verify desktop navigation and mobile continuous scrolling

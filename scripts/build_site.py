@@ -128,7 +128,18 @@ def source_views(sources):
             raise ValueError(f'Confirm Online/Offline delivery for repeated lecture {record}')
         extras['courses-'+delivery].append((record,card))
     result = dict(sources)
-    additions = {'lectures': [(card_id(card,'courses-offline'),card) for card in offline], **extras}
+    # A course may summarize sessions already listed as separate lectures.
+    # Validate those references and keep each session in Lectures only once.
+    course_lectures = policy.get('course_lectures', {})
+    offline_ids = {card_id(card, 'courses-offline') for card in offline}
+    if not set(course_lectures).issubset(offline_ids):
+        raise ValueError('Course summary refers to a missing offline course')
+    for course, sessions in course_lectures.items():
+        if (not isinstance(sessions, list) or len(set(sessions)) < 3
+                or len(sessions) != len(set(sessions)) or not set(sessions).issubset(known_ids)):
+            raise ValueError(f'Course summary needs at least three distinct existing lectures: {course}')
+    additions = {'lectures': [(card_id(card,'courses-offline'),card) for card in offline
+                              if card_id(card, 'courses-offline') not in course_lectures], **extras}
     for key, additions_for_key in additions.items():
         spans = sorted(Blocks(sources[key]).cards)
         known = {card_id(card,key) for card in cards(key)}

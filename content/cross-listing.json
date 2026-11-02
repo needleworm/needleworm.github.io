@@ -14,5 +14,14 @@
     "lecture-62": "offline",
     "lecture-2": "offline",
     "lecture-237": "online"
+  },
+  "course_lectures": {
+    "course-gyeongan-202610": [
+      "lecture-239",
+      "lecture-240",
+      "lecture-241",
+      "lecture-242",
+      "lecture-243"
+    ]
   }
 }

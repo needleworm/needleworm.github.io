@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="naver-site-verification" content="0159ed33b1faaa2234f04e02a584f51839076f3b">
+    <title>데이터 기반 문제 해결의 이해 | 반병현</title>
+    <meta name="description" content="경안고등학교 학생들을 대상으로 데이터 기반 문제 해결 과정을 소개했습니다. 생활 속 불편을 측정 가능한 질문으로 바꾸고, 자료 수집·분석·실행·평가를 설계하는 방법을 다뤘습니다.">
+    <meta name="author" content="반병현(Byunghyun Ban)">
+
+    <link rel="canonical" href="https://bhban.kr/lectures/lecture-243/">
+    <link rel="alternate" type="application/rss+xml" title="반병현 RSS" href="/feed.xml">
+    <link rel="alternate" type="application/feed+json" title="반병현 JSON Feed" href="/feed.json">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="반병현">
+    <meta property="og:title" content="데이터 기반 문제 해결의 이해 | 반병현">
+    <meta property="og:description" content="경안고등학교 학생들을 대상으로 데이터 기반 문제 해결 과정을 소개했습니다. 생활 속 불편을 측정 가능한 질문으로 바꾸고, 자료 수집·분석·실행·평가를 설계하는 방법을 다뤘습니다.">
+    <meta property="og:url" content="https://bhban.kr/lectures/lecture-243/">
+    <meta property="og:image" content="/src/images/lectures/gyeongan-20261014-631a1454b20f.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44e1e0b11c.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/style.css?v=a87e54426855">
+    <link rel="stylesheet" href="/page.css?v=f3a4034cdede">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://bhban.kr/#person", "name": "반병현", "alternateName": "Byunghyun Ban", "url": "https://bhban.kr/", "image": "https://bhban.kr/src/images/profile.webp", "jobTitle": "AI 엔지니어, 작가, 나나랩 대표", "knowsAbout": ["인공지능", "생성형 AI", "AI 에이전트", "업무 자동화"], "sameAs": ["https://github.com/needleworm", "https://brunch.co.kr/@needleworm", "https://www.inflearn.com/users/1040535/@bhban"]}, {"@type": "WebSite", "@id": "https://bhban.kr/#website", "url": "https://bhban.kr/", "name": "반병현"}, {"@type": "WebPage", "@id": "https://bhban.kr/lectures/lecture-243/#page", "url": "https://bhban.kr/lectures/lecture-243/", "name": "데이터 기반 문제 해결의 이해", "description": "경안고등학교 학생들을 대상으로 데이터 기반 문제 해결 과정을 소개했습니다. 생활 속 불편을 측정 가능한 질문으로 바꾸고, 자료 수집·분석·실행·평가를 설계하는 방법을 다뤘습니다.", "inLanguage": "ko-KR", "about": {"@id": "https://bhban.kr/#person"}, "isPartOf": {"@id": "https://bhban.kr/#website"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhban.kr/"}, {"@type": "ListItem", "position": 2, "name": "Lectures", "item": "https://bhban.kr/lectures/"}, {"@type": "ListItem", "position": 3, "name": "데이터 기반 문제 해결의 이해", "item": "https://bhban.kr/lectures/lecture-243/"}]}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1GJ70ELXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-N1GJ70ELXP');
+    </script>
+
+    <script src="/locale-routing.js?v=736dd466c2c1" defer></script>
+    <script src="/continuous-scroll.js?v=747ae2b3846e" defer></script>
+    <script src="/script.js?v=50f3cb105e7b" defer></script>
+    <link rel="alternate" hreflang="ko" href="https://bhban.kr/lectures/lecture-243/">
+    <link rel="alternate" hreflang="en" href="https://bhban.kr/en/lectures/lecture-243/">
+    <link rel="alternate" hreflang="zh" href="https://bhban.kr/zh/lectures/lecture-243/">
+    <link rel="alternate" hreflang="hi" href="https://bhban.kr/hi/lectures/lecture-243/">
+    <link rel="alternate" hreflang="es" href="https://bhban.kr/es/lectures/lecture-243/">
+    <link rel="alternate" hreflang="ar" href="https://bhban.kr/ar/lectures/lecture-243/">
+    <link rel="alternate" hreflang="fr" href="https://bhban.kr/fr/lectures/lecture-243/">
+    <link rel="alternate" hreflang="bn" href="https://bhban.kr/bn/lectures/lecture-243/">
+    <link rel="alternate" hreflang="pt" href="https://bhban.kr/pt/lectures/lecture-243/">
+    <link rel="alternate" hreflang="x-default" href="https://bhban.kr/lectures/lecture-243/">
+    <script id="site-i18n" type="application/json">{"menuOpen":"메뉴 열기","menuClose":"메뉴 닫기","submenuExpand":"{label} 하위 메뉴 펼치기","submenuCollapse":"{label} 하위 메뉴 접기","nextSwipeHint":"끝까지 내려온 뒤 한 번 더 위로 밀면 이동합니다.","nextScrollHint":"끝까지 내려온 뒤 한 번 더 아래로 스크롤하면 이동합니다.","lectureResults":"{category} {count}건 · 최신 강의순","categoryAll":"전체","categoryCompany":"기업","categoryPublic":"공공기관","categoryEducation":"교육기관","categoryResearch":"연구기관","categoryConference":"컨퍼런스","listMedia":"영상","listNews":"언론 보도","listLectures":"강의","listCoursesOnline":"온라인 강좌","listCoursesOffline":"오프라인 교육과정","listPapers":"논문","listPatents":"특허","listProjects":"프로젝트","listActivities":"활동","listMemberships":"회원 활동","listCollections":"소장품","listDonations":"기부 내역","listGeneric":"목록","listStatus":"{total}건 중 {visible}건 표시","listMore":"{label} 더 보기 ({remaining}건 남음)","citationCopyLabel":"인용 정보 복사","citationCopied":"인용 정보를 복사했습니다.","citationError":"인용 정보를 복사하지 못했습니다. 브라우저의 클립보드 설정을 확인해 주세요.","citationFormatCopied":"{label} 인용 정보를 복사했습니다.","citationManualCopy":"인용문을 선택했습니다. 직접 복사해 주세요.","contactLoadError":"문의 전송 기능을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.","contactSent":"문의가 접수되었습니다.","contactError":"오류가 발생했습니다. 다시 시도해주세요.","contactSending":"Sending...","streamRetry":"다시 불러오기","streamError":"다음 내용을 불러오지 못했습니다. 다시 시도하거나 위 링크로 이동해 주세요.","streamLoading":"{label} 내용을 이어 불러오는 중입니다."}</script>
+</head>
+<body data-locale="ko" class="static-site full-content content-page lecture-detail-page" data-page="lecture-detail">
+    <a class="skip-link" href="#main-content">본문 바로가기</a>
+    <nav class="navbar" aria-label="주 메뉴"><div class="navbar-brand"><a href="/" aria-label="반병현 홈"><img src="/src/images/logo.webp" alt="NaNa Lab" class="logo-img"></a></div><button class="menu-toggle" id="mobile-menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="메뉴 열기">☰</button><ul class="nav-links" id="nav-links"><li data-nav-group="about"><a href="/" class="nav-link nav-main-link" data-nav-page="home">About</a></li><li data-nav-group="media"><a href="/media/" class="nav-link nav-main-link" data-nav-page="media">Media</a></li><li data-nav-group="books"><a href="/books/" class="nav-link nav-main-link" data-nav-page="books">Books</a></li><li class="nav-item" data-nav-group="lectures"><div class="nav-group-heading"><a href="/lectures/" class="nav-link active nav-main-link" data-nav-page="lectures">Lectures</a><button type="button" class="submenu-toggle" aria-controls="submenu-lectures" aria-expanded="false" aria-label="Lectures 하위 메뉴 펼치기" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-lectures" class="dropdown-menu" aria-label="강의 분류"><li><a href="/lectures/#lecture-list" data-nav-page="lectures" data-lecture-category="전체">전체</a></li><li><a href="/lectures/#lectures-companies" data-nav-page="lectures" data-lecture-category="기업">기업</a></li><li><a href="/lectures/#lectures-public" data-nav-page="lectures" data-lecture-category="공공기관">공공기관</a></li><li><a href="/lectures/#lectures-education" data-nav-page="lectures" data-lecture-category="교육기관">교육기관</a></li><li><a href="/lectures/#lectures-research" data-nav-page="lectures" data-lecture-category="연구기관">연구기관</a></li><li><a href="/lectures/#lectures-conferences" data-nav-page="lectures" data-lecture-category="컨퍼런스">컨퍼런스</a></li></ul></li><li class="nav-item" data-nav-group="courses"><div class="nav-group-heading"><a href="/courses/online/" class="nav-link nav-main-link" data-nav-page="courses-online">Courses</a><button type="button" class="submenu-toggle" aria-controls="submenu-courses" aria-expanded="false" aria-label="Courses 하위 메뉴 펼치기" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-courses" class="dropdown-menu"><li><a href="/courses/online/" data-nav-page="courses-online">Online</a></li><li><a href="/courses/offline/" data-nav-page="courses-offline">Offline</a></li></ul></li><li data-nav-group="news"><a href="/news/" class="nav-link nav-main-link" data-nav-page="news">News</a></li><li class="nav-item" data-nav-group="research"><div class="nav-group-heading"><a href="/papers/" class="nav-link nav-main-link" data-nav-page="papers">R&amp;D</a><button type="button" class="submenu-toggle" aria-controls="submenu-research" aria-expanded="false" aria-label="R&amp;D 하위 메뉴 펼치기" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-research" class="dropdown-menu"><li><a href="/papers/" data-nav-page="papers">Papers</a></li><li><a href="/patents/" data-nav-page="patents">Patents</a></li><li><a href="/projects/" data-nav-page="projects">Projects</a></li></ul></li><li class="nav-item" data-nav-group="activities"><div class="nav-group-heading"><a href="/activities/" class="nav-link nav-main-link" data-nav-page="activities">ETC</a><button type="button" class="submenu-toggle" aria-controls="submenu-activities" aria-expanded="false" aria-label="ETC 하위 메뉴 펼치기" hidden><span aria-hidden="true">⌄</span></button></div><ul id="submenu-activities" class="dropdown-menu"><li><a href="/activities/" data-nav-page="activities">Social Contribution</a></li><li><a href="/memberships/" data-nav-page="memberships">Memberships</a></li><li><a href="/collections/" data-nav-page="collections">Collections</a></li></ul></li><li data-nav-group="contact"><a href="/contact/" class="btn-contact nav-main-link" data-nav-page="contact">Contact</a></li></ul></nav>
+
+    <main id="main-content" class="container page-main ">
+
+        <nav class="lecture-breadcrumbs" aria-label="현재 위치"><a href="/lectures/">Lectures</a></nav><article class="lecture-detail" data-lecture-id="lecture-243">
+    <div class="singleWebsiteCard">
+        <img decoding="async" loading="lazy" class="websiteImage" src="/src/images/lectures/gyeongan-20261014-631a1454b20f.webp" alt="경안고등학교 — 데이터 기반 문제 해결의 이해" />
+        <div class="projectText">
+            <h1 class="lecture_title">데이터 기반 문제 해결의 이해</h1>
+            <div class="firstCommitDate">2026.10.14.</div>
+            <a class="lec_inst" href="https://school.gyo6.net/ka/main.do" target="_blank" rel="noreferrer">경안고등학교</a>
+            <p class="abstract">경안고등학교 학생들을 대상으로 데이터 기반 문제 해결 과정을 소개했습니다. 생활 속 불편을 측정 가능한 질문으로 바꾸고, 자료 수집·분석·실행·평가를 설계하는 방법을 다뤘습니다.</p>
+        </div>
+    </div>
+</article><nav class="lecture-return" aria-label="강의 목록으로 이동"><a class="lecture-return-link" href="/lectures/"><span aria-hidden="true">←</span>강의목록으로 돌아가기</a></nav>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-links" aria-label="전체 페이지"><a href="/">반병현</a><a href="/media/">방송·영상</a><a href="/books/">저서</a><a href="/lectures/">강의·출강 이력</a><a href="/courses/online/">온라인 강좌</a><a href="/courses/offline/">오프라인 교육과정</a><a href="/news/">언론 보도</a><a href="/papers/">논문·연구</a><a href="/patents/">특허</a><a href="/projects/">개발 프로젝트</a><a href="/activities/">사회공헌</a><a href="/memberships/">회원·전문 활동</a><a href="/collections/">소장품</a><a href="/contact/">강의·협업 문의</a></nav>
+            <p><a href="/feed.xml">RSS 구독</a> · <a href="/feed.json">JSON Feed</a></p>
+            <p>&copy; 2026 Byunghyun Ban. All rights reserved.</p>
+            <p>나나랩(NaNa Lab) (사업자등록번호:269-08-02374) 대표자 반 병 현</p>
+        </div>
+            <details class="language-switcher"><summary aria-label="언어 선택"><span aria-hidden="true">🌐</span> <span>한국어</span></summary><nav class="language-options" aria-label="언어 선택"><a href="/lectures/lecture-243/" hreflang="ko" lang="ko" aria-current="true">한국어</a><a href="/en/lectures/lecture-243/" hreflang="en" lang="en">English</a><a href="/zh/lectures/lecture-243/" hreflang="zh" lang="zh">简体中文</a><a href="/hi/lectures/lecture-243/" hreflang="hi" lang="hi">हिन्दी</a><a href="/es/lectures/lecture-243/" hreflang="es" lang="es">Español</a><a href="/ar/lectures/lecture-243/" hreflang="ar" lang="ar" dir="rtl">العربية</a><a href="/fr/lectures/lecture-243/" hreflang="fr" lang="fr">Français</a><a href="/bn/lectures/lecture-243/" hreflang="bn" lang="bn">বাংলা</a><a href="/pt/lectures/lecture-243/" hreflang="pt" lang="pt">Português</a></nav></details>
+    </footer>
+    <button class="btn-to-top" id="btn-to-top" type="button" aria-label="맨 위로 이동">↑</button>
+</body>
+</html>
